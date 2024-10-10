@@ -1,0 +1,14 @@
+*~
+*swp
+*log
+*blg
+*aux
+*out
+*toc
+Makefile
+toplot
+*sol*
+*.bbl
+*.png
+*.pdf
+*.mp4
