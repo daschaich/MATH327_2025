@@ -1,0 +1,228 @@
+% ------------------------------------------------------------------
+\newcommand{\thisunit}{MATH327 information}
+\newcommand{\moddate}{Last modified 19 Jan.~2025}
+\setcounter{section}{0}
+\phantomsection
+\addcontentsline{toc}{section}{Module information and logistics}
+\section*{Module information and logistics}
+
+\subsection*{Coordinator}
+\begin{description}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item[\qquad] David Schaich
+  \item[\qquad] Theoretical Physics Wing Room 123
+  \item[\qquad] \href{mailto:david.schaich@liverpool.ac.uk}{david.schaich@liverpool.ac.uk}
+  \item[\qquad] \href{https://calendly.com/daschaich/meet}{calendly.com/daschaich}
+  \item[\qquad] \href{http://www.davidschaich.net}{www.davidschaich.net}
+\end{description}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection*{Overview}
+``\href{https://doi.org/10.1126/science.177.4047.393}{More Is Different}'' is the title of a famous 1972 essay by \href{https://en.wikipedia.org/wiki/Philip_W._Anderson}{Philip Anderson}, which established the concept of emergent phenomena --- the idea that large, complex physical systems generally can't be understood by extrapolating the properties of small, simple systems.
+For example, consider the $\sim$$10^{22}$ H${}_2$O molecules in a cubic centimetre of water. % (at sea level --- Avogadro's number divided by 18)
+While we can use Newton's laws (or the laws of quantum mechanics) to analyse a few of these molecules, this does not allow us to predict processes such as phase transitions of this water into steam or ice.
+
+Instead, we have to apply the stochastic (i.e., probabilistic) techniques of \textit{statistical mechanics} --- one of the central pillars of modern physics, along with quantum mechanics and relativity.
+While statistical mechanics was originally developed in the context of thermodynamics in the nineteenth century, it is more generally applicable to any large-scale (macroscopic) behaviour that emerges from the microscopic dynamics of \emph{many} underlying objects.
+It is intimately connected to quantum field theory, and has been applied to topics from nuclear physics and cosmology to climate science and biophysics, often with outstanding success (recently recognized by the \href{https://www.nobelprize.org/prizes/physics/2021/popular-information/}{2021} and \href{https://www.nobelprize.org/prizes/physics/2024/popular-information/}{2024} Nobel Prizes in Physics, to name just two).
+
+The module outline on the previous page is organized around the concept of \textit{statistical ensembles} introduced in the early 1900s.
+In essence, a statistical ensemble is a mathematical framework for concisely describing the properties of idealized physical systems subject to certain constraints.
+After studying the probability foundations underlying these frameworks, we meet the \textit{micro-canonical ensemble} in unit 2 and the \textit{canonical ensemble} in unit 3.
+The following two units 4--5 apply the canonical ensemble to investigate non-interacting (``ideal'') gases and thermodynamic cycles.
+Unit~6 introduces a third statistical ensemble, the \textit{grand-canonical ensemble}, which units 7--8 apply to several types of non-interacting quantum gases.
+(No prior exposure to quantum mechanics is required --- see below for more information.)
+Finally, in unit 9 we begin to explore the effects of interactions, which open up a much broader landscape of applications that we will survey for the remainder of the term.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection*{Schedule}
+Most weeks we will have lectures at 13:00--14:00 on Monday and 11:00--13:00 on Wednesday, with tutorials at 10:00--11:00 on Thursday, all in Room 210.
+The tutorials in weeks 2, 3 and 4 (on 6, 13 and 20 February) will be computer lab sessions in Hub 502 PC Teaching Centre B, to provide opportunities for you to work on the computer assignment summarized below.
+
+I will use Panopto to record lectures (and lecturey bits of tutorials and computer labs).
+Although Panopto can produce a live webcast as it records, it does not do this very well. % No remote interaction; can't pause; url generated when webcast starts
+Therefore I will use Zoom to provide a way for anyone off campus or out of town to connect remotely through \href{https://liverpool-ac-uk.zoom.us/j/99270154627?pwd=opN8TdnbW3xELD4gxPGgAdkIbL61uk.1}{this link} (meeting ID \mbox{992 7015 4627}, passcode Math327!).
+Since Panopto and Zoom sometimes fight over the microphone and camera, I encourage you to attend in person if you are able.
+The Panopto recordings will appear along with all other resources on \href{https://canvas.liverpool.ac.uk/courses/76365}{our Canvas site}, \\
+\centerline{\href{https://canvas.liverpool.ac.uk/courses/76365}{canvas.liverpool.ac.uk/courses/76365}}
+
+\textbf{Office hours} will take place at 14:00 on Mondays and 11:00 on Thursdays, after the corresponding lecture and tutorial.
+They will be held in Room 123 of the Theoretical Physics Wing, and will also connect to the \href{https://liverpool-ac-uk.zoom.us/j/99270154627?pwd=opN8TdnbW3xELD4gxPGgAdkIbL61uk.1}{Zoom link} above.
+If these times do not work with your schedule, you can also make an appointment through \href{https://calendly.com/daschaich/meet}{calendly.com/daschaich}, use the \href{https://canvas.liverpool.ac.uk/courses/76365/discussion_topics}{Canvas discussion board} (where anonymous posting is enabled), or reach me by email at \href{mailto:david.schaich@liverpool.ac.uk}{david.schaich@liverpool.ac.uk}.
+I will aim to respond to emails and discussion board queries within 48 hours.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection*{Assessment and academic integrity}
+There will be three in-term assignments.
+Each accounts for 15\% of the module mark, with the remaining 55\% coming from the final exam.
+The deadlines below are still being centrally coordinated within the Department to minimize pile-up across different modules, and will be confirmed soon: \\[-28 pt]
+\begin{description}
+  \setlength{\itemsep}{5pt}
+  \setlength{\parskip}{5pt}
+  \setlength{\parsep}{5pt}
+  \item[15\%] A computer assignment expected to be due around Friday, 21 February
+  \item[30\%] Two equally weighted homework assignments, the first expected to be due around Friday, 14 March and the second expected to be due around Friday, 2 May
+  \item[55\%] A two-hour in-person final examination to be centrally scheduled within the May exam period
+\end{description}
+\ \\[-50 pt]
+
+According to the University's \href{https://www.liverpool.ac.uk/media/livacuk/tqsd/code-of-practice-on-assessment/code_of_practice_on_assessment.pdf}{Code of Practice on Assessment} (COPA), late submissions completed within 120 hours after the submission deadline will have 5\% of the total marks deducted each 24-hour period after the deadline. % Section 6.2
+Submissions more than 120 hours late will be awarded zero marks, though I will still endeavour to provide feedback on them.
+I will aim to return feedback and share model solutions within two or three weeks of the deadline for the homeworks or computer assignment, respectively.
+
+For your other modules you already should have read and understood the Department's current \href{https://canvas.liverpool.ac.uk/courses/76365/files/11992667}{academic integrity guidance} as well as the \href{https://www.liverpool.ac.uk/media/livacuk/tqsd/code-of-practice-on-assessment/appendix_L_cop_assess.pdf}{Academic Integrity Policy} detailed in COPA Appendix L.
+If you have any questions about what is or is not acceptable, please ask me or our Academic Integrity Officer Alena Haddley.
+In all cases, the spirit of the Academic Integrity Policy should take precedence over legalistic convolutions of the text.
+
+In particular, I encourage you to discuss the in-term assignments with each other, since discussing and debating your work is a very effective way to learn.
+Note that I say \textit{your work} --- your submissions for all assignments must be your own work representing your own understanding, and the examination must be done on your own.
+It is unacceptable to copy solutions in part or in whole from other students (current or prior) or from other sources (commercial or otherwise).
+Should you make use of resources beyond the module materials --- including generative AI tools such as ChatGPT --- these must be explicitly referenced in your submissions.
+Clear and neat presentations of your workings and the logic behind them will contribute to your mark.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection*{Main resources and materials}
+The main materials we will use are the lecture notes you are currently reading.
+As you read further, you will encounter gaps in the notes, which provide bite-sized exercises to help you check your understanding.
+While we will fill most gaps during lectures, I encourage you to use them as opportunities to practice.
+
+The ten units into which the content is organized won't neatly match up with the twelve weeks of the term.
+Some units will require more time than others.
+Regular Canvas announcements will summarize what we cover each week.
+
+We will use `natural units' in which the Boltzmann constant $k = 1$, and logarithms have base $e$ unless otherwise specified (i.e., $\log x = \ln x$).
+There is no need to memorize any equations.
+Many equations are numbered so that they can be referenced later on, not necessarily because they are important.
+Key results, definitions and concepts are highlighted by coloured boxes, and you should aim to be confident in your understanding of these.
+
+These lecture notes were first written `live' during the 2021 and 2022 editions of this module.
+While they are now much more stable, they continue to be improved, refined and sometimes corrected.
+The ``Last modified'' date at the bottom of each page will flag any changes that occur during the term.
+You can track the changes themselves through the version control repository at \href{https://github.com/daschaich/MATH327_2025}{github.com/daschaich/MATH327\_2025}.
+%This repository also provides tools for you to raise any issues you see.
+The \href{https://software-carpentry.org}{Software Carpentry} project provides an introduction to \href{https://swcarpentry.github.io/git-novice/}{Version Control with Git}.
+
+\subsubsection*{Expected background}
+\textbf{No} prior exposure to quantum mechanics or computer programming is required --- all necessary information on these topics will be provided.
+I do anticipate that you have previously seen the \href{https://en.wikipedia.org/wiki/Standard_deviation}{standard deviation}, the \href{https://en.wikipedia.org/wiki/Binomial_coefficient}{binomial coefficient}
+\begin{equation*}
+  \binom{N}{k} = \frac{N!}{k! \, (N - k)!} = \binom{N}{N - k}
+\end{equation*}
+that counts the number of possible ways to choose $k$ objects out of a set of $N \geq k$ total objects, and \href{https://en.wikipedia.org/wiki/Gaussian_integral}{gaussian integrals},
+\begin{align*} % TODO: a > 0...
+  \int_{-\infty}^{\infty} e^{-a (x + b)^2} \; dx & = \sqrt{\frac{\pi}{a}} &
+  a & > 0.
+\end{align*}
+
+\subsubsection*{Programming}
+You are welcome to complete the computer assignment using the programming language of your choice.
+I recommend \href{https://www.python.org}{Python}, which is free, user-friendly, and very widely used around the world.
+During the first two weeks of the term we will review \href{https://tinyurl.com/math327demo}{this demo} that explains all the Python programming tools you'll need.
+Python is available on University computers and should work on personal computers.
+You can also write and run Python code using many cloud services, of which I have had the best experiences with Google's \href{https://colab.research.google.com}{Colab} and \href{https://cocalc.com}{CoCalc}.\footnote{I have had worse experiences with replit.com, onlinegdb.com, mybinder.org and trinket.io --- use these at your own risk.} % replit.com got very slow in 2022; onlinegdb.com doesn't seem to handle figure display or saving; mybinder.org requires git repo; trinket.io sometimes struggles with longer calculations or plotting histograms
+You may need to create a free account, and you should make sure to save a local copy to reduce the risk of losing your work.
+Alternative languages could include \href{https://en.wikipedia.org/wiki/C_(programming_language)}{C}, \href{https://fortran-lang.org}{Fortran}, \href{https://www.r-project.org}{R}, or even \href{https://matlab.mathworks.com}{MATLAB} (through the University's site license).
+I advise against using Maple, which may struggle to handle parts of the assignment.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection*{How to get the most out of this module}
+At this point in your studies, this advice should be familiar, but it's worth repeating.
+
+Come to class --- ideally in person, if necessary by Zoom.
+This will ensure regular contact with the material, and help you check that you understand it.
+If the module is moving slower than you'd prefer, coming to class will give you opportunities to ask about more interesting extensions, applications or complications.
+
+Before class, take a quick look at the upcoming pages in the lecture notes, and think about how any gaps could be filled.
+Look for the big ideas rather than digging in to every detail, and see if you have any questions (or objections) to raise in class.
+After class, take a closer look at the details, and make sure the gaps have been filled to your satisfaction.
+Even though the lecture notes reflect my plans for the module, they may not exactly match what happens in class, especially when questions arise.
+We may gloss over some topics that are explained clearly in the notes, and we may delve deeper into other topics that merit further consideration.
+
+Work on the homework problems, computer assignment and tutorial activities.
+The best way to learn mathematics is by doing mathematics, and these assignments and activities are designed to make you think and help develop your mathematical muscles.
+In particular, the homework problems will be harder than exam questions, since you'll have much more time to work on them --- so make sure you start thinking about them well in advance of the deadline.
+Afterwards, review the model solutions and feedback, to make sure any confusing points are resolved.
+
+Ask questions.
+Ask questions you think you're supposed to know the answer to.
+Ask questions you think everyone else knows the answer to.
+(They don't.)
+Ask questions about the big ideas, the specific details, and the connections between them.
+The opportunity to ask questions is the main benefit of taking a module.
+You can ask me; you can ask your classmates; you can ask the additional resources below.
+% If you ask me about assignments, I will avoid doing the work for you; instead I will have you explain to me what you have tried so far, and will ask leading questions to suggest where I see problems or potential next steps.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection*{Additional resources}
+The optional additional resources listed below may be helpful.
+You can use the module \href{https://canvas.liverpool.ac.uk/courses/76365/external_tools/102}{Reading List} on Canvas to reach our library's records for the books.
+
+\noindent\textbf{Resources at roughly the level of this module:} \\[-24 pt]
+\begin{enumerate}
+  \item David Tong, \href{https://www.damtp.cam.ac.uk/user/tong/statphys.html}{\textit{Lectures on Statistical Physics}} (2012), \\ www.damtp.cam.ac.uk/user/tong/statphys.html
+  \item MIT OpenCourseWare for undergraduate \href{https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/}{Statistical Physics I} (2013) and \href{https://ocw.mit.edu/courses/8-08-statistical-physics-ii-spring-2005/}{Statistical Physics II} (2005), \\ ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/ \\ ocw.mit.edu/courses/8-08-statistical-physics-ii-spring-2005/
+  \item Daniel V.~Schroeder, \textit{An Introduction to Thermal Physics} (2021)
+  \item J.~Allday and S.~Hands, \textit{Introduction to Entropy: The Way of the World} (2024)
+  \item C.~Kittel and H.~Kroemer, \textit{Thermal Physics} (1980)
+  \item F.~Reif, \textit{Fundamentals of Statistical and Thermal Physics} (1965)
+\end{enumerate}
+
+\noindent\textbf{More advanced and more specialized resources}, which may be useful to consult concerning specific questions or topics: \\[-24 pt]
+\begin{enumerate}
+  \setcounter{enumi}{6}
+  \item MIT OpenCourseWare for postgraduate \href{https://ocw.mit.edu/courses/8-333-statistical-mechanics-i-statistical-mechanics-of-particles-fall-2013/}{Statistical Mechanics I} (2013) and \href{https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/}{Statistical Mechanics II} (2014), \\ ocw.mit.edu/courses/8-333-statistical-mechanics-i-statistical-mechanics-of- \\ particles-fall-2013/ \\ ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of- \\ fields-spring-2014/
+  \item R.~K.~Pathria and P.~D.~Beale, \textit{Statistical Mechanics} (2021)
+  \item Sidney Redner, \textit{A Guide to First-Passage Processes} (2001)
+  \item Pavel L.~Krapivsky, Sidney Redner and Eli Ben-Naim, \textit{A Kinetic View of Statistical Physics} (2010)
+  \item Kerson Huang, \textit{Statistical Mechanics} (1987)
+  \item Andreas Wipf, \textit{Statistical Approach to Quantum Field Theory} (2013)
+  \item Weinan E, Tiejun Li and Eric Vanden-Eijnden, \textit{Applied Stochastic Analysis} (2019)
+  \item Michael Plischke \& Birger Bergersen, \textit{Equilibrium Statistical Physics} (2006)
+  \item Sacha Friedli and Yvan Velenik, \textit{Statistical Mechanics of Lattice Systems} (2018)
+  \item L.~D.~Landau and E.~M.~Lifshitz, \textit{Statistical Physics, Part 1} (1969)
+\end{enumerate}
+
+\newpage % WARNING: FORMATTING BY HAND
+\noindent\textbf{A general book about learning}, emphasizing (among other things) the value of retrieval practice compared to re-reading lecture notes or re-watching videos: \\[-24 pt]
+\begin{enumerate}
+  \setcounter{enumi}{16}
+  \item Peter C.~Brown, Henry L.~Roediger III and Mark A.~McDaniel, \textit{Make it Stick: The Science of Successful Learning} (2014) \\
+        A \href{https://www.youtube.com/watch?v=MfylloWuuZU}{short summary video} is also available
+\end{enumerate}
+
+\noindent\textbf{Programming resources:} \\[-24 pt]
+\begin{enumerate}
+  \setcounter{enumi}{17}
+  \item MATH327 \href{https://tinyurl.com/math327demo}{Python programming demo} (2025)
+  \item \href{https://wiki.python.org/moin/BeginnersGuide}{Beginner's Guide to Python} (2024)
+  \item \href{https://software-carpentry.org}{Software Carpentry} tutorials: \\
+        \textcolor{white}{hack} \href{https://swcarpentry.github.io/git-novice/}{Version Control with Git} (2024) \\
+        \textcolor{white}{hack} \href{https://swcarpentry.github.io/python-novice-inflammation/}{Programming with Python} (2024) \\
+        \textcolor{white}{hack} \href{https://swcarpentry.github.io/python-novice-gapminder/}{Plotting and Programming in Python} (2024)
+  \item Stormy Attaway, \textit{MATLAB: A Practical Introduction to Programming and Problem Solving} (2013)
+  \item B.~Barnes and G.~R.~Fulford, \textit{Mathematical Modelling with Case Studies: Using Maple and MATLAB} (2014)
+\end{enumerate}
+
+In addition, there is a vast constellation of other online resources such as \href{https://physics.stackexchange.com/questions/tagged/statistical-mechanics}{Stack Exchange} and \href{https://en.wikipedia.org/wiki/Statistical_physics}{Wikipedia}.
+These can be great places to \emph{start} learning about a topic, but are often terrible places to \emph{stop}.
+% ------------------------------------------------------------------

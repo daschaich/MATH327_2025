@@ -1,0 +1,162 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, margin=2.5 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+\usepackage{framed,color}
+\usepackage{fancybox}
+\usepackage{varwidth}
+\definecolor{shadecolor}{rgb}{1,0.8,0.3}
+\usepackage[framemethod=tikz]{mdframed}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisunit}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging and title
+%\usepackage[tagged]{accessibility}
+\hypersetup {
+  pdfauthor={David Schaich},
+  pdftitle={StatMech Lecture Notes},
+}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\Eph}{\ensuremath{E_{\text{ph}}} }
+\newcommand{\EMF}{\ensuremath{E_{\text{MF}}} }
+\newcommand{\Etot}{\ensuremath{E_{\text{tot}}} }
+\newcommand{\Ntot}{\ensuremath{N_{\text{tot}}} }
+\newcommand{\nMB}{\ensuremath{\vev{n_{\ell}}_{\text{MB}}} }
+\newcommand{\nBE}{\ensuremath{\vev{n_{\ell}}_{\text{BE}}} }
+\newcommand{\nFD}{\ensuremath{\vev{n_{\ell}}_{\text{FD}}} }
+\newcommand{\ZMB}{\ensuremath{Z_g^{\text{MB}}} }
+\newcommand{\ZBE}{\ensuremath{Z_g^{\text{BE}}} }
+\newcommand{\ZFD}{\ensuremath{Z_g^{\text{FD}}} }
+\newcommand{\ZMF}{\ensuremath{Z_{\text{MF}}} }
+\newcommand{\cE}{\ensuremath{\mathcal E} }
+\newcommand{\cF}{\ensuremath{\mathcal F} }
+\newcommand{\Ibb}{\ensuremath{\mathbb I} }
+\newcommand{\khat}{\ensuremath{\widehat k} }
+\newcommand{\cL}{\ensuremath{\mathcal L} }
+\newcommand{\Nbb}{\ensuremath{\mathbb N} }
+\newcommand{\cO}{\ensuremath{\mathcal O} }
+\newcommand{\Rbb}{\ensuremath{\mathbb R} }
+\newcommand{\Sbar}{\ensuremath{\overline S} }
+\newcommand{\stw}{\ensuremath{\widetilde s} }
+\newcommand{\vdr}{\ensuremath{v_{\mathrm{dr}}} }
+\newcommand{\Xbar}{\ensuremath{\overline X} }
+\newcommand{\al}{\ensuremath{\alpha} }
+\newcommand{\be}{\ensuremath{\beta} }
+\newcommand{\betw}{\ensuremath{\widetilde{\beta}} }
+\newcommand{\ga}{\ensuremath{\gamma} }
+\newcommand{\De}{\ensuremath{\Delta} }
+\newcommand{\de}{\ensuremath{\delta} }
+\newcommand{\eps}{\ensuremath{\varepsilon} }
+\newcommand{\la}{\ensuremath{\lambda} }
+\newcommand{\lath}{\ensuremath{\la_{\mathrm{th}}} }
+\newcommand{\si}{\ensuremath{\sigma} }
+\newcommand{\om}{\ensuremath{\omega} }
+\newcommand{\Om}{\ensuremath{\Omega} }
+\renewcommand{\d}[1]{\ensuremath{\mathop{d#1}} }
+\newcommand{\dx}{\ensuremath{\mathop{dx}} } % TODO: Replace by \d{x}...
+\newcommand{\boxzero}{\ensuremath{\boxed{\textcolor{white}{\bullet}}} }
+\newcommand{\boxone}{\ensuremath{\boxed{\bullet}} }
+\newcommand{\boxtwo}{\ensuremath{\boxed{\bullet\bullet}} }
+\newcommand{\lra}{\ensuremath{\longrightarrow} }
+\newcommand{\Lra}{\ensuremath{\Longrightarrow} }
+\newcommand{\llra}{\ensuremath{\longleftrightarrow} }
+\newcommand{\X}{\ensuremath{\!\times\!} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
+\newcommand{\ppderiv}[2]{\ensuremath{\frac{\partial^2 #1}{\partial #2^2}} }
+\newcommand{\eq}[1]{Eq.~\ref{#1}}
+\newcommand{\fig}[1]{Figure~\ref{#1}}
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\definecolor{green}{rgb}{0,0.4,0}
+\newcommand{\TODO}[1]{\textcolor{red}{\textbf{#1}}}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+  {\LARGE \textbf{MATH327: More Is Different}} \\[6 pt]
+  {\Large \textbf{Statistical Mechanics, Thermodynamics, and All That}} \\[6 pt]
+  \textbf{David Schaich \qquad\qquad\qquad\qquad Spring Term 2025} \\[48 pt]
+  {\LARGE LECTURE \ NOTES} \\[6 pt]
+  Last modified 19 January 2025
+\end{center}
+\renewcommand{\contentsname}{}
+\setcounter{tocdepth}{1}
+\tableofcontents
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\input{info.tex}
+
+\newpage
+\input{unit01.tex}
+
+\newpage
+\input{unit02.tex}
+
+\newpage
+\input{unit03.tex}
+
+\newpage
+\input{unit04.tex}
+
+\newpage
+\input{unit05.tex}
+
+\newpage
+\input{unit06.tex}
+
+\newpage
+\input{unit07.tex}
+
+\newpage
+\input{unit08.tex}
+
+\newpage
+\input{unit09.tex}
+
+\newpage
+\input{unit10.tex}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\end{document}
+% ------------------------------------------------------------------
