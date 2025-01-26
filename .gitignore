@@ -2,12 +2,14 @@
 *swp
 *log
 *blg
+*cls
 *aux
 *out
 *toc
 Makefile
 toplot
 notes.txt
+specimen*
 *sol*
 *.bbl
 *.png
