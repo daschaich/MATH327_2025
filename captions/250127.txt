@@ -1,0 +1,783 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+That should be the recording underway. This guy plugged in and probably too loud for the size of this room.
+
+Hopefully the crowd is not too large for the size of this room. And you have enough space, um, to get going.
+
+Welcome to the second semester of the year.
+
+First day of math 3 to 7, which has a new and improved title.
+
+This year, more is different.
+
+Talking about statistical mechanics, thermodynamics and all that every day, as you know, there is a magic six digit number,
+
+uh, just for you to plug in to make sure that, you know, things are going all right with your studies.
+
+And I am more amused than I probably should be, that today's number has 228 and a 56 in the middle.
+
+So that is that for you. And I am David Sheik, your lecturer this year.
+
+My last name is easier to pronounce than it looks for obscure historical reasons.
+
+We just say it. Shake is in handshake. You can call me David, and hopefully you will be able to feel free to speak up at any time.
+
+If you have any questions, including, even if any, you are on your mind.
+
+Now, before we get going. Um. The plan for today is going to be the sort of usual first hour topics for any module here.
+
+We will look at the big picture of what this module is about,
+
+and why I think it's worth taking and learning about statistical mechanics, thermodynamics and all that.
+
+And then talk about issues with the logistics, particular aspects of the assessment.
+
+The module outline what you can expect going forward, which sometimes is not always obvious just from the title of the course.
+
+And then if time remains after that today, depending on how many questions there are.
+
+The first content of the course we'll go through is just foundations of probability, as we will use it for statistical mechanics.
+
+And if we don't get to that today, then. We will definitely be diving into that.
+
+The next class meeting two hours on Wednesday at 11.
+
+But, uh, there's a saying you might have heard that the journey of a thousand miles starts with asking, is it worth it?
+
+So I figure we should start by making the point that statistical mechanics and the broader context of war is different,
+
+which is no longer on the screen. I will get used to the dark hymn soon.
+
+This is worth spending some time learning about for many reasons.
+
+So the big picture I would say, is that modern physics,
+
+essentially everything that's happened in physics over the past 150 years or so, is kind of based on three foundations.
+
+Um, two of these. Are not going to be focuses of this module.
+
+Relativity. Both special relativity and general relativity as well as quantum mechanics.
+
+The third foundation really is the statistical mechanics side of things.
+
+Just abbreviate that to stat mech. And the reason this is maybe the one of these three that is less obvious,
+
+intuitive or less well appreciated partly is due to the name Statistical mechanics,
+
+which was introduced in the late 1800s by a fellow named Gibbs,
+
+one of the first American mathematicians who really had a global profile, or physicists and mathematical, uh, scientists in those days.
+
+It's not a name that obviously screams out what is happening, what it involves statistical mechanics,
+
+sometimes also called probabilistic mechanics, statistical physics,
+
+statistical thermodynamics,
+
+all sorts of different names that don't really get the grip on what stat mech is adding to relativity and quantum in the domain of modern physics.
+
+So the unique aspect of statistical mechanics that distinguishes it from what you may or may not have seen with relativity and quantum physics,
+
+I should say if you haven't seen either of those, don't worry, you don't need them to take this module.
+
+Statistical mechanics deals with what happens when we consider systems with a very large number of degrees of freedom.
+
+Which, for ease of speaking and writing these degrees of freedom, I am generally just going to call particles.
+
+In some cases they will be particles, in other cases more abstract objects or very, yeah,
+
+anything that operates independently of other components of the system under consideration.
+
+And just to give a quick illustration of what large means in this context, we can think of having a cubic centimetre of water.
+
+So that's roughly 18g worth of water. You know, a bit more than a drop, maybe the.
+
+Top of the cap of my little water bottle here is going to hold a sec or two.
+
+And in that CC we now know these days that that water consists of something like Avogadro's number over 18 H2O molecules.
+
+Avogadro's number also not something you have to have seen before,
+
+but it is this rough scale that is going to be a typical size of what we mean by large for these large statistical mechanics systems.
+
+Ten to the power 2022. That's about 10,000,000,000 trillion H2O molecules in that those few drops of water.
+
+And if we want to consider analysing that CC of water in a theoretical physics mathematical framework,
+
+if we just wanted to write down some snapshot of this system as it exists in a particular moment in time,
+
+what we need to do that is consider all of those ten to the power, 20 to molecules.
+
+Consider the position of each one of them and the momentum.
+
+So in either quantum mechanics or Newtonian mechanics, those are the basic degrees of freedom for any given molecule we could ignore rotations,
+
+vibrations, all those other sorts of things for simplicity.
+
+We have three spatial dimensions. So we have three components of position, three components of momentum.
+
+And say if we want to write this down in our big supercomputer,
+
+we can write each of those positions in momentum as a floating point number, 32 bits or eight bytes.
+
+And if I do that math of three times ten to the power 2022, we have six degrees of freedom per molecule, eight bytes.
+
+Well, let's leave off factors of two and just look at orders of magnitude.
+
+We have something like ten to the power 24 bytes of information to write down the state of this system at any point in time in more useful units,
+
+that is ten to the power 12TB, which is 1,000,000,000,000TB.
+
+And that's just one point in time. So it's not something that you would really want to analyse using either Newtonian
+
+mechanics or anything that looks at these individual particles one by one,
+
+especially when we go beyond just that single point in time and then try to predict the dynamics of this system where we
+
+have then ten to the 22 coupled differential equations to solve the basis of all of that position and momentum information.
+
+So statistical mechanics is what we work with to deal with this situation instead of trying to go molecule by molecule.
+
+We will introduce elements of randomness to our analysis in such a way that the large scale behaviour is very accurately predicted,
+
+very rigorously predicted as well, without having to go through this granular analysis of,
+
+well, the kinds of systems that we actually deal with in everyday life.
+
+That's just one cc of water. And. Um, if we want physics to be directly applicable to things like water, the atmosphere,
+
+the climate as a whole, or systems of, uh, solar system, stars, planets, all those big objects.
+
+We need to do something. Well, we need stat.
+
+Mech is what we need. Any questions?
+
+Just about the big picture that we have so far.
+
+Just going to spend a few minutes depending on how long I ramble.
+
+Giving some more motivation for, um, both what statistical mechanics can be used for as well as ways that is, you know,
+
+relevant to our day and age outside this classroom and not just something we're learning about
+
+that people were doing back in the 1800s and early 1900s when this was first being developed.
+
+It's, uh, the generic consequence that statistical mechanics gives us on top of these other pillars of modern physics,
+
+relativity and quantum mechanics is this concept of emergent phenomena.
+
+And we'll get an example of that imminently.
+
+But this more is different. Bit of the title of the module actually comes from a famous article what is 1972?
+
+So that's more than 50 years old now that really solidified this concept of emergent phenomena.
+
+Um, even though people were working with it, working with statistical mechanics for many years before that,
+
+this more is different article, which is a fun read. If you have the time and inclination is basically making the point that exciting
+
+as it is to learn the basic foundations of the universe and how they behave.
+
+If we want to use those to make predictions about our everyday life, then we need different approaches in general.
+
+So statistical mechanics is one step in that bigger picture going up into the emergence of biology,
+
+physiology and then human societies as scientific domains all.
+
+You know, not easily reducible to just the Newtonian mechanics of a bunch of particles bouncing around here is.
+
+A picture of. The very simplest example of emergent phenomena that we can talk about.
+
+It's a series of four snapshots of a drop of dye being dropped into a beaker of water,
+
+and then spreading out to evenly fill and mix with the water that was in that beaker in the first place.
+
+So as time goes on, we see the drop fall in, start to spread out and eventually mixed completely with the water that we have.
+
+And it is obvious to us looking at this, the direction that time is going.
+
+There is an arrow of time which. He is in fact already on this picture.
+
+But overall we can see that if we just had each of these snapshots, we know which direction time is going.
+
+Even though the fundamental interactions through which this droplet of dye is interacting with these water molecules are perceived the same,
+
+both forward and backward in time. In principle,
+
+it is just as possible for dye to start off in this state with position and momentum such that it zoom back
+
+together and shot itself out of the beaker with enough momentum to get back up to this picture first.
+
+But we know that's not what happened. The dye was dropped in and spread out.
+
+It didn't spontaneously come together and pop up this arrow of time.
+
+Maybe not obvious. If you haven't seen relativity quantum mechanics, it's not something that arises out of the fundamental interactions at all.
+
+All of those behave the same if you reverse time and go straight backward.
+
+And it really is an inversion phenomenon coming from having a large number of degrees of freedom,
+
+from having statistical mechanics, that allows us to, well, understand the world as, as we observe it.
+
+So that is a very sort of simple, basic example.
+
+Something a little more topical is some recognitions that have been given to,
+
+you know, ongoing work based on statistical mechanics just in recent years.
+
+So this is the Nobel Prize in Physics in 2021, uh, shared between three people.
+
+So two, uh, Cochrane, Manabe and Klaus Houseman shared half of the Nobel Prize for basically developing climate science as a rigorous predictive
+
+framework that can actually tell you if you have a lot of heating from trapped carbon dioxide in the atmosphere,
+
+what is that going to do to the climate? Should we be worried and what should we do about it?
+
+And if you think about the climate as a huge collection of all sorts of different degrees of freedom,
+
+all interacting with each other, statistical mechanics,
+
+and this concept of more being different is essentially what they were working with, adding a new step onto that ladder,
+
+going from, you know, the dynamics of air and storm systems to the overall climate of our planet.
+
+Um, and that's something that we will be able to do just in this module,
+
+something that we might actually touch on very briefly, is this other portion of the Nobel Prize, which is related, uh,
+
+just given to Giorgio Parisi slightly separately for actually developing new statistical
+
+mechanics systems that exhibit and explain various sorts of behaviour in nature,
+
+what are called glassy dynamics, things that are not quite liquids and not quite solids.
+
+And his work was based on the sort of statistical mechanics models that were
+
+initially introduced more than a century ago to try to explain phenomena like,
+
+uh, ferromagnetism. The development of magnetisation in materials as they cooled turned out if you adjust the setup,
+
+the setting of those module of those models in a way that we can discuss briefly toward the end of this module,
+
+you can reproduce, predict and mathematically analyse that sort of ice glassy behaviour in, well, a Nobel Prize winning way even more recently.
+
+So just a few months ago, there was another Nobel Prize, really, um,
+
+given to work based in statistical mechanics here in a way even more directly related to some of the things we will see toward the end of this module.
+
+So Hopfield and Hinton here, two folks working with um, statistical mechanics module models,
+
+and in particular discovering ways in which these models can not only be used to predict behaviour like ferromagnetism or glassy dynamics,
+
+but actually be used to store, retrieve and manipulate information, which in the 50 or so years since they started working on this,
+
+has formed the basis for what are called neural networks,
+
+artificial intelligence and machine learning, and arise from that mathematical foundation of, well,
+
+these statistical mechanics models that they realised could be manipulated in this way, uh,
+
+giving a deep connection to information theory that I probably should have mentioned just when talking about the arrow of time.
+
+Um, we will fairly soon in this module formalise this kind of fuzzy concept,
+
+the hand-waving qualitative idea of an arrow of time in terms of a mathematical property known as entropy,
+
+which likely you have heard of, possibly in a cultural rather than mathematical way.
+
+Uh, but see how entropy is related to information and, well, this sort of again,
+
+this is something that we won't get to in this module, uh, the application of artificial intelligence,
+
+but that is kind of cutting edge applications of statistical mechanics that you
+
+can appreciate or look into potentially for projects in this or later semesters.
+
+Any questions about any of those before I maybe say some of the things that we will be definitely looking at,
+
+rather than cutting edge things that we won't quite get to.
+
+What I'll do for a few more minutes is just show a few of the kind of things we can expect to reach in the course just of this semester,
+
+kind of starting from very simple basic probability foundations,
+
+applying those to large systems, and using those to connect eventually to physical systems.
+
+So one thing that we will spend some time, some tutorials, uh, analysing and predicting is a property known as the heat capacity of materials.
+
+Hopefully that projector is focussed in a way that this is more or less legible.
+
+The heat capacity is essentially how much the energy of a system changes if you add in a certain amount of heat to it.
+
+Energy and heat are concepts we will have to help introduce and formalise, and make sure we have a mathematical grasp on what that refers to.
+
+But here we have the heat capacity in units of joules a measure of units of energy per Kelvin, measure of units of temperature.
+
+I should say in this module you will work in units where energy and temperature are the same.
+
+These are called natural units. Um, this plot is from a textbook by Dan Schroeder where they put things in more human units.
+
+Uh, room temperature is just below 300 Kelvin. Uh, water freezes at 273.
+
+And these are three solids. The black points are measured, heat capacities are determined experimentally.
+
+And the curves going through many of those points are simple predictions for how the capacity should behave based on a statistical mechanics model.
+
+Um, specifically the what's called the Einstein model of solids, or this is probably the Dubai model, which is a generalisation of that.
+
+We will see both of them and see the functional form, how to derive it,
+
+and also why there's a bit of discrepancy between some of the higher temperature data points and
+
+the behaviour of the statistical mechanics curve that are fit to the data at lower temperatures.
+
+The lower temperature limit is also quite interesting. There's something called the third law of thermodynamics that says this.
+
+Uh, intercepts here must be zero. The heat capacity has to vanish at absolute zero temperature.
+
+We'll get to that later on. If we zoom in two very low temperatures.
+
+So on the previous plot, we had temperatures going up to 400 Kelvin, which includes room temperature.
+
+Here the axes have changed. Horizontal axis is the temperature squared.
+
+So this corresponds to two Kelvin. That corresponds to four Kelvin.
+
+We've also divided out a factor of temperature from the vertical axis.
+
+Um so this is the heat capacity over the temperature in units of Miller joules over Kelvin squared.
+
+As the temperature goes to zero, this ratio c over t goes to some non-zero number.
+
+And then. At nonzero but low temperatures.
+
+It is roughly linear in T squared.
+
+So if we take this factor of T back out again, we are predicting this functional form for these lines,
+
+something that we will be able to predict by looking at the behaviour of all the gases of electrons that
+
+sit on the solid lattices underlying the atomic lattice is underlying each of these different structures.
+
+Bringing the methods of statistical mechanics to bear,
+
+and actually being able to relate these coefficients A and b to other fundamental properties that we can either bring in from other knowledge or,
+
+um, just determine that experimentally.
+
+What is the the properties of this electron gas living within the solid.
+
+So that is some classic applications of statistical mechanics, two sorts of systems that you can measure in your physics laboratory.
+
+One other that I will just flash here before diving into some of the boring logistics for the module, is looking at, in a way, a different extreme.
+
+So you might recognise this plot as the logo of the module on canvas.
+
+And what this is, is the power density of the cosmic microwave background.
+
+Plotted as a function of frequency. What the cosmic microwave background is, is basically radiation that's left over from the Big Bang,
+
+that's hanging out in the empty space in between galaxies that we can observe and measure using telescopes,
+
+either based on the ground or in outer space. Just measure, um, these photons that are coming from the empty space between galaxies.
+
+See how much power all of those photons have as their frequency varies.
+
+So the units here are in ten to the power 11 inverse seconds, which is a hertz.
+
+So that is roughly hundreds of gigahertz on the horizontal axis for that scale.
+
+And the well the solid line here.
+
+Again, the black points are data that were taken by a satellite experiment called the Cosmic Background Explorer.
+
+Cobe, which was operating back in the 90s and was awarded the Nobel Prize essentially for this plot in 2006.
+
+And. The black line is the behaviour that we will derive and predict from statistical mechanics able to fit to Kobe's data.
+
+The error bars are smaller than the the black squares there,
+
+and essentially the only free parameter that we have is the temperature of this cosmic microwave background radiation,
+
+which comes out to be approximately 2.7 Kelvin, which is going to be, you know, -290 centigrade, um, in those units.
+
+And of course, in the 35 years since this experiment, there have been many more accurate measurements of the cosmic microwave background.
+
+This provides some of the strongest evidence for the existence of properties of dark matter in the universe.
+
+Um, we will see that in passing, but the fact that we will be able to derive in this module the very simple form for this black line,
+
+uh, from the principles of statistical mechanics, is something to look forward to.
+
+So any questions about any of those kind of motivational, uh, you know,
+
+looks at recent achievements or targets for what we will be doing coming up in this module.
+
+And not seeing any. Let's just skip over to the canvas site and take a look through.
+
+I don't care about that.
+
+Take a look through some of what we have going on, uh, most of which is going to be a fairly standard set of lectures, tutorials.
+
+Um, all in this room, which I don't think has ever happened to me before.
+
+Rather than having to jump between different rooms from day to day.
+
+But obviously we are in here on Monday afternoon, back 11 to 1 on Wednesday, and then the tutorial is ten on Thursday.
+
+What is novel for this module compared to many others, is that for three weeks in February, so not this week, but next week.
+
+In the two weeks after that, in the sixth, 13th and 20th of February, the tutorials will be replaced by Computer labs.
+
+Uh, over in hub 502, the ground floor PC centre in there.
+
+And that is to.
+
+Give you an opportunity to ask for help with one of the assessments that is coming up, which is going to be a computer based assignment that, um,
+
+will show some of the principles of how a very regular,
+
+predictable behaviour emerges from these systems with a large number of degrees of freedom and elements of randomness.
+
+So don't panic if you have not done any programming before.
+
+Uh uh, you are not expected to have any background or any, um, affinity for programming and everything you need.
+
+We will go through both in this week's tutorial here, as well as those three computer lab meetings.
+
+So we will talk through, you know, what you need, what the assignment involves.
+
+And you will also have time just to work on it with me around to give you any assistance you may need.
+
+So that's a more general principle. Um.
+
+In terms of. Asking for assistance, you should always feel free to do so.
+
+Lots of ways you can come to office hours. Those will be immediately after the Monday lecture and Thursday tutorial in my office,
+
+which is over in the theoretical physics wing that faces the Guild of Students.
+
+We have the discussion board on canvas. All of the topics here should be, um, set up so that you can post anonymously if you want.
+
+You don't need to, but that sometimes can help encourage the shyer students to to speak up.
+
+And you can reach me by by email at any time, and I'll try to respond to those promptly.
+
+So should also say if you can't make those to regular office hours,
+
+you know those office hours or the time that is set aside where math 3 to 7 is front of the queue for you know what will be going on.
+
+You're welcome to stop by my office any other time. Uh, if I'm in, if I'm available, I'm happy to meet with you.
+
+It's not so often that I am in an available. So you can make an appointment, uh, online for office hours, whenever I have space in my calendar.
+
+And that can give you some reassurance that I'll be able to to meet with you when you come by.
+
+I should say, having talked about the computer assignment, I mentioned that briefly.
+
+It is available at once. It was released, finished the internal checks over the weekend.
+
+We will talk through it a bit over the coming weeks. Obviously it's not due until the 21st of February.
+
+You will see it looks fairly long. Again, don't panic.
+
+A lot of that is some background information and detailed instructions.
+
+So in this sense the the length of the assignment.
+
+Which spreads over ten pages, is, you know, something that is meant to help you navigate through it quickly and efficiently.
+
+Um, rather than saying that there will be an enormous amount to do, it is still wise to get started with that well in advance.
+
+We will have check ins with that computer lab every week.
+
+You know, if you can get through the first three of the five exercises in the assignment by the second computer lab on the 13th,
+
+you'll be in good shape to wrap things up in the final week before it is due.
+
+And we'll say more about that. Uh, when we go into the tutorial and the computer lab itself, unless there are immediate questions, um,
+
+about it here, there will also be two more traditional homework assignments due in March and April,
+
+not the deadlines that I requested, but, um, these have been managed within the Department of Mathematical Sciences at least,
+
+so that clashes with other assessments and exams will be minimised.
+
+Those of you who are also taking, uh, physics modules,
+
+you don't necessarily benefit as much from that process as everything is done just within one department at a time, but hopefully, um.
+
+This central coordination will help keep those assessments from.
+
+Being too onerous and keep things from all piling up in certain weeks of the term.
+
+So that gets us really to. The outline of the syllabus and the overall learning outcomes that we will be targeting.
+
+What you will be able to do by the end of this module.
+
+So because this is what we will actually be going through, I won't say too much about it apart from it.
+
+Still, the big picture in these ten units that we have.
+
+The overall organisation is in terms of the concept of statistical ensembles, which we will introduce just in unit two.
+
+That is also some obscure terminology from the early 1900s.
+
+But a statistical ensemble is an example of a probability space that we will formulate
+
+and set up in our unit one on the probability foundations and central limit theorem.
+
+But essentially, the statistical ensemble is a way of formalising these statistical mechanics systems,
+
+a large number of degrees of freedom, an element of randomness,
+
+and specifically focusing on collections of particles that are, uh, basically that are left to revolve in time,
+
+subject to certain physical constraints like conservation of energy or conservation of charge.
+
+There are three main ensembles that we look at in this module what are called micro canonical, canonical, and grand canonical.
+
+You will see the differences between all of those and also look at extended applications of especially all three of those setups,
+
+two physical systems. For the canonical ensemble, we look at ideal gases and their use in thermodynamic cycles,
+
+like the diesel cycle or the auto cycle that describes a petrol engine for the grand canonical ensemble.
+
+We will focus on quantum gases.
+
+So generalising these ideal classical gases that are based on Newton's laws to ideal gas is based on the laws of quantum mechanics like programming.
+
+No background in quantum physics is assumed. Essentially, we will just adopt the, um,
+
+the details of quantum mechanics as an ansatz and see what that gives us in the statistical mechanics setting.
+
+Um. So you don't need to have seen anything about quantum mechanics.
+
+You won't necessarily learn anything about quantum mechanics in this system,
+
+apart from, um, a few tidbits, like the difference between, uh, bosons and fermions.
+
+But all of all that you need will be provided.
+
+There are no prerequisites beyond the sort of year one mathematics modules.
+
+So just looking through a few more points in the canvas site, the syllabus gives the deadlines for those three assignments.
+
+Only one is up now, the other two will be up in February and March.
+
+Once they are set up. We've looked at the discussions and in the modules.
+
+Some information has started to go up, including some extended logistical information that won't talk through,
+
+except basically to note that it is there. Some of it we've already reviewed in the past ten minutes.
+
+And one thing I will say is.
+
+While there is no expected background for programming or quantum physics, there are some things I expect you will have seen.
+
+The standard deviation, the binomial coefficient, Gaussian integration.
+
+Um, some students last year really struggled with Gaussian integrals.
+
+So there is in the modules right now some extra practice on those hopefully.
+
+As a reminder, um, if you really haven't seen Gaussian integrals at all in previous modules,
+
+do let me know and we will, uh, cover it, squeeze that in if necessary, but I believe it is something that is covered.
+
+And there's also some of the usual, uh, advice about, you know, how to get the most out of this module and, and ensure you succeed.
+
+A lot of it, I suspect, is going to be very familiar to to all of you and your third or fourth year.
+
+It's good to come to class, even if you feel that you can get all the information you need off of the,
+
+um, the gapped lecture notes that are showing up in the modules.
+
+Um, coming to class, we'll give you both a regular check in to make sure that you're not overlooking anything.
+
+It gives you the opportunity to ask questions. If the module is going too slow and you're bored with it.
+
+You can ask questions about generalisations, extensions, things that I expected to gloss over or take as given.
+
+Um, all of that is an option for you, but only if you are here to take advantage of it.
+
+In the lecture notes that we, uh. As we get into them, you will see that there are some gaps.
+
+These are one of the ways that you can practice the, um, mathematical content of the module.
+
+They're going to be three main ways to do that practice and prepare for the exam coming up in May.
+
+The filling of these gaps are the fairly routine derivations straightforward low level,
+
+hopefully things that you will be able to understand and fill in without any difficulty.
+
+Uh, in our tutorials every week there will be bigger activities that will be introduced and left for you to to work on over the coming week,
+
+then reviewed at the start of the next tutorial. And those and the homework assignments are going to be the sort of more challenging, um.
+
+More detailed investigations and analyses and derivations, going beyond what would be asked on an exam question.
+
+Between the two of those, you have the range of possibilities between the very straightforward,
+
+simple stuff and the more challenging, more detailed, uh, derivations.
+
+There are also some sample exams that you may already have seen, either on the canvas page or in the department's repository,
+
+and those will show you the actual type of questions that will be on the exam itself.
+
+So working on all of those levels of, um,
+
+ways to practice the content of the module are going to help you prepare for that and then ask questions in class on the discussion board.
+
+Office hours by email, however you prefer to do so if you have any confusions, you're not the only one, so ask a question about it.
+
+If you want to know ways in which the material goes beyond what we are covering in this more.
+
+You know, building from the ground up. Style of module.
+
+You are definitely welcome to ask about that. There are all sorts of applications of statistical mechanics that in fact include.
+
+Now, my research on quantum field theory using numerical methods relies on statistical mechanics at the foundational level.
+
+So that I think, is all of the usual kind of day one stuff for the module.
+
+We've done the exciting big picture, we've done the boring logistics.
+
+Any questions about any of that before we start going into, you know, some of the actual contents to give you a feel for how that's going to go?
+
+And I forgot to. Minimise that scam, so it has to be rebooted whenever I switch between.
+
+The doc cam and any other program on here.
+
+And it tries to refocus. Hopefully it does better than that.
+
+As a segue from logistics to just the start of our content.
+
+You know this module, every module is different, but this one in particular is going to focus on building up a mathematical framework.
+
+Okay. That's more like it. Can I get in there.
+
+So what we are going to do our work with a few, um, particular systems in great level of detail.
+
+So there's not going to be kind of a steady stream of quick and easy derivations or calculations that will be kind of one and done type of things.
+
+And we will pass through the derivations that we do will be building up the toolbox forces,
+
+a sort of mechanics of the basis of relatively simple examples that are then applicable to, uh, more interesting systems,
+
+especially once we introduce interacting statistical systems and go beyond the idealisation that all of our
+
+degrees of freedom are just sort of floating on their own and don't know anything about any of the others.
+
+So that hopefully gives you some expectations for the type of, uh, dynamics we'll be seeing in the lectures and in the lecture notes.
+
+Um, that may differ from especially second year modules where there are lots of sort of bite sized,
+
+one line calculations that you can grind through just to practice what we will be doing.
+
+Everything here is more larger scale, uh, deeper, more intense,
+
+and we will only have the time and inclination to go through a few examples that will build up those techniques, at least in the lectures.
+
+And then some of those practice problems that we'll be designing will give you suggestions or opportunities for taking those further.
+
+So that was. A way to stall for time while.
+
+Try to get this functioning. Let me know at any time if there are issues.
+
+Seeing what I am writing on the doc can we can switch to the board as well.
+
+Though students in years past have appreciated having these paper notes that can be scanned and uploaded after the lectures.
+
+Um, I may ask about this in the week three mini questionnaire.
+
+The first, while the foundation for what we will be doing with back is a bit more formal probability theory,
+
+kind of more formal than I as a theoretical physicist tend to work with mathematically what a sequence of
+
+definitions that will build up two concepts called the law of large numbers and the central limit theorem.
+
+Probably both of these you may have seen in the past.
+
+Quite likely in different ways and with different focuses.
+
+We will use these just as a way to start establishing how a very smooth and stable large scale behaviour can emerge from random variables.
+
+Once we have a very large number of them.
+
+So this. Goes to.
+
+Some of the, um, things we can consider related to just the large scale, uh,
+
+macroscopic behaviour emerging from stochastic, random, probabilistic, um, microscopic dynamics.
+
+And it reminds me that I forgot to cycle back to this little prompt that I wanted to have on the screen as you were coming in,
+
+but didn't quite get to until we were ready to go, that there's evidence for the existence of atoms rather than materials.
+
+Just being continuous and infinitely differentiable did actually arise from statistical mechanics, and in particular,
+
+some of the strongest evidence for atoms that really started to convince people that
+
+atoms actually exist well before they could be seen with scanning tunnelling microscopes,
+
+was based on this sort of statistical mechanics diffusion, and in particular what's called Brownian motion, which was something that was observed.
+
+Grains of pollen, um, in a fluid would move about randomly in a way that Albert Einstein in 1905 was able to predict based on,
+
+well, this is statistical mechanics, apply statistical mechanics,
+
+predict aspects of Brownian motion that were then experimentally confirmed by a fellow named Perron just a few years later,
+
+in 1908, that then went to a 1926 Nobel Prize, I believe.
+
+So we will cycle back around to.
+
+Um, some of these arguments how microscopic behaviour can be determined from the statistical mechanics of large scale behaviour later in the term.
+
+But, uh. For now, I see that we're actually running out of time to do too much with these probability foundations.
+
+But we will just start with the beginning of our series of definitions to set
+
+the scene as a kind of more formal mathematical way of thinking about this,
+
+we will work with our starting point being random experiments are just.
+
+Defined to be something that we do or set up and then observe.
+
+So we will call this experiment a script E.
+
+Basically, we set up something and observe the state of the universe after carrying out whatever this experiment may be.
+
+So a simple example could be flipping a coin which has some element of randomness.
+
+It's a nice example that I like to have to hang these abstract definitions off of.
+
+We flip a coin, then the universe comes out in some state, which is the result of this random experiment.
+
+We measure the state of the universe, and we'll call that omega lowercase Greek letter that looks like a w.
+
+So flipping a coin we have, not only did the coin land heads up or tails up, but also the question of where did it land?
+
+When did it land? What was the temperature? What was the phase of the moon?
+
+The whole information. The whole state of the universe. After doing that random experiment.
+
+And where we will stop today is.
+
+Our capital Omega, which is a set that contains all possible lowercase omega.
+
+Well, what it says on the tin. It is the set of all states that the universe can adopt.
+
+After we carry out the random experiment that gives us the state of interest.
+
+And I have run out of time to go beyond this, so it's not too much to start off with today.
+
+We will do much more on Wednesday. Last chance for questions today about the logistics most likely.
+
+Otherwise we will get to more of this.
+
+A probability foundation and building up to more interesting stuff when we return on Wednesday.
+
+And not seeing immediate questions, shut down that recording.
+
