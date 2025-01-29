@@ -1,0 +1,95 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, margin=2.5 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisunit}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging
+%\usepackage[tagged]{accessibility}
+\hypersetup {
+  pdfauthor={David Schaich},
+  pdftitle={StatMech Tutorial Activity},
+}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\Rbb}{\ensuremath{\mathbb R} }
+\newcommand{\De}{\ensuremath{\Delta} }
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisunit}{MATH327 Tutorial (Probabilities)}
+\newcommand{\moddate}{Last modified 29 Jan.~2025}
+\begin{center}
+  {\Large \textbf{MATH327: StatMech and Thermo, Spring 2025}} \\[12 pt]
+  {\Large \textbf{Tutorial problem \ --- \ Probabilities}} \\[24 pt]
+\end{center}
+
+This activity will be introduced in our 30 January tutorial, and while we'll probably review the first few parts that same day, you'll have until our 5 February lecture to work on the final part.
+We'll begin the tutorial by introducing the roulette wheel (page 13 of the lecture notes), then we'll consider a simple game of roulette in which we just place bets on the colour of the pocket where the ball ends up (assuming a fair wheel).
+If we bet correctly we get back twice the money we put in; otherwise we lose our money.
+We define our (potentially negative) \textit{gain} to be the amount we receive minus the amount we spend on bets. \\[-20 pt]
+
+\begin{itemize}
+  \item Suppose we place \textsterling5 bets on `black' for each of $N$ spins of the roulette wheel.
+        What are the probabilities and gains of winning and of losing for any single one of those spins?
+        Letting $W = 0, \cdots, N$ be the number of spins where we win, what is our total gain $G_W$ as a function of $(N, W)$? \\[8 pt]
+  \item The number of different ways we could win $W$ times out of $N$ attempts (in any order) is given by the binomial coefficient
+        \begin{equation*}
+          \binom{N}{W} = \frac{N!}{W! \; (N - W)!},
+        \end{equation*}
+        with $0! = 1$.
+        Setting $N = 5$, what are the six probabilities $p_0$ through $p_5$ that we win $W = 0, \cdots, 5$ times?
+        What is the general $p_W$ for any $(N, W)$? \\[8 pt]
+  \item Now let's apply the central limit theorem.
+        What are the mean gain and its variance for a single spin of the wheel?
+        What is the resulting probability distribution $p(g)$ given by the central limit theorem for the gain $g \in \Rbb$ after $N \gg 1$ spins? \\[8 pt]
+  \item In order to compare the \textbf{distribution} $p(g)$ against the probabilities $p_W$ considered above, we need to integrate $p(g)$ over appropriate intervals as discussed in class (and on page 16 of the lecture notes).
+        Natural intervals to consider are
+        \begin{equation*}
+          P_{\text{integ}}(G_W) \equiv \int_{G_W - \De G / 2}^{G_W + \De G / 2} p(g) \; dg,
+        \end{equation*}
+        where $\De G = G_{W + 1} - G_W$ is a constant you can read off from your work so far.
+        These numerical integrations are not convenient to do by hand, but can easily be performed by Maple, Python, MATLAB, Mathematica, etc.
+        Alternatively, we can simplify further by approximating $p(g)$ as a constant within each interval, which would give us
+        \begin{equation*}
+          P_{\text{const}}(G_W) \equiv p(G_W) \; \De G.
+        \end{equation*}
+        Keeping $N = 5$, what are the six $P_{\text{integ}}$ and the six $P_{\text{const}}$?
+        How do they compare to the exact $p_W$?
+        How does the comparison change as $N$ increases?
+\end{itemize}
+
+\end{document}
+% ------------------------------------------------------------------
