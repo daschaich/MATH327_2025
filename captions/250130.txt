@@ -1,0 +1,857 @@
+1
+00:00:01,110 --> 00:00:10,559
+[Auto-generated transcript. Edits may have been applied for clarity.]
+I'll try that again and hopefully have audio on the recording this time and see what would be even better is yes,
+
+2
+00:00:10,560 --> 00:00:24,500
+if the stock cam is now working a little too late for this to be on the screen as you came in, so might as well just jump into things at this point.
+
+3
+00:00:24,510 --> 00:00:39,240
+Sorry to waste a few minutes with all that set up, but before we get underway with the sort of tutorial problem that we'll talk about briefly,
+
+4
+00:00:39,690 --> 00:00:47,159
+these tutorials are a great opportunity for you to ask any questions that have accumulated over the course of the week,
+
+5
+00:00:47,160 --> 00:00:50,100
+or the course of the term as we get further on. So.
+
+6
+00:00:52,140 --> 00:01:01,290
+I will just pause before getting underway to see if there is anything any of you want to ask about.
+
+7
+00:01:02,250 --> 00:01:06,450
+And while you consider.
+
+8
+00:01:09,000 --> 00:01:15,380
+Put up the. Six digit code for today.
+
+9
+00:01:19,020 --> 00:01:25,590
+For those of you who might not be able to see the board that well, 41 9714.
+
+10
+00:01:27,630 --> 00:01:34,240
+And. Not seeing any questions.
+
+11
+00:01:34,690 --> 00:01:44,139
+Maybe I will just say a bit about how I kind of planned the tutorials for this module,
+
+12
+00:01:44,140 --> 00:01:47,620
+which may differ from those in other modules or in earlier years.
+
+13
+00:01:47,620 --> 00:01:50,829
+So sometimes you'll get tutorial sheets at the start of the week,
+
+14
+00:01:50,830 --> 00:01:55,660
+and then come into the tutorial at the end and just work through everything live there.
+
+15
+00:01:56,170 --> 00:02:09,520
+Um, it's the same or a similar sort of idea, except that the introduction of these tutorial problems is going to be done one week,
+
+16
+00:02:09,520 --> 00:02:14,620
+and then you can take them away and have the following week essentially to work on those with, of course,
+
+17
+00:02:14,620 --> 00:02:19,330
+the complication that the next three weeks the tutorials are replaced by those computer labs.
+
+18
+00:02:19,660 --> 00:02:26,890
+So we will revisit this particular problem and wrap it up in next Wednesday's lecture.
+
+19
+00:02:28,930 --> 00:02:35,680
+Um, and then after the computer labs and the computer assignments are all done, we'll get into a more regular pattern.
+
+20
+00:02:36,070 --> 00:02:42,790
+Start each tutorial reviewing the problem from the previous week, and then wrap it up by introducing some new problem that,
+
+21
+00:02:43,120 --> 00:02:51,220
+while connected to all the the lecture materials, has a little add on or additions to it that we can go through.
+
+22
+00:02:51,490 --> 00:03:04,060
+So. To start doing that, the plan for today is to look at a particular problem that that gets back on the screen.
+
+23
+00:03:04,600 --> 00:03:17,070
+There is. An example of the random walks that we just managed to introduce at the end of yesterday's lecture.
+
+24
+00:03:18,030 --> 00:03:26,190
+And this is one of those examples where the walk is not actually physically moving in a position space,
+
+25
+00:03:26,700 --> 00:03:32,190
+but considering a random walk in some more abstract money space.
+
+26
+00:03:33,660 --> 00:03:45,000
+Um, where as you can well guess from this picture, or see if you've looked at the tutorial problem already going to be talking about.
+
+27
+00:03:47,760 --> 00:03:55,049
+A game of roulette, and just a simple example of ways that this can be treated as a random walk.
+
+28
+00:03:55,050 --> 00:04:07,230
+And we'll predict the expected, uh, results of gambling after if you do a lot of rounds of placing bets and, um, either winning or losing.
+
+29
+00:04:07,740 --> 00:04:15,990
+And in this example, we will look at or compare three different ways of computing those probabilities.
+
+30
+00:04:19,500 --> 00:04:21,750
+And see how they do compare.
+
+31
+00:04:30,420 --> 00:04:41,790
+So one of these will just be a direct, brute force computation of all of the possibilities with their associated wins and losses.
+
+32
+00:04:43,080 --> 00:04:51,420
+And then we can compare that to the central limit theorem in the form that we encountered yesterday.
+
+33
+00:04:52,470 --> 00:05:02,820
+This will require. Extracting probabilities from the probability distribution that the central limit theorem gives.
+
+34
+00:05:03,300 --> 00:05:08,970
+And that in turn involves some numerical integration, which.
+
+35
+00:05:09,690 --> 00:05:15,989
+There are many ways you can do this, but it might be something most convenient for you to do on your own,
+
+36
+00:05:15,990 --> 00:05:24,930
+rather than live here in this room to ten something that can build off of that integration.
+
+37
+00:05:24,960 --> 00:05:31,530
+Numerical integration is actually a way of simplifying it by introducing a further approximation.
+
+38
+00:05:31,770 --> 00:05:35,160
+So this numerical integration from the central limit theorem.
+
+39
+00:05:38,400 --> 00:05:41,910
+Simplified. Um.
+
+40
+00:05:44,790 --> 00:05:56,079
+In such a way that. You could extract some results without needing, you know, a program like Maple,
+
+41
+00:05:56,080 --> 00:06:02,700
+Matlab, Python to do numerical integration and then see how all three of these align.
+
+42
+00:06:03,880 --> 00:06:11,620
+Um, depending on the number of spins with the particular setup that that we can imagine introduce.
+
+43
+00:06:11,620 --> 00:06:16,270
+And we can also change the details of the game and see.
+
+44
+00:06:17,890 --> 00:06:29,440
+The consequences of that. So just to set up the scheme, this is a kind of cartoonish picture here of a roulette table.
+
+45
+00:06:29,770 --> 00:06:39,160
+So some of the key data for what are going on here is that there are 37 pockets.
+
+46
+00:06:40,630 --> 00:06:46,600
+And a game proceeds by spinning this wheel, spinning a ball that rolls in the opposite direction.
+
+47
+00:06:47,020 --> 00:06:54,160
+Friction removes energy from the system, and eventually it slows down and the ball falls into one of those 37 pockets.
+
+48
+00:06:55,030 --> 00:07:00,010
+You can see they're labelled from zero up to 36, which is right there.
+
+49
+00:07:00,550 --> 00:07:05,590
+And you can also see that they have different colours associated with the labels.
+
+50
+00:07:06,040 --> 00:07:10,150
+18 of these pockets are red, 18 are black.
+
+51
+00:07:11,200 --> 00:07:15,910
+And there is that one special green pocket at zero.
+
+52
+00:07:17,230 --> 00:07:33,700
+So in the language of the probability spaces that we've introduced this week, we can think of our experiment that we are doing as a spin of the wheel.
+
+53
+00:07:36,460 --> 00:07:45,490
+Where the measurement performed on the resulting state of the universe is just to read off the.
+
+54
+00:07:47,110 --> 00:07:55,660
+Pocket that the ball falls in. We get both a number and the corresponding colour that's associated with that number.
+
+55
+00:07:56,200 --> 00:08:11,320
+And from this experiment and measurements, we get a fairly straightforward outcome space that is almost identical to rolling a six sided die,
+
+56
+00:08:11,920 --> 00:08:14,889
+just going up to 36 and starting at zero,
+
+57
+00:08:14,890 --> 00:08:25,090
+rather than doing one through six each of those numbers with the corresponding colour that we can either include in our measurement in outcome space,
+
+58
+00:08:25,090 --> 00:08:29,890
+or ignore as part of the extra information in the universe that we're not interested in.
+
+59
+00:08:33,280 --> 00:08:45,520
+So similarly, if we have a fair wheel so that the probability of ending up in any one of these pockets is equal,
+
+60
+00:08:46,210 --> 00:08:51,490
+you can you can just shout out, this is a tutorial, I shouldn't go through all of it.
+
+61
+00:08:51,490 --> 00:08:55,150
+That, um, the joint probability.
+
+62
+00:08:57,280 --> 00:08:59,980
+I shouldn't call it joint. The probability for.
+
+63
+00:09:02,800 --> 00:09:13,390
+Ending up in any one of those pockets is just going to be computed with our our usual approach of setting the event space equal to the outcome space.
+
+64
+00:09:13,810 --> 00:09:20,620
+So our events of interest are, um, the ball ending up in one and only one of these pockets,
+
+65
+00:09:21,010 --> 00:09:28,180
+mutually exclusive and complete set of possibilities so that the overall probability.
+
+66
+00:09:32,520 --> 00:09:37,530
+Using the properties of the probability breaks up into.
+
+67
+00:09:39,670 --> 00:09:46,780
+The sum of these individual probabilities that are all equal to each other.
+
+68
+00:09:47,650 --> 00:09:54,000
+This what we mean by having a fair wheel, and that overall probability has to be 100%.
+
+69
+00:09:54,010 --> 00:09:58,990
+The ball ends up in some pocket after each measurement.
+
+70
+00:10:00,010 --> 00:10:03,790
+If it were to fly off the table and bounce away,
+
+71
+00:10:03,790 --> 00:10:10,420
+that's an example where the measurement would filter out that experiment as though it never happened in our numerical analysis.
+
+72
+00:10:11,590 --> 00:10:18,100
+So we end up with a probability of one over 37 for the ball landing in each pocket.
+
+73
+00:10:18,100 --> 00:10:25,360
+Not a surprise. The same as rolling a fair die, just with more possibilities than the six sides of a die.
+
+74
+00:10:27,760 --> 00:10:43,120
+So the. Specific game that this probability, this tutorial problem is going to ask you to consider as well.
+
+75
+00:10:43,720 --> 00:10:51,730
+Write it down separately, rather than trying to have you read that, uh, sheet on the screen.
+
+76
+00:10:53,560 --> 00:10:56,890
+So just to set up a simple example to consider.
+
+77
+00:10:59,560 --> 00:11:05,400
+We look at a slightly different. Event space.
+
+78
+00:11:05,400 --> 00:11:11,040
+So we select instead of having every single pocket as a separate event.
+
+79
+00:11:11,520 --> 00:11:20,970
+Look at three possibilities of. The ball ending up in either any of the red pockets.
+
+80
+00:11:21,870 --> 00:11:28,830
+Any of the black pockets or that one green pocket. So all of these events are mutually exclusive.
+
+81
+00:11:29,730 --> 00:11:34,380
+One will happen with any experiment and measurements. No and no other.
+
+82
+00:11:34,770 --> 00:11:38,280
+And between them they cover the entire space of possibilities.
+
+83
+00:11:38,280 --> 00:11:47,160
+After this measurement. And the game that you will play is sort of as simple as we can get.
+
+84
+00:11:47,670 --> 00:11:55,050
+Place some bet on black. Say it's £5 to keep from bankrupting ourselves.
+
+85
+00:11:58,030 --> 00:12:02,380
+And if so, we win this bet.
+
+86
+00:12:02,650 --> 00:12:07,780
+If the roulette spin comes out with the ball and any of the 18 black pockets.
+
+87
+00:12:08,410 --> 00:12:19,030
+And in that case, we will get back double what we put in. So ten from that spin with some probability of winning.
+
+88
+00:12:21,070 --> 00:12:28,610
+If the ball ends up in any other pocket, red or green, then we just lose the bet.
+
+89
+00:12:28,630 --> 00:12:31,630
+We get back nothing with some probability.
+
+90
+00:12:34,400 --> 00:12:48,230
+Of losing and. The random variable that we will analyse is what we can call the gain g.
+
+91
+00:12:48,410 --> 00:12:54,580
+So that is. The money we get back from the betting.
+
+92
+00:12:55,150 --> 00:12:58,990
+Minus the money we have to spend in order to play the game.
+
+93
+00:13:01,520 --> 00:13:04,790
+Uh. Um. Which.
+
+94
+00:13:08,050 --> 00:13:14,330
+I will emphasise this gain can be negative. So whenever the gain is negative, it's a loss.
+
+95
+00:13:14,460 --> 00:13:16,180
+We'll just use the same word for it.
+
+96
+00:13:16,540 --> 00:13:25,720
+And in general, with any gambling set up, the the skein with the expectation value of the gain will be negative by construction.
+
+97
+00:13:26,230 --> 00:13:30,070
+That is how gambling companies make their money. So.
+
+98
+00:13:32,660 --> 00:13:36,979
+You know, predicting the gain as a function of, say,
+
+99
+00:13:36,980 --> 00:13:44,629
+the number of spins that we do in total and within those the number of the subset of those end
+
+100
+00:13:44,630 --> 00:13:53,240
+spins where we win is another aspect of the problem that I should just stop talking about and,
+
+101
+00:13:53,240 --> 00:14:00,710
+and leave to you to work through for the next 5 or 10 minutes, just as one.
+
+102
+00:14:02,780 --> 00:14:10,080
+Final. Well, I'll check if, uh, the basic setup of roulette and this game is making sense.
+
+103
+00:14:10,110 --> 00:14:13,669
+I'll put the tutorial problem up on the screen.
+
+104
+00:14:13,670 --> 00:14:18,770
+And I also have printed out just a few copies if anyone wants one in paper.
+
+105
+00:14:18,770 --> 00:14:27,440
+We are discouraged from. Doing this because often not too not so many students actually want copies.
+
+106
+00:14:28,580 --> 00:14:32,600
+Um, I'll just leave the pile up here. Don't need to pass it around.
+
+107
+00:14:33,110 --> 00:14:37,430
+There's not, uh, not enough for everyone. I can print more if you want.
+
+108
+00:14:38,270 --> 00:14:41,720
+And I will also say that. Oops, that's the wrong window.
+
+109
+00:14:42,950 --> 00:14:53,650
+Um. The tutorial problem is up on canvas in the modules page, just there under unit one.
+
+110
+00:14:54,910 --> 00:15:01,180
+And one other logistical note that I want to make sure that everyone is aware of.
+
+111
+00:15:01,180 --> 00:15:09,010
+Here is that of these projected notes that always crash whenever I switch away from that window,
+
+112
+00:15:09,670 --> 00:15:13,020
+those get scanned after every lecture and also go up on canvas.
+
+113
+00:15:13,030 --> 00:15:25,239
+And if you look into them, you will see that the gaps in the lecture note PDFs are being highlighted here when they are filled in the lecture.
+
+114
+00:15:25,240 --> 00:15:31,750
+So if you ever wanted to want to check how a gap is filled or have any concerns about it,
+
+115
+00:15:31,750 --> 00:15:39,490
+you can do that through the corresponding scanned lecture notes through this modules page.
+
+116
+00:15:45,250 --> 00:15:51,260
+So. That is as far in as I can zoom within canvas.
+
+117
+00:15:52,400 --> 00:15:59,950
+Just talk through the the four little parts to this exercise, I think, three of which are going to be pretty quick and easy.
+
+118
+00:15:59,960 --> 00:16:04,190
+We can talk through them in ten minutes or so.
+
+119
+00:16:04,580 --> 00:16:09,260
+The last one is where some numerical integration is needed.
+
+120
+00:16:09,470 --> 00:16:16,700
+We'll save that for review next week. But you know replacing £5 bets and.
+
+121
+00:16:19,190 --> 00:16:23,629
+Want to find the probabilities and gains of winning or losing each bet,
+
+122
+00:16:23,630 --> 00:16:35,480
+and the total gain as a function of the number of spins that we do and the number where we win, which can be anywhere from zero to every single spin.
+
+123
+00:16:35,480 --> 00:16:46,590
+And. From that information, we can construct the general probability for each of those gains.
+
+124
+00:16:46,670 --> 00:16:50,299
+You know, how many times do we win out of the total number of spins?
+
+125
+00:16:50,300 --> 00:16:55,400
+This is the binomial coefficient. Choosing wins out of n spins.
+
+126
+00:16:56,450 --> 00:17:02,270
+Um, in combination with the single spin probabilities from the first part,
+
+127
+00:17:03,020 --> 00:17:09,590
+and then the single spin probabilities feed into the mean and variance that together.
+
+128
+00:17:10,670 --> 00:17:18,080
+Um. Approximate or should approximate our gain as a probability distribution.
+
+129
+00:17:19,130 --> 00:17:22,430
+In the limit where there are where many spins are done.
+
+130
+00:17:22,550 --> 00:17:24,350
+This is through that central limit theorem.
+
+131
+00:17:25,250 --> 00:17:34,880
+And I'll stop talking unless there are questions, and give you some time to to work through at least the first three parts.
+
+132
+00:17:36,040 --> 00:17:45,580
+Of this, uh, this problem and pause the recording if nothing interesting is going on.
+
+133
+00:17:52,726 --> 00:18:04,216
+So we've got about ten minutes left for today. Probably the last chance to touch you in about at least the first few parts of this exercise.
+
+134
+00:18:04,756 --> 00:18:12,796
+Hopefully the beginning of it is a fairly straightforward ramp up getting, say, the probabilities of winning and losing.
+
+135
+00:18:13,426 --> 00:18:22,466
+What what are you seeing for those? When it's 1837.
+
+136
+00:18:24,906 --> 00:18:30,126
+That's awesome. Yeah. So it's a Ferris wheel.
+
+137
+00:18:30,246 --> 00:18:37,686
+Each pocket has the one over 37 that came up in in the introduction of the exercise.
+
+138
+00:18:37,986 --> 00:18:40,386
+There are 18 black pockets. There we go.
+
+139
+00:18:40,926 --> 00:18:49,596
+And then we can either count the red and green pockets, or just use the trick of noting that we either win or lose.
+
+140
+00:18:50,076 --> 00:18:53,136
+And 37 -18 leaves the 19.
+
+141
+00:18:54,516 --> 00:18:59,316
+The gain when we win just a single spin.
+
+142
+00:19:03,866 --> 00:19:12,746
+Shout it out. Plus five.
+
+143
+00:19:13,406 --> 00:19:20,876
+It is minus five. We always have to spend £5 with every spin.
+
+144
+00:19:21,356 --> 00:19:24,376
+Winning gets back ten to get that up to plus five.
+
+145
+00:19:24,386 --> 00:19:30,746
+And so the general form that we could have written down and then plugged in and equals
+
+146
+00:19:30,746 --> 00:19:38,006
+one and all is either 0 or 1 would be that minus five for every spin that gets played.
+
+147
+00:19:38,486 --> 00:19:42,296
+And then plus ten for every win.
+
+148
+00:19:42,326 --> 00:19:47,666
+And we can check that from the general form. We get the single spin wins and losses.
+
+149
+00:19:47,966 --> 00:19:54,625
+Happy so far. I think that's the the first, uh, first part done.
+
+150
+00:19:54,626 --> 00:20:03,976
+And the second one is looking at the overall probabilities for various total gains after more than one spin.
+
+151
+00:20:04,016 --> 00:20:10,856
+So I think five was the example. That is something that can be done with without too much inconvenience with pen and paper.
+
+152
+00:20:11,966 --> 00:20:21,896
+Um, and here also it is useful to write down the general expression and then plug in the numbers to get specific possibilities.
+
+153
+00:20:22,736 --> 00:20:29,276
+And here, because the order in which the winning spins occur doesn't matter,
+
+154
+00:20:29,816 --> 00:20:37,286
+the overall probability has to be supplemented or multiplied by that binomial coefficient.
+
+155
+00:20:37,296 --> 00:20:42,926
+Counting the number of ways we can get w wins out of n spins.
+
+156
+00:20:45,136 --> 00:20:50,356
+So this is a little more complicated expression for the probability.
+
+157
+00:20:50,806 --> 00:21:01,846
+But you know, you're sort of given that there's an excuse factor for the number of ways that we can have winds out of and spins.
+
+158
+00:21:01,846 --> 00:21:05,416
+And what else comes into this overall probability.
+
+159
+00:21:10,596 --> 00:21:14,976
+Yeah. Go ahead. Brent. Uh, the probability of a wind.
+
+160
+00:21:16,286 --> 00:21:21,176
+Uh, so part of. There are lots and one.
+
+161
+00:21:24,736 --> 00:21:27,766
+That looks like it. The general expression.
+
+162
+00:21:28,636 --> 00:21:31,846
+Probability for each win in any order.
+
+163
+00:21:32,416 --> 00:21:36,706
+Each coming with that probability p win and then p lose.
+
+164
+00:21:37,036 --> 00:21:46,786
+So if we plug in 18 over 37 and 19 over 37, we will have something like this binomial factor.
+
+165
+00:21:47,056 --> 00:21:58,546
+And then 18 to the power w 19 to the power n minus w and 37 to the power w plus n minus w just leaves n.
+
+166
+00:21:59,866 --> 00:22:02,986
+And you know, for n equals five.
+
+167
+00:22:04,756 --> 00:22:08,446
+Four might have been more convenient but we would have six.
+
+168
+00:22:10,726 --> 00:22:16,096
+Possibilities, winning either zero, one, two, three, four, or five times.
+
+169
+00:22:18,376 --> 00:22:30,766
+And we can just essentially plug in an equal five and w equals zero through five to get expressions for these and choose zero as one.
+
+170
+00:22:30,826 --> 00:22:37,366
+There's only one way that we can lose every time we spin 818 to the zero is one.
+
+171
+00:22:37,996 --> 00:22:45,166
+And so we have basically 19 over 37 to the power n which is five.
+
+172
+00:22:46,036 --> 00:22:53,476
+And that is something I wrote down earlier this morning about 4% 0.0.
+
+173
+00:22:55,796 --> 00:23:10,166
+36. Maybe a less trivial one is looking at the number of ways that we can get three wins out of five spins within 18 cubed,
+
+174
+00:23:11,036 --> 00:23:15,776
+two losses and 37 to the fifth.
+
+175
+00:23:17,666 --> 00:23:23,086
+So. These.
+
+176
+00:23:23,086 --> 00:23:30,946
+These binomial factors are something you probably have seen before, and if not, we'll get familiar with pretty quickly.
+
+177
+00:23:31,366 --> 00:23:39,706
+They follow nice patterns, as you say. Fix the total number and look at how the subset being choosed differs.
+
+178
+00:23:40,066 --> 00:23:48,316
+So when we get up to five these binomial coefficients, they're are also the factors that appear in a binomial raised to the fifth power.
+
+179
+00:23:48,316 --> 00:23:51,796
+So it will be one five 1010 five one.
+
+180
+00:23:52,186 --> 00:24:03,466
+So this is one five 1010 times 18 cubed times 19 squared over that 37 to the fifth.
+
+181
+00:24:04,036 --> 00:24:08,866
+Plugging in those numbers gives something like 30%.
+
+182
+00:24:09,826 --> 00:24:13,906
+So almost ten times the probability of losing every spin.
+
+183
+00:24:15,466 --> 00:24:23,836
+So just a bit of numerical manipulation in this stage of the problem, which.
+
+184
+00:24:26,116 --> 00:24:32,326
+I can show briefly some of the advantages to automating that sort of thing with.
+
+185
+00:24:35,386 --> 00:24:37,156
+With some Python programming here.
+
+186
+00:24:38,506 --> 00:24:50,326
+So rather than going through and plugging in 18 and 19 and 37 and five and two and three with every possible outcome, if we just set up.
+
+187
+00:24:52,756 --> 00:24:56,956
+The numbers that we had for the probability of winning, I'll call that p.
+
+188
+00:24:57,496 --> 00:25:07,216
+And here I call the probability of losing q. That's still one minus p, which I set this up in part because I'm not used to this keyboard layout.
+
+189
+00:25:07,636 --> 00:25:12,976
+So I have to look around. To.
+
+190
+00:25:14,896 --> 00:25:22,875
+Find the keys I'm looking for. The gain we saw was ten times the number of wins.
+
+191
+00:25:22,876 --> 00:25:31,036
+So. Minus five times the number of spins, which is there.
+
+192
+00:25:31,606 --> 00:25:38,206
+And now, what's going on here? This may be the first time some of you have been exposed to Python.
+
+193
+00:25:38,206 --> 00:25:44,776
+If you haven't looked at the demo already or haven't had. So yeah, the physics 105 module that is Python based.
+
+194
+00:25:45,976 --> 00:25:54,316
+A lot of Python's power comes from having these library packages that can just be imported to do useful things for us.
+
+195
+00:25:54,946 --> 00:25:57,196
+NumPy is numerical Python.
+
+196
+00:25:57,556 --> 00:26:08,896
+SciPy is scientific Python, and it includes in particular a special function that is the binomial coefficient for end use w,
+
+197
+00:26:09,586 --> 00:26:22,306
+whereas numerical Python has nice general power functions that can raise these real numbers like 18/37 to any integer or even non-integer power.
+
+198
+00:26:23,716 --> 00:26:32,266
+Um, here P to the number of wins, and q the probability of losing to the number of losses.
+
+199
+00:26:34,066 --> 00:26:43,366
+The for loop is one of the key programming concepts that will just allow us to consider all possibilities in a loop.
+
+200
+00:26:43,546 --> 00:26:49,125
+It will keep going through different values of w given the range that we give it.
+
+201
+00:26:49,126 --> 00:26:55,486
+The syntax is specific to Python. The concept of a for loop is fundamental to any programming language.
+
+202
+00:26:56,386 --> 00:27:03,736
+The specific Python syntax um, this range function starts at zero and goes up to,
+
+203
+00:27:04,636 --> 00:27:09,076
+but does not include the argument that we give it within the parentheses.
+
+204
+00:27:09,406 --> 00:27:17,656
+So this line here will go from zero to n which I've set to five, and it will not include and plus one.
+
+205
+00:27:18,226 --> 00:27:30,076
+And if I run that I immediately get that 0.036 and 0.304 for winning three out of five,
+
+206
+00:27:30,736 --> 00:27:35,026
+along with all the others in between in the space of zero seconds,
+
+207
+00:27:36,016 --> 00:27:45,496
+which then becomes easily generalisable without having to do much in the way of arithmetic by hand.
+
+208
+00:27:47,806 --> 00:27:58,846
+Up to the point where the, uh, binomial factors actually overflow the representation of numbers by bits that this is relying on,
+
+209
+00:27:58,846 --> 00:28:04,846
+that happens when we have around 1030 spins.
+
+210
+00:28:05,476 --> 00:28:13,156
+It will say that, uh, this binomial factor becomes infinite and it doesn't know how to deal with that anymore.
+
+211
+00:28:13,786 --> 00:28:19,116
+So. That is all for today.
+
+212
+00:28:19,146 --> 00:28:29,166
+I thought it was amusing to not only work out some of the probabilities by hand, but show how computing allows that to be automated.
+
+213
+00:28:29,916 --> 00:28:34,776
+And we'll see more computing next week when we have that computer lab.
+
+214
+00:28:37,736 --> 00:28:40,496
+See you on Monday for the next lecture.
+
