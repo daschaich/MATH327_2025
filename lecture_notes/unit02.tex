@@ -1,0 +1,416 @@
+% ------------------------------------------------------------------
+\renewcommand{\thisunit}{MATH327 Unit 2}
+\renewcommand{\moddate}{Last modified 2 Feb.~2025}
+\setcounter{section}{2}
+\setcounter{subsection}{0}
+\phantomsection
+\addcontentsline{toc}{section}{Unit 2: Micro-canonical ensemble}
+\section*{Unit 2: Micro-canonical ensemble}
+\subsection{\label{sec:ensemble}Statistical ensembles and thermodynamic equilibrium}
+We begin this unit by establishing the concept of \textit{statistical ensembles}, which was formalized by \href{https://en.wikipedia.org/wiki/Josiah_Willard_Gibbs}{J.\ Willard Gibbs} in 1902. % en.wikipedia.org/wiki/Ensemble_(mathematical_physics)
+(Gibbs also introduced the term `statistical mechanics', in 1884.)
+Building on the probability foundations laid above, we will be interested in `experiments' that simply allow a collection of degrees of freedom to evolve in time, subject to certain constraints.
+At a given time $t_1$, the arrangement of these degrees of freedom defines the state $\om_1$ of the system.
+
+As a concrete example, consider a system of \textit{spins} --- arrows that can point either `up' or `down' --- arranged in a line.
+Such \href{https://en.wikipedia.org/wiki/Spin_model}{spin systems} will appear several times in the remainder of this module, since in addition to obeying simple mathematics analogous to flipping coins, spins also serve as good models of physical systems such as magnetic molecules.
+What would be a representative state (or \textit{configuration}) for a system of $N = 8$ spins?
+How many distinct states are there for this system?
+\begin{mdframed}
+  \ \\[80 pt]
+\end{mdframed}
+
+At a different time $t_2$, the system's state $\om_2$ is generally different from $\om_1$.
+However, there are some measurements we can perform that always produce the same outcome even as the system's state changes over time.
+These measurements define \textit{conserved quantities}, such as the number of spins considered in the example above.
+
+Another important conserved quantity is the \textit{internal} energy $E$ of an isolated (or `closed') system,
+\begin{equation*}
+  E(\om_1) = E(\om_2).
+\end{equation*}
+The conservation of energy is presumably a familiar concept, and you may also know that it can be rigorously proven through \href{https://en.wikipedia.org/wiki/Emmy_Noether}{Emmy Noether}'s \href{https://en.wikipedia.org/wiki/Noether's_theorem}{first theorem}.\footnote{There are \href{https://www.preposterousuniverse.com/blog/2010/02/22/energy-is-not-conserved/}{complications} when considering the dynamical space-time of general relativity, but that's beyond the scope of this module.}
+Because conservation of energy was empirically observed long before Noether's theorem was proven, it also has a more grandiose name: the \textbf{first law of thermodynamics}.
+Another way of stating the first law is that any change in the internal energy of one particular system \Om must be matched by an equal and opposite change in the energy of some other system with which \Om is in contact.
+This will be important when we consider thermodynamic cycles later in the term.
+
+For now, let's return to the example above, and endow the spin system with an internal energy by placing it in a `magnetic field' of strength $H$.
+That is, if a spin is parallel to the field, it contributes energy $-H$ to the total energy $E$ of the system. % mu_B=1 in natural units
+If a spin is anti-parallel to the field, it instead contributes energy $H$.
+For later convenience, we define a positive magnetic field $H > 0$ to point upward, and also define $n_+$ to be the number of spins pointing upward --- parallel to the field and therefore contributing \textit{negative} energy.
+Similarly, the remaining $n_- = N - n_+$ downward-pointing spins are anti-parallel to the field and contribute positive energy.
+What is the total energy $E$ of the system in terms of $n_+$ and $n_-$?
+What is $E$ for the representative $8$-spin state you wrote down above?
+What fraction of the states of the spin system have this energy?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+If instead we consider $N \sim 10^{23}$ hydrogen (H$_2$) molecules in a container, we can write a simple expression for the internal energy $E$ by treating each molecule as a \textit{point-like particle}, with no size or structure.
+In this case each molecule contributes only its kinetic energy, and
+\begin{equation*}
+  E = \frac{m}{2} \sum_{n = 1}^N \vec{v}_n^{\,2} = \frac{1}{2m} \sum_{n = 1}^N \vec{p}_n^{\,2},
+\end{equation*}
+where $\vec v_n$ is the velocity of the $n$th molecule, $\vec p_n = m \vec v_n$ is its momentum, and all molecules have the same mass $m$.
+
+As forecast at the start of the module, we treat the time evolution of any given system as a stochastic process in which the system probabilistically adopts a sequence of states $\om_i \in \Om$:
+\begin{equation*}
+  \om_1 \lra \om_2 \lra \om_3 \lra \om_4 \lra \cdots
+\end{equation*}
+This approach is a matter of practicality rather than one of principle.
+In principle, Newton's laws would allow us to predict the exact time evolution of (say) $10^{23}$ hydrogen molecules, but only by specifying $10^{23}$ initial conditions and solving $10^{23}$ differential equations.
+Since we cannot hope to record so much information or carry out so many computations, we instead apply probability theory in order to analyse these systems.
+
+\begin{shaded}
+  This leads us to the following core definition: A \textbf{statistical ensemble} is the set of all states $\Om = \left\{\om_1, \om_2, \cdots\right\}$ that a system can possibly adopt through its time evolution.
+  Each state $\om_i$ has some probability $p_i$ of being adopted by the system, so we can recognize a statistical ensemble as a probability space. % State space as outcome space in unit 1
+\end{shaded}
+
+Because these states $\om_i$ depend on the `microscopic' degrees of freedom that compose the overall system, we will refer to them as \textbf{micro-states} from now on.
+From the definition of probability in \secref{sec:prob}, we have the requirement $\sum_i p_i = 1$, which simply means that the system must be in \textit{some} micro-state at any point in time.
+The fact that time evolution cannot change any conserved quantities, as discussed above, means that such conserved quantities characterize statistical ensembles.
+Throughout the next seven units we will consider different statistical ensembles with different sets of conserved quantities.
+
+\begin{shaded}
+  First we define the \textbf{micro-canonical ensemble} to be a statistical ensemble characterized by conserved internal energy $E$ and conserved number of degrees of freedom $N$ --- which we will call \textbf{particle number} for short.
+\end{shaded}
+
+According to the discussion above, this means that a system governed by the micro-canonical ensemble is \textit{isolated} in the sense that it cannot exchange energy or particles with any other system.
+
+Now that the micro-canonical ensemble is defined, we can connect it to our intuition from everyday physical systems.
+Let's consider a collection of particles moving around and bouncing (or `\textit{scattering}') off each other in a sealed container.
+To a first approximation, this should describe the behaviour of air in a room, which our lived experience indicates is spread quite uniformly throughout the room in a way that is stable as time passes.
+We do not expect all the air in a room to be concentrated in any one corner, nor do we expect strong collective gusts of wind without some clear external influence.
+
+These qualitative expectations illustrate the idea of \textbf{thermodynamic equilibrium}, an axiomatic concept in statistical mechanics.\footnote{Our expectation that physical systems generically evolve towards thermodynamic equilibrium as time passes is more formally expressed as the \href{https://en.wikipedia.org/wiki/Ergodic_hypothesis}{ergodic hypothesis}.}
+We can mathematically define thermodynamic equilibrium through the probabilities $p_i$ that appear in the micro-canonical ensemble.
+
+\begin{shaded}
+  A micro-canonical system \Om with $M$ micro-states $\om_i$ is in thermodynamic equilibrium if and only if all probabilities $p_i$ are equal.
+  If $M$ is finite, the requirement $\sum_i p_i = 1$ implies
+  \begin{equation}
+    \label{eq:micro_equil}
+    p_i = \frac{1}{M}.
+  \end{equation}
+\end{shaded}
+
+The full meaning and significance of this definition are not immediately obvious, and we will continue exploring them through consideration of derived quantities such as entropy and temperature.
+First, it's important to emphasize that this equilibrium is \textit{dynamic}: There is not a single `equilibrium micro-state' that the system sits in.
+Instead, the equilibrium system continues probabilistically adopting all possible micro-states as it evolves in time. % In the micro-canonical case, all accessible micro-states have the same energy and particle number, but this concept of (dynamic) thermodynamic equilibrium will generalize...
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{\label{sec:entropy}Entropy and its properties}
+\subsubsection{Definition of entropy}
+We can gain further insight into thermodynamic equilibrium by considering a famous derived quantity.
+\begin{shaded}
+  The \textbf{entropy} of a statistical ensemble \Om with a countable number of micro-states $M$ is defined to be
+  \begin{equation}
+    \label{eq:entropy}
+    S = - \sum_{i = 1}^M p_i \log p_i,
+  \end{equation}
+  where $p_i$ is the probability for micro-state $\om_i$ to occur.
+  Unless otherwise specified, ``$\log$'' indicates the natural logarithm with base $e$.
+\end{shaded}
+
+When the system under consideration is in thermodynamic equilibrium, we expect derived quantities such as the entropy to be stable over time, even as different micro-states are probabilistically adopted.
+This implies that such derived quantities are functions of the conserved quantities that are the same for all micro-states.
+Therefore, for the micro-canonical ensemble, the equilibrium entropy $S(E, N)$ is a function of the conserved energy and particle number.
+
+By inserting \eq{eq:micro_equil} into \eq{eq:entropy} you can quickly compute a simple expression for the entropy of a micro-canonical ensemble in thermodynamic equilibrium:
+\begin{mdframed}
+  \ \\[40 pt]
+\end{mdframed}
+Your result should depend only on the number of micro-states $M$, diverging as $M \to \infty$.
+While the energy $E$ and particle number $N$ are not explicit in this expression, $\left\{E, N, M\right\}$ are inter-related and can be expressed in terms of each other given the details of any specific situation under consideration.
+For example, what is the equilibrium entropy of the system of $N$ spins considered above, if the magnetic field is turned off, $H = 0$?
+What is the entropy if $E = 0$ with $H > 0$ (which requires $n_+ = n_-$)?
+\begin{mdframed}
+  \ \\[110 pt]
+\end{mdframed}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsubsection{Extensivity}
+The increase in entropy for an increasing number of micro-states $M$ is a reflection of entropy being an \textit{extensive} quantity.
+Extensive quantities are formally defined by considering how they behave if two isolated subsystems are \textit{analysed} as a single system --- while still remaining isolated from each other, exchanging neither energy nor particles.
+This is clearest to consider through the specific example shown below of two isolated spin subsystems, $\Om_1$ \& $\Om_2$, characterized by the energies $E_1$ \& $E_2$ and particle numbers $N_1$ \& $N_2$, respectively.
+To simplify the subsequent analysis, we can assume that both subsystems are placed in magnetic fields with the same $H$, so that $E_S = -H\left(n_+^{(S)} - n_-^{(S)}\right)$ for $S \in \left\{1, 2\right\}$.
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{figs/unit02_entropy-separate.pdf}
+\end{center}
+
+We can take system $\Om_1$ to have $M_1$ micro-states with probabilities $p_i$ while system $\Om_2$ has $M_2$ micro-states with probabilities $q_k$.
+As discussed above, each $M_S$ is determined by $E_S$ and $N_S$.
+The entropies of the two systems are
+\begin{align*}
+  S_1 & = - \sum_{i = 1}^{M_1} p_i \log p_i &
+  S_2 & = - \sum_{k = 1}^{M_2} q_k \log q_k.
+\end{align*}
+
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{figs/unit02_entropy-combo.pdf}
+\end{center}
+
+Now we keep these two subsystems isolated from each other, but consider them as a combined system $\Om_{1+2}$, as illustrated above.
+In order to compute the entropy $S_{1+2}$, we need to figure out the number of micro-states $M_{1+2}$ the combined system could possibly adopt, and then determine the corresponding probability for each micro-state.
+Both steps are simplified by the subsystems being isolated from each other, so that they are statistically independent.
+Specifically, with subsystem $\Om_1$ in any one of its $M_1$ micro-states $\om_i^{(1)}$, subsystem $\Om_2$ could independently adopt any of its $M_2$ micro-states, implying $M_{1+2} = M_1 M_2$.
+
+Similarly, statistical independence means that the combined probability of subsystem $\Om_1$ adopting micro-state $\om_i^{(1)}$ while subsystem $\Om_2$ adopts $\om_k^{(2)}$ is the product of the individual probabilities, $p_i q_k$.
+We can check this is a well-defined probability, with
+\begin{equation*}
+  \sum_{M_{1+2}} p_i q_k = \sum_{i = 1}^{M_1} \sum_{k = 1}^{M_2} p_i q_k = \left[\sum_{i = 1}^{M_1} p_i\right]\cdot \left[\sum_{k = 1}^{M_2} q_k\right] = 1\cdot 1 = 1.
+\end{equation*}
+Inserting the probability $p_i q_k$ into \eq{eq:entropy}, and recalling $\log(a\cdot b) = \log a + \log b$, what is the combined entropy $S_{1+2}$ of these two independent subsystems?
+\begin{mdframed}
+  $S_{1+2} = $ \\[100 pt]
+\end{mdframed}
+You should find that the total entropy is the sum of the entropies of the two isolated subsystems, which is also how the energies and particle numbers behave,
+\begin{align*}
+  E_{1+2} & = E_1 + E_2 &
+  N_{1+2} & = N_1 + N_2.
+\end{align*}
+
+This behaviour identifies the energy, particle number and entropy as \textbf{extensive} quantities, which are \href{https://goldbook.iupac.org/terms/view/E02281}{defined} to be those that add up across independent subsystems.
+This can be contrasted with \textbf{intensive} quantities, which are \href{https://goldbook.iupac.org/terms/view/I03074}{defined} to be independent of the extent of the system, and hence the same (on average) for subsystems as for the combined system. % External magnetic field strength $H$ is control parameter rather than system property --- will be formally introduced in Unit 4
+Temperature and density are everyday examples of intensive quantities, though we will see below that the micro-canonical approach introduces some subtleties.
+It is possible for quantities to be neither extensive nor intensive, for example the number of micro-states $M_{1+2} = M_1 M_2$.
+
+Finally, suppose that each subsystem is independently in thermodynamic equilibrium, with finite $M_1$ and $M_2$, implying
+\begin{align*}
+  p_i & = \frac{1}{M_1} & q_k & = \frac{1}{M_2} \\
+  S_1 & = \log M_1      & S_2 & = \log M_2.
+\end{align*}
+As a consequence we can establish that $\Om_{1+2}$ is also in thermodynamic equilibrium, since the probabilities
+\begin{equation*}
+  p_i q_k = \frac{1}{M_1 M_2} = \frac{1}{M_{1+2}}
+\end{equation*}
+are identical all of its micro-states.
+In this situation it's even easier to see $S_{1+2} = \log\left(M_1 M_2\right) = \log M_1 + \log M_2 = S_1 + S_2$.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsubsection{\label{sec:second_law}Second law of thermodynamics}
+Let's continue considering two subsystems, with one significant change: Suppose the subsystems are now able to exchange energy (but not particles) with each other.
+We'll say they are in \textit{thermal contact} with each other, rather than being fully isolated.
+We'll also wait long enough after establishing thermal contact for the combined system \Om to reach equilibrium.
+This is illustrated below:
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{figs/unit02_entropy-exchange.pdf}
+\end{center}
+The total energy $E = E_1 + E_2$ remains conserved, so the overall system \Om is still governed by the micro-canonical ensemble.
+However, the individual energies $E_1$ and $E_2$ can now change over time, meaning that \textit{each subsystem is no longer micro-canonical}.
+
+The overall system \Om is \textit{not} the same as the combined $\Om_{1+2}$ considered above.
+We need to reconsider the total number of micro-states $M$ that \Om could adopt, which is much more difficult than before because we can no longer apply statistical independence.
+Our key remaining tool is the conservation of the total energy $E$.
+
+Considering a micro-state in which the $N_1$ spins contribute energy $e_1$ to the total, we know that the $N_2$ spins must contribute the remaining $E - e_1$.
+Our work above implies there are $M_{e_1} = M_{e_1}^{(1)} M_{E - e_1}^{(2)}$ micro-states providing this particular distribution of energies, where $M_{e_1}^{(1)}$ is the number of micro-states of the formerly isolated subsystem $\Om_1$ with energy $e_1$, and $M_{E - e_1}^{(2)}$ similarly corresponds to $\Om_2$ with energy $E - e_1$.
+We also know that it's possible to have $e_1 = E_1$, since that's the initial energy of $\Om_1$ before it was brought into thermal contact with $\Om_2$.
+When $e_1 = E_1$, we have $M_{E_1} = M_1 M_2$, covering all the micro-states of the combined $\Om_{1+2}$ when the two subsystems were isolated.
+\textit{In addition}, we also have to count any other micro-states for which $e_1 \ne E_1$:
+\begin{equation}
+  \label{eq:micro_sum}
+  M = \sum_{e_1} M_{e_1}^{(1)} M_{E - e_1}^{(2)} = M_1 M_2 + \sum_{e_1 \ne E_1} M_{e_1}^{(1)} M_{E - e_1}^{(2)} \geq M_1 M_2.
+\end{equation}
+Equality holds when $e_1 = E_1$ is the only possibility --- this is an extremely special case, in which the two subsystems remain individually micro-canonical, with fixed $E_1$ and $E_2$.
+This is all we can say in full generality, without specifying more details of a particular example, but it allows us to obtain a famous result for the total entropy $S$ of \Om \textit{in thermodynamic equilibrium}:
+\begin{equation*}
+  S = \log M \geq \log\left(M_1 M_2\right) = S_{1+2}.
+\end{equation*}
+
+\begin{shaded}
+  This is a form of the \textbf{second law of thermodynamics},
+  \begin{equation*}
+    S \geq S_{1 + 2} = S_1 + S_2.
+  \end{equation*}
+  In words, whenever initially isolated (sub)systems in thermodynamic equilibrium are brought into thermal contact with each other and allowed to exchange energy, the total entropy of the overall system can never decrease.
+  Indeed, it generically increases except in extremely special cases.
+\end{shaded}
+
+Though we won't go through a more general derivation here, it turns out that the total entropy never decreases (and generically increases) as time passes, under \textit{any} circumstances.
+This has many far-reaching consequences, the first of which is a more general definition of thermodynamic equilibrium that (unlike \eq{eq:micro_equil}) will also apply when we consider statistical ensembles other than the micro-canonical ensemble.
+For simplicity we assume that any system under consideration has a finite number of micro-states, which means that its entropy is bounded from above.
+To motivate the definition below, note that the overall system \Om may have undergone an equilibration process to reach its thermodynamic equilibrium after any independently equilibrated subsystems were brought into thermal contact --- and in this process the entropy was non-decreasing.
+
+\begin{shaded} % WARNING: ADJUSTED INDENTATION BY HAND TO FIT ON ONE LINE
+  \!A system is defined to be in \textbf{thermodynamic equilibrium} if its entropy is maximal.
+\end{shaded}
+
+We can \textit{derive} \eq{eq:micro_equil} from this definition.
+All we need to do is maximize the entropy $S = - \sum_i p_i \log p_i$ subject to the three micro-canonical constraints of conserved energy, conserved particle number, and well-defined probabilities $\sum_i p_i = 1$.
+It turns out that only the final constraint needs to be incorporated into the maximization, through the method of \textbf{Lagrange multipliers}.
+As a reminder, this method involves maximizing the modified entropy
+\begin{equation*}
+  \Sbar(\la) = S + \la\left(\sum_{i = 1}^M p_i - 1\right) = - \sum_{i = 1}^M p_i \log p_i + \la\left(\sum_{i = 1}^M p_i - 1\right),
+\end{equation*}
+and subsequently imposing $\sum_i p_i = 1$.
+Here \la is a parameter called the `multiplier'.
+In short, this procedure is valid because $\displaystyle \pderiv{\Sbar}{\la} = 0$ once we impose $\sum_i p_i = 1$, so that any extremum of \Sbar corresponds to an extremum of $S = \Sbar(\la = 0)$.
+
+Recalling $\displaystyle \pderiv{}{x_k} \sum_i f(x_i) = \pderiv{f(x_k)}{x_k}$, what is the probability $p_k$ that maximizes the modified entropy $\Sbar$?
+\begin{mdframed}
+  $\displaystyle 0 = \pderiv{\Sbar}{p_k} = $ \\[100 pt]
+\end{mdframed}
+You should find that $p_k$ is some constant that depends on $\la$.
+We don't care about $\la$; so long as we know $p_k$ is constant, then we must have $p_k = \frac{1}{M}$ in order to satisfy $\sum_k p_k = 1$.
+As advertised, we recover \eq{eq:micro_equil} from our new definition of thermodynamic equilibrium based on the second law.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{\label{sec:temp}Temperature}
+In the micro-canonical ensemble, the conserved internal energy and particle number are fundamental, while the temperature (like the entropy) is a derived quantity.
+As discussed below \eq{eq:entropy}, in thermodynamic equilibrium such derived quantities are functions of the conserved $\left\{E, N\right\}$.
+In this section we will state the definition of temperature for the micro-canonical ensemble and apply this to a spin system.
+In the next section we will check that this definition reproduces our expectations from everyday experiences.
+
+\begin{shaded}
+  In thermodynamic equilibrium, the \textbf{temperature} $T(E, N)$ in the micro-canonical ensemble is defined by
+  \begin{equation}
+    \label{eq:temperature}
+    \frac{1}{T} = \left. \pderiv{S}{E}\right|_N.
+  \end{equation}
+  In words, the (inverse) temperature is set by the dependence of the entropy on the internal energy for a fixed number of degrees of freedom.
+\end{shaded}
+
+Since this definition is not terribly intuitive, we will again gain insight by considering $N$ spins in a line, in a magnetic field of strength $H$.
+We saw above that $E = -H(n_+ - n_-)$ for $n_+$ and $n_- = N - n_+$ spins respectively pointing up and down.
+With $N$ fixed, each (conserved) value of $E$ defines a \textit{different} micro-canonical system, which we can expect to have a different number of micro-states $M(E)$, different entropy $S(E)$ and different temperature $T(E)$.
+We will compute the functional forms of each of these three quantities, starting with $M(E)$.
+
+Even though the total energy $E$ remains fixed as time passes, individual spins can `flip' between pointing up or down.
+Such spin flips simply have to come in pairs so that the overall $n_{\pm}$ both remain the same.
+As illustration, what are representative spin configurations that produce the minimal energy $E_{\text{min}} \equiv E_0$ and the next-to-minimal $E_1$?
+What are $E_0$ and $E_1$ in terms of $\left\{N, H\right\}$, and how many distinct micro-states are there for each of $E_0$ and $E_1$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+Your results should generalize to
+\begin{equation}
+  \label{eq:spin_states}
+  M(E_{n_-}) = \binom{N}{n_-} = \frac{N!}{n_-! \; (N - n_-)!} = \binom{N}{n_+}.
+\end{equation}
+
+To take the derivative in \eq{eq:temperature}, we need to express $n_-$ in terms of $\left\{E, N\right\}$.
+It will also be useful to avoid the factorial operation, which is inconvenient to differentiate.
+For $N \gg 1$, we can accomplish both these goals by treating the spin system as a random walk in the space of its possible energies $E$ and applying the central limit theorem:\footnote{Applying Stirling's formula, $\log(N!) \approx N \log N - N$, is another possible approach.} \\[-24 pt]
+\begin{itemize} % Adapted from a tutorial replaced by computer lab...
+  \item Each spin adds to $x \equiv \frac{E}{-H} = 2n_+ - N$ a `step' of fixed `length' $\pm 1$.
+        Our task therefore coincides with the special case we considered in \secref{sec:diffusion}.
+  \item We don't impose any preference for positive vs.\ negative energies, meaning $p = q = \frac{1}{2}$ in the terminology of \secref{sec:diffusion}.
+  \item With $p = q = \frac{1}{2}$, every one of the $2^N$ possible configurations of $N$ spins is equally probable.
+        Therefore the probability $P_{n_+}$ that our overall `walk' ends up producing a configuration with $n_+ = \frac{1}{2}\left(x + N\right)$ is simply the fraction of those $2^N$ states with this $n_+$, in which we can recognize \eq{eq:spin_states}:
+        \begin{equation*}
+          P_{n_+} = \frac{1}{2^N} \binom{N}{n_+} = \frac{M(E_{n_-})}{2^N} \qquad \implies \qquad M(E_{n_-}) = 2^N P_{n_+}.
+        \end{equation*}
+  \item To estimate $P_{n_+}$ for $N \gg 1$, we apply the central limit theorem just as in \secref{sec:RW_CLT}.
+        In particular, we can re-use our computation that $\mu = 2p - 1 = 0$ and $\si^2 = 4pq = 1$, to find
+        \begin{equation*}
+          p(x) \approx \frac{1}{\sqrt{2\pi N}}\exp\left[-\frac{x^2}{2N}\right].
+        \end{equation*}
+        This is the probability \textit{distribution} from which we want to extract $P_{n_+}$.
+  \item From a tutorial problem we know that $P_{\text{const}}(n_+) = p(2n_+ - N) \De n_+$ is a good approximation.
+        With $\De n_+ = 1$ and $2n_+ - N = \frac{E}{-H}$, we therefore find
+        \begin{equation}
+          \label{eq:CLT_states}
+          M(E) \approx 2^N p(2n_+ - N) = \frac{2^N}{\sqrt{2\pi N}}\exp\left[-\frac{E^2}{2NH^2}\right].
+        \end{equation}
+\end{itemize}
+What is the derivative of the log of \eq{eq:CLT_states} with $N$ fixed?
+\begin{mdframed}
+  $\displaystyle \left.\pderiv{}{E} \log M\right|_N = $ \\[100 pt]
+\end{mdframed}
+
+You should find the temperature
+\begin{align}
+  \label{eq:spin_temp}
+  T & \approx -\frac{NH^2}{E} &
+  N & \gg 1,
+\end{align}
+which in several ways does \textit{not} seem to match our expectations from everyday experiences: This $T$ diverges as $E \to 0$ for $n_+ \approx n_-$, and it is negative whenever $n_+ < n_-$ to produce $E > 0$.
+You can check that this $T < 0$ corresponds to the number of micro-states decreasing for larger internal energies, $\pderiv{M}{E} < 0$.
+In \textbf{natural} systems, larger energies make more micro-states accessible, producing $\pderiv{M}{E} > 0$ and a positive temperature.
+If $H = 0$, we also have $E = 0$ and $T$ is ill-defined.
+
+Restricting our attention to $H > 0$ and $n_+ > n_-$, we also see that the resulting non-negative temperature cannot vanish.
+It is minimized by the most-negative energy you found above, $T_{\text{min}} = H > 0$ for $E_{\text{min}} = -NH$.
+The non-zero minimum temperature is specific to spin systems, while some of the other oddities result from the micro-canonical approach more generally.
+This will motivate turning to the canonical ensemble in Unit~3, but first we can check that some aspects of the micro-canonical temperature defined in \eq{eq:temperature} do match our everyday expectations, at least in the `natural' positive-temperature regime.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{\label{sec:heat_ex}Heat exchange}
+From \eq{eq:spin_temp} for the temperature of a micro-canonical spin system, we can see that `natural' positive temperatures correspond to negative energies, and therefore increase as the energy increases by becoming less negative (with a smaller magnitude).
+Such a direct relation between energy and temperature is very generic, and we will study it in more detail when considering thermodynamic cycles in a few weeks.
+For now, considering unspecified systems that exhibit this natural behaviour, let's ask what would happen if we take two initially isolated micro-canonical systems --- $\Om_A$ and $\Om_B$ with temperatures $T_A$ and $T_B$ in thermodynamic equilibrium --- and bring them into thermal contact.
+
+In micro-canonical terms, the temperatures $T_A$ and $T_B$ are derived from the corresponding energies $E_A$ and $E_B$, while thermal contact allows the two systems to exchange energy (but not particles) as non-isolated subsystems of a combined micro-canonical system $\Om_C$.
+Once the two subsystems have been in thermal contact long enough for the combined system to have reached thermodynamic equilibrium, it will have temperature $T_C$.
+We can then re-isolate the two subsystems, which will remain in thermodynamic equilibrium with energies $\left\{E_A', E_B'\right\}$ and temperatures $\left\{T_A', T_B'\right\}$.
+This three-step procedure is illustrated below.
+
+\begin{center}
+  \includegraphics[width=0.5\textwidth]{figs/unit02_heat-exchange.pdf}
+\end{center}
+
+From everyday experience, we expect that this energy exchange will result in a net flow of energy from the hotter system to the colder system, cooling the former by heating the latter.
+We will now check that the micro-canonical definition of temperature in \eq{eq:temperature} predicts this expected behaviour.
+With $S \in \left\{A, B\right\}$, we can write
+\begin{equation*}
+  E_S' = E_S + \De E_S
+\end{equation*}
+and consider for simplicity the case where the change in energy is relatively small,
+\begin{equation*}
+  \left|\frac{\De E_S}{E_S}\right| \ll 1.
+\end{equation*}
+Since we can build up large changes in energy through a series of smaller changes, this assumption doesn't lead to any loss of generality.
+We also know $\De E_B = -\De E_A$ thanks to conservation of energy.
+
+Equation~\ref{eq:temperature} tells us that we need to consider the entropies as functions of $E_S$ and $E_S'$ in order to connect the temperatures to any flow of energy.
+Because we don't change the number of particles in each system, we only need to consider the energy dependence of the entropy.
+We assume $S(E)$ is continuous and infinitely differentiable,\footnote{This assumption breaks down at a \textit{phase transition}, where we would need to be more careful.  We will learn about phase transitions towards the end of the term.} which allows us to expand each of the final entropies $S(E_S')$ in a Taylor series,
+\begin{equation*}
+  S(E_S') = S(E_S + \De E_S) \approx S(E_S) + \left.\pderiv{S}{E}\right|_{E_S} \De E_S,
+\end{equation*}
+neglecting all $\cO\!\left(\De E_S^2\right)$ terms because we consider relatively small changes in energy.
+What is the expression above in terms of the initial temperatures $T_S$?
+\begin{mdframed}
+  \ \\[50 pt]
+\end{mdframed}
+
+From the second law of thermodynamics, we know that the total entropy of these systems can never decrease as time passes:
+\begin{equation}
+  \label{eq:entropy_ineq}
+  S(E_A) + S(E_B) \leq S(E_A + E_B) = S(E_A') + S(E_B').
+\end{equation}
+The final equality means that re-isolating the two subsystems doesn't change the entropy.
+This is because $E_A'$ is not fixed and could take any value from zero to $E_A + E_B$ at the moment when the subsystems are re-isolated.
+Computing the final entropy $S(E_A') + S(E_B')$ therefore requires summing over all possible values of $E_A'$, producing exactly the sum in \eq{eq:micro_sum} for the overall system.
+We will see something similar when we consider the `Gibbs paradox' in Unit~4.
+
+What do you find when you insert your linearized Taylor series into \eq{eq:entropy_ineq}?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+Applying conservation of energy should produce
+\begin{equation*}
+  \left(\frac{1}{T_A} - \frac{1}{T_B}\right) \De E_A \geq 0.
+\end{equation*}
+Recalling from \secref{sec:second_law} that equality holds only in extremely special cases, we can identify three possibilities consistent with this result.
+If $T_A > T_B$, then $\left(\frac{1}{T_A} - \frac{1}{T_B}\right)$ is negative and we will generically have $\De E_A < 0$, so that energy flows out of the hotter system $\Om_A$ and into the colder one.
+Our restriction to natural systems means this flow of energy reduces the higher temperature, and increases the lower temperature, bringing the temperatures of the two subsystems closer to each other.
+Similarly, if $T_A < T_B$, we will generically have $\De E_A > 0$, meaning that energy still flows from the hotter system $\Om_B$ into the colder one, again reducing the difference in their temperatures.
+We can finally conclude that $T_A = T_B$ is the very special case where there is no energy flow, $\De E_S = 0$, keeping the temperatures the same.
+All of this is exactly what we would expect based on our everyday experience of temperature as an intensive quantity.
+% ------------------------------------------------------------------
