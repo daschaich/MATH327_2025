@@ -1,0 +1,1345 @@
+1
+00:00:00,360 --> 00:00:04,830
+[Auto-generated transcript. Edits may have been applied for clarity.]
+That's underway. We'll see how long this microphone lasts.
+
+2
+00:00:05,370 --> 00:00:09,840
+Today, though. I think the recording came out fine even without it last week.
+
+3
+00:00:09,960 --> 00:00:20,010
+So welcome back to another week and another start of a new month in statistical mechanics, thermodynamics and all that.
+
+4
+00:00:20,670 --> 00:00:26,530
+So. The code for today.
+
+5
+00:00:28,570 --> 00:00:32,560
+Is 49, 85, 18.
+
+6
+00:00:33,580 --> 00:00:44,590
+And we will start this week moving from the kind of more formal mathematical foundation to somewhat more physical applications.
+
+7
+00:00:45,040 --> 00:00:55,570
+Before we do, are there any questions that have been brewing about what we cover last week, which just to quickly review what we've seen.
+
+8
+00:00:56,920 --> 00:01:00,340
+We've built up probability concepts.
+
+9
+00:01:00,610 --> 00:01:06,970
+Oh, that uh, needs. To be improved.
+
+10
+00:01:09,540 --> 00:01:15,350
+See. Is there any way I can make this?
+
+11
+00:01:16,560 --> 00:01:28,510
+More legible. Not that that way, but, uh, see how this goes.
+
+12
+00:01:28,510 --> 00:01:39,919
+All right, a bit bigger. So building our probability foundations from the ideas of random experiments, outcomes, outcome spaces,
+
+13
+00:01:39,920 --> 00:01:45,320
+probabilities, events and all brought together in the framework of probability spaces.
+
+14
+00:01:46,100 --> 00:01:51,740
+And as well as introducing a couple of probability tools that you've probably seen before.
+
+15
+00:01:52,130 --> 00:01:57,320
+But we will or they will be useful for statistical mechanics in general.
+
+16
+00:01:58,490 --> 00:02:12,440
+The law of large numbers, which effectively states that the mean as a property of a probability distribution mu is approximately or approximated
+
+17
+00:02:12,440 --> 00:02:20,300
+by the arithmetic mean of repeating an experiment a number of times and just measuring the average outcome,
+
+18
+00:02:21,890 --> 00:02:28,100
+so long as this number of repetitions are, is much greater than one, and similarly,
+
+19
+00:02:29,300 --> 00:02:35,030
+the central limit theorem also relies on having lots of repetitions,
+
+20
+00:02:35,810 --> 00:02:42,470
+um, and much greater than one independent and identically distributed degrees of freedom.
+
+21
+00:02:43,370 --> 00:02:44,780
+And given that,
+
+22
+00:02:45,110 --> 00:02:56,240
+it implies that the probability distribution that governs the collective behaviour of all of these degrees of freedom is a simple Gaussian function,
+
+23
+00:02:56,660 --> 00:03:06,080
+and in particular a Gaussian that depends only on the mean and variance from a single one of those.
+
+24
+00:03:08,100 --> 00:03:18,140
+Uh, independent degrees of freedom, or the single repetition of that experiment giving the underlying mean and variance of that probability space.
+
+25
+00:03:19,820 --> 00:03:26,719
+So are there any questions about any of what we saw last week before we move on and actually
+
+26
+00:03:26,720 --> 00:03:33,140
+revisit some of the ground covered in the tutorial a bit more thoroughly and a bit more formally,
+
+27
+00:03:34,730 --> 00:03:38,660
+and not seeing any what we saw in the tutorial.
+
+28
+00:03:39,830 --> 00:03:40,250
+Um,
+
+29
+00:03:40,820 --> 00:03:52,850
+partly left for you to work on on your own outside of the tutorial session was an example of a random walk in a non-physical or a non position space.
+
+30
+00:03:52,850 --> 00:04:01,640
+So in this space of money from gambling. Today we will look at random walks more generally and more thoroughly,
+
+31
+00:04:01,970 --> 00:04:11,060
+and we should have time to at least see and start discussing the emergence of diffusive
+
+32
+00:04:11,060 --> 00:04:17,930
+behaviour and the very general law of diffusion that arises in this context,
+
+33
+00:04:19,910 --> 00:04:30,180
+and what I may try to do to get the screen showing a bit better is lock out a bit of this light.
+
+34
+00:04:30,880 --> 00:04:54,070
+Let's see if that helps. This is why we wanted to be able to reduce the brightness of the lights in this room.
+
+35
+00:04:54,280 --> 00:05:04,840
+But it's all or nothing. So hope to hear. Just shout out if anything is not visible and I will try to, uh, address that.
+
+36
+00:05:05,710 --> 00:05:21,850
+So let us work and develop random walks through a very simple example that kind of reduces this approach to the theoretical minimum.
+
+37
+00:05:22,870 --> 00:05:30,040
+So. A simple random walk will proceed just in one direction.
+
+38
+00:05:30,040 --> 00:05:33,760
+We will have a random walker restricted to a line.
+
+39
+00:05:35,080 --> 00:05:45,490
+And this walker at each step, where each point in time that it takes a step you will have only two options.
+
+40
+00:05:46,360 --> 00:05:58,150
+It will either go to the right with a fixed length called plus L, or it will step with that same fixed length to the left.
+
+41
+00:05:58,660 --> 00:06:08,469
+We can represent as a minus L. Um, just along this one dimensional line.
+
+42
+00:06:08,470 --> 00:06:12,700
+So this is a one dimensional random walk with uh.
+
+43
+00:06:15,260 --> 00:06:22,400
+Fixed step sizes. Without loss of generality, we can just set this L to be one work in units of step lengths,
+
+44
+00:06:23,570 --> 00:06:28,340
+and we can imagine that this walker is taking a step at every tick of a clock.
+
+45
+00:06:28,460 --> 00:06:38,000
+So regular intervals uh, delta t there will be a step either to the left or to the right so that.
+
+46
+00:06:40,220 --> 00:06:48,980
+The overall number of steps in the, uh, that appear in the walk can be represented as a total time.
+
+47
+00:06:49,400 --> 00:07:00,170
+So. And step walk corresponds to a walk that lasts for a total time of and delta t.
+
+48
+00:07:01,040 --> 00:07:04,100
+Now this has to have some randomness built into it by its name.
+
+49
+00:07:04,520 --> 00:07:11,870
+So we will say that when we step to the right, we will do that with a probability p.
+
+50
+00:07:13,070 --> 00:07:21,410
+And then the only other option of stepping to the left will have the corresponding probability q,
+
+51
+00:07:21,500 --> 00:07:26,000
+which has to be one minus p so that p and q add up to one.
+
+52
+00:07:28,040 --> 00:07:37,730
+So with this setup you know just a simple example to make sure that all of these details are clear.
+
+53
+00:07:38,210 --> 00:07:42,300
+This is a six step random walk.
+
+54
+00:07:42,320 --> 00:07:48,620
+We could imagine our walker taking first to the left then to the right, back to the left,
+
+55
+00:07:48,800 --> 00:07:53,240
+back to the right, at the starting point at that point, and then finally two steps to the right.
+
+56
+00:07:54,170 --> 00:07:59,350
+So the total number of steps in this walk is six.
+
+57
+00:07:59,360 --> 00:08:12,140
+And if we say that the walker started at an initial position of zero, then the final position of the walk after these six steps is going to be two.
+
+58
+00:08:12,560 --> 00:08:18,770
+This is just the sum over all of those steps from one to n of each individual step.
+
+59
+00:08:20,600 --> 00:08:28,250
+So. The x of I that have the indices are the individual step.
+
+60
+00:08:28,760 --> 00:08:35,660
+The overall x, which I think is capitalised in the computer assignment which does not need to be.
+
+61
+00:08:36,050 --> 00:08:44,030
+That's the final position that we will be interested in analysing and predicting um, or making predictions for.
+
+62
+00:08:45,680 --> 00:08:55,339
+And similarly, if we reversed all of these, all of the steps that we took and went right, left, right, left, left,
+
+63
+00:08:55,340 --> 00:09:05,440
+left, instead of this example walk, then all that would come in is the different sign in the final position.
+
+64
+00:09:05,450 --> 00:09:09,380
+Again, from summing over those six individual steps.
+
+65
+00:09:11,650 --> 00:09:19,030
+Um, if we fix n equals six. You know, we've seen from repeating the experiments.
+
+66
+00:09:19,030 --> 00:09:27,280
+I won't demand that you tell me that you know how many six step walks there are with every step.
+
+67
+00:09:27,400 --> 00:09:32,020
+There are two possibilities, uh, going either to the left.
+
+68
+00:09:34,210 --> 00:09:46,150
+Or to the right. So with two possibilities for the first step, two independent possibilities for the second step, and so on,
+
+69
+00:09:46,150 --> 00:09:54,610
+for however many steps there are, we end up with two to the N power, different steps that are different, walks that are random.
+
+70
+00:09:54,610 --> 00:10:00,610
+Walker could choose from as it does these and and steps.
+
+71
+00:10:02,470 --> 00:10:08,770
+Um, when n equals six, two to the six is four, eight, 16, 32, 64.
+
+72
+00:10:11,920 --> 00:10:16,330
+So the probability of.
+
+73
+00:10:18,340 --> 00:10:23,770
+This particular walk. Left right left right right right.
+
+74
+00:10:26,080 --> 00:10:30,370
+Is in fact, uh, something we saw in the tutorial last week.
+
+75
+00:10:30,820 --> 00:10:39,460
+It is not just one over 64. It has to depend on the different probabilities of stepping to the left and to the right.
+
+76
+00:10:39,910 --> 00:10:50,170
+So this is the same over all probability that we had for the, uh, six different,
+
+77
+00:10:50,200 --> 00:10:56,140
+uh, outcomes that we had in the in the roulette example, the probabilities were.
+
+78
+00:10:58,720 --> 00:11:04,360
+The probability of stepping or winning in that case, or losing each of each time.
+
+79
+00:11:04,360 --> 00:11:09,040
+So the number of wins W could go from zero to the total number of spins.
+
+80
+00:11:09,550 --> 00:11:20,320
+Probability of any particular number of wins was related to however many steps that we had in that direction in money space.
+
+81
+00:11:20,320 --> 00:11:30,340
+So here, more formally, the step to the left came in with probability Q to the right with probability p, and so on.
+
+82
+00:11:30,340 --> 00:11:37,480
+For the other steps, a total of p to the fourth times q squared,
+
+83
+00:11:38,740 --> 00:11:50,740
+which I reduces to one over 64 only in the special case that left and right steps are equally probable, with p equal to q equal to a half.
+
+84
+00:11:51,460 --> 00:12:00,120
+If we get one over two to the sixth in that case. So in general we can.
+
+85
+00:12:03,260 --> 00:12:09,250
+So. So if we have an end step walk.
+
+86
+00:12:15,130 --> 00:12:22,130
+With our steps to the right. The overall probability.
+
+87
+00:12:23,310 --> 00:12:33,050
+Well, maybe this is something that you could shout out for me just to make sure that everything is making sense so far.
+
+88
+00:12:45,430 --> 00:12:48,600
+So o times two and myself.
+
+89
+00:12:49,120 --> 00:12:58,210
+It is exactly that. And I put in a magic squiggle here, because there's one more piece, which we also saw briefly in the tutorial.
+
+90
+00:12:59,080 --> 00:13:03,910
+Um, the order of the steps that we take doesn't matter.
+
+91
+00:13:06,190 --> 00:13:10,820
+So. Any walk with.
+
+92
+00:13:11,180 --> 00:13:20,090
+Those are steps to the right and minus our steps to the left will end at the same final position.
+
+93
+00:13:24,470 --> 00:13:36,380
+So we have. The same, uh, combinatorial number of ways of having these are step blocks.
+
+94
+00:13:37,460 --> 00:13:43,430
+Uh, to add into this probability of any particular one with the order specified.
+
+95
+00:13:44,090 --> 00:13:48,350
+So in this case with n equals six.
+
+96
+00:13:48,350 --> 00:13:58,910
+If we keep that and think about, say n equals four rather than the x equals four rather than the x equal to up here we have.
+
+97
+00:14:03,230 --> 00:14:11,690
+To take. Five steps to the right and then subtract one step to the left at the end.
+
+98
+00:14:12,440 --> 00:14:25,430
+That's one step to the left. Can come at any order in the list, and there are ultimately six different places that left step could go.
+
+99
+00:14:26,480 --> 00:14:30,020
+The sixth is a special case of the binomial coefficients,
+
+100
+00:14:30,020 --> 00:14:37,520
+where we choose either one step to the left or five steps to the right from the total number of steps six.
+
+101
+00:14:39,080 --> 00:14:44,209
+And that generalises to a binomial coefficient of n,
+
+102
+00:14:44,210 --> 00:15:00,530
+choose R to give the overall probability of taking our steps to the right being and choose r p to the r and q to the n minus r.
+
+103
+00:15:08,110 --> 00:15:19,960
+So. We have here a general expression for the probability of ending up at any given final position
+
+104
+00:15:21,280 --> 00:15:30,010
+after we take and steps and can relate that final position x to the number of steps to the right.
+
+105
+00:15:33,320 --> 00:15:43,330
+So what is more interesting that builds on this is not so much what happens with any individual walk,
+
+106
+00:15:43,750 --> 00:15:47,500
+but the overall collective behaviour of the system.
+
+107
+00:15:47,890 --> 00:15:54,549
+As we repeat this experiment of walking many times and look at the expected or expectation
+
+108
+00:15:54,550 --> 00:16:03,190
+values that results of the simplest expectation value that we can formulate for a random walk.
+
+109
+00:16:05,110 --> 00:16:13,570
+I've zoomed in enough that I need to be careful about keeping everything on the screen here, so give me a shout if I go over and don't notice.
+
+110
+00:16:15,670 --> 00:16:19,540
+So the screen starts right about there.
+
+111
+00:16:22,730 --> 00:16:34,700
+So what will be interesting to compute are things like the expected final position of the walker, as well as fluctuations around that expectation.
+
+112
+00:16:35,990 --> 00:16:47,600
+So this final position is the expectation value of x the overall sum over all of the steps in the walk.
+
+113
+00:16:50,040 --> 00:17:02,759
+And this, on the basis of the usual definition of expectation value, is the sum over all possible final positions of that final position,
+
+114
+00:17:02,760 --> 00:17:07,050
+weighted by the probability of the walker ending at that final position.
+
+115
+00:17:08,400 --> 00:17:14,190
+And I will also just put here as the target.
+
+116
+00:17:14,190 --> 00:17:17,430
+The fluctuations are going to be given by.
+
+117
+00:17:19,950 --> 00:17:23,610
+What I call delta x sometimes called a diffusion length.
+
+118
+00:17:24,300 --> 00:17:28,260
+For reasons that will become more obvious when we get to the law of diffusion soon.
+
+119
+00:17:28,920 --> 00:17:32,430
+This is the analogue of a standard deviation.
+
+120
+00:17:33,470 --> 00:17:37,950
+I will save the term standard deviation for the single step process,
+
+121
+00:17:38,460 --> 00:17:46,980
+but the square root of the depth of the the expectation value of the square minus the square of the expectation value.
+
+122
+00:17:48,690 --> 00:17:57,030
+So to predict these basic collective outcomes of the random walk process.
+
+123
+00:17:59,230 --> 00:18:11,850
+We need to convert between. These final positions and their corresponding probabilities compared to that number of steps to the right,
+
+124
+00:18:12,570 --> 00:18:19,380
+and the probability of that for the special case that we are considering.
+
+125
+00:18:20,640 --> 00:18:32,820
+As a simple example, where we have fixed length steps taken after every time interval delta t, so this is not.
+
+126
+00:18:35,080 --> 00:18:45,040
+Too terribly difficult. The final position will be the combination of the steps we take to the right times,
+
+127
+00:18:45,370 --> 00:18:52,360
+the plus one for each of those steps, and then a minus one from the end minus R.
+
+128
+00:18:53,380 --> 00:18:58,280
+I don't know why I keep. Writing that poorly.
+
+129
+00:18:58,280 --> 00:19:01,220
+So minus one times n minus r steps to the left.
+
+130
+00:19:01,880 --> 00:19:11,330
+So the overall final position with the negatives cancelling out, there is twice the number of steps to the right minus n.
+
+131
+00:19:12,980 --> 00:19:19,880
+And we can check in this case where we have say six steps, of which five are to the right,
+
+132
+00:19:20,750 --> 00:19:25,340
+we have two times five is ten minus six gives us a final position of four.
+
+133
+00:19:26,150 --> 00:19:32,600
+So this is the general formula corresponding to to that example.
+
+134
+00:19:34,250 --> 00:19:45,680
+And then with that set up. The expectation value for the final position we can now write as the sum over all possibilities.
+
+135
+00:19:48,440 --> 00:19:59,180
+Either. No steps to the right. One step to step all the way up to a grand total of every single step in, taken to the right times.
+
+136
+00:20:00,150 --> 00:20:17,460
+X still on the screen there, which is to our minus n times the probability PR that was just on the sheet, I took away the factors of p and q.
+
+137
+00:20:17,760 --> 00:20:26,280
+Can we come in. And this in turn. So n is just a constant that gets pulled out of the sum, as does the two.
+
+138
+00:20:27,210 --> 00:20:30,450
+When we sum over PR itself.
+
+139
+00:20:30,450 --> 00:20:34,950
+That's a probability. So the summing over all possibilities gives 100%.
+
+140
+00:20:36,000 --> 00:20:41,490
+And we end up with. Maybe an intuitively obvious relationship.
+
+141
+00:20:42,210 --> 00:20:45,750
+That's the connection between final position and steps.
+
+142
+00:20:45,750 --> 00:20:51,480
+To the right survives the linear operation of expectation value to hold in this case as well.
+
+143
+00:20:52,500 --> 00:21:08,100
+And similarly, if we look at x squared expectation value for the fluctuations, we just need to square x in this sum,
+
+144
+00:21:08,850 --> 00:21:22,020
+which translates to four times the expectation value of r squared minus four n with one power of expectation value and then plus n squared.
+
+145
+00:21:24,210 --> 00:21:30,810
+Overall. So. For our goal of getting the final position and fluctuations,
+
+146
+00:21:32,100 --> 00:21:42,120
+we now need to evaluate the expected number of steps to the right and the square of that given our probabilities p and q in this case.
+
+147
+00:21:42,120 --> 00:21:57,270
+Any questions about this so far? Let's do something maybe less straightforward than we have so far and introduce a fun trick to.
+
+148
+00:21:59,370 --> 00:22:05,019
+Get these expectation values of a number of steps to the right.
+
+149
+00:22:05,020 --> 00:22:08,730
+Set square. And for that matter, in a higher power.
+
+150
+00:22:10,260 --> 00:22:14,040
+So this is an approach known as a generating function.
+
+151
+00:22:14,910 --> 00:22:19,650
+So it will be a function that generates these expectation values.
+
+152
+00:22:21,270 --> 00:22:25,340
+And. Um.
+
+153
+00:22:28,910 --> 00:22:32,390
+I think I press the zoom button just by leaning on it there.
+
+154
+00:22:33,050 --> 00:22:37,790
+I will just write down what this generating function g is.
+
+155
+00:22:38,120 --> 00:22:45,860
+In this case, it is going to be the same sum over all possibilities that we had before.
+
+156
+00:22:47,000 --> 00:22:53,120
+It will involve the probability of, uh, taking our steps to the right in an in step walk,
+
+157
+00:22:53,870 --> 00:23:04,580
+and it will have an additional exponential factor E to the r theta, where theta is the argument of this generating function g.
+
+158
+00:23:05,120 --> 00:23:13,370
+And from the properties of probability that we talked about up here, you can immediately see that if we set theta equals to zero,
+
+159
+00:23:14,090 --> 00:23:21,920
+we get just the sum over all the probabilities, which has to add up to 100% by the properties of probability.
+
+160
+00:23:23,030 --> 00:23:26,889
+So. Why is this useful?
+
+161
+00:23:26,890 --> 00:23:35,650
+Or what does this give us? What we can look at, thanks to the structure of this exponential factor in the generating function, is.
+
+162
+00:23:35,650 --> 00:23:48,940
+If I take the derivative of g with respect to this other arbitrary parameter theta, and then after taking that derivative, I set theta to zero.
+
+163
+00:23:50,560 --> 00:24:02,799
+And what we have is the sum over r of the derivative of the exponential factor times that PR which you all know how to do.
+
+164
+00:24:02,800 --> 00:24:08,980
+The r comes down. This is going to have theta to zero at the end.
+
+165
+00:24:09,610 --> 00:24:13,240
+Exponential is unaffected, as is the constant p of r in each term.
+
+166
+00:24:13,960 --> 00:24:27,730
+And when we now set theta to zero, e to the zero is one, and we end up with the sum of overall r of our weighted by the probability PR,
+
+167
+00:24:28,420 --> 00:24:36,910
+which is the expectation value of R itself, the number of steps to the right.
+
+168
+00:24:37,660 --> 00:24:41,290
+And we can repeat this arbitrarily many times.
+
+169
+00:24:42,160 --> 00:24:49,840
+Taking in derivatives with respect to theta and only setting theta to zero after doing all ten of them,
+
+170
+00:24:51,730 --> 00:24:54,910
+every derivative will bring down another factor of r.
+
+171
+00:24:56,140 --> 00:25:11,230
+We just have the sum then of r to the power n e to the r theta PR that goes to one, and that becomes the expectation value of the nth power of r.
+
+172
+00:25:13,810 --> 00:25:14,440
+In general.
+
+173
+00:25:17,100 --> 00:25:32,130
+So I've written all this in terms of piece of R, which we have already computed for our example random walk of six steps to the left and the right.
+
+174
+00:25:32,670 --> 00:25:39,810
+If we plug that in, what we have in this case it's C.
+
+175
+00:25:47,060 --> 00:25:51,770
+Is the expression for the generating function for these walks.
+
+176
+00:25:54,050 --> 00:26:07,430
+It is the sum over r of e to the r theta of the binomial factor, and shoes are a p to the r and a q to the n minus r.
+
+177
+00:26:10,250 --> 00:26:17,190
+Which we can rearrange. In this way.
+
+178
+00:26:17,340 --> 00:26:23,760
+So it's. Bring the and are out to the front there.
+
+179
+00:26:24,270 --> 00:26:28,410
+And we see that there are two quantities raised to the power.
+
+180
+00:26:28,440 --> 00:26:37,620
+We can combine this exponential factor E to the theta, raise the r power with the probability of stepping to the right p,
+
+181
+00:26:38,760 --> 00:26:49,080
+and then q to the n minus r power is left over all that remains, and this may look familiar.
+
+182
+00:26:50,040 --> 00:26:57,420
+It may look more familiar if I remind you of the binomial formula.
+
+183
+00:27:00,880 --> 00:27:09,640
+The reason that these factors are called binomial coefficients is that if we have a binomial A plus B raised to the power n,
+
+184
+00:27:11,080 --> 00:27:18,430
+that gets expanded as a sum of some of her, I say where we have n choose I.
+
+185
+00:27:19,030 --> 00:27:27,310
+Hi powers of the first term in the binomial, and then n minus I powers of the second term.
+
+186
+00:27:28,240 --> 00:27:33,430
+So this generating function g up here.
+
+187
+00:27:36,980 --> 00:27:47,240
+Is exactly what the binomial e theta p plus q raised to the n power.
+
+188
+00:27:48,440 --> 00:27:54,500
+And we can confirm that if we set theta to zero, as we did earlier in this,
+
+189
+00:27:56,030 --> 00:28:03,889
+in this form e to the theta goes to one, we have p plus q to the n p and q add up to one.
+
+190
+00:28:03,890 --> 00:28:19,010
+So we do get one as we should. So now it's just a matter of taking derivatives to get the expectation values that we are after in this case.
+
+191
+00:28:22,440 --> 00:28:26,850
+Any questions with the generating function set up so far.
+
+192
+00:28:31,920 --> 00:28:37,400
+Charge ahead and complete the calculation without too much further effort.
+
+193
+00:28:38,900 --> 00:28:46,700
+So the expectation value for one factor of this number of steps to the right is one derivative
+
+194
+00:28:47,330 --> 00:28:57,230
+of our generating function e to the theta p plus q to the n setting theta to zero at the end.
+
+195
+00:28:57,740 --> 00:29:01,549
+So you all know how to review this work.
+
+196
+00:29:01,550 --> 00:29:11,030
+I'll just talk through it myself so I don't get lost. The and power comes down N minus one powers are left.
+
+197
+00:29:11,570 --> 00:29:23,150
+And then the chain rule brings out the derivative of that first derivative of the whole term in parentheses, where only e to the theta p survives.
+
+198
+00:29:23,780 --> 00:29:34,069
+So setting theta to zero, all of the e to the thetas go to one and we end up with an p plus.
+
+199
+00:29:34,070 --> 00:29:37,670
+Q is one and p at the end.
+
+200
+00:29:38,120 --> 00:29:47,630
+So this is a simple expression for the expectation value for the overall number of steps to the right.
+
+201
+00:29:48,140 --> 00:29:53,810
+And it is one that makes sense. And we might have written down just by Arista hand-waving arguments.
+
+202
+00:29:54,770 --> 00:30:01,610
+The number of steps to the right is equal to the total number of steps times the probability that there is step to the right.
+
+203
+00:30:02,210 --> 00:30:11,600
+So this makes sense. Qualitatively, things get more interesting or more involved.
+
+204
+00:30:11,870 --> 00:30:18,379
+When we look at the expectation value of r squared that we need for the fluctuations.
+
+205
+00:30:18,380 --> 00:30:21,680
+So here we need two derivatives.
+
+206
+00:30:22,940 --> 00:30:26,720
+We've already done the first one. So we can just.
+
+207
+00:30:28,970 --> 00:30:32,210
+Plug in the expression for the first derivative there.
+
+208
+00:30:32,710 --> 00:30:46,400
+There is just keep each of the thetas and p's in the same order e to the theta p plus q to the n minus one will set theta to zero at the end.
+
+209
+00:30:47,510 --> 00:30:55,580
+So here there are going to be two terms to worry about from the the product rule.
+
+210
+00:30:56,570 --> 00:31:00,440
+First term just comes from the derivative of e to the theta with respect to theta.
+
+211
+00:31:01,010 --> 00:31:04,460
+So this term that we have here.
+
+212
+00:31:08,480 --> 00:31:17,690
+This comes along unchanged. And then we need that second power, second dependence on theta to be hit by the derivative.
+
+213
+00:31:18,500 --> 00:31:22,790
+So that brings down another factor of n minus one.
+
+214
+00:31:24,440 --> 00:31:30,409
+Everything else comes along for the ride and minus two factors are left.
+
+215
+00:31:30,410 --> 00:31:34,490
+And there is another e to the theta p coming from the chain rule in there.
+
+216
+00:31:37,800 --> 00:31:41,430
+This simplifies again. When we set theta to zero.
+
+217
+00:31:44,040 --> 00:31:47,070
+So everything goes away except for.
+
+218
+00:31:48,300 --> 00:32:05,670
+And p as above. Now plus and and minus one and p squared which we can simplify by pulling out that overall factor of n an overall factor of p.
+
+219
+00:32:06,630 --> 00:32:15,000
+We have a one plus n times p minus p that remain.
+
+220
+00:32:15,930 --> 00:32:18,990
+And one minus p is q for this case.
+
+221
+00:32:19,530 --> 00:32:29,900
+So. What we have here is n times p multiplied by the sum end times p plus one factor of q.
+
+222
+00:32:30,260 --> 00:32:38,300
+So something that we wouldn't have been able to write to arrive at just with hand-waving arguments about numbers of steps and probabilities,
+
+223
+00:32:39,050 --> 00:32:44,240
+but still not the trickiest calculation to do.
+
+224
+00:32:44,720 --> 00:32:48,890
+Are you happy with the results I've come up with here?
+
+225
+00:32:58,370 --> 00:33:03,440
+Good. There's never any guarantee that I write things down correctly.
+
+226
+00:33:04,760 --> 00:33:11,090
+So the final result that we have from going through that generating function.
+
+227
+00:33:16,680 --> 00:33:28,840
+Is first to. Plug in that expectation value of R into its relationship with the expectation value for the final position.
+
+228
+00:33:30,250 --> 00:33:33,430
+So we get to NP.
+
+229
+00:33:36,010 --> 00:33:42,280
+Minus n or just n factors of £0.02 minus one overall.
+
+230
+00:33:46,090 --> 00:33:49,659
+For, say, the square of the fluctuation.
+
+231
+00:33:49,660 --> 00:33:52,720
+So we can leave off the square roots signs. For now.
+
+232
+00:33:54,310 --> 00:33:59,590
+This involves the expectation value of the final position squared.
+
+233
+00:34:00,730 --> 00:34:06,570
+And then. The square of the expectation value itself that we just computed.
+
+234
+00:34:08,220 --> 00:34:16,530
+And we previously saw that this is related to r squared and r with factors of four.
+
+235
+00:34:18,830 --> 00:34:30,530
+Four r squared minus four and r plus n squared, and then minus the expectation value we have up here.
+
+236
+00:34:33,010 --> 00:34:38,100
+Um. Which we can write down as two r.
+
+237
+00:34:40,440 --> 00:34:51,569
+Minus and squared. So the relationship between these different ways of expressing the loc this two n minus r squared
+
+238
+00:34:51,570 --> 00:35:03,330
+will give us for our expectation value squared minus four and expectation value plus n squared,
+
+239
+00:35:04,980 --> 00:35:10,230
+which we can recognise as a few of the terms that appear here.
+
+240
+00:35:11,190 --> 00:35:20,190
+The negative signs are the same. Plus the overall subtraction means these cancel rather than adding n squared and n squared cancel.
+
+241
+00:35:21,960 --> 00:35:38,280
+And what is left is just the four times the expectation value of r squared there, minus the expectation value of our quantity squared.
+
+242
+00:35:38,970 --> 00:35:46,680
+And I can go ahead and start taking square roots from that and plugging in.
+
+243
+00:35:47,400 --> 00:35:59,250
+So square root of four is two. And what is left under the square root sign r squared here is going to be.
+
+244
+00:36:02,500 --> 00:36:10,840
+NP squared or NP quantity squared and squared p squared plus n p q.
+
+245
+00:36:13,800 --> 00:36:19,950
+And then minus expectation value of r squared that is just up here.
+
+246
+00:36:20,220 --> 00:36:31,070
+And p all squared. And there is another cancellation between those terms.
+
+247
+00:36:31,790 --> 00:36:39,230
+And we have a final result. Of two root n p and q.
+
+248
+00:36:41,510 --> 00:36:44,510
+So. Well there we have it. The.
+
+249
+00:36:49,370 --> 00:36:59,060
+Final results for the expectation value of the final position for our random walk or after end steps with these probabilities p and q.
+
+250
+00:37:01,130 --> 00:37:06,740
+Brings in the number of steps, and then twice the probability of stepping to the right minus one.
+
+251
+00:37:07,400 --> 00:37:14,630
+And then there is a more complicated product of these PS and QS in the fluctuations around that final position.
+
+252
+00:37:15,530 --> 00:37:19,640
+So let's do some just quick sanity checks. I will say.
+
+253
+00:37:22,760 --> 00:37:27,800
+Just as a general comment that may already be familiar to you.
+
+254
+00:37:28,130 --> 00:37:37,910
+Sanity checks for expressions that, uh, you know are not intuitively obvious are a good practice to to adopt,
+
+255
+00:37:38,510 --> 00:37:45,050
+especially for things like the computer assignment and the homework assignments that are coming up later on.
+
+256
+00:37:45,680 --> 00:37:59,200
+If you get some prediction, you can check to see if it makes sense, um, as ways of gaining confidence that it is correct and behaving as it should.
+
+257
+00:37:59,210 --> 00:38:10,820
+So as a simple example, if we set our probability p of stepping to the right to zero, then we know that every step has to be to the left.
+
+258
+00:38:11,210 --> 00:38:14,450
+There's no chance of any fluctuation about that.
+
+259
+00:38:14,750 --> 00:38:21,740
+So the final expected value of the walker has to be n steps to the left.
+
+260
+00:38:22,700 --> 00:38:29,149
+The fluctuations have to be zero. And we can check this against these expressions.
+
+261
+00:38:29,150 --> 00:38:33,230
+When p is zero we get minus and which is what we wanted.
+
+262
+00:38:33,590 --> 00:38:38,300
+When p is zero, we get zero. Everything works there.
+
+263
+00:38:39,170 --> 00:38:44,930
+The case of p equals one is or should be effectively the same.
+
+264
+00:38:44,930 --> 00:38:48,889
+Just up to negative signs we have here two minus one is one.
+
+265
+00:38:48,890 --> 00:38:57,500
+So a plus n every step is always stepping to the right with 100% probability and zero fluctuations around that.
+
+266
+00:38:57,500 --> 00:39:04,280
+Now from q equal to one minus p having to be a zero, a uh,
+
+267
+00:39:05,300 --> 00:39:10,370
+slightly less trivial sanity check is if we take that symmetric case where every
+
+268
+00:39:10,370 --> 00:39:16,580
+walk has the same probability one over £0.64 is equal to q is equal to one half.
+
+269
+00:39:18,230 --> 00:39:22,100
+We have an expectation value now two times one half is one.
+
+270
+00:39:22,100 --> 00:39:25,550
+So that cancels in the expectation value.
+
+271
+00:39:26,240 --> 00:39:35,150
+So um we expect to be where we started which we get in the cases where we take equal numbers of steps in both directions.
+
+272
+00:39:35,870 --> 00:39:38,240
+But because these are probabilistic,
+
+273
+00:39:39,110 --> 00:39:50,630
+there will be non-zero probabilities for the walks of the sort that we considered earlier where x was two or -2 or 4 dependent.
+
+274
+00:39:50,660 --> 00:39:57,560
+Um, all of these are now equally probable and will be reflected in the fluctuations that we have.
+
+275
+00:39:57,950 --> 00:40:07,130
+So two times the square root of n times a half times one half gives us one over four in the square root is one over two.
+
+276
+00:40:07,160 --> 00:40:12,020
+That cancels out the two and just leaves a factor of square root n.
+
+277
+00:40:13,970 --> 00:40:19,790
+So that is um, let's see how we're doing for time.
+
+278
+00:40:21,110 --> 00:40:24,170
+This is our segue way to the law of diffusion,
+
+279
+00:40:24,590 --> 00:40:31,610
+because the relation for this diffusion length of the scale of fluctuations being
+
+280
+00:40:31,610 --> 00:40:39,860
+proportional to the square root of the number of steps is not on the screen.
+
+281
+00:40:41,090 --> 00:40:45,140
+It's a very common, very generic consequence of.
+
+282
+00:40:47,240 --> 00:40:48,770
+These sorts of, uh,
+
+283
+00:40:49,190 --> 00:40:59,420
+random experiments that bring in elements of probability into individual steps that are repeated many times with many ID variables.
+
+284
+00:41:00,440 --> 00:41:08,240
+So that is the, uh, leading to the next topic, the law of diffusion,
+
+285
+00:41:08,570 --> 00:41:16,200
+which is what this is before you spend the last few minutes just introducing diffusion and the law of diffusion.
+
+286
+00:41:16,220 --> 00:41:28,760
+Are there any questions about this example of random walks and, uh, the calculations that we went through to get to these two initial,
+
+287
+00:41:29,120 --> 00:41:37,280
+uh, sets of collective results, the expectation value and the, uh, scale of fluctuations around it.
+
+288
+00:41:44,060 --> 00:41:47,900
+We're all happy with that simple example.
+
+289
+00:41:49,850 --> 00:42:01,070
+Well, it was designed to be simple, so hopefully it has made things concrete while still illustrating the underlying concepts.
+
+290
+00:42:02,060 --> 00:42:09,380
+But the language of diffusion that we have just five minutes or so to introduce today and then will,
+
+291
+00:42:10,490 --> 00:42:18,500
+uh, wrap up pretty quickly on Wednesday is really a more physical, more intuitive way.
+
+292
+00:42:19,220 --> 00:42:28,880
+There's the screen of talking about this sort of random behaviour that connects to some of the, uh,
+
+293
+00:42:30,800 --> 00:42:35,840
+you know, illustrations of statistical mechanics that we had just in that first day of lecture.
+
+294
+00:42:36,170 --> 00:42:41,990
+Seeing the picture of, uh, drop of dye spreading out or diffusing through a jar of water.
+
+295
+00:42:42,470 --> 00:42:51,950
+You want to see that sort of thing arising from these random walks and probability foundations that we have gone through now.
+
+296
+00:42:53,120 --> 00:43:00,439
+So we will approach this by recasting a random walk as a process that lasts for this time.
+
+297
+00:43:00,440 --> 00:43:06,260
+T rather than focusing on the N steps that are involved.
+
+298
+00:43:07,790 --> 00:43:16,730
+We can go through all of the results that we have computed and replace those and steps by the total time of this process,
+
+299
+00:43:17,180 --> 00:43:21,890
+divided by the time interval at which it is operating.
+
+300
+00:43:22,790 --> 00:43:27,619
+So that is simple for the expectation value itself.
+
+301
+00:43:27,620 --> 00:43:31,070
+That was just n times the quantity to p minus one.
+
+302
+00:43:32,090 --> 00:43:38,390
+So we can write that as t over delta t times to p minus one.
+
+303
+00:43:39,290 --> 00:43:42,560
+We isolate the overall time.
+
+304
+00:43:44,570 --> 00:43:51,440
+In this expression. Then what we have is a position that is equal to something times a time.
+
+305
+00:43:52,040 --> 00:44:00,310
+And going back to say, well the very basics position is velocity times time.
+
+306
+00:44:00,320 --> 00:44:14,240
+So we can interpret this factor as a velocity which I will call a drift velocity v sub t r multiplied by the time that the walker is drifting.
+
+307
+00:44:17,800 --> 00:44:22,060
+So just to make this explicit,
+
+308
+00:44:22,510 --> 00:44:34,450
+the drift velocity is the ratio of the expected final position of the water divided by the time that the random walk lasts.
+
+309
+00:44:39,150 --> 00:44:55,980
+So we interpret. The walk is a process in which the expected final position of the walker is steadily drifting with the drift velocity.
+
+310
+00:44:56,010 --> 00:45:03,030
+For the simple example that we had in terms of PS and QS, the drift velocity is related to £0.02 minus one.
+
+311
+00:45:04,860 --> 00:45:15,329
+But this way of rearranging the analysis in terms of drifting and diffusion is more generally applicable.
+
+312
+00:45:15,330 --> 00:45:21,270
+So when we see the full results on Wednesday, I'll try to make that clear.
+
+313
+00:45:21,270 --> 00:45:27,870
+What is specific to our current to this simple example that we're using for illustration
+
+314
+00:45:28,410 --> 00:45:34,170
+versus what is very generic and can be applied to all sorts of statistical processes.
+
+315
+00:45:36,010 --> 00:45:53,230
+We can do the same thing with the fluctuations. So that delta x we had as two times the square root of npdc and is t over delta t.
+
+316
+00:45:54,310 --> 00:46:08,050
+So if I just skip a step and bring the T out into a separate square roots, leave the delta T with the p's and q's in that ratio there.
+
+317
+00:46:09,820 --> 00:46:24,670
+I can write this as a more general expression, as some constant that depends on the characteristics of the walk times that square root of delta t and.
+
+318
+00:46:27,370 --> 00:46:31,740
+This relation. So.
+
+319
+00:46:33,930 --> 00:46:39,569
+The fact that the fluctuations delta t are proportional to the square root
+
+320
+00:46:39,570 --> 00:46:47,610
+of T with proportionality factor D is the statement of the law of diffusion.
+
+321
+00:46:52,500 --> 00:46:55,560
+So we have at least seen this statement.
+
+322
+00:46:58,090 --> 00:47:02,530
+Um, even if it barely fits on the screen there.
+
+323
+00:47:03,760 --> 00:47:13,510
+And for this reason, some of the quantities in the law of diffusion have a bit of jargon attached
+
+324
+00:47:13,510 --> 00:47:16,960
+to them that I think I have used without actually explaining them already.
+
+325
+00:47:17,470 --> 00:47:22,930
+This delta x is often referred to as a diffusion length.
+
+326
+00:47:26,050 --> 00:47:33,550
+Measuring the scale of fluctuations around the expected final position and the constant of proportionality.
+
+327
+00:47:33,550 --> 00:47:49,180
+D here is just known as the diffusion constant that would need to be analysed and predicted for any particular process that we are given to analyse,
+
+328
+00:47:49,180 --> 00:47:58,180
+which is, well, precisely what you will be doing as part of the computer assignment that we will be looking at and talking through on Thursday.
+
+329
+00:48:00,190 --> 00:48:06,820
+But this at least is probably a good place to pause for a couple of days.
+
+330
+00:48:07,270 --> 00:48:17,620
+There is more to say about the law of diffusion and, um, how it relates to random walks and more general statistical processes.
+
+331
+00:48:18,220 --> 00:48:22,780
+We will go through all of that on Wednesday before, uh,
+
+332
+00:48:23,290 --> 00:48:31,179
+setting aside the the first unit on probability foundations in its entirety and moving into finally,
+
+333
+00:48:31,180 --> 00:48:38,620
+unit two on, uh, so this is a statistical ensembles and the first of those that we will be looking at.
+
+334
+00:48:38,620 --> 00:48:44,290
+So what they mean. So that's that's the plan for Wednesday.
+
+335
+00:48:44,300 --> 00:48:49,900
+Any questions today before we break up with that.
+
+336
+00:48:54,620 --> 00:49:00,650
+Not seeing any. So stop recording and see your own constant.
+
