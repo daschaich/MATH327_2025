@@ -1,0 +1,2725 @@
+1
+00:00:00,390 --> 00:00:07,530
+[Auto-generated transcript. Edits may have been applied for clarity.]
+So. One can reboot and unplug the microphone later.
+
+2
+00:00:07,530 --> 00:00:11,130
+We should be able to go this morning. Welcome back.
+
+3
+00:00:12,060 --> 00:00:22,140
+There any immediate questions lingering from Monday before we dive into two hours of static and thermo today?
+
+4
+00:00:24,150 --> 00:00:28,560
+So first thing to remember to do while you consider that is.
+
+5
+00:00:30,530 --> 00:00:36,770
+Magic number four today. 22, 55 and 13.
+
+6
+00:00:37,070 --> 00:00:48,200
+And let's just hopefully the projected doc him will work a bit better in the morning without the sunlight, such as it is shining through the windows.
+
+7
+00:00:49,460 --> 00:00:53,750
+Let me know if it gives you if problems pop up.
+
+8
+00:00:54,290 --> 00:00:56,720
+Um, and in the meantime,
+
+9
+00:00:57,200 --> 00:01:09,020
+can we call that what we looked at on Monday were random walks and specifically working through a simple example of random walks in some detail.
+
+10
+00:01:09,770 --> 00:01:13,510
+So this is kind of the simplest possible case we can imagine.
+
+11
+00:01:13,580 --> 00:01:16,340
+Our walker is restricted to moving in one dimension,
+
+12
+00:01:16,730 --> 00:01:25,160
+either a line of position or in that roulette example from the tutorial, just, uh, some amount of money,
+
+13
+00:01:25,870 --> 00:01:38,770
+and using that example as a concrete basis on which to hang more general results, we derived the more interesting features of random walks.
+
+14
+00:01:38,780 --> 00:01:49,130
+Looking at first, the expected final position of the walk after n steps that have the expression n times £0.02 minus one,
+
+15
+00:01:49,310 --> 00:01:53,420
+where p was the probability for the walker to move to the right,
+
+16
+00:01:55,040 --> 00:02:00,199
+and q, which is one minus p is the probability of stepping to the left,
+
+17
+00:02:00,200 --> 00:02:04,580
+all with a fixed step size that was set equal to one without loss of generality.
+
+18
+00:02:05,570 --> 00:02:15,800
+And by imagining that every step is taken at a regular tick of a clock, we can relate that number of steps to the time that this random process lasts.
+
+19
+00:02:16,850 --> 00:02:25,460
+The £0.02 minus one comes along for the ride. But we have that time interval step for step by step, and then the total time itself.
+
+20
+00:02:26,450 --> 00:02:34,310
+And we can interpret a position in equal to something multiplied by a time as a velocity or a speed.
+
+21
+00:02:35,540 --> 00:02:45,740
+In this one dimensional case, um, where that the sub Dr. we introduced as the drift velocity.
+
+22
+00:02:47,060 --> 00:02:55,490
+And similarly, in addition to the expected final position, what is also interesting is how much the random walk,
+
+23
+00:02:55,490 --> 00:03:00,860
+if it were to be repeated many times, we could expect it to fluctuate around this final position.
+
+24
+00:03:01,310 --> 00:03:13,770
+So that was. The delta x, the analogue of the standard deviation for this multi-step process, um, sometimes called the diffusion length.
+
+25
+00:03:13,770 --> 00:03:17,580
+I think we just introduced that terminology at the very end of Monday.
+
+26
+00:03:18,030 --> 00:03:25,650
+And in similar terms of n and t, we saw this was the square root of n times p times q.
+
+27
+00:03:27,840 --> 00:03:34,440
+Or equivalently p q over delta t times the square root of t.
+
+28
+00:03:35,100 --> 00:03:39,990
+We can just call that some constant diffusion coefficient times the square root of t.
+
+29
+00:03:41,190 --> 00:03:46,980
+And that is the law of diffusion.
+
+30
+00:03:51,570 --> 00:03:58,740
+And one thing to emphasise about all of these expressions is that the final equalities over here,
+
+31
+00:03:59,370 --> 00:04:05,159
+in terms of drift velocity and diffusion coefficient, are going to be very general results.
+
+32
+00:04:05,160 --> 00:04:09,300
+And we will see today just how general those are.
+
+33
+00:04:09,540 --> 00:04:17,910
+Everything that involves these p's and Q's of taking fixed length steps to the left or right is specific to this particular example.
+
+34
+00:04:18,300 --> 00:04:30,890
+So that is. The special case in there that does not generalise to more complicated random walks of the sort that might appear in homework assignments,
+
+35
+00:04:30,890 --> 00:04:40,310
+computer assignments, exams, or other broader applications of statistical mechanics for those interested in that topic.
+
+36
+00:04:41,990 --> 00:04:46,460
+So are there any questions about what we had from Monday?
+
+37
+00:04:51,690 --> 00:04:58,980
+Before we do some new stuff today, which will be a bit of a back and forth, is my plan.
+
+38
+00:04:59,610 --> 00:05:07,530
+Um, just in order for tomorrow's computer lab to be able to spend as much time as possible looking at the computer assignments,
+
+39
+00:05:07,530 --> 00:05:15,460
+making sure you're all set up and ready to go with that over the next, uh, through two weeks before it's due you.
+
+40
+00:05:15,690 --> 00:05:20,639
+We'll try to wrap up last week's tutorial today.
+
+41
+00:05:20,640 --> 00:05:25,500
+Just make sure that all aspects of that are clear to all of you,
+
+42
+00:05:26,790 --> 00:05:37,380
+and then you will similarly wrap up this log of diffusion and its connection to the central limit theorem.
+
+43
+00:05:39,850 --> 00:05:45,249
+See Lt and then there should be time remaining after that.
+
+44
+00:05:45,250 --> 00:05:49,210
+To start looking at the, uh,
+
+45
+00:05:49,570 --> 00:05:55,059
+question for you to consider as we go through about how we take this kind of abstract
+
+46
+00:05:55,060 --> 00:06:01,600
+mathematical form formulation of probability spaces and apply it to more physical situations,
+
+47
+00:06:01,600 --> 00:06:07,570
+like the air in this room, that's the framework of statistical ensembles.
+
+48
+00:06:10,160 --> 00:06:14,480
+And the concept of thermodynamic equilibrium.
+
+49
+00:06:17,320 --> 00:06:22,330
+Not sure whether I heard the question coming up during that.
+
+50
+00:06:23,950 --> 00:06:33,430
+But if we go back to last week's tutorial, we talked through the first couple parts of this live on the day,
+
+51
+00:06:33,880 --> 00:06:44,860
+and then what was left for you to play with on your own was the connection to the central limit theorem, which I can probably zoom in a bit more here.
+
+52
+00:06:45,550 --> 00:06:51,820
+So getting an expression for the probability distribution, um,
+
+53
+00:06:51,880 --> 00:06:57,790
+after many spins and seeing how that how good an approximation that gives to the
+
+54
+00:06:58,000 --> 00:07:04,150
+exact results involving the binomial coefficient and these probabilities of,
+
+55
+00:07:04,810 --> 00:07:12,010
+uh, winning and losing even for a relatively modest number of spins, n equals five.
+
+56
+00:07:12,610 --> 00:07:17,260
+Whereas the central limit theorem formally applies to very large n much greater than one.
+
+57
+00:07:18,880 --> 00:07:25,300
+So what we can appreciate now, having gone through random walks more formally on Monday,
+
+58
+00:07:25,690 --> 00:07:34,930
+is that that tutorial problem was just a random walk, and a similar one to the simple example we had.
+
+59
+00:07:37,150 --> 00:07:41,860
+So all we have to do to connect the two is set that.
+
+60
+00:07:44,270 --> 00:07:49,340
+Fixed step length to £5 won or lost from each spin of the roulette wheel.
+
+61
+00:07:50,060 --> 00:07:57,020
+I've zoomed in now, so I have to be more careful about where exactly I'm writing.
+
+62
+00:08:00,280 --> 00:08:10,340
+And the probability for going in the plus direction for winning each spin we saw was 18/37.
+
+63
+00:08:10,930 --> 00:08:15,970
+And Q then is one -1837, which is 1937.
+
+64
+00:08:18,070 --> 00:08:32,710
+And to get a probability distribution out of the central limit theorem, we need the mean and variance for this single spin process.
+
+65
+00:08:35,050 --> 00:08:39,730
+Um, hopefully you had no trouble just writing these down.
+
+66
+00:08:41,320 --> 00:08:44,530
+I do not know what that pop up is.
+
+67
+00:08:45,340 --> 00:08:53,050
+Um, do you want to shout out what the mean is for a single spin of that roulette wheel?
+
+68
+00:09:28,900 --> 00:09:46,370
+Three minus five. Okay. So it is. Yes. So it is, as always, just the sum over all possibilities of that possibility times corresponding probability.
+
+69
+00:09:46,370 --> 00:09:50,000
+So possibilities are plus five and minus five.
+
+70
+00:09:50,360 --> 00:09:54,170
+Probabilities are 18 over 37 and 19 over 37.
+
+71
+00:09:54,530 --> 00:10:02,659
+So pulling out the overall factor of five we have five times 18 -19 all over 37 which
+
+72
+00:10:02,660 --> 00:10:14,560
+is minus five over 37 for the variance which is expectation value of x squared four.
+
+73
+00:10:15,170 --> 00:10:24,680
+I should maybe decorate these x's with subscripts, because these are single spins of the wheel or single steps in our random walk.
+
+74
+00:10:25,370 --> 00:10:37,729
+The calculation is very nearly the same, except instead of five times 18 minus five times 19 we get well, we put it down.
+
+75
+00:10:37,730 --> 00:10:44,720
+Here we have plus five squared times the probability of stepping in the positive money direction,
+
+76
+00:10:45,140 --> 00:10:52,520
+and then minus five squared times the probability of losing the negatives cancel out in the square.
+
+77
+00:10:52,910 --> 00:11:02,690
+We end up with 18 plus 19 over 37, which is known to its friends as one times five squared is 25,
+
+78
+00:11:03,740 --> 00:11:09,740
+or just 25 five squared times the probabilities of both winning and losing.
+
+79
+00:11:11,240 --> 00:11:26,690
+So to complete the variance up here we have 25 minus the square of five over 37, which is 25 over 37 squared.
+
+80
+00:11:27,200 --> 00:11:40,370
+Also something we can pull out and we will have something very close to 2537 squared is a relatively large number,
+
+81
+00:11:40,370 --> 00:11:51,469
+one over 37 squared, a relatively small one. And if we plug that into a pocket calculator it comes out in about 24, 98 I believe.
+
+82
+00:11:51,470 --> 00:12:00,920
+So five over 37 itself is approximately minus one three five.
+
+83
+00:12:02,120 --> 00:12:06,710
+And we can plug all of this in to the Gaussian.
+
+84
+00:12:09,460 --> 00:12:14,050
+Probability distribution given to us by the central limit theorem.
+
+85
+00:12:15,400 --> 00:12:21,430
+We have out front the normalisation factor of two pi and sigma squared.
+
+86
+00:12:21,460 --> 00:12:39,100
+So doubling 2498 gives us 4996 pi n and then an exponential of minus the amount that we win or lose in this roulette game.
+
+87
+00:12:39,970 --> 00:12:43,209
+Minus mu times n mu is negative.
+
+88
+00:12:43,210 --> 00:12:48,850
+So that is a plus one three, five and all of that is squared.
+
+89
+00:12:49,480 --> 00:12:55,270
+And then there's another two and sigma squared in the denominator.
+
+90
+00:12:55,270 --> 00:13:01,180
+So another 4996 and which.
+
+91
+00:13:03,750 --> 00:13:07,570
+Uh, should hold when n is sufficiently large. Much greater than one.
+
+92
+00:13:08,830 --> 00:13:14,680
+So this is the probability distribution from which we want to extract probabilities.
+
+93
+00:13:15,010 --> 00:13:29,200
+And the key um, concept to remember in this context is that probabilities are the integral of the probability distribution,
+
+94
+00:13:29,710 --> 00:13:38,500
+sometimes called a probability density. So we have to integrate this fun exponential function over appropriate intervals.
+
+95
+00:13:39,790 --> 00:13:47,460
+Um, which we saw last week were winning and losing for five spins of the wheel.
+
+96
+00:13:47,470 --> 00:13:50,890
+We could, uh, win all five and get £25.
+
+97
+00:13:50,890 --> 00:13:57,100
+We could lose all five, get -25, and the other four options are equally spaced by £10 in between.
+
+98
+00:13:57,100 --> 00:14:03,100
+So -25, -15, minus five plus five, plus 15 plus 25.
+
+99
+00:14:05,770 --> 00:14:14,139
+That numerical integration is what was left for you to play with on your own in any way you wanted.
+
+100
+00:14:14,140 --> 00:14:18,700
+And this is an example that I will send to canvas later on.
+
+101
+00:14:18,730 --> 00:14:28,209
+So looking a bit more at Python, for those of you who chose to use Python as opposed to other options like Mathematica, Maple,
+
+102
+00:14:28,210 --> 00:14:36,310
+Matlab, C, any numerical approach, possibly even the fancy graphing calculators that you can't use in exams around here.
+
+103
+00:14:37,000 --> 00:14:44,230
+So when we looked at the simpler version of this Python script last week,
+
+104
+00:14:44,650 --> 00:14:52,629
+we just computed the exact probabilities that were the binomial coefficient and then powers a,
+
+105
+00:14:52,630 --> 00:14:59,530
+ps and QS to the number of steps in the winning direction and the number of steps in the losing direction.
+
+106
+00:15:00,640 --> 00:15:06,040
+That number of steps is set to five. And now we add to that.
+
+107
+00:15:06,700 --> 00:15:13,240
+I'll actually go ahead and run this in case it takes a while to connect to Google's cloud where this will run.
+
+108
+00:15:15,520 --> 00:15:23,220
+Um, I have set up here. The central limit theorem for what I call g in the notes.
+
+109
+00:15:23,590 --> 00:15:26,640
+Any particular distance. The Newton.
+
+110
+00:15:26,910 --> 00:15:36,989
+The uh probability distribution that this subroutine returns is the constant coefficient one over root two pi n
+
+111
+00:15:36,990 --> 00:15:48,360
+times the variance times the exponential of minus x times n mu quantity squared divided by two n sigma squared.
+
+112
+00:15:49,170 --> 00:15:57,930
+So all of the same, uh, mathematical symbols that we just went through on paper are now translated to programming language.
+
+113
+00:15:57,930 --> 00:16:10,890
+And these variables. The mean and the variance are computed up here to hang around minus five over 37 and 25 minus mu squared.
+
+114
+00:16:11,340 --> 00:16:19,620
+So those are all in place. And we just need to go through all possibilities of winning from zero up to an inclusive.
+
+115
+00:16:20,130 --> 00:16:26,760
+This is that Python range routine that we saw last week inside this for loop.
+
+116
+00:16:28,150 --> 00:16:34,110
+So two ways of evaluating that integral.
+
+117
+00:16:34,120 --> 00:16:42,640
+First is to do it numerically. So this is a routine offered by Python's scientific Python library.
+
+118
+00:16:42,820 --> 00:16:49,120
+One of the nice features of Python is all of these tools that it adds to make life easier,
+
+119
+00:16:49,600 --> 00:16:57,100
+just integrating with a particular technique that annoyingly pops up whenever my mouse goes over it.
+
+120
+00:16:57,820 --> 00:17:04,240
+To do that numerical integration that we don't need to worry about, just send it off to Python and look at the results.
+
+121
+00:17:05,500 --> 00:17:11,920
+So integrating that probability distribution from some lower bound to some upper bound.
+
+122
+00:17:12,430 --> 00:17:19,000
+Evenly spaced in between all of those possibilities of -25, -15 and so on.
+
+123
+00:17:21,400 --> 00:17:26,560
+Delta over two. Here I've defined to be if.
+
+124
+00:17:28,000 --> 00:17:31,510
+Yeah, that has gone to sleep because I went to a different window.
+
+125
+00:17:32,740 --> 00:17:35,950
+So reload it quickly just to flash.
+
+126
+00:17:38,350 --> 00:17:46,290
+That delta g over two that showed up in the problem itself is just the difference between all the possibilities.
+
+127
+00:17:46,290 --> 00:17:51,100
+So ten divided by two gives us five here.
+
+128
+00:17:53,030 --> 00:17:58,280
+Um, written in a more automated way rather than hardcoding five.
+
+129
+00:17:58,280 --> 00:18:02,240
+And then we just print out that numerical integration.
+
+130
+00:18:04,320 --> 00:18:08,040
+Alternatively, if I can get rid of these pop ups.
+
+131
+00:18:08,940 --> 00:18:15,269
+A simpler, more simple minded approximation that we can make to simplify that numerical integration.
+
+132
+00:18:15,270 --> 00:18:22,740
+If we don't want to go to a scientific Python package and worry about reading those documentations, is just to,
+
+133
+00:18:24,300 --> 00:18:30,510
+uh, approximate the integral by saying that the probability distribution is approximately constant.
+
+134
+00:18:30,900 --> 00:18:35,430
+So the integral itself just becomes the central value times the range of integration.
+
+135
+00:18:36,000 --> 00:18:42,270
+That's what this is the central value. There times that range of integration delta gain which is.
+
+136
+00:18:44,650 --> 00:18:50,350
+Also defined up here. Uh, the difference between what we would gain.
+
+137
+00:18:51,560 --> 00:18:54,770
+If we won once or twice or three times.
+
+138
+00:18:55,340 --> 00:18:56,570
+So this has run.
+
+139
+00:18:57,350 --> 00:19:08,540
+It has printed out these probabilities that we saw last week, and both the numerical integration as well as that constant approximation,
+
+140
+00:19:08,960 --> 00:19:20,420
+which we can see differ from each other in roughly the third significant figure after the, uh, decimal place.
+
+141
+00:19:21,860 --> 00:19:30,560
+And unlike the exact probabilities coming from the binomial coefficient, they don't quite sum exactly to one.
+
+142
+00:19:30,860 --> 00:19:41,570
+They're sort of, um, 0.6% or 0.8% probability lost from these approximations in.
+
+143
+00:19:43,790 --> 00:19:51,629
+And in fact. Something we might not have anticipated is that the constant approximation actually gets a bit closer where we are losing the probability
+
+144
+00:19:51,630 --> 00:20:00,750
+here is actually from the fact that the central limit theorem extends across all possible values of g from minus infinity to infinity,
+
+145
+00:20:01,050 --> 00:20:05,850
+even though with five spins we're restricted to that -25 to plus 25 range.
+
+146
+00:20:06,450 --> 00:20:13,560
+So we have everything from plus 25 to infinity is giving some non-zero probability.
+
+147
+00:20:14,100 --> 00:20:19,580
+Once we approximate things with the central limit theorem, that's only exact, and the end to infinity limit as.
+
+148
+00:20:19,620 --> 00:20:26,850
+Similarly, from negative infinity up to -25, there's another tail where probability is bleeding away.
+
+149
+00:20:27,690 --> 00:20:32,249
+So what we have in the end are these three predictions,
+
+150
+00:20:32,250 --> 00:20:44,010
+all plotted on top of each other for these five spins of the wheel generally know in several cases they are on top of each other as well.
+
+151
+00:20:44,010 --> 00:20:51,360
+As we can resolve this plot, we can see up here there are some discrepancies,
+
+152
+00:20:52,560 --> 00:20:57,480
+uh, around the peak where this Gaussian function is changing more rapidly.
+
+153
+00:20:57,480 --> 00:21:01,530
+And if we approximate it as a constant, that is not as good an approximation.
+
+154
+00:21:01,950 --> 00:21:08,939
+So that constant approximation is drifting a bit above where it should be at the top of the peak,
+
+155
+00:21:08,940 --> 00:21:12,780
+a bit below on the shoulders, and then settling down off at the tail.
+
+156
+00:21:13,770 --> 00:21:23,160
+And that is the, uh, the main takeaway from that tutorial with n equals five, which is not so much greater than one.
+
+157
+00:21:23,730 --> 00:21:30,660
+The central limit theorem is giving very good approximations, especially if we integrate it numerically.
+
+158
+00:21:30,990 --> 00:21:36,960
+But even if we approximate it as a constant within each possible interval.
+
+159
+00:21:38,850 --> 00:21:49,150
+And just to revisit one. Useful thing to keep in mind about these programmatic computational approaches.
+
+160
+00:21:49,720 --> 00:21:57,190
+Once we've set this up, we can just change the number of spins and rerun like so it took.
+
+161
+00:21:58,800 --> 00:22:04,530
+Well, zero seconds is what it's saying. We very quickly computed 50 spins, the exact probabilities.
+
+162
+00:22:04,830 --> 00:22:13,500
+The central limit theorem and the constant approximation to it. All the points are even closer together in better agreement,
+
+163
+00:22:14,040 --> 00:22:21,270
+and are now all summing to one up to the precision of the numbers that we are printing here.
+
+164
+00:22:22,380 --> 00:22:32,940
+In all three cases, sometimes getting very small probabilities to win a lot slightly larger probabilities to lose a lot can even, you know,
+
+165
+00:22:34,470 --> 00:22:47,970
+there are limits to how large and can be before things go wrong, just due to the limitations of representing real numbers by some finite set of bits.
+
+166
+00:22:48,600 --> 00:22:53,610
+So there will be a lot of numbers here that we can skip over.
+
+167
+00:22:53,610 --> 00:22:59,130
+And conveniently, just Google Colab is only showing a small fraction of them.
+
+168
+00:23:00,870 --> 00:23:06,570
+What uh, you might not be able to see here is that the exact results are actually only.
+
+169
+00:23:08,730 --> 00:23:15,180
+Open this and zoom in a bit. The exact results are those green points in the background.
+
+170
+00:23:15,720 --> 00:23:22,680
+They actually stop there. Um. Because when we try to compute.
+
+171
+00:23:23,070 --> 00:23:29,400
+Oops. If we go up to that binomial coefficient here,
+
+172
+00:23:30,510 --> 00:23:40,260
+this is n factorial divided by w factorial times and minus w factorial and 5000 factorial is quite a large number.
+
+173
+00:23:41,280 --> 00:23:44,820
+Um, we can see just how large it is.
+
+174
+00:23:46,500 --> 00:23:55,680
+Uh, once, um, the simplifications from dividing that n factorial by a large n minus w are lost,
+
+175
+00:23:56,250 --> 00:24:03,240
+we actually overflow the range of possible numbers that can be represented by the default 64 bit,
+
+176
+00:24:03,810 --> 00:24:10,770
+uh, 64 bits that Python is using in here, and it spits out that the probability is not a number.
+
+177
+00:24:10,770 --> 00:24:14,850
+Nan is what that stands for. And we have to be a bit more clever.
+
+178
+00:24:15,540 --> 00:24:23,700
+One thing we can do to be clever is, in fact, by invoking the central limit theorem, which does not have to explicitly compute.
+
+179
+00:24:25,220 --> 00:24:30,470
+That. Binomial coefficient is just a Gaussian function,
+
+180
+00:24:32,210 --> 00:24:41,690
+and we can see all of the numbers that we get down to minus ten to the power -308 before it's zero to machine precision.
+
+181
+00:24:42,170 --> 00:24:47,989
+And very nice Gaussian peak just below zero.
+
+182
+00:24:47,990 --> 00:24:57,560
+So almost certain to lose money if we indulge our bad habits and spin that roulette wheel 5000 times.
+
+183
+00:24:59,480 --> 00:25:06,710
+So this is just where. That binomial coefficient starts to break in Python.
+
+184
+00:25:06,950 --> 00:25:13,820
+There are things we can do to get around this, but it's coming up to this ten to the power 308.
+
+185
+00:25:14,360 --> 00:25:19,640
+That is the upper limit for a 64 bit numbers.
+
+186
+00:25:19,970 --> 00:25:32,570
+And once we try to increase that end from 1029 to 1030, with 515 wins out of those thousand and 30 spins,
+
+187
+00:25:32,570 --> 00:25:39,080
+that's where we overflow the computational arithmetic that we have.
+
+188
+00:25:39,800 --> 00:25:47,420
+So that is something that we don't now have to spend time on in the computer lab tomorrow.
+
+189
+00:25:47,450 --> 00:25:59,990
+Are there any questions about this before we go back to random walks in more generality and set aside the programming, at least for another 22 hours?
+
+190
+00:26:04,850 --> 00:26:15,410
+I'm. Not seeing any, but conveniently seeing that the screen stayed active.
+
+191
+00:26:16,310 --> 00:26:21,620
+The projector is still. Live.
+
+192
+00:26:25,550 --> 00:26:30,590
+If we go back to our random walks and.
+
+193
+00:26:33,230 --> 00:26:39,170
+We elaborate on this law of diffusion and the concept of diffusion more generally.
+
+194
+00:26:39,600 --> 00:26:50,810
+You know, this was one of the first, um, big pictures that got flashed on the first day of the semester last week.
+
+195
+00:26:51,530 --> 00:26:59,360
+Those pictures of a drop of dye spreading out through a jar of water and we can't connect that to.
+
+196
+00:27:02,160 --> 00:27:06,210
+The more formal mathematical. There's the screen.
+
+197
+00:27:08,160 --> 00:27:14,550
+So diffusion related to that sort of spreading out.
+
+198
+00:27:16,020 --> 00:27:21,110
+We can see. By imagining that we.
+
+199
+00:27:23,650 --> 00:27:30,730
+Repeat these random walks some number of times, and look at the final position of each repetition,
+
+200
+00:27:31,120 --> 00:27:39,970
+and just see how the whole distribution of walk lengths looks.
+
+201
+00:27:40,720 --> 00:27:49,630
+So going beyond just the final position, expectation value and the diffusion length fluctuations around that.
+
+202
+00:27:53,070 --> 00:27:59,320
+So if we. Repeat our random walk many times.
+
+203
+00:28:02,170 --> 00:28:09,549
+Then what we end up with is a probability distribution that depends on the length of the walk,
+
+204
+00:28:09,550 --> 00:28:14,170
+either the number of steps or the amount of time that passes.
+
+205
+00:28:15,820 --> 00:28:26,610
+I need an installer. So here is just an example of that for.
+
+206
+00:28:29,610 --> 00:28:33,090
+A simple case where both p and q are equal to a half.
+
+207
+00:28:33,360 --> 00:28:38,430
+So 5050 chance of evenly sized steps to the left or right.
+
+208
+00:28:39,420 --> 00:28:50,280
+The drift velocity that predicts n times to p minus one will be.
+
+209
+00:28:52,460 --> 00:28:56,780
+Zero pretty easily. So two is one minus one goes to zero.
+
+210
+00:28:57,380 --> 00:29:08,150
+Diffusion coefficient, which is the, uh, two times the square root of q over delta t times t.
+
+211
+00:29:09,680 --> 00:29:13,759
+So p and q are both the half. So multiply them together.
+
+212
+00:29:13,760 --> 00:29:19,669
+We get a quarter. We have a delta t in there that we can just set to one without loss of generality.
+
+213
+00:29:19,670 --> 00:29:25,250
+So working in units of um ticks of that clock or units of time steps.
+
+214
+00:29:25,850 --> 00:29:31,100
+So two times a square root of delta four nicely cancel out two one.
+
+215
+00:29:32,810 --> 00:29:47,720
+And what this gives us from the central limit theorem probability distribution is a nice set of Gaussian curves starting from t equals one.
+
+216
+00:29:48,620 --> 00:29:59,870
+Here going down to 234 and stopped around ten with different colours and line types dashed, dotted and solid.
+
+217
+00:30:00,710 --> 00:30:06,170
+So all of these bell curves are centred around x equals zero that x.
+
+218
+00:30:06,410 --> 00:30:10,550
+So that is the expectation value. So.
+
+219
+00:30:14,330 --> 00:30:18,650
+Expectation value was just the drift velocity times time.
+
+220
+00:30:19,100 --> 00:30:21,320
+That is always zero as time passes.
+
+221
+00:30:23,150 --> 00:30:32,780
+But even though that peak of this symmetric Gaussian function is centred around x equals zero and not drifting, it is still evolving in time.
+
+222
+00:30:33,170 --> 00:30:41,060
+The probability for walks to end near that expectation value are spreading out or diffusing,
+
+223
+00:30:42,500 --> 00:30:51,500
+and in order for the probability after integration to remain constant at 100% across the whole range of x,
+
+224
+00:30:52,490 --> 00:31:00,710
+we need that peak height to come down as the width of the Gaussian diffuses or spreads out.
+
+225
+00:31:01,910 --> 00:31:13,280
+And if we were to try to imagine the interval in which we would expect to find a random walker with some fixed probability.
+
+226
+00:31:13,550 --> 00:31:17,120
+So this is often called, for example, a one sigma interval,
+
+227
+00:31:17,600 --> 00:31:25,880
+which is the range we would have to integrate to get about 68% probability out of this distribution.
+
+228
+00:31:27,620 --> 00:31:32,900
+Um, that range is going to steadily grow as time passes.
+
+229
+00:31:34,580 --> 00:31:39,690
+So I'll just say. As a note.
+
+230
+00:31:41,640 --> 00:31:44,640
+So the range that we have to integrate to get that.
+
+231
+00:31:45,210 --> 00:31:53,310
+It's roughly 68% probability in the integral is going to go like deep.
+
+232
+00:31:53,490 --> 00:32:05,190
+So spreading. From that diffusion coefficient times root t to negative d root t.
+
+233
+00:32:06,390 --> 00:32:08,730
+So as t passes that.
+
+234
+00:32:13,760 --> 00:32:23,960
+Steadily gets larger and larger with this characteristic law of diffusion dependence on the square root of the time that the walk is allowed to.
+
+235
+00:32:25,970 --> 00:32:32,720
+To proceed. So that is maybe the simplest possible case for the simple random walk.
+
+236
+00:32:33,350 --> 00:32:39,710
+We can make things a little more interesting by introducing a non-zero drift velocity.
+
+237
+00:32:40,310 --> 00:32:52,969
+So here with the probability 99% of stepping to the right, the drift velocity is twice that um minus one.
+
+238
+00:32:52,970 --> 00:32:56,780
+So 1.98 minus one is going to.
+
+239
+00:32:59,170 --> 00:33:11,020
+Leave 0.98 rather than zero diffusion coefficient, again, setting that time step to one.
+
+240
+00:33:11,020 --> 00:33:21,730
+Without loss of generality, we have a point 99 times .01 is going to be approximately 0.01, and the square root of that is approximately one.
+
+241
+00:33:22,240 --> 00:33:26,620
+So this will be approximately 0.2.
+
+242
+00:33:29,900 --> 00:33:38,780
+Just for mental math. And if I go through the full calculation, it is 0.199.
+
+243
+00:33:39,260 --> 00:33:51,910
+And now. The expectation value that corresponds to the peak of the Gaussian is steadily drifting to the right with this high drift velocity.
+
+244
+00:33:51,920 --> 00:33:58,610
+So after one timestep it's just below one, and after ten timesteps it's just below ten.
+
+245
+00:33:58,970 --> 00:34:06,260
+So what the drift velocity gives us and it is still diffusing out around that peak.
+
+246
+00:34:07,160 --> 00:34:13,590
+So the the width. Of all of these curves are still getting wider.
+
+247
+00:34:14,310 --> 00:34:21,420
+The height of the peak is still getting lower to reflect the conservation of probability.
+
+248
+00:34:21,810 --> 00:34:31,680
+And this is, um, in a sense, the close to the other extreme of behaviour compared to having zero drift velocity.
+
+249
+00:34:31,680 --> 00:34:39,120
+If we were to increment that p just all the way up to one, then we would end up with no drift at all.
+
+250
+00:34:39,120 --> 00:34:43,590
+100% chance of walking to the right, no randomness remaining,
+
+251
+00:34:43,980 --> 00:34:55,260
+and the central limit theorem would just reduce to a series of, um, sharp peaks, stepping steadily to the right.
+
+252
+00:34:56,280 --> 00:35:05,550
+Maybe a more generic situation is something that looks like this, where all of these factors are in play.
+
+253
+00:35:05,610 --> 00:35:07,380
+And, um.
+
+254
+00:35:09,270 --> 00:35:21,240
+Interfering with with each other in the way we can visually see here with, say, a 60% chance of stepping in one direction versus 40% to the other.
+
+255
+00:35:22,110 --> 00:35:29,430
+Our drift velocity now is two times point six minus one or 0.2.
+
+256
+00:35:31,860 --> 00:35:39,299
+The diffusion coefficient is twice 0.6, times 0.4 is oh point 24.
+
+257
+00:35:39,300 --> 00:35:43,410
+So that's roughly a quarter. The square root would be roughly a half.
+
+258
+00:35:43,410 --> 00:35:48,990
+So this is going to be roughly one. And the actual number is 0.98.
+
+259
+00:35:51,870 --> 00:36:05,940
+So now we have um both a steady drift of the expectation value off to the right down to here.
+
+260
+00:36:06,780 --> 00:36:13,590
+And the diffusive or spreading out behaviour is, uh, more prominent.
+
+261
+00:36:15,480 --> 00:36:23,700
+Um, with that slower drift, there's a lot more overlap between the different probability distributions as a function of time.
+
+262
+00:36:25,620 --> 00:36:41,130
+So that. Gives a few pictures to keep in mind as a way to, uh, visualise and hang this idea of, you know, what is diffusion in terms of probability.
+
+263
+00:36:42,270 --> 00:36:51,989
+And maybe what I should do now is actually write down the function that was being plotted here, uh, in terms of t.
+
+264
+00:36:51,990 --> 00:36:56,490
+So connecting there is the page.
+
+265
+00:36:58,590 --> 00:37:02,640
+Connecting diffusion to the central limit theorem.
+
+266
+00:37:07,810 --> 00:37:21,790
+Where you remember that central limit theorem we expect to apply when the number of steps is large, even if in some cases large can mean five.
+
+267
+00:37:22,150 --> 00:37:25,210
+But it gets increasingly better. As in increases, we have.
+
+268
+00:37:26,230 --> 00:37:27,700
+The probability distribution for.
+
+269
+00:37:27,700 --> 00:37:39,130
+The final position of our walker is approximately one over two pi and variance of the single step, and then the Gaussian.
+
+270
+00:37:41,200 --> 00:37:47,020
+Exponential factor x minus n times the mean for the single step.
+
+271
+00:37:49,330 --> 00:37:52,840
+All divided by two n times the variance.
+
+272
+00:37:54,520 --> 00:38:01,000
+So all we need to do is compute the mean and variance for.
+
+273
+00:38:03,650 --> 00:38:19,080
+That single step. So this is going to look quite similar to what we've done with that.
+
+274
+00:38:19,080 --> 00:38:23,190
+We're led example for instance. So we'll just charge through and do it.
+
+275
+00:38:23,760 --> 00:38:29,700
+The mean is expectation value for the single step decorated by that subscript.
+
+276
+00:38:30,090 --> 00:38:33,990
+So we sum over all of the two possibilities.
+
+277
+00:38:34,740 --> 00:38:44,610
+Stepping in the with a fixed length into the right with probability p to the left with probability q which is one minus p.
+
+278
+00:38:46,080 --> 00:38:52,410
+Put that together. We get to p minus one for the mean.
+
+279
+00:38:53,400 --> 00:39:01,560
+Similarly, we look at the expectation value for the square of a single step.
+
+280
+00:39:02,130 --> 00:39:11,220
+Then, just as we did with roulette, we have the step length squared uh times p minus step length squared.
+
+281
+00:39:12,000 --> 00:39:17,010
+Uh drops cancels off the negative sign when we have q.
+
+282
+00:39:17,010 --> 00:39:25,620
+So we end up with p plus q all times 1 or -1 squared which is all just one.
+
+283
+00:39:26,790 --> 00:39:35,880
+And the variance then is one minus mu squared or £0.04 squared -£0.04 plus one.
+
+284
+00:39:36,900 --> 00:39:43,650
+So the ones cancel there's a overall factor of £0.04 we can pull out.
+
+285
+00:39:43,650 --> 00:39:52,470
+And what is left after that is one minus p which is known to his friends as Q.
+
+286
+00:39:54,780 --> 00:40:09,380
+So. These here are similar to what we found for the expected final position and the diffusion length on Monday.
+
+287
+00:40:09,710 --> 00:40:15,890
+In terms of P and Q, these are the results for the special case of our.
+
+288
+00:40:19,360 --> 00:40:22,360
+Simple random walk example.
+
+289
+00:40:24,280 --> 00:40:35,420
+We can. Maybe avoid the the red ink because that's saying special case, but not coming up too well on the screen.
+
+290
+00:40:36,560 --> 00:40:39,950
+What we can do is also express.
+
+291
+00:40:42,320 --> 00:40:45,320
+These results in a more general form.
+
+292
+00:40:49,600 --> 00:41:02,050
+So we have seen that. This £0.02 minus one popped up here as the drift velocity multiplied by delta t the time step.
+
+293
+00:41:02,740 --> 00:41:09,400
+So that is another way to write mu in terms of the.
+
+294
+00:41:11,330 --> 00:41:18,930
+A drift velocity that characterises or can be defined for any random walk of interest.
+
+295
+00:41:19,290 --> 00:41:26,820
+Delta t itself is the total time of the walk, divided by the number of steps that we take in that time.
+
+296
+00:41:26,850 --> 00:41:32,339
+That gives us the time interval and the drift velocity times.
+
+297
+00:41:32,340 --> 00:41:38,960
+The total time is just the expectation value for the final position divided by n.
+
+298
+00:41:38,970 --> 00:41:49,360
+So we have a most simple and intuitive connection between that expected final position and the mean of the single step process.
+
+299
+00:41:49,380 --> 00:41:55,710
+They're just related by a factor of n. And there will be something similar happening for the variance.
+
+300
+00:41:56,670 --> 00:42:06,330
+For p q there we can get by squaring this expression for that diffusion length or diffusion coefficient here.
+
+301
+00:42:07,590 --> 00:42:12,810
+So for p squared is d squared times delta t.
+
+302
+00:42:15,830 --> 00:42:31,630
+And similarly that's d squared times the overall length times n or d squared t is the diffusion length delta x all squared over n.
+
+303
+00:42:31,640 --> 00:42:42,080
+So the fluctuations around the expected final position are just related to the standard deviation of the single step,
+
+304
+00:42:42,080 --> 00:42:56,900
+now multiplied by a square root of n. And we can rewrite our probability distribution in terms of these general quantities for diffusive behaviour.
+
+305
+00:42:57,740 --> 00:43:07,370
+It is approximately one over two pi and sigma squared is d squared t.
+
+306
+00:43:09,730 --> 00:43:21,670
+And then our exponential factor of x minus n mu is that drift velocity times t all squared.
+
+307
+00:43:25,800 --> 00:43:29,010
+And then again divided by two.
+
+308
+00:43:29,580 --> 00:43:34,290
+And sigma squared is two d squared t.
+
+309
+00:43:35,910 --> 00:43:45,610
+And this is. Exactly the function we were looking at in these three plots.
+
+310
+00:43:46,400 --> 00:43:54,100
+We can see all of the behaviour identified visually, just in the mathematical form of this expression.
+
+311
+00:43:55,450 --> 00:44:08,470
+So this is giving us a peak in the Gaussian curve whenever the argument of that exponential is maximised.
+
+312
+00:44:09,400 --> 00:44:14,620
+Everything in it is positive with an overall negative sign. So the maximum is going to be zero.
+
+313
+00:44:15,160 --> 00:44:24,820
+So x equal to the drift velocity times time, which is just the expectation value for the final position.
+
+314
+00:44:25,480 --> 00:44:33,400
+So we can read that expectation value off the peak of the Gaussian curve in the central limit theorem.
+
+315
+00:44:33,940 --> 00:44:39,059
+The width of that peak. So that's the location of the peak.
+
+316
+00:44:39,060 --> 00:44:42,570
+Its width, um, is going to depend on time.
+
+317
+00:44:43,290 --> 00:44:50,340
+So as time passes and assuming d squared is non-zero, which makes it strictly positive,
+
+318
+00:44:50,940 --> 00:44:59,580
+that's a non-negative number, then the denominator in the exponential is becoming larger and larger if we uh.
+
+319
+00:45:00,180 --> 00:45:10,830
+So in order to get the same value for this distribution, we need the numerator to become larger and larger to match.
+
+320
+00:45:11,370 --> 00:45:18,390
+And that corresponds to x farther and farther away from its expectation value v times t.
+
+321
+00:45:18,870 --> 00:45:33,480
+So that width is increasing. Like, um, so the width is just x, so we have to get rid of that square in the exponential function.
+
+322
+00:45:34,770 --> 00:45:40,950
+We end up with something that is proportional to the square root of d squared t or just d root t.
+
+323
+00:45:42,030 --> 00:45:50,850
+There's the law of diffusion um. And the visual behaviour we were seeing in all of these examples,
+
+324
+00:45:51,300 --> 00:45:58,800
+things spreading out like the square root of t, we now mathematically and finally the height of the peak.
+
+325
+00:46:01,740 --> 00:46:06,080
+We can see decreases just due to this normalisation factor.
+
+326
+00:46:06,090 --> 00:46:11,280
+Also having a square root d squared t in it.
+
+327
+00:46:12,870 --> 00:46:19,860
+So the height will come down as one over d root t.
+
+328
+00:46:20,670 --> 00:46:25,799
+And this normalisation factor we've seen in the central limit theorem is just
+
+329
+00:46:25,800 --> 00:46:30,420
+there to fix the total probability of integrating over all possibilities.
+
+330
+00:46:31,800 --> 00:46:37,410
+So that is the reflection of conservation of probability coming from this.
+
+331
+00:46:37,920 --> 00:46:48,760
+So. We now have seen these general results in both visual and more formal mathematical form.
+
+332
+00:46:51,100 --> 00:46:55,240
+And I think I'll keep going. Just to wrap up this whole discussion.
+
+333
+00:46:56,170 --> 00:47:02,910
+There's one more interesting question that we could ask, which is, um,
+
+334
+00:47:02,950 --> 00:47:11,409
+between the drift of the expectation value or the drift of the peak in this Gaussian
+
+335
+00:47:11,410 --> 00:47:18,850
+function versus the spreading out or diffusion of that probability distribution.
+
+336
+00:47:19,360 --> 00:47:28,420
+Which of those is going to win and become and be more important as we look at sort of the large time limit,
+
+337
+00:47:29,220 --> 00:47:33,910
+uh, as these random processes go on longer and longer.
+
+338
+00:47:34,450 --> 00:47:41,530
+So let's assume that the drift velocity is just non-zero.
+
+339
+00:47:42,160 --> 00:47:46,600
+In the case of a vanishing drift velocity is kind of a trivial case where there is no drift.
+
+340
+00:47:47,050 --> 00:47:55,750
+But if we have both of these, um, both drift and diffusion active in any particular random process,
+
+341
+00:47:56,290 --> 00:48:03,970
+then we have seen that the drift in the expectation value is proportional to t.
+
+342
+00:48:05,830 --> 00:48:08,320
+The proportionality factor is the drift velocity.
+
+343
+00:48:09,670 --> 00:48:17,770
+The diffusion comes from the law of diffusion that the diffusion length is proportional to the square root of t.
+
+344
+00:48:18,340 --> 00:48:28,930
+And if we put those together, we see that the relative scale of uncertainty given by these fluctuations divided by
+
+345
+00:48:29,290 --> 00:48:35,050
+the central value for that final expectation value is going to be root t over t,
+
+346
+00:48:35,950 --> 00:48:45,490
+or one over root t, which will then head to zero as t which is proportional to n goes to infinity.
+
+347
+00:48:46,810 --> 00:48:50,710
+So. We have a bit of.
+
+348
+00:48:52,840 --> 00:49:06,550
+Interplay here although. The absolute diffusion length that tells us the scale of uncertainties or scale of fluctuations around
+
+349
+00:49:06,700 --> 00:49:13,870
+the expected final position that gets larger and larger as time passes with that square root dependence.
+
+350
+00:49:15,460 --> 00:49:21,550
+But compared to the drifting expectation value, the relative.
+
+351
+00:49:23,710 --> 00:49:29,560
+Fluctuations corresponding to this ratio. Delta x over expectation value of x.
+
+352
+00:49:33,690 --> 00:49:38,070
+Just vanish. They become negligibly small compared to.
+
+353
+00:49:40,320 --> 00:49:45,870
+Um, it's over here compared to any non-zero drift velocity.
+
+354
+00:49:46,620 --> 00:50:01,080
+However small it may be, if we wait long enough, the drift will eventually win and control the mean collective behaviour of all of these random walks.
+
+355
+00:50:02,580 --> 00:50:07,920
+And this will. Come up.
+
+356
+00:50:07,920 --> 00:50:15,820
+When we look at statistical ensembles, we will actually see connections between different statistical ensembles in the analogue of this limit.
+
+357
+00:50:15,840 --> 00:50:29,250
+So we'll try to remember to to flag those. Um, and it's sort of remarkable that this complicated physical equation, uh, relations between,
+
+358
+00:50:29,820 --> 00:50:33,600
+say, the grand canonical ensemble on the one hand and the canonical ensemble on the other.
+
+359
+00:50:33,630 --> 00:50:43,260
+Once we've defined those, we'll just reduce to the same, uh, question about drift versus diffusion and the connection to the central limit theorem.
+
+360
+00:50:44,010 --> 00:50:47,430
+So the kind of final.
+
+361
+00:50:50,720 --> 00:51:02,300
+Uh, maybe key message to take away from all of this is key enough that I will just not try to squeeze it into the bottom of that page, but.
+
+362
+00:51:03,940 --> 00:51:06,850
+Just write it down here.
+
+363
+00:51:10,130 --> 00:51:25,820
+For us to see on the screen during the break that we will have momentarily, is that this law of diffusion and diffusive behaviour,
+
+364
+00:51:26,210 --> 00:51:37,580
+proportional to the square root of T, is essentially equivalent to the applicability of the central limit theorem.
+
+365
+00:51:40,320 --> 00:51:46,440
+Both of these are going to hold. Whenever we have random processes.
+
+366
+00:51:49,840 --> 00:51:57,940
+That we can express like a random walk. So whenever the single step or the single experiment.
+
+367
+00:51:59,710 --> 00:52:05,920
+Mean and variance are finite, that is the condition that we had for the central limit theorem to hold.
+
+368
+00:52:06,250 --> 00:52:15,490
+And that feeds over into the law of diffusion. That is general enough that whenever our single experiment has a finite mean and variance,
+
+369
+00:52:15,970 --> 00:52:25,480
+diffusion will result in the central limit theorem will be applicable, always coming both together like that and what we will see tomorrow.
+
+370
+00:52:25,510 --> 00:52:36,670
+Well, in the computer assignment starting tomorrow and going over the next two weeks, is a example of a case in which this does not hold.
+
+371
+00:52:37,510 --> 00:52:41,170
+The mean and variance are not finite and somewhat different.
+
+372
+00:52:41,500 --> 00:52:47,650
+Anomalous diffusion is the consequence along with the applicability of the central limit theorem.
+
+373
+00:52:48,340 --> 00:52:58,960
+That's a bit of a forecast for tomorrow. This is the final key result for these random walks of diffusion and central limit theorem.
+
+374
+00:52:59,590 --> 00:53:04,960
+Any questions before I, uh, let you take a break and get refreshed?
+
+375
+00:53:08,630 --> 00:53:14,360
+No, it's about, uh, 1155.
+
+376
+00:53:14,360 --> 00:53:22,190
+So we'll restart five minutes after the hour just to give you the full break that you deserve.
+
+377
+00:53:29,777 --> 00:53:35,987
+And we will be resuming with, well, a step from unit one into unit two in the in the module outline.
+
+378
+00:53:36,557 --> 00:53:40,876
+Uh, done with all of the probability foundations. Random walk central limit theorem,
+
+379
+00:53:40,877 --> 00:53:46,367
+law of diffusion as the more abstract mathematics and moving towards what is
+
+380
+00:53:46,367 --> 00:53:52,517
+recognisably statistical mechanics and pretty soon thermodynamics as well.
+
+381
+00:53:53,957 --> 00:54:01,427
+So are there any final questions about diffusion of the central limit theorem before we take.
+
+382
+00:54:03,307 --> 00:54:08,797
+This, uh, next step is a big horizontal line there.
+
+383
+00:54:09,847 --> 00:54:16,537
+And the new topic being. That of statistical ensembles.
+
+384
+00:54:18,437 --> 00:54:25,937
+Which is the concept we will introduce and define today at the.
+
+385
+00:54:27,717 --> 00:54:34,387
+The basic idea qualitative concept for what is a statistical ensemble.
+
+386
+00:54:35,227 --> 00:54:45,787
+And looking at that on the screen, maybe getting later in the day might benefit from walking out this light.
+
+387
+00:54:47,587 --> 00:54:51,947
+See if that. I think that did improve.
+
+388
+00:54:54,677 --> 00:55:02,507
+Just the resolution there. So the idea is that a statistical ensemble is a probability space.
+
+389
+00:55:06,827 --> 00:55:19,547
+Where we discussed the experiment that lies at the foundation of this probability space is that we observe many particles as they evolve in time.
+
+390
+00:55:25,107 --> 00:55:34,527
+And these particles are going to be subject to certain physical constraints and different sets of constraints will.
+
+391
+00:55:36,887 --> 00:55:41,297
+Give rise to different specific statistical ensembles.
+
+392
+00:55:42,017 --> 00:55:45,917
+So this observation is our experiment.
+
+393
+00:55:46,487 --> 00:55:53,447
+Our measurement is just, you know, looking at the state of these particles or degrees of freedom more generally.
+
+394
+00:55:53,987 --> 00:56:01,367
+I will be a bit less formal and go freely between states and outcomes going forward.
+
+395
+00:56:02,187 --> 00:56:08,087
+Uh, not distinguish explicitly so much between the set of all states and the outcome space.
+
+396
+00:56:08,897 --> 00:56:19,237
+Uh, in this probability space concept that we have now spent more than a week developing, but we just have, you know,
+
+397
+00:56:19,277 --> 00:56:27,917
+as time passes and we look at this system repeatedly at times T1, T2, T3 and so on,
+
+398
+00:56:28,307 --> 00:56:35,777
+we will see these particles in corresponding states that we can label.
+
+399
+00:56:36,347 --> 00:56:40,307
+Omega one, omega two, omega three and so on.
+
+400
+00:56:41,537 --> 00:56:51,047
+And in much the same way that we used random walks as a simple but powerful, uh,
+
+401
+00:56:51,047 --> 00:57:02,957
+example representative to develop the ideas of diffusion and the central limit theorem, a powerful framework or.
+
+402
+00:57:05,037 --> 00:57:10,707
+Maybe even collection of examples that we will use to develop statistical ensembles.
+
+403
+00:57:11,007 --> 00:57:21,237
+Going forward is going to be a specific systems where our particles or degrees of freedom are taken to be so-called spins.
+
+404
+00:57:23,427 --> 00:57:26,737
+In the system as a whole is then just a spin system will.
+
+405
+00:57:26,757 --> 00:57:33,387
+We will come back to various types of spin systems repeatedly throughout the small module.
+
+406
+00:57:34,617 --> 00:57:46,347
+And you can also mention that these spin systems, um, were the basis of Giorgio Perez's share in the 2021 Nobel Prize.
+
+407
+00:57:46,887 --> 00:57:49,677
+He did a lot of work developing so-called spin classes,
+
+408
+00:57:49,977 --> 00:57:58,227
+which exhibit class like dynamics that are neither liquid nor solid, but based on underlying spin degrees of freedom.
+
+409
+00:57:59,517 --> 00:58:09,057
+And the 2024 Nobel Prize to Hopfield and Hinton for developing systems that form the basis for
+
+410
+00:58:09,327 --> 00:58:15,357
+neural networks in artificial intelligence were also based on these sorts of spin systems,
+
+411
+00:58:15,357 --> 00:58:25,676
+more complicated versions than we will work with in this module, with the same approach that we can see now.
+
+412
+00:58:25,677 --> 00:58:37,107
+So formally state this, our quote unquote particles will have here either two possibilities.
+
+413
+00:58:39,297 --> 00:58:51,567
+They will say they can point up an upward pointing spin, um, which we can also represent as a plus one for more convenient mathematics or.
+
+414
+00:58:54,747 --> 00:58:59,067
+We will have the opposite downward pointing spin like a minus one.
+
+415
+00:59:01,017 --> 00:59:08,577
+Um, in the mathematics that we have now are in terms of the combinatorics of the possible states of these spin systems.
+
+416
+00:59:09,117 --> 00:59:12,987
+Just the same as repeating, uh, or repeatedly flipping coins.
+
+417
+00:59:13,377 --> 00:59:20,907
+So however many spins we have, it's the same number of outcomes as repeatedly flipping coins and measuring heads or tails.
+
+418
+00:59:21,507 --> 00:59:24,567
+And historically, these systems were developed.
+
+419
+00:59:26,497 --> 00:59:34,177
+In efforts to mathematically model magnetic materials, ferromagnetism, and magnetic phase transitions.
+
+420
+00:59:34,567 --> 00:59:39,807
+And in a sort of century sense, they were initially developed.
+
+421
+00:59:39,817 --> 00:59:50,317
+They have been observed to be much more powerful than just that initial domain where the concept was first developed.
+
+422
+00:59:51,307 --> 01:00:03,157
+So the idea is that magnetic materials are just large collections of molecules, each of which have a magnetic moment that can point either up or down,
+
+423
+01:00:03,787 --> 01:00:09,247
+and the collective behaviour or the statistical mechanics of all of those molecules together,
+
+424
+01:00:09,247 --> 01:00:16,627
+give the emergent magnetism of ten to the power 23 of these molecules,
+
+425
+01:00:17,077 --> 01:00:27,126
+and then many broader applications, both within physics and in quantitative analyses of other fields beyond physics,
+
+426
+01:00:27,127 --> 01:00:39,397
+that I'll say for the very end of the module, um, once we have built up more of the tools of statistical ensembles that we can use to analyse them.
+
+427
+01:00:40,867 --> 01:00:46,687
+So to just give a concrete example of.
+
+428
+01:00:49,417 --> 01:00:53,887
+What we can have with these spin degrees of freedom.
+
+429
+01:00:56,257 --> 01:01:02,317
+So I will by habit call a collection of spins a configuration.
+
+430
+01:01:03,637 --> 01:01:09,847
+If we imagine some modest number that we can write down fairly easily,
+
+431
+01:01:10,687 --> 01:01:19,177
+and we can further constrain this example by saying that our spins are going to be fixed in one dimension.
+
+432
+01:01:19,747 --> 01:01:23,827
+So we can find to a line like our random walks.
+
+433
+01:01:24,517 --> 01:01:27,907
+Then an example configuration.
+
+434
+01:01:28,357 --> 01:01:32,886
+We can have spins pointing up and down, up and up.
+
+435
+01:01:32,887 --> 01:01:38,947
+And I believe that is eight in total. How many configurations are there?
+
+436
+01:01:40,177 --> 01:01:44,707
+You can tell me. I hope this is the power eight.
+
+437
+01:01:45,487 --> 01:01:52,717
+Yes. So that's that coin flip mathematics that we saw earlier.
+
+438
+01:01:54,007 --> 01:01:59,977
+So every spin has two possibilities that are independent of each other.
+
+439
+01:02:01,387 --> 01:02:05,527
+So there are two to the n distinct configurations.
+
+440
+01:02:08,537 --> 01:02:14,207
+Four spins fixed to the line and two to the eight is 256.
+
+441
+01:02:15,197 --> 01:02:27,017
+In this particular case of n equals eight. Um, and something we can notice, a sort of trivial fact about these 256 states in our state space.
+
+442
+01:02:28,307 --> 01:02:40,847
+Um. One bit of terminology that I can't remember if I have introduced how last week I will
+
+443
+01:02:40,847 --> 01:02:48,677
+call these states actually micro states to distinguish them from macro states later on.
+
+444
+01:02:49,247 --> 01:02:58,367
+The micro just means that they are obtained by considering the microscopic individual degrees of freedom that we have at play.
+
+445
+01:02:59,837 --> 01:03:08,387
+In this case, each individual spin as opposed to macro states looking at the large scale emerging collective phenomena like temperature, pressure,
+
+446
+01:03:08,717 --> 01:03:19,007
+density, um, but in this example, all 256 of these micro states with any orientation of these spins,
+
+447
+01:03:19,547 --> 01:03:24,167
+they all have the same number of spins, namely eight.
+
+448
+01:03:26,177 --> 01:03:38,507
+Obviously, as we've sort of fixed that in advance. But a more general concept coming from this is that this number of spins and that is fixed.
+
+449
+01:03:40,427 --> 01:03:45,007
+Is a conserved quantity. That is the same.
+
+450
+01:03:46,837 --> 01:03:52,567
+So any quantity that is the same for all of the microstates in our system.
+
+451
+01:03:55,587 --> 01:04:02,007
+All Omega sub I is going is going to be a conserved quantity,
+
+452
+01:04:02,007 --> 01:04:10,496
+and we can go immediately to a more interesting one than just the number of spins that we can imagine fixing by hand,
+
+453
+01:04:10,497 --> 01:04:13,647
+introducing just a certain number and no more.
+
+454
+01:04:19,667 --> 01:04:24,407
+So what is also conserved? Um.
+
+455
+01:04:27,117 --> 01:04:41,246
+In any closed or isolated system is its energy, and specifically the internal energy that is independent of anything done externally to the system,
+
+456
+01:04:41,247 --> 01:04:52,017
+whether it's raised up high on a tower or moving on a fast train, the internal energy just specifies the energy that is coming from the microstates.
+
+457
+01:04:52,887 --> 01:05:02,187
+And if a system is isolated or sometimes called closed.
+
+458
+01:05:03,967 --> 01:05:09,787
+Then its internal energy is guaranteed to be conserved.
+
+459
+01:05:10,387 --> 01:05:12,257
+Well, there are caveats with that guarantee.
+
+460
+01:05:12,277 --> 01:05:18,757
+If we think about curved spacetime from general relativity, but we are not going to do that in this module.
+
+461
+01:05:20,047 --> 01:05:27,717
+Um, mathematically we. As this function E being our measurements at the energy.
+
+462
+01:05:28,647 --> 01:05:40,137
+Um, the energy of any two microstates, Omega I and Omega J, have to be equal for all indices I and J.
+
+463
+01:05:40,677 --> 01:05:47,277
+And this is something that can be proven in flat space from any orders.
+
+464
+01:05:47,607 --> 01:05:53,307
+First theorem um, that was formulated a roughly 100 years ago.
+
+465
+01:05:53,577 --> 01:05:58,617
+But conservation of energy historically is a concept that predates that.
+
+466
+01:05:58,647 --> 01:06:05,607
+It needed some development to mathematically define what energy is and what conservation is.
+
+467
+01:06:07,437 --> 01:06:15,487
+But. Rougher, more philosophical echoes from historical investigations.
+
+468
+01:06:15,497 --> 01:06:19,037
+So empirical observations saw that.
+
+469
+01:06:21,347 --> 01:06:31,427
+There were. Uh, concepts of energy that were conserved or kept the same in this case.
+
+470
+01:06:31,847 --> 01:06:35,056
+And due to those observations arising before,
+
+471
+01:06:35,057 --> 01:06:43,697
+there was a mathematical framework to hang them on this observation or at conservation of energy as a concept,
+
+472
+01:06:44,297 --> 01:06:52,307
+got a kind of fancy name, the so-called first law of thermodynamics.
+
+473
+01:06:58,597 --> 01:07:06,877
+Um, which is essentially just the conservation of internal energy in isolated or closed systems.
+
+474
+01:07:06,887 --> 01:07:18,787
+There is an equivalent way of stating the first law and conservation of energy, which is to say that if the energy in some system does change,
+
+475
+01:07:19,507 --> 01:07:25,357
+that has to be compensated by an equal and opposite change elsewhere in the surroundings of that system.
+
+476
+01:07:25,957 --> 01:07:38,897
+So. I guess a way of stating this that you may have, or you likely encountered before now, mathematically, is that energy is not created or destroyed,
+
+477
+01:07:39,377 --> 01:07:52,247
+but just changes form or in this case, changes between our system and its surroundings or other systems within with which it is in contact contact.
+
+478
+01:07:52,907 --> 01:08:04,487
+So if we have our system Omega, then any change to its energy must correspond to an equal.
+
+479
+01:08:06,527 --> 01:08:13,887
+And opposite change. In the energy of its surroundings.
+
+480
+01:08:22,747 --> 01:08:28,747
+So any questions or objections about conservation of energy at this point?
+
+481
+01:08:33,777 --> 01:08:43,077
+Probably all fairly intuitive and, you know, using that intuition to develop this statistical ensemble framework with the specific,
+
+482
+01:08:43,767 --> 01:08:47,307
+um, thought experiment of these spin systems.
+
+483
+01:08:47,967 --> 01:08:51,807
+What I haven't told you is what the energy of a spin system could be.
+
+484
+01:08:52,317 --> 01:08:55,646
+So let's introduce some energy to our spin systems.
+
+485
+01:08:55,647 --> 01:09:01,857
+The most straightforward way of doing that is to find the screen.
+
+486
+01:09:03,927 --> 01:09:14,247
+And imagine that our spins are sitting in some external field that will endow them with energy.
+
+487
+01:09:16,137 --> 01:09:23,097
+And for the, you know, from the historical development of these spin systems, we can call this a magnetic field.
+
+488
+01:09:23,097 --> 01:09:28,077
+But again. Like magnetism in the spin system.
+
+489
+01:09:30,767 --> 01:09:38,087
+This is a concept that can generalise to non-magnetic, uh examples.
+
+490
+01:09:40,277 --> 01:09:46,847
+So I'll put that magnetic field in quotation marks. I will say that the magnetic field has a strength H.
+
+491
+01:09:48,197 --> 01:09:51,707
+And without loss of generality we can take that to be positive.
+
+492
+01:09:53,657 --> 01:10:03,527
+And I will represent this positive magnetic field as one that is pointing in the upward direction with strength H.
+
+493
+01:10:04,847 --> 01:10:08,537
+Similarly to our spin up and spin down spins.
+
+494
+01:10:11,187 --> 01:10:17,636
+And any spin in our system that is also pointed up and aligned with that
+
+495
+01:10:17,637 --> 01:10:23,097
+magnetic field will make a contribution to the energy of the system at delta E,
+
+496
+01:10:23,817 --> 01:10:25,857
+that is, minus h.
+
+497
+01:10:28,137 --> 01:10:40,317
+Whereas any spin aligned in the opposite direction against or opposing the magnetic field will make a larger contribution to the energy plus h.
+
+498
+01:10:41,337 --> 01:10:46,917
+And here, um, you know, as we, um.
+
+499
+01:10:49,097 --> 01:10:53,477
+Probably will see later on with other systems of units.
+
+500
+01:10:53,897 --> 01:11:03,257
+I am choosing a natural units where this magnetic field strength has the same units as energy, so it should E can be added to each other.
+
+501
+01:11:03,797 --> 01:11:10,547
+If you go to a physics module and actually try to connect this to, you know,
+
+502
+01:11:10,547 --> 01:11:17,867
+a magnetic field of three Tesla that you might have in your lab, then you need some unit conversion factor from Tesla to Joules.
+
+503
+01:11:18,377 --> 01:11:25,697
+And that is. Uh, known as the Boer magneton, which has exactly those units of Tesla per joule.
+
+504
+01:11:26,327 --> 01:11:32,747
+Um, so we are basically setting that to one, um, in our units, which are neither Tesla nor joules.
+
+505
+01:11:33,227 --> 01:11:40,517
+And that helps keep the focus on the mathematics rather than the physics of what's going on in that laboratory.
+
+506
+01:11:42,077 --> 01:11:50,417
+So there is a bit of science, um, or some details with science to keep track of here,
+
+507
+01:11:50,837 --> 01:12:03,017
+that if we say we have n plus spins that are all pointed upward, those are actually contributing negative energy to our system.
+
+508
+01:12:06,067 --> 01:12:11,467
+We will similarly have in minus spins, which are all the remainder.
+
+509
+01:12:11,977 --> 01:12:20,737
+The minus is because they point downward, but they contribute plus uh h energy to that overall system.
+
+510
+01:12:22,297 --> 01:12:35,087
+So. Notation that, uh, can be counterintuitive, but hopefully will be reasonably easy to work with once you have some familiarity with it.
+
+511
+01:12:36,377 --> 01:12:42,497
+And I'll just point out here that what this is saying physically is a preference
+
+512
+01:12:42,497 --> 01:12:46,727
+for these spins to align with the magnetic field that lowers their energy,
+
+513
+01:12:47,087 --> 01:12:53,837
+gets them closer to what we will later formulate as a ground state, and there will be an energy price.
+
+514
+01:12:54,197 --> 01:13:02,027
+Energy has to be injected in order for spins to oppose that magnetic field and point in the direction opposite to it.
+
+515
+01:13:02,777 --> 01:13:10,817
+So the overall internal energy that we have in our spin system with this setup.
+
+516
+01:13:12,917 --> 01:13:19,097
+E is just minus h from all and plus of the upward pointing spins,
+
+517
+01:13:20,417 --> 01:13:28,397
+plus a positive h from all and minus, which is big N minus n plus downward pointing spins.
+
+518
+01:13:29,027 --> 01:13:42,407
+We can pull out an overall factor of minus h to reflect the strength of the alignment that we are imposing, and we end up with two n plus minus n,
+
+519
+01:13:42,977 --> 01:13:54,257
+which not coincidentally looks a lot like the £0.02 minus one that we had for our random walks with a fixed walk length in the first half of today.
+
+520
+01:13:54,857 --> 01:13:59,357
+And indeed, we can analyse this energy as a random walk in the energy space.
+
+521
+01:13:59,957 --> 01:14:05,057
+So every spin in our configuration on the line is a step that we take.
+
+522
+01:14:05,357 --> 01:14:09,707
+With every step we either add minus h to the energy or plus h,
+
+523
+01:14:10,217 --> 01:14:18,887
+and the total comes out with two times the number of upward pointing spins minus the total that we have.
+
+524
+01:14:19,547 --> 01:14:31,937
+So in that sense, the spin system is giving us the same behaviour here as we had for random blocks and for roulette.
+
+525
+01:14:32,387 --> 01:14:38,567
+So let me just ask you to make sure this is all. All clear.
+
+526
+01:14:38,897 --> 01:14:46,577
+If we look at this example configuration of eight spins in a line that we had earlier,
+
+527
+01:14:47,387 --> 01:14:53,837
+what is the energy just of that particular configuration of spins.
+
+528
+01:15:11,217 --> 01:15:16,717
+Three months of age. It would. Yes. So there are six that point up.
+
+529
+01:15:16,717 --> 01:15:23,707
+That's 12 minus the total eight gives us four with a minus eight minus h out front.
+
+530
+01:15:25,327 --> 01:15:30,997
+So we have a negative energy less than zero thanks to having more than half of the spins pointing up.
+
+531
+01:15:31,627 --> 01:15:42,787
+And if we, um, impose conservation of energy and imagine that our system of eight spins is isolated from the rest of the universe,
+
+532
+01:15:43,537 --> 01:15:55,777
+then the only microstates that will be accessible out of those 256 in total, are those that also have this fixed value of the energy minus four h.
+
+533
+01:15:57,157 --> 01:16:03,457
+So we can express this by looking at the fraction.
+
+534
+01:16:05,357 --> 01:16:08,507
+Of microstates that are allowed by conservation of energy.
+
+535
+01:16:13,367 --> 01:16:19,187
+So this is the number allowed divided by.
+
+536
+01:16:21,497 --> 01:16:25,097
+The total number that I just mentioned we've seen was 256.
+
+537
+01:16:26,437 --> 01:16:30,227
+Uh, what's the the number allowed if we fix this energy?
+
+538
+01:16:36,997 --> 01:16:50,527
+Six it would. So all of the ways the binomial coefficient it choose six that we can choose six of these spins to be upward pointing.
+
+539
+01:16:51,037 --> 01:16:56,977
+This is also equal to eight. Choose two. The ways that we can choose the last two to be downward pointing.
+
+540
+01:16:57,787 --> 01:17:03,607
+Um, we've seen the binomial coefficient is eight factorial over six factorial two factorial.
+
+541
+01:17:04,117 --> 01:17:08,767
+So that is eight times seven. Everything six and below cancels out.
+
+542
+01:17:09,217 --> 01:17:22,087
+There's a two factorial left up there. So we have four times seven should be 28 over 256 at 256 is just eight powers of two.
+
+543
+01:17:22,567 --> 01:17:30,217
+So as long as that numerators even we can keep cancelling out powers of two down from 28 to 14 to seven,
+
+544
+01:17:31,357 --> 01:17:40,087
+which I guess we could have done already in this step. But it was a bit easier for me to take four out of 256 and get 64.
+
+545
+01:17:40,507 --> 01:17:54,007
+So this is a bit over 10% of the total number of states that we could have with eight spins are allowed after imposing conservation of energy.
+
+546
+01:17:55,147 --> 01:18:02,797
+So if and when we do, you know, require that our system conserves energy and does not talk to its surroundings,
+
+547
+01:18:03,427 --> 01:18:12,457
+we will, depending on what that energy is, uh, restrict ourselves to just a subset of the overall allowed states.
+
+548
+01:18:12,817 --> 01:18:21,247
+And this already by itself can lead to some interesting and non-trivial behaviour going forward.
+
+549
+01:18:22,837 --> 01:18:31,056
+Just to briefly connect to what we use, what you might have started the day by considering.
+
+550
+01:18:31,057 --> 01:18:35,467
+Once I finally managed to get the scam up and running.
+
+551
+01:18:36,757 --> 01:18:43,687
+This is also the way that we take our abstract formulation of probability spaces and apply it to,
+
+552
+01:18:44,107 --> 01:18:52,266
+say, ten to the power 25, uh, molecules that compose the air in this room.
+
+553
+01:18:52,267 --> 01:19:01,297
+So that can be another example. In addition to spin systems, we have a larger number of degrees of freedom.
+
+554
+01:19:03,127 --> 01:19:10,177
+If we just model these as point particles, which is a good approximation from our everyday perspective,
+
+555
+01:19:10,627 --> 01:19:18,997
+we don't directly see the the rotation or vibrations of say, and two molecule just by eye in this room.
+
+556
+01:19:19,627 --> 01:19:29,377
+And we say that they all have some fixed mass m also a reasonable approximation.
+
+557
+01:19:29,827 --> 01:19:37,417
+So we can't just buy. I see the difference in mass between uh and two or H2 molecules.
+
+558
+01:19:38,047 --> 01:19:48,607
+Then the energy that we would get for this system of air molecules that are all floating around, um, just in this closed space,
+
+559
+01:19:48,607 --> 01:19:56,377
+we imagine that we block off the windows, block off the doors, and completely seal ourselves off from the rest of the universe.
+
+560
+01:19:56,887 --> 01:20:06,367
+Newton tells us that all that is left will be the kinetic energy of these,
+
+561
+01:20:06,367 --> 01:20:16,717
+and particles labelled from 1 to 10 to the power 25 velocity squared times one half m,
+
+562
+01:20:17,317 --> 01:20:21,157
+or equivalently, we can work with momenta rather than velocities.
+
+563
+01:20:21,157 --> 01:20:25,297
+That differs by a factor of m in the square.
+
+564
+01:20:26,197 --> 01:20:32,137
+So we have the sum over ten to the 25 momentum vectors squared.
+
+565
+01:20:33,967 --> 01:20:41,167
+Um, that will govern the behaviour of the air that we see in this room.
+
+566
+01:20:41,947 --> 01:20:48,307
+And if we now demand that this internal energy be conserved,
+
+567
+01:20:49,987 --> 01:21:02,077
+that will have the effect of constraining the sets of ten to the power 25 momenta that are accessible to our system,
+
+568
+01:21:02,077 --> 01:21:09,997
+and which that these particles can physically adopt as time passes in our framework of statistical ensembles.
+
+569
+01:21:12,247 --> 01:21:21,197
+So that is giving a little setup for applying probability spaces in the, uh,
+
+570
+01:21:21,427 --> 01:21:27,427
+form of statistical ensembles to real world systems like a big box of air.
+
+571
+01:21:29,017 --> 01:21:35,817
+And you can sort of appreciate how challenging this would be to actually go through the exercise.
+
+572
+01:21:35,997 --> 01:21:40,857
+Is over applying Newton's laws to constrain these accessible momenta in such a
+
+573
+01:21:40,857 --> 01:21:45,657
+way that the sum over ten to the power 25 of them always came out the same.
+
+574
+01:21:46,557 --> 01:21:59,517
+This is the big picture that we had last week. We don't work directly with these ten to the power 25 differential equations.
+
+575
+01:22:01,977 --> 01:22:06,657
+That govern the time evolution of the system. Instead,
+
+576
+01:22:06,657 --> 01:22:16,466
+we inject randomness into our analysis in such a way that we can observe the emergent large
+
+577
+01:22:16,467 --> 01:22:22,317
+scale behaviour without having to track the microscopic dynamics particle by particle.
+
+578
+01:22:22,827 --> 01:22:33,187
+So. Instead of solving Newton's laws, we treat the time evolution.
+
+579
+01:22:36,007 --> 01:22:49,647
+As a stochastic process. So we assume that every time we measure the state of our system.
+
+580
+01:22:51,687 --> 01:22:55,107
+At each time. Um t1 t2, t3.
+
+581
+01:22:55,977 --> 01:23:05,127
+We will randomly update what we see from omega one, omega two, omega three, and so on.
+
+582
+01:23:06,957 --> 01:23:21,747
+Um, so these are the microstates mentioned earlier that are now formalised as the outcome of our experiment.
+
+583
+01:23:22,347 --> 01:23:33,716
+As time passes, we don't try to follow the evolution of from microstate to microstate, but we just imagine that the accessible states,
+
+584
+01:23:33,717 --> 01:23:43,607
+whatever they are, are going to be sampled with their corresponding probabilities from our probability space, which is the statistical ensemble.
+
+585
+01:23:43,617 --> 01:23:56,397
+So. We can, rather than having a qualitative idea, have a formal definition now of what the statistical ensemble amounts to.
+
+586
+01:24:02,897 --> 01:24:10,307
+And that is just the outcome space, or equivalently, the set of states.
+
+587
+01:24:12,477 --> 01:24:20,067
+This capital Omega, which, uh, overflowed what is visible on the screen.
+
+588
+01:24:20,067 --> 01:24:26,187
+So the set of all possible states that are accessible, uh, to our system.
+
+589
+01:24:29,897 --> 01:24:34,717
+Where? Accessibility is.
+
+590
+01:24:39,977 --> 01:24:46,157
+Going to be affected by the quantities that are conserved.
+
+591
+01:24:46,577 --> 01:24:53,437
+As time passes. So if we just set up our end.
+
+592
+01:24:53,437 --> 01:24:57,757
+Degrees of freedom. And sample.
+
+593
+01:24:59,677 --> 01:25:06,367
+Their states as they evolve. In time, we end up with eventually this overall set that is our statistical ensemble.
+
+594
+01:25:08,737 --> 01:25:15,337
+And each of the individual microstates in this overall set.
+
+595
+01:25:16,237 --> 01:25:21,577
+So each Omega I. Has some non-zero probability.
+
+596
+01:25:23,677 --> 01:25:26,737
+P of being adopted through time evolution.
+
+597
+01:25:27,637 --> 01:25:33,097
+And the fact that it is non-zero is just saying that this microstate is accessible.
+
+598
+01:25:33,637 --> 01:25:42,126
+If we imagine any inaccessible microstates like one up here in this example where all spins are pointing up,
+
+599
+01:25:42,127 --> 01:25:46,117
+but we try to conserve that minus for each worth of energy.
+
+600
+01:25:46,657 --> 01:25:53,047
+There would be zero probability there, and we can exclude it from our ensemble of possible states.
+
+601
+01:25:55,567 --> 01:26:03,847
+So this is the probability that the corresponding configuration of degrees of freedom is adopted by the system.
+
+602
+01:26:04,267 --> 01:26:17,767
+As time passes, and this combination of states, outcomes and probabilities completes that connection that we started off with after the break,
+
+603
+01:26:17,767 --> 01:26:26,767
+that the statistical ensemble is a specific realisation of that more abstract and formal probability space.
+
+604
+01:26:27,397 --> 01:26:36,097
+And as with all probability spaces, we can immediately say that the sum of these probabilities over all of the,
+
+605
+01:26:36,727 --> 01:26:40,357
+uh, accessible microstates has to add up to one.
+
+606
+01:26:42,557 --> 01:26:52,487
+Just this is just the statement that at every point in time, the system has to adopt some micro states.
+
+607
+01:26:55,867 --> 01:27:01,527
+Or in other words, the system actually exists. Um, whatever that microstate may be.
+
+608
+01:27:01,537 --> 01:27:11,567
+So at any time. We know that it is in one of these accessible microstates.
+
+609
+01:27:19,427 --> 01:27:31,517
+And to continue tying together the more intuitive concepts that we started off with in the second hour today.
+
+610
+01:27:34,117 --> 01:27:42,397
+Because any conserved quantity is going to be unchanged under time evolution.
+
+611
+01:27:42,817 --> 01:27:51,897
+So there is the screen. That's what it means to be conserved.
+
+612
+01:28:01,497 --> 01:28:07,076
+So if we look at the sets of states that can be adopted through time evolution,
+
+613
+01:28:07,077 --> 01:28:13,226
+they will all have to satisfy the conservation of any quantities that are conserved.
+
+614
+01:28:13,227 --> 01:28:20,457
+So these conserved quantities are going to be a way to characterise different statistical ensembles.
+
+615
+01:28:26,177 --> 01:28:29,447
+We have enough time today to make this.
+
+616
+01:28:32,677 --> 01:28:37,386
+A bit more concrete, but throughout the next seven units in this module,
+
+617
+01:28:37,387 --> 01:28:42,487
+we will be looking at different situations with different sets of conserved quantities
+
+618
+01:28:42,817 --> 01:28:48,637
+that produce different statistical ensembles that can all be related to each other.
+
+619
+01:28:49,177 --> 01:28:58,477
+Just by looking back to this foundational definition of how conserved quantities characterise the statistical ensembles that we have.
+
+620
+01:28:59,677 --> 01:29:06,547
+I can make this more concrete with the first of these specific ensembles that we will consider.
+
+621
+01:29:07,357 --> 01:29:19,087
+So for us, for obscure historical reasons, this particular case is called the micro canonical ensemble.
+
+622
+01:29:20,377 --> 01:29:24,137
+And this is terminology introduced by J.
+
+623
+01:29:24,157 --> 01:29:32,827
+Willard Gibbs in the late 1800s. Who is the same scientist who's responsible for naming statistical mechanics in the first place?
+
+624
+01:29:34,537 --> 01:29:39,397
+So it's maybe not an obvious or intuitive name,
+
+625
+01:29:39,697 --> 01:29:52,237
+but we can write down a straightforward definition of it as the particular statistical ensemble that is characterised by two conserved quantities.
+
+626
+01:29:53,737 --> 01:29:58,027
+Well, in fact, the same two. We've been talking about the internal energy.
+
+627
+01:30:01,387 --> 01:30:13,207
+E. And then the conserved number of degrees of freedom, or what I will refer to as particle number for short.
+
+628
+01:30:13,807 --> 01:30:21,007
+And that is n and I, as we were talking about with the statement of the first law of thermodynamics,
+
+629
+01:30:21,607 --> 01:30:31,687
+conserving both the number of particles and the internal energy of those particles implies that any system
+
+630
+01:30:31,957 --> 01:30:41,227
+governed by the micro canonical ensemble or any micro canonical system has to be isolated from its environment.
+
+631
+01:30:43,687 --> 01:30:49,997
+Um and unable to exchange either energy or particles with it so no sun can shine in.
+
+632
+01:30:50,017 --> 01:30:55,137
+No particles can wander off, and we can think about, uh,
+
+633
+01:30:55,537 --> 01:31:02,527
+whether any measurements of these systems can be made without violating these, uh, conservation conditions.
+
+634
+01:31:07,447 --> 01:31:15,597
+So we'll spend the rest of today and much of next week looking at the micro canonical ensemble a bit more mathematically.
+
+635
+01:31:15,607 --> 01:31:24,247
+Let's start off with still a bit more, uh, connection to physical intuition from our experiences.
+
+636
+01:31:25,447 --> 01:31:36,426
+So. If we think about the the air in this room as a micro canonical system,
+
+637
+01:31:36,427 --> 01:31:42,967
+imagining that we are, in fact, isolated, um, whether or not that is realistic.
+
+638
+01:31:45,197 --> 01:31:55,427
+We would want to see this micro canonical ensemble being able to describe what we experience in our daily lives and our physical, uh.
+
+639
+01:31:57,687 --> 01:32:07,637
+Intuition or experience and what we see in this room, knowing that the air consists of ten to the power,
+
+640
+01:32:07,647 --> 01:32:13,247
+25 molecules, we don't see those individual molecules doing wild things.
+
+641
+01:32:13,257 --> 01:32:20,997
+The air is very smooth and stable, to the point that we can sometimes even forget that it is here.
+
+642
+01:32:23,337 --> 01:32:36,217
+And we want to see how such. Smooth, large scale behaviour that is stable over time can be reflected by.
+
+643
+01:32:38,287 --> 01:32:47,457
+Analysing. The system mathematically through the framework of a micro canonical ensemble or statistical ensembles more generally.
+
+644
+01:32:47,457 --> 01:32:54,237
+So let's quickly sketch out a two dimensional picture of the air.
+
+645
+01:32:55,017 --> 01:33:04,587
+In this room, we see that these air molecules are fairly evenly distributed throughout the room.
+
+646
+01:33:04,947 --> 01:33:11,097
+They are not all concentrated in any one corner, while the rest of the room is in a vacuum.
+
+647
+01:33:11,787 --> 01:33:17,277
+We would notice in that case, that is the opposite of the smooth behaviour that we see.
+
+648
+01:33:17,787 --> 01:33:24,837
+And similarly, we're not seeing any big gusts of wind without some no clear external driver like a fan,
+
+649
+01:33:25,167 --> 01:33:31,377
+the air doesn't spontaneously move from the left to the right, or from the roof, from the ceiling to the floor.
+
+650
+01:33:32,847 --> 01:33:39,687
+It is fairly uniformly spread throughout the room as well as we can observe with the tools available to us,
+
+651
+01:33:40,707 --> 01:33:51,357
+and that's fairly even spread is stable as time passes and the stability over time,
+
+652
+01:33:53,077 --> 01:34:03,417
+we will formally express as, um, a more mathematical concept of all of these degrees of freedom being in equilibrium.
+
+653
+01:34:10,377 --> 01:34:19,037
+So we will, I think, have just time to kind of formally define equilibrium in the thermodynamic context for the micro canonical ensemble today.
+
+654
+01:34:19,047 --> 01:34:25,977
+Obviously, it's one of those words that has everyday usage and intuitive connections to our experience.
+
+655
+01:34:27,057 --> 01:34:36,687
+There is also a broader field of non-equilibrium statistical mechanics, which I will tell you, we won't really look at in this module at all.
+
+656
+01:34:37,227 --> 01:34:46,647
+We will just focus on thermodynamic systems or statistical systems that are in equilibrium.
+
+657
+01:34:48,177 --> 01:34:59,217
+And well, there's good reasons for that, that imposing this requirement of equilibrium or stable behaviour over time just makes things much simpler.
+
+658
+01:34:59,667 --> 01:35:02,997
+And once we get to non-equilibrium statistical mechanics,
+
+659
+01:35:03,207 --> 01:35:11,907
+in many cases we are really looking at cutting edge research like that going into a previous Nobel Prize just a few years ago.
+
+660
+01:35:13,707 --> 01:35:26,547
+So let's make this equilibrium statement a bit more mathematical and focussed specifically on the micro canonical case.
+
+661
+01:35:26,577 --> 01:35:33,657
+So if we imagine a system governed by the micro canonical ensemble.
+
+662
+01:35:34,737 --> 01:35:42,357
+Call it omega and assume that its microstates.
+
+663
+01:35:45,897 --> 01:35:50,517
+Omega I in the set. Omega r um.
+
+664
+01:35:52,697 --> 01:35:57,677
+Actually, we don't have to make an assumption yet about whether there are a countable number of microstates.
+
+665
+01:35:57,687 --> 01:36:15,437
+So in general, any micro canonical system that is in thermodynamic equilibrium specifically, as opposed to more everyday uses of the word equilibrium.
+
+666
+01:36:16,277 --> 01:36:29,187
+If and only if. All of the microstate probabilities P corresponding to these accessible microstates.
+
+667
+01:36:30,267 --> 01:36:41,727
+Omega I are equal. So.
+
+668
+01:36:43,557 --> 01:36:54,007
+This may not have been a naive or intuitive expectation, because we are saying essentially that the microstates of, you know,
+
+669
+01:36:54,027 --> 01:37:01,827
+all the air molecules distributed in the room has the same probability as any microstate where they're all off in one corner.
+
+670
+01:37:02,307 --> 01:37:06,087
+And we will see next week how smooth.
+
+671
+01:37:06,597 --> 01:37:10,647
+Large scale collective behaviour emerges from this statement.
+
+672
+01:37:11,667 --> 01:37:20,157
+We'll wrap up today just by noting that in the case where this number m is finite,
+
+673
+01:37:20,757 --> 01:37:27,627
+we can immediately write down the probability for all of these microstates.
+
+674
+01:37:27,927 --> 01:37:34,107
+So each of the microstates has to have exactly one over m probability of being adopted.
+
+675
+01:37:34,887 --> 01:37:42,117
+And that is just so that the probabilities are conserved and add up to 100%.
+
+676
+01:37:42,657 --> 01:37:45,177
+So there may be a bit of a puzzle here.
+
+677
+01:37:45,177 --> 01:37:56,037
+How our everyday experience of equilibrium arises from this formal definition of thermodynamic equilibrium for the micro canonical ensemble.
+
+678
+01:37:57,507 --> 01:38:02,817
+The answer will come through the concept of entropy. And that will be our lecture on Monday.
+
+679
+01:38:03,567 --> 01:38:15,777
+So that's it for today. Unless there are final questions about these new concepts we've introduced with statistical ensembles conserved quantities,
+
+680
+01:38:15,777 --> 01:38:19,557
+the micro canonical case and now thermodynamic equilibrium.
+
+681
+01:38:25,627 --> 01:38:29,933
+I don't see any. So stop the recording there and just remind you that tomorrow we are not in this room.
+
