@@ -1,0 +1,849 @@
+1
+00:00:01,270 --> 00:00:09,100
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Okay. Good morning everyone. Some people may still wander in as they find this room up in the corner down here.
+
+2
+00:00:09,560 --> 00:00:13,480
+So you may not feel the need for this computer lab in general.
+
+3
+00:00:13,490 --> 00:00:18,520
+The idea here is that this gives you an opportunity to work on the computer assignments.
+
+4
+00:00:19,060 --> 00:00:22,960
+Uh, with me around to help you out, to get started.
+
+5
+00:00:23,050 --> 00:00:27,430
+For those of you especially who have not done much or any programming before.
+
+6
+00:00:27,850 --> 00:00:31,960
+So if you are confident with the grading, you don't need to show up to these.
+
+7
+00:00:32,710 --> 00:00:37,240
+Um, if you are not, then hopefully this will be useful for you.
+
+8
+00:00:38,110 --> 00:00:46,030
+The. So there's no, uh, projector for me to write on in this room, so everything will have to be done on the screen.
+
+9
+00:00:46,030 --> 00:00:51,250
+I've put today's magic number up there. 1589 22.
+
+10
+00:00:51,580 --> 00:00:59,470
+Hopefully there are enough screens on the walls in both directions that you can see what's going on fairly easily.
+
+11
+00:01:00,280 --> 00:01:12,190
+And because this is a place for you to work on that assignment in however way you prefer, I will try to keep from talking too much.
+
+12
+00:01:12,790 --> 00:01:19,620
+Um, just go through some of the hopefully helpful information, uh,
+
+13
+00:01:19,690 --> 00:01:30,190
+in the demo that is set up to align with the assignment itself, as well as just showing logistically how you can,
+
+14
+00:01:30,910 --> 00:01:40,660
+uh, get Python programming up and running on computers in this lab or other labs around the university that do have Python tools installed.
+
+15
+00:01:41,170 --> 00:01:47,440
+Uh, your own laptops are also, uh, for some of you, at least a possibility to work with.
+
+16
+00:01:47,920 --> 00:01:50,950
+And Python itself is not required.
+
+17
+00:01:51,250 --> 00:02:01,210
+It's a one possible way of approaching this project that I would recommend if you are not too confident in your programming,
+
+18
+00:02:01,600 --> 00:02:08,050
+but any programming language that you, uh, want to work with should be alright.
+
+19
+00:02:08,740 --> 00:02:13,390
+Apart from Maple, which my students have had bad experiences with in the past.
+
+20
+00:02:15,190 --> 00:02:20,080
+So the assignment itself is due, uh, two weeks from tomorrow.
+
+21
+00:02:20,920 --> 00:02:31,600
+And if by the end of this computer assignment, you are at least able to get Python code up and running in some way, shape or form,
+
+22
+00:02:31,960 --> 00:02:39,550
+then you will be in good shape to complete that you can target for the first half of the assignments, the first three exercises.
+
+23
+00:02:40,030 --> 00:02:45,310
+By the time the next week's computer lab rolls around and we'll do another, um,
+
+24
+00:02:46,150 --> 00:02:51,460
+brief introduction to the remaining topics for the second half at that point,
+
+25
+00:02:51,470 --> 00:02:59,680
+and the third and final computer lab on the 20th will just be a chance for you to bring in any questions or difficulties that you have,
+
+26
+00:03:00,340 --> 00:03:04,450
+including those of you who may be catching up with this recording after the fact.
+
+27
+00:03:05,800 --> 00:03:09,340
+So without further ado, um,
+
+28
+00:03:09,820 --> 00:03:14,889
+we've already seen through a little bit of Python programming that we did for
+
+29
+00:03:14,890 --> 00:03:21,340
+last week's tutorial how this Google Colab can be used to run Python code,
+
+30
+00:03:21,940 --> 00:03:27,640
+uh, online through the Google Cloud. This will work for the computer assignment.
+
+31
+00:03:28,240 --> 00:03:36,520
+Uh, every task in each of these exercises, if I implemented on Google Colab, runs for me in less than a minute.
+
+32
+00:03:37,450 --> 00:03:49,329
+Um, if you are seeing computations that run for, you know, minutes, many minutes or more, then that could be a sign that something has gone wrong.
+
+33
+00:03:49,330 --> 00:03:56,650
+And you might want to rethink or double check your approach to add to these possibilities.
+
+34
+00:03:57,100 --> 00:04:04,150
+Let's just see how we can run this demo, not remotely on the Google Cloud,
+
+35
+00:04:04,570 --> 00:04:12,310
+especially for those of you who may not be Google aficionados, but actually download this IPython notebook.
+
+36
+00:04:12,880 --> 00:04:18,370
+We also have the option of just downloading the plain Python code as opposed to a notebook.
+
+37
+00:04:19,180 --> 00:04:24,130
+Oops. Um, and if I open up.
+
+38
+00:04:26,590 --> 00:04:34,750
+The download folder. This has opened automatically in.
+
+39
+00:04:34,850 --> 00:04:43,760
+It looks like Visual Studio, which was not actually the, uh, program I was going to recommend though.
+
+40
+00:04:46,280 --> 00:04:52,880
+Um, I think it's nuts. Well, I know people who use Visual Studio, but I've never touched it.
+
+41
+00:04:53,750 --> 00:04:58,970
+So it is one option that is on these and other computers in the lab.
+
+42
+00:04:59,360 --> 00:05:03,589
+Yeah, it is not really working with the IPython notebook.
+
+43
+00:05:03,590 --> 00:05:08,650
+It is just showing the raw underlying guts of how that notebook is set up.
+
+44
+00:05:08,660 --> 00:05:12,860
+If you were working with plain Python, this would be all right.
+
+45
+00:05:12,860 --> 00:05:21,170
+Visual Studio, let's try to do something better. So in this case, that means that I have.
+
+46
+00:05:22,320 --> 00:05:29,610
+Yeah. I imagine there are ways to do it just because it is, um, a popular program.
+
+47
+00:05:30,180 --> 00:05:38,670
+So one option, um, rather than me trying to figure that out live, what should work if I go to.
+
+48
+00:05:40,330 --> 00:05:47,080
+Wherever that IPython notebook was downloaded wholly to the emdrive.
+
+49
+00:05:47,410 --> 00:05:51,070
+Yes, there is a demo dot IPython notebook.
+
+50
+00:05:52,510 --> 00:05:56,920
+Um, so rather than opening it with Visual Studio Code.
+
+51
+00:06:01,480 --> 00:06:07,330
+I'm going to open it with PyCharm, which is a similar. Um, programming setup.
+
+52
+00:06:07,810 --> 00:06:15,470
+That is. Focussed more on Python.
+
+53
+00:06:16,070 --> 00:06:28,470
+So. If I can open in the emdrive, wherever that is in here, that demo IPython notebook.
+
+54
+00:06:35,430 --> 00:06:38,760
+It loads. It is nicely formatted.
+
+55
+00:06:39,270 --> 00:06:43,980
+There are lots of annoying panels that I don't see how to get rid of.
+
+56
+00:06:44,070 --> 00:06:52,830
+And if we look at the code that we have in here, should be able to run it straightforwardly.
+
+57
+00:06:54,870 --> 00:07:01,570
+Uh, Jupyter process failed to start. Oops.
+
+58
+00:07:08,830 --> 00:07:12,430
+So I was able to get this working in PyCharm.
+
+59
+00:07:15,700 --> 00:07:18,940
+Um, when I tested this last week.
+
+60
+00:07:21,600 --> 00:07:25,360
+And I remember that I had to open it as.
+
+61
+00:07:27,870 --> 00:07:36,360
+In particular project. The working directory is not a directory.
+
+62
+00:07:41,010 --> 00:07:55,020
+Which is annoying. So let me jump to the alternative possibility that I am more confident will work.
+
+63
+00:07:55,920 --> 00:08:12,650
+So in the emdrive, if I just go to. The shell and start up Jupyter Notebook for that demo.
+
+64
+00:08:31,040 --> 00:08:39,280
+Let's see. What is going on here?
+
+65
+00:08:39,290 --> 00:08:55,150
+So. That's the issue I spelled Jupiter with I rather than the Y.
+
+66
+00:08:57,790 --> 00:09:06,609
+So Jupiter itself is now up and running and uses the web browser here as the nice interface to the notebook,
+
+67
+00:09:06,610 --> 00:09:12,880
+but it is actually running locally on the issue that's sitting under this desk.
+
+68
+00:09:13,480 --> 00:09:23,110
+And now. It knows where this demo is sitting, rather than opening it in some temporary folder,
+
+69
+00:09:23,110 --> 00:09:30,820
+which seems to have been Pi charms issue and is up and running successfully.
+
+70
+00:09:30,970 --> 00:09:39,520
+So we can talk through how this computer assignment is connecting to the big picture of statistical mechanics.
+
+71
+00:09:40,120 --> 00:09:50,290
+We are not that. The big idea is to incorporate elements of randomness into our analysis of physical systems.
+
+72
+00:09:52,360 --> 00:09:59,480
+Um, I can copy. This magic number.
+
+73
+00:10:04,610 --> 00:10:12,650
+Into the local copy of the demo that is running in here as well.
+
+74
+00:10:26,960 --> 00:10:32,270
+I should be able to and I. Do not know.
+
+75
+00:10:38,460 --> 00:10:42,180
+Why it is not rendering this markdown, which is annoying.
+
+76
+00:10:44,550 --> 00:10:51,270
+So lots of. Annoyances that I'll just have to ignore.
+
+77
+00:10:51,720 --> 00:10:54,210
+This is why I don't use windows except when I have to.
+
+78
+00:10:55,050 --> 00:11:02,940
+Um, Python is useful because it has all these packages that we talked about a bit with the binomial coefficient yesterday.
+
+79
+00:11:03,510 --> 00:11:12,120
+I uploaded a few for numerical Python, one for random numbers and one for mathematical plotting in here.
+
+80
+00:11:13,440 --> 00:11:24,060
+And those random numbers are going to give us a reproducible stream of numbers that are not truly random, but look random.
+
+81
+00:11:24,480 --> 00:11:31,590
+So these are known as pseudo random numbers. They are what we get from computers that don't involve quantum mechanics.
+
+82
+00:11:33,270 --> 00:11:36,419
+The idea is that they are generated by an algorithm.
+
+83
+00:11:36,420 --> 00:11:47,130
+So they are, uh, deterministically sets, and the sequence will be the same from one pseudorandom number to the next.
+
+84
+00:11:48,000 --> 00:11:52,660
+Um, and that sequence can be started or seeded with, uh,
+
+85
+00:11:53,100 --> 00:12:00,870
+the so-called seed that is being sent to the random pseudo pseudo random number generator in this line.
+
+86
+00:12:01,410 --> 00:12:07,740
+And then starting from that seed, the same sequence of numbers will always be produced deterministically.
+
+87
+00:12:08,220 --> 00:12:15,860
+But they are. They look random in the sense that if we have a large number of these pseudo random numbers, uh,
+
+88
+00:12:16,040 --> 00:12:23,790
+we cannot use that sequence to predict the next number in the sequence with very high degree of confidence.
+
+89
+00:12:24,720 --> 00:12:29,790
+So the particular pseudo random number generator that Python uses, uh,
+
+90
+00:12:29,790 --> 00:12:35,940
+will go through something like ten to the power 6000 pseudo random numbers before it starts to,
+
+91
+00:12:36,570 --> 00:12:43,680
+um, reproduce what came before and allow you to predict what is coming next.
+
+92
+00:12:47,040 --> 00:12:52,469
+If I zoom in even further to get that's a bit bigger on the screens that are around,
+
+93
+00:12:52,470 --> 00:13:02,130
+we can see that the basic routine in this random number library is just random dot random,
+
+94
+00:13:02,580 --> 00:13:08,459
+and that generates and returns one of these pseudo random numbers that we have assigned
+
+95
+00:13:08,460 --> 00:13:15,720
+to the variable U and printed in Python's human readable or human friendly notation.
+
+96
+00:13:16,320 --> 00:13:19,680
+That number came out as roughly 0.863.
+
+97
+00:13:21,660 --> 00:13:32,940
+Um, if we print random dot random itself, we get the next number in the sequence 0.838, but you remains at the value it was set to earlier on,
+
+98
+00:13:34,620 --> 00:13:38,159
+and we can print it again there with a bit nicer formatting,
+
+99
+00:13:38,160 --> 00:13:44,220
+where we only have six significant figures rather than the 16 that we don't necessarily care about.
+
+100
+00:13:44,940 --> 00:13:52,920
+We can see that all of the, well, all three of the random numbers that we're getting in this little block of code here are between 0 and 1.
+
+101
+00:13:53,430 --> 00:14:01,169
+That is what this particular routine gives us numbers between 0 and 1 with the uniform distribution.
+
+102
+00:14:01,170 --> 00:14:05,100
+So an equal probability for any number in that overall range.
+
+103
+00:14:05,550 --> 00:14:12,270
+And we can check that this nicely integrates to a probability of 100% integrating one from 0 to 1.
+
+104
+00:14:13,830 --> 00:14:17,640
+So it is a nice simple starting point to look at.
+
+105
+00:14:20,120 --> 00:14:25,610
+It's also a fairly boring starting point to look at. If we just have random numbers that are evenly spaced between 0 and 1,
+
+106
+00:14:26,240 --> 00:14:34,130
+and doing more interesting things like sampling non-trivial probability distributions is.
+
+107
+00:14:35,590 --> 00:14:39,190
+Um, a big part of the programming assignments.
+
+108
+00:14:39,730 --> 00:14:43,870
+And this is done through the approach of inverse transform sampling,
+
+109
+00:14:44,320 --> 00:14:54,820
+which I like to illustrate with this sort of cartoon that fortunately I have in this PDF, because I can't draw it here for you live.
+
+110
+00:14:55,600 --> 00:15:04,000
+And if we start from that uniform probability distribution that has a value of one between 0 and 1, we'll call that you for uniform.
+
+111
+00:15:05,710 --> 00:15:14,710
+If we invent or are given an invertible transformation f that acts on those numbers from 0 to 1,
+
+112
+00:15:15,670 --> 00:15:25,000
+we can design that in such a way that the X's that come out are distributed in a different way, um,
+
+113
+00:15:25,450 --> 00:15:31,420
+between different endpoints x sub zero and x sub one, with the restriction,
+
+114
+00:15:31,960 --> 00:15:40,120
+which we can call a conservation of probability that any small interval on each side of this transformation gets mapped,
+
+115
+00:15:40,630 --> 00:15:45,590
+uh, to a corresponding interval on the other side.
+
+116
+00:15:45,610 --> 00:15:52,780
+So probability p of new times that TMU the U maps into a p of x times that x.
+
+117
+00:15:53,740 --> 00:16:02,530
+If we rearrange the du and x and invert our transformation to relate the uniform random numbers to the inverse transformation of x,
+
+118
+00:16:03,280 --> 00:16:13,060
+then we have an expression for a probability distribution p of x in terms of the derivative of the inverse of this transform,
+
+119
+00:16:13,810 --> 00:16:17,410
+which we can uh apply in either direction.
+
+120
+00:16:17,800 --> 00:16:23,830
+Either. Given a transformation, we can tell what random distribution is coming out of that,
+
+121
+00:16:24,280 --> 00:16:28,870
+or if there is a random distribution that we want to target to p of x,
+
+122
+00:16:29,290 --> 00:16:37,480
+we can engineer a transformation F in such a way that, um, we get what we want from that f.
+
+123
+00:16:39,130 --> 00:16:52,480
+So that is what is done. In the demo, we take a fairly simple but non-trivial probability distribution that is just x over two with x from 0 to 2,
+
+124
+00:16:52,510 --> 00:17:07,120
+that integrates to 100% probability. And you can check that the transform that generates this is, uh, f of u being twice the square root of U.
+
+125
+00:17:07,900 --> 00:17:11,620
+The inverse transform is then um.
+
+126
+00:17:15,270 --> 00:17:18,990
+You equals x squared over four.
+
+127
+00:17:19,650 --> 00:17:25,260
+And taking the derivative of that gives us well x over two which is what we wanted.
+
+128
+00:17:27,300 --> 00:17:37,770
+So what we have here is just a check of the mean and standard deviation of this probability distribution.
+
+129
+00:17:38,460 --> 00:17:45,690
+Using the for loops. That came up briefly yesterday as a way to generate a large number of random numbers.
+
+130
+00:17:46,560 --> 00:17:54,960
+Um. So this is the same Python notation.
+
+131
+00:17:55,440 --> 00:17:59,540
+Iterating over some AI in a range that we give.
+
+132
+00:17:59,540 --> 00:18:06,300
+If we start from zero and we go up to, but do not include the overall number of samples that we are interested in.
+
+133
+00:18:07,110 --> 00:18:10,260
+I will run this quickly so that.
+
+134
+00:18:15,950 --> 00:18:29,980
+Um, are things actually running? I will go to Colab where I see that things are actually running.
+
+135
+00:18:30,660 --> 00:18:35,880
+I don't know what is. Uh, why this computer is misbehaving.
+
+136
+00:18:39,760 --> 00:18:51,340
+So once we get connected, all that should take zero seconds and I will jump through to a visual illustration of the histogram
+
+137
+00:18:52,240 --> 00:19:03,250
+where I just take these 2 million samples of our random numbers filtered through our transformation,
+
+138
+00:19:03,250 --> 00:19:10,990
+twice times the square root of each uniformly distributed random number, and just plot those in a histogram.
+
+139
+00:19:11,470 --> 00:19:18,040
+Where do all the random numbers come up? Those random numbers are the bins in blue.
+
+140
+00:19:18,700 --> 00:19:25,660
+They are normalised so that the overall integral uh, or the sum over all the bins adds up to one.
+
+141
+00:19:26,560 --> 00:19:33,610
+And on top of that, I've plotted the probability distribution that we wanted to get out x over two from 0 to 2.
+
+142
+00:19:33,910 --> 00:19:39,130
+Just to check that this transformation I put in is giving us that.
+
+143
+00:19:41,290 --> 00:19:56,839
+So. This block here in the demo is showing an example of how that matplotlib library that
+
+144
+00:19:56,840 --> 00:20:02,900
+I've given the short nickname plt can be used to plot both histograms and lines.
+
+145
+00:20:03,740 --> 00:20:09,830
+There is a kind of standard trick in Python that if you want to plot a line,
+
+146
+00:20:10,340 --> 00:20:19,940
+what you do is just generate or sample a set of evenly distributed points that are fairly close together.
+
+147
+00:20:20,330 --> 00:20:26,600
+You evaluate the function of the line for all of those points, and then plot that with a line.
+
+148
+00:20:27,080 --> 00:20:30,410
+So that is the red line that is coming up in this plot.
+
+149
+00:20:31,280 --> 00:20:40,370
+It is all of these points from 0 to 1.99 times point five, um, on the vertical axis.
+
+150
+00:20:41,300 --> 00:20:45,410
+This figure can be shown. It can be saved to.
+
+151
+00:20:46,250 --> 00:20:58,330
+Well, there it is. Um. If we were to open it in a new window that's now been downloaded, and can also be saved as an image from.
+
+152
+00:20:59,780 --> 00:21:07,250
+The Python notebook. Other things we can do with these 2 million random numbers.
+
+153
+00:21:07,520 --> 00:21:14,090
+Now that they've been filtered through the transformation is check that the mean and
+
+154
+00:21:14,150 --> 00:21:23,510
+standard deviation of these numbers match what we can compute from this distribution,
+
+155
+00:21:23,520 --> 00:21:29,810
+given the probability basics we have reviewed in the lectures.
+
+156
+00:21:31,400 --> 00:21:34,550
+So all we need to compute for that.
+
+157
+00:21:34,820 --> 00:21:43,850
+This is actually the arithmetic mean that by the law of large numbers we know approaches the true mean of the distribution for large numbers.
+
+158
+00:21:44,690 --> 00:21:50,300
+So we just add up all the data divide by the total number of points.
+
+159
+00:21:51,320 --> 00:21:56,360
+Um that gives us the arithmetic mean. So that's an approximation to the mean.
+
+160
+00:21:57,230 --> 00:22:01,100
+Do the same for the expectation value of x squared.
+
+161
+00:22:01,670 --> 00:22:11,670
+So we add up all of the every single data point squared within that for loop which is set up by the indentation within Python.
+
+162
+00:22:11,690 --> 00:22:15,440
+Different languages will have different notation for for loops.
+
+163
+00:22:16,790 --> 00:22:23,930
+Once we divide that square by the number of samples, we have an approximation for the expectation value of x squared.
+
+164
+00:22:24,620 --> 00:22:28,580
+Subtract the square of the expectation value. Take the square root.
+
+165
+00:22:28,970 --> 00:22:33,530
+That's our standard deviation sigma at least approximated by the law of large numbers.
+
+166
+00:22:34,130 --> 00:22:42,440
+And we can check that compared to the exact results we can determine easily for this
+
+167
+00:22:42,440 --> 00:22:49,190
+particular probability distribution we get agreement within several significant figures.
+
+168
+00:22:50,210 --> 00:22:55,100
+What about um yeah .04 percent.
+
+169
+00:22:55,970 --> 00:23:03,170
+Uh, this discrepancy for the standard deviation 0.003% discrepancy for the mean.
+
+170
+00:23:03,710 --> 00:23:14,300
+And this gets better and better as the number of samples gets larger and larger, with the downside that it takes longer to run,
+
+171
+00:23:14,300 --> 00:23:26,510
+especially because I am saving all now 20 million data points in this array, data which isn't needed for the mean or standard deviation.
+
+172
+00:23:26,510 --> 00:23:36,920
+But, uh, allows us to plot that histogram which shows all of those 2 million or 20 million data points,
+
+173
+00:23:38,180 --> 00:23:43,490
+uh, organised into bins, since that is the live version.
+
+174
+00:23:44,060 --> 00:23:48,530
+On Google Colab, I won't make any further changes here.
+
+175
+00:23:50,210 --> 00:23:54,560
+So the last thing I will just walk through before, uh,
+
+176
+00:23:54,590 --> 00:24:02,750
+shutting up and letting you get on with it is the basic framework that we would need for random walks.
+
+177
+00:24:03,350 --> 00:24:11,239
+What you will be analysing in the assignment. And here we take all of these ingredients and put them together.
+
+178
+00:24:11,240 --> 00:24:17,150
+So there are, uh, not merely four loops, but there are four loops within four loops within four loops.
+
+179
+00:24:17,510 --> 00:24:23,930
+So three levels of nested four loops, which in Python corresponds to three levels of indentation.
+
+180
+00:24:26,420 --> 00:24:30,890
+So the outermost for loop is looking at the number of steps that we have in our walk.
+
+181
+00:24:31,250 --> 00:24:42,050
+So in this example we are considering walks with a walker takes ten steps, another set of walks where the walker takes 20 steps, and so on up to 80.
+
+182
+00:24:43,640 --> 00:24:45,799
+If we weren't worried about correlations,
+
+183
+00:24:45,800 --> 00:24:55,520
+we could just look at the 80 steps in total when the extract ten step sub walks and say that those are by themselves, ten step walks.
+
+184
+00:24:55,520 --> 00:25:01,970
+But for now, let's do things in uncorrelated fashion.
+
+185
+00:25:02,900 --> 00:25:09,920
+So the outermost for loop is going over every entry in this Python array 1020, 30, 40, up to 80.
+
+186
+00:25:10,430 --> 00:25:17,780
+That's the number of steps. And in each case we then have to we want to repeat our random walk many times
+
+187
+00:25:17,780 --> 00:25:23,720
+to look at the distribution of final positions around the expected value.
+
+188
+00:25:24,980 --> 00:25:32,840
+That is the next for loop that is coming in here, where this encounter is not actually used in any of the code,
+
+189
+00:25:33,350 --> 00:25:41,270
+but is just a way to set up a Python for loop going from zero up to the number of walks that we have.
+
+190
+00:25:41,270 --> 00:25:47,210
+In this case, repeating every walk 200,000 times with a given number of steps in the walk.
+
+191
+00:25:47,720 --> 00:25:51,200
+And then finally, at the innermost level, we actually have to take those steps.
+
+192
+00:25:51,830 --> 00:25:58,729
+So stepping here, uh, total number of steps that is set by the outermost one.
+
+193
+00:25:58,730 --> 00:26:01,900
+So. Step one. Step two. Step three.
+
+194
+00:26:01,910 --> 00:26:18,440
+Up to step 80. Repeated and walks times and we end up if we run that with arithmetic means for the final position that are approximately linear.
+
+195
+00:26:19,100 --> 00:26:27,830
+We can see by that doubling the number of steps from 10 to 20 roughly doubles the expected final position from 13 to 26.
+
+196
+00:26:28,460 --> 00:26:40,460
+If we plot things, um, using that same plotting routine we saw earlier with the histogram, then we can see by eye that things look fairly linear,
+
+197
+00:26:40,940 --> 00:26:52,970
+and we can, in fact, using numerical Python, do a quick linear fit to extract the intercept and slope of this straight line.
+
+198
+00:26:53,720 --> 00:27:01,700
+So numerical Python provides a function called poly fit that does polynomial fits.
+
+199
+00:27:04,590 --> 00:27:10,080
+The three arguments that it takes are essentially the x positions.
+
+200
+00:27:10,410 --> 00:27:16,220
+So the number of steps on the x axis, the data on the y axis to fit the average walk.
+
+201
+00:27:16,230 --> 00:27:20,700
+The average length of the walk. The final position that we compute.
+
+202
+00:27:21,240 --> 00:27:24,240
+And then the last argument is the order of the polynomial to fit.
+
+203
+00:27:24,660 --> 00:27:33,510
+One is a linear polynomial. We expect the intercept to be zero because we haven't gone anywhere.
+
+204
+00:27:33,870 --> 00:27:44,790
+If we've taken zero steps, we expect the slope to be just related to the mean of the probability distribution that we found earlier.
+
+205
+00:27:45,450 --> 00:27:52,290
+That was a result that we got yesterday that the expected final position is n times the mean of the single step.
+
+206
+00:27:53,040 --> 00:27:55,980
+That is what we get up to several significant figures.
+
+207
+00:27:56,730 --> 00:28:07,080
+And again, the more random numbers that we put in, the more experiments that we repeat, the more precise we will reproduce our exact expectations.
+
+208
+00:28:08,880 --> 00:28:20,820
+So that is, in the demo, all of the, um, topics that will show up in the first three exercises in the computer assignment.
+
+209
+00:28:22,710 --> 00:28:27,810
+And I will just see if there are any immediate questions.
+
+210
+00:28:28,560 --> 00:28:34,200
+Otherwise, pause the recording and circulate the room to see how you were getting set up.
+
+211
+00:28:34,200 --> 00:28:39,930
+If you were having any more luck with these systems than I was having up here.
+
+212
+00:28:46,700 --> 00:28:50,407
+Let's. Good. There.
+
