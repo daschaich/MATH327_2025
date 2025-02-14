@@ -1,0 +1,417 @@
+1
+00:00:03,420 --> 00:00:07,319
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Okay. Just get underway with formalities.
+
+2
+00:00:07,320 --> 00:00:13,830
+A couple of minutes late because I left my phone at home so I can do all the, uh, the two factor authentication.
+
+3
+00:00:14,730 --> 00:00:26,310
+Um, there is a, uh, attendance code for today that is 37, 98, 51.
+
+4
+00:00:31,340 --> 00:00:36,500
+And less to say today than last week.
+
+5
+00:00:37,160 --> 00:00:44,150
+Um. I may not be able to sign into Colab either.
+
+6
+00:00:44,600 --> 00:00:53,420
+Um, so last week we went through getting set up with this demo on these lab computers.
+
+7
+00:00:53,780 --> 00:01:01,730
+We talked through pseudorandom numbers, the for loop as a basic programming paradigm.
+
+8
+00:01:02,390 --> 00:01:05,660
+Inverse transform sampling is a way to get from basic,
+
+9
+00:01:05,660 --> 00:01:15,140
+uniformly distributed random numbers and the nested for loops that are needed to compute random walks.
+
+10
+00:01:16,370 --> 00:01:33,440
+And that covers essentially all you need for the first three exercises in the computing assignment, where you're looking at a particular distribution.
+
+11
+00:01:35,630 --> 00:01:41,209
+Defined by this transform the arc cost of one minus two you over pi.
+
+12
+00:01:41,210 --> 00:01:47,990
+That gives some distribution for a random variables x.
+
+13
+00:01:49,880 --> 00:01:59,300
+And those first three exercises will allow you to do several sanity checks of the numerical results that you get.
+
+14
+00:01:59,660 --> 00:02:06,229
+You can confirm that the distribution obtained numerically matches up with the one
+
+15
+00:02:06,230 --> 00:02:12,380
+that you can compute analytically from the inverse transform sampling set up,
+
+16
+00:02:13,730 --> 00:02:23,390
+as well as computing the exact means and variance from that distribution, and confirming that the numerical results match this.
+
+17
+00:02:24,170 --> 00:02:34,430
+Um in terms of. Both the histogram as well as the final position for the random walk and its diffusion coefficient,
+
+18
+00:02:34,430 --> 00:02:38,360
+estimated using some number of repetitions of that walk.
+
+19
+00:02:40,700 --> 00:02:49,399
+So if you are through those three exercises, by the end of today, you're in good shape to ramp up the remaining two in the week.
+
+20
+00:02:49,400 --> 00:02:59,600
+And a bit that remains before the deadline. I'll remind you that the actual computing for any given task in here should take.
+
+21
+00:03:01,910 --> 00:03:04,970
+A minute or so, probably less in many cases.
+
+22
+00:03:05,510 --> 00:03:14,360
+And just for a few minutes today we'll talk through the new features that are arising for the final two exercises,
+
+23
+00:03:16,040 --> 00:03:17,959
+just to see if there are any questions about those.
+
+24
+00:03:17,960 --> 00:03:25,640
+And I'll circulate the room, see if there are any practical questions about the programming aspects,
+
+25
+00:03:25,640 --> 00:03:29,780
+and then you have the remainder of the hour just to get on with it.
+
+26
+00:03:31,130 --> 00:03:41,540
+So moving from exercise 3 to 4, we lose the connection or lose the ability to check our results with the central limit theorem,
+
+27
+00:03:42,140 --> 00:03:50,570
+which already gives us a hint that the conditions for the central limit theorem to apply will not be satisfied.
+
+28
+00:03:52,100 --> 00:04:04,010
+So the particular distribution that we are looking at here, the koshi distribution or koshi Lorenz distribution instead of um,
+
+29
+00:04:05,060 --> 00:04:12,020
+well, it has this form with a quadratic fall off from its peak around x equals zero depending on this.
+
+30
+00:04:12,020 --> 00:04:21,530
+Overall, this scaling factor B and this plot is showing a comparison of koshi distributions with various different
+
+31
+00:04:21,530 --> 00:04:27,170
+b against the exponential Gaussian distribution that we know and love from the central limit theorem,
+
+32
+00:04:27,620 --> 00:04:33,229
+pointing out that no, no matter the value of b, in some cases, when B,
+
+33
+00:04:33,230 --> 00:04:37,910
+the smaller the peak around zero can be much higher than that of the Gaussian distribution.
+
+34
+00:04:37,910 --> 00:04:43,250
+But if we go far enough away from that peak, this quadratic fall off is much,
+
+35
+00:04:43,250 --> 00:04:50,480
+much slower than the exponential suppression that defines the Gaussian distribution.
+
+36
+00:04:51,800 --> 00:04:58,490
+So for any value of b, at least a non-zero value so that the koshi Lorenz distribution is well defined.
+
+37
+00:04:59,000 --> 00:05:08,600
+Eventually, the tail of the koshi Lorenz distribution will have a larger value with the probability distribution,
+
+38
+00:05:08,600 --> 00:05:16,040
+and hence integrating gives larger probabilities than the exponentially suppressed Gaussian in that solid black curve.
+
+39
+00:05:16,970 --> 00:05:25,280
+So these so-called fat tails give a higher probability of extreme events coming
+
+40
+00:05:25,280 --> 00:05:29,030
+from the koshi Lawrence distribution compared to a normal distribution.
+
+41
+00:05:29,540 --> 00:05:35,990
+And the way to visualise this is by looking at these two example random walks,
+
+42
+00:05:36,470 --> 00:05:43,100
+one of which has step sizes in two dimensions x and y that are drawn from the Gaussian distribution.
+
+43
+00:05:43,520 --> 00:05:50,150
+The other has step sizes in x and y drawn from the Koshi distribution.
+
+44
+00:05:50,900 --> 00:05:57,920
+I actually did something different here. I drew the magnitude of the step from that distribution and chose the angle uniformly,
+
+45
+00:05:58,340 --> 00:06:05,900
+which is why the big jumps in the koshi distribution in the right are not exactly aligned with the x or y directions,
+
+46
+00:06:07,220 --> 00:06:14,240
+but you can see, especially if you look at the scales on the x and y axes,
+
+47
+00:06:14,990 --> 00:06:23,210
+a huge difference between these two random walks based on the different underlying stochastic processes in the Gaussian case.
+
+48
+00:06:24,830 --> 00:06:27,469
+Large steps are exponentially suppressed.
+
+49
+00:06:27,470 --> 00:06:37,310
+They have a very low probability, and we wander around within 10 or 20 units of the starting point at zero with a thousand steps.
+
+50
+00:06:39,260 --> 00:06:44,630
+In the Kosuke case, it's a bit harder to compare because the scale on the axes is so different,
+
+51
+00:06:45,320 --> 00:06:51,440
+but there are several sequences of steps where there is a similar,
+
+52
+00:06:51,830 --> 00:06:57,080
+fairly modest wandering around that zero magnitude where the distribution is peaked,
+
+53
+00:06:57,920 --> 00:07:06,230
+but there is a larger probability for getting a sample from that the fat tail.
+
+54
+00:07:06,680 --> 00:07:14,540
+So the magnitude that has a very large value compared to the exponential distributions,
+
+55
+00:07:14,540 --> 00:07:23,630
+and that shows up as these occasional very large jumps, um, that we don't have in the Gaussian case or in um.
+
+56
+00:07:25,940 --> 00:07:30,080
+Really any probability distribution that will be described by the central limit theorem.
+
+57
+00:07:30,650 --> 00:07:34,880
+And we talked about last week when we wrapped up the law of diffusion,
+
+58
+00:07:35,300 --> 00:07:40,240
+that the law of diffusion is essentially equivalent to the central limit theorem.
+
+59
+00:07:40,250 --> 00:07:51,530
+They both apply together or neither applies. So the square root dependence of the average distance walked by our walker,
+
+60
+00:07:51,980 --> 00:07:56,750
+depending on the square root of n, will be lost for the koshi Lorenz distribution.
+
+61
+00:07:57,920 --> 00:08:04,100
+And we have to consider something other than that quadratic diffusion length.
+
+62
+00:08:04,580 --> 00:08:07,910
+Instead, looking at a generalised diffusion length where.
+
+63
+00:08:09,950 --> 00:08:17,090
+We take our final position and instead of squaring it taking the square root, we raise it to the power theta.
+
+64
+00:08:17,630 --> 00:08:26,180
+Or theta is some positive number. We have to take the absolute value in case that theta is, say, the square root or a cube root.
+
+65
+00:08:26,180 --> 00:08:31,730
+We want our, uh, numbers to remain real and not become imaginary.
+
+66
+00:08:32,150 --> 00:08:38,270
+And then we take a one over theta power. After computing the expectation value.
+
+67
+00:08:38,780 --> 00:08:43,490
+So it's not a root mean square to say theta root mean theta power.
+
+68
+00:08:44,180 --> 00:08:58,610
+And this generalised diffusion length rather than scaling like the square root of n scales or can scale with a more general dependence.
+
+69
+00:08:58,610 --> 00:09:05,670
+And to the power alpha. Alpha is similarly a positive number and whenever.
+
+70
+00:09:05,930 --> 00:09:07,129
+So there are two possibilities.
+
+71
+00:09:07,130 --> 00:09:16,370
+Either alpha is greater than the case of a half that corresponds to the usual law of diffusion from the first three exercises that super diffusion,
+
+72
+00:09:16,370 --> 00:09:21,200
+or it is less than a half while still being positive, which is sub diffusion.
+
+73
+00:09:22,950 --> 00:09:28,279
+Um, so diffusion that is either or spreading out behaviour that is either greater than
+
+74
+00:09:28,280 --> 00:09:33,800
+or less extreme than the ordinary law of diffusion that we derived in the lectures.
+
+75
+00:09:34,430 --> 00:09:38,930
+So in order to analyse this sort of behaviour,
+
+76
+00:09:39,500 --> 00:09:47,270
+we would need to fit our generalised diffusion length to an arbitrary power, not knowing that is a half.
+
+77
+00:09:47,720 --> 00:09:52,250
+That's the last piece of the demo that we did not talk through last week.
+
+78
+00:09:52,790 --> 00:10:02,690
+Um. I have put the magic number for today up at the top, for those of you who don't have it yet.
+
+79
+00:10:04,010 --> 00:10:11,960
+Um, and because I was saying earlier, I can't do the two factor authentication to log in.
+
+80
+00:10:12,470 --> 00:10:21,240
+I will. See if I can leave that on the screen while I open up.
+
+81
+00:10:28,170 --> 00:10:32,310
+The Jupyter Notebook locally.
+
+82
+00:10:39,290 --> 00:10:50,529
+So that it can actually be run. So this is the local version on this computer.
+
+83
+00:10:50,530 --> 00:10:54,970
+So it has still the magic number from last week.
+
+84
+00:10:55,960 --> 00:10:59,530
+So I can update hopefully there.
+
+85
+00:11:02,130 --> 00:11:05,130
+And we can just go through, get everything.
+
+86
+00:11:07,440 --> 00:11:10,890
+RedOne through that parallel fit and then focus on.
+
+87
+00:11:12,980 --> 00:11:21,680
+Once this finishes running. There is a trick to simplify.
+
+88
+00:11:22,160 --> 00:11:27,500
+These power law fits if we don't know what power we are fitting to.
+
+89
+00:11:28,400 --> 00:11:32,030
+What we can do is take the logarithm of both sides.
+
+90
+00:11:32,660 --> 00:11:41,209
+Use the nice properties of the logarithm that we have seen several times now in lectures that c times so constant c times end to the power,
+
+91
+00:11:41,210 --> 00:11:46,580
+alpha becomes alpha times log n plus the constant log of c.
+
+92
+00:11:47,090 --> 00:11:56,240
+So the power law is converted to a linear function between the logarithm of the y axis and the logarithm of the x axis.
+
+93
+00:11:56,900 --> 00:12:07,970
+So we just take the logarithm of both of those to a linear fit, and then the power that we are after our alpha is just the slope of that fit,
+
+94
+00:12:08,480 --> 00:12:17,510
+which is the second to last, uh, output parameter returned by this particular numerical Python routine.
+
+95
+00:12:18,140 --> 00:12:21,890
+And we get in this example in the demo,
+
+96
+00:12:22,640 --> 00:12:33,920
+the result that alpha is linear up to statistical fluctuations in the fourth significant figure and the constant is the same,
+
+97
+00:12:34,580 --> 00:12:41,120
+um mean are related to the mean of this distribution that we computed last week.
+
+98
+00:12:42,080 --> 00:12:52,899
+So that. Takes us through all the remaining aspects of the assignment and the demo.
+
+99
+00:12:52,900 --> 00:13:01,120
+So I will pause the recording and just come around and see if you have any
+
+100
+00:13:01,120 --> 00:13:07,030
+immediate questions you've encountered since we last spoke this time last week.
+
+101
+00:13:08,588 --> 00:13:16,088
+So you've gone around answer some questions about good strategies for testing things,
+
+102
+00:13:16,088 --> 00:13:20,348
+say running with different seeds or different numbers of random numbers.
+
+103
+00:13:20,348 --> 00:13:23,138
+If you're not sure if something is a trend or a random fluctuation,
+
+104
+00:13:23,788 --> 00:13:32,348
+this is just resuming and then stopping the recording to officially wrap up for this week or.
+
