@@ -1,0 +1,2705 @@
+1
+00:00:02,350 --> 00:00:06,440
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Okay. Bells have told I've got the recording going.
+
+2
+00:00:06,460 --> 00:00:18,280
+Welcome back to another Wednesday of statistical mechanics, where the magic number for today is 52, 34, 22.
+
+3
+00:00:20,310 --> 00:00:30,300
+And, you know, just before we get going, check to see if there are any immediate questions about what we have started going into this week.
+
+4
+00:00:30,960 --> 00:00:35,070
+Turning our focus to one of the, well,
+
+5
+00:00:35,790 --> 00:00:45,270
+mean statistical ensembles that we will consider and apply to many different biophysical applications over the next few weeks.
+
+6
+00:00:46,200 --> 00:00:50,910
+So we started off on Monday just by formulating the canonical ensemble,
+
+7
+00:00:51,900 --> 00:01:00,840
+as well as by motivating it with the argument that this micro canonical case that we talked about first,
+
+8
+00:01:00,840 --> 00:01:07,050
+because it has this very straightforward connection to conservation of energy, um,
+
+9
+00:01:08,280 --> 00:01:16,350
+has the drawback that it requires any system that conserves energy to be closed or isolated or insulated from the rest of the universe,
+
+10
+00:01:16,830 --> 00:01:23,700
+and instead of that sort of physically unrealistic system or set up to worry,
+
+11
+00:01:24,240 --> 00:01:35,130
+we are looking to see how or whether it is mathematically well formulated to switch to a framework where instead of conserving energy,
+
+12
+00:01:35,520 --> 00:01:46,140
+we can fix the temperature of our system, remove the need for insulation or isolation, and allow energy exchange with the environment.
+
+13
+00:01:48,010 --> 00:01:52,709
+This is something that, as physicists or if we were physicists,
+
+14
+00:01:52,710 --> 00:01:58,260
+we might do without thinking about it at all and just say that, yeah, we can fix the temperature, whatever.
+
+15
+00:01:58,680 --> 00:02:10,410
+But, uh, as this is a math coded module, we will be more careful and more formal and go through a derivation using what is called the replica trick,
+
+16
+00:02:10,890 --> 00:02:18,629
+to show that we can formulate a fixed temperature system while still obeying conservation of energy.
+
+17
+00:02:18,630 --> 00:02:22,260
+The first law of thermodynamics, where we.
+
+18
+00:02:25,520 --> 00:02:31,790
+Users are on the outs or sensible starting point for the external heat.
+
+19
+00:02:32,030 --> 00:02:36,350
+The external reservoir or heat bath that this energy is being exchanged with.
+
+20
+00:02:36,800 --> 00:02:41,180
+Just some number of replicas of the system that we are interested in.
+
+21
+00:02:43,100 --> 00:02:50,900
+So with those replicas we introduced the occupation number and the corresponding occupation probability.
+
+22
+00:02:50,990 --> 00:02:57,150
+They just differ by a normalisation factor. One is and I, the other is p.
+
+23
+00:02:58,430 --> 00:03:06,830
+And this counts how many times any microstate in our small system of interest whose energy can now fluctuate,
+
+24
+00:03:07,070 --> 00:03:15,260
+appears across all of the replicas that form the overall system reservoir, plus the system of interest.
+
+25
+00:03:17,300 --> 00:03:24,260
+Or a correspondingly, the probability that if we select one of those replicas, it will be in that corresponding microstate of the small system.
+
+26
+00:03:25,100 --> 00:03:29,030
+And we assume for now there are a finite number m of those.
+
+27
+00:03:29,450 --> 00:03:36,470
+We computed the total number of microstates across all of our our replicas, including the system.
+
+28
+00:03:37,190 --> 00:03:47,450
+And from that, because conservation of energy is, um, enforced on the overall universe that now includes the system and reservoir,
+
+29
+00:03:47,870 --> 00:03:57,620
+we could immediately write down the total entropy as just the log of the total number of microstates in thermodynamic equilibrium.
+
+30
+00:03:59,590 --> 00:04:07,240
+And that was just are factors of the p log p summing over those occupation probabilities again.
+
+31
+00:04:10,730 --> 00:04:20,870
+Requiring that we are considering everything in thermodynamic equilibrium where these sorts of probabilistic approaches are well defined.
+
+32
+00:04:22,520 --> 00:04:26,299
+So today. So we will finish the formal derivation.
+
+33
+00:04:26,300 --> 00:04:38,470
+We started off with this replicator, with the idea being that we specify some sensible, uh, of sorts or way of modelling that external reservoir.
+
+34
+00:04:38,480 --> 00:04:44,660
+And in the end of the day, we want to show that it doesn't matter or dependence on the details of those replicas just
+
+35
+00:04:44,660 --> 00:04:50,300
+drops out and leaves us with our canonical system with a fixed temperature that we want.
+
+36
+00:04:51,620 --> 00:05:01,610
+We will get there by. Um, connecting the total entropy to thermodynamic equilibrium.
+
+37
+00:05:03,140 --> 00:05:07,010
+That is the situation where the entropy is maximised.
+
+38
+00:05:07,760 --> 00:05:11,390
+And this will give us something called the partition function.
+
+39
+00:05:14,450 --> 00:05:24,860
+That serves as the fundamental definition of a canonical system, and we will want to see that it doesn't depend on our replica ansatz at all.
+
+40
+00:05:26,210 --> 00:05:33,200
+And there are lots of ways of looking at this partition function and coming along with lots of names of 19th century scientists like Gibbs,
+
+41
+00:05:33,200 --> 00:05:34,430
+Boltzmann, and Helmholtz.
+
+42
+00:05:35,120 --> 00:05:44,329
+We'll go through those quickly and then derive some of the quantities that we can't predict on the basis of that fundamental partition function.
+
+43
+00:05:44,330 --> 00:05:55,190
+So things like the entropy of our system just looked at as a system without reference to its external heat bath,
+
+44
+00:05:55,580 --> 00:06:02,270
+the internal energy and similar related quantities like the heat capacity for today.
+
+45
+00:06:03,170 --> 00:06:10,790
+And there should be time after that to start looking at a first application of the canonical ensemble,
+
+46
+00:06:11,480 --> 00:06:20,270
+seeing how the pure information content of statistical systems actually has observable
+
+47
+00:06:20,270 --> 00:06:26,750
+effects on these quantities that we can derive and measure in experiments like the energy.
+
+48
+00:06:28,460 --> 00:06:35,540
+So we probably will look at a couple of different example systems that differ only by how much is knowable about them,
+
+49
+00:06:35,900 --> 00:06:43,550
+and see if physical predictions differ between them, probably spilling over from today into next week.
+
+50
+00:06:44,390 --> 00:06:50,780
+But any questions about where we are or where we're going before we get underway?
+
+51
+00:06:53,410 --> 00:07:04,670
+With the next step. Not hearing any.
+
+52
+00:07:05,480 --> 00:07:19,730
+You can dive right into that, uh, entropy maximisation, and it will look pretty similar to what we did for the micro canonical ensemble.
+
+53
+00:07:20,850 --> 00:07:31,940
+We need to impose the relevant constraints, which will include the same one that we had in the micro canonical case.
+
+54
+00:07:32,450 --> 00:07:36,410
+All of the probabilities have to add up to 100%, as always.
+
+55
+00:07:37,640 --> 00:07:58,680
+And we also. Need to include the requirement that if we sum up the energies across all of the different occupation probabilities so that.
+
+56
+00:08:00,780 --> 00:08:08,040
+Well, what I should bring in here is a factor of R to convert that R times PA into an occupation number.
+
+57
+00:08:08,370 --> 00:08:18,030
+So we can think of this sum as adding up all of the numbers of replicas that are in microstate omega I with fluctuating energy e sub I.
+
+58
+00:08:18,420 --> 00:08:25,680
+If we add up the energy of every single replica, we will get the total energy of the system.
+
+59
+00:08:25,680 --> 00:08:29,970
+This is an equation that we derived last time and hopefully is familiar.
+
+60
+00:08:30,360 --> 00:08:34,890
+If we don't go through and re derive it in full detail.
+
+61
+00:08:34,980 --> 00:08:39,960
+The key thing is that the total energy of this universe is conserved.
+
+62
+00:08:40,560 --> 00:08:50,550
+The energy of each particular microstate is now allowed to fluctuate in our approach as the as the different replicas exchange energy with each other.
+
+63
+00:08:51,090 --> 00:08:56,130
+So we introduce our modified entropy as bar.
+
+64
+00:08:58,580 --> 00:09:05,630
+Now with two Lagrange multipliers to impose these two constraints.
+
+65
+00:09:06,470 --> 00:09:18,380
+This one is the same as before. Sum of probabilities adds up to one second one give it a coefficient of negative beta just for later convenience,
+
+66
+00:09:20,180 --> 00:09:29,870
+and this imposes the second constraint that the total energy is accounted for among all are replicas, and then.
+
+67
+00:09:31,730 --> 00:09:42,350
+We can go more quickly through the derivative than we did last time, because it is the same story with delta Kronecker delta ijk being picked out.
+
+68
+00:09:43,340 --> 00:09:54,350
+As we go through the product rule of the chain rule. So this overall minus r ends up multiplying a log p k plus one.
+
+69
+00:09:55,040 --> 00:09:58,250
+We just get alpha from the first constraint,
+
+70
+00:09:58,610 --> 00:10:07,490
+and from the second constraint we have a beta r and then e k being picked out from summing over that delta function.
+
+71
+00:10:08,090 --> 00:10:11,780
+And we just need to rearrange and solve for.
+
+72
+00:10:14,290 --> 00:10:21,970
+The probability itself again, the occupation probability coming from picking a replica at random.
+
+73
+00:10:22,540 --> 00:10:28,300
+So we move that divide through by R and move the log here to the other side.
+
+74
+00:10:29,440 --> 00:10:38,380
+We have a minus one. We have plus alpha over R and then the R's cancel in the beta e k term.
+
+75
+00:10:42,160 --> 00:10:44,560
+So exponentiating both sides gives us.
+
+76
+00:10:47,730 --> 00:10:58,380
+Just the occupation probability expressed in terms of the Lagrange multipliers and the corresponding energy of that microstates.
+
+77
+00:10:58,860 --> 00:11:09,210
+That's allowed to fluctuate. So it's a kind of cumbersome exponential factor one minus alpha over r.
+
+78
+00:11:09,810 --> 00:11:15,690
+And then. Another minus beta times e k.
+
+79
+00:11:18,510 --> 00:11:25,020
+And we can make this look a little bit more elegant just by rearranging our exponentials.
+
+80
+00:11:25,620 --> 00:11:41,690
+So. We keep E to the minus beta, K up on top, beta EQ on top, then exponential of a negative factor is one over the exponential of the factor itself.
+
+81
+00:11:43,580 --> 00:11:49,910
+This depends on that Lagrange multiplier alpha, as well as the total number of replicas.
+
+82
+00:11:51,200 --> 00:11:55,580
+That total number of replicas is a constant that is fixed in our setup.
+
+83
+00:11:55,910 --> 00:12:00,590
+So we can just replace this with a different symbol, that whole factor.
+
+84
+00:12:00,590 --> 00:12:07,550
+Or we can call it z being that exponential and then e to the minus beta.
+
+85
+00:12:08,150 --> 00:12:16,010
+UK has all of the dependence on the microstate omega k itself wrapped up in that second exponential factor.
+
+86
+00:12:18,490 --> 00:12:23,889
+So that's if we recall the Lagrange multiplier procedure.
+
+87
+00:12:23,890 --> 00:12:26,080
+That's the first step we maximise.
+
+88
+00:12:26,740 --> 00:12:35,560
+And then once we impose constraints, we will know that the maximum of this modified entropy will correspond to the maximum of the true entropy,
+
+89
+00:12:36,010 --> 00:12:40,420
+with all of these multipliers being multiplied by zero.
+
+90
+00:12:41,440 --> 00:12:44,850
+So. The first constraint.
+
+91
+00:12:48,740 --> 00:12:54,770
+We can impose. Is that all of these probabilities add up to one.
+
+92
+00:12:56,360 --> 00:13:02,480
+We have now an expression for all the probabilities one over Z is a constant that can come outside the sum,
+
+93
+00:13:03,260 --> 00:13:07,850
+and we just have the sum over the exponential factors.
+
+94
+00:13:09,530 --> 00:13:20,810
+Let's move that up there. Well this is fairly easy to solve for z.
+
+95
+00:13:20,900 --> 00:13:31,790
+If we just multiply through by this modified Lagrange multiplier, we get an expression for it in terms of the properties of the microstates,
+
+96
+00:13:31,790 --> 00:13:37,910
+so that it is no longer something that depends on replicas or unknown factors.
+
+97
+00:13:39,230 --> 00:13:44,720
+It becomes just the sum of e to the minus beta e k.
+
+98
+00:13:45,080 --> 00:13:50,800
+And this is the partition function that I mentioned at the start of today.
+
+99
+00:13:50,820 --> 00:14:02,090
+We have reached it already, and this essentially contains all of the information about our statistical system in the form of a sum.
+
+100
+00:14:02,330 --> 00:14:09,110
+If I use consistent subscripts over these exponential factors.
+
+101
+00:14:11,150 --> 00:14:19,840
+Um. That still depend on our second Lagrange multiplier minus beta.
+
+102
+00:14:20,470 --> 00:14:24,630
+So maybe I was too quick to declare victory.
+
+103
+00:14:24,640 --> 00:14:33,219
+This is what the partition function will look like, but it is still a function of that unknown beta that we also need to deal with.
+
+104
+00:14:33,220 --> 00:14:42,010
+By imposing our second constraint, that all of the energies add up to the total conserved value.
+
+105
+00:14:42,970 --> 00:14:49,690
+Any questions so far? Before we move on to that step, which will be a little less trivial than this one.
+
+106
+00:14:52,480 --> 00:15:04,570
+No. So. Our second constraint is summing over all of the energies that is equal to the total energy.
+
+107
+00:15:05,890 --> 00:15:08,890
+And what we can do here is.
+
+108
+00:15:11,200 --> 00:15:18,760
+Go back and recast the total entropy in terms of this total.
+
+109
+00:15:22,050 --> 00:15:29,380
+Uh, energy. So this will be clearer when I actually write down what I mean.
+
+110
+00:15:31,060 --> 00:15:36,790
+Without the Lagrange multipliers, we had the usual pie log pie,
+
+111
+00:15:38,470 --> 00:15:47,920
+and we now have an expression for these micro these occupation probabilities p sub I in terms
+
+112
+00:15:47,920 --> 00:15:55,990
+of these partition function and the Lagrange multiplier beta that we want to figure out.
+
+113
+00:15:56,710 --> 00:16:06,340
+So just plugging that into one of these appearances of pi in the total entropy.
+
+114
+00:16:11,210 --> 00:16:18,920
+We can use the properties of logs, which we should be getting lots of practice and familiarity with at this point.
+
+115
+00:16:19,340 --> 00:16:29,810
+Log of one over z is minus log z that is constant and comes out of the sum, which um then leaves only the sum over pi, which is one.
+
+116
+00:16:32,210 --> 00:16:39,470
+This gets added to the log of the exponential of minus beta east of I, which has to stay in that sum.
+
+117
+00:16:40,730 --> 00:16:48,080
+The negatives cancel again. Our beta is just a Lagrange multiplier that is constant and can come out of the sum.
+
+118
+00:16:48,680 --> 00:17:00,560
+And then we have pi times I within the sum, which as promised, is that total energy up that we wanted to.
+
+119
+00:17:04,030 --> 00:17:10,110
+Deal with coming with an overall factor of beta.
+
+120
+00:17:12,070 --> 00:17:19,180
+So we have a relation between the total entropy, the total energy,
+
+121
+00:17:19,720 --> 00:17:27,790
+which is useful if we recall the micro canonical thermodynamic equilibrium definition of the temperature.
+
+122
+00:17:30,260 --> 00:17:37,310
+Is the inverse of the derivative of the entropy with respect to the energy.
+
+123
+00:17:38,540 --> 00:17:43,370
+With n fixed, I'll drop the subscripts for now, just to keep from having to write too much.
+
+124
+00:17:43,940 --> 00:17:53,780
+So this derivative. Well, the easy derivative to take is the derivative of e with respect to e, which just leaves beta.
+
+125
+00:17:54,470 --> 00:18:02,540
+But. This beta can potentially depend on that total energy E.
+
+126
+00:18:03,350 --> 00:18:11,810
+That's a fixed conserved property of our system that went into the start, um, of our consideration of the entropy.
+
+127
+00:18:12,500 --> 00:18:24,590
+So we have to include here as well from the product rule, the derivative of beta with respect to that conserved total energy.
+
+128
+00:18:25,670 --> 00:18:28,820
+And then we have the derivative of that other term.
+
+129
+00:18:29,900 --> 00:18:34,400
+So the r is just a constant that does come along for the ride.
+
+130
+00:18:35,150 --> 00:18:41,390
+The derivative of log of z is one over z d z d.
+
+131
+00:18:42,380 --> 00:18:57,770
+But said we have pointed out is a function directly of data, so we have one over z d e d beta d z db to formally.
+
+132
+00:18:59,780 --> 00:19:02,840
+So any objections to.
+
+133
+00:19:04,770 --> 00:19:10,530
+That, you know, walking through that derivative relatively quickly.
+
+134
+00:19:27,960 --> 00:19:35,160
+So. What we can do at this point is, well,
+
+135
+00:19:35,160 --> 00:19:47,430
+insert our expression for this partition function Z is still as a function of the unknown Lagrange multiplier beta to figure out this log derivative.
+
+136
+00:19:50,560 --> 00:20:04,719
+We just move that derivative with respect to beta into the sum over microstates up here E to the minus beta e,
+
+137
+00:20:04,720 --> 00:20:09,850
+I will bring down a minus e I in the sum.
+
+138
+00:20:11,020 --> 00:20:17,170
+There's a minus one over I times some e I, and then the exponential.
+
+139
+00:20:19,750 --> 00:20:25,030
+Still stays the same. Straightforward chain rule through that.
+
+140
+00:20:25,420 --> 00:20:35,980
+And we can recognise here one over z times that exponential factor is just barely fitting on the screen.
+
+141
+00:20:36,760 --> 00:20:44,530
+The probability for the occupation probability of p sub I that we got from maximising the entropy.
+
+142
+00:20:46,360 --> 00:20:56,740
+So that is the minus sum over p sub I times e sub I or just minus e total over r.
+
+143
+00:20:57,280 --> 00:21:02,860
+What I've been calling e without decoration in the expression above.
+
+144
+00:21:04,360 --> 00:21:13,059
+So what we have for the inverse temperature is beta plus that dependence on or
+
+145
+00:21:13,060 --> 00:21:21,850
+dependence of beta on the total conserve energy of our system plus r times one over z,
+
+146
+00:21:21,970 --> 00:21:28,270
+z beta is minus e over r and the.
+
+147
+00:21:30,160 --> 00:21:34,520
+I did this wrong. This is d beta d.
+
+148
+00:21:35,650 --> 00:21:39,430
+So. Sorry about that.
+
+149
+00:21:39,820 --> 00:21:48,490
+Is taking the derivative with respect to energy and then converting changing variables to the beta that goes into the partition function.
+
+150
+00:21:49,210 --> 00:21:53,830
+So sorry to get things upside down there.
+
+151
+00:21:57,130 --> 00:22:00,580
+It would have caused problems because we cancel out those hours.
+
+152
+00:22:00,940 --> 00:22:08,650
+We see that we have e times DB2 d e and we have minus e times deviated e.
+
+153
+00:22:09,520 --> 00:22:12,909
+And the ultimate result is just that.
+
+154
+00:22:12,910 --> 00:22:17,920
+The inverse temperature is our Lagrange multiplier parameter beta,
+
+155
+00:22:18,730 --> 00:22:27,670
+which expresses that parameter in terms of the fundamental quantity that we are keeping
+
+156
+00:22:27,670 --> 00:22:34,000
+fixed in the canonical approach through thermal contact with that large external reservoir.
+
+157
+00:22:37,410 --> 00:22:48,030
+So at this point, with this data plugged in to the Z that replaced the Alpha,
+
+158
+00:22:48,840 --> 00:22:56,159
+we have connected all of those Lagrange multipliers to the properties of our system.
+
+159
+00:22:56,160 --> 00:23:01,350
+They are no longer arbitrary uh, constants.
+
+160
+00:23:02,310 --> 00:23:07,840
+Our imposition of constraints has. Given us.
+
+161
+00:23:09,270 --> 00:23:17,740
+Well. It has given us a set of probabilities that.
+
+162
+00:23:21,990 --> 00:23:25,230
+I will refer to as the Gibbs distribution.
+
+163
+00:23:26,280 --> 00:23:32,130
+It is sometimes called the Boltzmann distribution, depending on which side of the Atlantic you are on.
+
+164
+00:23:32,970 --> 00:23:46,680
+And this is the statement that the probability p sub I is just one over z times e to the minus energy for that microstate divided by the temperature.
+
+165
+00:23:48,810 --> 00:24:01,290
+The partition function z itself. Normalising this expression is the sum over all of these exponential factors of energy divided by temperature.
+
+166
+00:24:03,210 --> 00:24:08,970
+And we have a useful notation for the inverse temperature that is this beta.
+
+167
+00:24:09,000 --> 00:24:19,050
+Now we can think of as an inverse temperature and will sometimes go back and forth between T and beta, depending on what makes calculations easier.
+
+168
+00:24:20,520 --> 00:24:26,879
+Regardless of, um, whether this is called the Gibbs distribution of the Boltzmann distribution,
+
+169
+00:24:26,880 --> 00:24:33,210
+the set of all the probabilities that, um, comes into our system.
+
+170
+00:24:33,660 --> 00:24:40,920
+This exponential factor is universally known as the Boltzmann factor.
+
+171
+00:24:42,890 --> 00:24:53,240
+The relation that probabilities are exponentially suppressed by the negative energy of the microstates,
+
+172
+00:24:53,960 --> 00:24:57,350
+normalised by the temperature in the setting where the temperature is fixed.
+
+173
+00:24:59,390 --> 00:25:11,300
+And now we can note that there is no longer any reference to replicas or the heat baths or anything about them, like ah.
+
+174
+00:25:11,600 --> 00:25:21,740
+In these expressions we can directly interpret these P not as simply occupation probabilities,
+
+175
+00:25:22,970 --> 00:25:27,650
+but the actual probabilities for our system of interest.
+
+176
+00:25:31,510 --> 00:25:37,000
+Is in the corresponding microstates. Omega I.
+
+177
+00:25:44,000 --> 00:25:50,960
+And that microstate has an internal energy E sub I, which is allowed to fluctuate.
+
+178
+00:25:51,020 --> 00:25:54,950
+It's no longer conserved. And.
+
+179
+00:25:57,560 --> 00:26:06,080
+The fact that we have expressions for the whole distribution of the whole probability space for our canonical system,
+
+180
+00:26:06,380 --> 00:26:20,360
+with no reference to our replica ansatz, means that the details of the reservoir are not only irrelevant, but in fact unknowable.
+
+181
+00:26:20,660 --> 00:26:29,300
+If we just look at the system itself, there's no reference to them in any of the information that we have access to.
+
+182
+00:26:30,770 --> 00:26:43,159
+All we know about the reservoir is that it is there in order to conserve the overall energy of the universe and fix the
+
+183
+00:26:43,160 --> 00:26:52,580
+intensive temperature that allows our canonical system to be defined with constant number of particles in constant temperature,
+
+184
+00:26:53,450 --> 00:26:59,570
+with the energy fluctuating. And this was the the goal we started working towards on Monday.
+
+185
+00:27:00,590 --> 00:27:10,050
+So we have arrived at a more mathematical definition that the canonical ensemble is in fact mathematically well-defined.
+
+186
+00:27:10,070 --> 00:27:12,980
+We can fix the temperature, and when we do so,
+
+187
+00:27:14,510 --> 00:27:21,440
+the system is defined by the partition function and broader Gibbs distribution or Boltzmann distribution.
+
+188
+00:27:21,980 --> 00:27:28,950
+So it's worth taking a pause to reflect on that whole process.
+
+189
+00:27:28,970 --> 00:27:34,420
+See if there are any questions or objections to the argument that we've gone through,
+
+190
+00:27:34,430 --> 00:27:39,560
+which, as I said, was a bit lengthy and spread over a couple of days.
+
+191
+00:27:40,910 --> 00:27:49,399
+We got there in the end, relying on the overall conservation of energy in the whole universe.
+
+192
+00:27:49,400 --> 00:27:52,690
+Even though our system is allowed to exchange energy with its surroundings.
+
+193
+00:27:52,700 --> 00:27:55,910
+Now, the fact that temperature is an intensive quantity,
+
+194
+00:27:56,240 --> 00:28:06,260
+and the fact that thermodynamic equilibrium corresponds to maximising the entropy given the appropriate constraints for our ensemble.
+
+195
+00:28:17,040 --> 00:28:21,689
+One other thing I can point out. If there are no objections to that,
+
+196
+00:28:21,690 --> 00:28:33,179
+a long song and dance is that if we consider a very special canonical system where every microstate has the same energy,
+
+197
+00:28:33,180 --> 00:28:44,610
+so all you sub i's are just equal to some fixed e, then that immediately tells us that all of the probabilities are that same constant.
+
+198
+00:28:46,650 --> 00:28:54,540
+Or they they are all equal. If we sum over all of those equal probabilities, we just end up counting the number of microstates,
+
+199
+00:28:54,930 --> 00:29:04,200
+and we get back to the micro canonical case where the in thermodynamic equilibrium, the probability was just constant and equal to one over m.
+
+200
+00:29:05,760 --> 00:29:15,149
+In the case of finite number of microstates M, so the canonical ensemble reduces to the micro canonical ensemble.
+
+201
+00:29:15,150 --> 00:29:26,889
+If, by chance the energy is is fixed by virtue of having the same internal energy for every microstate, typically a,
+
+202
+00:29:26,890 --> 00:29:36,480
+uh, exponentially unlikely situation, but a nice check that everything is holding together and self-consistent.
+
+203
+00:29:37,470 --> 00:29:45,750
+When we consider the different constraints that correspond to the different statistical ensembles we are going through.
+
+204
+00:29:48,360 --> 00:30:08,440
+So. We now have the fundamental kind of definition or expression for how any given canonical system behaves, given the energies of its microstates.
+
+205
+00:30:09,160 --> 00:30:16,870
+The definition of that system, we have the corresponding probability that the system will adopt those microstates at fixed energy.
+
+206
+00:30:17,260 --> 00:30:20,680
+So we can use that to actually predict some stuff.
+
+207
+00:30:21,490 --> 00:30:35,050
+Um, we'll go through the overall overarching calculation and then plug in a few examples to connect us to that, uh, pure information content.
+
+208
+00:30:36,130 --> 00:30:43,770
+So. One thing we can now predict is.
+
+209
+00:30:45,650 --> 00:30:56,180
+Not necessarily the internal energy of every individual microstate, which is no longer conserved.
+
+210
+00:30:57,710 --> 00:31:04,080
+But what is a good, well-defined macroscopic quantity?
+
+211
+00:31:04,100 --> 00:31:07,760
+Sorry, that slid down the screen there.
+
+212
+00:31:08,900 --> 00:31:15,320
+What is a good, well-defined macroscopic quantity that emerges from this underlying microscopic Gibbs
+
+213
+00:31:15,320 --> 00:31:23,900
+distribution that we can predict is actually the expectation value of the energy.
+
+214
+00:31:28,650 --> 00:31:32,940
+So that brings in those that angle bracket notation.
+
+215
+00:31:33,840 --> 00:31:38,490
+This is a function of the temperature as well as the number of particles implicitly.
+
+216
+00:31:39,300 --> 00:31:46,140
+So rather than being conserved in the micro canonical ensemble, with the temperature being a derived quantity,
+
+217
+00:31:46,140 --> 00:31:54,420
+we can predict now the temperature is fixed and the expectation value of the energy is a derived quantity for us to predict.
+
+218
+00:31:55,050 --> 00:31:57,060
+As with every expectation value,
+
+219
+00:31:58,260 --> 00:32:07,260
+this is defined as just the sum over the energies weighted by the probability for the system to be in the corresponding microstate,
+
+220
+00:32:07,980 --> 00:32:15,299
+which we have from our Gibbs distribution one over z sum of the energy with the
+
+221
+00:32:15,300 --> 00:32:22,080
+exponential factor E to the minus beta e supply beta being the inverse temperature.
+
+222
+00:32:22,380 --> 00:32:25,560
+So that's energy over temperature is beta times energy.
+
+223
+00:32:27,810 --> 00:32:40,800
+And this is something that might look familiar because we came across it there when we were computing in the replica trick, the um,
+
+224
+00:32:42,270 --> 00:32:48,090
+relation between the overall entropy and energy of our replica system,
+
+225
+00:32:48,930 --> 00:32:55,470
+we've set aside that whole replica set up with information about the external reservoir.
+
+226
+00:32:56,070 --> 00:33:08,430
+The only important point here is that this expression corresponds to one over z times d, z to the derivative of the log of z with respect to beta.
+
+227
+00:33:09,940 --> 00:33:16,170
+The z is unchanged. We've just determined the meaning of beta in terms of an inverse temperature.
+
+228
+00:33:18,270 --> 00:33:28,710
+And there is a negative sign there to keep track of. So we can still work that same calculation in reverse with a different physical interpretation.
+
+229
+00:33:30,210 --> 00:33:45,510
+This expression is one over z d z devido or the derivative with respect to the inverse temperature of the logarithm of our partition function.
+
+230
+00:33:47,280 --> 00:33:54,829
+So. The a first example of something we will see, perhaps in nauseum,
+
+231
+00:33:54,830 --> 00:34:03,320
+that the macroscopic quantities we are predicting are directly expressed in terms of the partition function.
+
+232
+00:34:04,100 --> 00:34:10,940
+Through some mathematical manipulation, in this case a log and a derivative with respect to the inverse temperature.
+
+233
+00:34:12,920 --> 00:34:20,660
+Of course, we expressed the expectation value as a function of the fixed temperature that defines the canonical ensemble.
+
+234
+00:34:21,140 --> 00:34:32,330
+So it's worth asking how do we get t dependence out of this, uh, expression in terms of the fundamental partition function?
+
+235
+00:34:32,750 --> 00:34:37,790
+Or in other words, how does that expectation value for the internal energy.
+
+236
+00:34:39,860 --> 00:34:49,010
+Depend more directly on the temperature? And this brings us to or motivates.
+
+237
+00:34:51,230 --> 00:34:57,960
+There is. A bit more alignment with the screen.
+
+238
+00:34:59,790 --> 00:35:05,879
+If we want to think about how one quantity depends on another,
+
+239
+00:35:05,880 --> 00:35:15,900
+what we're what we're really talking about mathematically is the derivative of the one quantity with respect to the other.
+
+240
+00:35:15,900 --> 00:35:28,620
+So the derivative of the internal energy with respect to temperature is an important quantity to consider for a statistical system.
+
+241
+00:35:28,650 --> 00:35:34,950
+When we start looking at some examples this is known as the heat capacity.
+
+242
+00:35:37,620 --> 00:35:48,340
+It is. Given the symbol C, the subscript V tells us that we are keeping the volume of the system fixed when we take this derivative.
+
+243
+00:35:48,350 --> 00:35:52,340
+We haven't introduced volume yet, but we will next week most likely.
+
+244
+00:35:53,210 --> 00:35:57,740
+There are some different versions of the heat capacity that we will revisit.
+
+245
+00:35:57,740 --> 00:36:03,500
+We've actually seen data and predictions for heat capacities that that was some
+
+246
+00:36:03,500 --> 00:36:09,410
+of the motivating plots that I showed in the very first lecture back in January.
+
+247
+00:36:10,250 --> 00:36:15,560
+So we can look forward to actually predicting this quantity for certain systems.
+
+248
+00:36:19,040 --> 00:36:32,300
+One thing we will show, and actually full generality before working with a particular example, is that the seed capacity is non-negative,
+
+249
+00:36:33,410 --> 00:36:44,840
+which is to say that the canonical systems we will be considering are always natural in the sense that whenever the temperature increases,
+
+250
+00:36:45,410 --> 00:36:53,000
+the internal energy has to increase as well, which was something we saw was not always guaranteed in the micro canonical case.
+
+251
+00:36:53,510 --> 00:37:00,500
+And in particular, when looking at spin systems where increasing the energy is, um,
+
+252
+00:37:01,010 --> 00:37:10,280
+lost access to some number of microstates and led to a smaller, um derived temperature.
+
+253
+00:37:10,940 --> 00:37:15,799
+So the canonical system is already a bit better behaved in this sense,
+
+254
+00:37:15,800 --> 00:37:23,720
+in addition to being a bit more convenient to think about in terms of having an external observer doing an experiment.
+
+255
+00:37:28,280 --> 00:37:36,770
+So in general, a higher temperature will lead to a larger internal energy for.
+
+256
+00:37:38,840 --> 00:37:44,810
+Canonical systems, and I won't actually derive that now.
+
+257
+00:37:44,930 --> 00:37:51,740
+I will assign that to you for the next homework assignments that will be due two weeks from this Friday.
+
+258
+00:37:53,360 --> 00:38:01,700
+You will derive what's called a fluctuation response relation that connects this response to how the energy response we
+
+259
+00:38:01,700 --> 00:38:13,970
+change in temperature to fluctuations of the system around the expectation value defined by these sums over the microstates.
+
+260
+00:38:16,180 --> 00:38:19,360
+In in full generality. So.
+
+261
+00:38:22,280 --> 00:38:26,810
+This is the result. To keep in mind, we will see some examples a bit later on.
+
+262
+00:38:27,110 --> 00:38:29,850
+Predicting heat capacities for various systems,
+
+263
+00:38:29,870 --> 00:38:37,399
+and in the meantime you can derive that the heat capacity is always non-negative and in general positive,
+
+264
+00:38:37,400 --> 00:38:40,549
+much like we saw with the second law of thermodynamics,
+
+265
+00:38:40,550 --> 00:38:49,640
+that strictly only says that the entropy never decreases, but it almost always increases as time goes by.
+
+266
+00:38:49,640 --> 00:38:54,230
+It's only in very special situations that equality would hold.
+
+267
+00:38:57,020 --> 00:39:04,879
+Any questions about energy or heat capacity before we predict some more stuff, or show how we would predict some more stuff.
+
+268
+00:39:04,880 --> 00:39:09,260
+For a given example, I should probably phrase at this point.
+
+269
+00:39:17,480 --> 00:39:21,290
+The next targets after energy and heat capacity is.
+
+270
+00:39:23,130 --> 00:39:35,700
+Perhaps an obvious one, and that is coming back to the entropy that is now being considered just as a property of our canonical system itself.
+
+271
+00:39:35,700 --> 00:39:38,760
+Not saying anything about the heat bath that surrounds it.
+
+272
+00:39:40,590 --> 00:39:46,739
+And our general definition of entropy holds for any statistical ensemble.
+
+273
+00:39:46,740 --> 00:39:56,880
+So it holds in the micro canonical case as well. Sum over all microstates of the probability times its log with an overall negative sign.
+
+274
+00:39:58,530 --> 00:40:04,800
+These probabilities now given by the Gibbs distribution, rather than being occupation probabilities,
+
+275
+00:40:05,400 --> 00:40:15,180
+and we can use the same trick that we used before and actually plug in the Gibbs distribution for one of these factors of p sub I.
+
+276
+00:40:17,840 --> 00:40:24,500
+In particular, the one inside the log was e to the minus beta e sub I.
+
+277
+00:40:25,370 --> 00:40:31,130
+So the usual properties of logs break up the product inside the log into a sum of logs.
+
+278
+00:40:32,360 --> 00:40:37,040
+Minus log z is just sorry minus log one over z is just log of z.
+
+279
+00:40:37,820 --> 00:40:46,700
+The probability that the probabilities on that term add up to one, and the log of the exponential just brings down the argument.
+
+280
+00:40:47,210 --> 00:40:51,680
+Negative signs cancel again. Constant inverse temperature comes out front.
+
+281
+00:40:54,000 --> 00:41:02,910
+And I and I come along for the ride, recognising that p e I there.
+
+282
+00:41:03,360 --> 00:41:09,320
+And this. Well. Like I said, we don't have to worry about.
+
+283
+00:41:10,790 --> 00:41:18,020
+But the sum over the energies of each microstate, weighted by the probabilities,
+
+284
+00:41:18,410 --> 00:41:27,590
+is exactly the definition of an expectation function, and specifically the expectation function of the energy that we just computed.
+
+285
+00:41:28,070 --> 00:41:38,389
+Beta is the inverse temperature, and this is a relation between the entropy expressed in terms of the log of z,
+
+286
+00:41:38,390 --> 00:41:49,400
+both directly and indirectly, through the internal energy that comes from the log of z through that derivative.
+
+287
+00:41:50,180 --> 00:41:58,210
+We can also rearrange this to express the average energy in terms of the entropy.
+
+288
+00:41:58,220 --> 00:42:10,220
+So multiply through by the temperature. We have a temperature times entropy, and then move t log z to the other side of the equal sign.
+
+289
+00:42:12,050 --> 00:42:17,720
+And we have a way of expressing the energy that does not, at least explicitly,
+
+290
+00:42:18,200 --> 00:42:23,120
+show the derivative with respect to the inverse temperature that we encountered.
+
+291
+00:42:24,830 --> 00:42:40,650
+Uh, initially. And what this result does motivate though, is, you know, just seeing how often this log of Z is showing up.
+
+292
+00:42:41,340 --> 00:42:51,570
+It can be convenient to rewrite that as an independent variable of itself with a physical interpretation.
+
+293
+00:42:52,650 --> 00:43:03,640
+And. That independent variable is known as a free energy to some extent for obscure historical reasons.
+
+294
+00:43:04,760 --> 00:43:07,990
+Well, I'll motivate the terminology briefly in a bit.
+
+295
+00:43:08,470 --> 00:43:14,560
+This particular free energy is named after another 19th century German scientist, Helmholtz.
+
+296
+00:43:15,430 --> 00:43:21,550
+It has given the symbol f. It is a function of T, like everything in the canonical ensemble,
+
+297
+00:43:21,940 --> 00:43:31,900
+and it is just this minus t log z factor that shows up in this relation between energy and entropy.
+
+298
+00:43:33,910 --> 00:43:40,450
+There are. So it is, as always, coming from that fundamental partition function.
+
+299
+00:43:40,990 --> 00:43:50,230
+And we can even turn things on their heads and express the partition function in terms of the Helmholtz free energy.
+
+300
+00:43:50,920 --> 00:43:54,460
+It's a fairly trivial rearrangement of this equation.
+
+301
+00:43:55,030 --> 00:44:01,360
+Take the t to the other side and exponentiate. We get e to the minus f over t.
+
+302
+00:44:02,980 --> 00:44:11,350
+So. We have the option of considering either the partition function or the Helmholtz free
+
+303
+00:44:11,350 --> 00:44:19,120
+energy as the fundamental defining quantity for a canonical statistical system.
+
+304
+00:44:20,260 --> 00:44:35,559
+And if we plug this into our Gibbs distribution, which was one over z e to the minus energy over temperature, then this gets expressed in the form.
+
+305
+00:44:35,560 --> 00:44:38,770
+So one over z is E to the plus f.
+
+306
+00:44:39,500 --> 00:44:44,310
+Over tea. As just that pure exponential.
+
+307
+00:44:48,160 --> 00:44:55,570
+So for the moment, we are just. Well, this is I promise to motivate at least the term free energy.
+
+308
+00:44:56,200 --> 00:45:03,220
+Um, the kind of hand-waving 19th century physics conceptual idea coming in here is that.
+
+309
+00:45:04,910 --> 00:45:11,389
+This f in the gives distribution is sort of the amount of energy available for
+
+310
+00:45:11,390 --> 00:45:15,980
+microstates to have before they start feeling that exponential suppression.
+
+311
+00:45:16,520 --> 00:45:27,470
+So each microstate is taking its internal energy E sub I subtracted from the overall amount available in this way of looking at things.
+
+312
+00:45:27,920 --> 00:45:36,170
+I will say that is not really too relevant, especially to mathematical calculations, but even to physical arguments.
+
+313
+00:45:36,170 --> 00:45:44,600
+It's kind of a relic of, you know, the way people were approaching these questions when they didn't understand what was going on.
+
+314
+00:45:45,220 --> 00:45:49,640
+Um, but that is, if you were wondering what's the meaning of that term free energy?
+
+315
+00:45:50,030 --> 00:45:59,870
+That is essentially what is coming from the fact that there is this subtraction of microstate energy from this overall minus t log z.
+
+316
+00:46:02,000 --> 00:46:11,870
+The Helmholtz free energy sort of proves its use when we express our predictions in terms of it, rather than in terms of the partition function.
+
+317
+00:46:12,680 --> 00:46:17,960
+So we can expect some derivatives to show up in the process.
+
+318
+00:46:18,710 --> 00:46:25,010
+So let's see how that works out in full detail.
+
+319
+00:46:35,980 --> 00:46:42,130
+So both the internal entropy and through its the heat capacity as well as the entropy
+
+320
+00:46:42,940 --> 00:46:48,430
+will be expressible in the form of derivatives of this Helmholtz free energy.
+
+321
+00:46:49,690 --> 00:46:53,110
+I just flashed the expression we derived for.
+
+322
+00:46:56,810 --> 00:47:06,770
+The internal energy expectation value in terms of that partition function minus log z is f divided by t.
+
+323
+00:47:07,970 --> 00:47:17,630
+So there we have it. A derivative of the free energy giving us the internal energy.
+
+324
+00:47:18,950 --> 00:47:24,350
+And um we can also express this as beta times f because beta is the inverse temperature.
+
+325
+00:47:25,460 --> 00:47:27,890
+But maybe you don't going the other way to.
+
+326
+00:47:30,120 --> 00:47:38,120
+Do a, um, recasting of this whole expression directly in terms of temperature rather than inverse temperature.
+
+327
+00:47:41,180 --> 00:47:47,479
+We just need to consider the usual chain rule that I will write with the proper orientation.
+
+328
+00:47:47,480 --> 00:47:53,450
+This time f over t has its derivative taken with respect to temperature.
+
+329
+00:47:53,840 --> 00:47:58,610
+And then we need to consider the derivative of the temperature with respect to its inverse.
+
+330
+00:47:59,390 --> 00:48:04,520
+So the t is one over beta d beta of one over beta is minus one over beta squared.
+
+331
+00:48:07,110 --> 00:48:10,260
+That's the usual power law.
+
+332
+00:48:12,970 --> 00:48:19,720
+And one over metre squared is just the temperature squared.
+
+333
+00:48:24,340 --> 00:48:29,480
+So that is the internal energy expressed as a derivative of the free energy.
+
+334
+00:48:29,500 --> 00:48:35,410
+Now entirely with reference to the temperature itself rather than its inverse.
+
+335
+00:48:37,360 --> 00:48:47,890
+If instead of f divided by t in the derivative, we had just the free energy on its own.
+
+336
+00:48:50,050 --> 00:48:57,280
+We shift that up. Well, we just have to use the product rule.
+
+337
+00:48:59,290 --> 00:49:03,880
+To take the derivative of each term separately.
+
+338
+00:49:04,780 --> 00:49:09,580
+DT is just one. So minus log said comes along.
+
+339
+00:49:10,480 --> 00:49:17,860
+And then there is a minus t dt of log z.
+
+340
+00:49:20,230 --> 00:49:28,630
+Which is now the f over t that we have related to the internal energy.
+
+341
+00:49:31,600 --> 00:49:44,600
+Specifically this. DDT is one over t squared times or whatever t squared times minus plus D data.
+
+342
+00:49:45,620 --> 00:49:55,430
+So what we have is this expression for the internal energy divided by t squared multiplied by minus t.
+
+343
+00:49:57,080 --> 00:50:01,700
+That leaves just one factor of t in the denominator.
+
+344
+00:50:03,860 --> 00:50:08,839
+We can check that all of the the units work out in terms of dimensional analysis.
+
+345
+00:50:08,840 --> 00:50:13,790
+The logarithm is up here. Number energy and temperature have the same units that cancel out.
+
+346
+00:50:13,800 --> 00:50:22,700
+So that's a good sanity check. Um, when we go through calculations like this and in fact we can recognise that we've
+
+347
+00:50:22,700 --> 00:50:28,220
+seen something like this not too long ago when we first computed the entropy.
+
+348
+00:50:29,120 --> 00:50:33,410
+The only difference being that overall negative sign.
+
+349
+00:50:34,220 --> 00:50:44,660
+So in other words, as promised, we have the entropy as a derivative of the Helmholtz free energy.
+
+350
+00:50:45,050 --> 00:50:51,590
+Now directly with respect to the temperature and without dividing through by t.
+
+351
+00:50:53,980 --> 00:51:01,850
+So that is. Oh, one other thing that we can say about this.
+
+352
+00:51:05,580 --> 00:51:10,470
+Um, from this expression minus log z minus u over t,
+
+353
+00:51:10,830 --> 00:51:19,380
+we can recognise minus log z as that Helmholtz free energy divided by t, and then we have two terms all divided by t.
+
+354
+00:51:20,880 --> 00:51:28,709
+And that can be a convenient way of expressing things.
+
+355
+00:51:28,710 --> 00:51:35,190
+We still have this relation between the energy and the entropy that we saw earlier.
+
+356
+00:51:36,390 --> 00:51:42,390
+Now expressed in terms of Helmholtz free energy rather than the log of the partition function.
+
+357
+00:51:42,390 --> 00:51:49,200
+So if we find ourselves in a situation where we are given a statistical system to analyse,
+
+358
+00:51:49,200 --> 00:51:53,280
+we compute as Helmholtz free energy, take the derivative to find the energy.
+
+359
+00:51:53,790 --> 00:52:02,340
+We don't need to take any more derivatives. We can just plug in E and f, divide them by t and the entropy comes popping right out.
+
+360
+00:52:04,140 --> 00:52:09,990
+So this is a good place to pause for a break.
+
+361
+00:52:10,740 --> 00:52:17,100
+Just check to see if there are any questions about these expressions that we have now put in place.
+
+362
+00:52:17,700 --> 00:52:26,159
+Building our toolbox for the canonical ensemble. And if there aren't, we'll take a ten minute break.
+
+363
+00:52:26,160 --> 00:52:33,896
+It's five to noon, so we'll start again at five past and pause the recording during that break.
+
+364
+00:52:35,322 --> 00:52:38,322
+I think we are all back and ready to go.
+
+365
+00:52:38,892 --> 00:52:45,642
+And unless any questions have come to mind about this formulation of the canonical ensemble and
+
+366
+00:52:46,062 --> 00:52:52,302
+the expressions that we have derived for things we can predict during the the ten minute break,
+
+367
+00:52:52,812 --> 00:53:03,732
+we will turn the page and move on to the first of three applications of the canonical ensemble that will keep us entertained, uh, going into March.
+
+368
+00:53:05,292 --> 00:53:09,222
+So we will be looking at thermodynamic cycles, ideal gases.
+
+369
+00:53:09,822 --> 00:53:18,402
+But first we will look at the examples of a couple different types of spin systems to see
+
+370
+00:53:20,172 --> 00:53:28,452
+the effect that their information content has on their physically observable properties.
+
+371
+00:53:30,612 --> 00:53:40,242
+So this is a. You know, counterintuitive or unintuitive, at least to me.
+
+372
+00:53:40,722 --> 00:53:52,722
+Our result, the fact that. The information content of a statistical system has physically observable effects.
+
+373
+00:53:53,112 --> 00:54:11,242
+But. This is something that was appreciated in more and more detail and generality throughout the 20th century, and remains a key aspect of,
+
+374
+00:54:12,352 --> 00:54:20,752
+um, modern physics of the 21st century, connected to things like quantum gravity and the holographic principle, the idea that, uh.
+
+375
+00:54:22,902 --> 00:54:36,282
+The information of a system is potentially even more powerful than its partition function and kind of the the physical details of it.
+
+376
+00:54:36,732 --> 00:54:42,252
+And it's worth emphasising here to make sure that the meaning or significance of clear is clear,
+
+377
+00:54:42,792 --> 00:54:52,242
+that this information content I'm talking about is referring to what really is knowable about that system in principle.
+
+378
+00:54:54,282 --> 00:55:02,422
+Which. You could sort of saying that you can appreciate connections to quantum mechanics and
+
+379
+00:55:02,902 --> 00:55:06,982
+the Heisenberg uncertainty principle and some of the subtleties that arise from there.
+
+380
+00:55:07,462 --> 00:55:12,502
+But I can emphasise that what we actually know is immaterial.
+
+381
+00:55:13,342 --> 00:55:24,172
+Um, the information content doesn't it doesn't depend on any observer actually carrying out a measurement or, um, observing any aspect of our systems.
+
+382
+00:55:24,832 --> 00:55:33,202
+Whatever is knowable in principle is the origin of the physical effects that we will.
+
+383
+00:55:35,272 --> 00:55:41,152
+Go into deriving now. So to make this concrete.
+
+384
+00:55:44,172 --> 00:55:51,642
+And connect to the sorts of systems we have encountered already.
+
+385
+00:55:53,682 --> 00:55:59,422
+We will. Go back to our example of spin systems.
+
+386
+00:56:00,532 --> 00:56:10,182
+Um. So degrees of freedom that can either point up or point down in an external magnetic field that gives them energy.
+
+387
+00:56:10,962 --> 00:56:19,632
+And the cloud cover is lightning, to the point that I think it might help to block out if it is the light.
+
+388
+00:56:21,312 --> 00:56:25,662
+To get a better behaviour from the projector.
+
+389
+00:56:27,102 --> 00:56:37,882
+That's seem to have helped. So given those spins that are spin up or spin down, we will consider two possibilities.
+
+390
+00:56:38,452 --> 00:56:44,062
+One in which we can distinguish between different spins.
+
+391
+00:56:46,292 --> 00:56:49,832
+So those are distinguishable degrees of freedom.
+
+392
+00:56:50,342 --> 00:56:57,752
+And we will contrast that to a case where the spins cannot be distinguished.
+
+393
+00:57:00,262 --> 00:57:06,602
+I think that's the only time I'm going to write out distinguishable and indistinguishable as full world words.
+
+394
+00:57:07,202 --> 00:57:14,012
+So just to give this some physical justification distinguishable spins,
+
+395
+00:57:15,092 --> 00:57:23,342
+we can consider being molecules with magnetic moments at some fixed location in a solid.
+
+396
+00:57:28,262 --> 00:57:36,302
+And the fact that this location is fixed by the crystalline structure in our solid, for example,
+
+397
+00:57:37,382 --> 00:57:46,531
+gives us a physically sensible and well-motivated way to say that we can distinguish any of
+
+398
+00:57:46,532 --> 00:57:58,142
+our spins just by focusing our observation on the corresponding position in this fixed solid.
+
+399
+00:57:59,462 --> 00:58:05,252
+So as this is a canonical system, we have conserved particle number and fixed temperature.
+
+400
+00:58:05,732 --> 00:58:14,432
+And we also have, as usual, our external magnetic field with strength H giving these spins energy.
+
+401
+00:58:16,532 --> 00:58:24,302
+And because we don't have to worry about conserving the energy of our microstates in the canonical approach,
+
+402
+00:58:25,862 --> 00:58:33,122
+all possible orientations of spins with different energies compared to that external magnetic field are allowable.
+
+403
+00:58:33,872 --> 00:58:42,212
+So the total number of microstates is just the two to the n we saw earlier when considering spin systems.
+
+404
+00:58:47,712 --> 00:58:53,442
+These are defined by specifying up or down for all and of these spins.
+
+405
+00:58:55,602 --> 00:59:10,812
+As usual, we call them Omega I, and each microstate now will have its own particular energy east of I, and it will be adopted with.
+
+406
+00:59:11,292 --> 00:59:16,322
+Probability is given by. The Gibbs distribution.
+
+407
+00:59:19,082 --> 00:59:27,332
+Just the exponential of that negative energy over t, all normalised by the partition function.
+
+408
+00:59:29,342 --> 00:59:34,111
+Now, previously when we worked with these spin systems,
+
+409
+00:59:34,112 --> 00:59:38,852
+we talked a lot about the number of spins that were pointing up at the number that were pointing down.
+
+410
+00:59:39,362 --> 00:59:48,752
+For the mathematics, it's going to become a bit, uh, notational, convenient to.
+
+411
+00:59:50,812 --> 00:59:52,972
+Recast this slightly.
+
+412
+00:59:54,322 --> 01:00:07,852
+So these upward pointing spins that are aligned with the magnetic field, we will say is some variable s sub n with a value of one.
+
+413
+01:00:08,422 --> 01:00:14,212
+So whenever I spin and is aligned with magnetic field, we give it a value of one.
+
+414
+01:00:15,502 --> 01:00:23,062
+When it is anti aligned against the magnetic field, it has a value of minus one.
+
+415
+01:00:23,122 --> 01:00:26,872
+So instead of talking about up and down we can talk about plus one and minus one.
+
+416
+01:00:27,652 --> 01:00:41,152
+And just as an example of what this gives us, we can very quickly write the energy for a given spin configuration as that overall factor of minus h.
+
+417
+01:00:41,752 --> 01:00:50,212
+And then just to sum over this lowercase n from one to the uppercase n of all of these spin values plus or minus one.
+
+418
+01:00:53,162 --> 01:00:57,332
+For that microstate that is specified.
+
+419
+01:00:59,522 --> 01:01:05,812
+By the N. Esses and values of these and spins.
+
+420
+01:01:11,122 --> 01:01:18,982
+So. That is, well, very quick and easy to write down.
+
+421
+01:01:19,732 --> 01:01:28,852
+It reduces to hope he had earlier. And plus spins minus and minus spins all multiplied by the minus h in the energy.
+
+422
+01:01:31,992 --> 01:01:37,962
+But this gives us. Well, this energy is exactly what we need to go into.
+
+423
+01:01:37,992 --> 01:01:46,451
+The partition function, that is the fundamental and underlying definition of the statistical system that we have.
+
+424
+01:01:46,452 --> 01:01:48,582
+So in the canonical approach,
+
+425
+01:01:49,182 --> 01:02:01,542
+we will always start with the partition function and derive quantities like the expectation value of the internal energy from there,
+
+426
+01:02:01,992 --> 01:02:05,982
+possibly with an intermediate step going through the Helmholtz free energy.
+
+427
+01:02:07,842 --> 01:02:12,942
+I'll call this partition function z sub d for distinguishable and.
+
+428
+01:02:15,102 --> 01:02:24,912
+We saw in the first half of today's lecture, this is just the sum of the Boltzmann factors over all of these microstates.
+
+429
+01:02:25,782 --> 01:02:30,972
+We have. Now the energy sub I expressed in this nice mathematical notation.
+
+430
+01:02:31,572 --> 01:02:40,362
+We know that the MC the. Each microstate is specified by having these spins either pointing up or down.
+
+431
+01:02:40,812 --> 01:02:52,122
+So we can expand this sum over microstates into a sum over all of those possibilities.
+
+432
+01:02:52,362 --> 01:02:56,322
+Spin one pointing either up or down with the value plus minus one.
+
+433
+01:02:57,042 --> 01:03:02,262
+Same for spin two, save for spin three all the way to the nth spin.
+
+434
+01:03:04,692 --> 01:03:17,532
+And if we plug in. Our expression for the energy we have the exponential of minus beta times minus h is just plus beta h.
+
+435
+01:03:18,222 --> 01:03:22,992
+And then that sum over n of all of those spins that are in there.
+
+436
+01:03:25,362 --> 01:03:40,482
+Can also, just for convenience, change variables and denote this dimensionless beta h which is the field strength over temperature just as an x.
+
+437
+01:03:42,702 --> 01:03:48,942
+And that will save some ink as we expand this out and try to deal with it.
+
+438
+01:03:50,592 --> 01:03:55,762
+So. If we think about what to do with this sum.
+
+439
+01:03:56,272 --> 01:04:03,082
+We have lots of sums and we have an exponential. That itself has a sum inside.
+
+440
+01:04:05,332 --> 01:04:14,542
+And we want to well evaluate this expression in some nice closed form, uh, way.
+
+441
+01:04:16,492 --> 01:04:26,031
+What we can do is recall the properties exponentials, like the properties of logs, things that you've seen before, but possibly not for a while.
+
+442
+01:04:26,032 --> 01:04:32,602
+The exponential of a sum is the product of all of the corresponding exponential factors.
+
+443
+01:04:33,772 --> 01:04:39,922
+So we will have the exponential of beta h times spin one that multiplied by the exponential of beta age times,
+
+444
+01:04:39,922 --> 01:04:49,822
+spin two all the way on each of those exponential factors in that product will depend on only one of the spins in the sum here.
+
+445
+01:04:50,452 --> 01:04:57,111
+So since everything is nice and finite with a finite number of spins,
+
+446
+01:04:57,112 --> 01:05:11,182
+and we can freely rearrange all of these terms in the sum to get the dependence on spin one associated with its sum,
+
+447
+01:05:11,782 --> 01:05:14,212
+the dependence on spin two associated with its sum,
+
+448
+01:05:14,662 --> 01:05:24,382
+and that a product all the way through to the final spin n equals plus or minus one of e to the x spin n.
+
+449
+01:05:26,962 --> 01:05:36,262
+Something else we can do. So each of these factors in parentheses has exactly two terms coming from the two values of s.
+
+450
+01:05:36,832 --> 01:05:40,042
+They are the same two terms for every case.
+
+451
+01:05:40,702 --> 01:05:44,992
+These s1, s2, s3, s for s, n are just labels.
+
+452
+01:05:45,592 --> 01:06:00,892
+We can relabel everything and call them all just s, and then we have an identical factors of the sum exponential of x times s.
+
+453
+01:06:01,522 --> 01:06:14,332
+And if we plug in plus 1 or -1 for s, we get n factors of e to the x plus e to the minus x, the two terms in that sum.
+
+454
+01:06:15,832 --> 01:06:20,302
+And again you've seen hyperbolic geometry before.
+
+455
+01:06:20,902 --> 01:06:29,182
+This sum of exponentials e to the x plus e to the minus x is twice the hyperbolic cosine of x.
+
+456
+01:06:29,842 --> 01:06:36,232
+And now that we're done with that calculation, we can plug back in that x is beta h.
+
+457
+01:06:37,402 --> 01:06:41,962
+So we have n factors of twice the cosh of beta h.
+
+458
+01:06:42,472 --> 01:06:51,802
+And that is our partition function that describes this system in full generality and from which we can extract anything observable about it.
+
+459
+01:06:54,302 --> 01:07:05,822
+The, uh, Helmholtz free energy. Again, in the distinguishable case, this is minus t log z, and if we express it in terms of beta,
+
+460
+01:07:06,332 --> 01:07:12,632
+the inverse temperature like we have here, that will be minus log z over beta.
+
+461
+01:07:13,892 --> 01:07:20,192
+So the log of something raised to a power is that power down in front.
+
+462
+01:07:21,152 --> 01:07:27,002
+And then there's a log of the argument to cosh beta h.
+
+463
+01:07:28,052 --> 01:07:34,802
+And there we have our Helmholtz free energy, something that is on an equivalent footing to the partition function,
+
+464
+01:07:35,192 --> 01:07:41,822
+giving us a starting point for deriving or predicting internal energies and entropies.
+
+465
+01:07:44,312 --> 01:07:53,972
+So any questions about the partition function that we have before we go on to make predictions for those observable quantities?
+
+466
+01:08:05,802 --> 01:08:12,582
+So let's start with the internal energy that,
+
+467
+01:08:12,582 --> 01:08:25,272
+as we have seen is the derivative of Helmholtz free energy divided by t beta times f everything in the distinguishable case.
+
+468
+01:08:26,382 --> 01:08:35,142
+So if we look at this, the beta here cancels the one over beta in the Helmholtz free energy minus and comes along for the ride.
+
+469
+01:08:35,772 --> 01:08:41,262
+And we have a derivative of a log of a hypergeometric function.
+
+470
+01:08:44,352 --> 01:08:57,402
+Which is not too hard to figure out. As always, the derivative of a log brings the argument to that log into the denominator to cosh beta h.
+
+471
+01:08:59,712 --> 01:09:02,612
+Sorry about that. Two. There it one got a little away from me.
+
+472
+01:09:03,822 --> 01:09:14,472
+Then the chain rule brings the derivative of the argument to the log coming along in the product.
+
+473
+01:09:14,502 --> 01:09:19,272
+The derivative of a hyperbolic cosine is a hyperbolic sine.
+
+474
+01:09:20,172 --> 01:09:22,752
+And there's one more step to the chain rule,
+
+475
+01:09:23,382 --> 01:09:32,712
+which is to get into the argument of that cinch and bring out to the factor of h that is, multiplying beta in there.
+
+476
+01:09:34,512 --> 01:09:46,872
+So that takes a simpler form once we cancel out the twos and recognise sin over cosh as our hyperbolic tangent.
+
+477
+01:09:49,272 --> 01:09:57,972
+So we end up with the internal energy being minus n times h times a hyperbolic tangent of beta h.
+
+478
+01:09:59,042 --> 01:10:07,902
+And given these expressions for both an internal energy and Helmholtz free energy, the entropy,
+
+479
+01:10:08,412 --> 01:10:18,912
+we can just write down inverse temperature times the difference between the internal energy and free energy.
+
+480
+01:10:19,632 --> 01:10:26,432
+So the first term is just that minus ND.
+
+481
+01:10:26,802 --> 01:10:33,942
+Now with an extra beta out front, which is giving the same combination beta h that appears in the argument,
+
+482
+01:10:34,512 --> 01:10:45,912
+and then the n log of two cosh beta h comes through.
+
+483
+01:10:46,152 --> 01:10:53,892
+Cancelling out the beta will cancel out the one over beta there with the beta in the entropy, so that is not.
+
+484
+01:10:55,782 --> 01:11:02,082
+All quite fitting on the screen, but you can see a kind of complicated expression.
+
+485
+01:11:02,262 --> 01:11:10,002
+In the one case. Attach this up to nasty, and the other case that tension is being subtracted from a log of a cosh.
+
+486
+01:11:10,662 --> 01:11:15,282
+So things that just to look at them, you might not necessarily know what to do with.
+
+487
+01:11:16,752 --> 01:11:21,972
+So kind of formal expressions for, you know, observable predictions.
+
+488
+01:11:22,422 --> 01:11:30,762
+In this particular example of distinguishable spins, one thing we can do with this is to open up Python and plot it.
+
+489
+01:11:31,452 --> 01:11:45,492
+And that's what this does. Uh, dividing through by overall factors of n in the case of the entropy and h in the case of the energy.
+
+490
+01:11:46,572 --> 01:11:52,272
+So we don't have to specify the number of spins or the external magnetic field.
+
+491
+01:11:52,962 --> 01:12:06,222
+And on the x axis we plot both entropy and energy versus the temperature divided by H or one over r x which is beta h um,
+
+492
+01:12:06,612 --> 01:12:17,172
+where the entropy is the solid blue curve, um, up toward the top, and the energy is the dashed dotted red curve at the bottom.
+
+493
+01:12:18,972 --> 01:12:27,162
+So this is how tensions and logs of cautious look when they are combined, um, and plotted,
+
+494
+01:12:27,792 --> 01:12:35,021
+versus the inverse of the argument that actually appears in the beta h versus one over beta h.
+
+495
+01:12:35,022 --> 01:12:41,532
+So what we have, what we derived were functions of the inverse temperature is that we are now plotting versus the temperature.
+
+496
+01:12:42,672 --> 01:12:52,032
+It is still, you know, a nice visual indication of what's going on from those complicated hypergeometric functions.
+
+497
+01:12:53,142 --> 01:13:01,691
+But it's maybe not the state where we want to be in terms of mathematically analysing and physically
+
+498
+01:13:01,692 --> 01:13:07,032
+understanding what these expressions actually mean about the system that we are considering.
+
+499
+01:13:09,012 --> 01:13:18,912
+So what we can do in this situation, which is actually a very generic strategy that if you haven't seen it before,
+
+500
+01:13:19,542 --> 01:13:23,382
+well, I'm confident you have seen it before. Tell me if you haven't.
+
+501
+01:13:24,102 --> 01:13:36,642
+Um, in either case, it's good to review and to spell strategy correctly because this is something that, you know,
+
+502
+01:13:36,642 --> 01:13:49,062
+can be a knee jerk reaction in the toolbox of any complicated mathematical analysis you're trying to do, where the formal expressions are opaque.
+
+503
+01:13:53,702 --> 01:14:01,592
+That is, to look for limiting cases where the expressions simplify and then expand around those.
+
+504
+01:14:03,812 --> 01:14:15,782
+If we go back to the plot we have here, um, we can see that at the limit of very low temperatures,
+
+505
+01:14:16,322 --> 01:14:22,982
+both the entropy and the energy are approaching fairly around numbers zero and minus one.
+
+506
+01:14:23,672 --> 01:14:27,361
+And we can similarly look at the limit of infinite temperature.
+
+507
+01:14:27,362 --> 01:14:33,722
+So very high temperatures where well, there may well be convergence to different limits.
+
+508
+01:14:34,412 --> 01:14:43,112
+We can start by computing both of those limits so we can anchor ourselves and know where our result is going from and where it's headed to.
+
+509
+01:14:43,442 --> 01:14:48,512
+As the entropy varies from zero to infinity and then start expanding around them,
+
+510
+01:14:49,352 --> 01:14:53,282
+and potentially even see the situation where those expansions can meet in the middle.
+
+511
+01:14:53,852 --> 01:14:55,082
+Uh, we won't do that here.
+
+512
+01:14:55,412 --> 01:15:05,252
+Just look at the first few terms in the expansion to appreciate the physics that is underlying these mathematical expressions.
+
+513
+01:15:06,662 --> 01:15:12,992
+So. Unless there are objections or questions about the strategy,
+
+514
+01:15:14,192 --> 01:15:22,892
+we can look first at that low temperature case where we saw nice round numbers in our plot.
+
+515
+01:15:23,642 --> 01:15:26,882
+Low temperatures correspond to large inverse temperatures.
+
+516
+01:15:27,302 --> 01:15:39,182
+So beta is going to infinity. And our normalised internal energy that is just minus oops.
+
+517
+01:15:39,722 --> 01:15:44,032
+It equals the minus tangent of beta h.
+
+518
+01:15:44,042 --> 01:15:53,432
+So for any fixed finite nonzero value of that external magnetic field H, the argument of the tangent will go to infinity as beta goes to infinity.
+
+519
+01:15:54,332 --> 01:16:03,032
+And if you haven't looked at changes recently, I can remind you that the limit of a tangent, as his argument goes to infinity is plus one.
+
+520
+01:16:03,932 --> 01:16:07,802
+So the overall negative sign means that we should have.
+
+521
+01:16:08,372 --> 01:16:12,602
+We can predict an approach to minus one right there.
+
+522
+01:16:13,322 --> 01:16:21,272
+So that is in line with our plot of the hypergeometric function in all its glory.
+
+523
+01:16:24,882 --> 01:16:39,972
+For the entropy up here. So we have a minus beta coming from R minus beta h uh, in the s over n coming from the Tange in the same way.
+
+524
+01:16:40,602 --> 01:16:44,802
+We have to figure out what's going on with this log of cosh beta h.
+
+525
+01:16:46,152 --> 01:16:55,602
+So the cosh we introduced as E to the plus x plus e to the minus x x is beta h.
+
+526
+01:16:56,112 --> 01:17:03,792
+As beta goes to infinity, E to the infinity will dominate over E to the minus infinity exponentially.
+
+527
+01:17:04,302 --> 01:17:09,312
+So that to cosh beta h factor,
+
+528
+01:17:09,522 --> 01:17:19,812
+we'll just approach the positive exponential in the expansion of the cosh in this high to sorry this low temperature high beta limit.
+
+529
+01:17:21,672 --> 01:17:31,182
+So if we look at the entropy normalised by N that we were plotting this approaches.
+
+530
+01:17:34,282 --> 01:17:48,952
+Um minus beta H is minus beta H, and then the end is divided out and we have plus the log of E to the beta H.
+
+531
+01:17:49,852 --> 01:17:54,652
+Known to his friends as beta H which nicely cancel out going to zero,
+
+532
+01:17:56,002 --> 01:18:07,221
+which again matches what we were seeing in this plotting of the full function without necessarily knowing what was going on beneath.
+
+533
+01:18:07,222 --> 01:18:21,892
+So our low temperature limit is now anchored in the asymptotic um domain of absolute zero, which I is worth noting here.
+
+534
+01:18:25,702 --> 01:18:33,682
+In the canonical ensemble. The temperature is something that we set and choose um in the definition of our system,
+
+535
+01:18:35,662 --> 01:18:44,842
+and the result that the entropy goes to zero is something we can appreciate.
+
+536
+01:18:45,712 --> 01:18:49,612
+The entropy, remember, was minus sum of pi log pi.
+
+537
+01:18:50,212 --> 01:18:59,872
+That is zero. When there is only a single microstate with 100% probability, we get one times the log of one, which is zero.
+
+538
+01:19:01,192 --> 01:19:05,692
+So that is what we can expect, at least in this system.
+
+539
+01:19:08,452 --> 01:19:12,412
+In this limit of temperature going to zero, beta going to infinity.
+
+540
+01:19:15,332 --> 01:19:27,152
+All that we all that will remain and not be exponentially killed off by the Boltzmann factor is the ground microstates with the lowest energy,
+
+541
+01:19:27,752 --> 01:19:34,502
+which we actually saw for this system of spins a little while ago.
+
+542
+01:19:34,802 --> 01:19:45,782
+That lowest energy is minus n times h when all of these spins are aligned with the magnetic field, so they are all plus one in that sum.
+
+543
+01:19:48,482 --> 01:19:51,512
+And this single microstate then gives.
+
+544
+01:19:54,322 --> 01:20:04,312
+Zero entropy. And this is a special case of what is called the third law of thermodynamics.
+
+545
+01:20:05,032 --> 01:20:10,102
+Which means that together with the zeroth law that came up on Monday,
+
+546
+01:20:10,462 --> 01:20:16,162
+we have seen all four of the main laws of thermodynamics that are floating around.
+
+547
+01:20:17,182 --> 01:20:25,822
+The third law says not necessarily that the entropy has to be zero in the limit of absolute zero temperature,
+
+548
+01:20:26,362 --> 01:20:31,492
+but that it has to go to something that is constant, independent of the size of the system.
+
+549
+01:20:31,522 --> 01:20:38,092
+So even though entropy is extensive, as the temperature goes to zero, the, um,
+
+550
+01:20:39,172 --> 01:20:46,672
+Gibbs factor or more general dynamics in different ensembles will cancel out the
+
+551
+01:20:46,672 --> 01:20:53,032
+dependence of the entropy on the system size and will leave us with a constant entropy.
+
+552
+01:20:53,782 --> 01:20:58,522
+Um, where in this case the constant in question is just zero.
+
+553
+01:21:03,612 --> 01:21:08,832
+And there are other ways of formulating that third law as well regarding the heat capacity.
+
+554
+01:21:09,192 --> 01:21:13,962
+So we will come back to that from a different perspective in a few weeks.
+
+555
+01:21:14,292 --> 01:21:16,662
+For now, that's just a brief aside.
+
+556
+01:21:18,012 --> 01:21:30,642
+Just to note that if all of the famous laws of thermodynamics have now been, uh, at least seen, if not explored in all the detail that they allow.
+
+557
+01:21:32,232 --> 01:21:39,152
+But this was just our starting point, our anchor for the expansion in our strategy.
+
+558
+01:21:39,162 --> 01:21:45,012
+So unless there are questions about this low temperature limit, we can proceed.
+
+559
+01:21:47,082 --> 01:21:57,461
+To expand around it, where what we have to account for now is microstates.
+
+560
+01:21:57,462 --> 01:22:03,222
+Apart from that single ground states that survives at absolute zero in this system.
+
+561
+01:22:05,022 --> 01:22:17,502
+So we will need to bring in contributions from microstates with higher energies, traditionally called excited microstates.
+
+562
+01:22:21,372 --> 01:22:31,302
+That are defined by having an energy use of AI that is strictly greater than that single minimum case.
+
+563
+01:22:35,242 --> 01:22:38,571
+And unless you have a burning desire to know,
+
+564
+01:22:38,572 --> 01:22:47,842
+I'll set aside the more general case of what happens if there are multiple microstates with the same, uh, ground state energy is not.
+
+565
+01:22:48,712 --> 01:22:53,842
+We'll come back to that later on and see how we have to deal with that.
+
+566
+01:22:54,352 --> 01:22:58,432
+For this system of distinguishable spins, that is not the case.
+
+567
+01:22:58,962 --> 01:23:08,092
+We've gone through the microstates in a fair amount of detail and counted both the lowest energy state, as well as that with the next lowest energy.
+
+568
+01:23:10,072 --> 01:23:18,442
+So we will bring in that knowledge and now add to it the knowledge we have gained from formulating the canonical ensemble,
+
+569
+01:23:18,922 --> 01:23:24,982
+that the probability for the system to adopt these excited microstates,
+
+570
+01:23:25,522 --> 01:23:31,312
+and hence the contributions that they will make to any physical observables, have to be suppressed.
+
+571
+01:23:33,652 --> 01:23:47,242
+In some way that will depend on our microstate probability, which in turn is proportional to the Boltzmann factor exponential of minus e sub I over t.
+
+572
+01:23:49,462 --> 01:23:53,782
+The cost of proportionality is just the partition function, but we don't need to care about that here.
+
+573
+01:23:54,232 --> 01:24:01,672
+It's the same for all microstates. So we can see as T becomes very small, these energies are picking up a very large factor,
+
+574
+01:24:02,242 --> 01:24:09,321
+and any increase in that energy will lead to a very large exponential suppression as the temperature stays non-zero,
+
+575
+01:24:09,322 --> 01:24:13,822
+but approaches that limit of absolute zero.
+
+576
+01:24:15,172 --> 01:24:27,952
+So in general, when we are working with spin systems like this example, or discrete systems that at least have some discreteness in them,
+
+577
+01:24:28,702 --> 01:24:35,572
+in our case, the discreteness being that there are only two orientations plus 1 or -1 for each degree of freedom to adopt,
+
+578
+01:24:36,862 --> 01:24:44,242
+all of these energies will organise themselves into a certain fixed set of energy levels,
+
+579
+01:24:45,382 --> 01:24:52,312
+or a set of energies that we will call energy levels and talk about in those terms.
+
+580
+01:24:52,882 --> 01:24:57,262
+And another piece of notation or terminology is that.
+
+581
+01:24:59,422 --> 01:25:06,862
+Every pair of energy levels in this case is separated by a constant energy gap.
+
+582
+01:25:10,102 --> 01:25:14,362
+So this gap. We can call delta e.
+
+583
+01:25:14,812 --> 01:25:21,922
+It's the difference between. The energy if we have.
+
+584
+01:25:24,202 --> 01:25:31,702
+N minus plus one spins opposing the magnetic field minus the lower energy.
+
+585
+01:25:31,702 --> 01:25:42,612
+If there were just n minus spins opposing it. Maybe I'll check in to see that this is all making sense and being followed.
+
+586
+01:25:42,622 --> 01:25:48,592
+Follow the ball by asking you what is this energy gap in terms of the parameters of our system?
+
+587
+01:25:50,132 --> 01:25:54,912
+Uh, beta H and so on. Oops.
+
+588
+01:25:56,172 --> 01:25:58,662
+So there's the cartoon that we drew.
+
+589
+01:26:27,212 --> 01:26:36,572
+And if you're finding it hard to think through this general expression, you sub n minus plus one minus e sub n minus.
+
+590
+01:26:36,572 --> 01:26:50,552
+You could think about a special case where you start with n minus of zero and have just the minus NH energy corresponding to our ground state.
+
+591
+01:26:57,972 --> 01:27:04,482
+So it looks like we should walk through this in full detail whenever we take one of these spins and flip it
+
+592
+01:27:04,692 --> 01:27:10,992
+from being aligned with the magnetic field to being aligned against it in the expression for the energy.
+
+593
+01:27:11,412 --> 01:27:17,892
+Two things will happen. There will be one fewer contribution of minus h from an aligned spin,
+
+594
+01:27:18,372 --> 01:27:25,692
+and there will be one more contribution of plus h from the anti aligned spin, bringing in that negative sign that cancels.
+
+595
+01:27:27,282 --> 01:27:37,302
+So the general expression for e to the n minus and e to the n minus plus one is that the energy is h times
+
+596
+01:27:37,842 --> 01:27:49,542
+n plus minus n minus or sorry minus h times n plus minus n minus or minus h times n minus to n minus.
+
+597
+01:27:50,742 --> 01:27:58,332
+Change that n minus by one. The counter factor of two is all that remains multiplying that h.
+
+598
+01:27:59,382 --> 01:28:07,992
+So this is the gap that separates the ground states from the first excited states with an energy that we computed earlier,
+
+599
+01:28:07,992 --> 01:28:17,052
+u sub one was off the screen, E sub one was minus h times n minus two.
+
+600
+01:28:19,062 --> 01:28:22,122
+The second excited state will have minus h times n minus four,
+
+601
+01:28:22,512 --> 01:28:29,891
+and so on up until we reach the maximum energy state for the system with an energy of plus n,
+
+602
+01:28:29,892 --> 01:28:34,362
+h and every single spin aligned against the magnetic field.
+
+603
+01:28:39,942 --> 01:28:50,372
+So. We should have time to complete our expansions.
+
+604
+01:28:51,332 --> 01:28:56,522
+Um, at least looking at the first term or two in terms of this energy gap.
+
+605
+01:28:56,642 --> 01:29:08,162
+What we will see is that this gap matters because it is the quantity that actually controls the approach to absolute zero.
+
+606
+01:29:09,392 --> 01:29:24,742
+In the predictions we are making for the system. So we really can expect to see in our expansions dependence on the energy gap.
+
+607
+01:29:26,062 --> 01:29:36,832
+Uh, showing up and. Controlling how we approach the zero temperature limits that we have just derived.
+
+608
+01:29:37,612 --> 01:29:41,562
+So. Without further ado.
+
+609
+01:29:43,802 --> 01:29:54,602
+We can consider expanding our tank for beta that is large but still finite, so we don't go all the way to one.
+
+610
+01:29:56,252 --> 01:30:06,572
+We have to be a bit more careful, and what we can do is convert our hyperbolic tangent back into exponential functions.
+
+611
+01:30:06,782 --> 01:30:10,082
+There are a few different ways of writing this.
+
+612
+01:30:11,802 --> 01:30:14,472
+But hopefully if you squint at that long enough,
+
+613
+01:30:14,472 --> 01:30:23,262
+you can appreciate the negative sign and relative positive sign in the numerator versus denominator corresponds to that cinch over cosh,
+
+614
+01:30:23,622 --> 01:30:27,342
+which gives the tangent. And.
+
+615
+01:30:29,442 --> 01:30:37,902
+This e to the minus two beta h. Because beta is large and h is constant as is two.
+
+616
+01:30:38,352 --> 01:30:46,122
+This is going to be a small parameter that we want to expand in.
+
+617
+01:30:51,252 --> 01:30:54,712
+What I will actually do before defining that is just remember,
+
+618
+01:30:55,092 --> 01:31:07,121
+remind you or recall the geometric series one over one minus X can be recast as a power series,
+
+619
+01:31:07,122 --> 01:31:18,492
+going from zero to infinity of this x to the power k, so long as the absolute value of this x is much less than one.
+
+620
+01:31:20,562 --> 01:31:34,662
+And that is worth noting before identifying our x as actually a negative e to the minus two beta h to get things into this form of a geometric series.
+
+621
+01:31:36,772 --> 01:31:42,472
+So this is a very small exponential factor with an overall negative sign that doesn't matter.
+
+622
+01:31:42,892 --> 01:31:51,632
+But it allows us to. Turn that fraction into a product.
+
+623
+01:31:52,322 --> 01:32:02,312
+We start off with E to the -two metre, H to the zeroth power, which is one, and then the linear term is just e to the minus two beta h.
+
+624
+01:32:02,882 --> 01:32:08,642
+And then there are higher terms with higher powers of that exponential factor.
+
+625
+01:32:10,602 --> 01:32:13,842
+Um, doesn't quite fit on the screen.
+
+626
+01:32:14,472 --> 01:32:19,962
+And hopefully you have seen this big O notation before.
+
+627
+01:32:20,412 --> 01:32:29,292
+That just means there are additional terms that come in with higher powers of the small parameters, so they become less and less important.
+
+628
+01:32:29,772 --> 01:32:36,342
+And the highest power that is allowed in those additional terms is the argument of this big O.
+
+629
+01:32:38,412 --> 01:32:53,652
+So if there are not concerns about the big O notation, we can just proceed, expand this product and organise all of the terms systematically.
+
+630
+01:32:56,322 --> 01:33:00,792
+In powers of our small parameter x that exponential function.
+
+631
+01:33:01,302 --> 01:33:15,132
+We have n minus one. We have two factors of minus two e to the two beta minus two beta h, with an overall minus that cancels that out.
+
+632
+01:33:15,342 --> 01:33:19,002
+So two e to the minus two beta h.
+
+633
+01:33:19,512 --> 01:33:23,441
+And then we could compute higher powers.
+
+634
+01:33:23,442 --> 01:33:34,752
+But for now just leave that as a big O with E to the minus four beta h and higher powers of that small parameter, which, as promised,
+
+635
+01:33:35,202 --> 01:33:39,702
+we can express in terms of our energy gap to h,
+
+636
+01:33:41,172 --> 01:33:52,782
+we have an exponential of minus delta e over t t coming from one over beta, and then powers that depend on.
+
+637
+01:33:55,252 --> 01:33:59,602
+The energy gap over t squared cubed to the fourth power, and so on.
+
+638
+01:34:01,102 --> 01:34:04,582
+So there we have it the expected.
+
+639
+01:34:06,682 --> 01:34:13,262
+Exponential suppression. Of excited state effects.
+
+640
+01:34:19,162 --> 01:34:24,052
+That is controlled by the energy gap. Delta e as promised.
+
+641
+01:34:27,172 --> 01:34:40,792
+And is reflected on this plot um, which is plotted verses one over that energy gap as this very rapid convergence towards zero.
+
+642
+01:34:41,122 --> 01:34:47,601
+So another way of saying that is that we stay exponentially close to zero as
+
+643
+01:34:47,602 --> 01:34:52,762
+the temperature starts to expand from that limit before really taking off,
+
+644
+01:34:53,152 --> 01:34:58,642
+coming from, uh, the breakdown of this low temperature approximation.
+
+645
+01:34:59,632 --> 01:35:09,142
+So we just have a couple of minutes left. Um, I would quickly write through the entropy.
+
+646
+01:35:10,842 --> 01:35:18,142
+If you can interrupt me if there are questions, because your questions are more important than getting to the end of this low temperature expansion.
+
+647
+01:35:19,192 --> 01:35:29,792
+But here. We have two terms to deal with, one of which we have already considered the expansion of the tangent beta h.
+
+648
+01:35:30,032 --> 01:35:30,872
+We just did.
+
+649
+01:35:31,382 --> 01:35:50,402
+So this is giving minus beta h from that one, and then plus two beta h e to the minus beta delta e plus potentially higher powers that now we have.
+
+650
+01:35:52,562 --> 01:35:56,762
+Some large factor of beta coming along for the ride.
+
+651
+01:35:58,532 --> 01:36:10,802
+The other term that we have is that annoying log of twice the cosh of beta H.
+
+652
+01:36:19,722 --> 01:36:30,132
+So what we do with this again is go back to the exponential definition of the cosh.
+
+653
+01:36:31,612 --> 01:36:44,662
+We can pull out an overall large E to the beta h multiplied by one plus now E to the minus two beta h.
+
+654
+01:36:46,642 --> 01:36:52,882
+The log of a product is the sum of logs. The log of the exponential is its argument.
+
+655
+01:36:54,202 --> 01:37:00,652
+We are left with a log of one plus a small number, and this is another expansion.
+
+656
+01:37:00,922 --> 01:37:12,942
+You might recognise. That's the first term in the expansion of this log is just the small number itself.
+
+657
+01:37:13,512 --> 01:37:21,372
+And then higher powers appear with constant coefficients that all get swallowed by the Big-O notation.
+
+658
+01:37:22,692 --> 01:37:30,642
+So plugging both of these pieces in, we have minus beta h.
+
+659
+01:37:32,492 --> 01:37:38,402
+Plus to beta h and an exponential factor in the energy gap.
+
+660
+01:37:38,912 --> 01:37:45,752
+Then we have our plus b to h. We have just the exponential factor on its own.
+
+661
+01:37:46,142 --> 01:38:01,922
+Recognising two h is delta e, and the highest power in both of these sums will have the large factor of beta coming along for the ride, along with.
+
+662
+01:38:04,162 --> 01:38:20,452
+The very small exponential. So cancelling off those terms, we end up with beta delta e from the to h times the exponential of minus that factor.
+
+663
+01:38:22,642 --> 01:38:26,192
+Plus just the exponential on its own. Oops.
+
+664
+01:38:27,952 --> 01:38:32,002
+And then these higher powers.
+
+665
+01:38:40,112 --> 01:38:46,832
+And even though this beta is a large number, you know, hitting that constant energy gap,
+
+666
+01:38:48,002 --> 01:38:53,822
+um, this functional dependence will still see the exponential suppression ultimately win.
+
+667
+01:38:54,392 --> 01:38:58,982
+So organising things in terms of their size that.
+
+668
+01:39:01,172 --> 01:39:08,072
+Beta delta e that is much larger than one makes this term more important than that one,
+
+669
+01:39:08,342 --> 01:39:14,131
+but still suppressed exponentially by the gap which I actually anticipated myself and
+
+670
+01:39:14,132 --> 01:39:19,022
+had already circled that exponential approach to the low temperature limit there.
+
+671
+01:39:20,082 --> 01:39:24,872
+Uh, we've run out of time to look at the high temperature limit. So that's where we'll start on one day.
+
+672
+01:39:25,292 --> 01:39:31,202
+And then look at a second example spin system to see the differences between them.
+
+673
+01:39:31,712 --> 01:39:39,452
+Sorry to run a few minutes over, but I will check one last time for questions before letting you get on with your afternoon.
+
+674
+01:39:40,292 --> 01:39:46,112
+Maybe I should leave that expression up there for now, because I went through it fairly quickly.
+
+675
+01:39:47,882 --> 01:39:51,752
+This will all be scanned and put on canvas later today.
+
+676
+01:39:55,732 --> 01:40:01,522
+So. But you know.
+
