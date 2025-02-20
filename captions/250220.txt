@@ -1,0 +1,209 @@
+1
+00:00:02,970 --> 00:00:16,379
+[Auto-generated transcript. Edits may have been applied for clarity.]
+So morning everyone. It's fairly straightforward for you for today, the, uh, six digit attendance code is is in the, uh, demo on Google Colab as well.
+
+2
+00:00:16,380 --> 00:00:26,460
+Keep it up on the screen for the most part. And yeah, the assignment itself is due tomorrow, so about 30 hours away.
+
+3
+00:00:28,050 --> 00:00:31,830
+A couple of students have already submitted it. And if that's you, you don't need to be here.
+
+4
+00:00:31,830 --> 00:00:40,020
+But for the rest of you, this is the final stretch to to wrap things up and the opportunity to slide me
+
+5
+00:00:40,020 --> 00:00:43,799
+down and ask me about any programming difficulties that you are encountering.
+
+6
+00:00:43,800 --> 00:00:52,410
+So I hope we've already walked through both the demo as well as the content in the assignment.
+
+7
+00:00:53,130 --> 00:01:00,990
+Um, and I will mostly just circulate to around the room as people come and go and see
+
+8
+00:01:00,990 --> 00:01:06,299
+if there are any questions that you have and if things are perhaps interesting to,
+
+9
+00:01:06,300 --> 00:01:11,910
+uh, a broader audience. I'll get the recording restarted and come and them from up here.
+
+10
+00:01:14,040 --> 00:01:15,158
+So without further ado, uh, put that down and see how we're doing.
+
+11
+00:01:21,397 --> 00:01:29,766
+Um, which is that for any given task in this assignment, just a few dozen lines of code should be needed.
+
+12
+00:01:29,767 --> 00:01:37,447
+So you shouldn't have to write pages and pages. And when you go to do the computing, just a few minutes of actual running should also be needed.
+
+13
+00:01:37,447 --> 00:01:41,737
+So this shouldn't be very high intensity, computationally intensive work.
+
+14
+00:01:42,187 --> 00:01:48,817
+And if you find that you are having to run for hours and hours to get results,
+
+15
+00:01:48,837 --> 00:01:58,087
+that is a hint that there's maybe more efficient way to do things, potentially depending on the programming language that you're using.
+
+16
+00:01:59,617 --> 00:02:06,516
+So one other issue that, uh, can be encountered if you are using some cloud service,
+
+17
+00:02:06,517 --> 00:02:14,256
+those often have limits either explicit or uh, in practice they will just stop running.
+
+18
+00:02:14,257 --> 00:02:20,497
+If a calculation takes more than a couple of minutes and you might start running into issues like that.
+
+19
+00:02:21,847 --> 00:02:24,367
+So that's a situation where, you know,
+
+20
+00:02:24,397 --> 00:02:35,377
+moving things off of the cloud services and onto either your computer or one of the lab computers around the university, um, can pay off.
+
+21
+00:02:36,907 --> 00:02:48,697
+And we went through earlier just stuff and a ways to actually run Jupyter, for example, on these systems.
+
+22
+00:02:54,847 --> 00:03:04,917
+Which? There is this. Uh, so not on every computer around the university, but those in the computer labs like this one,
+
+23
+00:03:04,917 --> 00:03:08,187
+which is free for most of the rest of today and tomorrow.
+
+24
+00:03:08,817 --> 00:03:20,007
+There is the PyCharm development environment for Python, as well as other options like, uh, Visual Studio Code for it.
+
+25
+00:03:20,037 --> 00:03:27,267
+There it is for different programming languages as well as, uh, Jupyter Notebook running behind the scenes.
+
+26
+00:03:27,717 --> 00:03:39,417
+That will just open up the web browser and let you run things locally, whereas I still haven't changed that particular one from last week.
+
+27
+00:03:40,047 --> 00:03:43,856
+Um, but you can run it locally on the machine that you have access to,
+
+28
+00:03:43,857 --> 00:03:51,837
+and you don't have to rely on cloud services that may well be flaky unless you give them money.
+
+29
+00:03:58,146 --> 00:04:02,916
+So one more question came up on my most recent round going around the room,
+
+30
+00:04:02,916 --> 00:04:08,976
+which had to do specifically with this poorly fit routine coming from numerical Python.
+
+31
+00:04:09,456 --> 00:04:18,426
+So I and there's a kind of generic the useful trick to take away from this that might be worth telling everyone,
+
+32
+00:04:18,426 --> 00:04:22,416
+including those checking the recording, hopefully before the deadline.
+
+33
+00:04:23,766 --> 00:04:31,446
+So the question is, you know, what are all of these arguments to poly fits and what allowable values can they have?
+
+34
+00:04:32,016 --> 00:04:36,396
+So I just did a quick Google search to get to the numerical Python manual.
+
+35
+00:04:36,486 --> 00:04:42,846
+And it's um, you know, it's the first result for numpy poly fit in a Google search.
+
+36
+00:04:43,386 --> 00:04:51,306
+It's describes in full detail all the arguments, including several optional ones that are just left out of the demo.
+
+37
+00:04:51,516 --> 00:05:00,516
+They weren't needed. But the one thing to note for that third argument, the degree of the fitting polynomial has to be an integer.
+
+38
+00:05:01,146 --> 00:05:10,806
+And if you try to do something that is not an integer, Python will not complain about that, but it will behind the scenes,
+
+39
+00:05:11,886 --> 00:05:20,826
+round it either up or down to some integer, and it may not necessarily be clear what integer is is being used in there.
+
+40
+00:05:21,546 --> 00:05:30,096
+That is one potential danger of Python compared to stricter programming languages like Java or Fortran.
+
+41
+00:05:30,096 --> 00:05:37,865
+Or see those if you try to give, uh, an argument, something that is meant to be an integer but is not an integer,
+
+42
+00:05:37,866 --> 00:05:41,496
+they will actually complain and not let you do it. Um,
+
+43
+00:05:43,206 --> 00:05:49,236
+but the one other thing that we can look at in the documentation here is that
+
+44
+00:05:49,236 --> 00:05:55,836
+what this function returns is an array that has degree plus one elements in it.
+
+45
+00:05:55,836 --> 00:06:00,926
+So all of the coefficients from a constant term up to the highest degree in that polynomial.
+
+46
+00:06:00,936 --> 00:06:06,396
+So that's a way to check, um, what that integer is being interpreted as.
+
+47
+00:06:07,956 --> 00:06:20,105
+And just in general, um, one advantage of Python is that it is so widely used, there are tons of people contributing to this.
+
+48
+00:06:20,106 --> 00:06:28,896
+Throw documentation of anything you might need, and that can be checked if anything looks problematic or is not behaving as expected.
+
+49
+00:06:37,394 --> 00:06:43,424
+but smoothly transition to office hours, which can also be booked by appointment if you need them.
+
+50
+00:06:43,664 --> 00:06:47,654
+Uh, before tomorrow's deadline. Hopefully you don't, and everything is in order.
+
+51
+00:06:48,464 --> 00:06:52,754
+Good luck wrapping things up and looking forward to next homework.
+
+52
+00:06:52,754 --> 00:06:56,264
+Uh, coming next week. Not do until March.
+
