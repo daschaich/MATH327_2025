@@ -1,0 +1,263 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[shortlabels]{enumitem}
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, margin=2.5 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisweek}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging and title
+%\usepackage[tagged]{accessibility}
+\hypersetup {
+  pdfauthor={David Schaich},
+  pdftitle={StatMech Homework},
+}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\cO}{\ensuremath{\mathcal O} }
+\newcommand{\be}{\ensuremath{\beta} }
+\newcommand{\De}{\ensuremath{\Delta} }
+\newcommand{\eps}{\ensuremath{\varepsilon} }
+\newcommand{\si}{\ensuremath{\sigma} }
+\newcommand{\vdr}{\ensuremath{v_{\mathrm{dr}}} }
+\renewcommand{\d}[1]{\ensuremath{\mathop{d#1}} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
+\newcommand{\showmarks}[1]{\rightline{\texttt{[#1 marks]}}} % \showmarks needs to follow a blank line!
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisweek}{MATH327 Homework 1}
+\newcommand{\moddate}{Last modified 26 Feb.~2025}
+\begin{center}
+  {\Large \textbf{MATH327: StatMech and Thermo, Spring 2025}} \\[12 pt]
+  {\Large \textbf{First homework assignment}} \\[24 pt]
+\end{center}
+
+\section*{Instructions}
+Complete all four questions below and submit your solutions by file upload \href{https://canvas.liverpool.ac.uk/courses/76365/assignments/297933}{on Canvas}.
+Clear and neat presentations of your workings and the logic behind them will contribute to your mark.
+Use of resources beyond the module materials must be explicitly referenced in your submissions.
+This assignment is \textbf{due by 17:00 on Friday, 7 March 2025}.
+Anonymous marking is turned on and I will aim to return feedback by Monday, 25 March 2025.
+
+You should already be familiar with the Department's \href{https://canvas.liverpool.ac.uk/courses/76365/files/11992667}{academic integrity guidance} for 2024--2025, which states that by submitting solutions to this assessment you affirm that you have read and understood the \href{https://www.liverpool.ac.uk/media/livacuk/tqsd/code-of-practice-on-assessment/appendix_L_cop_assess.pdf}{Academic Integrity Policy} detailed in Appendix L of the Code of Practice on Assessment, and that you have successfully passed the Academic Integrity Tutorial and Quiz in the course of your studies.
+You also affirm that the work you are submitting is your own and you have not commissioned production of the work from a third party or used artificial intelligence (AI) software \href{https://www.liverpool.ac.uk/media/livacuk/centre-for-innovation-in-education/digital-education/generative-ai-teach-learn-assess/guidance-on-the-use-of-generative-ai.pdf}{in an unacceptable manner} to generate the work.
+(Generative AI software applications include, but are not limited to, ChatGPT, MS Copilot, and Gemini.)
+You also affirm that you have not plagiarized material from another person or source, nor fabricated, falsified or embellished data when completing this assignment.
+You also affirm that you have not colluded with any other student in the preparation or production of your work.
+The marks achieved on this assessment remain provisional until they are ratified by the Board of Examiners in June 2025.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\vfill
+\section*{Question 1: Drift and diffusion}
+At 06:30~UTC on Monday, 28 April 1986, radiation detectors started going off at the Forsmark Nuclear Power Plant in Sweden.
+Within a few hours, the Swedes had confirmed that the radiation was coming from some distant source (rather than Forsmark itself).
+Based on the direction of the wind, the Swedish government asked the USSR what had happened.
+Although the Soviet authorities initially denied there had been any incident, that evening they released a \href{https://www.youtube.com/watch?v=sC7n_QgJRks}{15-second news bulletin} reporting an accident at the Chernobyl Nuclear Power Plant in northern Ukraine.
+
+The lack of reliable official information made it urgent to estimate how severe this accident may have been.
+We can do this by modelling the motion of each radioactive particle in the atmosphere as a one-dimensional random walk along the $1100~\mathrm{km}$ line between Chernobyl and Forsmark.
+
+\newpage
+Suppose that the wind produced a steady drift velocity $\vdr = 14~\mathrm{km}/\mathrm{hour}$ from Chernobyl to Forsmark, and that the radioactive particles have a diffusion constant $D = 7.3~\mathrm{km}/\sqrt{\mathrm{hour}}$.
+Further suppose that measurements at 06:30~UTC indicated a billion becquerels ($1~\mathrm{GBq}$) of radioactivity had travelled at least $1100~\mathrm{km}$ from Chernobyl, while further measurements at 09:30~UTC indicated rapid growth in this radioactivity, to $100~\mathrm{GBq}$.
+(The \href{https://en.wikipedia.org/wiki/Becquerel}{becquerel} is the SI unit of radioactivity.)
+
+\begin{enumerate}[label={(\alph*)}]
+  \item Using the central limit theorem, show that the accident happened around 21:30 UTC on Friday, 25 April 1986 (nearly three days before it was publicly acknowledged).
+        This is easiest to do numerically, for example using the Python-based hints below.
+
+  \showmarks{10}
+
+  \item Even without completing part~(a), you can take it as given that approximately 57~hours passed between the accident and the first radiation detection at Forsmark.
+        Use this to estimate how much radioactivity was released in the accident.
+
+  \showmarks{10}
+
+  \item The estimates above involve several simplifying assumptions and approximations.
+        Choose at least one simplification and explain --- without attempting to carry out a corrected calculation --- whether it causes an underestimate or an overestimate of the amount of radioactive material released.
+
+  \showmarks{6}
+\end{enumerate}
+
+\vfill
+\noindent \textbf{Hints:} The error function
+\begin{equation*}
+  \mathrm{erf}(u) = \frac{1}{\sqrt{\pi}} \int_{-u}^u e^{-x^2} \d{x} = \frac{2}{\sqrt{\pi}} \int_0^u e^{-x^2} \d{x}, \qquad u \geq 0,
+\end{equation*}
+or its complement $\mathrm{erfc}(u) = 1 - \mathrm{erf}(u)$, may appear in your work.
+The Python code below illustrates one possible numerical method to find the value of $u$ that satisfies the relation $\mathrm{erfc}(u) - 10^6 \mathrm{erfc}(u + 2) = 0$.
+It uses a function provided by the \href{https://scipy.org}{SciPy} package, which takes three arguments:
+The expression to set equal to zero (defined just above it), an initial guess, and (optionally) the method to use (here the \href{https://en.wikipedia.org/wiki/Levenberg-Marquardt_algorithm}{Levenberg--Marquardt algorithm}).
+It's wise to check the result: \\[-30 pt]
+\begin{verbatim}
+>>> import numpy as np
+>>> from scipy import special, optimize
+>>> def diff(u):
+...   return (special.erfc(u) - 1e6 * special.erfc(u + 2.0))
+...
+>>> all_out = optimize.root(diff, 2.0, method='lm')
+>>> u = all_out.x[0]
+>>> print("u = %.4g" % u)
+u = 2.311
+>>> a = special.erfc(u)
+>>> b = 1e6 * special.erfc(u + 2.0)
+>>> print("Check: %.8g = %.8g" % (a, b))
+Check: 0.001081093 = 0.001081093
+\end{verbatim}
+\newpage
+\noindent SciPy can also be used to evaluate $\mathrm{erfc}(u)$ for any $u \geq 0$ of interest: \\[-30 pt]
+\begin{verbatim}
+>>> import numpy as np
+>>> from scipy import special
+>>> for u in np.arange(2.0046779, 5.0, 0.3116608):
+...   print("erfc(%.8g) = %.4g" % (u, special.erfc(u)))
+...
+erfc(2.0046779) = 0.004582
+erfc(2.3163387) = 0.001054
+erfc(2.6279995) = 0.000202
+erfc(2.9396603) = 3.22e-05
+erfc(3.2513211) = 4.264e-06
+erfc(3.5629819) = 4.684e-07
+erfc(3.8746427) = 4.264e-08
+erfc(4.1863035) = 3.213e-09
+erfc(4.4979643) = 2.003e-10
+erfc(4.8096251) = 1.033e-11
+\end{verbatim}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\vfill
+\section*{Question 2: Negative temperature}
+Consider a system of $N$ distinguishable particles in which the energy of each particle can take only two distinct values, $0$ and $\eps > 0$.
+Denote by $n_0$ the number of particles that have energy $0$, and by $n_1 = N - n_0$ the number of particles that have energy $\eps$.
+Assume the system is in thermodynamic equilibrium with both $n_0 \gg 1$ and $n_1 \gg 1$.
+
+Suppose the system is isolated and governed by the micro-canonical ensemble with conserved internal energy $E$.
+
+\begin{enumerate}[label={(\alph*)}]
+  \item Approximating $\log(n!) \approx n\log n - n$, what is the entropy of the system in terms of $N$, $E$ and $\eps$?
+
+  \showmarks{8}
+
+  \item What is the temperature $T$ of the system in terms of $N$, $E$ and $\eps$?
+        Show that the temperature is negative when $\frac{N\eps}{E} < C$ and determine the constant $C$.
+
+  \showmarks{8}
+
+  \item Explain what happens when a negative-temperature system is brought into thermal contact with a positive-temperature system.
+
+  \showmarks{8}
+\end{enumerate}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 3: Heat capacity}
+\begin{enumerate}[label={(\alph*)}]
+  \item Starting from the expectation value for the internal energy in the canonical ensemble,
+        \begin{equation*}
+          \vev{E} = \frac{1}{Z} \sum_{i = 1}^M E_i \, e^{-\be E_i},
+        \end{equation*}
+        derive a relation between the heat capacity
+        \begin{equation*}
+          c_v = \pderiv{}{T} \vev{E}
+        \end{equation*}
+        and the quantity $\vev{\left(E - \vev{E}\right)^2}$.
+
+  \showmarks{10}
+
+  \item If the heat capacity vanishes at a non-zero temperature, what can we conclude about the micro-state energies $E_i$?
+
+  \showmarks{4}
+
+  \item Derive a relation between $c_v$, $\pderiv{}{T} c_v$ and the quantity $\vev{\left(E - \vev{E}\right)^3}$.
+
+  \showmarks{10}
+\end{enumerate}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 4: Energy and entropy} % Could plug in specific N for variation from year to year...
+Using the canonical ensemble with inverse temperature $\be = 1 / T$, consider a system of $N \gg 1$ indistinguishable non-interacting spins in an external magnetic field with strength $H > 0$.
+
+\begin{enumerate}[label={(\alph*)}]
+  \item What are the internal energy $\vev{E}_I$ and the entropy $S_I$ as functions of $\be$, $N$ and $H$?
+
+  \showmarks{4}
+
+  \item Use your results to confirm the following low- and high-temperature limits:
+        \begin{align*}
+               \lim_{T \to 0} \vev{E}_I & = -NH &      \lim_{T \to 0} S_I & = 0           \\
+          \lim_{T \to \infty} \vev{E}_I & = 0   & \lim_{T \to \infty} S_I & = \log(N + 1)
+        \end{align*}
+
+  \showmarks{6}
+
+  \item For low but non-zero temperatures, expand both $\vev{E}_I$ and $S_I$ in terms of $\eps \equiv e^{-2\be H} \ll 1$.
+        Show that the largest temperature-dependent term in the energy expansion is proportional to $\eps$ and find the constant of proportionality.
+        Show that the largest temperature-dependent term in the entropy expansion is proportional to $\be\eps$ and find the constant of proportionality.
+
+  \showmarks{8}
+
+  \item For high but finite temperatures, expand both $\vev{E}_I$ and $S_I$ in terms of $x \equiv 2\be H \ll 1$.
+        Show that the largest temperature-dependent term in the energy expansion is proportional to $x$ and find the constant of proportionality.
+        Show that the largest temperature-dependent term in the entropy expansion is proportional to $x^2$ and find the constant of proportionality.
+
+  \showmarks{8}
+\end{enumerate}
+
+\noindent The following famous results may be useful:
+\begin{align*}
+  \frac{1}{1 - e^{-x}} & = \frac{1}{x} + \frac{1}{2} + \frac{x}{12} - \frac{x^3}{720} + \frac{x^5}{30\,240} + \cO\!\left(x^6\right) \\
+  \log\left[1 - e^{-x}\right] & = \log(x) - \frac{x}{2} + \frac{x^2}{24} - \frac{x^4}{2880} + \frac{x^6}{181\,440} + \cO\!\left(x^7\right).
+\end{align*}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\end{document}
+% ------------------------------------------------------------------
