@@ -1,0 +1,102 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, margin=2.5 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisunit}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging
+%\usepackage[tagged]{accessibility}
+\hypersetup {
+  pdfauthor={David Schaich},
+  pdftitle={StatMech Tutorial},
+}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\Om}{\ensuremath{\Omega} }
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisunit}{MATH327 Tutorial (Entropy)}
+\newcommand{\moddate}{Last modified 26 Feb.~2025}
+\begin{center}
+  {\Large \textbf{MATH327: StatMech and Thermo, Spring 2025}} \\[12 pt]
+  {\Large \textbf{Tutorial exercises \ --- \ Entropy bounds}} \\[24 pt]
+\end{center}
+
+These exercises will be introduced in our 27 February tutorial, where there should be plenty of time to analyze the $N_1 = N_2 = 10$ case.
+You can keep working on the larger-$N$ cases afterwards; we'll review them during our next tutorial on 6 March.
+
+We met the second law of thermodynamics by considering what happens when two subsystems are brought into thermal contact --- allowed to exchange energy but not particles.
+Conservation of energy means that if subsystem $\Om_1$ has energy $e_1$, the other subsystem $\Om_2$ must have energy $E - e_1$, where $E$ is the total energy of the overall micro-canonical system $\Om$.
+We found (in Eq.~21 on page 32 of the lecture notes) that the total number of micro-states of the overall system is
+\begin{equation*}
+  M = \sum_{e_1} M_{e_1}^{(1)} M_{E - e_1}^{(2)}
+\end{equation*}
+where $M_e^{(S)}$ is the number of micro-states of subsystem $S \in \left\{1, 2\right\}$ with energy $e$.
+
+Because $M$ is a sum of strictly positive terms, we can easily set bounds on it.
+Say the sum over $e_1$ has $N_{\text{terms}} \geq 1$ terms, and define $\max$ be the largest of those terms.
+Then $\max \leq M$, with equality only when $N_{\text{terms}} = 1$.
+Similarly, $M \leq N_{\text{terms}} \cdot \max$, with equality when every term in the sum is the same.
+All together, we have
+\begin{equation*}
+  \max \leq M \leq N_{\text{terms}} \cdot \max.
+\end{equation*}
+
+This can be more powerful than it may initially appear, thanks to the large numbers involved in statistical systems.
+For illustration, suppose $\max \sim e^N$ and $N_{\text{terms}} \sim N$ for a system with $N$ degrees of freedom.
+(Such exponential behaviour is reasonable --- we have already seen $M = 2^N = e^{N\log 2}$ for $N$ spins with $H = 0$, while $H > 0$ introduces factors of $N!$ that \href{https://en.wikipedia.org/wiki/Stirling's_approximation}{Stirling's formula} can recast in terms of $N^N = e^{N\log N}$.)
+Then
+\begin{equation*}
+  e^N \lesssim M \lesssim N e^N.
+\end{equation*}
+For a micro-canonical ensemble in thermodynamic equilibrium, the resulting bounds on the entropy $S = \log M$ are
+\begin{equation*}
+  N \lesssim S \lesssim N + \log N.
+\end{equation*}
+With $N \sim 10^{23}$, we have $\log N \sim 50$ and $10^{23} \lesssim S \lesssim 10^{23} + 50$, a very tight range in relative terms, with the upper bound only $\sim$$10^{-20}\%$ larger than the lower bound.
+
+To see how this works in practice, let each of $\Om_1$ and $\Om_2$ be a spin system with $N_1 = N_2 = 10$ spins and $H = 1$.
+Fix $E = -10$ for the combined system and numerically compute the bounds on its entropy,
+\begin{equation*}
+  \log\left(\max\right) \leq S \leq \log\left(N_{\text{terms}} \cdot \max\right).
+\end{equation*}
+What fraction of the true entropy $S$ is accounted for by $\log\left(\max\right)$?
+How do these answers change for $N_1 = N_2 = 20$, $30$, $40$, $\cdots$, still with fixed $E = -10$?
+
+By considering the sort of spin configurations that produce $\max$, you can gain insight into the emergence of an `arrow of time'!
+
+\end{document}
+% ------------------------------------------------------------------

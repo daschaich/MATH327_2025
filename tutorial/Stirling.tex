@@ -1,0 +1,132 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, margin=2.5 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisunit}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging
+%\usepackage[tagged]{accessibility}
+\hypersetup {
+  pdfauthor={David Schaich},
+  pdftitle={StatMech Tutorial},
+}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\cO}{\ensuremath{\mathcal O} }
+\newcommand{\eps}{\ensuremath{\epsilon} }
+\newcommand{\Ga}{\ensuremath{\Gamma} }
+\renewcommand{\d}[1]{\ensuremath{\mathop{d#1}} }
+\newcommand{\eq}[1]{Eq.~\ref{#1}}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisunit}{MATH327 Tutorial (Stirling)}
+\newcommand{\moddate}{Last modified 27 Feb.~2025}
+\begin{center}
+  {\Large \textbf{MATH327: StatMech and Thermo, Spring 2025}} \\[12 pt]
+  {\Large \textbf{Tutorial exercises \ --- \ Stirling's formula}} \\[24 pt]
+\end{center}
+
+These exercises will be introduced in our 27 February tutorial, and you can continue to work on them throughout the following week.
+We'll review them during our next tutorial on 6 March.
+
+We have already made use of \href{https://en.wikipedia.org/wiki/Stirling's_approximation}{Stirling's formula} in the following form:
+\begin{align*}
+  \log(N!) & = N \log N - N + \cO(\log N) \approx N \log N - N &
+  \mbox{for } N & \gg 1,
+\end{align*}
+which implies
+\begin{equation*}
+  N! \approx \exp\left[N\log N - N\right] = \left(\frac{N}{e}\right)^N.
+\end{equation*}
+This can be made more precise:
+\begin{equation}
+  \label{eq:full}
+  N! = \sqrt{2\pi N} \left(\frac{N}{e}\right)^N \left(1 + \frac{A}{N} + \frac{B}{N^2} + \frac{C}{N^3} + \cdots\right)
+\end{equation}
+with calculable coefficients $A$, $B$, $C$, etc.\footnote{\href{https://en.wikipedia.org/wiki/James_Stirling_(mathematician)}{James Stirling} computed the $\sqrt{2\pi}$ while \href{https://en.wikipedia.org/wiki/Abraham_de_Moivre}{Abraham de Moivre} derived the expansion in powers of $1 / N$.  An interesting aspect of this expansion is that it is \textbf{asymptotic} --- it has a vanishing radius of convergence but can provide precise approximations if truncated at an appropriate power.}
+By performing a sequence of analyses of increasing complexity, we can build up these results.
+
+\textbf{First analysis:} Derive the bounds
+\begin{equation}
+  N\log N - N < \log(N!) < N\log N
+\end{equation}
+for $N \gg 1$.
+The second bound is the easier one.
+There are multiple ways to obtain the first bound.
+One pleasant approach is to consider the series expansion for $e^x$.
+Together, these bounds establish
+\begin{equation*}
+  1 - \frac{1}{\log N} < \frac{\log(N!)}{N\log N} < 1 \qquad \implies \qquad \log(N!) \sim N\log N.
+\end{equation*}
+
+\textbf{Second analysis:} Compute the first term in \eq{eq:full}, $N! \approx \sqrt{2\pi N} \left(\frac{N}{e}\right)^N$.
+This requires several steps, the first of which is to consider the \textbf{gamma function}
+\begin{equation*}
+  \Ga(N + 1) \equiv \int_0^{\infty} x^N e^{-x} \d{x}.
+\end{equation*}
+Show that $\Ga(N + 1) = N!$ for integer $N \geq 0$.
+In other words, derive the \href{https://en.wikipedia.org/wiki/Euler_integral}{Euler integral} (of the second kind)
+\begin{equation}
+  \label{eq:gamma}
+  N! = \int_0^{\infty} x^N e^{-x} \d{x}.
+\end{equation}
+Again, this can be done in multiple ways, including induction with integration by parts or by taking derivatives of
+\begin{equation*}
+  \int_0^{\infty} e^{-ax} \d{x} = a^{-1}
+\end{equation*}
+and then setting $a = 1$.
+
+\newpage
+The next step in this second analysis is to approximate the gamma function as a gaussian integral.
+Show that the integrand $x^N e^{-x} = \exp\left[N\log x - x\right]$ of \eq{eq:gamma} is maximized at $x = N$.
+
+For $N \gg 1$, the integrand is sharply peaked around this maximum at $x = N$.
+You can check this for yourself or take it as given.
+We can therefore focus on a small region around this peak by changing variables to $y \equiv x - N$ and considering $\left|\frac{y}{N}\right| \ll 1$.
+Expand the $\log x$ in the integrand, up to and including terms quadratic in $\frac{y}{N}$.
+You should be left with the desired result, except for the following factor, which can be approximated by a gaussian integral (note the lower limit of the integral):
+\begin{equation*}
+  \int_{-N}^{\infty} e^{-y^2 / (2N)} \d{y} \approx \int_{-\infty}^{\infty} e^{-y^2 / (2N)} \d{y} = \sqrt{2\pi N}.
+\end{equation*}
+The error introduced by extending the integration from $(-N, \infty)$ to  $(-\infty, \infty)$ is exponentially small and could be captured by computing the series of corrections suppressed by powers of $\frac{1}{N}$ in \eq{eq:full}.
+
+This leads us to the \textbf{third analysis}: Compute some of the leading corrections suppressed by powers of $\frac{1}{N}$ in \eq{eq:full}.
+That is, determine the coefficients $A$, $B$, etc.
+Again, there are many ways to achieve this, including higher-order expansions of the $\log x$ considered above.
+One pleasant approach is to compare $N!$ and $(N + 1)!$, now that we have derived the series prefactor $\sqrt{2\pi N} \left(\frac{N}{e}\right)^N$.
+
+\end{document}
+% ------------------------------------------------------------------
