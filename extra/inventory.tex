@@ -1,0 +1,87 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[shortlabels]{enumitem}
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, margin=2.5 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisunit}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging
+%\usepackage[tagged]{accessibility}
+\hypersetup {
+  pdfauthor={David Schaich},
+  pdftitle={StatMech Extra Practice},
+}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\De}{\ensuremath{\Delta} }
+\newcommand{\si}{\ensuremath{\sigma} }
+\renewcommand{\d}[1]{\ensuremath{\mathop{d#1}} }
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisunit}{MATH327 Extra (Inventory)}
+\newcommand{\moddate}{Last modified 27 Feb.~2025}
+\begin{center}
+  {\Large \textbf{MATH327: StatMech and Thermo, Spring 2025}} \\[12 pt]
+  {\Large \textbf{Extra practice \ --- \ Randomly walking inventory}} \\[24 pt]
+\end{center}
+
+Suppose a company has developed a revolutionary zero-emission airplane, which is in high demand.
+Let $I(t)$ be the inventory of planes available to sell at time $t$, with negative values representing a backlog of planes already ordered that still need to be produced.
+Ten pre-orders produce a backlog of $I_0 \equiv I(0) = -10$ when production starts at time $t = 0$.
+Once production starts, a single plane is produced every $\De t = 3$~weeks.
+Every single week there is a 50\% chance of receiving a new order for a plane.
+
+Treat the inventory as a random walk, taking one step every $\De t = 3$~weeks. \\[-30 pt]
+
+\begin{enumerate}[label={(\alph*)}]
+  \item What are the possible step sizes $\De I$ and the corresponding probabilities for the random walk described above? % TODO: May want to make sure students get started reliably...
+        Compute the resulting mean and variance of the single-step process.
+
+  \item What is the minimum time $t_{\text{min}}$ in which the initial backlog could be cleared, to give $I(t_{\text{min}}) \geq 0$?
+        What is the probability the backlog will be cleared in this time?
+
+  \item Using the central limit theorem, what is the expected size of the inventory when $t = 78$~weeks (approximately 18 months)?
+
+  \item Using the central limit theorem and the integral
+        \begin{equation*}
+          \frac{1}{\sqrt{\pi}} \int_{-\infty}^U e^{-u^2} \d{u} \approx 0.9984  \qquad \mbox{for} \qquad U = 2.082,
+        \end{equation*}
+        what is the probability the backlog will be reduced, so that $I(t) > I_0$, when $t = 78$~weeks?
+\end{enumerate}
+
+
+\end{document}
+% ------------------------------------------------------------------

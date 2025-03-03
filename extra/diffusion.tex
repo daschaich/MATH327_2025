@@ -1,0 +1,101 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[shortlabels]{enumitem}
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, margin=2.5 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisunit}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging
+%\usepackage[tagged]{accessibility}
+\hypersetup {
+  pdfauthor={David Schaich},
+  pdftitle={StatMech Extra Practice},
+}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\vdr}{\ensuremath{v_{\mathrm{dr}}} }
+\renewcommand{\d}[1]{\ensuremath{\mathop{d#1}} }
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisunit}{MATH327 Extra (Diffusion)}
+\newcommand{\moddate}{Last modified 27 Feb.~2025}
+\begin{center}
+  {\Large \textbf{MATH327: StatMech and Thermo, Spring 2025}} \\[12 pt]
+  {\Large \textbf{Extra practice \ --- \ Drift and diffusion}} \\[24 pt]
+\end{center}
+
+Last year \href{https://www.reuters.com/business/environment/tides-move-oil-spill-away-tobago-caribbean-cleanup-progresses-2024-02-14/}{there was an oil spill} near the Caribbean island of Tobago.
+On 14 February 2024, changing currents caused several million litres of spilled oil to start moving towards Grenada's territorial waters, $144~\mathrm{km}$ away. % Up to 35,000 barrels ~ 5.6M litres, of which 2,000 barrels ~ 0.32M litres collected
+We can analyze the motion of the oil by treating each droplet as a random walker moving in one dimension --- towards or away from Grenadan waters.
+Satellite images and ocean models were used to estimate the rate at which the oil was moving.
+Suppose they indicated a drift velocity $\vdr = 6~\mathrm{km}/\mathrm{hour}$ towards Grenadan waters, with a diffusion constant $D = 8~\mathrm{km}/\sqrt{\mathrm{hour}}$. % The news stated 14 km/hour overall
+
+How many hours did Grenada have in which to take action before $1\%$ of the spilled oil was inside its waters?
+How much additional time did it take for the amount of oil inside Grenadan waters to double to $2\%$ of the total?
+
+Suppose the oil were moving towards the island of Grenada itself, rather than its territorial waters.
+It is significantly more complicated to analyze the situation of oil washing up on Grenada's shores, because each droplet's random walk would \textit{stop} once it reached the shore and left the water.
+This is known as a \textit{first-passage process}.
+Without attempting this more complicated calculation, determine whether it will take more time, less time or the same amount time for the spilled oil to wash up on shore, compared to entering territorial waters, with everything else the same.
+
+\vfill
+\textbf{Hint:} The error function
+\begin{equation*}
+  \mathrm{erf}(u) = \frac{1}{\sqrt{\pi}} \int_{-u}^u e^{-x^2} \d{x} \equiv P
+\end{equation*}
+may appear in your work, with $u > 0$.
+\href{https://scipy.org}{SciPy} is one tool you can use to invert the error function to find $u = \mathrm{erf}^{-1}(P)$ for a given $0 < P < 1$.
+Here are some examples: \\[-30 pt]
+\begin{verbatim}
+>>> import math
+>>> from scipy import special
+>>>
+>>> sigmas = [0.682689492, 0.954499736, 0.997300204, \
+...                        0.999936656, 0.999999427]
+>>> for P in sigmas:
+...   u = special.erfinv(P)
+...   n = round(u * math.sqrt(2.0))
+...   print("u = %.4f for P=%.7f (%d sigma)" % (u, P, n))
+
+u = 0.7071 for P=0.6826895 (1 sigma)
+u = 1.4142 for P=0.9544997 (2 sigma)
+u = 2.1213 for P=0.9973002 (3 sigma)
+u = 2.8284 for P=0.9999367 (4 sigma)
+u = 3.5356 for P=0.9999994 (5 sigma)
+\end{verbatim}
+
+\end{document}
+% ------------------------------------------------------------------
