@@ -1,0 +1,2933 @@
+1
+00:00:00,440 --> 00:00:10,310
+[Auto-generated transcript. Edits may have been applied for clarity.]
+The recording continues to pick that up, but we can at least get underway without too much delay.
+
+2
+00:00:11,190 --> 00:00:18,360
+On Wednesday morning. Fifth.
+
+3
+00:00:19,770 --> 00:00:27,330
+Of March with. The magic number that's also up on the board now 78.
+
+4
+00:00:28,560 --> 00:00:39,340
+15. In 77. So a couple of quick logistical notes before getting back into statistical mechanics.
+
+5
+00:00:41,290 --> 00:00:46,510
+Um, first, the usual reminder that the homework is due on Friday.
+
+6
+00:00:46,600 --> 00:00:51,909
+And later today I'll be able to release solutions for the computer assignment.
+
+7
+00:00:51,910 --> 00:00:55,060
+The late submission window is finally closing.
+
+8
+00:00:55,990 --> 00:00:59,920
+Um, won't have the marking done yet today.
+
+9
+00:01:00,160 --> 00:01:07,540
+That's always takes ages, especially for the computer assignment with both the code and non programming answers to go through.
+
+10
+00:01:07,870 --> 00:01:11,980
+But that is progressing and we'll get back to you as soon as possible.
+
+11
+00:01:13,090 --> 00:01:21,550
+And once the uh model solutions are released, if you have any questions or concerns about them you can bring that up with me at any time.
+
+12
+00:01:23,330 --> 00:01:38,490
+Um. One other quick logistical note is an apology for Monday's lecture when I mixed up my threes and fives on.
+
+13
+00:01:39,720 --> 00:01:45,540
+The entropy is for distinguishable versus indistinguishable particles.
+
+14
+00:01:46,230 --> 00:01:53,940
+Um, it's changed my mind partway through about the order in which to put this inequality and got things backwards,
+
+15
+00:01:53,940 --> 00:02:02,219
+which then spilled over to just this bit in the second page, but no further than that.
+
+16
+00:02:02,220 --> 00:02:10,080
+So some of you may have already spotted that issue, and the rest of you can correct your own notes now if you have not done so already.
+
+17
+00:02:11,340 --> 00:02:16,710
+But, uh, you know, those entropies were the big part of.
+
+18
+00:02:17,960 --> 00:02:21,470
+What we looked at on Monday and in particular.
+
+19
+00:02:23,050 --> 00:02:31,450
+The concept of the mixing entropy is. So the additional entropy that is produced if we mix gases of distinguishable
+
+20
+00:02:31,450 --> 00:02:37,240
+particles that is vanishing equal to zero if those particles are indistinguishable.
+
+21
+00:02:38,710 --> 00:02:45,520
+And this is what distinguishes reversible from irreversible processes.
+
+22
+00:02:47,040 --> 00:02:54,540
+By the second law of thermodynamics, if a non-zero mixing entropy is introduced.
+
+23
+00:02:54,930 --> 00:03:00,930
+Then the second law tells us that the particles cannot be unmixed.
+
+24
+00:03:03,840 --> 00:03:11,120
+Um. Naturally and more generally something we'll see.
+
+25
+00:03:11,720 --> 00:03:14,780
+Not tomorrow, but probably in next week's tutorial.
+
+26
+00:03:14,780 --> 00:03:24,679
+If we try to imagine some machines or daemons that could do that sort of mixing for us, we can always make the argument that overall,
+
+27
+00:03:24,680 --> 00:03:33,710
+the action of that machine itself has to produce more entropy than the mixing entropy it would be undoing.
+
+28
+00:03:33,830 --> 00:03:40,340
+We'll save that for next week's tutorial and not go into more detail here.
+
+29
+00:03:41,420 --> 00:03:50,990
+Where we stopped on Monday was building up from the predictions we had derived for these ideal gases,
+
+30
+00:03:51,920 --> 00:03:55,729
+for the internal energies, heat capacities and the entropy.
+
+31
+00:03:55,730 --> 00:04:06,830
+We saw that the volume appeared in some of those results specifically for the entropy, though not for the internal energy.
+
+32
+00:04:07,550 --> 00:04:13,760
+And we use that observation to introduce a more general concept of control parameters,
+
+33
+00:04:14,630 --> 00:04:22,580
+which we can actually see before without calling it this in the strength of the external magnetic field for a spin system.
+
+34
+00:04:23,540 --> 00:04:31,820
+And in these canonical ideal gases, um, other control parameters are things like the temperature and the volume.
+
+35
+00:04:32,180 --> 00:04:38,840
+In principle, the particle number as well, though for simplicity, today we will be keeping the particle number fixed,
+
+36
+00:04:39,920 --> 00:04:48,440
+and we saw that we can get interesting information about statistical systems if we take these control parameters,
+
+37
+00:04:48,440 --> 00:04:55,760
+things that experimentalists or observers can in principle control when working with a statistical system.
+
+38
+00:04:56,270 --> 00:05:00,110
+And we change just one of them at a time while keeping all of the others fixed.
+
+39
+00:05:00,980 --> 00:05:05,060
+So the heat capacity is what comes out of the canonical ensemble.
+
+40
+00:05:05,390 --> 00:05:10,460
+If we change just the temperature while keeping the volume and particle number fixed.
+
+41
+00:05:11,450 --> 00:05:15,080
+In fact, the in the micro canonical ensemble, the temperature is what comes out.
+
+42
+00:05:15,560 --> 00:05:22,190
+If we change the energy and look at the response to the entropy while keeping the particle number fixed.
+
+43
+00:05:22,850 --> 00:05:26,790
+And today. We will add one more.
+
+44
+00:05:28,470 --> 00:05:33,540
+Um, example of that dynamic that will give us.
+
+45
+00:05:35,050 --> 00:05:42,910
+The equation of state. For ideal gases, and we will define what exactly that means.
+
+46
+00:05:43,810 --> 00:05:54,160
+And then start using that equation of state and the other properties of ideal gases to build up to thermodynamic cycles.
+
+47
+00:05:57,200 --> 00:06:01,040
+The next major topic in the outline of the module.
+
+48
+00:06:01,820 --> 00:06:07,100
+So any questions about what we got up to by the end of Monday?
+
+49
+00:06:11,940 --> 00:06:21,800
+And not seeing any. We can just. Um, kick off this equation of state construction by starting.
+
+50
+00:06:23,040 --> 00:06:35,299
+With a definition of. A new observable quantity, something that has come up in general discussions of back in the very first days of the term.
+
+51
+00:06:35,300 --> 00:06:39,430
+What are generic, large scale properties of a system that we can imagine?
+
+52
+00:06:39,440 --> 00:06:42,500
+Imagine observing, measuring, and manipulating.
+
+53
+00:06:43,820 --> 00:06:49,550
+One of those that was mentioned was the pressure of, in this case, an ideal gas,
+
+54
+00:06:50,150 --> 00:06:55,280
+or in general, any statistical system that can be formulated in the canonical ensemble.
+
+55
+00:06:55,700 --> 00:06:59,629
+It has an internal energy expectation value.
+
+56
+00:06:59,630 --> 00:07:09,590
+E has a pressure, that is, the response of that internal energy to a change in its volume, while keeping the entropy fixed.
+
+57
+00:07:10,960 --> 00:07:19,940
+So. This lines up with the other quantities that we saw coming out of adjusting one control parameter at a time,
+
+58
+00:07:19,940 --> 00:07:26,000
+the heat capacity and temperature as other examples.
+
+59
+00:07:26,360 --> 00:07:36,200
+Here, the new ingredient is that we have now seen that the volume of the container that is holding this ideal gas is.
+
+60
+00:07:37,260 --> 00:07:40,890
+A new control parameter we have not dealt with before.
+
+61
+00:07:44,210 --> 00:07:51,020
+And we demand that everything else is fixed, and in particular the entropy.
+
+62
+00:07:53,980 --> 00:08:07,750
+Um. That depends on volume and temperature needs to stay fixed in this definition of the pressure, and I will probably, by habit, use a, uh, fancy.
+
+63
+00:08:09,180 --> 00:08:12,570
+Word to refer to this condition.
+
+64
+00:08:13,230 --> 00:08:21,360
+So saying that. Processes that occur well keeping the energy fixed are isentropic.
+
+65
+00:08:22,080 --> 00:08:28,340
+And that is. Basically a term coming from Greek.
+
+66
+00:08:28,340 --> 00:08:33,200
+ISO in Greek means equal, and then entropy is the last part of this.
+
+67
+00:08:33,560 --> 00:08:38,270
+So isentropic is having equal entropy or constant entropy.
+
+68
+00:08:38,780 --> 00:08:46,940
+Isothermal processes we'll see later have constant temperature like so correct processes have constant pressure and so on.
+
+69
+00:08:48,230 --> 00:08:55,970
+And do shout out if I use some terminology that is not clear at any point.
+
+70
+00:08:57,500 --> 00:09:06,050
+So let's go ahead with this definition and compute the pressure for the ideal gas as we have been looking at.
+
+71
+00:09:07,220 --> 00:09:14,420
+And conveniently in the case of both distinguishable and indistinguishable particles,
+
+72
+00:09:14,990 --> 00:09:20,660
+we saw that the entropies had the same functional dependence on our control parameters.
+
+73
+00:09:21,200 --> 00:09:27,130
+So in both of those cases. The entropy is dependent only on.
+
+74
+00:09:28,170 --> 00:09:32,250
+A particular combination of volume and temperature,
+
+75
+00:09:32,670 --> 00:09:42,390
+where the temperature was typically wrapped up in three powers of this thermal deploy wavelength lambda cubed, dropping constant factors.
+
+76
+00:09:43,050 --> 00:09:54,620
+This is all proportional. To the volume times three halves powers of the temperature, and therefore, in order to have.
+
+77
+00:09:56,260 --> 00:09:57,460
+Constant entropy.
+
+78
+00:10:01,530 --> 00:10:11,910
+We need to require that this particular product of control parameters, v times t to the three halves power is just some constant you can call c.
+
+79
+00:10:13,170 --> 00:10:20,880
+And rearranging that we find that we can express the temperature now as a function of volume.
+
+80
+00:10:23,860 --> 00:10:34,090
+In such a way that it is guaranteed the entropy will never change if the temperature changes, like the negative two thirds power of the volume.
+
+81
+00:10:34,330 --> 00:10:39,790
+That's just taking the two thirds power of each side and dividing through by the volume.
+
+82
+00:10:41,020 --> 00:10:47,139
+So the internal energy that we had again for both distinguishable and indistinguishable particles.
+
+83
+00:10:47,140 --> 00:10:50,320
+So we can do all cases at once.
+
+84
+00:10:52,130 --> 00:10:56,810
+That was three halves times the number of particles times their temperature, which.
+
+85
+00:10:57,140 --> 00:11:04,460
+Plugging in this relation for the temperature in terms of volume becomes three c over two.
+
+86
+00:11:05,360 --> 00:11:10,850
+And comes along for the ride and the two thirds power of volume is in the denominator.
+
+87
+00:11:13,100 --> 00:11:22,580
+Keep the definition of pressure on the screen, because we can now just go ahead and take this derivative with the overall negative sign.
+
+88
+00:11:23,680 --> 00:11:28,510
+Three C and over two is a constant factor that comes through.
+
+89
+00:11:29,590 --> 00:11:31,670
+Take the derivative with respect to volume.
+
+90
+00:11:31,690 --> 00:11:39,670
+We have imposed constant entropy already, so that condition is guaranteed to be satisfied thanks to our work so far.
+
+91
+00:11:41,210 --> 00:11:51,650
+Derivative of E to the minus two thirds power brings down that power and one additional factor of V, which I will go ahead and write.
+
+92
+00:11:52,620 --> 00:12:04,090
+In this kind of funny way. So rather than be to the minus five thirds power, we'll have both a V to the one power and B to the minus two thirds.
+
+93
+00:12:05,020 --> 00:12:08,110
+The minus two thirds cancels out the minus three halves.
+
+94
+00:12:08,860 --> 00:12:15,940
+What we have left then is c times n times v to the minus two thirds, which we can recognise as n t.
+
+95
+00:12:17,160 --> 00:12:21,090
+And that is why I have kept that minus two thirds power separate there.
+
+96
+00:12:22,420 --> 00:12:29,049
+So in addition to. Let's see how the minus two thirds.
+
+97
+00:12:29,050 --> 00:12:37,150
+We just have an overall factor of an over V, and this is the temperature and T over V and rearranging.
+
+98
+00:12:38,100 --> 00:12:47,130
+We have derived inequality that you quite possibly have seen before, possibly even before.
+
+99
+00:12:48,220 --> 00:12:54,520
+Entering university. Pressure times volume equals the number of particles times the temperature.
+
+100
+00:12:55,000 --> 00:12:59,740
+And this is known. As the ideal gas law.
+
+101
+00:13:01,720 --> 00:13:06,820
+And it is the most famous example of an equation of state.
+
+102
+00:13:12,820 --> 00:13:19,610
+Which. Sometimes I will abbreviate just as iOS.
+
+103
+00:13:21,570 --> 00:13:31,830
+Which is essentially a summary of how all of the emergent large scale properties of a thermodynamic system are related,
+
+104
+00:13:31,950 --> 00:13:36,000
+thanks to the underlying dynamics of the microscopic degrees of freedom.
+
+105
+00:13:36,720 --> 00:13:44,200
+So one piece. Of terminology I will emphasise here has to do with.
+
+106
+00:13:45,500 --> 00:13:51,620
+The appearance of the word state in here, because this is something that.
+
+107
+00:13:52,760 --> 00:13:58,730
+I warned you about a little earlier in the term, which in a way that might not have made sense at the time.
+
+108
+00:13:59,360 --> 00:14:06,230
+There are going to be lots of different ways that the word state is used in statistical mechanics and thermodynamics,
+
+109
+00:14:06,890 --> 00:14:10,940
+and that is why I keep talking about microstates and things like the Boltzmann
+
+110
+00:14:10,940 --> 00:14:18,320
+distribution and expectation values to distinguish them from the states.
+
+111
+00:14:19,250 --> 00:14:26,540
+That are being referred to by the equation of state terminology.
+
+112
+00:14:27,980 --> 00:14:37,850
+So the state here is not a micro state, but sometimes called a macro state or just a thermodynamic state,
+
+113
+00:14:38,300 --> 00:14:44,180
+depending on how much we want to write, how many syllables we want to say.
+
+114
+00:14:45,920 --> 00:14:54,700
+So this is the. Not a particular configuration of all of the n degrees of freedom in the system,
+
+115
+00:14:55,090 --> 00:15:03,459
+but instead the large scale behaviour characterised by the macroscopic properties that emerge from
+
+116
+00:15:03,460 --> 00:15:11,320
+those microscopic dynamics according to the the laws of statistical mechanics and thermodynamics.
+
+117
+00:15:11,830 --> 00:15:14,860
+So what an equation of state does is provide.
+
+118
+00:15:16,670 --> 00:15:22,030
+Some relation between. Um.
+
+119
+00:15:23,210 --> 00:15:30,970
+And just say it relates. Some number of macroscopic properties.
+
+120
+00:15:32,610 --> 00:15:36,240
+Of the system where we can immediately read off that.
+
+121
+00:15:37,970 --> 00:15:42,710
+Certain some of these macroscopic properties will include things like the pressure,
+
+122
+00:15:43,070 --> 00:15:47,780
+volume, particle number, and temperature that appear in the ideal gas law.
+
+123
+00:15:48,440 --> 00:15:58,040
+In addition to that, equations of states can involve things like the energy, the entropy, certain densities, essentially,
+
+124
+00:15:58,040 --> 00:16:07,099
+the emergent large scale properties that don't say anything about how all of the underlying degrees of freedom are distributed,
+
+125
+00:16:07,100 --> 00:16:13,180
+what particular microstate they are in. And this is so.
+
+126
+00:16:13,780 --> 00:16:18,140
+The ideal gas law is one example of an equation of state is the most famous one.
+
+127
+00:16:18,160 --> 00:16:25,550
+And as we go on to look at. Um, more complicated systems.
+
+128
+00:16:25,570 --> 00:16:36,070
+We will focus on deriving their equations of states that describe how their different macroscopic properties emerge and are related to each other.
+
+129
+00:16:36,850 --> 00:16:43,600
+And we can even, um, if there's time remaining when we get to kind of the final period after the break,
+
+130
+00:16:43,600 --> 00:16:54,400
+might see how equations of states can be proposed as models for thermodynamic systems with unknown microscopic dynamics.
+
+131
+00:16:55,060 --> 00:17:00,340
+Um, so things like the van der Waals equation of state or the, uh.
+
+132
+00:17:02,260 --> 00:17:07,180
+Certain expansions in the small quantities can be used as modelling.
+
+133
+00:17:07,180 --> 00:17:17,080
+That is a long way off. So set that aside for now and just pause to see if there are any questions about the pressure or equation of state.
+
+134
+00:17:17,470 --> 00:17:19,540
+The ideal gas law that we've seen so far.
+
+135
+00:17:26,520 --> 00:17:39,240
+And if you will indulge me a bit further before diving into the thermodynamic cycles and of the additional preparatory work to put in place,
+
+136
+00:17:40,140 --> 00:17:48,090
+uh, to build them up, I'll just spend a few minutes on a bit of historical digression.
+
+137
+00:17:48,840 --> 00:17:54,409
+Um. Which is to say, you know, similar to the laws of thermodynamics,
+
+138
+00:17:54,410 --> 00:18:01,730
+where this first law that we've encountered is now a fairly familiar concept of conservation of energy.
+
+139
+00:18:03,380 --> 00:18:09,890
+These equations of states like the ideal gas law, have some of their fancy names,
+
+140
+00:18:10,070 --> 00:18:19,220
+like ideal gas law, because historically they were first observed empirically in experiments.
+
+141
+00:18:19,910 --> 00:18:24,860
+So scientists played around with gases and other substances,
+
+142
+00:18:25,850 --> 00:18:33,500
+monitored the volume and pressure and temperature as best they could with the technology that they had and saw.
+
+143
+00:18:34,730 --> 00:18:41,480
+That those properties were related in this sort of way, and it was only.
+
+144
+00:18:43,190 --> 00:18:46,200
+Um, later on. That.
+
+145
+00:18:48,210 --> 00:18:56,810
+More fundamental mathematical explanations. Of these observations were developed.
+
+146
+00:18:59,690 --> 00:19:10,950
+As statistical mechanics. Um, as he developed as a field in the 18th 1800s, the 19th century.
+
+147
+00:19:11,670 --> 00:19:16,300
+So. Trying to keep the ideal gas law still on the screen.
+
+148
+00:19:17,290 --> 00:19:25,479
+Some of these observations went well back. Um, and, you know, probably were things that were known to certain people,
+
+149
+00:19:25,480 --> 00:19:34,240
+but not necessarily written down or published or made widely available until we got into the seven 17th century.
+
+150
+00:19:35,290 --> 00:19:49,390
+And as one example. The 17th century scientist named Robert Boyle, working in the 1660s, not only observed, but published his findings that.
+
+151
+00:19:50,310 --> 00:19:51,690
+If you changed the.
+
+152
+00:19:52,810 --> 00:20:03,550
+Pressure of a gas while keeping its temperature fixed, and the amount of gas fixed, which we can recognise as the number of particles.
+
+153
+00:20:05,980 --> 00:20:13,630
+He found that the resulting volume was inversely related to the pressure.
+
+154
+00:20:14,200 --> 00:20:19,420
+Which can also be written as the product of pressure times volume being equal to a constant.
+
+155
+00:20:19,870 --> 00:20:26,620
+Which in the centuries after this became known as Boyle's Law.
+
+156
+00:20:27,820 --> 00:20:39,760
+And we can see, is a kind of trivial consequence of the ideal gas law with constant and, and t also requires constant p and p times v.
+
+157
+00:20:43,300 --> 00:20:48,420
+And. That was.
+
+158
+00:20:52,500 --> 00:21:01,260
+Known fairly far back into the 1600s, and it was not until significantly later on that, um, other.
+
+159
+00:21:03,230 --> 00:21:08,750
+Experiments and ways of manipulating these control parameters were more systematically investigated.
+
+160
+00:21:09,830 --> 00:21:16,910
+So other things we can do, for example, is fix the amount of gas and it's pressure.
+
+161
+00:21:17,750 --> 00:21:24,710
+Finding then that the ratio of flame and temperature is constant.
+
+162
+00:21:25,610 --> 00:21:29,630
+This became known as Charles's law.
+
+163
+00:21:31,210 --> 00:21:36,940
+It's a fellow named Charles, published it and gained credit for it in the late 1700s.
+
+164
+00:21:37,360 --> 00:21:45,520
+Again, if we're a broad scientific communities working on all of these investigations, and it's a bit.
+
+165
+00:21:48,460 --> 00:21:54,250
+Of a distortion to attribute the advance entirely to a single person.
+
+166
+00:21:55,120 --> 00:22:00,700
+We can similarly swap the roles of pressure and volume in what is held fixed versus what is varied,
+
+167
+00:22:00,910 --> 00:22:08,800
+and there is a similar relationship with the temperature. That became known as Guy loose socks Law.
+
+168
+00:22:11,650 --> 00:22:18,540
+Published in. 1802, and a final set of to.
+
+169
+00:22:19,550 --> 00:22:24,680
+Parameters that can be kept fixed is the pressure and temperature.
+
+170
+00:22:25,990 --> 00:22:29,650
+That then leads to the volume of particles.
+
+171
+00:22:30,670 --> 00:22:39,170
+Um. Divided by the number of particles, or equivalently, the the density of those particles to stay constant.
+
+172
+00:22:42,270 --> 00:22:53,310
+Now known as Avogadro's Law. And entering the scientific literature, at least in Western Europe, in 1812.
+
+173
+00:22:54,780 --> 00:23:06,810
+And it was only after all, four of those empirical and empirically observed laws were known that.
+
+174
+00:23:08,830 --> 00:23:21,580
+People realise they could all be combined into a simple form given by the ideal gas law, and the fellow gets credit for this, fairly or not, is.
+
+175
+00:23:22,760 --> 00:23:30,150
+A French scientist known as Clapper on. Working in the 1830s.
+
+176
+00:23:32,680 --> 00:23:39,670
+So the basic idea is illustrated by this picture that.
+
+177
+00:23:42,070 --> 00:23:45,910
+The ideal gas law PV equals in T.
+
+178
+00:23:46,420 --> 00:23:51,970
+This Boltzmann constant is that unit conversion factor between energies and temperatures.
+
+179
+00:23:52,750 --> 00:23:56,350
+That in our units is equal to one.
+
+180
+00:23:58,180 --> 00:24:05,770
+Boyle's law say that PV was equal to that constant one and in T were fixed is a simple consequence of that.
+
+181
+00:24:05,800 --> 00:24:14,650
+Similarly for v over t, p over t and v over n Charles's law, guys of socks law and Avogadro's law.
+
+182
+00:24:15,640 --> 00:24:19,150
+These are all different projections of the ideal gas law.
+
+183
+00:24:20,250 --> 00:24:27,810
+Um, in those different, uh, cuts where certain properties are kept fixed.
+
+184
+00:24:28,890 --> 00:24:37,170
+And it was only another 20 years later on that all of these observed laws were.
+
+185
+00:24:38,420 --> 00:24:41,510
+Ash were first derived and proven.
+
+186
+00:24:43,730 --> 00:24:48,950
+From the basis of statistical mechanics, which was.
+
+187
+00:24:50,300 --> 00:24:53,750
+Was first just being developed.
+
+188
+00:24:54,530 --> 00:25:01,939
+Around that time in the 1850s. And that derivation, the people who get credit for that are chronic.
+
+189
+00:25:01,940 --> 00:25:06,560
+And Clausius working independently around the same period.
+
+190
+00:25:08,410 --> 00:25:17,970
+So one. Aspect of this historical digression that I want to point out.
+
+191
+00:25:18,150 --> 00:25:25,020
+Apart from just the purely historical questions about timelines, credits and, you know,
+
+192
+00:25:25,020 --> 00:25:33,450
+the ways that empirical observations in this case preceded, um, mathematical understanding is how,
+
+193
+00:25:34,830 --> 00:25:41,250
+you know, there was this big gap from Boyle's work in the 1660s to all of the rest of this,
+
+194
+00:25:41,250 --> 00:25:46,080
+starting in the late 1700s and moving into the early 1800s.
+
+195
+00:25:46,650 --> 00:25:57,540
+Something else going on at that same time was the Industrial Revolution, where all sorts of new machines were being developed to automate,
+
+196
+00:25:58,860 --> 00:26:08,550
+uh, industry, automate work and find new ways of moving around energy to perform useful functions.
+
+197
+00:26:09,210 --> 00:26:18,750
+And historically, that turned out to be both a benefactor of these scientific advances as well as a
+
+198
+00:26:18,750 --> 00:26:25,920
+contributor to them as these new machines and technologies were being developed.
+
+199
+00:26:27,620 --> 00:26:36,380
+They relied on the physical observations and mathematical analyses being carried out to the scientific progress.
+
+200
+00:26:38,510 --> 00:26:39,380
+Of that era.
+
+201
+00:26:40,710 --> 00:26:52,710
+And similarly, the scientific progress was motivated and gained inspiration from the practical applications that it was finding in the course of.
+
+202
+00:26:53,550 --> 00:27:04,690
+Industrialisation. And this can serve as a introduction to the next big topic.
+
+203
+00:27:05,990 --> 00:27:10,340
+Putting these ideal gases to work in the form of engines.
+
+204
+00:27:11,700 --> 00:27:16,350
+Um, which we will describe as so-called through dynamic cycles.
+
+205
+00:27:16,680 --> 00:27:21,870
+The next big topic that I think we can jump straight into, unless there are questions about,
+
+206
+00:27:22,600 --> 00:27:26,820
+uh, sort of historical, uh, aside, following the ideal gas law.
+
+207
+00:27:28,100 --> 00:27:34,380
+And not seeing any. Let's revisit the the pressure.
+
+208
+00:27:35,940 --> 00:27:45,340
+Um, and. Think just a bit more about what our mathematical definition of it here.
+
+209
+00:27:45,700 --> 00:27:51,070
+Kind of means in physical terms, we have a derivative with respect to a volume.
+
+210
+00:27:51,460 --> 00:28:01,710
+We have a negative sign so that. If we have the volume decreasing, the negative change in volume will cancel out that negative sign,
+
+211
+00:28:02,250 --> 00:28:06,750
+and the sign of the change in pressure is the same as the change in energy.
+
+212
+00:28:07,260 --> 00:28:15,900
+So a non-zero pressure. What we are used to when we think, when we talk about pressure just in the English language rather than mathematics,
+
+213
+00:28:16,590 --> 00:28:20,910
+would correspond to the energy increasing when the volume decreases.
+
+214
+00:28:21,300 --> 00:28:27,540
+And we can think about trying to shove our system into a smaller area of, for example,
+
+215
+00:28:27,690 --> 00:28:35,280
+taking an inflated balloon and trying to shove it into some smaller container, we have to decrease its volume.
+
+216
+00:28:35,640 --> 00:28:47,100
+That gives us the pressure we are used to as a tactile sensation that corresponds to an increase in the energy that we have and that process of,
+
+217
+00:28:47,880 --> 00:28:55,440
+for example, shoving a balloon into a box or, um, compressing containers, holding gases.
+
+218
+00:28:57,590 --> 00:29:08,830
+Will lead us to. Think of pressure in everyday terms as related to some mechanical process exerting some force.
+
+219
+00:29:10,220 --> 00:29:15,170
+On a system in order to compress it and increase its pressure.
+
+220
+00:29:15,740 --> 00:29:24,110
+And when we have forces, we also have from them the more formal concept of work that.
+
+221
+00:29:26,120 --> 00:29:30,530
+Um, hopefully this will be a reminder from, say, math 122.
+
+222
+00:29:33,640 --> 00:29:42,450
+There is a formal, mathematical or physical definition of what work means when we have forces going around.
+
+223
+00:29:42,460 --> 00:29:48,610
+So when a force which is a three vector in our three dimensional space displaces.
+
+224
+00:29:49,570 --> 00:30:05,550
+Some object that an X on. We can express the displacement of that object by another vector in three dimensions a change in its position, or.
+
+225
+00:30:07,720 --> 00:30:11,290
+The force acting to displace that object will change.
+
+226
+00:30:12,760 --> 00:30:16,110
+The. Energy of the object.
+
+227
+00:30:18,610 --> 00:30:31,310
+By some corresponding. About the E, and I'm implicitly assuming that we can look at infinitesimal displacements.
+
+228
+00:30:31,320 --> 00:30:35,190
+Infinitesimal energy changes. Um.
+
+229
+00:30:36,610 --> 00:30:43,270
+Okay, just to reflect that notation of having what looks like a differential factor in there.
+
+230
+00:30:43,600 --> 00:30:46,990
+So. Infinitesimally.
+
+231
+00:30:51,610 --> 00:31:00,130
+The work is exactly this change in the energy that results from some force displacing an object.
+
+232
+00:31:02,100 --> 00:31:12,420
+And more specifically, we have to take those two vectors, contract them, take the inner product or the dot product FDR.
+
+233
+00:31:13,020 --> 00:31:20,310
+Um, and then that gives the change in the energy due to the work done by that force.
+
+234
+00:31:20,880 --> 00:31:31,080
+We can generalise from these infinitesimal displacements and changes to finite work, finite changes in the entropy.
+
+235
+00:31:32,570 --> 00:31:42,350
+Which. Correspond to the now finite change in energy that we can write in general.
+
+236
+00:31:42,830 --> 00:31:55,250
+As a line integral from the starting position to the final position of the force, potentially as a function of position dotted into.
+
+237
+00:31:56,380 --> 00:32:01,540
+The differential factor. Dr. That is then integrated along this.
+
+238
+00:32:02,690 --> 00:32:07,040
+Any particular contour or. Or line.
+
+239
+00:32:08,650 --> 00:32:17,979
+So generalising from an infinitesimal amount of work to this finite amount of work is just the usual
+
+240
+00:32:17,980 --> 00:32:25,090
+integration over the path that the object follows as it is displaced by the force being applied to it.
+
+241
+00:32:29,190 --> 00:32:33,150
+Hopefully. That's all right. Let's do a simple example just to.
+
+242
+00:32:34,270 --> 00:32:41,170
+See how all of that more formal discussion works in practice.
+
+243
+00:32:42,900 --> 00:32:50,010
+So if we consider an object and we let that object fall under the force of gravity.
+
+244
+00:32:55,500 --> 00:33:05,040
+That force is the. Choose a coordinate system where x and y are horizontal and parallel a plane parallel to the surface of the Earth.
+
+245
+00:33:05,790 --> 00:33:09,720
+So the force of gravity is all in the vertical direction Z.
+
+246
+00:33:10,280 --> 00:33:16,350
+It is in particular negative pulling down toward the earth, and it is given by.
+
+247
+00:33:17,220 --> 00:33:24,240
+The mass of the object times the gravitational acceleration due to the Earth.
+
+248
+00:33:24,630 --> 00:33:34,630
+9.8m/s per second. And we will further specify that our object starts at rest.
+
+249
+00:33:36,520 --> 00:33:49,990
+So it has an initial, uh, kinetic energy equals p squared over two m if p the momentum is zero, then the initial energy is zero.
+
+250
+00:33:51,510 --> 00:34:02,250
+If so, it will be static. At some height we can call H, and we want to figure out the final energy to see the work done by gravity.
+
+251
+00:34:02,520 --> 00:34:10,500
+As we do that force acting on an object starting at rest from height h.
+
+252
+00:34:11,670 --> 00:34:21,180
+So the final energy is given by the initial energy plus the work initial energy is zero,
+
+253
+00:34:21,180 --> 00:34:31,770
+so that final energy is entirely the work done by gravity, the line integral of force times displacement.
+
+254
+00:34:33,710 --> 00:34:38,860
+Forces, all in the Z direction. The displacement is also all of the Z direction.
+
+255
+00:34:38,900 --> 00:34:46,700
+The object just goes straight down due to that force. So the constant factors of mass times G.
+
+256
+00:34:47,810 --> 00:34:52,910
+Is pulled out of that integral. We start at height h, we end at the ground.
+
+257
+00:34:53,210 --> 00:34:59,570
+We can call height zero. And all that's left in here is the change in vertical position d z.
+
+258
+00:35:00,260 --> 00:35:05,750
+So integral of d z from zero to h is minus h.
+
+259
+00:35:06,500 --> 00:35:16,190
+Minus signs cancel and we have mass times 9.8m/s² times the initial height, all of which is greater than zero.
+
+260
+00:35:16,490 --> 00:35:23,570
+So when the object hits the ground, we predict it will have a positive energy, which it does.
+
+261
+00:35:24,620 --> 00:35:30,110
+We can also plug in our expression for the energy from last week.
+
+262
+00:35:30,920 --> 00:35:39,200
+Energy is p squared, the inner product of momentum divided by twice the mass.
+
+263
+00:35:39,800 --> 00:35:48,410
+Here the moment the momentum only has that vertical components p z and p y stays zero.
+
+264
+00:35:48,980 --> 00:35:54,380
+So there's no force to change them. So that is the final energy m g h.
+
+265
+00:35:55,340 --> 00:35:59,300
+And rearranging gives us the momentum.
+
+266
+00:36:00,920 --> 00:36:06,090
+Um, or equivalently, the velocity. Of.
+
+267
+00:36:06,910 --> 00:36:10,049
+The. Particles. It hits the ground.
+
+268
+00:36:10,050 --> 00:36:13,920
+Its mass times the square root of 2g h.
+
+269
+00:36:15,510 --> 00:36:20,620
+Which? May or may not have have seen in math 1 to 2.
+
+270
+00:36:22,120 --> 00:36:29,740
+But it's the answer you would have found, say, through Newtonian kinematics for that process.
+
+271
+00:36:30,550 --> 00:36:35,200
+So any immediate questions about, um, this concept of work?
+
+272
+00:36:42,920 --> 00:36:45,710
+Not seeing any. You may be wondering, well, what is this?
+
+273
+00:36:46,420 --> 00:36:53,360
+Uh, what is the use of talking about a single object when the purpose of this module was to argue that we're interested in emergent properties?
+
+274
+00:36:53,690 --> 00:36:57,900
+When? The number of degrees of freedom is much greater than one.
+
+275
+00:36:59,850 --> 00:37:04,440
+Well, we have to generalise work to this situation where.
+
+276
+00:37:06,550 --> 00:37:14,860
+Um, we want to connect all of this discussion of forces and displacements to our starting point at the beginning of today,
+
+277
+00:37:14,870 --> 00:37:20,180
+this change in volume and the corresponding change in internal energy.
+
+278
+00:37:21,380 --> 00:37:24,950
+So bringing those two concepts together.
+
+279
+00:37:27,290 --> 00:37:35,290
+We still have that mathematical expression for. Um, the change in internal energy.
+
+280
+00:37:38,340 --> 00:37:48,330
+Due to a change in volume. And now to connect this to work, we will specify that it is some force.
+
+281
+00:37:49,650 --> 00:37:55,010
+That is responsible for. This change in volume.
+
+282
+00:37:57,130 --> 00:38:02,590
+So doing. Another example just to illustrate.
+
+283
+00:38:05,080 --> 00:38:08,320
+What this means more concretely, or in practice,
+
+284
+00:38:09,070 --> 00:38:19,780
+we can think about an ideal gas in a container where it's one wall of that container is a movable piston.
+
+285
+00:38:21,050 --> 00:38:26,720
+So. The points are ideal gas particles.
+
+286
+00:38:26,730 --> 00:38:30,360
+We have a large number of them inside our volume.
+
+287
+00:38:31,470 --> 00:38:40,890
+Um, this right side of the volume is imagined to be movable, called a piston.
+
+288
+00:38:41,430 --> 00:38:46,530
+Um, it can be pushed in or pulled out by forces in the appropriate direction.
+
+289
+00:38:47,040 --> 00:39:01,890
+So what's being illustrated here by slide over to see it is a force acting to the left that pushes the piston in by some displacement Delta x.
+
+290
+00:39:03,590 --> 00:39:08,060
+Say this delta x. Is always greater than zero.
+
+291
+00:39:09,170 --> 00:39:21,890
+And we want to consider the the for the work that is done by this force and how that reflects in the energy and pressure of the gas.
+
+292
+00:39:23,240 --> 00:39:32,130
+So. I'll. We've. Just gone through the argument that the work was the inner product of.
+
+293
+00:39:33,450 --> 00:39:36,720
+Force times the displacement.
+
+294
+00:39:38,150 --> 00:39:43,790
+Here. The displacement is this delta x in the same direction as the force.
+
+295
+00:39:44,210 --> 00:39:52,190
+So the dot product boils down just to that force f times delta x.
+
+296
+00:39:54,410 --> 00:39:59,660
+And we have also now argued that this work is.
+
+297
+00:40:00,900 --> 00:40:06,560
+The. Resulting change in the internal energy of the system.
+
+298
+00:40:07,190 --> 00:40:12,680
+Um, due to the force acting on it. So.
+
+299
+00:40:14,740 --> 00:40:18,400
+As we insert as we apply this force. And.
+
+300
+00:40:19,350 --> 00:40:31,950
+Cause this displacement. The volume that our ideal gas is contained within decreases by that linear displacement multiplied by the area of the piston.
+
+301
+00:40:31,950 --> 00:40:41,009
+So we can check the dimensions three powers of length on the left hand side, which is two powers times the final power of length.
+
+302
+00:40:41,010 --> 00:40:49,350
+There. The negative sign is telling us that the volume that the gas is able to occupy decreases, and.
+
+303
+00:40:51,260 --> 00:40:59,330
+At the same time as the volume decreases, we are seeing the energy increase by this f delta x and putting all of this together.
+
+304
+00:41:00,440 --> 00:41:03,560
+Into our starting point for today.
+
+305
+00:41:03,830 --> 00:41:11,000
+Definition of the pressure as the derivative of internal energy with respect to volume.
+
+306
+00:41:12,630 --> 00:41:22,440
+We will. Let's say for simplicity that the entropy is constant and we should have time after the break.
+
+307
+00:41:22,440 --> 00:41:28,500
+Coming up soon to consider what happens when the entropy is able to change.
+
+308
+00:41:29,730 --> 00:41:39,840
+So plugging in all that we have here, delta e with this negative sign is just minus f times the displacement.
+
+309
+00:41:40,350 --> 00:41:48,479
+The change in volume is also coming with a negative sign the area times displacement negatives cancel.
+
+310
+00:41:48,480 --> 00:41:56,340
+Delta x is cancel and we have the force over the area, both of which we've taken to be positive numbers.
+
+311
+00:41:57,360 --> 00:42:09,340
+So. From this change in volume that we can again make infinitesimal looking at the response to a variation in a control parameter.
+
+312
+00:42:09,940 --> 00:42:21,370
+We have seen a relation between the pressure and the force that is applied in order to change that volume, that the pressure is force per unit area.
+
+313
+00:42:22,210 --> 00:42:26,110
+Also a relation that you may have seen in other contexts.
+
+314
+00:42:27,570 --> 00:42:31,830
+I mean, in previous modules or even, uh, at a level.
+
+315
+00:42:32,220 --> 00:42:41,040
+So from that example, we are able to get a new, more physical interpretation of the pressure going beyond.
+
+316
+00:42:42,740 --> 00:42:48,570
+The. Uh. Partial derivative definition that we started off with.
+
+317
+00:42:49,350 --> 00:42:57,200
+Which is to say that. The pressure is just the force per unit area.
+
+318
+00:43:04,340 --> 00:43:08,960
+And the area in question is the surface area of.
+
+319
+00:43:09,820 --> 00:43:16,730
+The container. That is containing our ideal gas.
+
+320
+00:43:27,350 --> 00:43:38,510
+So we have now. Both a more physical picture of the pressure that does result from our formal definition,
+
+321
+00:43:39,620 --> 00:43:45,620
+as well as connections between pressure work and changes in energy.
+
+322
+00:43:49,570 --> 00:43:53,410
+So let's just summarise.
+
+323
+00:43:57,600 --> 00:44:02,040
+Some of these connections before pausing for a quick break.
+
+324
+00:44:02,940 --> 00:44:07,679
+So in this little calculation that we did here,
+
+325
+00:44:07,680 --> 00:44:14,910
+we made a point of assuming finite entropy to bring in the formal mathematical definition of the pressure.
+
+326
+00:44:15,510 --> 00:44:20,280
+So in that case assuming it isentropic process.
+
+327
+00:44:25,250 --> 00:44:34,730
+We have seen that the change in the internal energy of a canonical system is given by.
+
+328
+00:44:36,630 --> 00:44:42,760
+The. Negative pressure times the change in volume.
+
+329
+00:44:44,250 --> 00:44:49,710
+Which is just the the work that we do.
+
+330
+00:44:53,370 --> 00:44:57,430
+So that the first expression is just coming from our definition.
+
+331
+00:44:57,450 --> 00:45:07,020
+Take the volume to the other side. D is p dv and this um PDV.
+
+332
+00:45:07,830 --> 00:45:14,790
+The change in entropy means the negative sign is then related to the work through the.
+
+333
+00:45:16,120 --> 00:45:28,420
+Illustration and example that we considered. And even without our assumption of an isotropic process, we can.
+
+334
+00:45:29,860 --> 00:45:33,730
+Still have, um, a remnant of this inequality.
+
+335
+00:45:34,120 --> 00:45:43,060
+It turns into an inequality, um, because there can in principle be other ways to change the internal energy.
+
+336
+00:45:44,280 --> 00:45:50,960
+Um, while also changing the entropy. So that internal energy.
+
+337
+00:45:52,250 --> 00:45:58,940
+Can also change by some. Other processes that change the entropy.
+
+338
+00:45:58,990 --> 00:46:05,800
+Those are not accounted for in the work which started from imposing constant entropy.
+
+339
+00:46:06,520 --> 00:46:11,909
+And. A. A way of writing.
+
+340
+00:46:11,910 --> 00:46:21,060
+This is just to say that the change in energy is going to be both to work, plus, uh, additional contributions.
+
+341
+00:46:23,100 --> 00:46:26,429
+That can be positive or negative.
+
+342
+00:46:26,430 --> 00:46:38,490
+So let's not worry about inequalities now. But after the break, we will, um, look into what these additional contributions to the internal energy are.
+
+343
+00:46:40,750 --> 00:46:47,230
+However, the other equality that we have up here, the relation between work pressure and volume.
+
+344
+00:46:47,950 --> 00:46:54,120
+Um. Turns out to be a general consequence.
+
+345
+00:46:54,120 --> 00:47:06,600
+So even when the energy is allowed to change through other processes that do not keep the entropy fixed.
+
+346
+00:47:08,120 --> 00:47:14,600
+So whether or not. The entropy changes this relation between.
+
+347
+00:47:16,020 --> 00:47:20,280
+Work as the product of the pressure times the change in volume.
+
+348
+00:47:23,030 --> 00:47:31,649
+Is a general consequence. Um. That we saw in a simple example, but holds more broadly.
+
+349
+00:47:31,650 --> 00:47:40,080
+Again, this is the infinitesimal form of this relation with a differential DV rather than a finite delta v.
+
+350
+00:47:40,890 --> 00:47:50,100
+Doing a similar generalisation to a line integral just becomes the integral from the
+
+351
+00:47:50,100 --> 00:47:56,130
+initial volume to the final volume of the pressure times that differential d volume,
+
+352
+00:47:57,150 --> 00:48:02,370
+and the pressure now may well change as the volume changes.
+
+353
+00:48:02,370 --> 00:48:09,719
+In fact, we expect that it will, because we have seen already from the ideal gas law that the pressure is just
+
+354
+00:48:09,720 --> 00:48:15,930
+given by the number of particles times their temperature divided by the volume.
+
+355
+00:48:17,070 --> 00:48:27,360
+So for an ideal gas. That is compressed or expanded from some initial volume to some final volume,
+
+356
+00:48:27,810 --> 00:48:36,240
+we end up with the work being identified as the negative line integral across that expansion or compression process,
+
+357
+00:48:36,900 --> 00:48:41,820
+with and t over V being plugged in from the ideal gas law.
+
+358
+00:48:44,340 --> 00:48:48,420
+Save details of detailed examples of that for after the break.
+
+359
+00:48:48,720 --> 00:48:55,800
+Just wrap up quickly now by emphasising one basic aspect of this relation, namely its sign.
+
+360
+00:48:57,180 --> 00:49:10,830
+So if the overall sign of the work is positive, then that gives a positive contribution in addition to the internal energy of the system.
+
+361
+00:49:12,630 --> 00:49:30,630
+And in this case, the terminology that I will use is to say that work is done on the gas by our experimenter or more generally the the x,
+
+362
+00:49:30,750 --> 00:49:34,530
+the surroundings, the external environment that the gas is in.
+
+363
+00:49:37,770 --> 00:49:47,730
+Um, and that work that is done on the gas by something outside, it raises the internal energy of the gas.
+
+364
+00:49:48,390 --> 00:49:55,350
+And correspondingly, when the work that we get from our line integral is negative.
+
+365
+00:49:57,480 --> 00:50:07,530
+That energy is leaving the gas. And the work that is being done is being done by the gas now on its surroundings.
+
+366
+00:50:15,760 --> 00:50:27,129
+And it will be important as we start to consider thermodynamic processes that lead to non-zero values of work,
+
+367
+00:50:27,130 --> 00:50:34,840
+to keep track of the negative sign, to figure out where the energy is moving, where the work is being done, and what is doing the work.
+
+368
+00:50:35,560 --> 00:50:39,910
+And that's a good place to pause for a break.
+
+369
+00:50:40,030 --> 00:50:45,910
+Just check to see one last time if there are any questions about, um,
+
+370
+00:50:46,510 --> 00:50:55,210
+the statistical interpretation of work and its formal formulation as this line integral or differential PDV.
+
+371
+00:50:59,160 --> 00:51:04,440
+And if not, I'll pause the recording and start up again three minutes past the hour.
+
+372
+00:51:08,500 --> 00:51:09,670
+There is. A pause.
+
+373
+00:51:11,474 --> 00:51:14,744
+All right. I think it is time to resume.
+
+374
+00:51:15,254 --> 00:51:20,894
+And during that break, I noticed that. I think I said the right thing, but wrote the wrong one.
+
+375
+00:51:20,924 --> 00:51:24,434
+Just at the end here. So hopefully you caught that.
+
+376
+00:51:24,914 --> 00:51:29,344
+Negative work removes energy from the gas that's lower.
+
+377
+00:51:29,354 --> 00:51:33,974
+Lowering the gas is internal energy rather than raising it.
+
+378
+00:51:34,334 --> 00:51:43,124
+So there is a nice, consistent story about the sign of the work and the effect that it corresponds to in the internal energy of the gas.
+
+379
+00:51:46,034 --> 00:51:49,514
+So unless questions have arisen during that break,
+
+380
+00:51:49,994 --> 00:52:00,524
+we can go on to revisit this equation and consider what more sources of changing energy there could be.
+
+381
+00:52:01,964 --> 00:52:05,924
+And. In particular if we.
+
+382
+00:52:07,354 --> 00:52:14,264
+Just. Remember the expression for internal energy that we found for an ideal gas.
+
+383
+00:52:15,524 --> 00:52:19,274
+Whether or not the particles were distinguishable or indistinguishable.
+
+384
+00:52:20,534 --> 00:52:23,534
+We saw this simple relation between energy and temperature,
+
+385
+00:52:24,164 --> 00:52:32,234
+and even though the constant entropy condition relates the temperature and volume of the gas,
+
+386
+00:52:33,284 --> 00:52:39,274
+um, we have previously discussed that it is possible to change the temperature while keeping the volume fixed,
+
+387
+00:52:39,284 --> 00:52:48,824
+and we can imagine taking our canonical system, detaching it from its initial large external thermal reservoir,
+
+388
+00:52:49,184 --> 00:52:57,674
+and relocating it in the surroundings of a different external thermal reservoir with a different temperature.
+
+389
+00:52:58,844 --> 00:53:06,824
+And that provides a way to change the temperature and therefore the energy while keeping the volume constant.
+
+390
+00:53:09,804 --> 00:53:15,654
+When the volume is constant, this line integral just collapses to zero.
+
+391
+00:53:16,464 --> 00:53:23,694
+Integrating over a vanishing line. But the internal energy.
+
+392
+00:53:25,684 --> 00:53:38,184
+Can and does change just based on three halves and times the change in temperature here running things infinitesimally and this can be non-zero.
+
+393
+00:53:39,244 --> 00:53:46,774
+So we are now getting at the additional bit in the relation between the change in energy and work.
+
+394
+00:53:47,794 --> 00:53:54,244
+Change in energy is non-zero. The work is zero. So something more is going on in this sort of process.
+
+395
+00:53:56,804 --> 00:54:04,814
+Since entropy. You told us that the work was equal to the change in energy under those isentropic conditions,
+
+396
+00:54:05,714 --> 00:54:13,064
+we can directly or immediately conclude that in this sort of process.
+
+397
+00:54:14,164 --> 00:54:21,664
+The entropy has to change in order to keep everything self-consistent.
+
+398
+00:54:22,144 --> 00:54:27,964
+And if we remember that the entropy took the form of um.
+
+399
+00:54:29,664 --> 00:54:40,434
+Dependence on n times the log of v over lambda cubed, which pulls out this v times temperature to the three half power.
+
+400
+00:54:42,354 --> 00:54:46,674
+We can organise it as just an n log.
+
+401
+00:54:47,394 --> 00:54:52,954
+T to the three halves plus. T independent.
+
+402
+00:54:54,644 --> 00:55:02,174
+Pieces, both coming from the other, uh, constants that show up in the thermal deploy wavelength,
+
+403
+00:55:02,744 --> 00:55:09,284
+as well as in the indistinguishable case from the log of that in factorial that is independent of the temperature.
+
+404
+00:55:10,724 --> 00:55:17,284
+Properties of logs mean we can take this power of the T and bring that out in front.
+
+405
+00:55:17,324 --> 00:55:20,444
+So three halves n log t plus.
+
+406
+00:55:22,714 --> 00:55:28,834
+Pieces of the entropy that will not change to correspond to any change in T.
+
+407
+00:55:31,084 --> 00:55:42,814
+So the change in the entropy that must accompany the change in the temperature in order to have a change in energy with no work is well,
+
+408
+00:55:42,844 --> 00:55:46,054
+just given by. The derivative of this factor.
+
+409
+00:55:46,564 --> 00:55:49,864
+Three halves in is a constant that comes out front.
+
+410
+00:55:50,344 --> 00:55:59,284
+Derivative of the log is one over t, and the remaining differential is the dt that comes along from the chain rule.
+
+411
+00:56:01,124 --> 00:56:07,784
+Which we can recognise. Well, it's right above it. Three halves indeed is the change in internal energy.
+
+412
+00:56:08,474 --> 00:56:13,634
+And there's just this additional factor of T coming from the derivative of the log.
+
+413
+00:56:14,834 --> 00:56:23,624
+So a nonzero change in entropy to match the non-zero change in energy with zero work.
+
+414
+00:56:24,374 --> 00:56:29,864
+This is a an alternative way of manipulating the energy of our system.
+
+415
+00:56:30,164 --> 00:56:43,634
+It does not involve, uh, forces or, um, changes in volume that, uh, are done by the, the work done by that force instead of work.
+
+416
+00:56:44,294 --> 00:56:53,504
+We call this heat. The more physical um, and qualitative definition is that heat.
+
+417
+00:56:54,854 --> 00:57:00,374
+Let me write that clearly is the change in internal energy.
+
+418
+00:57:01,584 --> 00:57:11,484
+When there is no work done, which we can guarantee by saying that instead of keeping the entropy fixed, we keep the volume fixed.
+
+419
+00:57:11,964 --> 00:57:21,924
+That rules out work, and we have kind of similar to the overall story we have been telling since the end of Monday.
+
+420
+00:57:22,254 --> 00:57:28,464
+Changing one thing while keeping as much of the rest possible fixed.
+
+421
+00:57:28,674 --> 00:57:34,974
+So now volume is fixed, entropy changes and there is a change in the internal energy.
+
+422
+00:57:35,814 --> 00:57:43,304
+And we can write mathematically to accompany this. Conceptual physical definition that.
+
+423
+00:57:44,104 --> 00:57:50,784
+I think the resulting change in energy is given by the symbol Q for heat.
+
+424
+00:57:51,444 --> 00:57:56,393
+And this is just taking this tea over to the other side of the equation.
+
+425
+00:57:56,394 --> 00:58:01,554
+The temperature times the change in entropy again or with constant volume.
+
+426
+00:58:02,764 --> 00:58:13,354
+And just as we did with the work, we can take this differential relation and generalise it to a line integral.
+
+427
+00:58:14,254 --> 00:58:17,403
+The heat that flows, the change.
+
+428
+00:58:17,404 --> 00:58:25,324
+The energy is the integral from some starting value of the entropy to some final value of the temperature.
+
+429
+00:58:26,434 --> 00:58:33,784
+Integrated up on a line integral across the some change in the entropy and.
+
+430
+00:58:35,314 --> 00:58:38,884
+As the entropy changes, we can expect the temperature to change.
+
+431
+00:58:39,514 --> 00:58:48,304
+Um, as we've seen here, there's a DT corresponding to the DS so that temperature becomes some entropy dependent function.
+
+432
+00:58:49,834 --> 00:58:54,304
+Which is not the starting point that we had for the canonical ensemble.
+
+433
+00:58:54,964 --> 00:58:59,644
+Remember, if we go all the way back to our introduction of the canonical framework,
+
+434
+00:59:00,394 --> 00:59:08,464
+it was defined by specifying the temperature and then predicting quantities like internal energy and entropy.
+
+435
+00:59:09,064 --> 00:59:16,324
+So this whole way of formulating, uh, heat along the same lines as work,
+
+436
+00:59:16,954 --> 00:59:23,973
+does make the assumption that the canonical prediction for entropy as a function
+
+437
+00:59:23,974 --> 00:59:31,144
+of the control parameter of the temperature is an invertible relationship,
+
+438
+00:59:31,144 --> 00:59:42,744
+which it will be in. All of the nice, simple equilibrium, uh, cases that we are interested in in this molecule.
+
+439
+00:59:46,774 --> 00:59:48,574
+Any questions about heat immediately?
+
+440
+00:59:50,614 --> 00:59:59,614
+Though it's fairly similar principles to the work, both of them being changes in the energy when some other quantity is held fixed.
+
+441
+01:00:00,184 --> 01:00:07,894
+But as long as we are making some assumptions about the entropy in our canonical ideal gases, let's.
+
+442
+01:00:09,784 --> 01:00:13,654
+Introduce another one more for simplicity than.
+
+443
+01:00:14,884 --> 01:00:28,054
+Uh, out of any fundamental need. We will proceed for the rest of today and the rest of this whole discussion of thermodynamic cycles,
+
+444
+01:00:28,414 --> 01:00:39,634
+by assuming that the changes we are carrying out to our control parameters do not create or destroy any entropy.
+
+445
+01:00:47,384 --> 01:00:52,934
+So this is a saying that is more commonly associated with energy.
+
+446
+01:00:52,964 --> 01:00:56,444
+They say energy is neither created or destroyed. It just changes form.
+
+447
+01:00:57,044 --> 01:01:06,134
+We are now, in addition to that, specifying situations where the entropy is not created or destroyed, but it can move around.
+
+448
+01:01:07,034 --> 01:01:13,334
+So when we have a non-zero and non-zero change in entropy like we saw.
+
+449
+01:01:14,534 --> 01:01:20,684
+Coming back from the break. That change in entropy just indicates a flow.
+
+450
+01:01:22,094 --> 01:01:26,994
+In the entropy. Between the system and its surroundings.
+
+451
+01:01:28,094 --> 01:01:31,604
+Without. Creating or destroying.
+
+452
+01:01:35,194 --> 01:01:40,324
+Uh, and he knew entropy. In fact, I could have simplified this a bit.
+
+453
+01:01:40,624 --> 01:01:49,803
+Um, because we've seen from the second law and our work on mixing entropy, that the entropy always has to be non-decreasing as time passes.
+
+454
+01:01:49,804 --> 01:01:58,414
+So it can only be created by the second law. Um, whenever non-zero entropy is created, we have an irreversible process.
+
+455
+01:01:58,714 --> 01:02:07,174
+So essentially our assumption here. That or destroyed is, uh, something unphysical.
+
+456
+01:02:07,834 --> 01:02:15,874
+And by saying that no entropy is going to be created in the processes, we are going to consider, that is a.
+
+457
+01:02:16,914 --> 01:02:21,474
+Equivalent way of saying that all of those processes are going to be reversible.
+
+458
+01:02:22,284 --> 01:02:27,954
+Similar to the mixing that we considered with indistinguishable particles.
+
+459
+01:02:28,374 --> 01:02:37,103
+Opening a door between a room and a corridor is not contributing an observable amount of entropy to the universe,
+
+460
+01:02:37,104 --> 01:02:47,254
+and can't be reversed to close that door again. Oops.
+
+461
+01:02:47,704 --> 01:02:57,214
+So let's say a bit more about the types of processes that we have to consider with these assumptions of.
+
+462
+01:02:58,404 --> 01:03:03,834
+Energy and entropy flowing between the system and its surroundings.
+
+463
+01:03:05,664 --> 01:03:08,754
+So one extreme case is.
+
+464
+01:03:11,614 --> 01:03:22,674
+Um. One easy way to ensure that entropy is not created is to demand that the entropy in the system itself does not change.
+
+465
+01:03:24,024 --> 01:03:29,894
+So these sorts of. So. That is an isotropic process.
+
+466
+01:03:30,224 --> 01:03:34,004
+Using the terminology you introduced earlier and.
+
+467
+01:03:35,154 --> 01:03:39,204
+We can connect this to the flow of heat more generally.
+
+468
+01:03:39,774 --> 01:03:48,894
+By describing or defining, I should say, an adiabatic process, which is one.
+
+469
+01:03:50,284 --> 01:04:01,363
+That changes the internal energy. Without any flow of heat between the system and its surroundings.
+
+470
+01:04:01,364 --> 01:04:04,603
+So this is getting back to our starting point.
+
+471
+01:04:04,604 --> 01:04:10,004
+Toward the end of the first hour today, where only work was being done.
+
+472
+01:04:10,524 --> 01:04:15,284
+Um, a force changing the volume leading to a change in the energy.
+
+473
+01:04:15,944 --> 01:04:22,504
+And when we have. And 80 of attic process with no heat flow.
+
+474
+01:04:22,984 --> 01:04:26,044
+That is also reversible.
+
+475
+01:04:27,724 --> 01:04:33,274
+So our assumption above that the entropy is not created or destroyed.
+
+476
+01:04:35,514 --> 01:04:38,604
+Then we are guaranteed to have constant entropy.
+
+477
+01:04:40,444 --> 01:04:49,684
+DSS equals zero, which we can see directly from the definition of heat as the change in entropy multiplied by the temperature.
+
+478
+01:04:54,544 --> 01:05:03,264
+If we were to relax the assumption of energy not being created, that it would be possible to have idiomatic processes that are not isentropic.
+
+479
+01:05:03,274 --> 01:05:09,784
+There might be no heat, but there could be other sources of entropy coming just from fresh creation of entropy.
+
+480
+01:05:12,514 --> 01:05:19,014
+Um. In general, if we talk about or think about real processes,
+
+481
+01:05:19,404 --> 01:05:26,124
+the way to get at least approximately 80 about behaviour out of them is to carry out those processes quickly,
+
+482
+01:05:26,664 --> 01:05:33,324
+just so that there is no time for heat to flow between the system and its surroundings.
+
+483
+01:05:33,864 --> 01:05:38,064
+So. In general as a rough guide.
+
+484
+01:05:38,604 --> 01:05:44,304
+Adiabatic processes are going to be fast processes in which there is.
+
+485
+01:05:46,824 --> 01:05:57,324
+No time for heat to flow in between the system and its surroundings as the internal energy changes.
+
+486
+01:05:59,974 --> 01:06:03,424
+And with that set up, it is natural to consider the other extreme.
+
+487
+01:06:04,324 --> 01:06:11,764
+So what happens when? There is heat flow and the process occurs slowly.
+
+488
+01:06:13,474 --> 01:06:30,014
+So there is the screen. So if we allow the process to proceed extremely slowly.
+
+489
+01:06:30,284 --> 01:06:39,404
+Looking at an extreme limit. Then there will be plenty of time for all possible heat flow to occur.
+
+490
+01:06:41,454 --> 01:06:45,544
+And. This will mean that.
+
+491
+01:06:47,544 --> 01:06:59,124
+The temperature of the system will stay the same as the fixed temperature of the external reservoir it is attached to,
+
+492
+01:06:59,724 --> 01:07:07,344
+so any change in the internal energy will have to occur without the temperature changing at all.
+
+493
+01:07:07,824 --> 01:07:13,074
+So this is the limit of a slow process where there is plenty of time.
+
+494
+01:07:14,984 --> 01:07:19,424
+For all possible heat flow to or from the reservoir.
+
+495
+01:07:20,294 --> 01:07:24,824
+To occur. Keeping that. To keep that temperature fixed.
+
+496
+01:07:31,024 --> 01:07:39,784
+And if we put on our physics hats for a moment and we want to ask what what our real process is like,
+
+497
+01:07:40,174 --> 01:07:45,064
+they will typically end up somewhere in between these two extreme limits.
+
+498
+01:07:46,614 --> 01:07:50,083
+But. One thing.
+
+499
+01:07:50,084 --> 01:07:56,444
+I'll just tell you without attempting any any derivation. Observational fact is that, um,
+
+500
+01:07:56,474 --> 01:08:08,444
+the amount of time required for the heat flow to proceed and keep the system at a fixed temperature on human scales is quite long.
+
+501
+01:08:09,044 --> 01:08:17,504
+So usually processes that we care about in day to day life will be closer to the idiomatic limit.
+
+502
+01:08:20,314 --> 01:08:26,944
+80. Balletic van to the slow, isothermal situation.
+
+503
+01:08:31,884 --> 01:08:42,804
+So. Unless there are questions about these two definitions,
+
+504
+01:08:43,584 --> 01:08:52,344
+we'll take a step back and start synthesising all of the pieces that have been introduced so far today,
+
+505
+01:08:53,004 --> 01:09:05,694
+and put them all together to imagine all of these general possible changes that we can do to our system and the behaviour that results.
+
+506
+01:09:07,644 --> 01:09:11,304
+So a starting point for this, just as we.
+
+507
+01:09:13,404 --> 01:09:21,384
+Did. When defining the heat, we consider the temperature as a function of entropy.
+
+508
+01:09:22,374 --> 01:09:27,174
+Uh, that temperature can also be a function of the volume.
+
+509
+01:09:31,244 --> 01:09:37,184
+And or in general. The entropy, as we have seen, is a function of both volume and temperature.
+
+510
+01:09:38,384 --> 01:09:46,994
+We assume that we can invert that functional dependence to get the temperature and thereby the internal energy.
+
+511
+01:09:48,904 --> 01:09:52,684
+As a function of entropy and volume.
+
+512
+01:09:54,254 --> 01:10:00,854
+We're always keeping the number of particles fixed. Um, more for simplicity than any fundamental reason.
+
+513
+01:10:01,754 --> 01:10:11,444
+But with this functional dependence, we can consider a Taylor expansion in both of these variables.
+
+514
+01:10:11,474 --> 01:10:16,754
+So a multi parameter Taylor expansion around some.
+
+515
+01:10:20,854 --> 01:10:26,094
+Starting point. So. As long as we are not too far from that starting point.
+
+516
+01:10:27,604 --> 01:10:34,924
+Within the radius of convergence of the expansion, then the internal energy will be that starting points in.
+
+517
+01:10:35,314 --> 01:10:39,544
+Oops. Uh, initial entropy S not initial volume V not.
+
+518
+01:10:40,574 --> 01:10:44,594
+We get a final entropy S and V by adding.
+
+519
+01:10:45,404 --> 01:10:49,454
+So hopefully Taylor expansions are, uh, familiar shout out.
+
+520
+01:10:49,454 --> 01:10:53,504
+If not, and I can review them. But the.
+
+521
+01:10:55,014 --> 01:11:00,384
+First term that we have is the change in entropy multiplying the corresponding.
+
+522
+01:11:01,594 --> 01:11:11,824
+Partial derivative of the function with all other variables fixed, and there is a corresponding factor for the change in volume v minus v, not.
+
+523
+01:11:14,034 --> 01:11:18,504
+From the change from the partial derivative with respect to volume and everything else fixed.
+
+524
+01:11:19,014 --> 01:11:25,974
+And then there's an infinite series of higher order terms. That we can neglect for now.
+
+525
+01:11:27,784 --> 01:11:34,594
+Because we will be interested in looking at the limit of infinitesimal changes that we get out of here.
+
+526
+01:11:35,254 --> 01:11:38,974
+So if we take the initial energy at.
+
+527
+01:11:40,364 --> 01:11:44,744
+S not in view, not to the other side. We will end up with.
+
+528
+01:11:45,824 --> 01:11:53,684
+The new energy minus the initial energy, and take the infinitesimal limit of just some differential change to E.
+
+529
+01:11:55,184 --> 01:12:07,304
+We then have from these two terms in the Taylor expansion, an infinitesimal change in the entropy dz, and this partial derivative,
+
+530
+01:12:07,874 --> 01:12:16,124
+which we can recognise as the inverse of our definition of temperature in the micro canonical ensemble.
+
+531
+01:12:16,964 --> 01:12:21,104
+If we had the change in entropy with respect to change in energy,
+
+532
+01:12:21,104 --> 01:12:28,124
+that would give us one over temperature, and we assumed that these relations can be inverted.
+
+533
+01:12:28,814 --> 01:12:34,274
+So the inverse of one over t. Is just known to his friends as T.
+
+534
+01:12:35,024 --> 01:12:42,944
+From the final term we have a. Infinitesimal change in volume and then a quantity.
+
+535
+01:12:42,944 --> 01:12:47,984
+We have seen more recently the change in energy with respect to change in volume,
+
+536
+01:12:48,404 --> 01:12:52,934
+which is the negative of the pressure we define to start things off today.
+
+537
+01:12:53,444 --> 01:13:01,814
+So just rewriting this, we have temperature times change in entropy minus a pressure times change in volume.
+
+538
+01:13:02,354 --> 01:13:08,624
+And we can recognise here the heat q and there the work w.
+
+539
+01:13:10,104 --> 01:13:15,384
+Um, from the infinitesimal relations that we looked at in isolation earlier.
+
+540
+01:13:16,794 --> 01:13:25,944
+So what we have, putting everything together is a general relation between changes in internal and energy,
+
+541
+01:13:26,544 --> 01:13:38,454
+and the work that is done either on or by the system, and the heat that flows either uh, to or from the system, from or to its surroundings.
+
+542
+01:13:40,074 --> 01:13:43,314
+So what this is, in essence,
+
+543
+01:13:43,824 --> 01:13:53,034
+is a generalisation of the idea of conservation of energy that we introduced way back when the first law of thermodynamics.
+
+544
+01:13:58,204 --> 01:14:07,564
+So rather than stating the first law as a requirement that the energy is conserved, fixed and unchanging.
+
+545
+01:14:08,764 --> 01:14:18,564
+We have here expressed it. To allow um, it contacted interaction between the system and its surroundings.
+
+546
+01:14:19,464 --> 01:14:22,914
+This allows the internal energy to change in the canonical ensemble,
+
+547
+01:14:23,484 --> 01:14:33,534
+but any change in that internal energy has to be equal and opposite to a corresponding change,
+
+548
+01:14:35,004 --> 01:14:46,914
+taking the form either of heat flow to or from the system that lowers or raises its internal energy.
+
+549
+01:14:51,214 --> 01:15:03,674
+Or work can be done. Again done on the gas by its surroundings, or done by the gas on its surroundings.
+
+550
+01:15:10,254 --> 01:15:20,664
+So this generalisation of the first law, you know, as we once we write into these terms, hopefully is not too shocking or surprising.
+
+551
+01:15:21,024 --> 01:15:26,334
+It brings together everything we've done so far today with pressure, work and heat,
+
+552
+01:15:26,844 --> 01:15:38,724
+and we can bring it together with some of the earlier results that we had, um, either from earlier today or earlier in the module that give us.
+
+553
+01:15:40,024 --> 01:15:46,714
+Some key equations. Determining how ideal gases.
+
+554
+01:15:48,374 --> 01:15:54,693
+Will behave as. Their control parameters are changed.
+
+555
+01:15:54,694 --> 01:16:02,554
+So one is the relation between internal energy and temperature of the three halves and t that we have seen.
+
+556
+01:16:04,274 --> 01:16:08,554
+Another is the. Constant entropy condition.
+
+557
+01:16:08,564 --> 01:16:20,084
+The more general result that the entropy is a function only of the combination of volume times temperature to the three halves power,
+
+558
+01:16:20,564 --> 01:16:23,954
+and not volume or temperature fully independently.
+
+559
+01:16:24,494 --> 01:16:28,364
+So whatever this product is constant, the entropy will be constant.
+
+560
+01:16:29,234 --> 01:16:34,874
+And as well the ideal gas law pressure times volume equals number of particles times temperature.
+
+561
+01:16:34,874 --> 01:16:40,154
+The equation of state of the ideal gas can all be brought to bear.
+
+562
+01:16:41,354 --> 01:16:56,864
+To analyse how these systems behave as they are manipulated and subject to processes that change one or more of these quantities.
+
+563
+01:17:00,464 --> 01:17:13,814
+And in particular, we will be interested in looking at not just random processes, but well-defined sequences of processes that.
+
+564
+01:17:16,214 --> 01:17:17,894
+Have a particular endpoint.
+
+565
+01:17:20,204 --> 01:17:31,004
+That which I mean, if we have a sequence of manipulations of our gas that once they have all been carried out in succession,
+
+566
+01:17:31,604 --> 01:17:37,964
+return that gas to its initial, uh, conditions or initial macro state.
+
+567
+01:17:41,034 --> 01:17:53,004
+So as a reminder, the the macrostate here is defined by the macroscopic quantities pressure, volume, temperature, energy, entropy, and so on.
+
+568
+01:17:55,104 --> 01:17:59,014
+Then. We can define.
+
+569
+01:18:02,514 --> 01:18:05,784
+A so-called thermo. Yeah. Thermodynamic.
+
+570
+01:18:07,324 --> 01:18:13,534
+Cycle. That in principle can be repeated.
+
+571
+01:18:15,764 --> 01:18:23,354
+Over and over again. However many times that we want, every repetition of the cycle takes the system back to its starting point,
+
+572
+01:18:23,954 --> 01:18:27,704
+as the same energy has the same entropy, same volume and pressure.
+
+573
+01:18:28,244 --> 01:18:34,034
+Repeat those processes again. Again end up back to the starting point, and over and over and over again.
+
+574
+01:18:34,484 --> 01:18:45,944
+Sometimes thousands of times per minute. And in particular, all of that constant repetition can be used to do useful things.
+
+575
+01:18:46,874 --> 01:18:55,214
+Often just a, um, a small amount of benefit that can then add up across all of these repetitions.
+
+576
+01:18:55,754 --> 01:19:00,374
+So for example we can design cycles that.
+
+577
+01:19:01,494 --> 01:19:06,384
+Move heat around in order to do work. And these are called engines.
+
+578
+01:19:06,954 --> 01:19:14,894
+We can also design cycles. That have work done to them in order to transfer heat.
+
+579
+01:19:15,734 --> 01:19:20,954
+We call those refrigerators, and there are, in principle, other possibilities.
+
+580
+01:19:34,754 --> 01:19:43,304
+So. That's the general philosophy and idea of what we are now getting into.
+
+581
+01:19:44,504 --> 01:19:48,444
+Underline. This terminology of thermodynamic cycle.
+
+582
+01:19:48,864 --> 01:19:59,034
+And unless there are questions about. The general overarching setting and goal,
+
+583
+01:19:59,484 --> 01:20:09,054
+we can start to get a bit more detailed and more specific about the types of processes that we have in mind and the types of cycles.
+
+584
+01:20:10,064 --> 01:20:22,844
+That we can build out of them. And I think I said before, but let's make it explicit or add a reminder that in.
+
+585
+01:20:23,934 --> 01:20:29,694
+All of these considerations, we will just be keeping the number of particles fixed for simplicity.
+
+586
+01:20:30,414 --> 01:20:33,383
+Um, also something we could imagine changing.
+
+587
+01:20:33,384 --> 01:20:40,644
+Like we change the temperature moving from one canonical system to another with a different external reservoir.
+
+588
+01:20:42,454 --> 01:20:49,744
+But with this simplification that the amount of gas we have in our system, in our container is always fixed.
+
+589
+01:20:50,434 --> 01:20:58,004
+Then the key equations. Both the these three plus the generalised first law.
+
+590
+01:20:59,104 --> 01:21:03,424
+Relating energy, heat and work. Um.
+
+591
+01:21:04,354 --> 01:21:09,814
+Suffice to reduce the amount of information that we have in our macro states,
+
+592
+01:21:10,414 --> 01:21:19,084
+which can now be completely specified just with two numbers or two variables.
+
+593
+01:21:20,674 --> 01:21:26,544
+So any macro states in these conditions. Uh, is fully specified.
+
+594
+01:21:28,084 --> 01:21:32,814
+By. The pressure and volume together.
+
+595
+01:21:33,934 --> 01:21:40,174
+And just to illustrate how this works from the ideal gas law, we immediately have the temperature,
+
+596
+01:21:40,714 --> 01:21:44,164
+the product of pressure times volume divided by the number of particles.
+
+597
+01:21:46,234 --> 01:21:49,804
+We can plug that into the relation between energy and temperature.
+
+598
+01:21:51,374 --> 01:21:54,614
+So the internal energy is also fixed.
+
+599
+01:21:55,244 --> 01:21:59,803
+The ends cancel and we get. Three halves times pressure.
+
+600
+01:21:59,804 --> 01:22:03,494
+Times volume. And finally the entropy.
+
+601
+01:22:05,844 --> 01:22:10,164
+Just becomes a unknown function that I won't bother to write down here.
+
+602
+01:22:10,914 --> 01:22:16,614
+That involves now the product of V times the temperature to the three halves power.
+
+603
+01:22:18,984 --> 01:22:24,744
+Or P to the three halves times, V to the five halves divided by n to the three halves.
+
+604
+01:22:25,404 --> 01:22:30,444
+The exact functional form we don't need to worry about at the moment.
+
+605
+01:22:30,924 --> 01:22:41,434
+Just the fact that. Every macroscopic property we have to consider is completely specified by the pressure and the volume.
+
+606
+01:22:41,914 --> 01:22:48,633
+And this is nice because it gives us a new language or we do graphical way of
+
+607
+01:22:48,634 --> 01:22:55,684
+looking at these macro states and the thermodynamic cycles that relate them.
+
+608
+01:22:57,004 --> 01:23:02,514
+So we can. Now represent.
+
+609
+01:23:03,394 --> 01:23:10,274
+Any macro state. Graphically in a diagram.
+
+610
+01:23:12,264 --> 01:23:20,754
+Where one axis will be the pressure and the other will be the volume.
+
+611
+01:23:22,504 --> 01:23:31,164
+And this is a fairly standard approach known as a PV diagram just after its axis.
+
+612
+01:23:31,184 --> 01:23:40,114
+So let's draw an example here. We have one axis for the pressure, another for the volume.
+
+613
+01:23:41,134 --> 01:23:51,394
+At any point in this two dimensional plane fully specifies the complete macrostate of our ideal gas in its container.
+
+614
+01:23:52,954 --> 01:24:00,963
+And as we change any of the control parameters, either the pressure or the volume or temperature,
+
+615
+01:24:00,964 --> 01:24:08,344
+energy or entropy that are related to pressure and volume as we have just arrived, then the system.
+
+616
+01:24:09,494 --> 01:24:18,104
+We'll trace out some line, some change in its macro state as these things change.
+
+617
+01:24:18,554 --> 01:24:25,964
+It traces out a one dimensional curve in this plane going to some final state.
+
+618
+01:24:27,404 --> 01:24:32,924
+So a macrostate is a point in thermodynamic process.
+
+619
+01:24:33,674 --> 01:24:41,504
+Corresponds to a line in the diagram and the thermodynamic cycles that get.
+
+620
+01:24:41,774 --> 01:24:46,484
+The back to the system. Back to its initial macrostate. Then we can.
+
+621
+01:24:48,644 --> 01:24:53,114
+Appreciate will be represented as closed paths.
+
+622
+01:24:54,384 --> 01:25:06,384
+That the system can walk along. So the the sequence of processes that return the system to its initial macrostate turn into a
+
+623
+01:25:06,384 --> 01:25:12,234
+sequence of lines that form a closed path and get back to the starting point on all of them.
+
+624
+01:25:13,014 --> 01:25:21,504
+Reversible by assumption, not by necessity, so that no energy or entropy are created or destroyed.
+
+625
+01:25:25,074 --> 01:25:32,364
+So. Let's do a few quick examples just to gain some.
+
+626
+01:25:33,864 --> 01:25:40,774
+Um, familiarity and comfort with. This the PV diagram?
+
+627
+01:25:41,534 --> 01:25:45,344
+And thermodynamic processes more generally. So.
+
+628
+01:25:46,404 --> 01:25:56,303
+We can start by supposing that the process I want here is started as, um, going from a smaller volume to a larger volume.
+
+629
+01:25:56,304 --> 01:25:59,574
+So in that direction. So the gas is expanding.
+
+630
+01:26:00,054 --> 01:26:03,804
+Let's say we have a limit of.
+
+631
+01:26:04,874 --> 01:26:09,514
+Slow. Isothermal expansion where the temperature.
+
+632
+01:26:11,034 --> 01:26:17,454
+Of the system is kept constant by heat exchange as the volume changes.
+
+633
+01:26:19,924 --> 01:26:30,574
+Um. So if I put some labels on here and say that we start at initial volume v0 and at final volume v f,
+
+634
+01:26:31,384 --> 01:26:40,684
+similarly the pressure goes from oops there is p f starting from p0 off to p f.
+
+635
+01:26:42,674 --> 01:26:47,174
+Let's see if we can find, say, the final pressure or temperature.
+
+636
+01:26:47,234 --> 01:26:51,254
+Well, we know the temperature is isothermal. See if we can find the final pressure.
+
+637
+01:26:51,254 --> 01:26:58,744
+And this change in pressure delta P uh based just on say,
+
+638
+01:26:58,784 --> 01:27:08,264
+the control parameter of the change in volume that we as thought experimentalists can imagine doing to the system.
+
+639
+01:27:09,524 --> 01:27:17,714
+So because the temperature is fixed along this process, we can apply the ideal gas law on both sides.
+
+640
+01:27:20,134 --> 01:27:29,194
+Um, temperature is always p times v over N, and that holds both at the starting point and at the ending point.
+
+641
+01:27:30,614 --> 01:27:32,894
+We can cancel out the ends.
+
+642
+01:27:33,404 --> 01:27:47,354
+Rearrange the factors of V and find that the final pressure is related to the initial pressure, just by a simple ratio of volumes.
+
+643
+01:27:49,224 --> 01:27:57,624
+The final volume is larger than the initial volume, so that ratio is less than one, and the final pressure is less than the starting pressure.
+
+644
+01:27:57,624 --> 01:28:02,544
+That matches what we could read off the vertical axis of this process.
+
+645
+01:28:03,384 --> 01:28:11,354
+And if we subtract. Um, the final pressure and initial pressure to get that delta p.
+
+646
+01:28:12,494 --> 01:28:20,114
+So p f minus p nought involves that ratio v nought over v f.
+
+647
+01:28:20,534 --> 01:28:29,024
+Subtract the initial p nought and that delta p now is less than zero because the pressure has decreased.
+
+648
+01:28:35,804 --> 01:28:39,134
+We can't do more just based on.
+
+649
+01:28:40,544 --> 01:28:46,154
+Well, the fact of isothermal expansion and the visual aid of the PV diagram.
+
+650
+01:28:46,994 --> 01:28:55,153
+If we go back to the work and its connection to the line integral from the initial volume
+
+651
+01:28:55,154 --> 01:29:01,604
+to the final volume of the pressure as a function of volume integrated over volume,
+
+652
+01:29:02,294 --> 01:29:07,094
+well, this is just the integral of that line pressure as a function of volume.
+
+653
+01:29:07,634 --> 01:29:12,974
+So this is the integral is the area under that line which is positive.
+
+654
+01:29:13,424 --> 01:29:17,264
+The overall negative sign tells us that the work is negative.
+
+655
+01:29:18,644 --> 01:29:27,624
+And from this we know that negative work corresponds to a decrease in the internal energy.
+
+656
+01:29:27,644 --> 01:29:31,394
+So in isolation this negative result.
+
+657
+01:29:33,794 --> 01:29:41,633
+Would. Cause the internal energy and therefore the temperature within.
+
+658
+01:29:41,634 --> 01:29:45,234
+Fixed. To decrease.
+
+659
+01:29:46,464 --> 01:29:50,454
+Our starting point was to say that the temperature was fixed.
+
+660
+01:29:50,454 --> 01:29:55,914
+It was constant as the ISO and ISO thermal similar to ice isentropic.
+
+661
+01:29:56,754 --> 01:30:01,014
+And therefore we know something else about this process. We know that.
+
+662
+01:30:03,204 --> 01:30:09,264
+This negative work has to be balanced and cancelled out by a positive heat.
+
+663
+01:30:11,304 --> 01:30:14,664
+Coming into the system from its surroundings.
+
+664
+01:30:15,884 --> 01:30:20,074
+And that is needed. To keep T.
+
+665
+01:30:21,484 --> 01:30:26,554
+Constant, which also keeps the energy constant in this process.
+
+666
+01:30:36,124 --> 01:30:41,644
+Maybe I can ask you a question just to check that things are clear.
+
+667
+01:30:42,334 --> 01:30:46,074
+Um. You can ask what?
+
+668
+01:30:46,824 --> 01:30:54,384
+What would it mean if? Two ISO Therms works across in a PV diagram, I shouldn't.
+
+669
+01:30:55,794 --> 01:31:03,744
+I should say that one of the things I skipped in here is that this process of isothermal expansion.
+
+670
+01:31:04,704 --> 01:31:17,214
+I will refer to that line in the PV diagram as an ISO theorem, and we can talk about that line as a shorthand for the process itself.
+
+671
+01:31:28,894 --> 01:31:41,014
+Let's see. Looking at the the time and, um.
+
+672
+01:31:42,244 --> 01:31:49,444
+Where we are. Let's just. I won't give you too long to think about that question.
+
+673
+01:31:49,444 --> 01:31:53,644
+What does it mean if two isoforms cross? I'll just.
+
+674
+01:31:54,924 --> 01:32:05,304
+Um, walk through the thought process that when two isothum is crossed, they must have the same P and V.
+
+675
+01:32:07,944 --> 01:32:13,434
+Um, that's. So they course they hit at the same points in the PV diagram.
+
+676
+01:32:14,064 --> 01:32:20,304
+If we divide that p and v by the fixed end of our system, we get the same temperature.
+
+677
+01:32:20,964 --> 01:32:25,704
+So any two isothermal that ever cross are actually.
+
+678
+01:32:27,994 --> 01:32:33,364
+Not distinct. They are the same isothum. They overlap completely in the diagram.
+
+679
+01:32:33,814 --> 01:32:39,754
+So there is no. Well, we will never see distinct isothum that intersect at a point.
+
+680
+01:32:40,174 --> 01:32:44,434
+They are all going to be parallel curves or non intersecting curves.
+
+681
+01:32:44,434 --> 01:32:50,104
+If they have different temperatures and the same curve on top of each other, if they have the same temperature.
+
+682
+01:32:53,394 --> 01:33:06,684
+So. Distinct isothermal curves or isothermal with different temperatures T not equal to TJ will never cross.
+
+683
+01:33:09,774 --> 01:33:16,864
+In a PV diagram. Let's work through quickly.
+
+684
+01:33:17,344 --> 01:33:21,484
+One other example. Of.
+
+685
+01:33:22,574 --> 01:33:25,844
+The opposite limit. So that idiomatic process.
+
+686
+01:33:26,984 --> 01:33:32,184
+And just to cover all the bases, let's make this. Adiabatic compression.
+
+687
+01:33:33,564 --> 01:33:38,034
+And this is a fast process that occurs without.
+
+688
+01:33:38,994 --> 01:33:49,824
+Enough time for any heat to be exchanged. So we write our PV diagram here and we have some process like that.
+
+689
+01:33:51,124 --> 01:33:55,834
+Being compressed from its initial volume to a smaller final volume.
+
+690
+01:33:57,994 --> 01:34:05,844
+The pressure will also change from. An initial pressure to a final pressure, the corresponding delta p.
+
+691
+01:34:07,304 --> 01:34:10,904
+And because there is no time for heat to flow.
+
+692
+01:34:13,424 --> 01:34:17,264
+Then the temperature must change.
+
+693
+01:34:18,014 --> 01:34:25,504
+In this process. It cannot be kept fixed, which requires exchanging heat with its surroundings.
+
+694
+01:34:27,354 --> 01:34:36,414
+So this means that our curve here is going to move between two.
+
+695
+01:34:37,344 --> 01:34:43,494
+Well any number of different ISO therms which we can also draw.
+
+696
+01:34:45,324 --> 01:34:53,364
+For illustration, this curve in a PV diagram corresponding to an idiomatic process.
+
+697
+01:34:54,964 --> 01:34:59,134
+Is something I recall that Eddie about.
+
+698
+01:34:59,934 --> 01:35:09,744
+So put that in their area. Bat and it moves between different ISO therms in particular.
+
+699
+01:35:10,494 --> 01:35:14,664
+Here is the ISO theorem with the initial temperature P, not V not over n.
+
+700
+01:35:15,294 --> 01:35:21,474
+Here is the isothum with the different final temperature p times vf, also over n.
+
+701
+01:35:23,754 --> 01:35:31,584
+And we should have just enough time to compute not only the change in pressure like we did in the previous example,
+
+702
+01:35:32,004 --> 01:35:40,944
+but also the change in temperature in terms of the initial of the initial state,
+
+703
+01:35:40,944 --> 01:35:42,114
+the initial macrostate,
+
+704
+01:35:42,534 --> 01:35:53,544
+and the change in our control parameter of the volume and the way that we can approach this is similar to what we did with the isothermal expansion.
+
+705
+01:35:53,544 --> 01:35:59,214
+We looked at what was kept fixed in that process. There was the constant temperature.
+
+706
+01:35:59,844 --> 01:36:11,364
+Now, for an idiomatic process that is reversible, we have entropy and from.
+
+707
+01:36:13,034 --> 01:36:21,704
+Our expressions for our key equation. That the entropy is a function only of the volume times the three halves.
+
+708
+01:36:21,704 --> 01:36:32,354
+Power of the temperature. This is telling us that that combination has to stay fixed.
+
+709
+01:36:33,724 --> 01:36:38,314
+All across this adiabatic process in order to keep the entropy fixed.
+
+710
+01:36:40,114 --> 01:36:47,584
+So this is something we can rearrange, just like we did with the ideal gas law in the isothermal case.
+
+711
+01:36:48,604 --> 01:36:52,294
+Isolate the final temperature by taking the two thirds power of each side.
+
+712
+01:36:52,954 --> 01:36:58,204
+We have the same ratio of initial and final volumes.
+
+713
+01:36:58,894 --> 01:37:05,734
+Now to the two thirds power multiplied by that initial temperature, which is um.
+
+714
+01:37:05,764 --> 01:37:12,484
+Here the initial volume is larger than the final one, so the final temperature is larger than the initial one.
+
+715
+01:37:13,564 --> 01:37:24,834
+We can. Get rid of that dependence on initial temperature by recognising that's just the, um, product of p times v over n.
+
+716
+01:37:27,734 --> 01:37:32,184
+So. The final. Temperature.
+
+717
+01:37:33,914 --> 01:37:41,144
+Has the two thirds power. There is A1P not V not over n, which is greater than zero.
+
+718
+01:37:42,314 --> 01:37:48,104
+And similarly plugging in peanut v nought over n for both of these factors of temperature gives us.
+
+719
+01:37:50,284 --> 01:37:53,764
+Another relation between, uh.
+
+720
+01:37:54,864 --> 01:37:59,603
+The pressures. So the final volume in the three halves.
+
+721
+01:37:59,604 --> 01:38:09,673
+Power of the final temperature. The ends cancel as usual and we have.
+
+722
+01:38:09,674 --> 01:38:18,854
+The final pressure is now rearranging things, taking the two thirds power and noting that we have an extra factor of volume.
+
+723
+01:38:19,724 --> 01:38:30,944
+The ratio becomes. Being out over the after the 5/3 power, which is again greater than the initial pressure matching what we do above.
+
+724
+01:38:32,324 --> 01:38:39,404
+And rearranging gives the final piece of the full information about how pressure and temperature change.
+
+725
+01:38:40,124 --> 01:38:49,664
+In this case of adiabatic expansion, 5/3 minus one times that initial pressure also greater than zero.
+
+726
+01:38:51,614 --> 01:38:54,883
+So that is well, the second of two examples.
+
+727
+01:38:54,884 --> 01:38:58,154
+We've looked at isothermal expansion. We've looked at eight about a compression.
+
+728
+01:38:58,484 --> 01:39:01,844
+We've run out of time to say anything further about them.
+
+729
+01:39:01,874 --> 01:39:09,973
+Unless there are final questions. We will come back next week and put multiple processes of this sort together in order
+
+730
+01:39:09,974 --> 01:39:17,054
+to get a bona fide thermodynamic cycle and see how we can do work or move heat,
+
+731
+01:39:17,804 --> 01:39:24,944
+whichever way we we wanted to operate. Are there final questions before I let you go for the rest of the day?
+
+732
+01:39:27,714 --> 01:39:32,564
+I see shaking heads, so I'll stop the recording there.
+
+733
+01:39:32,574 --> 01:39:33,164
+Victoria.
+
