@@ -1,0 +1,1485 @@
+1
+00:00:02,380 --> 00:00:10,970
+[Auto-generated transcript. Edits may have been applied for clarity.]
+There's the bells chime in the air, so I might as well get underway with the.
+
+2
+00:00:14,440 --> 00:00:21,970
+Logistical matters in the organisation message on Thursday morning 6th of March.
+
+3
+00:00:22,720 --> 00:00:27,310
+And here's the magic number of 63.
+
+4
+00:00:29,650 --> 00:00:35,600
+59 and 43 and a few other.
+
+5
+00:00:35,650 --> 00:00:42,880
+Just a couple of things before we get into actual tutorial exercises and various sorts.
+
+6
+00:00:43,510 --> 00:00:48,280
+So first was a more traditional homeworks is due tomorrow.
+
+7
+00:00:48,310 --> 00:00:55,959
+There are already been so submissions, but this is an opportunity to ask general questions about anything showing up out there,
+
+8
+00:00:55,960 --> 00:01:05,770
+especially if things are clear in the assignment. And similarly for the office hours that follow this week's tutorial coming up in an hour.
+
+9
+00:01:06,460 --> 00:01:14,950
+And while the marking for the computer assignments remains underway, the model solutions are up on canvas,
+
+10
+00:01:15,730 --> 00:01:24,850
+which I meant to pull up, and we'll probably be faced with another two factor authentication.
+
+11
+00:01:25,600 --> 00:01:32,470
+And just by switching until the projector seems to have cold, dark.
+
+12
+00:01:37,510 --> 00:01:42,070
+So. I thought I could get away with the question.
+
+13
+00:01:42,310 --> 00:01:47,420
+That's Firefox. It's reduced size.
+
+14
+00:01:48,870 --> 00:02:02,070
+If you go to the computer segment, you'll see links to both the type of the novel solutions as well as the corresponding Python code.
+
+15
+00:02:03,330 --> 00:02:08,210
+And that will give you some indication of, um,
+
+16
+00:02:09,570 --> 00:02:17,060
+how things were meant to go in case there were any questions or concerns you had about that leading up to this feedback.
+
+17
+00:02:17,580 --> 00:02:21,250
+Live on the projector? We are. That is a worrying sign there.
+
+18
+00:02:21,260 --> 00:02:27,240
+If we start to go back and forth between the same code, we'll see how it goes.
+
+19
+00:02:27,810 --> 00:02:34,049
+I'll just pause now and see if there are general questions you want to bring up about the assignments,
+
+20
+00:02:34,050 --> 00:02:40,770
+the solutions, or for that matter, any topic we've seen in the module, even in passing,
+
+21
+00:02:40,770 --> 00:02:45,870
+is Fair Game two to review here in the tutorials,
+
+22
+00:02:45,870 --> 00:02:56,670
+an opportunity for you to raise any questions or concerns that have come to mind throughout the course of the semester so far.
+
+23
+00:03:02,970 --> 00:03:08,910
+But if you don't have anything to bring up, I have some things of my own.
+
+24
+00:03:09,060 --> 00:03:14,970
+Building on the exercises that we have seen over the past week.
+
+25
+00:03:15,380 --> 00:03:20,400
+We introduced them a week ago when you had the past week to play around with them.
+
+26
+00:03:20,400 --> 00:03:23,850
+We can review them and wrap them up today.
+
+27
+00:03:24,720 --> 00:03:30,900
+And just because we were getting back into the swing of tutorials after having computer labs earlier in the term,
+
+28
+00:03:31,500 --> 00:03:34,650
+a couple of exercise sheets had piled up.
+
+29
+00:03:35,250 --> 00:03:38,040
+So when looking at the entropy balance.
+
+30
+00:03:40,290 --> 00:03:51,600
+And you, uh, building up a micro canonical ensemble example of heat transfer, we started looking at, um, solutions to that.
+
+31
+00:03:51,930 --> 00:03:53,250
+Toward the end of last week.
+
+32
+00:03:54,300 --> 00:04:07,290
+What we did not look at all last week was a set of exercises that were just introduced to build up Stirling's formula as an asymptote series.
+
+33
+00:04:08,310 --> 00:04:13,810
+Um, so that was something for you to work on independently.
+
+34
+00:04:13,830 --> 00:04:22,740
+And probably with both of these sets of exercises together, there will be time really to go through all aspects of that series formula.
+
+35
+00:04:23,190 --> 00:04:27,450
+There are, again, uh, some fully worked model solutions on canvas,
+
+36
+00:04:27,810 --> 00:04:35,820
+but some highlights at least we can talk through today before introducing something new for you to, uh.
+
+37
+00:04:38,040 --> 00:04:46,349
+Explore over the coming week. And as advertised yesterday, regular Monday.
+
+38
+00:04:46,350 --> 00:04:54,090
+This will look into the mixing entropy in more detail and see how this can actually be computed.
+
+39
+00:04:54,360 --> 00:05:03,810
+Still, the Gibbs approximation for a simplified case, um, that will get to hopefully before the end of today.
+
+40
+00:05:06,900 --> 00:05:13,860
+So. Diving right into this first topic, the entropy bounds,
+
+41
+00:05:15,090 --> 00:05:28,230
+we had this very simple argument that we can bound the entropy just by looking at the sum over energy partitions after heat exchange.
+
+42
+00:05:28,890 --> 00:05:35,100
+The single largest term in that sum is a lower bound, because there are other terms getting into it.
+
+43
+00:05:35,610 --> 00:05:40,830
+If we can count the number of terms in the product of that number types, the maximum is an upper bound.
+
+44
+00:05:41,310 --> 00:05:50,490
+And this, uh, turns out to be, in relative terms, a fairly tight constraint as the number of degrees of freedom,
+
+45
+00:05:50,490 --> 00:05:52,770
+the number of particles in our system increases.
+
+46
+00:05:53,490 --> 00:06:04,020
+And we worked through yesterday, I had the example where we had ten spins specifically in each system.
+
+47
+00:06:04,020 --> 00:06:10,080
+But this works in general for any concrete realisation of the micro particle ensemble.
+
+48
+00:06:11,730 --> 00:06:16,470
+Those ten spins allow energies to range from -10 to 10.
+
+49
+00:06:17,160 --> 00:06:21,549
+We fix the total energy at minus ten across the two systems.
+
+50
+00:06:21,550 --> 00:06:29,070
+Then there are six possible ways of distributing that energy across the the two sides.
+
+51
+00:06:30,510 --> 00:06:36,720
+And we went through exactly this table, uh, last week counting up the multiplicity,
+
+52
+00:06:37,140 --> 00:06:43,050
+the number of possible microstates for all those different distributions of energies,
+
+53
+00:06:43,440 --> 00:06:49,260
+finding that the maximum number of microstates occurred when the energy was roughly evenly distributed,
+
+54
+00:06:49,710 --> 00:06:55,410
+six and for either of the two sides, rather than all ten units on inside of the other.
+
+55
+00:06:56,100 --> 00:07:09,990
+And that gave us about 89% of the total entropy just from either a single one of those, uh, two possible distributions that we ended up with.
+
+56
+00:07:11,070 --> 00:07:17,160
+It may be worth noting that if we put the two of them together, we don't get twice 89%.
+
+57
+00:07:17,760 --> 00:07:21,690
+We have to take the log of the sum rather than the sum of the logs,
+
+58
+00:07:22,350 --> 00:07:34,320
+and that 89% goes up to about 96% from that combination to 10,800 microstates out of the total 15,500.
+
+59
+00:07:36,370 --> 00:07:40,480
+And then the task that we had to follow was based on that.
+
+60
+00:07:41,230 --> 00:07:48,160
+And representative illustration was to see what happens as a number of degrees of freedom increases,
+
+61
+00:07:48,160 --> 00:07:53,440
+going from ten on each side up to 20, 30, 40 and so on.
+
+62
+00:07:53,750 --> 00:07:59,560
+Well, keeping that entropy fixed, keeping the total energy fixed.
+
+63
+00:08:00,960 --> 00:08:06,640
+And you will have found when you did this that there were more and more spins.
+
+64
+00:08:06,640 --> 00:08:15,310
+There were more and more ways to have different values of the energy and other side that added up to the fixed total.
+
+65
+00:08:15,310 --> 00:08:20,410
+So there were more terms in the sum and every individual term got larger.
+
+66
+00:08:22,240 --> 00:08:30,220
+Um, just thanks to you having more spins to take all possible values with a fixed energy, uh, you know, the lighter side.
+
+67
+00:08:31,390 --> 00:08:39,760
+So going from ten spins to larger numbers is a fairly routine generalisation
+
+68
+00:08:39,760 --> 00:08:45,220
+that just involves lots of computations of all of these binomial coefficients.
+
+69
+00:08:47,020 --> 00:08:53,589
+And it's a nice illustration of how we can computers to do routine computations.
+
+70
+00:08:53,590 --> 00:09:00,040
+For us, it's worth working through it by hand with a small case to make sure we understand all the details.
+
+71
+00:09:00,880 --> 00:09:06,550
+But once we stick to generalise to some larger number, then.
+
+72
+00:09:08,510 --> 00:09:17,960
+Uh, automating all of those calculations with some code can give us all the benefit.
+
+73
+00:09:18,170 --> 00:09:22,690
+I'm trying to zoom in here. Firefox is not there.
+
+74
+00:09:22,700 --> 00:09:31,130
+This is something to do with being in the Jupyter text cell or the code cell external page.
+
+75
+00:09:32,000 --> 00:09:44,170
+So. This set of code is also posted on canvas, just under the Entropy Bounds tutorial itself,
+
+76
+00:09:44,170 --> 00:09:47,740
+along with the model solutions I had on the screen a moment ago.
+
+77
+00:09:48,370 --> 00:09:51,909
+And it goes through the calculation.
+
+78
+00:09:51,910 --> 00:09:54,940
+So a for loop and two for loops.
+
+79
+00:09:54,940 --> 00:10:03,280
+The first is just checking the binomial coefficients for each single system with a given number of spins.
+
+80
+00:10:04,030 --> 00:10:08,049
+So that is what gives us that first table.
+
+81
+00:10:08,050 --> 00:10:12,040
+There the multiplicity on either side that has to be multiplied together.
+
+82
+00:10:13,450 --> 00:10:23,380
+If I set end of ten and run that, we see the numbers that were on the screen ten going up to 252 on either side,
+
+83
+00:10:23,830 --> 00:10:32,650
+and then we have to go through another for loop and multiply those multiplicities together to get the total term in the sum.
+
+84
+00:10:33,220 --> 00:10:41,260
+With the imposition of this constraint that the total energy costs add up to the fixed number specified here.
+
+85
+00:10:43,330 --> 00:10:47,830
+So the way that I have done this, and if you want to have it go independently,
+
+86
+00:10:48,190 --> 00:10:52,750
+you will find many different ways of arranging the numerical computation.
+
+87
+00:10:53,380 --> 00:11:02,560
+So one of the joys of uh, programming work, that also makes it a challenge to mark at this quickly.
+
+88
+00:11:03,460 --> 00:11:09,640
+What I've done is gone through all the possible values of the energy in one of those systems.
+
+89
+00:11:11,020 --> 00:11:20,679
+The next line finds out what the energy in the other system would have to be to give the total conserved value, and if that energy,
+
+90
+00:11:20,680 --> 00:11:28,540
+or equivalently, the number of other vortex spins is larger than the number of spins that we have to in total, then we can skip that case.
+
+91
+00:11:29,350 --> 00:11:33,220
+It does not show up in the subsequent table.
+
+92
+00:11:33,640 --> 00:11:41,590
+So as an example, we cannot have plus two energy in system one which would have four upward pointing spins because
+
+93
+00:11:41,590 --> 00:11:47,950
+that would require -12 units of energy in system two which goes 11 upward pointing spins,
+
+94
+00:11:47,950 --> 00:12:00,020
+which is more than we have available. So after that checks we have binomial coefficients to compute, multiply and add to the seven.
+
+95
+00:12:00,700 --> 00:12:05,440
+And then it's just a simple matter of printing out the sum with some nice formatting,
+
+96
+00:12:05,920 --> 00:12:13,450
+checking the max and checking the sum and checking how the overall balance behaves.
+
+97
+00:12:13,450 --> 00:12:18,460
+So this is the ten speed case we work through by hand 5400 is the maximum,
+
+98
+00:12:19,000 --> 00:12:29,170
+and we get a 9% of the entropy just for that single term, one of the two roughly evenly distributed cases.
+
+99
+00:12:30,460 --> 00:12:42,550
+And with this machinery setup that occurs, it is immediate up to, um, less than a second of computation.
+
+100
+00:12:43,000 --> 00:12:51,190
+To repeat all of this for a hundred spins there the binomial coefficients are now becoming, well, fairly large,
+
+101
+00:12:52,570 --> 00:12:58,720
+and when multiplied together they're giving us terms in the sum, getting up to ten to the power 57.
+
+102
+00:12:59,860 --> 00:13:05,740
+The overall maximum is exactly 876, eight times ten to the power 57.
+
+103
+00:13:06,220 --> 00:13:10,750
+And that gives us 99% of the overall entropy.
+
+104
+00:13:10,750 --> 00:13:19,150
+I think we've um, we turn off some of this output to use differently.
+
+105
+00:13:19,160 --> 00:13:23,080
+How can we still clean up?
+
+106
+00:13:24,330 --> 00:13:27,360
+Some of those numbers that you see going through here.
+
+107
+00:13:27,990 --> 00:13:34,500
+We look at 160. I think that's about where we get, uh, within the 8%.
+
+108
+00:13:35,040 --> 00:13:46,620
+So ten to the power, 93, uh, possible microstates are accounted for from one particular distribution energies.
+
+109
+00:13:47,640 --> 00:13:57,180
+Um, and there are 155 other terms that just account for 1.1% of the remaining entropy.
+
+110
+00:13:58,560 --> 00:14:05,360
+And if we look at where that maximum term pops up 7.2 times ten to be.
+
+111
+00:14:07,050 --> 00:14:11,070
+93. That is right here.
+
+112
+00:14:11,640 --> 00:14:20,580
+And it is, in fact, exactly the same distribution of energies minus four on one side and minus six on the other in either orientation.
+
+113
+00:14:21,240 --> 00:14:26,820
+Each one of those separately gives us 99% of the entropy.
+
+114
+00:14:29,260 --> 00:14:40,210
+Of course, one final thing I can say about this before declaring victory is that there are some limitations to numerical analysis,
+
+115
+00:14:40,630 --> 00:14:50,230
+in particular, the fact that we have to represent all of these numbers as a sequence of bits behind the scenes in the computer.
+
+116
+00:14:50,770 --> 00:14:57,969
+And if we start to look at fairly large values of large compared to one,
+
+117
+00:14:57,970 --> 00:15:07,660
+but still smaller compared to ten to the power 23 that we think about for statistical mechanics in general, there are 511 terms of the cell.
+
+118
+00:15:08,560 --> 00:15:14,290
+And Python thinks that the total number of microstates is infinite rather than a number.
+
+119
+00:15:16,300 --> 00:15:24,160
+So it can't tell how much of that total is accounted for by the single largest distribution.
+
+120
+00:15:24,730 --> 00:15:32,540
+And all that's going on here is that the product of binomial coefficients is overflowing.
+
+121
+00:15:33,490 --> 00:15:38,390
+The possible representations of. Integers.
+
+122
+00:15:39,410 --> 00:15:47,780
+Uh, sorry. Puzzle representations of floating point numbers for the roughly even distribution of stencil minus five on both sides.
+
+123
+00:15:49,100 --> 00:15:52,240
+Um. That is getting up to.
+
+124
+00:15:53,230 --> 00:15:58,780
+Well, once we take the sum over all of these factors, it exceeds this ten to the power 308,
+
+125
+00:15:59,290 --> 00:16:10,030
+which is the upper limit of numbers that can be represented with 64 bits, so called double precision and floating point arithmetic in a computer.
+
+126
+00:16:10,870 --> 00:16:20,530
+So it is possible to go beyond this. We then have to be a bit more careful and keep track of how many bits we are using to represent numbers.
+
+127
+00:16:20,830 --> 00:16:28,900
+And it becomes a bit of a headache. Oh there are. Well, as with everything in Python, there are libraries to do it that you can import.
+
+128
+00:16:29,440 --> 00:16:36,760
+So things to do with arbitrary precision arithmetic things is not just 64 bits,
+
+129
+00:16:37,150 --> 00:16:43,870
+but larger and larger numbers that can represent exponentially larger floating points real values.
+
+130
+00:16:47,590 --> 00:16:52,329
+So that's probably more than I really needed to say about this.
+
+131
+00:16:52,330 --> 00:16:55,960
+Squirrels. Enjoy seeing some of these challenges.
+
+132
+00:16:56,350 --> 00:17:07,270
+I have a note here that if we go up from 515 to 517, not only the sub but also the individual uh term in the sum with.
+
+133
+00:17:08,380 --> 00:17:15,820
+There's even distribution and a few around it all exceed that ten to the power 308 upper limit,
+
+134
+00:17:16,480 --> 00:17:21,970
+and the comparisons will require a bit more work to carry out.
+
+135
+00:17:22,900 --> 00:17:36,910
+This may be the main point to take away from all of this is the fact that there are so many more microstates with an even distribution of energies,
+
+136
+00:17:37,480 --> 00:17:42,100
+compared to the more balanced cases where there are.
+
+137
+00:17:43,980 --> 00:17:51,180
+Um. You know, large mismatches in the amount of energy that we have on either side.
+
+138
+00:17:52,410 --> 00:18:03,000
+So even if we go back to our simple ten speed case, we see here that this 5400 possibilities are computed by hand,
+
+139
+00:18:03,000 --> 00:18:08,940
+is more than 20 times the 252 that we would have for all the energy being on one side or the other.
+
+140
+00:18:09,630 --> 00:18:17,070
+So as we go through the heat exchange process, taking two systems, putting them into thermal contact, we take them away again.
+
+141
+00:18:17,670 --> 00:18:23,910
+If we had started with the two systems that had all the energy on one side and then on the other,
+
+142
+00:18:24,420 --> 00:18:34,440
+after that process of returning the thermal contact, there is a 20 times larger chance that the final system would have an even distribution.
+
+143
+00:18:36,180 --> 00:18:42,090
+Um, and conversely, if we had started with a distribution problem together because of a apart,
+
+144
+00:18:42,510 --> 00:18:50,880
+there's a highly suppressed chance that the energy would have moved away from that human distribution into a more unbalanced one.
+
+145
+00:18:51,930 --> 00:19:00,440
+And this, this relies on all the probabilities of these microstates being equal into the equilibrium sample.
+
+146
+00:19:01,020 --> 00:19:04,410
+That was our initial definition of thermodynamic equilibrium.
+
+147
+00:19:04,830 --> 00:19:13,740
+And what that's telling us is essentially that we can tell by observation which
+
+148
+00:19:14,490 --> 00:19:18,750
+direction we have gone between these two systems are balanced or evenly balanced,
+
+149
+00:19:19,260 --> 00:19:24,030
+which was the more likely to be the initial case, which more likely to be the final case?
+
+150
+00:19:25,500 --> 00:19:34,469
+Just as we saw at the very start of the term, moving from separated, in this case,
+
+151
+00:19:34,470 --> 00:19:42,120
+density or energies to some or even distribution is what we observe in everyday life.
+
+152
+00:19:42,570 --> 00:19:47,070
+And we have now described this through the mathematics of microstates.
+
+153
+00:19:47,820 --> 00:19:52,770
+Um, the energies just by the number of microstates that there are,
+
+154
+00:19:53,340 --> 00:20:03,989
+are essentially guaranteed to move from given one direction and not the other, they will become more mixed and they will not be unmixed.
+
+155
+00:20:03,990 --> 00:20:10,220
+Even though there is nothing in the underlying Newtonian physics that would prevent that.
+
+156
+00:20:10,230 --> 00:20:13,410
+In principle, it's just a matter of counting microstates.
+
+157
+00:20:15,480 --> 00:20:23,220
+So that's the arrow of time in a slightly example spin system and gone on to all about that.
+
+158
+00:20:23,550 --> 00:20:34,270
+Are there any questions? Um, before we wrap up the other half of last week's tutorial exercises with Stirling's formula,
+
+159
+00:20:34,330 --> 00:20:46,110
+I should say don't be put off by me saying I'm going to feel free to ask anything that comes to mind and without worries about, um, how the time runs.
+
+160
+00:20:46,110 --> 00:20:55,800
+This is your time for you to raise any issues rather than necessarily listen to me witter on about double precision floating point rejection.
+
+161
+00:21:00,740 --> 00:21:06,680
+But not hearing any objections we had in the other exercise sheets.
+
+162
+00:21:07,550 --> 00:21:15,560
+Three increasingly elaborate books and circles formula this equation one here, which.
+
+163
+00:21:17,810 --> 00:21:25,040
+Brings in, um in turn three of the different pieces that we can look at.
+
+164
+00:21:25,860 --> 00:21:31,820
+The, the main one is this. And over the exponential base e whole raised to the power.
+
+165
+00:21:32,480 --> 00:21:40,850
+If we take the logarithm that gives us the and we'll get minus ed that we have started using fairly routinely in calculations.
+
+166
+00:21:40,850 --> 00:21:46,340
+In the lecture, there is a famous squared and factor that comes in front of that,
+
+167
+00:21:46,940 --> 00:21:55,430
+that just that gives the next leading term in the logarithm, which itself is still a logarithm of n rather than in factorial.
+
+168
+00:21:56,150 --> 00:22:03,020
+And then there is finally an infinite series of corrections that are suppressed by powers of this large number of degrees of freedom,
+
+169
+00:22:03,020 --> 00:22:08,060
+and with coefficients that. The third task is to compute some of those.
+
+170
+00:22:11,090 --> 00:22:22,190
+So I suspect you all had the trouble with the first analysis, the entropy bounds, um, though saying that it does depend on.
+
+171
+00:22:23,430 --> 00:22:29,250
+The particular approach that you take. There are some approaches that um.
+
+172
+00:22:29,880 --> 00:22:37,020
+I gave a little hint about. That makes these bounds very quick and easy to demonstrate.
+
+173
+00:22:38,430 --> 00:22:43,440
+Uh, one of those is to just consider, in factorial itself,
+
+174
+00:22:44,400 --> 00:22:52,530
+a kind of familiar definition of this that you have for integer n is that it's the product of n times n minus one times n minus two,
+
+175
+00:22:52,530 --> 00:22:53,820
+all the way down to one.
+
+176
+00:22:55,860 --> 00:23:06,220
+We can freely replace each n minus one and n minus two by an n, n is larger than n minus one and minus two, and all of those terms.
+
+177
+00:23:06,240 --> 00:23:18,300
+There is a strict inequality there. Um, unless it is exactly one, we will assume it is large for this exercise, and this whole series is just.
+
+178
+00:23:18,990 --> 00:23:23,220
+And to the n, so n factorial is less than and to the.
+
+179
+00:23:23,250 --> 00:23:37,040
+Hence, the actual hint in the tutorial exercise sheet was to consider the exponential function e to the n, which is.
+
+180
+00:23:37,740 --> 00:23:43,710
+The fundamental definition of an exponential is as this infinite power series.
+
+181
+00:23:44,670 --> 00:23:48,780
+The exponent raised to a power k or divided by k factorial.
+
+182
+00:23:49,740 --> 00:23:53,610
+There are infinite number of terms in this series. They are all positive.
+
+183
+00:23:54,000 --> 00:24:03,300
+If we look at any one of them, then it will be smaller than the total series that includes other terms.
+
+184
+00:24:04,440 --> 00:24:07,440
+The interesting term to look at is the one when k equals n.
+
+185
+00:24:08,340 --> 00:24:21,390
+So we have end to the end over n. Factorial is one term in this series, and if we rearrange this, take the n factorial to the other side.
+
+186
+00:24:21,930 --> 00:24:29,010
+We have and divide through by each of the n, we end up with the other bound.
+
+187
+00:24:29,820 --> 00:24:40,560
+Putting them together. Taking the logarithm. The smallest one is the logarithm of and over each to the n is n log e, sorry a log n minus n log e.
+
+188
+00:24:41,010 --> 00:24:52,440
+Lucky is one that is less than the end factorial, which in turn is less than and log n on its own.
+
+189
+00:24:54,210 --> 00:25:00,510
+And to look at these, they they come out almost immediately from these tricks,
+
+190
+00:25:00,900 --> 00:25:07,260
+and they look kind of like the trivial and tricky bounds that we introduced last week.
+
+191
+00:25:07,860 --> 00:25:11,320
+Um. Very straightforward things.
+
+192
+00:25:11,770 --> 00:25:18,160
+Not necessarily with much content. If we divide through by and look and go, we can.
+
+193
+00:25:20,980 --> 00:25:25,990
+Um, make an observation that as.
+
+194
+00:25:28,720 --> 00:25:33,040
+And increases it goes to become a very large number.
+
+195
+00:25:33,730 --> 00:25:43,660
+The only difference between the upper and lower bounds is this suppressed term one over long in that will go to zero.
+
+196
+00:25:43,810 --> 00:25:45,100
+As n goes to infinity.
+
+197
+00:25:46,000 --> 00:25:55,360
+So asymptotically in that large and limit we have that this ratio of that factorial over at Moorgate discounted by one on either side.
+
+198
+00:25:56,050 --> 00:25:59,530
+And there is some formal mathematics that I won't go into.
+
+199
+00:26:01,720 --> 00:26:07,720
+Um, that sets up a precise meaning to this sort of squiggle notation.
+
+200
+00:26:08,530 --> 00:26:23,920
+Um, which is to say that precise meaning, just to say loosely, quickly, is that, um, asymptotically in that limit of very large and greater than one,
+
+201
+00:26:24,220 --> 00:26:31,810
+the logarithm of n factorial scales like n log in as its leading term, which is one of the.
+
+202
+00:26:32,950 --> 00:26:36,160
+Um, but we've seen this in our use of Stirling's formula.
+
+203
+00:26:37,660 --> 00:26:46,000
+And, um, so something that's not surprising but now has been verified something that.
+
+204
+00:26:48,320 --> 00:26:50,899
+Just check for questions about these bounds.
+
+205
+00:26:50,900 --> 00:27:05,390
+But I suspect you're more interested in the next two analyses, which are a bit more interesting and not as straightforward to to work with.
+
+206
+00:27:07,010 --> 00:27:13,249
+The second one is to get the square root two pi and the factor,
+
+207
+00:27:13,250 --> 00:27:20,750
+which is actually the contribution that Stirling made to a previously existing knowledge.
+
+208
+00:27:22,310 --> 00:27:30,080
+Suffice to get his name on this formula with some violence to the historical record.
+
+209
+00:27:31,640 --> 00:27:42,500
+Um, and there is again a hint in the tutorial sheet about one possible way to do this out of many different possibilities.
+
+210
+00:27:42,950 --> 00:27:50,810
+And this starts by generalising the factorial function actually a way from integers into real numbers.
+
+211
+00:27:52,640 --> 00:27:58,190
+So that's introduced here is the Euler gamma function um,
+
+212
+00:27:58,520 --> 00:28:07,159
+which is an integral over x from zero to infinity of the product of x to the power n times the exponential minus x, where.
+
+213
+00:28:07,160 --> 00:28:14,690
+Here this end can be any real or in fact even the complex number.
+
+214
+00:28:17,840 --> 00:28:21,530
+And at least one end is a non-negative integer.
+
+215
+00:28:21,950 --> 00:28:32,060
+This matches up to the definition of factorial that we know above, just as a product of n times n minus one and minus two, and so on,
+
+216
+00:28:32,750 --> 00:28:37,850
+and can then be used to generalise that the definition of or can be used as a
+
+217
+00:28:37,850 --> 00:28:45,050
+definition of generalises the concept of a factorial to real or complex numbers.
+
+218
+00:28:45,380 --> 00:28:55,640
+That's not really our main interest here. You want to get a nice approximation to apply to statistical analyses.
+
+219
+00:28:57,760 --> 00:29:10,540
+The hint or suggestion in the tutorial sheet was to consider the derivative of both sides of the simple exponential function, so e to the minus x.
+
+220
+00:29:11,020 --> 00:29:15,370
+We take the integral that it is e to the minus x,
+
+221
+00:29:15,370 --> 00:29:23,860
+again divided by minus x e to the minus infinity vanishes, so the other limit just gives plus one over a.
+
+222
+00:29:24,520 --> 00:29:29,890
+If we take derivatives of that both sides of that equation with respect to A.
+
+223
+00:29:31,570 --> 00:29:43,530
+Interesting things happen. So the derivatives of the right hand side is just as easy as its integral.
+
+224
+00:29:43,540 --> 00:29:49,540
+Instead of bringing a negative one over a, we bring down a negative x.
+
+225
+00:29:52,960 --> 00:30:04,700
+Easily minus 8XDX. It is worthwhile to be cautious about interchanging the derivative with respect to a the integral with respect to x.
+
+226
+00:30:05,300 --> 00:30:10,220
+It is possible in this case, but can in other cases lead to trouble,
+
+227
+00:30:11,060 --> 00:30:22,880
+and then the derivative of one over a is one over a squared with a negative sign or twice sorry minus a to minus two.
+
+228
+00:30:25,790 --> 00:30:33,169
+If we take so we get back similar independence of A to what we had a on the
+
+229
+00:30:33,170 --> 00:30:36,910
+left hand side just shows up in the exponential still on the right hand side.
+
+230
+00:30:37,080 --> 00:30:42,590
+A simple power of a. So we can keep taking derivatives with respect to A.
+
+231
+00:30:43,040 --> 00:30:49,580
+And once we have taken and first we will have the equality.
+
+232
+00:30:52,200 --> 00:30:58,950
+Uh, within the powers of minus x from derivatives of the exponential function on one side,
+
+233
+00:30:59,550 --> 00:31:07,620
+and this will be minus one multiplied by minus two times, minus three times minus four, and so on.
+
+234
+00:31:08,040 --> 00:31:19,650
+Which is in fact in factorial. Once we get up to minus, and there are additionally and minus signs that we have to pull out of that factorial.
+
+235
+00:31:20,070 --> 00:31:28,469
+And then A has powers coming down from minus one all the way to minus one minus.
+
+236
+00:31:28,470 --> 00:31:33,780
+And so adding these end derivatives to the minus one we started off with.
+
+237
+00:31:35,550 --> 00:31:38,760
+So A ends up to the power of minus n plus one.
+
+238
+00:31:40,080 --> 00:31:46,050
+This A is just an arbitrary number that we have added to take derivatives.
+
+239
+00:31:46,620 --> 00:31:50,670
+If we set it to one, that term goes to one.
+
+240
+00:31:51,300 --> 00:31:54,800
+The negative signs cancel out on both sides.
+
+241
+00:31:54,810 --> 00:32:02,340
+We always get a negative sign on each side from each derivative, so they come into perfect unison to cancel out.
+
+242
+00:32:03,030 --> 00:32:13,320
+And well, we have the n factorial that we were after from an integer number of derivatives, and this is equal to.
+
+243
+00:32:16,800 --> 00:32:28,200
+This city and with no more negative sign anymore than E to the minus X with a set of one, is our target.
+
+244
+00:32:31,680 --> 00:32:41,670
+Unfortunately, that was only the starting point of the, uh, actual calculation, because we've not yet.
+
+245
+00:32:42,360 --> 00:32:45,620
+Well, we've got an expression for exactly that.
+
+246
+00:32:45,660 --> 00:33:03,690
+We need to actually evaluate this integral, uh, for, for arbitrary n, and there is a trick also suggested in the exercise sheet for doing this, which.
+
+247
+00:33:06,770 --> 00:33:09,990
+Is I printed out the trick.
+
+248
+00:33:10,650 --> 00:33:19,920
+And that trick is to approximate this kind of nasty looking integral with powers of x and exponential specs,
+
+249
+00:33:20,400 --> 00:33:25,950
+as in Gaussian function that we know how to integrate.
+
+250
+00:33:27,570 --> 00:33:37,680
+To give some motivation for this quickly. This is a plot where I have the two curves on top of each other.
+
+251
+00:33:38,280 --> 00:33:48,030
+One is exactly the arguments of the integral in um, actually n times e to the minus x, you're integrating that from zero off to infinity.
+
+252
+00:33:48,510 --> 00:33:50,579
+Uh, cut off infinity at 200.
+
+253
+00:33:50,580 --> 00:34:04,440
+And here I have actually set this arbitrary, um, and to be 100 so large compared to one small compared to ten to the power 23.
+
+254
+00:34:05,190 --> 00:34:09,930
+This by I, we can see a peak around where x equals n.
+
+255
+00:34:11,040 --> 00:34:19,050
+And if I design a Gaussian function with the peak in the same location and the same normalisation,
+
+256
+00:34:19,530 --> 00:34:34,350
+that's the the blue dotted curve that you can barely see, uh, poking out from under the exact integrand, um, on either side around that peak.
+
+257
+00:34:34,980 --> 00:34:40,680
+And the agreement between those two curves I mentioned gets better and better as increases.
+
+258
+00:34:41,520 --> 00:34:47,430
+So this is some visual motivation that it should be possible to approximate.
+
+259
+00:34:48,090 --> 00:34:52,440
+Uh, yes. The integral here by the Gaussian we know how to do.
+
+260
+00:34:53,460 --> 00:35:04,800
+And the starting point for that is to find out where the peak of that Gaussian should be, that, that determines um.
+
+261
+00:35:06,960 --> 00:35:15,300
+Where the argument is largest and gives us a starting point to expand around with the,
+
+262
+00:35:15,300 --> 00:35:20,700
+the Gaussian function being the leading order term in that expansion that survives.
+
+263
+00:35:21,780 --> 00:35:28,890
+So are there questions about the argument before we quickly go through some of the steps?
+
+264
+00:35:34,950 --> 00:35:38,280
+So I'll do the maximisation quickly.
+
+265
+00:35:38,940 --> 00:35:44,040
+You want to take the derivative with respect to x and set that equal to zero.
+
+266
+00:35:44,670 --> 00:35:56,100
+And the derivative has two terms. From the product rule you have the power of x that brings down the ten in the x comes along for the ride.
+
+267
+00:35:56,580 --> 00:36:05,640
+In the other term we have, um, a negative sign from the derivative of the exponential in the next to the end comes along for the ride.
+
+268
+00:36:06,750 --> 00:36:12,510
+E to the minus x is always non-zero for x going from zero to infinity.
+
+269
+00:36:12,510 --> 00:36:14,700
+So we can divide through by that.
+
+270
+00:36:15,990 --> 00:36:24,690
+And then we just have a relation between x to the n and n times x and minus one, cancelling off those x to the minus one factors.
+
+271
+00:36:25,140 --> 00:36:32,430
+We end up immediately with the statement that the there is an extrema when x equals n.
+
+272
+00:36:33,030 --> 00:36:40,920
+So that's nice. That matches what we saw in the plot. It's not too hard to take a second derivative to confirm that this extremum is a maximum.
+
+273
+00:36:41,460 --> 00:36:49,200
+The second derivative ends up being negative. But there are four terms from the product rule applied to each of those two.
+
+274
+00:36:49,560 --> 00:37:01,020
+So let's skip that. In the interest of time. And now we expand our integrand around its peak just by.
+
+275
+00:37:03,240 --> 00:37:07,230
+Changing variables to work in terms of.
+
+276
+00:37:08,520 --> 00:37:13,200
+And the distance from that peak. So the difference between x and n.
+
+277
+00:37:15,960 --> 00:37:24,300
+Um, and we will be interested in expanding in the slope parameter.
+
+278
+00:37:24,300 --> 00:37:32,910
+That is the ratio of this distance from the peak divided by the fixed n that is set at the start.
+
+279
+00:37:33,810 --> 00:37:41,310
+So this can be positive or negative. I would be interested in having it much less than one, which is equivalent to having n much greater than one.
+
+280
+00:37:41,880 --> 00:37:50,940
+So getting back to our integral, we have n factorial equal to this product,
+
+281
+00:37:51,090 --> 00:37:58,350
+which I can have inside a combined exponential function with the usual properties of exponentials.
+
+282
+00:37:58,350 --> 00:38:02,310
+And that's actually n is e to the n log x.
+
+283
+00:38:04,560 --> 00:38:10,740
+That's multiplied by e to the minus x. The product of exponentials becomes the exponential of the sum,
+
+284
+00:38:11,520 --> 00:38:21,030
+and the change of variables first shifts when x equals zero, y is minus n, so the lower bound of integration is shifted.
+
+285
+00:38:21,030 --> 00:38:24,660
+The upper one remains infinite. And then we have.
+
+286
+00:38:26,880 --> 00:38:43,770
+Instead of x we have uh y plus n and we can pull out a factor of n and make that n times one plus a small number in the log minus y minus n,
+
+287
+00:38:44,010 --> 00:38:48,690
+so that x dx is d y without any further factors.
+
+288
+00:38:50,250 --> 00:38:53,370
+And one of the things to. Sorry about that.
+
+289
+00:38:54,390 --> 00:38:58,650
+I actually having set up.
+
+290
+00:39:00,720 --> 00:39:08,010
+The fact that y over n is a small number, we can use the usual Taylor expansion of the log that came up,
+
+291
+00:39:08,700 --> 00:39:14,730
+and we were looking at the canonical energies and entropies and high low temperature limits.
+
+292
+00:39:17,770 --> 00:39:30,329
+Pull out the overall and log n and then expand the log of one plus y over n is just y over n minus the square,
+
+293
+00:39:30,330 --> 00:39:39,760
+with an alternating sign, a factor of two in the denominator, and higher order terms y cubed over n cubed that are suppressed.
+
+294
+00:39:39,780 --> 00:39:47,490
+And there's a bigger notation. Again um the minus y minus n is still coming along.
+
+295
+00:39:48,870 --> 00:39:56,100
+And we can see that this minus y and this n times y over n will cancel out.
+
+296
+00:39:58,590 --> 00:40:02,250
+Uh e to the in log n is into the n.
+
+297
+00:40:02,850 --> 00:40:08,970
+That's independent of Y and can be pulled out of the overall.
+
+298
+00:40:11,340 --> 00:40:15,870
+Um, integral I will actually start approximating at this point.
+
+299
+00:40:15,870 --> 00:40:27,240
+We have an exact n log n. From that term we have e to the um oops crossed out the wrong one.
+
+300
+00:40:28,060 --> 00:40:32,640
+The Y is cancelled. The N is still there.
+
+301
+00:40:35,730 --> 00:40:42,270
+This e to the minus n is also independent of y comes out of the integral.
+
+302
+00:40:44,550 --> 00:40:55,560
+And. We then end up with the exponential of minus y squared over two times n.
+
+303
+00:40:55,680 --> 00:41:00,989
+One factor cancels out with a factor of n up front. I will truncate the series at that point.
+
+304
+00:41:00,990 --> 00:41:06,480
+That's why this is approximate, and it is our Gaussian that we were looking for.
+
+305
+00:41:07,620 --> 00:41:14,880
+The only well, it's not part of Gaussian because the liberal limit of integration does not go all the way to minus infinity.
+
+306
+00:41:15,570 --> 00:41:21,420
+So it is an additional approximation to take that down to minus infinity.
+
+307
+00:41:22,320 --> 00:41:29,309
+And I can argue where you can convince yourself that this will have a negligible or
+
+308
+00:41:29,310 --> 00:41:35,220
+exponentially small effect compared to the terms that already dropped in the expansion.
+
+309
+00:41:35,730 --> 00:41:47,940
+Essentially, what we are doing is continuing this line down off, um, equal to how it continues off on the right hand side of this plot.
+
+310
+00:41:49,140 --> 00:41:58,290
+Everything here is exponentially suppressed by this e to the minus y y starts at zero is -100 here.
+
+311
+00:41:58,800 --> 00:42:07,680
+So we will be starting off with the exponential of -100 square, which you can work out is a very small number even once it's integrated down to.
+
+312
+00:42:07,980 --> 00:42:18,360
+Minus infinity. So the Gaussian gives us just the square root of root pi times the denominator.
+
+313
+00:42:18,660 --> 00:42:22,590
+So that is square root to pi.
+
+314
+00:42:23,040 --> 00:42:28,440
+And. And then and to the n and one over e to the n.
+
+315
+00:42:29,400 --> 00:42:33,360
+And we declare victory with time running out.
+
+316
+00:42:36,270 --> 00:42:43,730
+So. Immediate questions about the second analysis.
+
+317
+00:42:43,740 --> 00:42:47,640
+It's all complete. We managed to get through all pieces of it.
+
+318
+00:42:47,660 --> 00:42:51,930
+We will skip the third analysis pretty much completely.
+
+319
+00:42:51,930 --> 00:43:10,050
+Just to note that, um, the initial coefficients in this asymptotic infinite segments are 1/12 and one over 288, which is 12 times 24.
+
+320
+00:43:11,940 --> 00:43:16,680
+There are many ways to compute that the model solutions go through.
+
+321
+00:43:17,550 --> 00:43:22,970
+Um setting in factorial equal to.
+
+322
+00:43:23,490 --> 00:43:34,590
+We'll set this an n plus one factorial equal to one times n factorial, and plug in the series in terms of added and plus one in each case.
+
+323
+00:43:35,400 --> 00:43:38,910
+Then have to isolate individual powers of n.
+
+324
+00:43:40,980 --> 00:43:53,760
+On both sides of this equation to see that there's a 112 times A that ends up, um, getting it 1/12,
+
+325
+00:43:53,760 --> 00:44:05,370
+two minus A that has to equal zero similar relations for B, more for C, and something that happens once it is set up becomes a routine procedure.
+
+326
+00:44:06,630 --> 00:44:10,010
+Two problems to implement into code.
+
+327
+00:44:10,110 --> 00:44:14,430
+It is also posted on canvas.
+
+328
+00:44:15,530 --> 00:44:17,750
+Um, along with those model solutions.
+
+329
+00:44:20,180 --> 00:44:31,130
+I will skip all of that and also skip the check of this little table that the code generates using just n as input.
+
+330
+00:44:31,820 --> 00:44:45,020
+You can see that just the first. So this two pi n factor and the first two terms of the expansion, even for end of five or 10 or 15,
+
+331
+00:44:45,410 --> 00:44:52,490
+suffice to produce many significant figures of the direct log n factorial calculation.
+
+332
+00:44:53,360 --> 00:45:07,200
+Um, very quickly, and also without the computational challenge of running over every, um, precision of floating point arithmetic.
+
+333
+00:45:07,220 --> 00:45:14,510
+So this is how you can plot those two functions and compare them for kind of 100,000.
+
+334
+00:45:20,540 --> 00:45:27,020
+Well modulo overflow and see how the curves get closer and closer together.
+
+335
+00:45:27,800 --> 00:45:37,280
+Here we don't even compute approximations to log n factorial for the first number 10 billion,
+
+336
+00:45:38,570 --> 00:45:45,050
+where the direct taking the log of the factorial badly overflows.
+
+337
+00:45:46,190 --> 00:45:52,250
+Machine precision in a computer. But the analytic functions are, um, nice and tractable.
+
+338
+00:45:55,010 --> 00:45:59,210
+Intelligence unfortunately, taken even more than I expected,
+
+339
+00:45:59,690 --> 00:46:07,220
+and only have a couple of minutes to talk through the next set of exercises that you have to work on over the coming week.
+
+340
+00:46:08,750 --> 00:46:14,930
+Um, again, I brought in a few printouts. If you want a paper copy, they're up at the front for you to grab.
+
+341
+00:46:17,300 --> 00:46:27,110
+Um, so all we are doing here is kind of an intermediate case between the cases of distinguishable versus indistinguishable particles,
+
+342
+00:46:27,110 --> 00:46:35,090
+that we looked at a lecture and saw that the distinguishable case that you invest when we went through particle exchange.
+
+343
+00:46:35,870 --> 00:46:42,200
+Um, soon as the similar procedure to the heat exchange and earlier on.
+
+344
+00:46:43,430 --> 00:46:54,260
+So here we have particles that are identical apart from a single property, um, which is their colour that I did not print in this printout.
+
+345
+00:46:54,860 --> 00:46:59,600
+So some of these particles are red, some are blue.
+
+346
+00:47:00,020 --> 00:47:03,380
+And after they mix the red and blue particles.
+
+347
+00:47:05,570 --> 00:47:10,820
+Do not end up on the sides of the container where they started.
+
+348
+00:47:10,970 --> 00:47:16,820
+They are scrambled. And it is not too hard to compute.
+
+349
+00:47:17,690 --> 00:47:27,320
+The final entropy, at least with gives us approximation that um and particles end up on either side in this particular case.
+
+350
+00:47:29,090 --> 00:47:35,629
+Um, so what you have to deal with, just talk through briefly.
+
+351
+00:47:35,630 --> 00:47:42,650
+A couple of hints in the exercise sheet is that we are dealing with two gases.
+
+352
+00:47:43,310 --> 00:47:48,290
+The particles within each of those two gases are indistinguishable on themselves.
+
+353
+00:47:48,860 --> 00:47:57,050
+So we have to include factors of n factorial to cancel out the possible labelling in microstates.
+
+354
+00:47:57,560 --> 00:48:02,090
+That's the usual relation between distinguishable and indistinguishable partition functions.
+
+355
+00:48:03,770 --> 00:48:12,830
+Um, but these factors are operating only within the half of the two particles that have the same colour.
+
+356
+00:48:13,610 --> 00:48:21,290
+Um, and each of those red particles can be distinguished from each of the blue particles, but not from the other red particles.
+
+357
+00:48:22,970 --> 00:48:26,270
+So that allows us to write down reduce.
+
+358
+00:48:26,660 --> 00:48:32,030
+So there'll be distinguishable and indistinguishable results that we derived in lecture.
+
+359
+00:48:32,780 --> 00:48:39,980
+And that makes it possible to explicitly compute and check that the second law of thermodynamics is obeyed.
+
+360
+00:48:40,460 --> 00:48:46,850
+The entropy is always now decreasing as we carry out the mixing exercise,
+
+361
+00:48:47,240 --> 00:48:54,590
+removing this wall, separating the two compartments, and then reinsert of reinserting.
+
+362
+00:48:54,590 --> 00:49:01,070
+We, as always have to sum over all the possible distributions of red and blue particles.
+
+363
+00:49:01,730 --> 00:49:06,049
+And there is a fancy relation, uh, attributed to Vanderbilt,
+
+364
+00:49:06,050 --> 00:49:13,160
+but actually published about 400 years before by a Chinese scientist named Shu that
+
+365
+00:49:13,160 --> 00:49:19,250
+relates sums of squares of binomial coefficients to to single binomial coefficients.
+
+366
+00:49:19,670 --> 00:49:23,930
+It's a really fun, um, result that you don't have to derive.
+
+367
+00:49:23,930 --> 00:49:33,469
+You can just use. But I think I will leave the discussion there unless there are questions that would help you
+
+368
+00:49:33,470 --> 00:49:40,760
+get started with exploring these exercises or these tasks on your own over the coming week.
+
+369
+00:49:43,740 --> 00:49:53,540
+You. People are shaking their heads. So you're shaking your heads and people excited because they want to come in for 6.2.
+
+370
+00:49:54,140 --> 00:50:01,180
+So I will stop the recording here and wish you luck wrapping up that homework for tomorrow.
+
+371
+00:50:01,430 --> 00:50:04,280
+Those of you who have not already.
+
