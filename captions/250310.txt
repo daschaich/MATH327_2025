@@ -1,0 +1,1473 @@
+1
+00:00:03,360 --> 00:00:10,190
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Okay, I think we can get going. I hope you've been able to enjoy some of the warmer weather.
+
+2
+00:00:10,200 --> 00:00:16,019
+It's not too warm yet. Welcome back to another Monday in Step Mac.
+
+3
+00:00:16,020 --> 00:00:19,110
+Where? Magic code for today.
+
+4
+00:00:19,920 --> 00:00:24,660
+It's 36, 32 and 73.
+
+5
+00:00:26,700 --> 00:00:31,320
+And you are going to be free from homework assignments in this module for a couple of weeks.
+
+6
+00:00:32,070 --> 00:00:42,600
+Um, hopefully a bit of relief after two fairly rapid succession, both last Friday and then two weeks before, uh, marking is underway.
+
+7
+00:00:42,600 --> 00:00:45,450
+And I'll get that back to you as quick as I can.
+
+8
+00:00:46,050 --> 00:00:55,470
+Working on the computer project is always, uh, lengthy just because there's code and, uh, derivations to go back and forth between.
+
+9
+00:00:56,670 --> 00:01:06,060
+But. Unless there are immediate questions about anything we've seen so far.
+
+10
+00:01:06,070 --> 00:01:14,590
+Let's just recall where we ended up last Wednesday, five days ago, or last week in general.
+
+11
+00:01:14,800 --> 00:01:22,780
+We've been dealing with ideal gases as another domain for applications of the canonical ensemble.
+
+12
+00:01:24,040 --> 00:01:33,220
+Last week we saw the ideal gas law, the equation of state for classical, non-relativistic, non-interacting ideal gases,
+
+13
+00:01:34,180 --> 00:01:41,140
+and an example of equations of state that relate the macroscopic properties of such systems.
+
+14
+00:01:42,310 --> 00:01:50,740
+And then a further application is taking these ideal gases and putting them to work in thermodynamic cycles.
+
+15
+00:01:52,360 --> 00:01:58,900
+And for this we mostly did all of the build-up and groundwork last Wednesday.
+
+16
+00:01:59,410 --> 00:02:03,940
+So we came up with key equations that include the ideal gas law,
+
+17
+00:02:03,940 --> 00:02:12,280
+as well as conditions of constant entropy, relations between energy and temperature, um, and more.
+
+18
+00:02:13,240 --> 00:02:25,060
+And we introduced pressure volume diagrams as a convenient way to visually summarise thermodynamic processes and cycles,
+
+19
+00:02:25,690 --> 00:02:37,200
+and some specific processes that we worked through in these thermodynamic or in these PV diagrams were eightieths and isothermal.
+
+20
+00:02:38,050 --> 00:02:46,540
+Isothermal as the. We've seen that Greek route before is a process where the temperature is kept constant.
+
+21
+00:02:46,860 --> 00:02:51,130
+Something that happens slowly so that all possible heat exchange can complete.
+
+22
+00:02:52,090 --> 00:02:55,840
+But to keep the temperature fixed with that of the external reservoir area,
+
+23
+00:02:55,960 --> 00:03:02,500
+that moves the system from one external reservoir to another quickly, so quickly that no heat can be exchanged.
+
+24
+00:03:02,950 --> 00:03:10,390
+And if we assume reversibility as well as Eddy Battiste, we end up with constant entropy.
+
+25
+00:03:11,170 --> 00:03:14,409
+And we will always make that assumption in this module.
+
+26
+00:03:14,410 --> 00:03:20,350
+So adiabatic and isentropic can be used interchangeably here that they aren't exactly the same thing.
+
+27
+00:03:22,280 --> 00:03:30,200
+Today, we have the chance to charge into a specific example of a thermodynamic cycle.
+
+28
+00:03:30,200 --> 00:03:36,919
+So a closed path around these PV diagrams that take the system through some sequence
+
+29
+00:03:36,920 --> 00:03:41,270
+of changes back to their starting point with all of their macroscopic properties.
+
+30
+00:03:41,690 --> 00:03:52,280
+The same in the example. We will consider is a particular thermodynamic cycle named after Saudi Kano.
+
+31
+00:03:53,840 --> 00:04:00,740
+And hopefully there will be enough time not only to work through all the details of the Carnot cycle,
+
+32
+00:04:01,280 --> 00:04:11,030
+but also introduce the concept of the efficiency of a thermodynamic cycle which connects to perpetual motion machines,
+
+33
+00:04:11,450 --> 00:04:20,480
+and the role of the first and second laws of thermodynamics in ruling out, um, the existence of free energy for us to go out and grab.
+
+34
+00:04:21,770 --> 00:04:29,510
+So any questions about the topics we covered last week or where we are going forward today?
+
+35
+00:04:34,280 --> 00:04:40,750
+Not seeing any. We can just charge ahead with the Carnot cycle.
+
+36
+00:04:41,110 --> 00:04:49,060
+Introduced in 1824. Um, just as statistical mechanics was starting to become an idea.
+
+37
+00:04:49,780 --> 00:04:57,700
+Uh, we saw the ideal gas law was actually not formulated as a full, ideal gas law until the 1830s.
+
+38
+00:04:58,210 --> 00:05:01,690
+It was before that a collection of empirical observations.
+
+39
+00:05:02,110 --> 00:05:06,820
+Boyle's law, Charles's law, the guardrails law, and so on.
+
+40
+00:05:08,080 --> 00:05:17,020
+And the idea that. So Ricardo came up with and published before he died at a relatively young age, was to.
+
+41
+00:05:18,480 --> 00:05:22,320
+Design a machine that would do work on its surroundings.
+
+42
+00:05:23,320 --> 00:05:32,230
+Essentially by moving heat through it. So the prototypical example of a heat engine and.
+
+43
+00:05:33,690 --> 00:05:37,860
+At the risk of zooming out and destroying the focus on the projector.
+
+44
+00:05:39,540 --> 00:05:45,780
+We can break up the Carnot cycle into four stages that are shown here.
+
+45
+00:05:47,370 --> 00:05:59,520
+The key idea is that our system, shown here as a volume with a movable piston, is connected to two different large external thermal reservoirs.
+
+46
+00:06:00,330 --> 00:06:07,920
+So going beyond the single reservoir that we started off with when formulating canonical ensembles,
+
+47
+00:06:09,300 --> 00:06:19,680
+we have on the one side a hot reservoir with a high temperature T, h, and on the other side a cold temperature.
+
+48
+00:06:19,860 --> 00:06:23,190
+Sorry, a cold reservoir with a low temperature t l.
+
+49
+00:06:27,470 --> 00:06:31,910
+And we do in this cycle two expansion phases.
+
+50
+00:06:31,910 --> 00:06:37,489
+So the piston moves up increasing the volume first slowly so that there is time for
+
+51
+00:06:37,490 --> 00:06:43,220
+heat to come in from the hot reservoir as shown off to the right in this cartoon.
+
+52
+00:06:43,760 --> 00:06:50,270
+And then quickly a faster expansion indicated by that larger arrow for which
+
+53
+00:06:50,270 --> 00:06:55,490
+there is no chance for heat to transfer or the reservoir is cut off entirely.
+
+54
+00:06:56,360 --> 00:07:02,299
+We then repeat the process in the other direction slow compression going down in
+
+55
+00:07:02,300 --> 00:07:09,080
+thermal contact with the cold reservoir that allows the temperature to remain fixed,
+
+56
+00:07:09,650 --> 00:07:14,540
+and then finally fast. Adiabatic isentropic compression two.
+
+57
+00:07:14,540 --> 00:07:23,540
+In principle, get back to the same starting state A with all of the energy, pressure, volume and entropy the same.
+
+58
+00:07:25,300 --> 00:07:29,050
+So really the key conceptual.
+
+59
+00:07:30,850 --> 00:07:40,790
+Contribution that Cano made was to. Generalise these canonical or multi canonical ensemble do not exist at that point.
+
+60
+00:07:40,790 --> 00:07:50,360
+But to come up with this idea of a system that can exchange heat with these two reservoirs.
+
+61
+00:07:53,810 --> 00:08:06,190
+The heart. And cold, with a high and low temperature corresponding to the ancient L and the four stages in the Carnot cycle.
+
+62
+00:08:07,690 --> 00:08:11,680
+Our first slow isothermal expansion.
+
+63
+00:08:13,100 --> 00:08:17,560
+And then fast. Adiabatic expansion.
+
+64
+00:08:22,490 --> 00:08:26,800
+And. I've zoomed in too far to keep everything on the screen.
+
+65
+00:08:26,830 --> 00:08:34,150
+There's the best I can do. Then those two expansion phases are reversed in that same order,
+
+66
+00:08:34,540 --> 00:08:44,170
+starting with slow isothermal compression and then fast adiabatic compression, ideally getting back to the starting point.
+
+67
+00:08:45,470 --> 00:08:50,360
+Now just from saying that this is a cycle that goes back to its starting point.
+
+68
+00:08:51,640 --> 00:08:54,580
+Is an aspiration rather than a result,
+
+69
+00:08:54,580 --> 00:09:09,100
+and it is important in general to check that in a sequence of somewhat anaemic processes we claim gives us a well-defined cycle,
+
+70
+00:09:09,610 --> 00:09:15,640
+are all self-consistent, and do get back to the starting point at the end.
+
+71
+00:09:16,540 --> 00:09:23,919
+It's not hard to believe this for the Carnot cycle, just because of the balance between those two expansion phases,
+
+72
+00:09:23,920 --> 00:09:27,970
+followed by the two compression phases with more general processes.
+
+73
+00:09:28,420 --> 00:09:32,709
+It is worth knowing how to do this and seeing it done.
+
+74
+00:09:32,710 --> 00:09:39,460
+In this example where we do expect everything to work out, uh, straightforwardly.
+
+75
+00:09:40,240 --> 00:09:47,450
+So to do this check. We consider what we have control over in the processes.
+
+76
+00:09:49,560 --> 00:09:57,420
+So we imagine we can. We can prepare the cycle in some particular starting point, which we can call a.
+
+77
+00:09:57,870 --> 00:10:03,899
+So we choose the volume of our system. We choose the pressure and choose the number of particles that it has,
+
+78
+00:10:03,900 --> 00:10:13,710
+which altogether choose the high temperature of the hot external reservoir by the ideal gas law.
+
+79
+00:10:15,480 --> 00:10:21,000
+So I'll call these Pas and VA giving us a hot high temperature.
+
+80
+00:10:21,570 --> 00:10:33,050
+At this point, a. So that those data specify a point on the PV diagram that summarises the entire macro state of the system.
+
+81
+00:10:34,070 --> 00:10:41,480
+Uh, volume VA pressure PA a fixed number of particles, as always, gives us a high temperature t h.
+
+82
+00:10:42,710 --> 00:10:50,930
+And then as we go through the two expansion phases, first slow isothermal expansion.
+
+83
+00:10:55,970 --> 00:10:59,629
+Two point be, we imagine we can choose how much we expand slowly.
+
+84
+00:10:59,630 --> 00:11:03,440
+So this VB is free for us to choose.
+
+85
+00:11:04,070 --> 00:11:19,160
+We then do a quick adiabatic expansion to a third volume VC, which again we have experimental control over the volume as our control parameter.
+
+86
+00:11:19,730 --> 00:11:26,360
+And then we have to check that in principle there is some point D that we can slowly
+
+87
+00:11:26,660 --> 00:11:35,930
+compress to in order for the final fast adiabatic expansion to get us back to point A.
+
+88
+00:11:36,830 --> 00:11:47,720
+So the check of the cycle self-consistency will be to ensure that well-defined pressures and volumes for that point D,
+
+89
+00:11:48,080 --> 00:11:54,710
+at which the compression changes from isothermal to 80 about IC exist and can be found.
+
+90
+00:11:56,720 --> 00:12:01,370
+So to summarise this, we have chosen our starting point.
+
+91
+00:12:02,480 --> 00:12:07,580
+We can choose how long we expand slowly and then quickly.
+
+92
+00:12:09,500 --> 00:12:13,730
+And the self-consistency check is to find.
+
+93
+00:12:17,260 --> 00:12:28,550
+And consistent point de. In the compression, which, together with the fixed end, give us the low temperature of the cold reservoir.
+
+94
+00:12:30,380 --> 00:12:37,730
+So unless there are questions or objections to this general plan,
+
+95
+00:12:38,720 --> 00:12:44,540
+all that we have to do is just charge through the four processes in our cycle, one by one.
+
+96
+00:12:45,320 --> 00:12:52,850
+And I'll be using these labels ABCd in this diagram that we just went here I just looked at here.
+
+97
+00:12:54,920 --> 00:12:58,370
+So point A is our starting point that.
+
+98
+00:12:59,790 --> 00:13:07,210
+We. Declare we have prepared in advance, and that is all set up and known.
+
+99
+00:13:08,470 --> 00:13:17,230
+So we just need to determine the other three points in that PV diagram B, C, and D.
+
+100
+00:13:17,680 --> 00:13:23,560
+We can do systematically starting from A and going to be.
+
+101
+00:13:25,390 --> 00:13:30,040
+So this is our slow isothermal expansion.
+
+102
+00:13:30,640 --> 00:13:35,440
+You can tell me the temperature that we have at point B.
+
+103
+00:13:38,990 --> 00:13:42,230
+Um, can I get both of these on the screen at once? Not really.
+
+104
+00:13:45,410 --> 00:13:53,959
+Because it is isothermal. This temperature is the same as the temperature at point A that we declare to be the high
+
+105
+00:13:53,960 --> 00:14:02,990
+temperature of the hot reservoir that is just given by Paiva over N from the ideal gas law.
+
+106
+00:14:04,610 --> 00:14:11,360
+So a fixed temperature from the isothermal expansion. And then we are reapplying.
+
+107
+00:14:11,360 --> 00:14:18,140
+The ideal gas law here at point B gives us the pressure.
+
+108
+00:14:20,120 --> 00:14:23,870
+N times temperature over volume B.
+
+109
+00:14:24,590 --> 00:14:33,320
+Plug in this expression for the temperature the ns cancel and we have PA and VA.
+
+110
+00:14:34,100 --> 00:14:46,490
+We have a VB along for the ride, and we end up with the pressure at point B being related to the pressure at point A by this ratio VA over VB,
+
+111
+00:14:46,880 --> 00:14:49,970
+which in fact we found last week. Just considering.
+
+112
+00:14:49,970 --> 00:14:59,240
+In Isothum in isolation the temperature has dropped because volume B is larger than volume A,
+
+113
+00:15:00,650 --> 00:15:08,990
+and we could have just written that down with reference to our work on Isothum last week.
+
+114
+00:15:11,910 --> 00:15:20,730
+Things are a bit more interesting for the second stage, going from point B to C.
+
+115
+00:15:22,920 --> 00:15:26,030
+So. Looking at this.
+
+116
+00:15:28,310 --> 00:15:31,430
+We no longer have an isothermal process.
+
+117
+00:15:32,360 --> 00:15:39,020
+So the temperature is no longer fixed. This will take us from our high temperature to some other temperature that
+
+118
+00:15:39,500 --> 00:15:44,930
+hopefully will be lower than the high temperature to make the subscripts sensible.
+
+119
+00:15:48,190 --> 00:15:58,089
+What we need to do in order to get a grip on this is figure out how the macro states at this point,
+
+120
+00:15:58,090 --> 00:16:05,230
+B and C are related by the properties of our process, which we are given is adiabatic.
+
+121
+00:16:08,060 --> 00:16:17,480
+Do any of you want to shout out a starting point for anchoring macro state C in terms of what we know from B?
+
+122
+00:16:34,950 --> 00:16:39,090
+If not that, in the interest of keeping things moving, I will.
+
+123
+00:16:40,650 --> 00:16:49,860
+Remind you that because we are assuming reversibility here, adiabatic processes are necessarily isentropic.
+
+124
+00:16:50,400 --> 00:16:56,050
+So the entropy at point C. Has to be equal to the entropy.
+
+125
+00:16:56,350 --> 00:17:06,430
+At point B, there is no flow of heat that would allow entropy to flow into or out of the system, um, from exchange with its surroundings.
+
+126
+00:17:08,050 --> 00:17:18,880
+And given one of our key equations is the functional dependence of the entropy on the product of the volume and temperature to the three halves power.
+
+127
+00:17:19,540 --> 00:17:30,940
+This relation immediately tells us that our volume C that we choose is related to the temperature at that point.
+
+128
+00:17:32,410 --> 00:17:39,600
+In such a way that the volume be. Times the high temperature to the three halves.
+
+129
+00:17:39,600 --> 00:17:47,520
+Power gives us the same entropy, so everything apart from these volumes and temperatures is fixed in the process.
+
+130
+00:17:49,640 --> 00:17:57,110
+And by equating these two factors, we are imposing this condition of constant entropy on the adiabatic expansion.
+
+131
+00:17:57,920 --> 00:18:06,920
+So all we need to do here is rearrange for that low temperature divide through by VB take the two thirds power of each side.
+
+132
+00:18:07,580 --> 00:18:18,240
+So we get. Another ratio of volumes VB over VC to the two thirds power, and then the high temperature T h.
+
+133
+00:18:19,760 --> 00:18:29,430
+And we can check that. Because volume C is larger than volume B, the ratio of VB over VC is less than one.
+
+134
+00:18:30,090 --> 00:18:35,280
+So the low temperature is less than the high temperature, which is what we would hope.
+
+135
+00:18:35,610 --> 00:18:40,950
+Having called them low and high temperatures. So that is hanging together so far.
+
+136
+00:18:42,600 --> 00:18:45,630
+And we are halfway around the.
+
+137
+00:18:47,460 --> 00:18:52,290
+The diagram. And in particular we've done three of the four points.
+
+138
+00:18:52,740 --> 00:18:57,750
+The only one remaining is the key one that we no longer have full control over.
+
+139
+00:18:58,470 --> 00:19:07,890
+How long do we allow the slow isothermal compression to last before shoving it all the way quickly,
+
+140
+00:19:07,950 --> 00:19:17,730
+idiomatically back to the starting volume V and hopefully the starting pressure for energy and entropy as well.
+
+141
+00:19:19,570 --> 00:19:24,970
+So in this final case, point de, what we really need to do is come at it from both sides,
+
+142
+00:19:25,330 --> 00:19:35,650
+starting from the compression from this largest point C, but also making sure that the final adiabatic compression will get us back to point A.
+
+143
+00:19:36,250 --> 00:19:43,050
+So. It is worthwhile to consider.
+
+144
+00:19:45,480 --> 00:19:49,590
+Both sides at the same time. Both. So going to D and.
+
+145
+00:19:50,840 --> 00:19:56,180
+Do you going to a wear like you see on here.
+
+146
+00:19:57,200 --> 00:20:04,460
+We again as we did at point B coming from point A, have a simple result for the temperature.
+
+147
+00:20:04,940 --> 00:20:08,560
+It's isothermal. So the temperature is the same as that point.
+
+148
+00:20:08,570 --> 00:20:17,600
+See it is it is the low temperature TL which is this two thirds power of the volume ratio times the high temperature.
+
+149
+00:20:19,220 --> 00:20:23,690
+And the other direction gives us another constant entropy condition.
+
+150
+00:20:24,440 --> 00:20:31,820
+The entropy at point D has to be equal to that at point A because they are connected by an idiomatic process.
+
+151
+00:20:32,750 --> 00:20:49,620
+So we again have. A equality, a relation between these products of volume and temperature to the three halves power that control the entropy.
+
+152
+00:20:50,370 --> 00:21:01,080
+So long as. This relation is satisfied, the entropy will be fixed and we will be able to close the cycle.
+
+153
+00:21:01,920 --> 00:21:03,870
+And we can solve this now for.
+
+154
+00:21:05,150 --> 00:21:15,680
+The single particular value of the volume that will allow this sequence of procedures to give a well-defined thermodynamic cycle.
+
+155
+00:21:16,790 --> 00:21:25,610
+So here we don't have to take a power of each side. We just rearrange the temperatures that are still all raised to the three halves power.
+
+156
+00:21:28,480 --> 00:21:36,940
+We find that. The flame at point D is the temperature ratio to the three house power times the volume.
+
+157
+00:21:36,940 --> 00:21:43,180
+At point A, the high temperature is higher than the low temperature, so this factor is greater than one.
+
+158
+00:21:43,630 --> 00:21:47,680
+So we see that VD is greater than VA as it should be.
+
+159
+00:21:49,560 --> 00:21:56,930
+And we can also. Um. Get all of this back in terms of our input quantities,
+
+160
+00:21:56,930 --> 00:22:05,180
+rather than things like the low temperature that we have derived just by plugging in the temperature ratio from this earlier work.
+
+161
+00:22:06,440 --> 00:22:11,420
+The ratio of t h over t l is the inverse of this VB.
+
+162
+00:22:12,080 --> 00:22:15,650
+Sorry VC over VB to the two thirds power.
+
+163
+00:22:16,670 --> 00:22:18,980
+There is a two thirds power to a three halves power.
+
+164
+00:22:19,160 --> 00:22:31,670
+We get one and we end up with just the ratio of VC over VB, all multiplied by VA, which is greater than VA as it should be.
+
+165
+00:22:34,350 --> 00:22:45,180
+And this equation here is actually a very nice one that is special to the Cano cycle, thanks to the, um.
+
+166
+00:22:46,390 --> 00:22:52,150
+The symmetry that it has in the expansion process is followed by the compression processes.
+
+167
+00:22:52,610 --> 00:22:57,340
+We do isothermal followed by adiabatic in both cases and.
+
+168
+00:22:59,020 --> 00:23:04,340
+We can. Rearrange this expression for VD.
+
+169
+00:23:04,580 --> 00:23:12,830
+In terms of the other three volumes, we're able to choose as two sets of constant ratios.
+
+170
+00:23:14,120 --> 00:23:19,670
+What I mean by this is that if we look at the ratio of VD.
+
+171
+00:23:21,460 --> 00:23:28,540
+Divided by the A, that is just the ratio of VC over VB,
+
+172
+00:23:29,560 --> 00:23:41,110
+and these two pairs of volumes are the ones that show up on either side of V2 adiabatic processes in the cycle.
+
+173
+00:23:41,110 --> 00:23:45,610
+So A and B matches up to B and C there's the screen.
+
+174
+00:23:46,480 --> 00:23:54,310
+The volumes A and B here match up to the volumes B and C on either side of those two idiomatic processes.
+
+175
+00:23:56,470 --> 00:24:00,130
+And equivalently, we can move things around.
+
+176
+00:24:01,430 --> 00:24:06,500
+To get 50 over VC equal to VA over VB.
+
+177
+00:24:07,010 --> 00:24:13,670
+Which are the two pairs of volumes that line up on the two sides of the isothermal processes?
+
+178
+00:24:14,840 --> 00:24:24,790
+There is the screen. So A and B up here have the same volume ratio as V and down here.
+
+179
+00:24:26,680 --> 00:24:31,659
+Again, it's worth emphasising that is not generic in a throwing dynamic cycle.
+
+180
+00:24:31,660 --> 00:24:37,450
+It is unique to the Carnot cycle as an especially simple case.
+
+181
+00:24:39,530 --> 00:24:49,040
+Um, but it is one reflection of that simplicity and a nice check that we are getting a sensible prediction for the volume here
+
+182
+00:24:49,940 --> 00:24:59,300
+that we have as it as required to close the cycle and give something that we can repeat over and over and over again.
+
+183
+00:25:00,470 --> 00:25:13,370
+There is one final. Piece of information I almost forgot to write down, which is the pressure at point D that we can get from the ideal gas law.
+
+184
+00:25:14,630 --> 00:25:19,130
+Now that we know the the specific volume that we need.
+
+185
+00:25:20,300 --> 00:25:24,140
+So plugging in both the low temperature.
+
+186
+00:25:26,880 --> 00:25:35,760
+In terms of this ratio VB over VC to the two thirds power multiplied by the high
+
+187
+00:25:35,760 --> 00:25:42,840
+temperature that's given by the ideal gas law given our initial starting point.
+
+188
+00:25:43,560 --> 00:25:48,720
+Hey, so that's p a v over n.
+
+189
+00:25:50,770 --> 00:25:54,070
+That's still all there. And.
+
+190
+00:25:58,300 --> 00:26:06,460
+We also need to plug in PD one over PD, which is one over eight times the other ratio.
+
+191
+00:26:07,900 --> 00:26:13,120
+The inverse ratio of VB over VC one over VA.
+
+192
+00:26:14,440 --> 00:26:17,470
+There are some cancellations in here.
+
+193
+00:26:19,040 --> 00:26:29,370
+And we end up with. This final pressure pegged as VB over VC to the 5/3 power.
+
+194
+00:26:34,450 --> 00:26:43,960
+All multiplied by our starting point for the pressure PR, which is we can check because VB is less than VC.
+
+195
+00:26:44,740 --> 00:26:57,240
+This is also less than that initial pressure PR, so that everything holds together and matches up to what we drew here on this PV diagram.
+
+196
+00:26:57,250 --> 00:27:02,560
+The pressure is going up with compression and down with expansion.
+
+197
+00:27:02,800 --> 00:27:06,370
+That in turn leads to temperatures that go down with expansion.
+
+198
+00:27:06,790 --> 00:27:15,790
+It helps with compression. And that is essentially all there is to the Carnot cycle.
+
+199
+00:27:17,400 --> 00:27:21,060
+We started with a fixed amount of gas in.
+
+200
+00:27:21,980 --> 00:27:28,100
+Our volume that is being manipulated in the ways described by these four cycles.
+
+201
+00:27:29,510 --> 00:27:40,700
+We fixed our starting point parva. We fixed the extent of slow isothermal expansion and fast adiabatic compression expansion.
+
+202
+00:27:40,700 --> 00:27:44,750
+Excuse me. So fixing those two stages of the volume.
+
+203
+00:27:45,290 --> 00:27:55,130
+And then that gives all of the other information the pressures at points B, C and D the low temperature.
+
+204
+00:27:55,940 --> 00:28:02,840
+And. Especially the single volume for PC.
+
+205
+00:28:03,320 --> 00:28:17,000
+Sorry for VD. The finding the unknown volume that is required to be chosen according to the simple ratio in order to make the Carnot cycle.
+
+206
+00:28:19,430 --> 00:28:25,710
+Self-consistent. So.
+
+207
+00:28:27,930 --> 00:28:31,530
+That's not a surprising result. It was called the Carnot cycle at the start.
+
+208
+00:28:31,530 --> 00:28:39,630
+So we could assume from that context that it was a cycle that gets back to a starting point and can be repeated over and over and over again.
+
+209
+00:28:40,080 --> 00:28:53,490
+But this illustrates the general way that any set of processes can be analysed to see, first of all, if they can possibly form a cycle, and secondly.
+
+210
+00:28:54,590 --> 00:29:00,650
+Uh, if so, what conditions are there in order for that cycle to remain self-consistent?
+
+211
+00:29:01,910 --> 00:29:08,300
+Any questions about the basic features of the current cycle here?
+
+212
+00:29:15,260 --> 00:29:18,590
+Because there's still more that we can do with it moving forward.
+
+213
+00:29:22,350 --> 00:29:27,330
+So getting back to our starting point for today, the points of.
+
+214
+00:29:28,450 --> 00:29:39,880
+Setting up the cycle. These four processes, um, in this order I like mentioned, was to actually do work.
+
+215
+00:29:41,890 --> 00:29:51,190
+By moving heat from the hot reservoir through our system and then into the cold reservoir.
+
+216
+00:29:53,790 --> 00:29:58,470
+And this raises a couple of pertinent questions.
+
+217
+00:29:59,040 --> 00:30:03,330
+The first is how much work does this cycle actually do?
+
+218
+00:30:04,350 --> 00:30:11,580
+And the second is how much heat does it have to move in order to do that work?
+
+219
+00:30:13,800 --> 00:30:18,210
+So in both cases, we will now have to go back to our four processes.
+
+220
+00:30:18,630 --> 00:30:25,440
+See where work is being done, either by the cycle on its surroundings or on the cycle by the surroundings,
+
+221
+00:30:25,920 --> 00:30:30,210
+and also check the flow of heat into and out of the system.
+
+222
+00:30:30,390 --> 00:30:36,450
+And it's being exchanged with either of the two reservoirs that we have to to work with.
+
+223
+00:30:40,230 --> 00:30:47,940
+And getting back to, uh, an issue that I mentioned in passing when we introduced working last week.
+
+224
+00:30:47,940 --> 00:30:58,980
+And we may see now why it is a potentially tricky issue now that we have a concrete calculation to do.
+
+225
+00:31:01,020 --> 00:31:06,690
+As we look at both work and heat, we need to keep track.
+
+226
+00:31:07,740 --> 00:31:17,860
+Of. Essentially where that work is, is being applied as well as where that heat is flowing.
+
+227
+00:31:19,390 --> 00:31:22,390
+So we saw last week that when we.
+
+228
+00:31:24,840 --> 00:31:32,850
+Arrange a thermodynamic process that does work on the system that raises the internal energy of the gas.
+
+229
+00:31:34,620 --> 00:31:41,349
+And it gives us. From our defining integral for the work.
+
+230
+00:31:41,350 --> 00:31:47,800
+This integral of pressure integrated over volume from our starting volume to the final one.
+
+231
+00:31:49,960 --> 00:31:55,510
+This has to be a positive number and we will call that the incoming work.
+
+232
+00:31:57,240 --> 00:32:00,660
+Um, into the system and we will now come up with.
+
+233
+00:32:01,880 --> 00:32:06,260
+Similar positive numbers for both the outgoing work.
+
+234
+00:32:06,710 --> 00:32:15,920
+The work done by the system on its surroundings to lower its internal energy.
+
+235
+00:32:17,730 --> 00:32:25,890
+This has to be the opposite of the overall work that is done in order to be positive.
+
+236
+00:32:26,760 --> 00:32:28,889
+So when the system does work on its surroundings,
+
+237
+00:32:28,890 --> 00:32:36,930
+that's what we think useful work that we actually want to get out of this cycle to say, turn the wheels and make a car go forward.
+
+238
+00:32:38,850 --> 00:32:46,320
+We have to include a negative sign here and keep track with a subscript that the work is being extracted from the system,
+
+239
+00:32:46,740 --> 00:32:54,680
+lowering its internal energy and doing some useful, useful work on the surroundings.
+
+240
+00:32:54,690 --> 00:33:05,720
+And there is a similar. Set of input and output heat that we can define with the same sets of signs.
+
+241
+00:33:06,650 --> 00:33:21,020
+So q in is incoming heat the integral of temperature over entropy that is always well potentially greater than or equal to zero,
+
+242
+00:33:21,560 --> 00:33:25,070
+but at least non-negative and the.
+
+243
+00:33:26,600 --> 00:33:35,510
+Last of these. Is as expected when the heat is removed from the system.
+
+244
+00:33:36,870 --> 00:33:42,600
+We keep track of the negative side through our subscript out.
+
+245
+00:33:46,810 --> 00:33:51,970
+To get a non-negative and typically positive quantity.
+
+246
+00:33:55,340 --> 00:34:02,969
+So that those definitions are. Hopefully not too confusing.
+
+247
+00:34:02,970 --> 00:34:07,080
+They just repackage what we have seen before.
+
+248
+00:34:10,060 --> 00:34:13,510
+Introducing subscripts to keep track of negative signs.
+
+249
+00:34:14,050 --> 00:34:18,010
+One new definition that is important.
+
+250
+00:34:19,520 --> 00:34:24,020
+Is a formal mathematical definition of the efficiency.
+
+251
+00:34:25,940 --> 00:34:34,670
+Of the cycle, which traditionally uses the Greek letter eta and is defined to be.
+
+252
+00:34:36,550 --> 00:34:39,130
+The amount of work that is done by the system,
+
+253
+00:34:39,970 --> 00:34:50,830
+divided by the amount of heat that has to flow into it in order for the cycle to be carried out and come back around to its starting point.
+
+254
+00:34:51,700 --> 00:34:54,970
+We're here. This wasn't done.
+
+255
+00:34:55,090 --> 00:34:59,710
+This work with a subscript done is referring to the network.
+
+256
+00:35:01,350 --> 00:35:03,840
+So the amount of useful work that we do,
+
+257
+00:35:04,410 --> 00:35:15,030
+minus any work that has to be put into the system as we go around the cycle in order for the cycle to meet up with its starting point.
+
+258
+00:35:18,060 --> 00:35:24,990
+So in words, now that we have everything defined, the sufficiency is.
+
+259
+00:35:27,760 --> 00:35:34,870
+That net difference in work. That is done by each iteration.
+
+260
+00:35:36,680 --> 00:35:39,890
+Of the cycle that we expect to go around.
+
+261
+00:35:40,550 --> 00:35:48,830
+Over and over and over again. And this is normalised by the total heat.
+
+262
+00:35:50,630 --> 00:35:58,430
+That has to be input into the system in order for that cycle to run.
+
+263
+00:35:58,440 --> 00:36:02,240
+So there is a difference in the numerator compared to the denominator.
+
+264
+00:36:02,270 --> 00:36:06,840
+One is the difference between. We're going out and we're coming in.
+
+265
+00:36:06,860 --> 00:36:10,190
+The other is just the total input heat that is needed.
+
+266
+00:36:11,090 --> 00:36:22,060
+So this is essentially giving us the fraction of that input heat that we are, that the cycle is able to convert into useful work on its surroundings.
+
+267
+00:36:22,100 --> 00:36:28,130
+So answering or at least addressing those two questions simultaneously.
+
+268
+00:36:28,550 --> 00:36:32,240
+How much work do we do for a given amount of input?
+
+269
+00:36:32,240 --> 00:36:45,790
+Heat? When we talk about thermodynamic cycles as engines, we will implicitly make the assumption that the efficiency is.
+
+270
+00:36:48,580 --> 00:36:52,850
+Nonzero and. In particular?
+
+271
+00:36:53,990 --> 00:36:54,890
+Uh, positive.
+
+272
+00:36:57,530 --> 00:37:07,940
+It is perfectly fine to design cycles that, you know, require more input work to operate than they actually give out in the form of work.
+
+273
+00:37:07,970 --> 00:37:11,840
+Those are possible, but not so interesting because we don't get anything out of them.
+
+274
+00:37:13,040 --> 00:37:13,790
+And similarly,
+
+275
+00:37:13,790 --> 00:37:23,269
+we can always have the work done by the cycle being exactly equal to the work that has to be done on the cycle in order for it to operate,
+
+276
+00:37:23,270 --> 00:37:27,200
+so that everything cancels out and we get ETA equals to zero.
+
+277
+00:37:28,190 --> 00:37:35,270
+For the case of an engine, we demand there is some network that we are able to to do.
+
+278
+00:37:39,900 --> 00:37:43,350
+So that we get some benefit from it.
+
+279
+00:37:44,670 --> 00:37:50,490
+And if we apply the first law of thermodynamics to.
+
+280
+00:37:51,660 --> 00:38:00,670
+The efficiency. Here, we can learn something that is both interesting and extremely generic.
+
+281
+00:38:00,690 --> 00:38:05,130
+So setting aside the Carnot cycle for the moment and just thinking about.
+
+282
+00:38:07,260 --> 00:38:09,810
+Thermodynamic engines in full generality.
+
+283
+00:38:11,550 --> 00:38:21,570
+The first law in the generalised form that we came up with last week tells us that any change in the internal
+
+284
+00:38:21,570 --> 00:38:31,080
+energy of our canonical system has to be accounted for by the work that that system does or has done to it,
+
+285
+00:38:31,440 --> 00:38:39,270
+as well as the heat that flows into and out of it as it goes around the cycle.
+
+286
+00:38:40,530 --> 00:38:48,980
+So using our. Positive quantities to keep track of negative signs.
+
+287
+00:38:49,670 --> 00:38:56,959
+We immediately see that the change in the internal energy is the amount that increases from
+
+288
+00:38:56,960 --> 00:39:02,720
+the input work and input heat minus the amount that it decreases from the useful output work,
+
+289
+00:39:03,200 --> 00:39:08,840
+and this in the heat that it expels in the course of the cycle.
+
+290
+00:39:09,320 --> 00:39:15,210
+And because it is a cycle when we go around. That, uh.
+
+291
+00:39:17,050 --> 00:39:23,500
+Whole process. However, early stages, there are whatever characteristics they have.
+
+292
+00:39:23,800 --> 00:39:29,020
+We have to get back to our starting point so that there is no change in the internal energy.
+
+293
+00:39:29,740 --> 00:39:33,970
+After all of the input and output, heat and work are accounted for.
+
+294
+00:39:35,770 --> 00:39:37,060
+So we can rearrange this.
+
+295
+00:39:37,480 --> 00:39:48,040
+Move the work to the other side so that the useful output work now has the positive sign, and we recognise the numerator in the efficiency.
+
+296
+00:39:48,790 --> 00:39:59,260
+And this simply by the first law of thermodynamics, conservation of energy is equal to the difference between the input and output heat.
+
+297
+00:40:01,010 --> 00:40:07,130
+Which we can also, in full generality, say that is no larger than.
+
+298
+00:40:08,580 --> 00:40:13,200
+The total input heat on its own. Denominator in our efficiency.
+
+299
+00:40:15,040 --> 00:40:22,750
+So for an engine we have not only that ETA is positive and greater than zero,
+
+300
+00:40:23,170 --> 00:40:33,250
+but also that if we divide through by the input heat, we see that the efficiency ETA is less than or equal to one.
+
+301
+00:40:35,460 --> 00:40:39,840
+And sometimes this is phrased by saying that.
+
+302
+00:40:42,590 --> 00:40:51,069
+Due to the first law of thermodynamics. We can't win and get extra work coming out.
+
+303
+00:40:51,070 --> 00:40:59,800
+That exceeds the amount of energy in the form of input heat that has to be put into the system in the first place for it to operate.
+
+304
+00:41:00,670 --> 00:41:14,380
+There is a fully general strict upper bound that at most, the amount of work we can get out is equal to the amount of heat that we put in.
+
+305
+00:41:16,790 --> 00:41:28,130
+And we can also note that equality here corresponds only to the case where the output heat is zero.
+
+306
+00:41:28,850 --> 00:41:38,390
+This output heat I will sometimes call waste heat that has to be emitted by our cycle in order for it to close and be well defined.
+
+307
+00:41:40,640 --> 00:41:46,840
+And. We can see how this works by going through.
+
+308
+00:41:47,750 --> 00:41:52,220
+The example. Going back to the example of the Cano cycle.
+
+309
+00:41:56,970 --> 00:42:08,270
+They may not have enough time to get all the way through that and pull out the general, uh, lessons on sort of cycles from that.
+
+310
+00:42:08,280 --> 00:42:14,790
+But we can at least make some progress and get in a strong starting point for Wednesday's lecture,
+
+311
+00:42:14,790 --> 00:42:22,290
+when it will be quick to wrap up any questions about the efficiency and the fact that we can't win.
+
+312
+00:42:23,040 --> 00:42:26,280
+Before we go back to that explicit example.
+
+313
+00:42:43,230 --> 00:42:48,390
+Not seeing any. We just have to do something similar to what we did before.
+
+314
+00:42:48,990 --> 00:42:54,000
+Only now we know that we have expressions for all of the.
+
+315
+00:42:55,910 --> 00:43:03,560
+Pressures, volumes and temperatures at play in the cycle and we just have to step through.
+
+316
+00:43:03,920 --> 00:43:17,270
+Process by process. Determine the work and the heat that are involved in the process, and assign them to either incoming or outgoing categories.
+
+317
+00:43:19,350 --> 00:43:21,990
+Then put it all together into the efficiency.
+
+318
+00:43:23,040 --> 00:43:36,900
+So a systematic process by process task to go through here that is then brought all together probably on Wednesday at this point.
+
+319
+00:43:37,590 --> 00:43:45,800
+Let's at least. Start off with the slow isothermal expansion from point A to B.
+
+320
+00:43:47,950 --> 00:44:03,220
+We wrote down earlier that the work in general is the integral over volume from volume A to B of the pressure times or integrated over the volume.
+
+321
+00:44:04,030 --> 00:44:12,220
+That's our generic definition of work, and we have seen that for this first stage,
+
+322
+00:44:13,750 --> 00:44:19,210
+the temperature is always fixed to be the same high temperature throughout.
+
+323
+00:44:19,420 --> 00:44:27,370
+So that will just be a constant. We can relate the pressure to the volume by rearranging the ideal gas law.
+
+324
+00:44:28,420 --> 00:44:36,910
+So the integral we have to evaluate is n times the fixed temperature divided by a volume integrated over volume,
+
+325
+00:44:38,110 --> 00:44:53,560
+and the temperature are constants that we can pull out. And then the integral of d v over v is just the logarithm of v evaluated from the A to VB,
+
+326
+00:44:54,520 --> 00:45:01,090
+which we can invert through the properties of the logs to absorb the negative sign out front.
+
+327
+00:45:02,080 --> 00:45:09,490
+We can also use the ideal gas law again to express this in terms of our starting points in the PV diagram.
+
+328
+00:45:10,330 --> 00:45:14,110
+End times is PA times VA. By the ideal gas law.
+
+329
+00:45:14,800 --> 00:45:20,200
+And then the logarithm is VA over VB.
+
+330
+00:45:20,620 --> 00:45:31,270
+Absorbing that negative sign. And because volume VA is less than volume VB, the argument of the logarithm is less than one.
+
+331
+00:45:31,810 --> 00:45:43,240
+So the logarithm is a negative number, which means that the work from this stage is going to be accounted for in the output work.
+
+332
+00:45:43,630 --> 00:45:50,920
+So this slow isothermal expansion is a stage in which the system does work on its surroundings.
+
+333
+00:45:51,340 --> 00:46:02,430
+It moves your car. Um. Thanks to the sign of the integral after we have evaluated it and.
+
+334
+00:46:05,850 --> 00:46:10,500
+So still with this first isothermal process, we have the work.
+
+335
+00:46:10,890 --> 00:46:14,370
+We need the heat and we can get that.
+
+336
+00:46:16,510 --> 00:46:26,110
+Fairly elegantly by considering what happens to the internal energy as we go from point A to point B,
+
+337
+00:46:27,010 --> 00:46:32,140
+which another one of our key equations for thermodynamic cycles.
+
+338
+00:46:33,200 --> 00:46:38,600
+Will relate to the change in the temperature from point A to B.
+
+339
+00:46:39,650 --> 00:46:42,650
+This is isothermal expansion, so the temperature does not change.
+
+340
+00:46:43,280 --> 00:46:47,390
+Therefore, neither does the internal energy of the ideal gas.
+
+341
+00:46:48,800 --> 00:46:59,540
+And by the first law, this vanishing change in energy has to be accounted for by cancellations between.
+
+342
+00:47:00,570 --> 00:47:04,590
+The heat and the work. So the heat.
+
+343
+00:47:06,330 --> 00:47:14,550
+Flowing into or out of the system in this cycle is just the negative of the work and therefore positive.
+
+344
+00:47:15,560 --> 00:47:20,549
+So in order for. The system to do work.
+
+345
+00:47:20,550 --> 00:47:28,170
+In this process, heat is flowing into it. As we saw in the cartoon at the very start of today.
+
+346
+00:47:31,850 --> 00:47:41,630
+We will do the next cycle. Look at halfway through the cardio cycle before pausing for a day and a half and coming back Wednesday morning.
+
+347
+00:47:43,500 --> 00:47:47,580
+Process B to see is adiabatic expansion.
+
+348
+00:47:47,590 --> 00:47:54,870
+So we know we know immediately that no heat flows in that process.
+
+349
+00:47:55,440 --> 00:48:02,670
+And therefore any change in the internal energy here has to be entirely.
+
+350
+00:48:03,670 --> 00:48:06,700
+Due to any work involved in the process.
+
+351
+00:48:08,960 --> 00:48:14,600
+The change in the internal energy is three halves and times the change in temperature.
+
+352
+00:48:15,350 --> 00:48:19,760
+So we end up at the low temperature of the cold reservoir.
+
+353
+00:48:20,210 --> 00:48:23,450
+We started from the high temperature.
+
+354
+00:48:25,230 --> 00:48:39,330
+And we can pull out an overall factor of that high temperature to get an expression in terms of temperature ratio minus one.
+
+355
+00:48:40,440 --> 00:48:44,910
+We can already see that this is negative because the low temperature is lower than the high temperature.
+
+356
+00:48:45,480 --> 00:48:52,280
+But let's put everything in terms of our input quantities PA VA.
+
+357
+00:48:52,290 --> 00:48:56,730
+And then the temperature ratio we computed earlier was.
+
+358
+00:48:58,660 --> 00:49:04,090
+The volume ratio to the two thirds. Power minus one.
+
+359
+00:49:06,170 --> 00:49:12,560
+This is less than zero because VB is less than VC, so that ratio is less than one,
+
+360
+00:49:13,460 --> 00:49:24,050
+and therefore this work here is also useful output work being done on the surroundings by the system.
+
+361
+00:49:25,120 --> 00:49:30,850
+So we've run out of time to complete the two mirror image stages.
+
+362
+00:49:32,440 --> 00:49:41,220
+If you are so inclined, you can charge through that yourself just in the time from now to to Wednesday's lecture.
+
+363
+00:49:41,920 --> 00:49:52,510
+But we will just pick up there with the second half of the heat and energy and the heat and work analysis for the Carnot cycle.
+
+364
+00:49:52,990 --> 00:49:55,360
+Put that into the efficiency and see what we can say.
+
+365
+00:49:56,440 --> 00:50:03,909
+That won't take too long, and we will declare victory with thermodynamic cycles at that point and move on to a new topic,
+
+366
+00:50:03,910 --> 00:50:10,200
+the grand canonical ensemble. Are there any questions about what we've seen so far today?
+
+367
+00:50:11,220 --> 00:50:17,220
+Before I stop the recording and let you, uh, let you go for the rest of your day.
+
+368
+00:50:19,790 --> 00:50:21,620
+Looks good. So.
+
