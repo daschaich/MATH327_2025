@@ -1,0 +1,290 @@
+% ------------------------------------------------------------------
+\renewcommand{\thisunit}{MATH327 Unit 6}
+\renewcommand{\moddate}{Last modified 12 Mar.~2025}
+\setcounter{section}{6}
+\setcounter{subsection}{0}
+\phantomsection
+\addcontentsline{toc}{section}{Unit 6: Grand-canonical ensemble}
+\section*{Unit 6: Grand-canonical ensemble}
+\subsection{The particle reservoir and chemical potential}
+Now that we have had some fun with applications of the canonical ensemble, we will complete our more formal development of statistical ensembles by considering the grand-canonical ensemble.
+Recall that statistical ensembles are probability spaces describing the micro-states that a system can adopt as it evolves in time, subject to certain constraints.
+Back in Unit~2 we first considered the micro-canonical ensemble, for which these constraints are conservation of the internal energy $E$ and particle number $N$.
+We then introduced the canonical ensemble in Unit~3 by allowing the system's internal energy to fluctuate, while keeping its temperature $T$ fixed through thermal contact with a large external thermal reservoir.
+
+Building on this pattern, the next step is to allow \textit{both} the system's energy and its particle number to fluctuate.
+Generalizing our earlier work on the canonical ensemble, these fluctuations occur through contact between the system and a large external reservoir.
+This is now a \textbf{particle reservoir}, with which the system can exchange both energy and particles.
+
+In the same way that energy exchange leads to a fixed temperature, we expect there to be some quantity that will be fixed due to particle exchange.
+Recall that we initially defined the temperature in the context of the micro-canonical ensemble in thermodynamic equilibrium (\eq{eq:temperature}), as the dependence of the entropy on the internal energy for a fixed number of degrees of freedom:
+\begin{equation*}
+  \frac{1}{T} = \left. \pderiv{S}{E}\right|_N.
+\end{equation*}
+The quantity we are now interested in comes from interchanging the roles of $E$ and $N$.
+
+\begin{shaded}
+  In thermodynamic equilibrium, the \textbf{chemical potential} in the micro-canonical ensemble is defined by
+  \begin{equation}
+    \label{eq:chem_pot}
+    \mu = -T \left. \pderiv{S}{N}\right|_E.
+  \end{equation}
+\end{shaded}
+
+This definition is not very intuitive, and unlike the temperature the chemical potential is not a familiar concept from everyday experiences.
+To gain some insight into the chemical potential, we can first note that $\mu$ has dimensions of energy. % TODO: Could add a reminder that k=1...
+It is also an intensive quantity, like the temperature --- it is independent of the extent of the system, and remains the same if we consider only a part of a larger system.
+Finally, we can expect the chemical potential to be negative, at least for `natural' systems with $T > 0$.
+This is because the partial derivative $\pderiv{S}{N}$ is generally positive --- systems with more degrees of freedom typically have more entropy, reflecting the greater amount of information they can contain even with the energy fixed.
+This can be checked explicitly from \eq{eq:CLT_states} for the micro-canonical spin system we considered in \secref{sec:temp}.
+
+The presence of the negative sign in \eq{eq:chem_pot} is really a choice we have made.
+The motivation for this choice comes from considering a net flow of particles between two systems $\Om_A$ and $\Om_B$ with the same temperature $T > 0$ but different
+\begin{equation*}
+  \pderiv{S_A}{N_A} > \pderiv{S_B}{N_B} > 0 \qquad \Lra \qquad \mu_A < \mu_B < 0.
+\end{equation*}
+Due to the negative sign in \eq{eq:chem_pot}, the system with the larger partial derivative has the smaller (more-negative) chemical potential.
+Particle exchange between these two systems, $\De N_A = -\De N_B$, causes the (extensive) entropy to change by
+\begin{equation*}
+  \De S = \De S_A + \De S_B = \left(\pderiv{S_A}{N_A}\right) \De N_A + \left(\pderiv{S_B}{N_B}\right) \De N_B = \left[\pderiv{S_A}{N_A} - \pderiv{S_B}{N_B}\right] \De N_A.
+\end{equation*}
+According to the second law of thermodynamics, $\De S \geq 0$, and since the term in square brackets is positive we must also have $\De N_A \geq 0$.
+Equivalently, we can note that more entropy is gained by adding each particle to system $\Om_A$ than is lost by removing it from system $\Om_B$, ensuring that the total entropy of the universe doesn't decrease.
+
+In other words, the choice of sign in \eq{eq:chem_pot} ensures that particles flow \textit{from} systems with larger chemical potentials \textit{to} systems with smaller chemical potential.
+This is similar to heat flowing from hotter systems with larger temperatures to colder systems with smaller temperatures, allowing us to reuse our intuition based on the temperature.
+Had we instead chosen to make $\mu$ positive for natural systems, we would have ended up with counter-intuitive flow of particles from small to large chemical potential.
+This connection to particle flow also implies that we should consider only systems of indistinguishable particles when working with a chemical potential. % TODO: Could elaborate and clarify...
+
+\begin{shaded}
+  We are now able to define the \textbf{grand-canonical ensemble} to be a statistical ensemble characterized by its fixed temperature $T$ and fixed chemical potential $\mu$, with the temperature and chemical potential held fixed through contact with a particle reservoir.
+\end{shaded} % Sometimes called macro-canonical, but this terminology may misleadingly imply dependence on thermodynamic macro-states rather than micro-states
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{\label{sec:Zg}The grand-canonical partition function}
+Let's now place the grand-canonical ensemble on a more concrete mathematical foundation, by following the same procedure we used for the canonical ensemble.
+That is, we introduce a well-motivated ansatz for the form of the particle reservoir $\Om_{\text{res}}$, then show that the form of the reservoir is ultimately irrelevant.
+This will allow us to work directly with the system of interest, $\Om$, independent of the details of the particle reservoir that fixes its temperature and chemical potential.
+
+As before, our ansatz is to take $\Om_{\text{tot}} = \Om_{\text{res}} \otimes \Om$ to consist of many ($R \gg 1$) identical replicas of the system \Om that we're interested in.
+All of these replicas are in thermodynamic equilibrium, and can exchange both energy and particles with each other.
+The overall system $\Om_{\text{tot}}$ is governed by the micro-canonical ensemble, with conserved total energy \Etot and conserved total particle number $\Ntot$.
+An extremely small example of this setup is illustrated by the figure on the next page, where the system of interest is an ideal gas in a volume $V$.
+
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{figs/unit06_reservoir.pdf}
+\end{center}
+
+Although we draw a box around each replica (and colour one red to highlight the system \Om we will consider), these boxes are now merely mental constructions, and don't interfere with particles moving from one replica to another.
+For example, we could take our system to be a cubic centimetre of air in a room, with the rest of the room forming its reservoir.
+As in \secref{sec:replicas}, we assume that this system $\Om = \left\{\om_1, \om_2, \cdots, \om_M\right\}$ has a finite number of $M$ possible micro-states, where now different micro-states may involve different numbers of particles.
+
+This again allows us to analyze the overall system of $R$ replicas in terms of occupation numbers $n_i$ and the corresponding occupation probabilities $p_i$.
+Recall that $n_i$ is the number of replicas that adopt the micro-state $\om_i \in \Om$ in any given micro-state of the overall system $\Om_{\text{tot}}$, so that $\sum_i n_i = R$.
+Similarly, $p_i = n_i / R$ is the probability that a randomly chosen replica will be in micro-state $\om_i$, with $\sum_i p_i = 1$ as usual.
+In terms of $n_i$ and $p_i$, the total number of micro-states of $\Om_{\text{tot}}$, and the corresponding entropy, are the same as we derived in \secref{sec:canon_part},
+\begin{equation*}
+  M_{\text{tot}} = \frac{R!}{n_1! \; n_2! \; \cdots \; n_M!} \qquad \lra \qquad S(\Etot, \Ntot) = -R \sum_{i = 1}^M p_i \log p_i,
+\end{equation*}
+assuming $R \gg 1$ and $n_i \gg 1$ for all $i = 1, \cdots, M$.
+In this expression, the dependence on both \Etot and \Ntot now enters through the occupation probabilities $p_i$, since the micro-states $\om_i$ may involve different numbers of particles in addition to different energies.
+
+As before, we want to determine the (intensive) temperature and chemical potential of the micro-canonical system $\Om_{\text{tot}}$ through Eqs.~\ref{eq:temperature} and \ref{eq:chem_pot}, which requires expressing $S$ directly in terms of \Etot and $\Ntot$.
+We again proceed by maximizing the entropy subject to the constraints on the conserved quantities of $\Om_{\text{tot}}$.
+Labelling the energy and particle number of each replica $E_r$ and $N_r$, respectively, as in \eq{eq:canon_Etot} we can rearrange sums over replicas into sums over the micro-states of $\Om$:
+\begin{align}
+  1 & = \sum_{i = 1}^M p_i & \Etot = \sum_{r = 1}^R E_r = \sum_{i = 1}^M n_i E_i & = R \sum_{i = 1}^M p_i E_i \cr
+    &                      & \Ntot = \sum_{r = 1}^R N_r = \sum_{i = 1}^M n_i N_i & = R \sum_{i = 1}^M p_i N_i, \label{eq:grand_constraint}
+\end{align}
+where $E_i$ and $N_i$ are the energies and particle numbers of the $M$ micro-states $\om_i \in \Om$.
+The first two constraints, on the occupation probabilities and the total energy, are the same as we had in \secref{sec:canon_part}.
+The third constraint, on the total particle number, is the new ingredient for us to incorporate.
+
+Writing everything in terms of occupation probabilities, we see that we need to maximize the modified entropy
+\begin{align*}
+  \Sbar = -R \sum_{i = 1}^M p_i \log p_i & + \al\left(\sum_{i = 1}^M p_i - 1\right) \\
+                                         & - \be\left(R \sum_{i = 1}^M p_i E_i - \Etot\right) + \ga\left(R \sum_{i = 1}^M p_i N_i - \Ntot\right),
+\end{align*}
+adding the Lagrange multiplier \ga to the \al and (negative) \be we previously had in \secref{sec:canon_part}.
+What is the occupation probability $p_k$ that maximizes $\Sbar$?
+\begin{mdframed}
+  $\displaystyle 0 = \pderiv{\Sbar}{p_k} = $ \\[140 pt]
+\end{mdframed}
+
+You should find a probability of the form
+\begin{equation}
+  \label{eq:grand_Lagrange}
+  p_k = \frac{1}{Z_g} e^{-\be E_k + \ga N_k},
+\end{equation}
+defining $Z_g = \exp\left[1 - \frac{\al}{R}\right]$ to work in terms of the parameters $\left\{Z_g, \be, \ga\right\}$.
+As usual, we fix these three parameters by demanding that the three constraints above are satisfied.
+
+\newpage % WARNING: FORMATTING BY HAND
+Using the first constraint, what is $Z_g$ in terms of \be and $\ga$?
+\begin{mdframed}
+  $\displaystyle 1 = \sum_{i = 1}^M p_i = $ \\[50 pt]
+\end{mdframed}
+
+Analogously to \eq{eq:canon_aveE} in \secref{sec:canon_part}, the other two constraints
+\begin{align*}
+  \Etot & = R \sum_i p_i E_i &
+  \Ntot & = R \sum_i p_i N_i
+\end{align*}
+now produce complicated relations between $\left\{\be, \ga\right\}$ and $\left\{\Etot, \Ntot\right\}$:
+\begin{align}
+  \Etot & = R \frac{\sum_{i = 1}^M E_i \; e^{-\be E_i + \ga N_i}}{\sum_{j = 1}^M e^{-\be E_j + \ga N_j}} = -\frac{R}{Z_g} \pderiv{}{\be} \sum_{i = 1}^M e^{-\be E_i + \ga N_i} = -R \pderiv{}{\be} \log Z_g(\be, \ga) \label{eq:grand_be_deriv} \\
+  \Ntot & = R \frac{\sum_{i = 1}^M N_i \; e^{-\be E_i + \ga N_i}}{\sum_{j = 1}^M e^{-\be E_j + \ga N_j}} =  \frac{R}{Z_g} \pderiv{}{\ga} \sum_{i = 1}^M e^{-\be E_i + \ga N_i} =  R \pderiv{}{\ga} \log Z_g(\be, \ga). \label{eq:grand_ga_deriv}
+\end{align}
+These relations between $\left\{\Etot, \Ntot\right\}$ and partial derivatives of $\log Z_g$ will be useful when we consider the partial derivatives of the entropy that define the temperature and chemical potential.
+Of course, in order to consider those partial derivatives, we need to express the entropy itself in terms of $\Etot$, \Ntot and the parameters
+\begin{equation*}
+  \left\{Z_g(\be, \ga), \qquad \be(\Etot, \Ntot), \qquad \ga(\Etot, \Ntot)\right\}
+\end{equation*}
+that we have now related to \Etot and $\Ntot$.
+What do you obtain upon inserting \eq{eq:grand_Lagrange} for $p_i$ into the formula for the entropy?
+\begin{mdframed}
+  $\displaystyle S(\Etot, \Ntot) = -R \sum_{i = 1}^M p_i \log p_i = $ \\[120 pt]
+\end{mdframed}
+
+\newpage % WARNING: FORMATTING BY HAND
+Taking the derivative of the resulting entropy with respect to $\Etot$, keeping \Ntot fixed, gives the temperature from \eq{eq:temperature}.
+Thanks to Eqs.~\ref{eq:grand_be_deriv} and \ref{eq:grand_ga_deriv}, the result should simplify in a pleasant way:
+\begin{mdframed}
+  $\displaystyle \frac{1}{T} = \left. \pderiv{S}{\Etot}\right|_{\Ntot} = $ \\[100 pt]
+\end{mdframed}
+In the same way, the derivative with respect to $\Ntot$, keeping $\Etot$ fixed, gives the chemical potential with similar simplifications:
+\begin{mdframed}
+  $\displaystyle \mu = \left. -T \pderiv{S}{\Ntot}\right|_{\Etot} = $ \\[100 pt]
+\end{mdframed}
+In the end you should find
+\begin{align}
+  \be & = \frac{1}{T} &
+  \ga & = \be \mu = \frac{\mu}{T},
+\end{align}
+meaning that (as desired) all information about the particle reservoir has dropped out, with no remaining reference to $R$, \Etot or $\Ntot$.
+This large external reservoir is still present to fix the temperature $T$ and chemical potential $\mu$ that characterize the grand-canonical system $\Om$, but beyond that nothing about it is relevant (or even knowable) in the grand-canonical approach.
+
+Every aspect of \Om can now be specified in terms of its fixed temperature $T$ and chemical potential $\mu$, starting with the parameters $\be = 1 / T$ and $\ga = \mu / T$.
+In particular, the thermodynamic equilibrium probability that \Om adopts micro-state $\om_i$ with (non-conserved) internal energy $E_i$ and particle number $N_i$ is
+\begin{equation}
+  \label{eq:grand_prob}
+  p_i = \frac{1}{Z_g} e^{-\be (E_i - \mu N_i)} = \frac{1}{Z_g} e^{-(E_i - \mu N_i) / T}.
+\end{equation}
+Since the particle number $N_i$ is dimensionless, the combination $E_i - \mu N_i$ that appears here reflects our observation below \eq{eq:chem_pot} that the chemical potential $\mu$ has dimensions of energy.
+
+\begin{shaded}
+  These micro-state probabilities are normalized by the \textbf{grand-canonical partition function}
+  \begin{equation}
+    \label{eq:grand_part_func}
+    Z_g(T, \mu) = \sum_{i = 1}^M e^{-\be (E_i - \mu N_i)} = \sum_{i = 1}^M e^{-(E_i - \mu N_i) / T}.
+  \end{equation}
+  Analogously to the canonical partition function, this $Z_g$ is a fundamental quantity in the grand-canonical ensemble, from which many other derived quantities can be obtained.
+\end{shaded}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{\label{sec:grand_pot}The grand-canonical potential, internal energy, entropy, and particle number}
+The development of the grand-canonical ensemble we have seen so far closely resembles our earlier work setting up the canonical ensemble.
+We have generalized the thermal reservoir to a particle reservoir that fixes both the temperature $T$ and chemical potential $\mu$, while allowing the system's internal energy and particle number to vary between different micro-states $\om_i$.
+By adapting the replica ansatz to this setup, we determined the micro-state probabilities $p_i$ and the grand-canonical partition function $Z_g$, confirming that they are independent of the details of the particle reservoir.
+
+We now continue by considering a similar set of derived quantities for the grand-canonical ensemble in thermodynamic equilibrium.
+In addition to the expectation value of the internal energy introduced in \secref{sec:canon_derived}, the fluctuations of the particle number mean that we also need to consider its expectation value,
+\begin{align*}
+  \vev{E}\!(T, \mu) & = \sum_{i = 1}^M E_i \; p_i = \frac{1}{Z_g} \sum_{i = 1}^M E_i \; e^{-\be (E_i - \mu N_i)} \\
+  \vev{N}\!(T, \mu) & = \sum_{i = 1}^M N_i \; p_i = \frac{1}{Z_g} \sum_{i = 1}^M N_i \; e^{-\be (E_i - \mu N_i)}.
+\end{align*}
+Looking back to Eqs.~\ref{eq:grand_be_deriv} and \ref{eq:grand_ga_deriv}, we can expect both of these derived quantities to be related to derivatives of the logarithm of the grand-canonical partition function.
+In \secref{sec:Helmholtz}, similar relations led us to define the Helmholtz free energy for the canonical ensemble, which we can also generalize to the grand-canonical case.
+
+\begin{shaded}
+  We define the \textbf{grand-canonical potential} of a grand-canonical ensemble to be
+  \begin{equation}
+    \label{eq:grand_pot}
+    \Phi(T, \mu) = -T \log Z_g(T, \mu) = -\frac{\log Z_g(\be, \mu)}{\be},
+  \end{equation}
+  where $Z_g$ is the grand-canonical partition function of the ensemble.
+  In terms of this quantity, Eqs.~\ref{eq:grand_prob} and \ref{eq:grand_part_func} are
+  \begin{align*}
+    Z_g & = e^{-\Phi / T} &
+    p_i & = e^{(\Phi - E_i + \mu N_i) / T}.
+  \end{align*}
+\end{shaded}
+
+The grand-canonical potential is sometimes called the \textit{Landau free energy}, named after \href{https://en.wikipedia.org/wiki/Lev_Landau}{Lev Landau}, to highlight its similarity with the Helmholtz free energy.
+As mentioned above, we want to consider derivatives of the grand-canonical potential, the simplest of which is with respect to the chemical potential,
+\begin{mdframed}
+  $\displaystyle \pderiv{}{\mu} \Phi(\be, \mu) = $ \\[120 pt]
+\end{mdframed}
+The derivative with respect to the temperature is a little messier, but can be simplified by recalling $\pderiv{}{T} = -\be^2 \pderiv{}{\be}$ from \eq{eq:beta_T}.
+As in \secref{sec:Helmholtz}, it involves $\pderiv{}{T} \log Z_g$, which is again worth collecting in advance,
+\begin{mdframed}
+  $\displaystyle -\pderiv{}{T}\left[\frac{\Phi(T, \mu)}{T}\right] = \pderiv{}{T} \log Z_g(T, \mu) = $ \\[100 pt]
+  $\displaystyle \pderiv{}{T} \Phi(T, \mu) = $ \\[80 pt]
+\end{mdframed}
+You should find
+\begin{equation*}
+  \pderiv{\Phi}{T} = \frac{\Phi - \vev{E} + \mu\vev{N}}{T} = -\log Z_g - \be\vev{E} + \be\mu\vev{N},
+\end{equation*}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent which we can connect to the entropy by inserting the probabilities $p_i$ from \eq{eq:grand_prob} into the general definition of the entropy from \eq{eq:entropy}:
+\begin{mdframed}
+  $\displaystyle S(T, \mu) = -\sum_{i = 1}^M p_i \log p_i = $ \\[100 pt]
+\end{mdframed}
+
+\begin{shaded}
+  From this work we can read off the following relations involving the grand-canonical potential $\Phi(T, \mu)$:
+  \begin{align}
+    \vev{N}\!(T, \mu) & = -\pderiv{}{\mu} \Phi \label{eq:N_grand} \\
+            S(T, \mu) & = -\pderiv{}{T} \Phi \\
+    \vev{E}\!(T, \mu) & = -T^2 \pderiv{}{T} \left[\frac{\Phi}{T}\right] + \mu \vev{N} \label{eq:E_grand} \\
+         \Phi(T, \mu) & = -T \, S + \vev{E} - \mu \vev{N} \label{eq:grand_relation}
+  \end{align}
+\end{shaded}
+
+Finally, the connections between the energy, entropy and particle number provided by these relations motivate a further extension of the generalized first law of thermodynamics we derived in \eq{eq:first_law}.
+To make the notation less cumbersome here, we write $\vev{E}$ and $\vev{N}$ as $E$ and $N$, keeping in mind that these are properties of the system's thermodynamic macro-state rather than its fluctuating micro-state.
+In this notation, \eq{eq:first_law} reads $\d{E} = T \d{S} - P \d{V} = Q + W$, and relates any changes in the internal energy of a canonical system to changes in its entropy (heat) or volume (work).
+
+Extending this to the grand-canonical ensemble, we can express the entropy as a function of the internal energy, volume and particle number, $S(E, V, N)$, and consider the change in entropy due to changes in each of these three parameters,
+\begin{equation*}
+  \d{S} = \left.\pderiv{S}{E}\right|_{V, N} \d{E} + \left.\pderiv{S}{V}\right|_{E, N} \d{V} + \left.\pderiv{S}{N}\right|_{V, E} \d{N} = \frac{1}{T} \d{E} + \left.\pderiv{S}{V}\right|_{E, N} \d{V} - \frac{\mu}{T} \d{N}.
+\end{equation*}
+We can interpret the remaining partial derivative by considering \eq{eq:first_law} in the case of fixed internal energy $E$.
+This equation already incorporates the fixed particle number $N$, since it was derived in the framework of the canonical ensemble:
+\begin{equation*}
+  \d{E} = 0 = T \d{S} - P \d{V} \qquad \Lra \qquad \left.\pderiv{S}{V}\right|_{E, N} = \frac{P}{T}.
+\end{equation*}
+
+Putting things together, we obtain the generalized thermodynamic identity
+\begin{equation}
+  \label{eq:thermo_ident}
+  \d{E} = T \d{S} - P \d{V} + \mu \d{N}.
+\end{equation}
+Due to this result, the term $\mu \d{N}$ is sometimes referred to as ``chemical work'', in analogy to the mechanical work $W = - P \d{V}$ done on a system by changing its volume.
+This thermodynamic identity provides a convenient way to remember (or derive) relations between the internal energy, entropy, volume and particle number in thermodynamic equilibrium, by considering processes in which any two of these are fixed.
+For example, fixing $N$ and $V$ gets us back to \eq{eq:temperature} for the temperature,
+\begin{equation*}
+  \d{E} = T \d{S} \qquad \Lra \qquad \frac{1}{T} = \left.\pderiv{S}{E}\right|_{N, V},
+\end{equation*}
+while fixing $N$ and $S$ gives \eq{eq:pressure} for the pressure,
+\begin{equation*}
+  \d{E} = -P \d{V} \qquad \Lra \qquad P = -\left.\pderiv{E}{V}\right|_{N, S}.
+\end{equation*}
+
+If we fix the entropy $S$ and volume $V$, we end up with another way of understanding the chemical potential,
+\begin{equation}
+  \label{eq:mu_E}
+  \d{E} = \mu \d{N} \qquad \Lra \qquad \mu = \left.\pderiv{E}{N}\right|_{S, V}.
+\end{equation}
+That is, the chemical potential is the change in the internal energy when we change the number of particles in the system, without changing its entropy or volume.
+If we consider adding particles to the system, $\De N > 0$, we argued below \eq{eq:chem_pot} that we should generically expect an increase in the entropy.
+In order to keep the entropy fixed in this process, we therefore need the change in the energy to decrease the entropy by the corresponding amount.
+For natural systems with positive temperatures, this requires decreasing the energy, $\De E < 0$.
+Similarly, keeping the entropy fixed as we decrease $N$ would require increasing $E$, so that \eq{eq:mu_E} confirms our earlier finding that for natural systems the chemical potential is negative in general.
+% ------------------------------------------------------------------
