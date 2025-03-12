@@ -1,0 +1,2809 @@
+1
+00:00:00,150 --> 00:00:06,570
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Start the recording. So had a brief scare there when the computer wouldn't turn on for a bit,
+
+2
+00:00:06,570 --> 00:00:14,580
+but up and running now and hopefully smooth sailing for the rest of today and start off with.
+
+3
+00:00:15,860 --> 00:00:19,930
+The magic number that I have for you.
+
+4
+00:00:19,940 --> 00:00:29,840
+95. 666. And we ended up Monday a bit awkwardly, you know, right in the middle of a calculation.
+
+5
+00:00:30,620 --> 00:00:38,849
+So. We will only very briefly recap where we were and dive back into that.
+
+6
+00:00:38,850 --> 00:00:43,140
+It's only been a couple of days since we were last here.
+
+7
+00:00:44,010 --> 00:00:49,499
+We were looking at the Carnot cycle and the context of thermodynamic cycles,
+
+8
+00:00:49,500 --> 00:00:55,469
+and this is the first one that was really formalised now more than 200 years ago.
+
+9
+00:00:55,470 --> 00:01:02,700
+And it has sort of nice pattern to it and isothermal expansion stage followed by adiabatic expansion.
+
+10
+00:01:03,060 --> 00:01:10,050
+And then do the same sequence in reverse isothermal compression followed by idiomatic compression.
+
+11
+00:01:10,620 --> 00:01:19,580
+We figured out that the cycle is self-consistent. All of the volumes and pressures, temperatures and entropies can be arranged so that it closes,
+
+12
+00:01:19,590 --> 00:01:23,670
+gets back to the starting points, and can be run over and over again.
+
+13
+00:01:24,300 --> 00:01:32,100
+And we introduced the concept of the efficiency of a thermodynamic engine,
+
+14
+00:01:32,100 --> 00:01:40,320
+specifically to be the net amount of work that we can get out of this system.
+
+15
+00:01:40,800 --> 00:01:48,390
+So the work that it does on its surroundings, minus the work that the surroundings have to do on it in order for that cycle to close,
+
+16
+00:01:48,960 --> 00:01:56,430
+and all of that relative to the total amount of heat that has to flow into the cycle in order for it to operate.
+
+17
+00:01:57,630 --> 00:02:10,440
+And a general immediate consequence of the first law of thermodynamics is that in addition to being positive just by the definition of an engine,
+
+18
+00:02:11,400 --> 00:02:24,780
+we derived that the efficiency can be no larger than one, which is sometimes phrase is saying that you can't win in the engine game.
+
+19
+00:02:25,680 --> 00:02:32,130
+You can never get more work out of an engine than the amount of energy that you put in in the form of heat.
+
+20
+00:02:32,940 --> 00:02:43,260
+So that was half of the the question that we also had on the screen on Monday, applying the first law to these cycles.
+
+21
+00:02:43,890 --> 00:02:51,540
+And today we will wrap up by. Uh, looking at the the role of the second law in general.
+
+22
+00:02:52,800 --> 00:02:55,860
+Um, after completing the calculation that we are partway through.
+
+23
+00:02:56,310 --> 00:03:04,650
+So we will that will actually be the end of not only heat, uh, engines, but for dynamic cycles.
+
+24
+00:03:05,890 --> 00:03:10,150
+In total, and from there we will change tack a bit.
+
+25
+00:03:10,180 --> 00:03:16,360
+We spent a few weeks on these more concrete applications of the canonical ensemble.
+
+26
+00:03:18,040 --> 00:03:25,149
+We will declare victory on that line of work and return to a more formal,
+
+27
+00:03:25,150 --> 00:03:33,370
+foundational, uh, setting for the third and final form of statistical ensemble that.
+
+28
+00:03:34,510 --> 00:03:39,070
+You will consider in this module, which is known as the Grand Canonical Ensemble.
+
+29
+00:03:39,160 --> 00:03:46,270
+Coming up probably the second half of today. So are there any questions about where we are?
+
+30
+00:03:46,300 --> 00:03:49,690
+Or the plan before we dive back in?
+
+31
+00:04:01,140 --> 00:04:06,420
+So where we got up to last time when computing the efficiency of the Carnot cycle,
+
+32
+00:04:07,200 --> 00:04:14,549
+we went through all four of these stages systematically and determined the amount of work that was involved,
+
+33
+00:04:14,550 --> 00:04:21,960
+whether that was done by the system or on the system, and the amount of heat, whether that's flowing into the system or out of the system.
+
+34
+00:04:22,560 --> 00:04:27,540
+And we got halfway through those four stages.
+
+35
+00:04:28,680 --> 00:04:33,600
+So we have four of the eight quantities to consider.
+
+36
+00:04:33,840 --> 00:04:37,680
+In the first stage, the slow isothermal expansion from point A to B.
+
+37
+00:04:39,030 --> 00:04:51,960
+We derived an expression for. The work and heat in terms of these input quantities that we have full control over in.
+
+38
+00:04:53,640 --> 00:05:03,320
+It realistic setup. Because the volume is expanding, volume B is larger than volume A, the argument to the log is less than one,
+
+39
+00:05:03,330 --> 00:05:10,590
+so the work is negative and that gets mapped to the output work done by the system on its surroundings.
+
+40
+00:05:11,220 --> 00:05:18,240
+And because this is isothermal. The temperature does not change, so the energy does not change.
+
+41
+00:05:18,240 --> 00:05:24,270
+So by the generalised first law, the heat and work have to exactly cancel each other.
+
+42
+00:05:25,050 --> 00:05:30,570
+So the heat is just the negative of the work which makes it greater than zero.
+
+43
+00:05:30,900 --> 00:05:39,870
+So heat is flowing into the system to keep its temperature fixed as its volume expands and pressure drops.
+
+44
+00:05:42,360 --> 00:05:49,770
+The second stage is in fact a bit easier. It is adiabatic, so that means there is no heat flow at all.
+
+45
+00:05:50,280 --> 00:06:01,170
+And. The corresponding work is then just the total change in energy three halves, times and times the change in temperature.
+
+46
+00:06:01,680 --> 00:06:05,220
+Which, because we've gone through and computed all of these temperatures,
+
+47
+00:06:06,210 --> 00:06:12,960
+we can again express in terms of the input quantities we control experimentally.
+
+48
+00:06:13,940 --> 00:06:20,850
+And we have. A volume ratio to the power two thirds.
+
+49
+00:06:20,870 --> 00:06:28,549
+It is now the larger volume divided by the oh, sorry, that is volume.
+
+50
+00:06:28,550 --> 00:06:38,540
+Bebe is smaller still than volume VC, so it is again the ratio of smaller to larger volume, something less than one from which one is subtracted.
+
+51
+00:06:38,840 --> 00:06:48,680
+So this is again. Less than zero and contributing to the output work done by the system on its surroundings.
+
+52
+00:06:49,850 --> 00:06:57,530
+That's the useful stuff that we want to get out of it, running our engine or turning the wheels of our cars.
+
+53
+00:06:59,540 --> 00:07:11,500
+And. Arguably, we are even more than halfway done with those two stages complete because the final two stages are just the mirror image.
+
+54
+00:07:11,890 --> 00:07:15,940
+It is isothermal compression now, followed by idiomatic compression.
+
+55
+00:07:16,600 --> 00:07:21,790
+So going from C to D we do the same calculation as for a to B,
+
+56
+00:07:21,880 --> 00:07:34,540
+just with the limits of the integral interchanged in terms of which volume is larger and which is smaller.
+
+57
+00:07:35,470 --> 00:07:43,050
+Ideal gas law gives us n times the low temperature divided by volume DV.
+
+58
+00:07:43,060 --> 00:07:49,390
+Because it is isothermal compression, the temperature is fixed comes out of the integral.
+
+59
+00:07:50,830 --> 00:08:00,640
+And in by the ideal gas law is just PV over the PA VA over the high temperature at point A.
+
+60
+00:08:01,460 --> 00:08:04,930
+So we have a temperature ratio and then.
+
+61
+00:08:06,460 --> 00:08:17,410
+The log of the. SVD over VC with a negative sign we can absorb to become VC over VD.
+
+62
+00:08:21,130 --> 00:08:30,460
+Both the ratio of temperatures. We computed last time that was the same volume ratio VB over VC to the two thirds power.
+
+63
+00:08:31,030 --> 00:08:37,570
+And we also derived ratios between the different volumes on each side of the.
+
+64
+00:08:38,790 --> 00:08:45,300
+Matching processes to the ratio of volumes PC and VD on either side of this isothermal process
+
+65
+00:08:45,720 --> 00:08:51,390
+are the same as the ratio of volumes VB or VA on both sides of that isothermal process.
+
+66
+00:08:52,710 --> 00:08:58,680
+Plugging all of that in gets us back to something purely in terms of the input variables.
+
+67
+00:09:00,190 --> 00:09:17,170
+PA VA. That same two thirds power of the volume ratio VB to VC, and then the log for VC over v d corresponds to VB over VA.
+
+68
+00:09:18,040 --> 00:09:20,260
+That argument of the log is now greater than one.
+
+69
+00:09:21,460 --> 00:09:31,030
+So we have a positive work, meaning that in this stage at least we have to put work into the cycle rather than getting work out of it.
+
+70
+00:09:32,350 --> 00:09:36,130
+But just as with the other. Isothermal stage.
+
+71
+00:09:36,190 --> 00:09:44,710
+We need still the exact cancellation between heat and work to keep the temperature fixed, and this is now less than zero.
+
+72
+00:09:45,310 --> 00:09:54,550
+So now that we are putting work in, we have to take heat out expelling it into the cold low temperature reservoir.
+
+73
+00:09:56,720 --> 00:10:03,010
+And, um. As we saw in.
+
+74
+00:10:06,170 --> 00:10:12,799
+Our introduction of the entropy that sorry, the efficiency that will have an effect on the overall efficiency of the cycle.
+
+75
+00:10:12,800 --> 00:10:16,520
+So three stages down, just the last one to go.
+
+76
+00:10:16,520 --> 00:10:22,010
+It is again adiabatic. So there is no heat flowing at all.
+
+77
+00:10:23,480 --> 00:10:26,690
+And the work that is done in this cycle.
+
+78
+00:10:28,010 --> 00:10:38,750
+Is, as with the other adiabatic cycle, just the three halves and times the temperature difference, which is the change, the change in internal energy.
+
+79
+00:10:40,820 --> 00:10:44,590
+In the other cycle we had the low temperature minus the high temperature.
+
+80
+00:10:44,600 --> 00:10:46,850
+Here we have the high temperature minus the low temperature.
+
+81
+00:10:48,050 --> 00:10:57,230
+So this is identical up to a negative sign compared to the adiabatic expansion from B to C that was negative.
+
+82
+00:10:57,230 --> 00:11:05,720
+This is positive. And again work has to be put into the system to compress it and heat it up and get all the way back to that starting point.
+
+83
+00:11:07,520 --> 00:11:15,049
+So any questions about that step by step walk through the cycle to see how heat
+
+84
+00:11:15,050 --> 00:11:21,740
+and work are being moved around by these processes that we draw on the PV diagram.
+
+85
+00:11:27,770 --> 00:11:31,960
+Not seeing any. We can just. We now have all the ingredients.
+
+86
+00:11:31,970 --> 00:11:35,210
+We put them together into the efficiency.
+
+87
+00:11:38,460 --> 00:11:41,730
+Which I'll just rewrite here as a reminder.
+
+88
+00:11:42,210 --> 00:11:47,580
+So we start with the work out that is done by the cycle on its surroundings.
+
+89
+00:11:49,260 --> 00:11:54,900
+We saw there were two stages that contribute to this stages A, B, and BC.
+
+90
+00:11:56,310 --> 00:12:02,129
+And because the work that we compute here work AB and BC that are that are both
+
+91
+00:12:02,130 --> 00:12:09,240
+less than zero are the amount that the internal energy of the gas itself changes.
+
+92
+00:12:10,650 --> 00:12:13,980
+When we convert this to our positive output work.
+
+93
+00:12:14,460 --> 00:12:20,310
+We include the negative signs as discussed last time.
+
+94
+00:12:21,670 --> 00:12:26,430
+The input work that comes from the other two cycles and that is already positive.
+
+95
+00:12:26,430 --> 00:12:29,640
+So it needs no additional signs.
+
+96
+00:12:29,790 --> 00:12:37,440
+So that is keeping track of the signs by replacing them with more explicit subscripts.
+
+97
+00:12:38,310 --> 00:12:44,910
+And then finally q in is also raising the internal energy and coming with.
+
+98
+00:12:45,800 --> 00:12:54,620
+A positive sign. And here the only contribution is from that first stage AB the isothermal expansion.
+
+99
+00:12:55,610 --> 00:13:01,220
+Two of the others are adiabatic and the other kicks uh, output heat to the.
+
+100
+00:13:03,060 --> 00:13:06,390
+Cold reservoir. So what we have here.
+
+101
+00:13:06,630 --> 00:13:16,740
+Just plugging everything in. Minus work ab bc and then subtract one, which are those two terms.
+
+102
+00:13:16,740 --> 00:13:23,280
+So everything comes with a negative sign in the numerator and then the input work.
+
+103
+00:13:23,880 --> 00:13:30,420
+This shabby we saw was equal to minus one ab by the first law.
+
+104
+00:13:31,680 --> 00:13:36,839
+All of these are greater than zero in the denominator.
+
+105
+00:13:36,840 --> 00:13:46,090
+We then just have a web. So all of the negative signs actually cancel.
+
+106
+00:13:46,960 --> 00:13:51,210
+And. We can see just above here.
+
+107
+00:13:51,810 --> 00:14:00,610
+That's. The work done in the 80 compression day is equal and opposite to that done in the expansion BC.
+
+108
+00:14:00,640 --> 00:14:07,090
+So those two cancel. So minus work ab overwork AB is one.
+
+109
+00:14:07,630 --> 00:14:21,360
+And then. We have. The remaining ratio of the work done by the isothermal compression divided by that done by the isothermal expansion.
+
+110
+00:14:24,210 --> 00:14:37,460
+So. Things simplify pretty nicely, and we have explicit values for both those two expressions for the work.
+
+111
+00:14:37,470 --> 00:14:40,790
+This is where we had our logarithms of ratios.
+
+112
+00:14:41,310 --> 00:14:48,360
+So if we start with the one and plug in all of those explicit expressions.
+
+113
+00:14:48,360 --> 00:14:56,950
+So work CD. Was. The last one that we wrote down explicitly, PA Parva.
+
+114
+00:14:58,120 --> 00:15:08,860
+A volume ratio to the two thirds power. And then the log of the ratio of different volumes VB over VA.
+
+115
+00:15:10,090 --> 00:15:18,850
+If we look back to work AB that is similarly PA VA and then the log of.
+
+116
+00:15:20,720 --> 00:15:23,720
+The volume ratio VA over VB.
+
+117
+00:15:23,780 --> 00:15:28,680
+So. The A's and B's cancel out trivially.
+
+118
+00:15:29,280 --> 00:15:38,010
+The logarithms cancel out up to a negative sign that inverts their arguments, so this becomes one with a minus sign,
+
+119
+00:15:38,430 --> 00:15:44,700
+and then this volume ratio VB over VC to the two thirds power was actually what
+
+120
+00:15:44,700 --> 00:15:49,050
+we plugged in in place of that ratio of low temperature over high temperature.
+
+121
+00:15:49,410 --> 00:15:58,680
+It's a bit more elegant. To go back to that. You remember that the low temperature is strictly less than the high temperature.
+
+122
+00:15:59,280 --> 00:16:03,590
+So. This works. Um.
+
+123
+00:16:06,350 --> 00:16:09,770
+We expect our Ada to be positive, and we now see that it is less than one.
+
+124
+00:16:09,770 --> 00:16:16,660
+We are subtracting a number that is both positive and less than one.
+
+125
+00:16:16,670 --> 00:16:25,250
+So in the one limit here, Ada will approach zero and stop being an engine in the first place.
+
+126
+00:16:25,850 --> 00:16:30,740
+As this temperature ratio t low to t high approaches one.
+
+127
+00:16:32,720 --> 00:16:44,560
+Something we talked about last week when introducing these ISO theorems is that when we have two ISO terms that have the same temperature,
+
+128
+00:16:44,570 --> 00:16:52,820
+they are the same ISO theorem. So here this overall cycle just basically shrinks and collapses into a single ISO
+
+129
+00:16:52,830 --> 00:16:58,220
+therm that you would go back and forth without doing anything in that limit.
+
+130
+00:16:58,880 --> 00:17:02,690
+In the other limit, Ada will approach one.
+
+131
+00:17:03,740 --> 00:17:09,020
+When that ratio approaches. Zero instead of one.
+
+132
+00:17:09,080 --> 00:17:19,370
+The temperatures are both positive in this context, and there are only two ways that we can imagine this temperature ratio going to zero.
+
+133
+00:17:20,940 --> 00:17:26,130
+Either the low temperature goes to zero. Or the high temperature goes to infinity.
+
+134
+00:17:26,760 --> 00:17:32,610
+Both of those are something that cannot be realised in any physical system.
+
+135
+00:17:33,390 --> 00:17:41,650
+Um. Something you may have heard is that this absolute zero temperature.
+
+136
+00:17:43,530 --> 00:17:54,570
+Is not physically realisable. You can get within a nano Kelvin of it, um, but never all the way down to zero and maybe more obviously.
+
+137
+00:17:56,620 --> 00:18:02,730
+You cannot get the. Hot temperature to have an infinitely high.
+
+138
+00:18:03,230 --> 00:18:08,969
+Oh, the hot reservoir cannot have an infinitely high temperature. So these are all now strict inequalities.
+
+139
+00:18:08,970 --> 00:18:16,170
+And we have gone a bit beyond the bounds that we had very generally from the first law of thermodynamics.
+
+140
+00:18:18,870 --> 00:18:22,140
+So that is the efficiency of the Carnot cycle.
+
+141
+00:18:22,170 --> 00:18:24,120
+We're done with that example.
+
+142
+00:18:25,650 --> 00:18:37,379
+If there are no questions about it, we can take a step back and work a bit more abstractly and more generally to see whether this will always hold.
+
+143
+00:18:37,380 --> 00:18:42,300
+If we can go beyond the first law in terms of these entropy bounds.
+
+144
+00:18:44,850 --> 00:18:48,300
+Sorry, the efficiency bounds. I've said that twice now.
+
+145
+00:18:50,290 --> 00:18:53,870
+And not seeing questions. Let's.
+
+146
+00:18:55,970 --> 00:19:02,990
+Just write down some general results, some of which we've already seen in the Carnot cycle example.
+
+147
+00:19:04,840 --> 00:19:10,930
+But do generalise and hold for any thermodynamic cycle that we can imagine.
+
+148
+00:19:12,370 --> 00:19:16,870
+At least as long as it is an engine that has a positive efficiency, we will.
+
+149
+00:19:18,170 --> 00:19:31,249
+Generalise beyond that in a moment. When we take the ratio now of the lowest temperature that appears anywhere around this thermodynamic
+
+150
+00:19:31,250 --> 00:19:35,840
+cycle to the highest temperature that appears anywhere around this thermodynamic cycle.
+
+151
+00:19:36,740 --> 00:19:40,880
+If that ratio approaches one, we will always.
+
+152
+00:19:42,870 --> 00:19:50,300
+Have a zero efficiency. And this simply makes sense on physical grounds.
+
+153
+00:19:51,290 --> 00:19:55,460
+If the high and low temperatures in our setup are the same.
+
+154
+00:19:55,910 --> 00:20:02,660
+There's no way to get heat flowing between them. And it is that heat flow that drives.
+
+155
+00:20:04,460 --> 00:20:12,410
+And the cycle and allows it to do work. And similarly the opposite limit as.
+
+156
+00:20:13,420 --> 00:20:19,390
+The ratio of low to high temperature, um increases.
+
+157
+00:20:22,740 --> 00:20:27,210
+Will make the cycle more efficient.
+
+158
+00:20:27,360 --> 00:20:35,760
+We can't get all the way to 100% efficiency in any physical material.
+
+159
+00:20:37,380 --> 00:20:43,420
+Um, that actually is maybe a result that is not so obvious.
+
+160
+00:20:43,440 --> 00:20:51,900
+We've only seen this example for the Carnot cycle, where the efficiency is directly related to the ratio of temperatures.
+
+161
+00:20:52,200 --> 00:20:58,080
+If we want to talk about, um, general cycles, we have to be a bit more careful.
+
+162
+00:21:00,070 --> 00:21:04,030
+It will always be the case that increasing the.
+
+163
+00:21:05,010 --> 00:21:08,339
+Uh, ratio. I actually did this wrong.
+
+164
+00:21:08,340 --> 00:21:11,580
+So opposite ratio.
+
+165
+00:21:11,700 --> 00:21:16,709
+When the high temperature becomes larger than the low temperature will make the cycle more efficient.
+
+166
+00:21:16,710 --> 00:21:21,930
+So that will take the inverse ratio T low over t hot to zero.
+
+167
+00:21:23,160 --> 00:21:33,940
+Sorry about that. Um, we've seen in the Cardano cycle that there is an upper bound to that efficiency that is strictly less than one.
+
+168
+00:21:34,330 --> 00:21:37,420
+The question is that how to deal with.
+
+169
+00:21:37,790 --> 00:21:45,879
+Um, does this hold in general for any mathematically consistent thermodynamic cycle,
+
+170
+00:21:45,880 --> 00:21:54,340
+independently of considerations of things like having a hot temperature so high that it would melt physical materials?
+
+171
+00:21:55,920 --> 00:22:07,910
+So this is where we bring the second law to bear. And that second law demands that the overall entropy of.
+
+172
+00:22:09,040 --> 00:22:20,050
+The universe has to increase, or at least be non-decreasing as the cycle goes around its path and is repeated over and over again.
+
+173
+00:22:21,370 --> 00:22:27,580
+So let's get some entropies out of all of these processes of moving heat and doing work.
+
+174
+00:22:30,670 --> 00:22:35,470
+And entropy is related to heat. So let's start.
+
+175
+00:22:36,750 --> 00:22:44,820
+By applying the first law again, which gave us this equality.
+
+176
+00:22:47,640 --> 00:22:55,980
+Simply because as we go around the cycle, we get back to the starting macrostate with the same energy.
+
+177
+00:22:56,430 --> 00:23:04,620
+So no change in energy means all of the input and output work has to cancel out the output in input heat.
+
+178
+00:23:06,210 --> 00:23:09,240
+Plugging this in to the efficiency.
+
+179
+00:23:10,850 --> 00:23:19,520
+We express it entirely in terms of heat flow, with only implicit reference to the work that's coming from it.
+
+180
+00:23:19,970 --> 00:23:30,260
+This is just one minus. The ratio of the output heat that is expelled to the cold reservoir.
+
+181
+00:23:32,290 --> 00:23:36,580
+Compared to the input heat that is brought in from the hot reservoir.
+
+182
+00:23:40,190 --> 00:23:44,180
+And if we recall that heat is related to entropy.
+
+183
+00:23:46,580 --> 00:23:52,310
+It was defined infinitesimally as the temperature times the change in entropy.
+
+184
+00:23:52,940 --> 00:24:03,150
+Then. We have. In the place of this ratio, a ratio of low temperatures for the cold reservoir.
+
+185
+00:24:04,170 --> 00:24:12,510
+Times the amount of entropy that is moved from the system to the low reservoir, the low temperature reservoir.
+
+186
+00:24:12,960 --> 00:24:21,900
+And then we have the high temperature of the hot reservoir. Times the entropy that gets moved in from the hot reservoir to the system itself.
+
+187
+00:24:25,560 --> 00:24:32,610
+So as we go around the cycle over and over again after each iteration.
+
+188
+00:24:35,680 --> 00:24:41,890
+We can say three things in full generality about these entropies.
+
+189
+00:24:43,210 --> 00:24:47,260
+First is that we get back to our starting macrostate.
+
+190
+00:24:47,860 --> 00:24:57,620
+So we will end up with the same entropy as a. Just labelling the starting point a as we did for the cardio cycle.
+
+191
+00:25:00,530 --> 00:25:06,170
+And in the process we will remove delta s in.
+
+192
+00:25:08,200 --> 00:25:18,060
+From the hot reservoir. And we will dump the output entropy delta s out.
+
+193
+00:25:20,190 --> 00:25:32,090
+Into the cold reservoir. Again, going back to the basic picture we have for thermodynamic cycles, we are not creating or destroying entropy,
+
+194
+00:25:32,100 --> 00:25:37,320
+we are just moving it around from these reservoirs through the system to do work.
+
+195
+00:25:38,940 --> 00:25:50,550
+So the second law now tells us that after each iteration, the overall change in the entropy of the universe.
+
+196
+00:25:50,580 --> 00:25:55,050
+So both reservoirs and the system has to be non-decreasing.
+
+197
+00:25:55,920 --> 00:26:05,310
+There's no change in the entropy in the system. There is a positive change in the entropy in the cold reservoir delta s out
+
+198
+00:26:05,790 --> 00:26:11,010
+and a negative change in the entropy in the hot reservoir minus delta s in.
+
+199
+00:26:11,460 --> 00:26:16,830
+So that difference has to be greater than zero which we can rearrange.
+
+200
+00:26:18,850 --> 00:26:28,510
+In terms of a ratio to the ratio of the waste heat that is expelled to the cold reservoir compared to the.
+
+201
+00:26:29,530 --> 00:26:37,890
+Um, input entropy coming from the hot reservoir. Are related in this way.
+
+202
+00:26:39,480 --> 00:26:42,900
+Plugging in the appropriate temperatures from.
+
+203
+00:26:44,990 --> 00:26:51,970
+The relation between entropy and heat. Has to be greater than or equal to one.
+
+204
+00:26:52,930 --> 00:27:01,480
+Or in other words, the amount of heat expelled to the cold reservoir compared to the amount of heat brought in,
+
+205
+00:27:02,110 --> 00:27:06,910
+has to be greater than or equal to this ratio of temperatures.
+
+206
+00:27:07,570 --> 00:27:14,410
+Low temperature over high temperature. That's trivially greater than zero because all of our temperatures are greater than zero.
+
+207
+00:27:15,940 --> 00:27:22,960
+But we can now plug this inequality into this expression for the efficiency.
+
+208
+00:27:24,830 --> 00:27:31,790
+This holds completely independent of the details of the thermodynamic cycle.
+
+209
+00:27:37,510 --> 00:27:40,810
+It will have. The efficiency is one minus.
+
+210
+00:27:42,680 --> 00:27:53,079
+Q out. Over. Q in. This ratio is greater than or equal to the temperature ratio.
+
+211
+00:27:53,080 --> 00:28:00,380
+So when we subtract something that is larger, we end up with an amount that is smaller overall.
+
+212
+00:28:01,810 --> 00:28:06,640
+We write this in terms of one minus t lo minus t high.
+
+213
+00:28:07,150 --> 00:28:12,370
+Because this ratio is strictly positive we have no absolute zero.
+
+214
+00:28:12,370 --> 00:28:18,760
+We have no infinitely hot temperatures. We end up with an efficiency that is strictly less than one.
+
+215
+00:28:19,270 --> 00:28:25,870
+Now from the second law rather than from a detailed analysis of a particular cycle.
+
+216
+00:28:27,760 --> 00:28:35,890
+So this is what the second law brings to our knowledge about efficiencies for any thermodynamic cycle we can possibly imagine.
+
+217
+00:28:36,520 --> 00:28:45,700
+And this is sometimes said that not only can't you win and get more work out than the heat that is put in, but it is.
+
+218
+00:28:47,020 --> 00:28:56,320
+Forbidden by the second law to break even and get the same amount of workout that you could get in the, uh.
+
+219
+00:28:57,090 --> 00:29:02,830
+There's no longer any possibility of getting the efficiency all the way up to one.
+
+220
+00:29:09,250 --> 00:29:10,510
+So any questions about.
+
+221
+00:29:12,740 --> 00:29:22,880
+Those general results that we have now work through in full generality, and also seeing how they manifest for the Carnot cycle.
+
+222
+00:29:25,440 --> 00:29:33,599
+One last interesting aspect of the Carnot cycle that we can note at this point is that the efficiency of the
+
+223
+00:29:33,600 --> 00:29:43,800
+Carnot cycle as a specific cycle is exactly the same as this upper bound that we found from the second law.
+
+224
+00:29:49,620 --> 00:29:56,160
+Which is to say that the Carnot cycle is giving us the the maximum.
+
+225
+00:29:58,430 --> 00:30:03,160
+Possible efficiency of any. Conceivable thermodynamic cycle.
+
+226
+00:30:05,050 --> 00:30:11,590
+Um. So we can expect any other cycle to have an efficiency that is no larger.
+
+227
+00:30:11,610 --> 00:30:18,280
+We've actually proven that it's not just an expectation. The general expectation is that the efficiency of other cycles will be worse.
+
+228
+00:30:18,300 --> 00:30:21,420
+It will be a smaller error. Um.
+
+229
+00:30:24,070 --> 00:30:35,710
+In light of this, it might be surprising that this Carnot cycle is not actually used in any device in steam engines, in the petrol engines.
+
+230
+00:30:36,130 --> 00:30:50,080
+Any mechanical process that is used to do work, and the reason it is not used in practice is just that those isothermal stages,
+
+231
+00:30:50,920 --> 00:30:55,030
+first expansion and then compression have to be slow.
+
+232
+00:30:55,980 --> 00:31:00,840
+And are too slow on the scale of what we want to do to, uh.
+
+233
+00:31:02,020 --> 00:31:09,660
+Allow us. To exploit this maximum efficiency and get the most work out of our heat.
+
+234
+00:31:10,020 --> 00:31:21,900
+It is always more practical to work with cycles that have worse efficiency, but run faster and take the hit in.
+
+235
+00:31:23,310 --> 00:31:30,390
+The the waste heat that is generated, um, leading to a, a smaller value of ETA.
+
+236
+00:31:30,870 --> 00:31:33,870
+And we will see an example of that tomorrow morning.
+
+237
+00:31:34,770 --> 00:31:44,820
+Build on the. Analysis that we have done to just run through another cycle that is a bit more practical,
+
+238
+00:31:45,120 --> 00:31:51,780
+actually used in an IDE or an idealisation of what is actually used in petrol engines.
+
+239
+00:31:52,200 --> 00:31:56,700
+We'll see the efficiency of it and see how it compares to this.
+
+240
+00:31:56,700 --> 00:32:00,480
+Theoretical maximums, uh, saturated by the Carnot cycle.
+
+241
+00:32:03,950 --> 00:32:11,510
+So any questions about. Any aspects of these engines.
+
+242
+00:32:12,900 --> 00:32:18,629
+Before we move on quickly to one other aspect of thermodynamic cycles,
+
+243
+00:32:18,630 --> 00:32:27,810
+which is the question of what happens if we were to reverse the arrows that we have in this PV diagram?
+
+244
+00:32:28,980 --> 00:32:32,930
+And instead of starting with isothermal expansion at the high temperature,
+
+245
+00:32:32,940 --> 00:32:43,440
+we start with adiabatic expansion taking us to the low temperature and then isothermal expansion going out to the maximum volume.
+
+246
+00:32:45,870 --> 00:32:56,100
+Well. Mathematically, all this will do is change the limits of integration on all of those stages.
+
+247
+00:32:56,760 --> 00:33:05,040
+That just brings an overall negative sign to things like the the work in heat and ultimately the efficiency.
+
+248
+00:33:05,610 --> 00:33:10,919
+The efficiency is no longer well defined because what we are doing is not getting work out of the cycle.
+
+249
+00:33:10,920 --> 00:33:17,970
+We are doing work on the system, or putting in some amount of energy in the form of work,
+
+250
+00:33:19,800 --> 00:33:25,470
+and what happens or what we get from that input work is actually.
+
+251
+00:33:27,990 --> 00:33:40,500
+Motion of heat. Specifically removing heat from the cold reservoir and dumping it into the hot reservoir with a higher temperature.
+
+252
+00:33:41,160 --> 00:33:45,000
+And this, rather than being an engine and moving heat to do work,
+
+253
+00:33:45,630 --> 00:33:52,230
+we are plugging our system into the wall and using it to remove heat from a low temperature reservoir.
+
+254
+00:33:54,580 --> 00:33:59,350
+So we have a refrigerator rather than an engine.
+
+255
+00:34:01,560 --> 00:34:07,770
+Essentially all of the work that we did for engines just slides through with only differences and negative signs.
+
+256
+00:34:08,550 --> 00:34:14,670
+Um, but we are no longer interested in the specific efficiency.
+
+257
+00:34:14,700 --> 00:34:18,510
+ETA. That's not what we care about with a refrigerator.
+
+258
+00:34:19,200 --> 00:34:22,660
+Instead. We want to.
+
+259
+00:34:24,510 --> 00:34:29,850
+Analyse how much work we are able to remove from that cold reservoir.
+
+260
+00:34:29,850 --> 00:34:34,290
+That becomes the input heat that goes into the cycle and.
+
+261
+00:34:37,210 --> 00:34:41,110
+So that is what we want to. I get in.
+
+262
+00:34:41,110 --> 00:34:50,290
+The cost of getting that is the amount of input work that we have to do where we can also imagine re um,
+
+263
+00:34:50,290 --> 00:35:00,309
+recovering some of that input work through any output work that we are able to extract from the cycle as it goes around its stages.
+
+264
+00:35:00,310 --> 00:35:05,710
+Kind of like the, uh, the regenerative braking in a hybrid car.
+
+265
+00:35:07,240 --> 00:35:11,780
+So this is. Rather than the efficiency called.
+
+266
+00:35:14,340 --> 00:35:18,420
+The coefficient of performance of a refrigerator.
+
+267
+00:35:20,970 --> 00:35:30,080
+Copy and plugging in our same relation between work and heat, we can simplify it a bit.
+
+268
+00:35:31,340 --> 00:35:38,540
+We have now the difference in the output heat that goes into the hot reservoir minus the input heat,
+
+269
+00:35:39,110 --> 00:35:51,800
+and dividing through by the input heat gives us now one over the same heat ratio that we considered in general in the context of the second law.
+
+270
+00:35:52,310 --> 00:35:57,260
+That's now showing up in the denominator with a one being subtracted from it.
+
+271
+00:35:58,770 --> 00:36:05,550
+We can't exactly reuse, um, our consideration of this ratio up here.
+
+272
+00:36:06,830 --> 00:36:11,030
+So when we saw that Q out of the Q in was related to the temperature ratio,
+
+273
+00:36:11,030 --> 00:36:19,640
+in this way, we have to be more careful because now the input heat is coming from.
+
+274
+00:36:20,930 --> 00:36:30,230
+The cold reservoir, so the input entropy is related to it with a factor of the corresponding low temperature rather than the high temperature.
+
+275
+00:36:31,160 --> 00:36:36,470
+And similarly the output heat is going to the high temperature hot reservoir.
+
+276
+00:36:38,670 --> 00:36:44,850
+In putting this together, there is essentially an inversion of this ratio.
+
+277
+00:36:46,050 --> 00:36:55,740
+It is now greater than or equal to the ratio of high temperature over low temperature, rather than low temperature over high temperature.
+
+278
+00:36:56,370 --> 00:37:04,320
+That's the same application of the second law that we worked through a minute ago.
+
+279
+00:37:04,890 --> 00:37:16,470
+So if we have. Um, we want to swap the ratio of heat for the ratio of temperatures in the coefficient of performance.
+
+280
+00:37:18,910 --> 00:37:22,000
+This will. Uh.
+
+281
+00:37:28,950 --> 00:37:35,760
+So yes, we. Are looking at a ratio that is larger than the temperatures.
+
+282
+00:37:36,330 --> 00:37:43,880
+So when we move to a smaller ratio, we will decrease the positive part of the denominator.
+
+283
+00:37:43,890 --> 00:37:47,310
+So decreasing the denominator increases the overall ratio.
+
+284
+00:37:47,760 --> 00:37:51,870
+So the coefficient of performance is now going to be less than or equal to.
+
+285
+00:37:53,150 --> 00:38:06,620
+The increased expression in terms of temperatures, which we can rearrange to be the low temperature divided by the temperature difference.
+
+286
+00:38:08,780 --> 00:38:15,140
+This actually diverges in the case that the high and low temperatures approach each other.
+
+287
+00:38:15,530 --> 00:38:19,700
+So it is unlikely efficiency is not bounded above by one.
+
+288
+00:38:23,190 --> 00:38:38,550
+Um. It can. So the closer together the temperatures of the refrigerator and the other high temperature reservoir that we have to deal with are,
+
+289
+00:38:39,030 --> 00:38:42,120
+the larger we can expect this coefficient of performance to be.
+
+290
+00:38:43,710 --> 00:38:51,830
+Um. Just a way of saying it's easier to move heat when there's less of a temperature gradient for it to climb.
+
+291
+00:38:52,400 --> 00:38:55,970
+As a qualitative physical statement. And.
+
+292
+00:38:58,020 --> 00:39:03,790
+If we look at. You know, some typical commercial refrigerators that.
+
+293
+00:39:04,720 --> 00:39:11,280
+You, you you might have in your kitchen. Those often have a coefficient of performance that is around five.
+
+294
+00:39:12,660 --> 00:39:16,070
+And just like the. Um.
+
+295
+00:39:17,940 --> 00:39:25,830
+Efficiency. If we look at specific cycles, we find that the Carnot cycle realises this.
+
+296
+00:39:26,730 --> 00:39:30,740
+Um, this bound that we've put in here. Exactly.
+
+297
+00:39:32,850 --> 00:39:33,840
+So he gives the.
+
+298
+00:39:35,530 --> 00:39:47,680
+Maximum coefficient of performance that we can get, but again is not used in practice because those isothermal stages are just too slow.
+
+299
+00:39:54,250 --> 00:40:02,860
+Questions about refrigerators, cycles, any other aspect of the canonical ensemble because it's now.
+
+300
+00:40:05,020 --> 00:40:06,930
+Still a bit early for a break,
+
+301
+00:40:06,940 --> 00:40:15,520
+but time to draw a line under those applications of the canonical ensemble in the examples that we've been going through.
+
+302
+00:40:18,500 --> 00:40:22,380
+And. Since I'm not seeing questions.
+
+303
+00:40:23,340 --> 00:40:26,740
+We. Can go back now to.
+
+304
+00:40:28,710 --> 00:40:38,700
+More of the foundations and the underlying set up of the statistical ensembles that we are considering in this module.
+
+305
+00:40:39,330 --> 00:40:48,090
+So we can remember that we started with the micro canonical ensemble that directly conserves the number of particles in the system,
+
+306
+00:40:48,090 --> 00:40:52,920
+directly applies conservation of energy. The first law of thermodynamics.
+
+307
+00:40:53,670 --> 00:41:01,020
+And this requires that the system be insulated or completely isolated.
+
+308
+00:41:03,620 --> 00:41:11,990
+From its surroundings. There's no chance of exchanging any energy, no chance of an external experimentalist actually observing the system.
+
+309
+00:41:12,440 --> 00:41:20,990
+So we turn to the canonical ensemble, which still fixes the number of particles but now allows energy.
+
+310
+00:41:22,480 --> 00:41:26,510
+To be. Exchanged with the surroundings.
+
+311
+00:41:28,590 --> 00:41:37,320
+Um, the large thermal reservoir that fixes the temperature of our system but allows its energy to fluctuate.
+
+312
+00:41:38,130 --> 00:41:43,410
+And now there is a obvious next step we can do,
+
+313
+00:41:44,190 --> 00:41:50,489
+which is to relax the other micro canonical constraints we had and allow both the number
+
+314
+00:41:50,490 --> 00:41:58,830
+of particles and the energy to fluctuate in exchange with some large external reservoir.
+
+315
+00:42:00,510 --> 00:42:06,450
+So we have particle exchange in addition to energy exchange.
+
+316
+00:42:08,010 --> 00:42:14,180
+And this will. Be the next statistical ensemble we look at called the Grand Canonical Ensemble.
+
+317
+00:42:15,110 --> 00:42:20,540
+And we should have time in the second half of today to.
+
+318
+00:42:21,620 --> 00:42:26,720
+Go through the same exercise that we did in the canonical case and show that.
+
+319
+00:42:30,170 --> 00:42:41,480
+It is legitimate and mathematically well posed to imagine or to claim that we can describe and ensemble in this way.
+
+320
+00:42:42,200 --> 00:42:47,839
+Um, now allowing for particles to be exchanged with its external reservoir,
+
+321
+00:42:47,840 --> 00:42:54,740
+but not actually knowing anything about that reservoir, apart from what quantities like the temperature it holds fixed.
+
+322
+00:42:58,900 --> 00:43:09,070
+So this is the final generalisation we will do for our statistical ensembles in this module.
+
+323
+00:43:19,230 --> 00:43:23,160
+So going generalising even further beyond the canonical ensemble,
+
+324
+00:43:23,790 --> 00:43:33,510
+where we have already seen that the heat exchange with the surroundings is what fixes the temperature of the system.
+
+325
+00:43:34,590 --> 00:43:40,650
+All the other details of the external reservoir are unknowable, apart from the fact that the temperature is fixed.
+
+326
+00:43:41,970 --> 00:43:47,220
+We can now expect in an analogous way that allowing particle exchange.
+
+327
+00:43:49,520 --> 00:43:52,220
+Will fix something else.
+
+328
+00:43:52,880 --> 00:44:01,010
+So the particle number now, like the energy, will be allowed to fluctuate as we imagine our system evolving from one microstate to the next.
+
+329
+00:44:01,460 --> 00:44:05,510
+That's the statistical ensemble framework that we have in mind.
+
+330
+00:44:06,860 --> 00:44:10,040
+We have particles evolving in time, subject to some constraints.
+
+331
+00:44:10,670 --> 00:44:16,730
+One constraint is a fixed temperature. The next constraint will be something else fixed by particle exchange.
+
+332
+00:44:18,920 --> 00:44:25,160
+And to answer the question of what else this is, we can recall.
+
+333
+00:44:26,750 --> 00:44:35,600
+Our starting definition of the temperature one over that temperature is in the micro canonical ensemble in thermodynamic equilibrium.
+
+334
+00:44:36,500 --> 00:44:42,380
+The response of the entropy to a change in the energy with a fixed number of particles.
+
+335
+00:44:44,330 --> 00:44:53,360
+Um. We can apply the micro canonical ensemble to the overall combined setup of our system of interest plus its external reservoir,
+
+336
+00:44:54,480 --> 00:44:58,130
+and that allows us to bring these equations to bear.
+
+337
+00:44:59,300 --> 00:45:09,170
+And. We can now connect these mathematical expressions and partial derivatives to that more physical picture.
+
+338
+00:45:09,800 --> 00:45:13,850
+Exchanging heat changes the energy without changing the number of particles.
+
+339
+00:45:14,450 --> 00:45:15,980
+If we do change particles,
+
+340
+00:45:16,580 --> 00:45:28,490
+we can keep things simple by considering the corresponding partial derivative with explicitly the internal energy of the system fixed.
+
+341
+00:45:30,960 --> 00:45:35,660
+This is going to be. The quantity that is kept fixed.
+
+342
+00:45:36,740 --> 00:45:42,170
+You have already seen the symbol that is used for its view in this picture.
+
+343
+00:45:45,590 --> 00:45:55,650
+And. This combination of partial derivative multiplied by the negative temperature is called the.
+
+344
+00:45:57,120 --> 00:46:01,910
+Chemical potential. Of the system.
+
+345
+00:46:04,290 --> 00:46:11,460
+And it will be the other quantity, along with the temperature that is kept fixed in the grand canonical context.
+
+346
+00:46:13,190 --> 00:46:24,800
+So with this we can just state the formal definition, then take a break and come back to work through the actual rigorous derivation.
+
+347
+00:46:27,020 --> 00:46:31,970
+Of the grand canonical ensemble. But to start with the definition.
+
+348
+00:46:39,040 --> 00:46:42,040
+This is the statistical ensemble characterised.
+
+349
+00:46:44,110 --> 00:46:56,980
+By fixed temperature and fixed chemical potential T and mu and both temperature and chemical potential are fixed.
+
+350
+00:47:00,000 --> 00:47:03,180
+Through this contact with the.
+
+351
+00:47:05,230 --> 00:47:09,790
+Large external reservoir. Energy exchange fixes the temperature.
+
+352
+00:47:10,390 --> 00:47:13,720
+Particle exchange.
+
+353
+00:47:14,680 --> 00:47:23,739
+Fixes the chemical potential. And this large external reservoir is now no longer merely a thermal reservoir,
+
+354
+00:47:23,740 --> 00:47:36,730
+but rather a particle reservoir that allows both of these processes to proceed and thereby fixes both temperature and chemical potential.
+
+355
+00:47:39,960 --> 00:47:46,290
+So that's a good point for a break to reflect on what we've seen so far.
+
+356
+00:47:46,860 --> 00:47:58,680
+So we'll get started again right around noon and see in more detail how all of this works and what sort of physical picture we can attach to it.
+
+357
+00:47:59,160 --> 00:48:02,310
+Are there any questions before we take that break?
+
+358
+00:48:06,800 --> 00:48:08,979
+Not seeing any. Pause that recording and then get back to.
+
+359
+00:48:10,592 --> 00:48:23,222
+Okay, time to resume. Are there any questions before we look into this new concept of chemical potential in a bit more detail?
+
+360
+00:48:26,262 --> 00:48:35,321
+Specifically, I want to motivate this maybe funny seeming factor of minus temperature that comes along with it,
+
+361
+00:48:35,322 --> 00:48:43,812
+which you know, is not a feature of the analogous definition of the temperature in terms of the other entropy derivative.
+
+362
+00:48:45,612 --> 00:48:57,441
+Um. What this does is make the temperature and chemical potential a bit more similar,
+
+363
+00:48:57,442 --> 00:49:03,532
+so that we can kind of apply the same or develop the same intuition for both of them.
+
+364
+00:49:04,852 --> 00:49:09,772
+So like the temperature the chemical potential is an intensive quantity.
+
+365
+00:49:11,452 --> 00:49:14,122
+It does not depend on the size of the system.
+
+366
+00:49:14,122 --> 00:49:23,572
+If you look at a subsystem, it will have the same chemical potential as the the rest of the particles around it.
+
+367
+00:49:25,402 --> 00:49:28,192
+Because we have this overall factor of t.
+
+368
+00:49:28,942 --> 00:49:38,332
+The dimensions of mu are the same as the dimensions of T, so both entropy and particle number n are dimensionless.
+
+369
+00:49:41,282 --> 00:49:48,622
+The dimensions of T are the same as the dimensions of energy, because we set the Boltzmann constant that unit conversion factor to one.
+
+370
+00:49:49,492 --> 00:50:02,782
+Um, so one reason to have a factor of temperature here is to have the same dimensions for all of energy, temperature, and chemical potential.
+
+371
+00:50:03,742 --> 00:50:07,222
+That just leaves the negative sign to appreciate.
+
+372
+00:50:10,412 --> 00:50:15,152
+Back when we first introduced temperature in the micro canonical ensemble,
+
+373
+00:50:16,052 --> 00:50:26,402
+we saw that it could be negative and picked out positive temperature systems as the natural set of systems,
+
+374
+00:50:27,482 --> 00:50:33,662
+where the entropy increases as we add more energy to the system with a fixed number of particles.
+
+375
+00:50:36,122 --> 00:50:41,162
+If we focus just on positive temperature natural systems, then.
+
+376
+00:50:42,932 --> 00:50:46,082
+What can we say about the chemical potential? Well.
+
+377
+00:50:47,432 --> 00:50:53,042
+Just like we generally expect the entropy to increase if we add more energy.
+
+378
+00:50:53,762 --> 00:50:59,312
+If we add more particles to our system, then.
+
+379
+00:51:01,592 --> 00:51:08,582
+We expect there to be more information about where those particles are located, what momenta or energies they have.
+
+380
+00:51:09,152 --> 00:51:12,332
+That additional information we have seen.
+
+381
+00:51:13,952 --> 00:51:16,982
+Is described by an increase in the entropy.
+
+382
+00:51:18,182 --> 00:51:24,962
+And in general, this is the case even when the total energy is fixed.
+
+383
+00:51:26,192 --> 00:51:33,902
+Um, so adding the particle does not add any more energy, but the existing energy has to be redistributed among a larger number of particles.
+
+384
+00:51:34,382 --> 00:51:40,232
+We still have more information from more particles. So the change in entropy.
+
+385
+00:51:42,242 --> 00:51:45,662
+With the change in particle number is positive.
+
+386
+00:51:45,662 --> 00:51:54,632
+That's the mathematics of the, uh, argument I just worked out with temperature positive, the derivative positive.
+
+387
+00:51:55,052 --> 00:51:58,952
+We end up with the chemical potential being negative.
+
+388
+00:51:59,942 --> 00:52:08,942
+And that is one difference compared to the natural temperature and a difference that we can justify by,
+
+389
+00:52:10,562 --> 00:52:17,482
+um, a quick repeat of our heat exchange thought experiment.
+
+390
+00:52:17,492 --> 00:52:22,382
+Now looking at particle exchange or particle flow in the grand canonical ensemble.
+
+391
+00:52:23,192 --> 00:52:29,061
+So really the sign that we have here is a choice that we are free to make in either way.
+
+392
+00:52:29,062 --> 00:52:37,172
+And it's possible you might find textbooks or other references that define the chemical potential to be the negative of what we have here.
+
+393
+00:52:40,732 --> 00:52:46,712
+In that case. Which I think is unusual if it happens at all.
+
+394
+00:52:48,092 --> 00:52:54,362
+The intuition would have to change when we think about things like particle flow.
+
+395
+00:52:55,172 --> 00:53:05,882
+So let's set up what I mean by this. So we have.
+
+396
+00:53:09,772 --> 00:53:17,182
+Say two systems, a system A on the left and then.
+
+397
+00:53:18,152 --> 00:53:26,102
+A system B on the right. They both have some number of particles, some chemical potential.
+
+398
+00:53:31,702 --> 00:53:38,062
+We can say they are each in contact with their own separate particle reservoirs.
+
+399
+00:53:38,572 --> 00:53:46,132
+For simplicity, we can give both A and B the same positive natural temperature.
+
+400
+00:53:47,002 --> 00:53:54,922
+The dashed line here separating them is effectively a, uh, construct of our imagination, our thought experiment.
+
+401
+00:53:55,372 --> 00:54:01,522
+The particles are free to be exchanged and to flow from.
+
+402
+00:54:03,072 --> 00:54:11,052
+Uh, either side. To the other across this dashed barrier.
+
+403
+00:54:12,852 --> 00:54:17,401
+And let's consider. To have a concrete example.
+
+404
+00:54:17,402 --> 00:54:26,492
+The case where. System A has a smaller chemical potential than a system B, and because both are negative,
+
+405
+00:54:26,942 --> 00:54:34,172
+that corresponds to a more negative number a larger magnitude with a negative sign for system A.
+
+406
+00:54:36,052 --> 00:54:44,542
+Now, our intuition from heat exchange is that heat flows from hotter systems to colder systems,
+
+407
+00:54:44,902 --> 00:54:49,882
+lowering the temperature of the hotter system, raising that of the colder systems so that they tend to come together.
+
+408
+00:54:51,872 --> 00:54:54,722
+It would be convenient if something similar happened here,
+
+409
+00:54:55,022 --> 00:55:02,972
+and the particles flowed from the system with the higher chemical potential to the system with the lower chemical potential.
+
+410
+00:55:04,732 --> 00:55:14,662
+So let's see if that in fact does happen, because the temperature is the same on both sides.
+
+411
+00:55:16,732 --> 00:55:21,712
+We can directly relate the chemical potentials to the partial derivatives.
+
+412
+00:55:24,352 --> 00:55:32,421
+So with both being positive, the smaller or the more negative chemical potential,
+
+413
+00:55:32,422 --> 00:55:39,742
+MWA means that the magnitude of the partial derivative has to be larger.
+
+414
+00:55:40,982 --> 00:55:44,072
+Then the corresponding partial derivative.
+
+415
+00:55:44,982 --> 00:55:49,182
+In system B, these are all done with fixed energy.
+
+416
+00:55:49,222 --> 00:55:56,452
+I'll leave off that decoration for now. So multiply both of these by the same fix minus t.
+
+417
+00:55:56,962 --> 00:56:01,882
+That negative sign will flip the inequalities and get us back to our starting point.
+
+418
+00:56:04,092 --> 00:56:15,022
+And the particle flow that we want to consider here is a change in particles of the particle number on both sides of this imaginary wall.
+
+419
+00:56:15,042 --> 00:56:24,192
+So particles flowing into or out of system A have to be evenly matched by particles flowing out of or into system B.
+
+420
+00:56:24,822 --> 00:56:30,012
+They are not created or destroyed, they just move from one subsystem to the other.
+
+421
+00:56:31,242 --> 00:56:35,202
+This will change the entropy, this process.
+
+422
+00:56:35,472 --> 00:56:41,982
+The second law says that the change in entropy needs to be non-negative as the particles flow,
+
+423
+00:56:42,582 --> 00:56:49,062
+and we can break this up into the contribution from subsystem A,
+
+424
+00:56:49,152 --> 00:57:01,332
+how the entropy on the left changes as its number of particles varies, and the corresponding change from the right hand to system B, which.
+
+425
+00:57:03,442 --> 00:57:07,852
+Um, is directly connected to these partial derivatives that we have here.
+
+426
+00:57:08,302 --> 00:57:14,332
+This is just effectively the chain rule. Take the partial derivative in each system.
+
+427
+00:57:14,722 --> 00:57:23,212
+Multiply by the differential factor that becomes the flow of particles and apply.
+
+428
+00:57:25,032 --> 00:57:29,322
+The second law to make that non-negative.
+
+429
+00:57:36,432 --> 00:57:42,022
+So we have this relation between the change of particles on both sides.
+
+430
+00:57:42,042 --> 00:57:50,292
+They are equal and opposite. So we can pull out an overall factor of delta in a for instance.
+
+431
+00:57:50,772 --> 00:58:01,182
+And then all that remains is the partial derivative from system A now minus partial derivative from system B.
+
+432
+00:58:02,782 --> 00:58:06,052
+Thanks to the negative side relating and delta ends.
+
+433
+00:58:07,132 --> 00:58:09,952
+This has this product has to be non negative.
+
+434
+00:58:10,852 --> 00:58:19,492
+We have just said that the partial derivative in system A is greater than that in system B, so this is strictly positive.
+
+435
+00:58:21,142 --> 00:58:24,892
+We are also assuming that there is some flow so that delta n is non-zero.
+
+436
+00:58:25,642 --> 00:58:35,962
+And the only way this inequality can be consistent then is for delta n a to be positive.
+
+437
+00:58:36,742 --> 00:58:43,132
+So particles are flowing into a system A raising its number of particles,
+
+438
+00:58:44,512 --> 00:58:52,912
+which is exactly what we wanted to see given the relation between chemical potentials that we had.
+
+439
+00:58:55,112 --> 00:58:59,102
+So the particle flow with our definition of chemical potential.
+
+440
+00:59:01,122 --> 00:59:06,312
+Is exactly analogous to heat exchange with temperature.
+
+441
+00:59:09,162 --> 00:59:14,952
+Particles flow from a system with a larger chemical potential, in this case the system on the right omega B.
+
+442
+00:59:15,672 --> 00:59:20,862
+They flow to regions or systems with smaller chemical potentials.
+
+443
+00:59:21,192 --> 00:59:33,272
+In our example above, that was Omega A. And if we did not include the negative sign, we would have gotten exactly the opposite behaviour.
+
+444
+00:59:33,722 --> 00:59:42,752
+We would have had positive chemical potentials. The particles would flow from small to large chemical potential rather than from large to small.
+
+445
+00:59:44,192 --> 00:59:52,862
+So the negative sign, while it looks unintuitive to have negative values for the chemical potential, is what is needed to give us.
+
+446
+00:59:54,232 --> 01:00:02,332
+This intuitive relation with the particle flow and chemical potential, behaving just like heat flow and temperature.
+
+447
+01:00:03,082 --> 01:00:10,162
+Now the larger view is the less negative one, and the smaller mu is the more negative one with the larger magnitude.
+
+448
+01:00:13,052 --> 01:00:17,372
+So hopefully that has clarified the chemical potential a bit.
+
+449
+01:00:17,912 --> 01:00:23,162
+It is much like the temperature. It controls particle flow. It has dimensions of energy.
+
+450
+01:00:24,032 --> 01:00:35,522
+Are there questions about that ingredient before we formulate the grand canonical ensemble in our nice, mathematically rigorous way?
+
+451
+01:00:40,332 --> 01:00:52,682
+Not seeing any. Let's just. State as a reminder of the basic features that we now have in our system.
+
+452
+01:00:53,462 --> 01:01:03,182
+Not only the energy, but also the particle number are free to fluctuate, so they will vary for different microstates.
+
+453
+01:01:07,312 --> 01:01:16,912
+As before. We'll call the microstate Omega. I and I and II are the energy and particle number corresponding to that microstate.
+
+454
+01:01:17,452 --> 01:01:29,841
+And our goal for a formal derivation or definition of the grand canonical ensemble is to have the distribution
+
+455
+01:01:29,842 --> 01:01:38,842
+of probabilities for all of these microstates that make no reference to the large external particle reservoir,
+
+456
+01:01:39,742 --> 01:01:46,882
+apart from the fact that its presence fixes the temperature and chemical potential.
+
+457
+01:01:52,402 --> 01:01:58,402
+And we can do this in the same way that we proceeded for the canonical ensemble.
+
+458
+01:01:59,122 --> 01:02:05,062
+There we introduced the replica trick as a way to guarantee.
+
+459
+01:02:06,822 --> 01:02:17,072
+That. We are considering a external reservoir that is sensible physically so.
+
+460
+01:02:19,632 --> 01:02:32,292
+We have our system of interest that is coloured here in red, and then our reservoir will be our minus one copies or replicas of that system.
+
+461
+01:02:33,582 --> 01:02:43,152
+Um, so that the overall total combination of our system of interest omega times the reservoir.
+
+462
+01:02:45,232 --> 01:02:50,062
+Just involves our copies of the system itself.
+
+463
+01:02:52,842 --> 01:02:58,331
+So here, um, some boxes have been drawn around these different replicas.
+
+464
+01:02:58,332 --> 01:03:02,141
+They can now have different numbers of particles as well as different energies.
+
+465
+01:03:02,142 --> 01:03:06,072
+So they adopt some microstates of the system at every point in time.
+
+466
+01:03:06,642 --> 01:03:12,702
+So we look at the, the microstates of this overall total system.
+
+467
+01:03:13,692 --> 01:03:24,312
+But those boxes are all just mental constructs. Particles are free to, uh, flow between all of these systems back and forth along with the energy.
+
+468
+01:03:25,362 --> 01:03:38,662
+And. We assume or demand that all of these systems are in thermodynamic equilibrium with each other as they exchange energy and particles.
+
+469
+01:03:39,202 --> 01:03:43,072
+So this is kind of like, you know, taking the air in this room,
+
+470
+01:03:43,372 --> 01:03:53,152
+saying that we're interested in some cubic centimetre of the air and the reservoir is all the rest, the same stuff, just more of it.
+
+471
+01:03:55,912 --> 01:04:04,012
+So in that overall. Total system governed by the micro canonical ensemble it will have.
+
+472
+01:04:04,982 --> 01:04:11,702
+Conserved energy. By the first law, we can break up into the energy of the system plus the energy that is in the reservoir.
+
+473
+01:04:12,722 --> 01:04:17,852
+And since that reservoir is just R minus one copies of the system.
+
+474
+01:04:20,142 --> 01:04:26,502
+We can sum over all of those replicas to get the total energy from the energy in each replica.
+
+475
+01:04:28,052 --> 01:04:33,842
+The new ingredient is that exactly the same thing happens for the particle number.
+
+476
+01:04:35,192 --> 01:04:40,832
+We sum over the number of particles in each replica to get the conserved micro canonical amount.
+
+477
+01:04:44,332 --> 01:04:54,382
+And. Our system of interest. For simplicity, we will assume it has a countable finite number of microstates,
+
+478
+01:04:55,192 --> 01:05:04,342
+and we can always take the limit where this m s goes to infinity at the end of our calculation.
+
+479
+01:05:04,822 --> 01:05:10,132
+But having a finite number will allow us to freely interchange sums and express
+
+480
+01:05:10,132 --> 01:05:17,242
+these sums over replicas as sums over microstates in the same way that we did.
+
+481
+01:05:19,002 --> 01:05:23,982
+When when applying this replica trick to the to formulate the canonical ensemble.
+
+482
+01:05:25,332 --> 01:05:36,552
+Each of these microstates now has the fluctuating energy u sub I, and it has in sub I particles,
+
+483
+01:05:37,452 --> 01:05:46,692
+and I will specify here that in the grand canonical ensemble we will only worry about indistinguishable particles.
+
+484
+01:05:47,202 --> 01:05:53,352
+Um, and that's really in order to make the chemical potential and particle flow well-defined concepts.
+
+485
+01:05:54,702 --> 01:05:58,662
+We want to see that particles are flowing without any further information like labels.
+
+486
+01:05:59,652 --> 01:06:05,692
+That is the physical significance of the chemical potential.
+
+487
+01:06:05,712 --> 01:06:14,382
+So. What we will do here is strictly applicable only to indistinguishable particles, which fortunately,
+
+488
+01:06:14,382 --> 01:06:22,602
+all particles in physical systems, uh, where we are interested in will satisfy that, uh.
+
+489
+01:06:23,602 --> 01:06:39,172
+Condition. One other ingredient from the replica trick to bring in and adapt are the occupation numbers and occupation probabilities.
+
+490
+01:06:43,412 --> 01:06:50,672
+So lowercase and sub I is the number of the replicas that.
+
+491
+01:06:53,402 --> 01:06:59,492
+Uh, have adopted microstate Omega sub I of our system.
+
+492
+01:07:03,522 --> 01:07:15,102
+The occupation probabilities are just divide this by the overall number of replicas to get something that adds up to one.
+
+493
+01:07:15,732 --> 01:07:26,702
+And this. Here is the probability that if we select a replica at random, it will be in this microstate omega I.
+
+494
+01:07:27,152 --> 01:07:37,622
+And what we want to do through this exercise is get rid of the role of replicas and the corresponding particle reservoir entirely,
+
+495
+01:07:38,822 --> 01:07:50,192
+so that these occupation probabilities can be recast as, um, microstate probabilities in our system in isolation.
+
+496
+01:07:56,172 --> 01:08:01,272
+In terms of these occupation numbers, there are some simple equalities that we have seen before.
+
+497
+01:08:01,662 --> 01:08:11,712
+If we sum over all and microstates and the occupation numbers have to add up to the total number of replicas that we have,
+
+498
+01:08:13,662 --> 01:08:18,491
+that is equivalent to the conservation of these occupation probabilities.
+
+499
+01:08:18,492 --> 01:08:26,322
+If we divide both sides by r the and turn into ps, the r turns into one.
+
+500
+01:08:27,702 --> 01:08:35,232
+And if we look at the amount of energy that each replica is contributing to the total,
+
+501
+01:08:35,712 --> 01:08:45,462
+we can reorganise our sums to express that total in terms of the energy of each microstates,
+
+502
+01:08:45,462 --> 01:08:50,022
+weighted by the number of replicas that adopt that microstates.
+
+503
+01:08:50,832 --> 01:08:56,892
+And same for now. The total particle number.
+
+504
+01:08:58,032 --> 01:09:02,532
+Each replicable have some number of particles big and sub I.
+
+505
+01:09:02,952 --> 01:09:06,342
+There are and occupation numbers were little and sub I of them.
+
+506
+01:09:06,822 --> 01:09:10,092
+Multiply them together. Add them up and we get the total end.
+
+507
+01:09:10,452 --> 01:09:13,632
+I'm sorry about having an equation that looks like n equals n times n.
+
+508
+01:09:14,112 --> 01:09:20,171
+That's uh, hopefully clear from the subscripts, some cases and all the, uh,
+
+509
+01:09:20,172 --> 01:09:29,382
+preparatory work that we've done up to this point can make it look a bit better by converting occupation number to occupation probability.
+
+510
+01:09:32,342 --> 01:09:37,892
+And. Based on.
+
+511
+01:09:38,282 --> 01:09:43,832
+Well, all of these. Features of our.
+
+512
+01:09:44,852 --> 01:09:53,672
+Combined system that has a large reservoir taken to be our minus one replicas of the system itself.
+
+513
+01:09:54,452 --> 01:10:00,732
+We want to. Compute the quantities that will be kept fixed by that reservoir.
+
+514
+01:10:03,192 --> 01:10:09,072
+These are the temperature and chemical potential, both intensive.
+
+515
+01:10:11,402 --> 01:10:24,542
+And we are computing both of them in the micro canonical ensemble that governs that overall total system with conserved energy and particle number.
+
+516
+01:10:26,612 --> 01:10:31,052
+As always in this module, in order to compute these derived quantities.
+
+517
+01:10:32,482 --> 01:10:39,712
+We need to impose thermodynamic equilibrium on the system.
+
+518
+01:10:40,672 --> 01:10:52,622
+And as before, we do that by. Maximising the entropy of that overall total system.
+
+519
+01:10:53,612 --> 01:11:04,212
+Subject to. The three independent constraints that we have here relating to microstate energies and particle numbers,
+
+520
+01:11:04,512 --> 01:11:10,182
+to the conserved total energy and total particle number, and the condition of conservation of probability.
+
+521
+01:11:10,842 --> 01:11:18,062
+Connecting occupation numbers to replicas. Questions so far about the setup.
+
+522
+01:11:20,192 --> 01:11:25,892
+Hopefully it looks fairly familiar from what was done a few weeks ago.
+
+523
+01:11:26,252 --> 01:11:31,562
+In fact, one very familiar aspect of it is that the same.
+
+524
+01:11:33,102 --> 01:11:37,782
+Microstates counting works and goes through.
+
+525
+01:11:37,902 --> 01:11:41,772
+In this system, we have our. Our replicas.
+
+526
+01:11:42,282 --> 01:11:49,362
+We want to assign them to. And copies of, um, microstates.
+
+527
+01:11:49,692 --> 01:11:53,141
+Omega one after that are minus and one.
+
+528
+01:11:53,142 --> 01:12:00,252
+Replicas remain to be assigned, and two copies of microstate, Omega two, and so on.
+
+529
+01:12:01,122 --> 01:12:10,842
+So the overall total number of microstates has the same functional form from that telescoping product that we saw earlier.
+
+530
+01:12:12,912 --> 01:12:18,852
+Which terminates thanks to our assumption of a finite number of microstates.
+
+531
+01:12:19,452 --> 01:12:24,142
+While this equation has the same form, the microstates themselves are very different.
+
+532
+01:12:24,162 --> 01:12:28,392
+The particle numbers can now fluctuate. So.
+
+533
+01:12:30,092 --> 01:12:36,002
+Not everything is the same. The entropy.
+
+534
+01:12:37,002 --> 01:12:44,172
+That we have based on this microstate counting in the micro canonical ensemble.
+
+535
+01:12:44,172 --> 01:12:45,372
+That is just the logarithm.
+
+536
+01:12:46,122 --> 01:12:57,402
+If we take the log of this and expand the logs of the factorials using Stirling's formula as before, we get back to the same expression.
+
+537
+01:13:00,022 --> 01:13:07,162
+So again, the same functional form, but a different interpretation of these probabilities for the different microstates.
+
+538
+01:13:08,152 --> 01:13:13,792
+Here we've used the assumption that every occupation number is large.
+
+539
+01:13:15,322 --> 01:13:21,562
+So a formal, um, condition that requires a very large particle reservoir.
+
+540
+01:13:22,342 --> 01:13:31,402
+And now we go through the maximisation of this entropy subject to our three constraints.
+
+541
+01:13:32,212 --> 01:13:36,522
+So we add. To what we did before.
+
+542
+01:13:37,122 --> 01:13:40,452
+A third the drawings multiplier.
+
+543
+01:13:43,922 --> 01:13:49,892
+In our modified entropy S bar that starts off as the entropy itself.
+
+544
+01:13:52,922 --> 01:14:03,542
+And then we add three terms to it, each with a corresponding Lagrange multiplier that will drop out when the corresponding constraints are imposed.
+
+545
+01:14:04,142 --> 01:14:11,152
+So. A condition on probability conservation and energy conservation.
+
+546
+01:14:11,992 --> 01:14:24,212
+We had before. The new piece is to do the same with the total number of particles.
+
+547
+01:14:24,842 --> 01:14:28,172
+So let's call that Lagrange multiplier positive gamma.
+
+548
+01:14:28,892 --> 01:14:36,212
+And it has the same expression just with particle numbers in place of energies.
+
+549
+01:14:37,502 --> 01:14:48,302
+And the maximisation with respect to any given occupation probability proceeds in the same way.
+
+550
+01:14:51,372 --> 01:15:01,842
+From the first term, we pick out a log of p k plus one with an overall constant factor of minus r in the second term.
+
+551
+01:15:03,142 --> 01:15:07,102
+The derivative just picks out a delta ik with a sum that gives one.
+
+552
+01:15:08,212 --> 01:15:13,972
+In the third term we have beta r and then the delta function picks out k.
+
+553
+01:15:18,142 --> 01:15:27,852
+And the final term is the same, just with beta replaced by positive gamma and EQ replaced by N.K.
+
+554
+01:15:28,762 --> 01:15:38,602
+So solving for our occupation probability, we can rearrange everything to move the log of PQ over to the other side.
+
+555
+01:15:38,962 --> 01:15:42,202
+Divide through by r. That minus sign is still there.
+
+556
+01:15:43,572 --> 01:15:51,372
+We have an alpha over R and then the R's here cancel beta e k plus gamma and k.
+
+557
+01:15:52,242 --> 01:15:56,472
+Or in other words the occupation probability itself.
+
+558
+01:15:57,132 --> 01:16:03,312
+Take the exponential of this. Use some of the same properties exponentials that we used before.
+
+559
+01:16:04,242 --> 01:16:10,692
+We have exponential of these beta and gamma Lagrange multipliers.
+
+560
+01:16:14,132 --> 01:16:26,431
+And then the other two terms we can negate and taken to the denominator one minus alpha over r that we can make this
+
+561
+01:16:26,432 --> 01:16:37,382
+look a bit more elegant by just declaring that this constant I independent exponential factor is some other quantity.
+
+562
+01:16:39,422 --> 01:16:46,122
+Um, this gave us. A partition function called z before with the canonical ensemble.
+
+563
+01:16:46,632 --> 01:16:53,082
+Let's call it z sub z for grand canonical ensemble and the other exponential factor.
+
+564
+01:16:54,372 --> 01:17:03,942
+Comes along for the ride. Does that all sound good?
+
+565
+01:17:04,092 --> 01:17:10,092
+Um. Straightforward, uh, extension of stuff we've seen before.
+
+566
+01:17:10,782 --> 01:17:13,302
+Don't think. Needs too much elaboration.
+
+567
+01:17:15,622 --> 01:17:26,781
+And you can remember that the next step in this procedure is to impose our three constraints in order to relate the
+
+568
+01:17:26,782 --> 01:17:38,062
+Lagrange multipliers minus beta plus gamma and now ZG2 the temperature and chemical potential that we want to get out.
+
+569
+01:17:39,592 --> 01:17:46,142
+So we can. Start with the first of those already.
+
+570
+01:17:46,712 --> 01:17:57,832
+Um. The fact that the probabilities have to add up to one tells us that.
+
+571
+01:17:59,902 --> 01:18:04,342
+This constant factor one over ZG can come out of this sum.
+
+572
+01:18:05,092 --> 01:18:10,742
+We have. The exponential factor is still in the sum.
+
+573
+01:18:11,162 --> 01:18:18,902
+It is trivial to rearrange this to get the expression that z sub g is just the sum of these exponential factors.
+
+574
+01:18:19,802 --> 01:18:30,702
+So. Morally the same as the Boltzmann distribution or the Gibbs distribution that we had in the canonical ensemble,
+
+575
+01:18:30,702 --> 01:18:37,572
+but now with exponential dependence on the particle number that can fluctuate as well as the fluctuating energy.
+
+576
+01:18:39,102 --> 01:18:45,172
+And this is that G defined in this way. Is now.
+
+577
+01:18:49,422 --> 01:18:55,782
+The direct analogue of the partition function in the canonical ensemble.
+
+578
+01:18:58,122 --> 01:19:10,572
+And even though it is a mouthful, I will call it just the grand canonical partition function rather than introducing some some new name for it.
+
+579
+01:19:13,252 --> 01:19:20,722
+It is still, um, we can note here expressed in terms of these Lagrange multipliers beta and gamma.
+
+580
+01:19:21,472 --> 01:19:26,962
+We want to replace that dependence with dependence on temperature and chemical potential.
+
+581
+01:19:28,432 --> 01:19:34,702
+The temperature and chemical potential both come from partial derivatives of the entropy with respect to either,
+
+582
+01:19:35,842 --> 01:19:38,992
+um, the total energy or total particle number.
+
+583
+01:19:39,622 --> 01:19:46,252
+So let's go through and consider. The entropy and its partial derivatives.
+
+584
+01:19:53,892 --> 01:20:08,022
+We can simplify the energy before looking at partial derivatives by going back to the result coming from that telescoping product,
+
+585
+01:20:08,622 --> 01:20:15,732
+and substituting in the API that we have found in one of these two places where it appears.
+
+586
+01:20:16,812 --> 01:20:21,372
+So we have now a log of this complicated.
+
+587
+01:20:23,282 --> 01:20:33,152
+One over ZG. And then the exponential factor e to the minus beta e I plus gamma and I.
+
+588
+01:20:34,622 --> 01:20:38,282
+Properties of the logs will give us three terms from this.
+
+589
+01:20:38,792 --> 01:20:42,542
+Let's just go through carefully so that we don't lose track of any of them.
+
+590
+01:20:43,382 --> 01:20:54,721
+Log of one over z g is a negative log of z g log of e to the minus beta e I is minus beta e I,
+
+591
+01:20:54,722 --> 01:21:00,452
+and similarly for the other term in the exponential argument.
+
+592
+01:21:01,352 --> 01:21:05,942
+So the first term is independent of I.
+
+593
+01:21:05,972 --> 01:21:14,342
+We just have the sum over p which is one. Negative signs cancel in our log z z to g.
+
+594
+01:21:17,722 --> 01:21:23,742
+In the second term we have r times p times e.
+
+595
+01:21:23,752 --> 01:21:27,892
+I summed over all the microstates, which is the total energy.
+
+596
+01:21:29,502 --> 01:21:36,572
+That we started off with occupation number, uh, weighing the contribution to the energy.
+
+597
+01:21:37,232 --> 01:21:43,922
+There's negative signs again cancelling. And this the garage multiplier beta comes along for the ride.
+
+598
+01:21:44,582 --> 01:21:50,702
+And same with the particle number just with minus gamma in place of beta.
+
+599
+01:21:53,382 --> 01:22:00,372
+Going forward, I'll stop writing the the total subscripts just to save some ink.
+
+600
+01:22:01,032 --> 01:22:09,732
+Um, but keep in mind that we will be going through the overall total system still with reference to the particle reservoir,
+
+601
+01:22:10,632 --> 01:22:19,842
+when we consider the overall temperature as this partial derivative of this expression with respect to the energy.
+
+602
+01:22:25,702 --> 01:22:31,942
+So what does this give us? We will have several terms are as a constant factor the number of replicas.
+
+603
+01:22:32,452 --> 01:22:42,052
+When we take the partial derivative of the log. The ZG depends not on energy and particle number, but on beta and gamma.
+
+604
+01:22:42,592 --> 01:22:50,452
+So we have to bring in the chain rule and the one change compared to what we had earlier for the canonical ensemble,
+
+605
+01:22:51,082 --> 01:23:01,252
+is that the chain rule now introduces to independent derivatives in this expression,
+
+606
+01:23:02,122 --> 01:23:08,662
+both the derivative with respect to beta and the derivative with respect to gamma.
+
+607
+01:23:09,712 --> 01:23:13,252
+Of the logarithm of that grand canonical partition function.
+
+608
+01:23:14,962 --> 01:23:20,212
+Derivative of E with respect to e is easy that they use the beta coming along.
+
+609
+01:23:21,052 --> 01:23:27,082
+Beta itself in principle depends on the energy so the product rule gives us.
+
+610
+01:23:28,462 --> 01:23:32,002
+He debated here and is kept fixed.
+
+611
+01:23:32,242 --> 01:23:37,612
+So there's no partial derivative with respect to N, but there is a similar term.
+
+612
+01:23:39,032 --> 01:23:44,012
+With the energy dependence of the Lagrange multiplier gamma coming in.
+
+613
+01:23:44,342 --> 01:23:48,632
+With that negative sign. So.
+
+614
+01:23:49,632 --> 01:23:56,412
+Where before we just had the one derivative of log of z z ag.
+
+615
+01:23:56,862 --> 01:24:01,632
+To consider, we now have two one with respect to.
+
+616
+01:24:04,322 --> 01:24:10,832
+Um. The Lagrange multiplier beta derivative of the log gives us one over z g.
+
+617
+01:24:11,432 --> 01:24:19,322
+Move the derivative inside the sum over microstates that defines the grand canonical partition function.
+
+618
+01:24:20,342 --> 01:24:32,372
+Then it's a simple derivative to do. It just brings down a factor of minus I from the argument of the exponential.
+
+619
+01:24:34,022 --> 01:24:41,312
+So we have a sum over I minus e I, and then the same exponential factor we started off with.
+
+620
+01:24:42,932 --> 01:24:52,982
+We can now go in the reverse direction and recognise one over z g times the exponential factor as our probability.
+
+621
+01:24:53,852 --> 01:24:59,672
+The sum of energies weighted by probabilities is um,
+
+622
+01:25:00,242 --> 01:25:09,242
+the total energy normalised by the number of replicas because we have the occupation probability rather than the occupation number.
+
+623
+01:25:09,782 --> 01:25:16,652
+And there is an overall negative sign that just comes along for the ride straight through all of that.
+
+624
+01:25:18,642 --> 01:25:23,592
+The second partial derivative is effectively the same.
+
+625
+01:25:25,612 --> 01:25:31,522
+Derivative with respect to the cross, multiply or gamma in the same sum with the same factors.
+
+626
+01:25:32,662 --> 01:25:42,481
+So that will give us. The same sum over probability is now weighted by a positive and I or in other words,
+
+627
+01:25:42,482 --> 01:25:48,422
+the total conserved number of particles also divided by the number of replicas.
+
+628
+01:25:50,322 --> 01:25:58,992
+So plugging these partial derivatives into the point where they appear in the expression for the inverse temperature.
+
+629
+01:26:00,312 --> 01:26:08,952
+We bring in here minus E over R times r multiplied by the other partial derivative activated to E.
+
+630
+01:26:12,352 --> 01:26:23,512
+The other term comes with a positive sign and added gamma D again with the number of replicas are cancelling out,
+
+631
+01:26:25,252 --> 01:26:29,392
+and then the three terms on the second line here come along for the ride.
+
+632
+01:26:30,712 --> 01:26:46,042
+Plus beta plus E debated to E minus in dignity, and there are fantastic cancellations between these equal and opposite terms,
+
+633
+01:26:46,582 --> 01:26:52,282
+and we end up with the result that our Lagrange multiplier beta is the inverse temperature,
+
+634
+01:26:52,702 --> 01:26:58,552
+which we might have guessed, because that's exactly what we got for the canonical ensemble a few weeks back.
+
+635
+01:27:03,642 --> 01:27:13,542
+We now have one additional piece of information that we can run through exactly the same calculation much more quickly if
+
+636
+01:27:13,542 --> 01:27:23,302
+we organise things to look at this negative chemical potential divided by T that isolates the derivative of the entropy.
+
+637
+01:27:23,322 --> 01:27:31,462
+Now with the. Functional dependence reversed, we very end with e fixed rather than varying e with n fixed.
+
+638
+01:27:33,532 --> 01:27:37,072
+Here we have essentially this same expression.
+
+639
+01:27:40,512 --> 01:27:44,942
+Just with. Um, ends instead of ease.
+
+640
+01:27:45,962 --> 01:27:49,022
+We again have. Let's see. Can I get it all on the screen?
+
+641
+01:27:49,682 --> 01:27:56,132
+The chain rule gives us d beta times log z that we computed to be minus e over r.
+
+642
+01:27:57,122 --> 01:28:07,052
+We add to this d gamma d and with d d gamma log are we computed that to be an over r.
+
+643
+01:28:08,162 --> 01:28:14,852
+And then from the other terms in the entropy we have now E is fixed.
+
+644
+01:28:14,852 --> 01:28:18,362
+So we just get the derivative of.
+
+645
+01:28:20,262 --> 01:28:26,022
+Meta with respect to and derivative of end with respect to itself is one.
+
+646
+01:28:26,172 --> 01:28:28,302
+So the minus gamma comes along for the ride.
+
+647
+01:28:29,082 --> 01:28:40,842
+And then finally the derivative of gamma with respect to and which when we cancel out the factors of R here also cancel directly there.
+
+648
+01:28:41,622 --> 01:28:47,082
+This cancels there. And we can rearrange.
+
+649
+01:28:49,672 --> 01:28:54,642
+The negative sign, or rather cancel out the negative sign on both sides of this equation,
+
+650
+01:28:54,652 --> 01:29:00,562
+our gamma is the chemical potential divided by the temperature.
+
+651
+01:29:02,242 --> 01:29:06,922
+Um, going along with our beta as the inverse temperature.
+
+652
+01:29:07,972 --> 01:29:13,692
+Questions about this whole procedure. So remember we.
+
+653
+01:29:15,192 --> 01:29:19,071
+Um, look at the replica arms.
+
+654
+01:29:19,072 --> 01:29:25,182
+That's for our reservoir. Apply the micro canonical ensemble to that overall isolated universe.
+
+655
+01:29:26,742 --> 01:29:30,912
+Okay. Maximise the entropy to get into thermodynamic equilibrium.
+
+656
+01:29:30,912 --> 01:29:33,792
+That gives us now three Lagrange multipliers.
+
+657
+01:29:34,182 --> 01:29:42,312
+We have three constraints that fix all of those Lagrange multipliers in terms of the temperature and the chemical potential.
+
+658
+01:29:43,932 --> 01:29:49,362
+And if you're happy with every step along that way, we can now put things together.
+
+659
+01:30:06,302 --> 01:30:18,932
+So we had our expression for the occupation probabilities in terms of the cross multipliers um z beta and gamma.
+
+660
+01:30:20,172 --> 01:30:24,582
+We have now. That.
+
+661
+01:30:25,912 --> 01:30:37,312
+Same expression is formally in place, but we can replace those Lagrange multipliers with the actual temperature and chemical potential that.
+
+662
+01:30:39,752 --> 01:30:53,342
+Are at play in our system. And it will be convenient to rewrite these in terms of betas though, so not gammas,
+
+663
+01:30:53,972 --> 01:30:57,452
+which we can now just use interchangeably as an inverse temperature.
+
+664
+01:30:58,292 --> 01:31:07,081
+So we can express this probability as one over the grand canonical partition function times the exponential of minus
+
+665
+01:31:07,082 --> 01:31:16,592
+beta times the difference of the microstate energy minus the chemical potential times the microstate particle number.
+
+666
+01:31:18,462 --> 01:31:29,082
+Where the grand canonical partition function itself is now understood as a function that depends just on.
+
+667
+01:31:30,622 --> 01:31:35,032
+Energy or sorry, body temperature and chemical potential.
+
+668
+01:31:35,602 --> 01:31:47,992
+Summing over all of the microstates. With the Lagrange multipliers fixed, there is no longer any reference to our replica ansatz.
+
+669
+01:31:48,622 --> 01:31:53,332
+So we not only don't have to say anything about it, we don't have to know anything about it.
+
+670
+01:31:54,502 --> 01:32:04,642
+Um, we can identify these PR as microstate probabilities rather than occupation probabilities.
+
+671
+01:32:06,802 --> 01:32:22,512
+And we have a grand canonical system where. Both the energy and the particle number are allowed to fluctuate from one microstate to the next.
+
+672
+01:32:25,242 --> 01:32:36,312
+And the external particle reservoir, just like the thermal reservoir in the canonical case, is completely unknowable.
+
+673
+01:32:36,732 --> 01:32:42,252
+Apart from the effect that it has of fixing.
+
+674
+01:32:43,852 --> 01:32:49,592
+The. Characteristic quantities that define the grand canonical potential.
+
+675
+01:32:50,042 --> 01:33:00,812
+Temperature and chemical potential. So that is the target that we were aiming for.
+
+676
+01:33:03,792 --> 01:33:09,012
+Um, formulating the grand canonical ensemble in a rigorous mathematical way.
+
+677
+01:33:09,642 --> 01:33:16,782
+Any questions about that? Before we wrap up over the last few minutes, just with a quick preview of.
+
+678
+01:33:17,922 --> 01:33:33,382
+Uh, next week. Hopefully this was all a fairly familiar and straightforward generalisation of the replica trick.
+
+679
+01:33:34,102 --> 01:33:46,342
+Um, we now want to, you know, start moving on from a kind of fuzzy informal mathematical definitions and derivations to actually.
+
+680
+01:33:48,042 --> 01:33:52,092
+Um. Get some interesting.
+
+681
+01:33:53,772 --> 01:34:00,992
+Uh, predictions out of the grand canonical approach, and then apply that to some examples and applications,
+
+682
+01:34:01,412 --> 01:34:06,352
+which will be quantum systems, quantum gases in particular.
+
+683
+01:34:06,362 --> 01:34:13,412
+That will be our focus for probably the remainder of the, uh, weeks leading up to the term break.
+
+684
+01:34:18,172 --> 01:34:22,702
+The first, uh, step toward that will be.
+
+685
+01:34:26,142 --> 01:34:33,702
+To take. The grand canonical partition function that we have derived.
+
+686
+01:34:34,752 --> 01:34:39,491
+That is the essentially definition of a grand canonical system.
+
+687
+01:34:39,492 --> 01:34:43,212
+It contains all of the information of all of the microstates,
+
+688
+01:34:43,602 --> 01:34:52,362
+and will give us predictions for the large scale emergent quantities that we will be interested in.
+
+689
+01:34:53,232 --> 01:35:04,482
+So three that we will look at on next Monday will be the entropy as a function now of both temperature and chemical potential,
+
+690
+01:35:06,072 --> 01:35:09,582
+as we did for ideal gases in the canonical ensemble.
+
+691
+01:35:10,212 --> 01:35:19,452
+We want to. Consider the internal energy again, not the internal energy that fluctuates from microstate to microstates, but the.
+
+692
+01:35:21,482 --> 01:35:32,252
+Expectation value of that, which is a well defined overall macroscopic quantity also will now depend on t and mu.
+
+693
+01:35:33,182 --> 01:35:38,702
+And now another. So we from this we can get the, uh heat capacity.
+
+694
+01:35:40,042 --> 01:35:50,512
+And we will have another well-defined macroscopic expectation value to compute in the form of the particle number,
+
+695
+01:35:51,682 --> 01:35:59,661
+again fluctuating from microstate to microstate. But the expectation value as a function of the fixed parameters,
+
+696
+01:35:59,662 --> 01:36:06,682
+temperature and chemical potential is a nice, well-defined quantity for us to predict.
+
+697
+01:36:07,882 --> 01:36:12,472
+So we'll derive general expressions for all of these.
+
+698
+01:36:12,862 --> 01:36:20,722
+And then after a brief detour to introduce quantum statistics without any background knowledge on quantum physics,
+
+699
+01:36:21,262 --> 01:36:30,591
+go ahead and apply the grand canonical ensemble to analyse quantum gases and connect that to some famous results,
+
+700
+01:36:30,592 --> 01:36:34,252
+some of which were forecast all the way back in the first lecture.
+
+701
+01:36:35,502 --> 01:36:46,332
+So that's what's coming up next week. Tomorrow. The tutorial will wrap up the mixing entropy activity and look at cycles a bit more.
+
+702
+01:36:47,142 --> 01:36:54,642
+Any final questions for today? Before I let you go for the afternoon and hopefully see you again here tomorrow morning.
+
