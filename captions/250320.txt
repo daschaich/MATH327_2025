@@ -1,0 +1,1377 @@
+1
+00:00:02,200 --> 00:00:07,480
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Okay, let's go ahead and get started. Despite the small audience currently in the room.
+
+2
+00:00:07,750 --> 00:00:11,650
+Hopefully some others are out enjoying the first hour of spring.
+
+3
+00:00:12,490 --> 00:00:21,640
+It was exactly 61 minutes ago and the weather has warmed up to match.
+
+4
+00:00:23,320 --> 00:00:28,450
+So starting with today's magic number.
+
+5
+00:00:30,250 --> 00:00:33,430
+9001 ten.
+
+6
+00:00:34,960 --> 00:00:45,380
+There is. A fairly busy plan, then things that have kind of piled up to be addressed today.
+
+7
+00:00:45,890 --> 00:00:57,980
+But you should feel free to raise any other comments or questions, whatever you might be interested about in addition to what is on my mind.
+
+8
+00:00:58,490 --> 00:01:11,240
+So. The main thing that I want to make sure we cover today is the new set of tutorial exercises that are introducing the Einstein Solid.
+
+9
+00:01:11,240 --> 00:01:20,690
+So a model of materials that is based on quantised energies without really making use of quantum physics.
+
+10
+00:01:21,320 --> 00:01:22,550
+And in order to get to that,
+
+11
+00:01:23,180 --> 00:01:31,999
+maybe we'll do a speedrun through the other topics that have been promised some general feedback on the computer assignment,
+
+12
+00:01:32,000 --> 00:01:36,980
+in addition to the individual feedback that you should have received last week.
+
+13
+00:01:37,880 --> 00:01:46,910
+For some of you, that feedback was more or less detailed, depending on, uh, how things went for you.
+
+14
+00:01:48,620 --> 00:02:00,169
+Then review and wrap up the tutorial exercises introduced last week on how to cycle and related particle engines, such as the diesel cycle,
+
+15
+00:02:00,170 --> 00:02:05,060
+and how they are motivated by the efficiency of the auto cycle,
+
+16
+00:02:05,600 --> 00:02:13,100
+and the question of how to get the most energy for a given amount of heat from burning fuel.
+
+17
+00:02:13,610 --> 00:02:18,260
+And then there is the Einstein salad itself, which.
+
+18
+00:02:21,290 --> 00:02:30,740
+Is something that needs at least a few minutes of motivation and introduction to kind of get you in position to work on.
+
+19
+00:02:32,100 --> 00:02:35,230
+The tutorial exercises over the coming week.
+
+20
+00:02:35,250 --> 00:02:41,850
+I also have a notes that in yesterday's lecture I forgot to mention one thing about the poly exclusion principle,
+
+21
+00:02:42,480 --> 00:02:50,520
+which is the fact that this is an intrinsically quantum effect and it's not in any way related to fermions
+
+22
+00:02:51,060 --> 00:02:57,960
+interacting with each other or repelling each other from both of the occupying a given energy level.
+
+23
+00:02:59,100 --> 00:03:04,770
+That aspect of quantum physics is something that we can summarise briefly.
+
+24
+00:03:05,380 --> 00:03:10,860
+I just want to avoid the common misconception that there are interactions at play in
+
+25
+00:03:10,860 --> 00:03:19,170
+the restriction that fermions are limited to just a single occupancy of energy levels.
+
+26
+00:03:22,140 --> 00:03:28,740
+So pause just to see if there are objections or additions to this plan.
+
+27
+00:03:30,480 --> 00:03:41,010
+And if not. Just say briefly as a speed run that these model solutions have been on canvas for a couple of weeks now.
+
+28
+00:03:41,940 --> 00:03:49,620
+And just in general, there was good performance overall on the computer assignment.
+
+29
+00:03:49,620 --> 00:03:52,230
+There were a large number of very good submissions,
+
+30
+00:03:52,680 --> 00:03:57,149
+including several that were actually better than the model solutions because when I first posted these,
+
+31
+00:03:57,150 --> 00:04:04,290
+I missed a factor of two in the final exercise here, which has now been, uh,
+
+32
+00:04:04,740 --> 00:04:11,190
+corrected so that everything should agree with what you submitted or what you would love to see.
+
+33
+00:04:12,450 --> 00:04:21,030
+I do want to say that for those of you who may not have had the performance you wanted on this assignment, don't panic or don't get discouraged.
+
+34
+00:04:21,600 --> 00:04:32,729
+You still will have gained the bulk of the value from it by virtue of wrestling with these aspects of programming that may well be new and unfamiliar.
+
+35
+00:04:32,730 --> 00:04:38,250
+So it's a new skill that requires practice, consideration, and reflection to develop,
+
+36
+00:04:38,670 --> 00:04:47,580
+and then can be applied more generally to challenges that you may encounter going forward with your studies or career.
+
+37
+00:04:48,240 --> 00:04:56,459
+Um, in particular, giving a new way of thinking about addressing these sorts of challenges more algorithmically,
+
+38
+00:04:56,460 --> 00:05:07,470
+breaking things down into steps and organising those steps and checking to make sure that the results at the end make sense.
+
+39
+00:05:07,860 --> 00:05:17,280
+Those sorts of sanity checks were baked into a lot of the problems here, especially those dealing with ordinary diffusion.
+
+40
+00:05:17,280 --> 00:05:23,310
+So checking the answers against or you the results from the code against expectations from the central limit theorem.
+
+41
+00:05:23,910 --> 00:05:31,410
+And that is an important way to identify and fix any errors that might be arising.
+
+42
+00:05:31,830 --> 00:05:38,310
+So a good general practice is also for homework assignments that don't involve programming.
+
+43
+00:05:39,240 --> 00:05:41,160
+That was also the um.
+
+44
+00:05:42,250 --> 00:05:49,960
+Aspect of the assignments intended to lose the most marks, people would skip that step of checking whether the results make sense.
+
+45
+00:05:50,350 --> 00:05:55,390
+In some cases, everything was fine if you just lost the marks for skipping the check.
+
+46
+00:05:55,420 --> 00:06:01,390
+In other cases, there were actually problems that the check could have revealed and allowed to be solved,
+
+47
+00:06:02,170 --> 00:06:06,280
+and in some cases, the check was kind of officially done.
+
+48
+00:06:06,400 --> 00:06:10,389
+There was an obvious disagreement, and the claim was that all this is agreeing.
+
+49
+00:06:10,390 --> 00:06:19,270
+All right. And this is where some practice you're bringing that scrutiny to, to bear can be useful.
+
+50
+00:06:22,410 --> 00:06:28,830
+One thing I can generally say about submissions this year compared to this assignment in years past,
+
+51
+00:06:28,980 --> 00:06:35,520
+where the basic conceptual idea of building up random walks and looking at anomalous
+
+52
+00:06:35,520 --> 00:06:43,140
+diffusion is the same from year to year to the specific probability distributions involved,
+
+53
+00:06:43,650 --> 00:06:50,520
+do a very. So the details are different, but the overall structure of the assignment is the same.
+
+54
+00:06:51,840 --> 00:06:58,050
+This year there were actually many fewer programming difficulties or programming errors.
+
+55
+00:06:58,440 --> 00:07:01,860
+So that helped the overall work rise by about 15%.
+
+56
+00:07:02,460 --> 00:07:08,820
+And I think that is largely due to the generative AI becoming more widely available,
+
+57
+00:07:08,820 --> 00:07:15,600
+sort of work baked in by default to a lot of programming environments like Visual Studio or Google Colab.
+
+58
+00:07:16,440 --> 00:07:25,400
+And I know I communicated with some of you that it is acceptable to use those generative AI tools to help develop your understanding of job.
+
+59
+00:07:26,700 --> 00:07:32,430
+Um, find problems in the code, understand why there are problems, and get help to fix them.
+
+60
+00:07:32,850 --> 00:07:36,150
+So there's no concerns here about academic integrity.
+
+61
+00:07:36,690 --> 00:07:41,030
+It just suggests that, um, you know.
+
+62
+00:07:42,150 --> 00:07:43,410
+Going forward. In the future,
+
+63
+00:07:43,470 --> 00:07:52,740
+I should encourage everyone to expect to make use of those tools so that the kind of typical programming problems that came up
+
+64
+00:07:52,740 --> 00:08:03,060
+in the past are less important to the actual launch and the execution of the assignment compared to the physics interpretation.
+
+65
+00:08:03,840 --> 00:08:10,649
+So things like doing ten repetitions in our step walks rather than our repetitions
+
+66
+00:08:10,650 --> 00:08:15,150
+and step walks was a big problem in the past and very rare this year.
+
+67
+00:08:15,750 --> 00:08:25,770
+Things like getting the powers of theta in the wrong place in the final exercise was a common problem in the past that,
+
+68
+00:08:26,460 --> 00:08:35,250
+um, almost never happened anymore this year, and I think there's a knock on effect of that.
+
+69
+00:08:35,250 --> 00:08:47,100
+There were also fewer students who struggled with the amount of computing required to do all of these various walks independently,
+
+70
+00:08:47,100 --> 00:08:55,500
+rather than using the hints at the assignment and just extracting and step some walks from a single set of 250 step walks.
+
+71
+00:08:57,120 --> 00:09:00,180
+So that speeds things up by about a factor of 250.
+
+72
+00:09:01,200 --> 00:09:08,130
+Um, so it takes the time from tens of minutes to tens of seconds.
+
+73
+00:09:08,880 --> 00:09:15,240
+And in the past that has been valuable for students this time around.
+
+74
+00:09:16,080 --> 00:09:22,440
+It seemed that it was less of an issue just because the programming came out all right.
+
+75
+00:09:24,630 --> 00:09:30,450
+Um. From the start and there were less struggles with that.
+
+76
+00:09:31,250 --> 00:09:39,440
+In both cases, it is clear to see the effect of varying this theta parameter within its allowed range from 0 to 1,
+
+77
+00:09:40,070 --> 00:09:44,000
+without being allowed to be either 0 or 1.
+
+78
+00:09:44,540 --> 00:09:56,470
+That smaller values of theta. Reduce the effects of individual walks where there was a extreme step coming from the fat tails of this distribution.
+
+79
+00:09:57,370 --> 00:10:02,740
+Those effects are suppressed in the average, and then things come out much more stable.
+
+80
+00:10:02,860 --> 00:10:07,840
+Whether or not some walks are extracted or run independently.
+
+81
+00:10:08,140 --> 00:10:19,150
+But they all do give the same value of alpha up to statistical fluctuations, which we see here can be as the order of 10%,
+
+82
+00:10:19,990 --> 00:10:24,069
+but we can check to see that they are contracts and physical fluctuations by, for instance,
+
+83
+00:10:24,070 --> 00:10:33,220
+we run it with a different seed in which you will get similar values of alphas below one as well as above.
+
+84
+00:10:35,350 --> 00:10:40,839
+So unless there are any questions or concerns about that, we would like to raise here,
+
+85
+00:10:40,840 --> 00:10:48,100
+rather than in the office hours at certain 50 minutes and declare victory with a general feedback.
+
+86
+00:10:48,340 --> 00:10:56,470
+And get back to the tutorial exercises for today's tutorial.
+
+87
+00:11:08,570 --> 00:11:20,120
+Now hearing anything, we can also do a probably pretty quick dash through the novel solutions to these exercises and all the others cycle.
+
+88
+00:11:20,540 --> 00:11:24,679
+Just recalling the basic setup that we have two adiabatic stages.
+
+89
+00:11:24,680 --> 00:11:34,100
+We have two cars in various stages. This is a model of a petrol engine with some simplifications, ignoring things like friction.
+
+90
+00:11:34,970 --> 00:11:40,260
+And the question is what is the efficiency of this idealised petrol engine?
+
+91
+00:11:40,260 --> 00:11:43,489
+And how does that compare to the efficiency of the Carnot cycle,
+
+92
+00:11:43,490 --> 00:11:49,370
+which is much slower due to having two isothermal stages along with its two energy back stages?
+
+93
+00:11:51,980 --> 00:11:57,440
+So it's useful to start just by identifying which stages are relevant for the efficiency.
+
+94
+00:11:57,830 --> 00:12:01,520
+That's the network and then normalised by the input heat.
+
+95
+00:12:02,300 --> 00:12:05,360
+Work is done on the surroundings by the power stage.
+
+96
+00:12:05,900 --> 00:12:13,969
+Work is done by the surroundings, on the systems or on that compression stage, and the only source of input heat is during the ignition stage.
+
+97
+00:12:13,970 --> 00:12:21,080
+Because the other two are so parallel compression or adiabatic and exhaust.
+
+98
+00:12:21,320 --> 00:12:29,840
+Since heat out to the surroundings, rather than bringing heat in the two idiomatic stages, they have no heat transfer.
+
+99
+00:12:29,840 --> 00:12:32,930
+So the work done is just the change in energy,
+
+100
+00:12:32,930 --> 00:12:41,570
+which is three has M times the change in temperature with a negative sign in the case of the power stage, because work is leaving the system,
+
+101
+00:12:43,040 --> 00:12:49,940
+and similarly when the heat comes in that he is also, um, equal to three half times the change in temperature,
+
+102
+00:12:50,450 --> 00:12:59,360
+because no work is done at the constant volume or the integral pressure of one PDV and DV is zero.
+
+103
+00:13:01,220 --> 00:13:06,560
+So all of that is just to jump to the expression for the efficiency.
+
+104
+00:13:06,980 --> 00:13:16,910
+Hopefully you all had no trouble um, computing yourself just three sets of temperature differences.
+
+105
+00:13:19,520 --> 00:13:28,290
+T4 minus T3 with the negative sign from the work out t2 minus t1 from the work in that is subtracted.
+
+106
+00:13:28,290 --> 00:13:32,510
+Then t3 minus t2 from the heat coming in at the ignition stage,
+
+107
+00:13:33,350 --> 00:13:45,260
+which is valuable to rewrite in the same sort of style as the kind of efficiency we see a T3 minus t2 greater denominator.
+
+108
+00:13:45,620 --> 00:14:00,530
+So we can pull out that one, and then what is left is a minus T4 and then a minus minus t1, which we can write as that ratio of t1 over T4.
+
+109
+00:14:01,280 --> 00:14:09,500
+And similarly pull out the factor of T3 in this difference in the denominator.
+
+110
+00:14:11,480 --> 00:14:15,950
+And this is useful because we can now use.
+
+111
+00:14:18,320 --> 00:14:27,770
+The constant entropy condition for the idiomatic cycles to relate all of these ratios of temperatures to each other, again,
+
+112
+00:14:27,770 --> 00:14:32,240
+similar to the Carnot cycle where there were um,
+
+113
+00:14:32,510 --> 00:14:39,170
+equalities between the temperature ratios on either side of the 80 matter stages or either side isothermal stages.
+
+114
+00:14:45,860 --> 00:14:53,929
+So the constant entropy in these stages means that as we compress from point one to
+
+115
+00:14:53,930 --> 00:14:59,690
+point to the combination of volume times temperature to the three house sec fixed,
+
+116
+00:15:00,560 --> 00:15:08,180
+and the same thing happens as we. Expand from point three to point four.
+
+117
+00:15:11,800 --> 00:15:20,620
+I've just put the volumes on the same side of those equations to emphasise a couple of the qualities we can get out of them.
+
+118
+00:15:21,520 --> 00:15:35,950
+That the ratio of t1 over T2 is the volume ratio, the two thirds power, and same for T4 divided by T3.
+
+119
+00:15:39,160 --> 00:15:52,510
+That's v two over v one, which is to two thirds power, which is the inverse of the compression ratio introduced in the exercises.
+
+120
+00:15:52,990 --> 00:16:03,040
+The factor by which the gas in the piston in the engine is compressed in each cycle of this process.
+
+121
+00:16:05,590 --> 00:16:07,660
+Each iteration of the cycle, I should say.
+
+122
+00:16:08,440 --> 00:16:20,680
+We can also rearrange this equality to see that T1 divided by T4 is the same as t two over T3, and that's useful up here.
+
+123
+00:16:21,070 --> 00:16:32,440
+When we see that one minus t one over T4 is the same as the ratio I wrote down wrong here t2 over T3.
+
+124
+00:16:34,630 --> 00:16:38,410
+Just pulling out that T3 for both terms so that all cancels.
+
+125
+00:16:38,410 --> 00:16:48,670
+We end up with one minus T4 over T3, which is one minus that compression ratio, one over that compression ratio to two thirds.
+
+126
+00:16:49,690 --> 00:16:51,310
+And this could also be expressed.
+
+127
+00:16:53,560 --> 00:17:06,220
+As one minus the other ratio of temperatures T1 over T2, which is useful when we want to compare this to the Carter cycle.
+
+128
+00:17:08,620 --> 00:17:16,270
+So T2 is the temperature of the system right before a big batch of heat is dumped in through igniting the fuel,
+
+129
+00:17:16,780 --> 00:17:24,280
+so it is lower than T3, the high temperature that the system reaches after burning its fuel.
+
+130
+00:17:25,900 --> 00:17:43,240
+So because T2 is less than T3, one over T2 is greater than one over T3, and subtracting T1 over t2 is going to be a larger subtraction.
+
+131
+00:17:43,240 --> 00:17:46,870
+So leaving a smaller amount and subtracting the.
+
+132
+00:17:49,270 --> 00:17:56,050
+Ratio of t1 over T3, which is the efficiency of the Carnot cycle.
+
+133
+00:17:56,530 --> 00:18:06,909
+So. As expected, the efficiency of this auto cycle is strictly less than the efficiency of the carpet cycle,
+
+134
+00:18:06,910 --> 00:18:15,700
+and that is expected because we saw last week that the cargo cycle realises the maximum possible
+
+135
+00:18:15,700 --> 00:18:21,820
+efficiency of a heat engine that is allowed by the first and second laws of thermodynamics.
+
+136
+00:18:24,490 --> 00:18:33,520
+So that was essentially the main task in last week's set of exercises.
+
+137
+00:18:36,100 --> 00:18:41,590
+Hopefully nothing too challenging here. Are there any questions about this?
+
+138
+00:18:45,640 --> 00:18:54,310
+And not seeing any. There was one final. We have time, I think, to go through the final question that was asked, which is.
+
+139
+00:18:57,250 --> 00:19:03,370
+How do we maximise the efficiency of this auto cycle so that we can get, for instance,
+
+140
+00:19:03,370 --> 00:19:10,270
+the best mileage per gallon in a car running on internal combustion engine with petrol.
+
+141
+00:19:12,040 --> 00:19:18,269
+And from our expression for the efficiency, we can kind of make a simple model.
+
+142
+00:19:18,270 --> 00:19:25,570
+The statement that the way to maximise the efficiency is to make this R as large as possible so that the subtraction,
+
+143
+00:19:25,930 --> 00:19:34,930
+the deviation of the efficiency from 100% conversion of heat from the burning fuel to work is as close to one as possible.
+
+144
+00:19:41,890 --> 00:19:48,459
+So. The claim here is that the bigger we make this compression ratio,
+
+145
+00:19:48,460 --> 00:19:57,520
+the amount we compress the gas to drive the cycle, the more efficient that engine will become.
+
+146
+00:20:00,490 --> 00:20:05,560
+This is easier said theoretically than done in practice.
+
+147
+00:20:06,070 --> 00:20:19,450
+And. You know, adding in all of the complications that we've set aside by, um, switching to this other cycle as opposed to more realistic engine.
+
+148
+00:20:21,390 --> 00:20:27,080
+The. Typical efficiencies that can be realised in.
+
+149
+00:20:29,660 --> 00:20:40,850
+Um, petrol engines based on this principle are only about 20 to 30% um, corresponding to a compression ratio of about eight.
+
+150
+00:20:41,420 --> 00:20:50,990
+So an eight fold reduction in the volume as the, uh, gas is compressed in the eight fold expansion in the power stage that we used to get worked out.
+
+151
+00:20:52,310 --> 00:21:06,320
+And. Attempts to make this efficiency larger by increasing that compression ratio encounter a physical engine obstruction,
+
+152
+00:21:07,820 --> 00:21:13,130
+which is related to the fact that as we go through this compression stage,
+
+153
+00:21:13,610 --> 00:21:20,690
+we are increasing the pressure of our gas, a mixture of air and stabilised petrol fuel.
+
+154
+00:21:22,160 --> 00:21:30,770
+As we increase the pressure, we increase the temperature idiomatically, as we've seen by going through the other exercises.
+
+155
+00:21:31,340 --> 00:21:43,610
+And if that temperature gets too large, then there starts to be a large chance that the fuel just spontaneously combust before it is actually ignited,
+
+156
+00:21:44,300 --> 00:21:52,730
+um, by the engine to get the heat out of the fuel and go through that ignition stage.
+
+157
+00:21:54,290 --> 00:22:02,450
+So imagining this, V1 and V2 were very large, there would be an increasing chance of.
+
+158
+00:22:04,290 --> 00:22:11,519
+The system deviating from this idealised curves and some compression ratio ordering,
+
+159
+00:22:11,520 --> 00:22:16,290
+dating and not getting the full benefit out of that large compression ratio.
+
+160
+00:22:16,740 --> 00:22:24,420
+So the spontaneous combustion is sometimes also called auto ignition or.
+
+161
+00:22:26,510 --> 00:22:32,480
+Um, more commonly and less formally known as a knock in the engine.
+
+162
+00:22:34,580 --> 00:22:38,420
+And this is a longstanding challenge with petrol engines.
+
+163
+00:22:39,200 --> 00:22:43,130
+You can't make them more efficient without increasing the risk of NOx.
+
+164
+00:22:45,860 --> 00:22:57,260
+So. With some games, you can play with the precise composition of the fuel to make it more stable and less susceptible to knocking.
+
+165
+00:22:58,580 --> 00:23:05,060
+A alternative solution was introduced by Rudolf Diesel over 100 years ago now.
+
+166
+00:23:06,200 --> 00:23:14,329
+He said that well, the fundamental reason this knocking is a problem is because you're driving up the pressure
+
+167
+00:23:14,330 --> 00:23:21,710
+and temperature of a combustible gas that already has vaporised petrol fuel mixed in with it.
+
+168
+00:23:22,550 --> 00:23:30,230
+So his approach or his proposal, which lead to what are now known as diesel engines, is.
+
+169
+00:23:32,960 --> 00:23:42,920
+That we can solve this problem by looking for a way to compress the air, which is not combustible,
+
+170
+00:23:42,920 --> 00:23:48,530
+at least not at the temperature scale is being reached by these engines.
+
+171
+00:23:48,540 --> 00:23:52,640
+You have to go up to an extremely large, uh, temperature like that,
+
+172
+00:23:53,090 --> 00:24:01,400
+realised the centre of a nuclear explosion to actually start to combust air itself.
+
+173
+00:24:03,260 --> 00:24:13,940
+And then after the air is compressed to a high temperature and high pressure, that is the point where the fuel is introduced to the system.
+
+174
+00:24:15,410 --> 00:24:23,569
+So it has to be injected into the higher pressure at high temperature gas.
+
+175
+00:24:23,570 --> 00:24:28,820
+At that point it starts to burn right away as it is being ejected.
+
+176
+00:24:29,300 --> 00:24:33,620
+So this needs a somewhat different type of fuel known as diesel fuel.
+
+177
+00:24:35,060 --> 00:24:40,910
+And then the rest of the cycle behaves in the same way as the auto cycle.
+
+178
+00:24:43,670 --> 00:24:48,650
+Happens in that further than it needs responds and back in.
+
+179
+00:24:50,300 --> 00:24:53,900
+You get the power from the expansion back to the original flame,
+
+180
+00:24:54,380 --> 00:25:01,400
+and then the exhaust from swapping the burnt mixture of diesel fuel and air with a fresh set
+
+181
+00:25:01,400 --> 00:25:07,890
+of simply air particles that can then be compressed over a much larger compression ratio,
+
+182
+00:25:07,900 --> 00:25:11,690
+the one over V2 up to a much higher pressure in temperature.
+
+183
+00:25:19,370 --> 00:25:26,330
+So this is the PV diagram, like the auto cycle, um,
+
+184
+00:25:26,370 --> 00:25:33,079
+corresponding to an idealised version of a diesel engine that sets aside all the questions of friction,
+
+185
+00:25:33,080 --> 00:25:37,790
+actual mechanical and engineering, uh, realisations.
+
+186
+00:25:38,990 --> 00:25:47,510
+The main difference is that this injection that happens at the same time as ignition is now in constant pressures process,
+
+187
+00:25:47,990 --> 00:25:51,650
+rather than an almost instantaneous, constant process.
+
+188
+00:25:52,100 --> 00:26:00,380
+And that means there are now three relevant claims for the engine, um, that can be organised into two ratios.
+
+189
+00:26:03,590 --> 00:26:09,920
+So the first is the usual compression ratio. How far the compression stage goes from any one to blame to.
+
+190
+00:26:10,400 --> 00:26:22,010
+And then there's what's called a cut off ratio, which is how much the gas is able to expand as the diesel fuel is being injected and inflated.
+
+191
+00:26:22,580 --> 00:26:29,240
+Going from volume v two to v three before the idiomatic power stage kicks in.
+
+192
+00:26:29,270 --> 00:26:36,890
+So both compression and power remain adiabatic processes that can be repeated thousands of times per minute.
+
+193
+00:26:38,750 --> 00:26:48,860
+So if, for instance, on a homework assignment, you were asked to compute the efficiency of the air to cycle you would expect to find.
+
+194
+00:26:49,250 --> 00:26:53,450
+So the efficiency of the diesel cycle error would find that a to depends.
+
+195
+00:26:55,490 --> 00:27:00,590
+On all three of those volumes. I can zoom back in now to make this more legible.
+
+196
+00:27:03,890 --> 00:27:11,120
+So there will be dependence on the compression ratio, similar to what we saw for the auto cycle.
+
+197
+00:27:12,380 --> 00:27:19,220
+That R is the big ratio of v1 v2.
+
+198
+00:27:21,560 --> 00:27:25,290
+And the efficiency will also depend on.
+
+199
+00:27:26,640 --> 00:27:29,460
+The cut off ratio. Essentially. How?
+
+200
+00:27:30,750 --> 00:27:45,030
+Um, so much work is extracted as the fuel is being ejected and ignited, and that compression ratio is going three over V2.
+
+201
+00:27:45,570 --> 00:27:55,050
+And from the PV diagram we looked at earlier, we can see that both ratios are greater than one,
+
+202
+00:27:55,620 --> 00:28:02,070
+and the compression ratio is greater than the cut off ratio in the cell.
+
+203
+00:28:04,290 --> 00:28:09,750
+And in practice, the kind of diesel engines that you see on the street can.
+
+204
+00:28:12,450 --> 00:28:16,229
+Improve the efficiency compared to a petrol engine.
+
+205
+00:28:16,230 --> 00:28:20,700
+So you. Generally have a larger.
+
+206
+00:28:23,590 --> 00:28:28,630
+Uh, efficiency. So higher efficiency from a larger compression ratio.
+
+207
+00:28:29,890 --> 00:28:34,330
+And this gets up often to.
+
+208
+00:28:35,870 --> 00:28:42,259
+Efficiencies of around 40% that correspond to compression ratio is a 2 or 2 and
+
+209
+00:28:42,260 --> 00:28:46,880
+a half times as large as you can have for a petrol engine without knocking.
+
+210
+00:28:50,330 --> 00:29:01,130
+That's all that was planned to say about kind of practical applications of these sort of cycles for petrol and diesel engines.
+
+211
+00:29:03,050 --> 00:29:12,110
+So that puts us in position to dive into the Einstein solid and possibly give you some time to start
+
+212
+00:29:12,110 --> 00:29:19,730
+working on these exercises and make sure they all make sense in the final 20 minutes for today.
+
+213
+00:29:20,240 --> 00:29:29,030
+Are there any questions before we finally put the lid on sort of manic cycles and move on to.
+
+214
+00:29:30,360 --> 00:29:33,930
+Quantum like systems and.
+
+215
+00:29:37,690 --> 00:29:42,100
+In particular the confrontation between these corporate physics and.
+
+216
+00:29:44,480 --> 00:29:50,990
+Uh, experimental observations. And not seeing any.
+
+217
+00:29:50,990 --> 00:29:54,020
+Let's zoom out again.
+
+218
+00:29:54,020 --> 00:30:06,320
+Uh, do a bit of motivation by going back to one of the first things that we looked at in the first lecture of the module back in January.
+
+219
+00:30:06,770 --> 00:30:12,710
+I had to back out. Uh, as a man or woman.
+
+220
+00:30:12,800 --> 00:30:21,140
+There we go. This is you may or may not remember this particular plot,
+
+221
+00:30:21,650 --> 00:30:27,710
+which is showing the heat capacity of a few different cell lines as a function of the temperature.
+
+222
+00:30:28,160 --> 00:30:32,600
+Now, with physical units attached. So 300 Kelvin is roughly room temperature.
+
+223
+00:30:33,410 --> 00:30:41,360
+Absolute zero is down, um, at -273°C.
+
+224
+00:30:41,780 --> 00:30:46,940
+And the heat capacity here is expressed in units of joules per Kelvin that are converted.
+
+225
+00:30:47,570 --> 00:30:55,880
+Um, so the conversion factor between joules and Kelvin is just given by the first main factor that we have been setting equal to one.
+
+226
+00:30:57,710 --> 00:31:09,110
+The points on this plot I mentioned at the time are not exactly lining up with the lines, especially at higher temperatures.
+
+227
+00:31:10,490 --> 00:31:11,780
+And the reason for that,
+
+228
+00:31:11,780 --> 00:31:19,730
+we're now in a better position to appreciate is because these points are heat capacities that are measured at constant pressure,
+
+229
+00:31:20,300 --> 00:31:27,470
+and the lines are theoretical predictions for the heat capacity at constant volume.
+
+230
+00:31:27,470 --> 00:31:33,920
+So CV rather than something that is called CP um,
+
+231
+00:31:34,640 --> 00:31:43,040
+which the differences for our purposes in this module are small enough that we don't need to worry about this,
+
+232
+00:31:43,040 --> 00:31:51,140
+and we don't need to go through the exercise of translating between conservation and cost pressure heat capacities.
+
+233
+00:31:51,920 --> 00:32:03,620
+We can just look at the the large scale features of these data and try to see how we can theoretically model those
+
+234
+00:32:03,890 --> 00:32:14,780
+mathematically models using the statistical mechanics tools that we have now put in place as you back in to.
+
+235
+00:32:18,620 --> 00:32:33,110
+Uh, hopefully make things more visible. The two main features of those data for all three solids, which also hold for any solids in general.
+
+236
+00:32:35,150 --> 00:32:47,870
+Are related to how they behave in the high and low temperature limits, something that's not very, uh, focus related to how they behave in the head.
+
+237
+00:32:48,680 --> 00:32:53,990
+So similar to what we looked at for the systems of.
+
+238
+00:32:56,420 --> 00:33:01,220
+Uh, indistinguishable undistinguishable spins back a few weeks ago.
+
+239
+00:33:02,480 --> 00:33:10,490
+So in the low temperature limit. You saw in all cases that the heat capacity.
+
+240
+00:33:13,130 --> 00:33:16,310
+Was heading to zero as the temperature goes to zero.
+
+241
+00:33:18,110 --> 00:33:24,980
+And this is a an alternative way of expressing the third law of thermodynamics,
+
+242
+00:33:25,430 --> 00:33:33,440
+which we did see again back when looking at the temperature dependence of those spin systems back then.
+
+243
+00:33:33,440 --> 00:33:41,240
+We express this third law as the claim that the entropy goes to a constant value in that limit of absolute zero temperature,
+
+244
+00:33:42,590 --> 00:33:52,370
+just because there are a fixed set of, uh, degenerate energy levels with the minimum, uh, ground state energy here.
+
+245
+00:33:52,910 --> 00:33:56,870
+This is equivalent to saying that the entropy goes to a constant.
+
+246
+00:33:56,870 --> 00:34:03,979
+The heat capacity has to go to zero in that low temperature limit as evolves over the mix.
+
+247
+00:34:03,980 --> 00:34:14,270
+And then as the temperature increases up to room temperature and beyond of a few hundred Kelvin, um, you know,
+
+248
+00:34:14,270 --> 00:34:24,680
+as high as we can go before the sun starts to melt and then phase transition, which will be, um, a future topic for the module after the break.
+
+249
+00:34:27,020 --> 00:34:35,030
+We see the heat capacity increasing rapidly at first and then levelling off towards a plateau, which, um,
+
+250
+00:34:35,030 --> 00:34:43,790
+could well be sort of more apparent in the data if the points were collected at higher temperatures, which in some cases.
+
+251
+00:34:43,830 --> 00:34:46,650
+Is not possible due to the melting of the solid.
+
+252
+00:34:47,790 --> 00:35:00,630
+So the generic behaviour we can state is that the heat capacity approaches a constant and specifically approaches a cancer by increasing from below.
+
+253
+00:35:03,510 --> 00:35:13,860
+For. A higher temperatures up to the highest temperature where we still have a to analyse in the first place.
+
+254
+00:35:16,200 --> 00:35:32,520
+And. We want to come up with some statistical physics model, a physical model of the solids that can predict mathematically this sort of behaviour,
+
+255
+00:35:33,360 --> 00:35:38,850
+um, at least at the, you know, reading order, qualitative level.
+
+256
+00:35:40,640 --> 00:35:45,860
+And we are now in a position to do that and also to see what may not work.
+
+257
+00:35:46,880 --> 00:35:56,240
+So one thing that we could try is to look at the system of the ideal gas that we spent a few,
+
+258
+00:35:57,420 --> 00:36:02,750
+uh, lectures, even a few weeks analysing and using to drive in some of the network cycles.
+
+259
+00:36:04,480 --> 00:36:08,470
+Lively. It might seem silly to describe a solid as a gas.
+
+260
+00:36:08,860 --> 00:36:13,780
+The argument here is that perhaps the behaviour is being, um,
+
+261
+00:36:14,770 --> 00:36:24,370
+garnered by the electrons that are in fact free to flow between the atoms in this material, and they do behave as a gas.
+
+262
+00:36:24,850 --> 00:36:35,950
+That's something that we will return to in some future tutorials, which is what the spill described.
+
+263
+00:36:42,790 --> 00:36:48,369
+So this is one possible system that we've looked at in some detail.
+
+264
+00:36:48,370 --> 00:36:52,150
+And we can ask does an ideal gas give a good description.
+
+265
+00:37:00,190 --> 00:37:07,210
+This is something that I could cause and let you scratch your heads about for a minute or two.
+
+266
+00:37:07,930 --> 00:37:14,830
+But looking at the clock and just seeing that there's a bit still to go through in the lead up,
+
+267
+00:37:15,700 --> 00:37:26,560
+I think it's not much of a loss to remind you that because the heat capacity is the derivative of the energy with respect to the temperature,
+
+268
+00:37:27,070 --> 00:37:31,389
+and the energy for the ideal gas is just what we used in the other cycle.
+
+269
+00:37:31,390 --> 00:37:40,300
+Three hands and T, and we get a constant temperature independent just Cassidy for ideal gas,
+
+270
+00:37:40,750 --> 00:37:50,100
+which is absolutely not the behaviour that we are trying to model where this temperature dependence is quite dramatic,
+
+271
+00:37:50,110 --> 00:37:59,800
+especially going to low temperatures. This is actually a puzzle in the 1800s, for about 60 years, probably even more than that.
+
+272
+00:38:00,580 --> 00:38:05,320
+Physicists were trying to analyse heat capacities of solids,
+
+273
+00:38:05,950 --> 00:38:16,390
+predicting constants and seeing with the limits of technology to cruel things hundreds of degrees below zero Celsius that was available at the time,
+
+274
+00:38:16,840 --> 00:38:24,310
+that there were hints of non-causal behaviour that they had a very hard time explaining.
+
+275
+00:38:26,420 --> 00:38:32,020
+What the thing that we could try, which was not available to them at the time,
+
+276
+00:38:33,400 --> 00:38:48,370
+is going back to that spin system that we looked at a month ago where we introduced that third law, um, as the entropy going to a constant.
+
+277
+00:38:48,610 --> 00:38:53,140
+We could imagine if we solved good behaviour for the third law from the entropy,
+
+278
+00:38:53,530 --> 00:38:57,610
+we may see good behaviour for the third law in terms of heat capacity.
+
+279
+00:38:59,230 --> 00:39:11,530
+So we want to specifically look at a system of distinguishable spins that you can recall were made distinguishable by being fixed,
+
+280
+00:39:11,530 --> 00:39:18,460
+two particular locations in a solid that we could direct our observations toward.
+
+281
+00:39:21,250 --> 00:39:25,060
+I will leave that calculation for you to work through.
+
+282
+00:39:25,700 --> 00:39:40,719
+Um. The I'll give you a just a hint or a summary of what you will should find that this approach is modelling a solid,
+
+283
+00:39:40,720 --> 00:39:50,379
+as a collection of non-interacting spins with fixed positions does indeed give a heat capacity that vanishes at absolute zero temperature.
+
+284
+00:39:50,380 --> 00:39:54,880
+So it's, uh, obeying the third law of thermodynamics,
+
+285
+00:39:55,510 --> 00:40:07,030
+but it also gives the heat capacity going to zero in the high temperature limit with some non-zero regime in between.
+
+286
+00:40:09,910 --> 00:40:24,100
+So this at least handles one side of the data descriptor curve that goes to zero at low temperatures, then goes back to zero at high temperatures.
+
+287
+00:40:24,910 --> 00:40:29,500
+So. That is better than an ideal gas,
+
+288
+00:40:30,610 --> 00:40:40,780
+but still not good enough to really claim that we've captured the physics of what is happening in these in these solids.
+
+289
+00:40:42,550 --> 00:40:47,620
+So this is where Einstein came in in 1907.
+
+290
+00:40:49,180 --> 00:40:53,620
+This was so it was a known challenge to.
+
+291
+00:40:55,630 --> 00:41:07,450
+Come up with a physical model of the solid that, uh, described the experimental measurements for the heat capacity and Einstein.
+
+292
+00:41:08,730 --> 00:41:15,390
+At the time as a fairly young researcher. In 1905, when he was wrapping up his PhD.
+
+293
+00:41:15,600 --> 00:41:21,240
+He had what was called a miracle year, where he introduced concepts of special relativity.
+
+294
+00:41:21,300 --> 00:41:29,820
+He used statistical mechanics to analyse ground motion, um, establishing that atoms actually existed and were not just a magic trick.
+
+295
+00:41:30,360 --> 00:41:35,940
+And he also described something known as the photoelectric effect by proposing that
+
+296
+00:41:36,750 --> 00:41:45,060
+the energy of light came in quantised packets that described features of how,
+
+297
+00:41:45,630 --> 00:41:51,150
+um, this sort of electric effect is the generation of an electrical current in a material with light shines on it,
+
+298
+00:41:51,630 --> 00:42:00,180
+that had features that could only be explained by supposing that the light, the energy in the light, came in discrete quantised units.
+
+299
+00:42:00,870 --> 00:42:07,950
+So this is just two years later, and motivated to some extent by the work on that for electric effect.
+
+300
+00:42:08,850 --> 00:42:21,930
+Einstein proposed a model of solids as a collection of atoms that are held in place by interacting with all of their neighbours.
+
+301
+00:42:29,670 --> 00:42:32,820
+That means the American smelling for neighbours. Never mind.
+
+302
+00:42:33,900 --> 00:42:40,140
+There is a, uh, illustration here in the exercise sheet that you may see.
+
+303
+00:42:42,690 --> 00:42:46,200
+Uh, give you the general idea. Each atom is a ball.
+
+304
+00:42:46,470 --> 00:42:55,650
+It has some set of nearest neighbours. It's connected to each of those nearest neighbours by some oscillator that can be modelled as a spring.
+
+305
+00:42:57,840 --> 00:43:05,340
+Um, the number of oscillators compared to the number of atoms depends both on the dimensionality of the material as well as the layout of the atoms,
+
+306
+00:43:05,820 --> 00:43:10,140
+whether they are in a honeycomb structure, triangle, or the square that we have here.
+
+307
+00:43:10,800 --> 00:43:31,260
+If we focus on these oscillators. Einsteins, uh, hypothesis was to suppose that the oscillators can be treated as non-interacting degrees of freedom.
+
+308
+00:43:33,510 --> 00:43:42,960
+Even though they are responsible for mediating the interactions between neighbouring atoms, they are themselves not interacting with each other.
+
+309
+00:43:44,430 --> 00:43:58,080
+And. He further supposed that they adopted quantised energies of the sort that he had introduced for sort of electric effect,
+
+310
+00:43:59,850 --> 00:44:04,890
+where the possible energy that each oscillator could have.
+
+311
+00:44:04,920 --> 00:44:15,060
+So this epsilon supplied for the largest oscillator are just integer multiples of the characteristic angular frequency omega.
+
+312
+00:44:15,450 --> 00:44:22,830
+Not a microstate here, uh, multiplied by Planck's constant to convert from units of frequency to units of energy.
+
+313
+00:44:24,900 --> 00:44:28,620
+So we can start analysing the setup.
+
+314
+00:44:29,670 --> 00:44:42,840
+Um, micro canonically uh. And just start by supposing we have k units of energy.
+
+315
+00:44:43,890 --> 00:44:52,610
+So a fixed total amount of energy to assign to each of the oscillators that we have.
+
+316
+00:44:52,950 --> 00:44:58,110
+We'll say we have n of those oscillators. This.
+
+317
+00:44:58,380 --> 00:45:09,120
+So this n is just the sum of all oscillators in the overall energy with k units is k factors of that characteristic h bar omega,
+
+318
+00:45:09,840 --> 00:45:19,830
+which we can break up into a certain number of units k supply on each of the oscillators I,
+
+319
+00:45:20,250 --> 00:45:27,209
+so that we sum over the independent, non-interacting energies of all of these and oscillators,
+
+320
+00:45:27,210 --> 00:45:35,220
+I'm running from one to n, so k is then just the sum of all of these case of I.
+
+321
+00:45:37,530 --> 00:45:48,929
+So to get from the starting point to a capacity, there are a few steps that are the exercises to go through micro.
+
+322
+00:45:48,930 --> 00:45:56,069
+Canonically, we start by computing the number of micro states that are allowed with all the
+
+323
+00:45:56,070 --> 00:46:01,110
+possible ways that these k units of energy can be assigned to the N oscillators.
+
+324
+00:46:02,490 --> 00:46:08,010
+We always assume thermodynamic equilibrium, which gives us the entropy is the logarithm of that number of.
+
+325
+00:46:08,260 --> 00:46:19,190
+Prostates, and the inverse temperature is a function of energy determined by how the entropy depends on the energy.
+
+326
+00:46:20,450 --> 00:46:30,110
+That temperature as a function of energy can be inverted, effectively switching from a micro canonical perspective to a not a cool one.
+
+327
+00:46:32,060 --> 00:46:43,430
+We get the expectation value of the energy as a function of temperature, and then one more derivative gives us the heat capacity.
+
+328
+00:46:45,500 --> 00:46:51,270
+And. As I expected, I basically saturated the time available.
+
+329
+00:46:52,590 --> 00:46:58,980
+Hopefully shout out if any of these steps or the set of um is not clear.
+
+330
+00:47:01,900 --> 00:47:09,760
+Just so that you to ensure that you don't get stuck in the in the first step of finding that number of microstates.
+
+331
+00:47:10,480 --> 00:47:15,130
+I'll go ahead and give you the the target to shoot for, to try to derive.
+
+332
+00:47:15,730 --> 00:47:27,490
+And if you have trouble deriving it, you can just proceed with the other steps in these exercises that we will come back to review next week.
+
+333
+00:47:28,720 --> 00:47:34,630
+But the total number of microstates turns out to be a binomial coefficient.
+
+334
+00:47:37,030 --> 00:47:47,830
+That involves the ways to choose k items out of the total set of k units of energy plus and oscillators minus one.
+
+335
+00:47:48,700 --> 00:48:03,460
+So that is a target to derive. And you can also check this result with the simplest possible model of cells of this sort that we can have.
+
+336
+00:48:05,860 --> 00:48:09,250
+This just involves three oscillators.
+
+337
+00:48:09,820 --> 00:48:15,100
+So connecting atoms in a triangle.
+
+338
+00:48:17,920 --> 00:48:28,540
+And with each of these three oscillators they can all share any given non-negative integer number k units of energy.
+
+339
+00:48:30,910 --> 00:48:35,230
+So you can start the case when they have no units of energy.
+
+340
+00:48:35,710 --> 00:48:39,040
+That's fairly trivial. And add one, two,
+
+341
+00:48:39,310 --> 00:48:46,810
+three or more units and confirm that the number of microstates you can explicitly count in this
+
+342
+00:48:47,230 --> 00:48:56,740
+minimal set up agrees with the general formula that you can derive from the universal considerations.
+
+343
+00:49:00,430 --> 00:49:09,400
+Any final questions before. We start for today and leave you to work on these exercises over the coming week.
+
+344
+00:49:16,230 --> 00:49:23,430
+So if not, I will stop the recording. I'll let you go. Hope you enjoy the warmer weather over the weekend.
+
