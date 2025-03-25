@@ -1,0 +1,224 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[shortlabels]{enumitem}
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, margin=2.5 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisweek}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging and title
+%\usepackage[tagged]{accessibility}
+\hypersetup {
+  pdfauthor={David Schaich},
+  pdftitle={StatMech Homework},
+}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\cO}{\ensuremath{\mathcal O} }
+\newcommand{\be}{\ensuremath{\beta} }
+\newcommand{\ga}{\ensuremath{\gamma} }
+\newcommand{\ka}{\ensuremath{\kappa} }
+\newcommand{\la}{\ensuremath{\lambda} }
+\newcommand{\si}{\ensuremath{\sigma} }
+\newcommand{\vdr}{\ensuremath{v_{\mathrm{dr}}} }
+\renewcommand{\d}[1]{\ensuremath{\mathop{d#1}} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
+\newcommand{\showmarks}[1]{\rightline{\texttt{[#1 marks]}}} % \showmarks needs to follow a blank line!
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisweek}{MATH327 Homework 2}
+\newcommand{\moddate}{Last modified 25 Mar.~2025}
+\begin{center}
+  {\Large \textbf{MATH327: StatMech and Thermo, Spring 2025}} \\[12 pt]
+  {\Large \textbf{Second homework assignment}} \\[24 pt]
+\end{center}
+
+\section*{Instructions}
+Complete all four questions below and submit your solutions by file upload \href{https://canvas.liverpool.ac.uk/courses/76365/assignments/297934}{on Canvas}.
+Clear and neat presentations of your workings and the logic behind them will contribute to your mark.
+Use of resources beyond the module materials must be explicitly referenced in your submissions.
+This assignment is \textbf{due by 17:00 on Friday, 4 April 2025}.
+Anonymous marking is turned on and I will aim to return feedback by Monday, 21 April 2025.
+
+You should already be familiar with the Department's \href{https://canvas.liverpool.ac.uk/courses/76365/files/11992667}{academic integrity guidance} for 2024--2025, which states that by submitting solutions to this assessment you affirm that you have read and understood the \href{https://www.liverpool.ac.uk/media/livacuk/tqsd/code-of-practice-on-assessment/appendix_L_cop_assess.pdf}{Academic Integrity Policy} detailed in Appendix L of the Code of Practice on Assessment, and that you have successfully passed the Academic Integrity Tutorial and Quiz in the course of your studies.
+You also affirm that the work you are submitting is your own and you have not commissioned production of the work from a third party or used artificial intelligence (AI) software \href{https://www.liverpool.ac.uk/media/livacuk/centre-for-innovation-in-education/digital-education/generative-ai-teach-learn-assess/guidance-on-the-use-of-generative-ai.pdf}{in an unacceptable manner} to generate the work.
+(Generative AI software applications include, but are not limited to, ChatGPT, MS Copilot, and Gemini.)
+You also affirm that you have not plagiarized material from another person or source, nor fabricated, falsified or embellished data when completing this assignment.
+You also affirm that you have not colluded with any other student in the preparation or production of your work.
+The marks achieved on this assessment remain provisional until they are ratified by the Board of Examiners in June 2025.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 1: Diesel cycle}
+Consider the Diesel cycle defined by the $PV$~diagram shown below, in which the `compression' stage $1 \to 2$ and the `power' stage $3 \to 4$ are both adiabatic, while the pressure is constant during the `injection/ignition' stage $2 \to 3$, and the volume is constant during the `exhaust' stage $4 \to 1$.
+The compression ratio is $r \equiv V_1 / V_2 > 1$ and the cutoff ratio is $C \equiv V_3 / V_2 > 1$, with $C < r$.
+
+\begin{center}\includegraphics[width=0.8\textwidth]{figs/Diesel.pdf}\end{center}
+
+\begin{enumerate}[label={(\alph*)}]
+  \item By computing $W_{\text{out}}$, $W_{\text{in}}$ and $Q_{\text{in}}$, show that the Diesel cycle's efficiency is
+        \begin{equation*}
+          \eta_D = 1 - \frac{f(C)}{r^{2 / 3}}
+        \end{equation*}
+        and determine the function $f(C)$ that depends only on the cutoff ratio.
+
+  \showmarks{18}
+
+  \item Show $f(C) > 1$ for $C > 1$.
+        This indicates the Diesel cycle is less efficient than the Otto cycle with the same compression ratio $r$.
+
+  \showmarks{6}
+\end{enumerate}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 2: Mixed ideal gases}
+Consider a mixture of two classical ideal gases in thermodynamic equilibrium, in a container of volume $V$ at temperature $T$, like that illustrated below.
+Let $N_1$ and $N_2$ be the particle numbers of the two gases.
+Within each gas the particles are indistinguishable, but particles of one gas are distinguishable from particles of the other gas.
+In particular, they have different masses $m_1$ and $m_2$, implying different thermal de~Broglie wavelengths $\la_1$ and $\la_2$. \\[-24 pt]
+\begin{center}\includegraphics[width=0.3\textwidth]{figs/mixed.pdf}\end{center}
+\vspace{-12 pt}
+
+\begin{enumerate}[label={(\alph*)}]
+  \item First consider the case of fixed particle numbers.
+        Calculate the partition function $Z$ and the Helmholtz free energy of the ($N_1 + N_2$)-particle mixture, approximating $\log(N_i!) \approx N_i\log N_i - N_i$.
+
+  \showmarks{4}
+
+  \item Calculate the internal energy $\vev{E}$ and the entropy $S$ of the mixture.
+        What is the condition of constant entropy?
+
+  \showmarks{4}
+
+  \item Calculate the pressure $P$ of the mixture, and relate it to the pressures $P_1$ and $P_2$ of each gas in isolation (as illustrated below).
+
+  \showmarks{4}
+
+  \item Now allow the particle numbers to fluctuate, with distinct chemical potentials $\mu_1$ and $\mu_2$ for each type of particle.
+        Calculate the grand-canonical partition function $Z_g$ and the grand-canonical potential of the mixture, again approximating $\log(N_i!) \approx N_i\log N_i - N_i$.
+
+  \showmarks{4}
+
+  \item Calculate the average particle number $\vev{N} = \vev{N_1} + \vev{N_2}$.
+
+  \showmarks{5}
+
+  \item Re-calculate the internal energy $\vev{E}$ now that the particle numbers are allowed to fluctuate --- explicitly evaluate the relevant derivatives to ensure you obtain what you expect; don't just write down an answer by inspection.
+
+  \showmarks{5}
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.3\textwidth]{figs/red.pdf}\hspace{0.3\textwidth}\includegraphics[width=0.3\textwidth]{figs/blue.pdf}\end{center}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 3: Particle number fluctuations}
+Consider the fugacity expansion of the grand-canonical partition function (Eq.~82 in the lecture notes):
+\begin{equation*}
+  Z_g(T, \mu) = \sum_{N = 0}^{\infty} \xi^N \, Z_N(T).
+\end{equation*}
+Here $\xi = e^{\be \mu} = e^{\mu / T}$ is the fugacity and $Z_N(T)$ is the $N$-particle canonical partition function, which is independent of $\xi$.
+Recall that $\Phi(T, \mu) = -T \log Z_g(T, \mu)$ is the corresponding grand-canonical potential.
+
+\begin{enumerate}[label={(\alph*)}]
+  \item Derive a relation between the average particle number $\vev{N}$ and the derivative $\displaystyle \pderiv{}{\log \xi}\Phi$.
+
+  \showmarks{8}
+
+  \item Derive a relation between $\vev{\left(N - \vev{N}\right)^2}$ and $\displaystyle \left(\pderiv{}{\log \xi}\right)^2 \Phi$.
+
+  \showmarks{8}
+
+  \item Specialize to the case of Maxwell--Boltzmann statistics, for which the fugacity expansion simplifies to $Z_g^{\text{MB}}(T, \mu) = \exp[\xi Z_1(T)]$, where $Z_1$ is the single-particle partition function.
+        Use the relations you have derived to determine $\vev{N}$ and $\vev{\left(N - \vev{N}\right)^2}$ for this case, and show
+        \begin{equation*}
+          \frac{\sqrt{\vev{\left(N - \vev{N}\right)^2}}}{\vev{N}} = \frac{1}{\sqrt{\vev{N}}}.
+        \end{equation*}
+        It may be useful to note $\displaystyle \pderiv{}{\log \xi} = \xi \pderiv{}{\xi}$.
+
+  \showmarks{8}
+\end{enumerate}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 4: Grand-canonical massive bosons}
+The grand-canonical potential for a gas of bosons with mass $m$ in a box of volume $V$, with temperature $T = 1 / \be$ and chemical potential $\mu$, is
+\begin{equation*} % Spin zero, so only one polarization vs.\ the two for photons and spin-half fermions...
+  \Phi(\be, \mu) = \frac{V}{\be} \frac{\sqrt{2m^3}}{2 \pi^2 \hbar^3} \int_0^{\infty} \log\left[1 - e^{-\be (E - \mu)}\right] \sqrt{E} \d{E}.
+\end{equation*}
+Consider the case of vanishing chemical potential, $\mu = 0$. % See Schroeder problem 7.75 for more...
+
+\begin{enumerate}[label={(\alph*)}]
+  \item Calculate the particle density $\displaystyle \frac{\vev{N}}{V}$.
+
+  \showmarks{6}
+
+  \item Calculate the internal energy density $\displaystyle \frac{\vev{E}}{V}$ to show $\vev{E} = \ga \vev{N} T$ and determine the constant $\ga$.
+
+  \showmarks{7}
+
+  \item Calculate the entropy of the gas.
+        What is the condition of constant entropy?
+
+  \showmarks{6}
+
+  \item Calculate the pressure $P$ to show $P V = \ka \vev{N} T$ and determine the constant $\ka$.
+
+  \showmarks{7}
+\end{enumerate}
+
+\noindent\textbf{Hints:} You can look up derivatives or integrals, citing any sources you use.
+You can leave your answers in terms of the Riemann zeta function.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\end{document}
+% ------------------------------------------------------------------
