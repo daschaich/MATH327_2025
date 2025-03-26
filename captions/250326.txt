@@ -1,0 +1,2757 @@
+1
+00:00:01,780 --> 00:00:04,970
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Okay. The clock is striking 11, so let's get underway.
+
+2
+00:00:05,440 --> 00:00:13,240
+See if people join either in the room or remotely, and we'll see if what those remote or, um,
+
+3
+00:00:13,420 --> 00:00:21,129
+watching the recording after the fact webcam that I can used up to not is not functioning for some other reason.
+
+4
+00:00:21,130 --> 00:00:34,140
+So the camera's available will be different and more limited today, but that won't affect the document camera here.
+
+5
+00:00:34,190 --> 00:00:42,670
+For I can put down the magic number for today and it's not showing up really, because those lights are still on.
+
+6
+00:00:43,540 --> 00:00:45,670
+So that should improve the situation.
+
+7
+00:00:47,440 --> 00:00:58,230
+And before we get going, one logistical note that hopefully you've all seen already that the final homework assignment for you is up on canvas.
+
+8
+00:00:58,240 --> 00:01:08,080
+Do a week from Friday, so about ten days to work on that, similar to the previous one that will be out soon for questions.
+
+9
+00:01:08,500 --> 00:01:14,830
+Some of that already happened forecast. For instance in last week's tutorial we introduced this.
+
+10
+00:01:14,840 --> 00:01:22,540
+These are cycle and collected as an exercise to compute the efficiency and compare it to that of the cycle,
+
+11
+00:01:23,200 --> 00:01:29,560
+and then questions relating to the grand canonical ensemble and so quantum statistics.
+
+12
+00:01:31,990 --> 00:01:39,250
+Any immediate questions about that assignment or any of the contents of the module that we've seen so far before.
+
+13
+00:01:39,250 --> 00:01:48,459
+We pick up where we left off on Monday. I see shaking heads.
+
+14
+00:01:48,460 --> 00:01:54,880
+So let's dive right back in and recall that we have formulated the grand
+
+15
+00:01:54,880 --> 00:02:00,340
+canonical ensemble final of the three sets of statistical ensembles we look at.
+
+16
+00:02:00,340 --> 00:02:03,700
+In this module we have formulated quantum statistics.
+
+17
+00:02:04,510 --> 00:02:13,629
+And now we are applying, um, those two together looking at grand canonical systems, our ideal quantum gases.
+
+18
+00:02:13,630 --> 00:02:21,640
+So ideal means that we pretend these particles don't interact with each other in any way.
+
+19
+00:02:22,030 --> 00:02:33,790
+And we want to make some predictions and check those against observations, uh, bringing in some of the milestone targets that we actually looked at.
+
+20
+00:02:34,210 --> 00:02:37,300
+So motivation in the very first lecture of this term.
+
+21
+00:02:37,930 --> 00:02:41,440
+So we started with this, um, with the gas of photons on one day,
+
+22
+00:02:42,100 --> 00:02:55,870
+formulating the energy levels for photons enable u V and plugging that into Bose-Einstein statistics to get the internal energy density.
+
+23
+00:02:56,710 --> 00:03:03,280
+So the energy of the photon gas normalised by the volume in the form of an integral over.
+
+24
+00:03:04,950 --> 00:03:10,350
+What is called a spectral density. This is something that we integrate in order to get an energy density.
+
+25
+00:03:11,160 --> 00:03:19,710
+The specific spectral density that shows up for a photon gas is the Planck spectrum,
+
+26
+00:03:20,130 --> 00:03:28,350
+and can be formulated in terms of either the frequency of the photons omega or the wavelength lambda,
+
+27
+00:03:28,950 --> 00:03:35,620
+which is related to the frequency inversely by the speed of light.
+
+28
+00:03:35,640 --> 00:03:41,100
+So the product of frequency times wavelength is the speed of light up to factors of two pi.
+
+29
+00:03:42,630 --> 00:03:51,450
+And we specifically found. Forms for these ways of representing the Planck spectrum.
+
+30
+00:03:52,960 --> 00:03:56,980
+Involving the Planck constant h bar the speed of light c.
+
+31
+00:03:56,980 --> 00:04:01,630
+Both of those are unit conversion factors in terms of the frequency.
+
+32
+00:04:02,320 --> 00:04:07,690
+We have that frequency omega cubed divided by.
+
+33
+00:04:10,030 --> 00:04:17,620
+A common combination of exponentials minus one, that shows up a lot in Bose-Einstein distributions,
+
+34
+00:04:18,160 --> 00:04:28,180
+and depending on the specific context and setting, it can be more convenient to work with either the frequency or wavelength expressions.
+
+35
+00:04:28,180 --> 00:04:36,040
+For the Planck spectrum, we're in for the wavelength instead of having frequencies in the numerator.
+
+36
+00:04:36,190 --> 00:04:40,870
+That inverse relationship brings in wavelengths in the denominator.
+
+37
+00:04:42,790 --> 00:04:50,829
+Still with the Bose-Einstein exponential factor again.
+
+38
+00:04:50,830 --> 00:04:55,120
+Now with one over lambda or c over lambda rather than that omega.
+
+39
+00:04:57,580 --> 00:05:06,940
+So we still have a bit to do today with this Planck spectrum confronting it with real physical systems.
+
+40
+00:05:08,950 --> 00:05:17,110
+So we will look at predictions for photon gas as compared to observations in a couple of different contexts,
+
+41
+00:05:17,680 --> 00:05:25,090
+and then derive the equation of state for this photon gas and compare it to.
+
+42
+00:05:26,350 --> 00:05:35,290
+The ideal gas law that we had for classical, non-relativistic, non-interacting particles.
+
+43
+00:05:35,860 --> 00:05:46,209
+And after all that, there should be plenty of time to switch gears and start really working on a second example for quantum gases,
+
+44
+00:05:46,210 --> 00:05:54,970
+which is a gas of fermions. And to provide some contrast with this ultra relativistic gas of photons.
+
+45
+00:05:55,630 --> 00:06:10,090
+We will focus first on non-relativistic fermions, um, that have a different relationship between momenta and the energies of their energy levels.
+
+46
+00:06:13,840 --> 00:06:25,629
+So getting back to the place where we ended up one day picking right up with the Planck spectrum as a function of wavelength,
+
+47
+00:06:25,630 --> 00:06:31,420
+we saw that in the infrared limit of more wavelengths,
+
+48
+00:06:31,420 --> 00:06:41,080
+at least compared to the inverse temperature of beta H bar C, this whole expression reduced to something simpler.
+
+49
+00:06:41,890 --> 00:06:45,250
+So expanding the exponential in terms of its small arguments,
+
+50
+00:06:45,250 --> 00:06:56,920
+the leading term of one cancels uh two pi HRC or cancel out part of that numerator and h a pi and a beta,
+
+51
+00:06:56,920 --> 00:07:04,630
+which is one over beta is the temperature are all left as our four factors of the wavelength.
+
+52
+00:07:05,020 --> 00:07:14,560
+And again, in that specific limit of long wavelengths or equivalently high temperatures that lead to small beta.
+
+53
+00:07:15,880 --> 00:07:23,950
+So this is the prediction that we would have gotten had we analysed these ultra relativistic
+
+54
+00:07:23,950 --> 00:07:32,500
+massless particles using classical statistical mechanics that was done in the 1800s by.
+
+55
+00:07:35,080 --> 00:07:46,180
+Baron Rayleigh and James Jeans. So their names are attached to this particular form of the spectrum for the wavelength dependent.
+
+56
+00:07:46,180 --> 00:07:59,160
+So the energy density of a full time gas. And as soon as they derived this, they could see that there was something to be concerned about.
+
+57
+00:07:59,610 --> 00:08:04,080
+So we can recall that in the classical setting we watch particle by particle.
+
+58
+00:08:04,470 --> 00:08:09,600
+We account for all the possible energies, or microstates that a single particle can have.
+
+59
+00:08:10,140 --> 00:08:14,670
+And then we multiply all of the different particles together and correct for over counting.
+
+60
+00:08:15,630 --> 00:08:22,560
+So looking at a single wave for a photon and integrating over all the energy said it could have,
+
+61
+00:08:23,190 --> 00:08:31,230
+there is a prediction that the energies are going to diverge as this wavelength gets very small.
+
+62
+00:08:31,950 --> 00:08:44,999
+So this spectrum and the resulting energy of a photon gas in this classical approach goes to infinity,
+
+63
+00:08:45,000 --> 00:08:50,940
+like one over lambda to the fourth as lambda goes to zero.
+
+64
+00:08:52,590 --> 00:09:00,570
+And this at the time it was discovered. Became known as the ultraviolet catastrophe.
+
+65
+00:09:04,770 --> 00:09:08,160
+Because it was a theoretical physics prediction that.
+
+66
+00:09:10,390 --> 00:09:13,560
+Uh, photons. Well, there were no photons at that point.
+
+67
+00:09:13,680 --> 00:09:20,249
+Light being emitted, for example, from a object would have an infinite amount of energy,
+
+68
+00:09:20,250 --> 00:09:25,710
+which is not in good agreement with our everyday experience and observations.
+
+69
+00:09:27,090 --> 00:09:36,959
+And it was in order to solve this ultraviolet catastrophe that Max Planck introduced the idea that the
+
+70
+00:09:36,960 --> 00:09:44,220
+energy of light to electromagnetic waves more generally could only come in discrete quantised packets.
+
+71
+00:09:45,480 --> 00:09:48,840
+Um, he did that without any real motivation.
+
+72
+00:09:48,840 --> 00:09:56,219
+He called it an act of desperation to try to get a finite answer, and it turned out to be one of the first steps,
+
+73
+00:09:56,220 --> 00:10:04,980
+historically, towards the understanding that nature is quantum at the fundamental level.
+
+74
+00:10:07,740 --> 00:10:15,470
+So. I was never able to find this printout that I was looking for on Monday.
+
+75
+00:10:15,480 --> 00:10:23,730
+So this is a new copy where we can see the effect that links act of desperation had.
+
+76
+00:10:24,390 --> 00:10:38,190
+This classical theory is, um, exactly that ageing spectrum a pi times the temperature over a lambda to the fourth, the wavelength is lambda and.
+
+77
+00:10:40,060 --> 00:10:45,430
+So that's proportional to. Win over lambs to the fourth.
+
+78
+00:10:46,630 --> 00:10:55,060
+Lambda is on the horizontal axis and we see increasing amounts of power per unit
+
+79
+00:10:55,450 --> 00:11:00,190
+area per unit solid angle per unit time plotted on the vertical axis here,
+
+80
+00:11:00,430 --> 00:11:04,450
+which uh plex approach was able to cure.
+
+81
+00:11:04,450 --> 00:11:09,040
+So a fixed temperature of 5000 Kelvin gives this blue peak,
+
+82
+00:11:09,550 --> 00:11:25,120
+which shifts to lower amounts of energy and larger wavelengths at the peak as that temperature decreases, um, into the low energy infrared.
+
+83
+00:11:27,880 --> 00:11:41,500
+So rather than diverging in the ultraviolet, zoom can make this legible concept more.
+
+84
+00:11:44,620 --> 00:11:53,170
+That should be back where we want the full spectrum that we have derived from our starting points of photons.
+
+85
+00:12:01,090 --> 00:12:08,230
+Instead of diverging. It has a temperature dependent peak.
+
+86
+00:12:11,590 --> 00:12:17,530
+And it is not a coincidence that for temperatures around 5000 Kelvin,
+
+87
+00:12:18,100 --> 00:12:27,729
+the peak of the energy being emitted by a radiating object with that temperature is in
+
+88
+00:12:27,730 --> 00:12:34,420
+the fairly narrow range of visible light from the wavelength of 400 to 700 nanometres.
+
+89
+00:12:43,120 --> 00:12:50,949
+So that is just a special case in that range of temperatures around 5000 Kelvin.
+
+90
+00:12:50,950 --> 00:13:03,340
+And the reason this is not a coincidence is because this is precisely the, uh, range of light in the temperature range that our sun has.
+
+91
+00:13:03,970 --> 00:13:11,260
+So the sunlight that we see, it has to block out in order for the documented camera to be visible on the projector.
+
+92
+00:13:14,080 --> 00:13:19,660
+Has a temperature of approximately 5800 Kelvin.
+
+93
+00:13:21,400 --> 00:13:30,820
+And the way that this effective temperature of the sunlight is determined is exactly by using the Planck spectrum,
+
+94
+00:13:31,510 --> 00:13:37,870
+and I'm afraid I have to zoom back out again. So.
+
+95
+00:13:40,330 --> 00:13:50,530
+These are measurements of the power contained by the sunlight either that reaches the upper atmosphere.
+
+96
+00:13:50,560 --> 00:13:55,840
+So from high altitude balloon measurements or more recently, satellite experiments,
+
+97
+00:13:56,410 --> 00:14:04,390
+that is the yellow histogram plotted again versus wavelengths now in use of nanometre instead of micrometre.
+
+98
+00:14:05,440 --> 00:14:09,940
+The red histogram is the amount of sunlight that makes it through the atmosphere.
+
+99
+00:14:10,750 --> 00:14:21,520
+To reach sea level. You can see that particles in the atmosphere, such as carbon dioxide and water, absorb lots of this energy,
+
+100
+00:14:21,700 --> 00:14:31,210
+especially at particular, uh, values of the wavelength or frequency that depend on the molecular structure of these molecules.
+
+101
+00:14:33,040 --> 00:14:37,839
+If we fit the sunlight above the atmosphere.
+
+102
+00:14:37,840 --> 00:14:49,840
+So before that, atmospheric absorption sets in to the Planck spectrum, we get this, uh, solid black line called a black body for historical reasons.
+
+103
+00:14:49,840 --> 00:15:01,840
+So a body that does not reflect any temperature, sorry, does not reflect any light or electromagnetic waves that are shown outward but only emits.
+
+104
+00:15:03,290 --> 00:15:05,930
+Electromagnetic waves with a characteristic temperature.
+
+105
+00:15:07,100 --> 00:15:11,990
+The agreement is not perfect, but this is the best fit that we can get from the Planck spectrum.
+
+106
+00:15:12,380 --> 00:15:18,740
+And it gives us this 5800 Kelvin temperature for the light of the sun.
+
+107
+00:15:20,300 --> 00:15:26,900
+Um, and this should be contrasted with the possible temperature deep in the interior of the sun,
+
+108
+00:15:26,900 --> 00:15:39,500
+which we can't directly access without a lot of effort and risk sending specially designed satellites to probe underneath the surface of the sun.
+
+109
+00:15:40,790 --> 00:15:56,600
+So by fitting the Planck spectrum, either as a function of frequency or of lambda, we can get a measurement for an effective surface temperature.
+
+110
+00:15:58,000 --> 00:16:05,020
+Of the sun. The surface is where the light is being emitted.
+
+111
+00:16:07,930 --> 00:16:11,680
+Rather than in the interior where the photons are.
+
+112
+00:16:11,890 --> 00:16:21,910
+Definitely not ideal non-interacting particles, but are strongly interacting with the protons and electrons in the framework of magneto hydrodynamics.
+
+113
+00:16:22,690 --> 00:16:33,290
+A bit more complicated. We can do this not only for our own sun, even though that is what we can see most easily.
+
+114
+00:16:33,290 --> 00:16:41,740
+Here was the initial testing place for this. But for any star in the sky, you can send up a satellite, have it look at a particular star,
+
+115
+00:16:42,310 --> 00:16:48,910
+and measure the effective surface temperature for the photons that we receive from that distant star.
+
+116
+00:16:50,800 --> 00:16:56,230
+Um, which is how those stars are classified into red, blue, and yellow.
+
+117
+00:16:56,860 --> 00:17:01,300
+Yellow stars have this temperature of around 5 or 6000 Kelvin, like our own sun.
+
+118
+00:17:02,410 --> 00:17:06,500
+Lower temperature. Stars.
+
+119
+00:17:06,510 --> 00:17:13,860
+So if we fit the Planck spectrum and get a temperature of around 3500 Kelvin,
+
+120
+00:17:15,120 --> 00:17:25,050
+that corresponds to a peak in the spectral density that has shifted towards the infrared, which is to say toward the red side of the visible spectrum.
+
+121
+00:17:25,920 --> 00:17:34,050
+So those defined red stars and there are also blue stars.
+
+122
+00:17:34,770 --> 00:17:38,909
+Their temperature is significantly larger than 5000 Kelvin.
+
+123
+00:17:38,910 --> 00:17:45,000
+Shift this peak to higher energies toward the ultraviolet, heating blue along the way.
+
+124
+00:17:45,900 --> 00:17:48,900
+Typical scale for that is about 10,000 Kelvin.
+
+125
+00:17:53,700 --> 00:18:06,030
+And there is a third possibility that is even more remarkable than the idea that we can repeat what we do for our sun, for these distant stars.
+
+126
+00:18:06,480 --> 00:18:12,600
+It's not too hard to imagine. You can see that many stars with the naked eye, even through the atmosphere.
+
+127
+00:18:13,710 --> 00:18:21,390
+What we can't see with our naked eye is the, um, effectively empty space between galaxies.
+
+128
+00:18:23,010 --> 00:18:31,500
+So what is normally considered to be a vacuum actually has a non-zero temperature.
+
+129
+00:18:32,460 --> 00:18:37,050
+It is filled with a gas of low energy photons.
+
+130
+00:18:38,370 --> 00:18:49,830
+That low energy corresponds to a temperature from fitting the Planck distribution of about um to 2.725 Kelvin.
+
+131
+00:18:50,550 --> 00:19:00,480
+So a little under three Kelvin, about 1000 times colder than even the coldest red giant stars you can observe.
+
+132
+00:19:07,230 --> 00:19:15,270
+And this gas of low energy photons filling the voids between galaxies is known as.
+
+133
+00:19:15,270 --> 00:19:20,700
+The CMB is short for the cosmic Microwave background.
+
+134
+00:19:27,390 --> 00:19:38,310
+It is microwaves because that is the wavelength regime that corresponds to low temperatures of the source.
+
+135
+00:19:39,840 --> 00:19:45,180
+Going back to the translation that we looked at Monday of this.
+
+136
+00:19:45,210 --> 00:19:56,850
+Crucially, think that out of flashes, microwaves are these wavelengths of about um centimetres rather than nanometres,
+
+137
+00:19:57,600 --> 00:20:04,290
+comparable to small animals and temperature scales is about order a single Kelvin.
+
+138
+00:20:04,830 --> 00:20:14,910
+Frequencies around this range from ten to the eight to 10 to 12, so 1 billion to 1 trillion, uh, oscillations per second.
+
+139
+00:20:23,700 --> 00:20:30,030
+And this cosmic microwave background, after it was observed, it was initially thought to be,
+
+140
+00:20:31,230 --> 00:20:37,980
+um, something born with a radio dish that some scientists were setting up.
+
+141
+00:20:37,980 --> 00:20:43,770
+They kept getting lots of noise coming in, but they couldn't figure out its source or how to get rid of it.
+
+142
+00:20:44,790 --> 00:20:47,849
+But they realised it was this cosmic microwave background.
+
+143
+00:20:47,850 --> 00:20:53,190
+They got a Nobel Prize for their effort, this Penzias and Wilson back in the 60s.
+
+144
+00:20:54,060 --> 00:21:00,210
+This is essentially the residual energy of the Big Bang,
+
+145
+00:21:02,040 --> 00:21:13,349
+which has been cooling as the universe has expanded over the past 13.7 billion years in round numbers.
+
+146
+00:21:13,350 --> 00:21:21,120
+And that's the reason it is so cold, even though the Big Bang itself was quite a hot event.
+
+147
+00:21:22,800 --> 00:21:32,940
+So it is remarkable that we can detect and measure this temperature of an invisible photon gas,
+
+148
+00:21:32,940 --> 00:21:36,780
+invisible to the naked eye, coming from intergalactic space.
+
+149
+00:21:36,780 --> 00:21:42,240
+In order to do this, you have to send up satellites above the atmosphere,
+
+150
+00:21:42,900 --> 00:21:48,900
+take very precise measurements of the spectrum of photons in a given direction,
+
+151
+00:21:49,830 --> 00:21:55,020
+remove all the galaxies that may be contributing photons in that direction,
+
+152
+00:21:55,650 --> 00:22:03,930
+and then compute the temperature of the photons that remain after that so-called foreground.
+
+153
+00:22:04,810 --> 00:22:23,800
+Is taken out. So if we do this over many years, for many points in the sky,
+
+154
+00:22:24,220 --> 00:22:35,260
+spanning out essentially the first four pi rings that we can look at and projecting that onto a 2D sheet, this is the kind of picture that emerges.
+
+155
+00:22:37,270 --> 00:22:42,160
+For the temperature fluctuations.
+
+156
+00:22:43,300 --> 00:22:47,200
+What more zoom out of that intergalactic space.
+
+157
+00:22:47,650 --> 00:22:53,410
+So all of these stars and galaxies have been removed from this image,
+
+158
+00:22:53,410 --> 00:22:59,200
+which is showing the fluctuations in the temperature that a particular satellite,
+
+159
+00:22:59,200 --> 00:23:07,660
+known as the Planck satellite, published in a little over ten years ago, 2013.
+
+160
+00:23:10,000 --> 00:23:16,719
+And here the colour coding of either blue or red points are highlighting small
+
+161
+00:23:16,720 --> 00:23:21,940
+fluctuations around the average temperature of empty intergalactic space,
+
+162
+00:23:22,450 --> 00:23:31,270
+where by small I mean. Very small, several orders of magnitude smaller than that average.
+
+163
+00:23:31,930 --> 00:23:38,410
+So the blue and red points in that figure.
+
+164
+00:23:43,570 --> 00:23:53,530
+Correspond to fluctuations on the scale of less than a millikelvin or two Kelvin.
+
+165
+00:23:57,370 --> 00:23:58,780
+Around the average.
+
+166
+00:24:01,090 --> 00:24:13,270
+Cosmic microwave background temperature that the Planck satellite was able to determine, again with several significant figures in that temperature.
+
+167
+00:24:16,440 --> 00:24:22,440
+The temperature itself playing the Planck satellite determined very accurately.
+
+168
+00:24:22,440 --> 00:24:29,760
+It was not the first experiment to resolve that temperature with a few significant figures.
+
+169
+00:24:30,480 --> 00:24:39,840
+So earlier on. This average CMB temperature.
+
+170
+00:24:43,340 --> 00:24:58,690
+Um. Was computed to a couple of significant figures, plus minus oh point 60 around an average stand of 2.735,
+
+171
+00:24:58,690 --> 00:25:01,720
+rather than the more precise 2.725 we know today.
+
+172
+00:25:03,940 --> 00:25:10,810
+That was done first by a satellite known as the Cosmic Background Explorer, which was launched in 1990.
+
+173
+00:25:11,710 --> 00:25:22,510
+It was awarded the 2006 Nobel Prize for this measurement, and specifically for all the measurements that fit into it.
+
+174
+00:25:22,810 --> 00:25:38,140
+Here, looking at the power spectrum of the cosmic microwave background photons as a function of the frequency in units of 10 to 11 inverse seconds,
+
+175
+00:25:38,590 --> 00:25:48,070
+which. Can equivalently write as 100,000,000,000Hz or 100GHz.
+
+176
+00:25:49,540 --> 00:25:53,439
+And this is an image that you will have seen before.
+
+177
+00:25:53,440 --> 00:25:59,350
+We looked at it in the first lecture, which is what these data were written down.
+
+178
+00:26:01,150 --> 00:26:11,680
+Be a bit more precise. Now I'll point to .735 plus or minus 0.6 Kelvin.
+
+179
+00:26:13,210 --> 00:26:19,900
+And this is also the image that shows up as the logo for this molecule in canvas.
+
+180
+00:26:21,010 --> 00:26:24,470
+The. Points here are.
+
+181
+00:26:26,600 --> 00:26:36,709
+Effectively a histogram taking the measured power density over some small range of frequencies and the error bars.
+
+182
+00:26:36,710 --> 00:26:48,170
+The uncertainties on these experiment measurements are even back in the time of the 90s, significantly smaller than the size of these black squares.
+
+183
+00:26:49,130 --> 00:26:54,530
+The curve X going through them is the Planck spectrum spectrum that we have derived.
+
+184
+00:26:55,130 --> 00:27:05,480
+So there's only that single free parameter of the temperature that they were able to get out, um, to these three significant figures.
+
+185
+00:27:06,080 --> 00:27:09,290
+So. Let's.
+
+186
+00:27:11,840 --> 00:27:16,880
+Just see here I should emphasise when I zoom back in that.
+
+187
+00:27:19,040 --> 00:27:23,359
+The, the for the axes of this plot are different than the previous few.
+
+188
+00:27:23,360 --> 00:27:30,920
+We looked at earlier where the wavelength was on the horizontal axis rather than the frequency range.
+
+189
+00:27:36,950 --> 00:27:40,130
+Um. So.
+
+190
+00:27:44,240 --> 00:27:48,650
+Here the fit is to the Planck spectrum as a function of frequency.
+
+191
+00:27:49,580 --> 00:27:55,220
+This is the radio frequency rather than the angular frequency.
+
+192
+00:27:55,850 --> 00:28:04,130
+We talked about that on Monday. They differ by the two pi radians that form a single revolution around a circle.
+
+193
+00:28:04,580 --> 00:28:08,390
+And that is what gave us that temperature.
+
+194
+00:28:09,260 --> 00:28:12,860
+You can also see there is more information in the measurements.
+
+195
+00:28:13,700 --> 00:28:19,970
+The peak. In this spectrum is around.
+
+196
+00:28:22,370 --> 00:28:28,129
+Frequencies of 150GHz.
+
+197
+00:28:28,130 --> 00:28:32,480
+So that 1.5 on the horizontal axis.
+
+198
+00:28:32,480 --> 00:28:35,750
+Here is where the peak is up at the top.
+
+199
+00:28:37,370 --> 00:28:50,270
+And. So 1.5 times ten to the -11 inverse seconds, or road revolutions per second, or radians per second for f rather than omega.
+
+200
+00:28:51,260 --> 00:29:03,290
+And because lambda is related to the frequency by the speed of light, that translates to a wavelength of about two millimetres in that.
+
+201
+00:29:05,480 --> 00:29:09,050
+Microwave domain of the electromagnetic spectrum,
+
+202
+00:29:09,980 --> 00:29:20,990
+which is about a thousand times longer than the wavelength of visible light, which is in some micron scale.
+
+203
+00:29:24,290 --> 00:29:25,700
+For some clicks on the screen.
+
+204
+00:29:26,810 --> 00:29:44,000
+But at this point, from looking at solar radiation, as well as even more precisely, these, uh, are measured by photons in empty intergalactic space.
+
+205
+00:29:44,450 --> 00:29:48,739
+So it's able to answer the question that this pose at the start of the day.
+
+206
+00:29:48,740 --> 00:29:59,930
+And today, how accurate is this, um, approximation of modelling physical systems as non-interacting ideal gases?
+
+207
+00:30:00,470 --> 00:30:09,380
+And given that limitation, at least for these photon gases, I think it's fair to say that the accuracy is really amazing.
+
+208
+00:30:11,450 --> 00:30:18,500
+And again, much better than. Even is visible to the eye on that plot from Kobe,
+
+209
+00:30:19,010 --> 00:30:25,729
+where the black data points were larger than the uncertainty is that we had 35 years
+
+210
+00:30:25,730 --> 00:30:31,550
+ago that have only gotten smaller with the new generations of satellites like Planck.
+
+211
+00:30:33,410 --> 00:30:39,500
+So given that starting assumption of an ideal gas.
+
+212
+00:30:39,650 --> 00:30:44,840
+So in absence of interactions. You're really.
+
+213
+00:30:49,730 --> 00:30:55,130
+Getting an excellent description of nature and physical observations.
+
+214
+00:30:58,970 --> 00:31:06,500
+Were there any. Questions or objections to that conclusion?
+
+215
+00:31:06,980 --> 00:31:16,850
+Questions about these comparisons between theoretical prediction and measurements ranging
+
+216
+00:31:16,850 --> 00:31:22,070
+from some of these hottest locations in the universe of of of tens of thousands of.
+
+217
+00:31:23,020 --> 00:31:27,130
+All the way down to the cold intergalactic void.
+
+218
+00:31:33,240 --> 00:31:41,550
+Not seeing any harm. Draw a line under that direct comparison of our predictions and observations.
+
+219
+00:31:42,120 --> 00:31:52,589
+But we have done with the photon gas quite yet. We have expressed our energy density as the integral over this Planck spectrum,
+
+220
+00:31:52,590 --> 00:31:58,890
+and done a lot of work looking at just how well the Planck spectrum agrees with observations.
+
+221
+00:31:59,790 --> 00:32:12,630
+But we can now evaluate that integral. It's no longer giving the ultraviolet catastrophe of the classical statistical mechanics.
+
+222
+00:32:19,740 --> 00:32:27,270
+So we can drive forward and get a final result for the energy density, or equivalently,
+
+223
+00:32:27,270 --> 00:32:34,380
+the overall average internal energy of our photon gas in a given volume V.
+
+224
+00:32:38,110 --> 00:32:41,920
+So those are all the prefectures from the Planck spectrum.
+
+225
+00:32:42,520 --> 00:32:49,450
+And then the integral, if we express it in terms of frequencies, that has a slightly simpler form,
+
+226
+00:32:50,290 --> 00:32:56,290
+you know, the beta h bar omega minus one integrated over frequencies from zero to infinity.
+
+227
+00:32:58,120 --> 00:33:06,730
+And when faced with integrals of this form, it is a good default knee jerk reaction.
+
+228
+00:33:07,150 --> 00:33:14,110
+To simplify with a change of variables, that gets the argument to that exponential function as simple as possible.
+
+229
+00:33:14,950 --> 00:33:27,580
+So if we change to working with some x, which is h bar omega divided by the temperature, then dx.
+
+230
+00:33:30,130 --> 00:33:44,160
+Would be a similar. So we should say solving this for omega we have omega is t over h bar times x to omega is also t over h bar times t x.
+
+231
+00:33:44,980 --> 00:33:55,210
+And we get for powers of this ratio of temperature over Planck's constant from the three powers of omega there and the d omega there.
+
+232
+00:33:56,350 --> 00:34:00,310
+So we have in front of this integral.
+
+233
+00:34:02,800 --> 00:34:06,220
+T over h bar, which is a fourth power.
+
+234
+00:34:08,020 --> 00:34:17,440
+And then integrating what remains is just x cubed over e to the x minus one the x bar.
+
+235
+00:34:17,770 --> 00:34:21,760
+This is a complicated integral to do by hand.
+
+236
+00:34:22,600 --> 00:34:28,839
+I advise against accepting that unless you have a lot of free time on your hands,
+
+237
+00:34:28,840 --> 00:34:35,290
+it is part of a class of well known integrals that are called Bose-Einstein integrals,
+
+238
+00:34:35,290 --> 00:34:41,380
+because they arise in Bose-Einstein statistics and they actually have very delicious form.
+
+239
+00:34:42,940 --> 00:34:50,560
+So we can look up the value of this definite integral, integrating from zero to infinity.
+
+240
+00:34:51,310 --> 00:34:59,650
+And we get just a product of a gamma function and a Riemann zeta function,
+
+241
+00:34:59,890 --> 00:35:10,510
+both with arguments for the gamma function we have seen in the tutorial is for positive integers at least n minus one factorial.
+
+242
+00:35:11,290 --> 00:35:14,860
+So three factorial is six.
+
+243
+00:35:16,270 --> 00:35:23,740
+There are also no results for the Riemann zeta function of even positive integers.
+
+244
+00:35:25,000 --> 00:35:30,370
+They involve powers of pi, in this case pi to the fourth over 90.
+
+245
+00:35:30,790 --> 00:35:41,620
+So all together this integral is just a number pi to the fourth over 15 s 90 divided by six.
+
+246
+00:35:43,360 --> 00:35:52,390
+So. Setting that result back into the expression for.
+
+247
+00:35:54,970 --> 00:35:59,110
+The average internal energy of our photon gas in the grand canonical ensemble,
+
+248
+00:36:00,010 --> 00:36:06,130
+the two powers of pi in the denominator will cancel two out of the numerator.
+
+249
+00:36:07,570 --> 00:36:14,920
+So pi squared remain. In the numerator I have space.
+
+250
+00:36:15,550 --> 00:36:20,320
+Do I have space of Randolph-Macon is there. Let's do this bit more cleanly.
+
+251
+00:36:22,510 --> 00:36:27,390
+Um. The power of each car.
+
+252
+00:36:27,410 --> 00:36:31,549
+We have one of the numerator and somewhere in the denominator.
+
+253
+00:36:31,550 --> 00:36:38,060
+So three of those powers remain to come along with the powers of the speed of light.
+
+254
+00:36:40,190 --> 00:36:48,709
+Um, I should also, I should say that combinations of Planck's constant and the speed of light are again, just two unique conversion factors.
+
+255
+00:36:48,710 --> 00:36:58,970
+They often appear together in quantum gases and have a random value converting energy and length scales.
+
+256
+00:36:59,720 --> 00:37:08,450
+Their value is something like, uh, 111 times fermium in those particular units that are relevant for particle physics.
+
+257
+00:37:08,900 --> 00:37:12,020
+We can also set it also one by working in physical units.
+
+258
+00:37:12,920 --> 00:37:22,010
+Um, but the other pieces that we have here, the constant 15 comes of them and then the functional form of this energy.
+
+259
+00:37:23,700 --> 00:37:28,860
+Is everything that remains. The volume times for powers of that temperature.
+
+260
+00:37:32,370 --> 00:37:41,540
+And this is. To look at it significantly more complicated than what we found earlier.
+
+261
+00:37:41,780 --> 00:37:47,060
+Using the canonical ensemble for classical non-relativistic gases.
+
+262
+00:37:48,560 --> 00:37:54,500
+So let's compare this result with the earlier one and will hopefully remember.
+
+263
+00:37:59,650 --> 00:38:13,840
+From our work with ideal gases and so many cycles based on them, that the average energy of those gases was just three halves empty.
+
+264
+00:38:15,370 --> 00:38:22,660
+So it's simpler the miracle factor and one power of temperature rather than the four that show up here.
+
+265
+00:38:23,380 --> 00:38:31,960
+This comparison at this level, though, is not entirely fair, because now that we're working with the grand canonical ensemble,
+
+266
+00:38:32,650 --> 00:38:37,629
+we will have a non-trivial prediction for the average number of particles.
+
+267
+00:38:37,630 --> 00:38:49,690
+This n is no longer fixed, but can also fluctuate in the same way that the internal energy does from microstate to microstates.
+
+268
+00:38:50,260 --> 00:39:02,260
+So to get the comparison on a more direct level, we need to compute the equivalent of the particle number in the grand canonical ensemble,
+
+269
+00:39:02,260 --> 00:39:09,160
+which is just over a macroscopic average for a photon gas.
+
+270
+00:39:09,940 --> 00:39:14,290
+And from a work to writing the grand canonical ensemble, we know that.
+
+271
+00:39:16,480 --> 00:39:25,150
+This average particle number is the negative derivative of the grand conical potential with respect to the chemical potential.
+
+272
+00:39:26,860 --> 00:39:33,940
+We evaluate that derivative. And then for the photon gas we set the chemical potential to zero as discussed at one day.
+
+273
+00:39:34,330 --> 00:39:38,140
+And that has to be the final step after computing the derivatives.
+
+274
+00:39:38,470 --> 00:39:46,180
+Or else we would not get anything useful if we got rid of all the factors of Amu and then try to take the new derivative.
+
+275
+00:39:48,820 --> 00:39:53,860
+So that's a general way in approaching this.
+
+276
+00:39:53,860 --> 00:39:56,740
+Hopefully not surprising in something you've seen before.
+
+277
+00:39:57,400 --> 00:40:08,890
+Any questions about this result for the energy or the procedure for the average particle number before we dive in and complete that calculation?
+
+278
+00:40:13,410 --> 00:40:18,120
+This should be a reasonably straightforward.
+
+279
+00:40:19,050 --> 00:40:27,390
+So you have to look back to the notes from Monday to remember the form of this grand canonical potential.
+
+280
+00:40:28,860 --> 00:40:33,780
+It can restate that here. So we have an overall negative sign.
+
+281
+00:40:34,950 --> 00:40:46,770
+The grand canonical potential started off with volume times one power of the temperature the pi squared and c cubed we seen previously.
+
+282
+00:40:47,190 --> 00:40:58,350
+And then integrand of a frequency is that we got from approximating all the energy levels as continuous in spherical coordinates,
+
+283
+00:40:58,980 --> 00:41:07,290
+confined to one octant of three dimensional space, to reflect the need to have positive frequencies.
+
+284
+00:41:09,510 --> 00:41:15,900
+So our derivative with chemical potential will act on the logarithm that we get from Bose-Einstein statistics.
+
+285
+00:41:17,250 --> 00:41:24,360
+And then in addition to that e to the minus beta h bar omega factor that we saw in the energy,
+
+286
+00:41:25,290 --> 00:41:31,830
+we retain the sagacity, the exponential of chemical potential divided by temperature.
+
+287
+00:41:32,580 --> 00:41:43,110
+This is all integrated over frequencies, and at the end we were set to zero for the photons that are easy to create and destroy.
+
+288
+00:41:44,760 --> 00:41:58,200
+So this is not a challenging derivative. The constant factors out front come along for the ride zero to infinity, as does omega squared.
+
+289
+00:41:59,010 --> 00:42:05,610
+This gets divided by the argument to the log. That's the one minus is two exponential factors.
+
+290
+00:42:07,850 --> 00:42:13,580
+And then the chain rule tells us we apply the derivative with respect to mu two.
+
+291
+00:42:13,970 --> 00:42:24,980
+That argument that bring us down this whole combination of exponential factors of minus e to the minus beta h bar omega e to the beta nu.
+
+292
+00:42:25,850 --> 00:42:31,040
+Second round of chain rule. Apply the derivative to the exponential itself.
+
+293
+00:42:31,670 --> 00:42:41,780
+That brings down a final factor of beta, which is an inverse temperature, so that beta will cancel out that t.
+
+294
+00:42:42,380 --> 00:42:52,970
+We have two negative signs that cancel out. And we can now set mu zero and divide through by e to the positive mega.
+
+295
+00:42:53,420 --> 00:42:58,580
+That's also what we did for the photon energy to obtain the spectrum.
+
+296
+00:43:00,430 --> 00:43:08,530
+So what's left out front is a v over pi squared c cubed.
+
+297
+00:43:10,180 --> 00:43:19,600
+Two factors of omega. Then that's same e to the beta h bar omega minus one that we had in the energy.
+
+298
+00:43:20,890 --> 00:43:30,280
+Just like the energy computation does the same change of variables to get this exponential factors arguments as simple as possible.
+
+299
+00:43:32,320 --> 00:43:43,060
+So that brings along that same ratio of temperature over Planck's constant h power of omega and omega.
+
+300
+00:43:43,330 --> 00:43:47,620
+So altogether there are three of those. And we integrate.
+
+301
+00:43:50,410 --> 00:43:57,610
+E to the x accelerated x minus one. Sorry there's a square there again from zero to infinity.
+
+302
+00:43:58,480 --> 00:44:01,930
+And this is another integral in that class.
+
+303
+00:44:02,590 --> 00:44:10,450
+It is almost identical to the integral that popped up at the energy density only instead of the gamma function of four.
+
+304
+00:44:10,960 --> 00:44:20,230
+And the Riemann zeta function of four, we have gamma three and zeta three, where gamma three is two factorial.
+
+305
+00:44:20,230 --> 00:44:29,530
+That is two to its friends. Yeah, Riemann zeta function with a odd positive integer,
+
+306
+00:44:29,980 --> 00:44:40,900
+as its argument is not quite as elegant as the ones with proven arguments that are related to factors of pi.
+
+307
+00:44:41,530 --> 00:44:44,640
+This is just an irrational number.
+
+308
+00:44:44,650 --> 00:44:53,140
+It's also known as a Paris constant because, um, a scientist known as inherited was studying this and.
+
+309
+00:44:55,270 --> 00:45:06,909
+Applying it to mathematical problems before Riemann zeta law and systematised this whole calculation, it has a value of about 1.5, but has.
+
+310
+00:45:06,910 --> 00:45:10,870
+It is an irrational number like he or pi.
+
+311
+00:45:10,870 --> 00:45:17,320
+We just have to leave it there and it comes along as a constant in our final result.
+
+312
+00:45:18,280 --> 00:45:34,210
+Uh, that final result, we can now write down we have two zeta three from that integral, we have the same a pi squared,
+
+313
+00:45:35,290 --> 00:45:44,980
+h bar cubed and c cubed that stopped out for the average internal energy for a photon gas.
+
+314
+00:45:46,720 --> 00:45:52,900
+But the functional form now is slightly different. It is volume times three powers of the temperature,
+
+315
+00:45:53,740 --> 00:46:05,170
+which is actually the kind of thing we wanted to see in order to get something that looks like the classical canonical relationship that we had.
+
+316
+00:46:05,770 --> 00:46:11,080
+Energy and particle number differing by one factor of the temperature.
+
+317
+00:46:12,610 --> 00:46:23,320
+So the average particle number for a photon gas is directly proportional to the average internal energy divided by the temperature,
+
+318
+00:46:23,860 --> 00:46:29,770
+something that, up to that passage of proportionality could be argued of dimension for grams.
+
+319
+00:46:30,520 --> 00:46:38,080
+You said Boltzmann constant to zero. So energy and temperature have the same units and it's just a pure number, the number of particles that we have.
+
+320
+00:46:39,790 --> 00:46:46,960
+So as we found in the ideal gas law, or for ideal gases leading up to the ideal gas law.
+
+321
+00:46:50,980 --> 00:47:02,620
+There is. A direct relationship between energy and particle number times t.
+
+322
+00:47:03,490 --> 00:47:06,850
+The constant factor is no longer just three halves.
+
+323
+00:47:07,300 --> 00:47:12,910
+And we got published a derivative of the took away the thermal wavelengths.
+
+324
+00:47:14,980 --> 00:47:18,190
+It's a bit more complicated. So.
+
+325
+00:47:20,870 --> 00:47:29,070
+Uh, the castle factor converts from the prefecture of the particle number to the prefecture of the internal energy.
+
+326
+00:47:29,580 --> 00:47:36,180
+So we have to end up with a pi squared over 15 h bar cubed CQ.
+
+327
+00:47:36,660 --> 00:47:40,979
+And we have to get there by cancelling out this factor.
+
+328
+00:47:40,980 --> 00:47:52,080
+Or that is to say, multiplying by its inverse pi squared h bar cubed cq over twice zeta three.
+
+329
+00:47:54,280 --> 00:47:59,560
+So the HRC factor is all cancelled.
+
+330
+00:48:00,130 --> 00:48:03,710
+We have a height of. The fourth we have is a three.
+
+331
+00:48:04,240 --> 00:48:08,770
+And we can organise this in a suggestive way.
+
+332
+00:48:09,520 --> 00:48:19,510
+If we take this part of the fourth and related back to the integral that we first encountered
+
+333
+00:48:19,520 --> 00:48:28,160
+of converting with the energy that was six the height of the four over 90 overlay,
+
+334
+00:48:28,280 --> 00:48:35,650
+we have a 30 in the denominator. This six pi squared over 90 would give 15.
+
+335
+00:48:36,340 --> 00:48:41,050
+So there's an additional factor of two multiplying z to three.
+
+336
+00:48:41,710 --> 00:48:51,970
+And we can express this as gamma four zeta four divided by gamma three over zeta three.
+
+337
+00:48:51,970 --> 00:49:00,850
+Just reflecting the two Bose-Einstein integrals that showed up in the energy and particle number, respectively.
+
+338
+00:49:02,200 --> 00:49:07,420
+So if we actually plug in these values that zeta three is about 1.5.
+
+339
+00:49:08,080 --> 00:49:12,070
+The overall product here is about 2.7.
+
+340
+00:49:12,880 --> 00:49:21,610
+So nearly twice what we had for non-relativistic classical ideal gas is part of which is due
+
+341
+00:49:21,610 --> 00:49:27,400
+to the energy of these particles being ultra relativistic instead of normal to the stick.
+
+342
+00:49:28,390 --> 00:49:38,110
+If we had done classical Maxwell-Boltzmann statistics for ultra relativistic um particles in the canonical ensemble,
+
+343
+00:49:38,110 --> 00:49:41,770
+we would have got exactly a factor of three rather than three halves.
+
+344
+00:49:43,030 --> 00:49:49,060
+And that may be, uh, a problem in the specimen exam or an extra practice problem that you can work on.
+
+345
+00:49:49,750 --> 00:49:59,020
+The quantum effects of discrete energy levels for photons have reduced that by about 10%, down from 3 to 2.7.
+
+346
+00:50:03,060 --> 00:50:08,080
+That the overall functional form is the same as we had before.
+
+347
+00:50:08,200 --> 00:50:12,480
+Once we computed the expectation value for the particle number three.
+
+348
+00:50:12,550 --> 00:50:19,330
+Canonical setting energy simply proportional to temperature times the number of particles.
+
+349
+00:50:19,330 --> 00:50:22,480
+So direct relationship between energy and temperature.
+
+350
+00:50:24,330 --> 00:50:32,370
+Any questions about these properties of the photon gas or the relationships that we have derived here?
+
+351
+00:50:38,930 --> 00:50:46,030
+Don't see any. Only one, uh, piece of our work at the photon gas remains at this point.
+
+352
+00:50:46,040 --> 00:50:54,779
+That is, to find the equation of state of the ideal gas law and see how it compares to the ideal gas law.
+
+353
+00:50:54,780 --> 00:51:10,429
+In a similar vein, is this comparison here going from classical to quantum photons that will be dealt with after the ten minute break is 152 now,
+
+354
+00:51:10,430 --> 00:51:20,330
+so we'll pick up a couple minutes after the hour chance to, uh, walk around and stretch your legs while I was this recording.
+
+355
+00:51:28,360 --> 00:51:33,010
+And unless there were any questions that came to mind during that break.
+
+356
+00:51:33,060 --> 00:51:41,389
+For instance, if you had a chance to check out the homework, then we can trace forward to the equation of state,
+
+357
+00:51:41,390 --> 00:51:50,209
+and we will want to compare this to the ideal gas law that we derived for classical moralistic particles.
+
+358
+00:51:50,210 --> 00:52:07,220
+That was just PV equals a T, the P is the pressure, and it is already a nontrivial result that a gas, a photon select can have a pressure.
+
+359
+00:52:07,220 --> 00:52:12,770
+It can exert a force on. Here also the container that bound it.
+
+360
+00:52:14,420 --> 00:52:24,640
+This is known as the radiation pressure. You can guess that is not very large because we're not feeling strong forces from
+
+361
+00:52:24,770 --> 00:52:29,180
+the likes that are shown in this room or from the light from the computer screen.
+
+362
+00:52:29,960 --> 00:52:40,880
+But it does arise, as usual, for the pressure from the volume dependence of the average internal energy of the photon gas,
+
+363
+00:52:41,180 --> 00:52:55,280
+especially once we impose the condition of constant entropy for the photon gas, which also depends on the volume that the system is formulated within.
+
+364
+00:52:56,330 --> 00:52:59,840
+So that is one more.
+
+365
+00:53:02,420 --> 00:53:08,600
+Piece. That is always crucial to compute.
+
+366
+00:53:08,600 --> 00:53:14,249
+Before attempting to determine the pressure, have to find the condition of constant entropy.
+
+367
+00:53:14,250 --> 00:53:19,400
+In the non-relativistic classical ideal gas case, we can call.
+
+368
+00:53:19,400 --> 00:53:22,610
+This was volume times temperature. So you have power.
+
+369
+00:53:23,480 --> 00:53:28,070
+Um, again, coming from the thermal decoy wavelength, uh,
+
+370
+00:53:28,100 --> 00:53:39,860
+we have a relationship between the entropy and the grand canonical potential size coming from the formulation of the grand canonical ensemble.
+
+371
+00:53:40,460 --> 00:53:51,770
+We also have a relationship between all of these macroscopic quantities that we call the generalised sum of the neighbour identity.
+
+372
+00:53:54,060 --> 00:54:02,490
+So the entropy was related to the difference between the internal energy, this free energy,
+
+373
+00:54:03,060 --> 00:54:10,440
+and the chemical potential times particle number all divided by temperature to get the units right.
+
+374
+00:54:12,240 --> 00:54:21,870
+This simplifies slightly for photons where the chemical potential is zero, so there's no addition from the fluctuating particle number to the entropy.
+
+375
+00:54:23,610 --> 00:54:31,650
+So we can either take the temperature derivative of the grand canonical essential or compute that potential itself.
+
+376
+00:54:32,460 --> 00:54:36,330
+Since we've already done a few derivatives, let's take the latter approach,
+
+377
+00:54:36,840 --> 00:54:47,370
+and I conclude for the start this overall factor of T that cancels out the factor of T that we had here by itself.
+
+378
+00:54:47,380 --> 00:54:53,010
+So that gives us just the logarithm of the grand canonical partition function.
+
+379
+00:54:55,300 --> 00:54:57,249
+Three usual factors of pi squared,
+
+380
+00:54:57,250 --> 00:55:08,320
+c cubed and then frequency squared times the log of one minus e to the minus beta h bar omega whole integrated over omega.
+
+381
+00:55:10,360 --> 00:55:20,290
+And as for both of our previous two integrals, change variables to x being beta h bar omega.
+
+382
+00:55:20,770 --> 00:55:28,570
+And that brings out two plus one is three factors of that same t over h bar.
+
+383
+00:55:29,500 --> 00:55:36,640
+So we can just go ahead and write cal front without further ado.
+
+384
+00:55:36,970 --> 00:55:47,620
+So we've seen that before. We now have an integral over x of x squared times the log of one minus e to the minus x.
+
+385
+00:55:49,630 --> 00:55:58,780
+This is very closely related to I suppose I said integrals that had an e to the x minus one factor in the denominator.
+
+386
+00:55:59,230 --> 00:56:02,740
+It has a similar form, albeit with a negative sign.
+
+387
+00:56:03,160 --> 00:56:11,380
+So it's negative two times that Riemann zeta function of four, which you can recall.
+
+388
+00:56:11,380 --> 00:56:17,350
+That's pi to the fourth over 90. So this is minus pi to the fourth over 45.
+
+389
+00:56:19,690 --> 00:56:29,950
+And if we plug in this result into our expression for the entropy we can observe that um.
+
+390
+00:56:35,770 --> 00:56:45,900
+With the two powers of pi cancelling out in the, uh, denominator here, we end up with an overall pi squared over h bar cubed c cubed,
+
+391
+00:56:46,390 --> 00:56:53,560
+the same functional or the same form as the pre factor in the average internal energy.
+
+392
+00:56:55,180 --> 00:57:10,030
+The only difference is that we have plus a minus a negative one over 45 which is plus one over 45 coming along with this uh plus 15.
+
+393
+00:57:10,570 --> 00:57:19,540
+So should also note this one over t hitting the energy as it takes the functional form down to 82.
+
+394
+00:57:20,290 --> 00:57:26,170
+So overall switching to the new here.
+
+395
+00:57:28,960 --> 00:57:40,060
+The entropy that we find. Has a common functional form and free factor.
+
+396
+00:57:41,470 --> 00:57:53,170
+And then just 1/15 from the internal energy and plus 1/45 from the free energy of the grand canonical potential.
+
+397
+00:57:55,120 --> 00:57:58,120
+In all together that is for 40/5.
+
+398
+00:57:58,840 --> 00:58:09,190
+So we can say four pi squared over 45 h bar cubed c cubed times this beauty.
+
+399
+00:58:09,610 --> 00:58:16,660
+So the condition of constant entropy that we have neglecting that constant factor is.
+
+400
+00:58:18,970 --> 00:58:26,170
+Just that the entropy is constant within this product of volume times c cubed is equal to a constant,
+
+401
+00:58:27,880 --> 00:58:37,480
+which is equivalent to saying that the temperature is equal to a constant times the t minus one third power.
+
+402
+00:58:38,680 --> 00:58:43,270
+So that is quite similar to that classical non-relativistic case.
+
+403
+00:58:43,630 --> 00:58:48,609
+There was volume times temperature of the three halves, and this condition is constant.
+
+404
+00:58:48,610 --> 00:58:51,730
+Entropy had the volume to the minus two thirds power.
+
+405
+00:58:54,460 --> 00:59:02,530
+So all this change is a -2 to -1, and we can't plug this in to an expression for the radiation pressure.
+
+406
+00:59:05,260 --> 00:59:09,280
+So the pressure of this photon gas has an overall negative sign.
+
+407
+00:59:10,090 --> 00:59:19,990
+And going back just to the energy itself it's y squared over 15 h bar cubed c cubed.
+
+408
+00:59:21,640 --> 00:59:34,090
+And then the volume derivative of. The volume itself times for powers of this temperature V to the minus one third.
+
+409
+00:59:34,600 --> 00:59:40,690
+So we have a volume so crystal for powers of that constant b and then one power of the
+
+410
+00:59:40,690 --> 00:59:47,590
+volume times minus four thirds power of the volume leaves and overall minus a third.
+
+411
+00:59:50,500 --> 00:59:54,100
+So we're taking the volume derivative that brings down a minus a third.
+
+412
+00:59:54,220 --> 01:00:01,870
+The negative signs cancel. It also reduces the power of the volume by one, which is equivalent to dividing by the volume,
+
+413
+01:00:02,410 --> 01:00:11,770
+and that everything else is the input that we had, which was just the average internal energy itself.
+
+414
+01:00:12,520 --> 01:00:17,260
+We can plug that back in right away and find that.
+
+415
+01:00:19,270 --> 01:00:29,140
+The product of the radiation pressure times the volume is just one third times the average internal energy.
+
+416
+01:00:29,680 --> 01:00:34,360
+There. Just back up on the screen. Sorry. Um, which.
+
+417
+01:00:36,750 --> 01:00:43,360
+If we had looked at the step, would have been two thirds. In the classical non-relativistic case.
+
+418
+01:00:46,210 --> 01:00:49,599
+This is not quite the form of equation of state we expected.
+
+419
+01:00:49,600 --> 01:00:52,600
+We wanted to bring in it's particle number and temperature.
+
+420
+01:00:53,170 --> 01:00:59,980
+We are able to do that through our earlier work relating that to the average internal energy.
+
+421
+01:01:00,490 --> 01:01:01,420
+We can also.
+
+422
+01:01:04,840 --> 01:01:20,860
+Be a bit clever and recognise one third as the ratio of three factorial to two factorial, or equivalently gamma three divided by gamma for and.
+
+423
+01:01:20,860 --> 01:01:33,220
+The constant factor we had relating it to and was that came before Zeta four divided by gave a three, Zeta three.
+
+424
+01:01:33,730 --> 01:01:39,670
+So there are nice cancellations and we end up with.
+
+425
+01:01:42,700 --> 01:01:47,210
+Just that ratio of zeta functions times and times.
+
+426
+01:01:47,580 --> 01:01:54,160
+Now with the grand canonical average expectation value rather than a fixed canonical number of particles.
+
+427
+01:01:54,610 --> 01:02:08,380
+So P for a photon gas is equal to pi to the fourth over 90 zeta three times n t,
+
+428
+01:02:09,880 --> 01:02:20,080
+and this numerical factor out of the fourth over 90 zeta three is to a few significant figures .9004.
+
+429
+01:02:20,770 --> 01:02:24,490
+So the equation of state that we have here.
+
+430
+01:02:26,570 --> 01:02:36,670
+Is the answer we were shooting for. It has that same overall functional form as the ideal gas law CV related to T.
+
+431
+01:02:38,960 --> 01:02:53,170
+The. Only difference that we have from having ultra relativistic quantised photons subject to grand canonical Bose-Einstein statistics.
+
+432
+01:02:55,540 --> 01:02:59,230
+Is a change in the concept of proportionality.
+
+433
+01:02:59,750 --> 01:03:08,290
+Splitting the two sides of this equation. It is called from one to 0.9, so about a 10% change.
+
+434
+01:03:10,840 --> 01:03:20,140
+From all of those complications that we spent a few weeks building up and are now in a position to apply to these specific examples.
+
+435
+01:03:21,220 --> 01:03:33,190
+So similar 10% to the 2.7 versus three that we had in the relationship between the internal energy and particle number.
+
+436
+01:03:36,100 --> 01:03:46,240
+And that is our final destination for this example of the photon gas using the grand canonical ensemble.
+
+437
+01:03:46,690 --> 01:03:50,380
+First example of a, uh, ideal quantum gas.
+
+438
+01:03:52,240 --> 01:04:01,870
+Are there any questions about any aspects of this before we move on to fermions in the second half of today?
+
+439
+01:04:08,940 --> 01:04:23,190
+Not seeing any. Draw a line under that and do a second example application of our quantum statistics Grand canonical toolbox.
+
+440
+01:04:26,790 --> 01:04:32,460
+So we can recall that it was is fermions were our two types of quantum particles.
+
+441
+01:04:32,910 --> 01:04:39,810
+They differ in principle only by the possible occupation numbers of the energy levels.
+
+442
+01:04:40,860 --> 01:04:50,310
+Fermions are characterised by the Pauli exclusion principle that energy levels can either be unoccupied with an occupation number zero,
+
+443
+01:04:50,670 --> 01:04:53,940
+or singly occupied in occupation number one.
+
+444
+01:04:55,050 --> 01:05:00,750
+There is no possibility of multiple occupancy, not due to any physical repulsion,
+
+445
+01:05:01,200 --> 01:05:06,690
+but due to the centuries of quantum physics that we're not getting into in this module.
+
+446
+01:05:07,290 --> 01:05:15,660
+And we derived a week or two ago that this gives a form for the grand canonical potential,
+
+447
+01:05:16,230 --> 01:05:27,450
+the logarithm of the grand canonical partition function that differs from the Bose Einstein form in two main ways.
+
+448
+01:05:28,290 --> 01:05:33,330
+An overall negative sign out front and a relative positive sign inside the log.
+
+449
+01:05:34,710 --> 01:05:40,109
+And there is also the difference that there is no longer any constraint on the possible
+
+450
+01:05:40,110 --> 01:05:46,110
+values of the energies at the energy levels can have compared to their chemical potential.
+
+451
+01:05:47,350 --> 01:05:53,200
+So just a brief reminder from Monday that for the Post Gas,
+
+452
+01:05:54,220 --> 01:05:58,629
+we express the grand canonical partition function as a geometric series that only
+
+453
+01:05:58,630 --> 01:06:04,840
+converged when this difference between energy and chemical potential was positive.
+
+454
+01:06:05,530 --> 01:06:10,090
+That restricted us to negative chemical potential and not negative energies.
+
+455
+01:06:10,720 --> 01:06:14,320
+There is no such restriction of either chemical potential or energy.
+
+456
+01:06:14,770 --> 01:06:19,599
+In the Fermi-Dirac case. One other.
+
+457
+01:06:19,600 --> 01:06:23,410
+So that's the essential difference between fermions in those arms.
+
+458
+01:06:23,770 --> 01:06:27,190
+And as long as we are doing a new and different example,
+
+459
+01:06:27,190 --> 01:06:33,100
+we might as well make it as different as possible and go away from the ultra relativistic
+
+460
+01:06:33,520 --> 01:06:40,360
+regime of photons to the energies that are appropriate for non-relativistic particles.
+
+461
+01:06:41,830 --> 01:06:59,380
+So this is an alternative way to simplify the general expression for energies that we had on Monday or even last Wednesday,
+
+462
+01:06:59,380 --> 01:07:08,110
+from Einstein's triangle to mass energy MC squared and the kinetic energy momentum times the speed of light,
+
+463
+01:07:09,220 --> 01:07:15,400
+adding quadrature to the square of the energy. For photons, the mass is zero.
+
+464
+01:07:15,430 --> 01:07:26,830
+We had the ultra relativistic case, um, that holds whenever that momentum is much larger than the mass times the speed of light in the.
+
+465
+01:07:29,290 --> 01:07:34,480
+Non-relativistic regime, we have the opposite limit.
+
+466
+01:07:35,380 --> 01:07:39,460
+Instead of the momentum being much larger than MC,
+
+467
+01:07:40,360 --> 01:07:48,130
+we have momenta that are much smaller than the particle mass times the speed of light converting units,
+
+468
+01:07:49,600 --> 01:07:53,830
+and this gives us simplifications of this overall energy.
+
+469
+01:07:54,370 --> 01:08:03,280
+If we pull out this large MC squared factor and take the square root of both sides,
+
+470
+01:08:04,090 --> 01:08:09,610
+we end up with one plus p squared c squared over m square c to the fourth.
+
+471
+01:08:10,660 --> 01:08:13,900
+So two factors of the speed of light cancel in there.
+
+472
+01:08:14,620 --> 01:08:22,570
+And because P over MC is much less than one we can expand this systematically.
+
+473
+01:08:25,300 --> 01:08:31,720
+In the usual way to power series of the leading correction to one is.
+
+474
+01:08:31,720 --> 01:08:37,930
+The power of this binomial function is raised to times the small correction that powers a half.
+
+475
+01:08:38,410 --> 01:08:42,310
+So we have one half p squared times times square, c squared,
+
+476
+01:08:42,850 --> 01:08:50,020
+and higher order terms and term as the square of that small number repeated fourth over energy the fourth seed of the fourth.
+
+477
+01:08:51,250 --> 01:08:59,260
+And we can just approximate this as m c squared plus p squared over two.
+
+478
+01:09:00,040 --> 01:09:04,300
+So the c squares cancel and one power m cancels as well.
+
+479
+01:09:04,690 --> 01:09:19,780
+Drop the higher order correction terms. And we can also for our energies drop the constant shift that comes from the fixed mass energy MC squared.
+
+480
+01:09:21,970 --> 01:09:29,230
+Um, we've seen we argued earlier when formulating the grand ensemble that, um,
+
+481
+01:09:29,350 --> 01:09:35,170
+without loss of generality, we could shift all of our energy levels to have no negative energies.
+
+482
+01:09:35,650 --> 01:09:44,079
+That just introduces a constant factor in both observables and in both the numerator and the denominator of observables.
+
+483
+01:09:44,080 --> 01:09:50,290
+So the partition function is shifted by that constant e to the beta times energy shift.
+
+484
+01:09:51,910 --> 01:10:04,090
+So any constant contribution to the energy does not affect the predictions we get from statistical mechanics.
+
+485
+01:10:04,750 --> 01:10:14,830
+And dropping that term gives us something that we've used earlier without derivation from this more general Einstein relation.
+
+486
+01:10:16,990 --> 01:10:27,070
+It's the familiar Newtonian relation between the inner product of the momentum squared over twice the mass,
+
+487
+01:10:27,310 --> 01:10:41,530
+giving us the energy, and in our usual volume we get right back to the energies that we have in terms of.
+
+488
+01:10:43,810 --> 01:10:52,770
+The inner product of. A vector of integers k x k y n k z whole squared.
+
+489
+01:10:56,940 --> 01:11:08,710
+So this is the same. A set of energy levels that we had when regularising our classical ideal gas in the canonical ensemble.
+
+490
+01:11:10,480 --> 01:11:12,310
+There is only one change here,
+
+491
+01:11:12,910 --> 01:11:25,810
+which is similar to a change we discussed with photons in terms of their wavelengths and frequencies in this finite liquid volume.
+
+492
+01:11:27,130 --> 01:11:37,240
+And that change is that now, instead of being non-negative, all of these integer factors have to be strictly positive.
+
+493
+01:11:37,780 --> 01:11:43,420
+So they start from one and count up from. They're all greater than zero.
+
+494
+01:11:46,680 --> 01:11:53,360
+This. Is ultimately related to that duality between particles and waves,
+
+495
+01:11:53,360 --> 01:11:58,970
+and is a feature of quantum physics that you're not expected to have seen or heard of before.
+
+496
+01:11:59,630 --> 01:12:10,010
+So we don't need to worry about this. As with photons, we can take it as an observer, so we drop those zero energy contributions.
+
+497
+01:12:11,690 --> 01:12:19,130
+If you want more justification, this can be related to what's called the Heisenberg uncertainty principle.
+
+498
+01:12:20,210 --> 01:12:25,519
+Again, not something you need to have seen before. The idea, if you've heard of it,
+
+499
+01:12:25,520 --> 01:12:36,080
+is that there is a fundamental limit on how accurately the position and momentum of a particle can simultaneously be defined.
+
+500
+01:12:37,310 --> 01:12:43,250
+So by having our particles confined to this fixed volume, we know their position up to L,
+
+501
+01:12:43,610 --> 01:12:52,490
+which means that their momentum has to be uncertain, up to something that depends on one over L, which in particular is greater than zero.
+
+502
+01:12:55,370 --> 01:13:00,720
+I can say more if you want or just leave it as a given input.
+
+503
+01:13:00,770 --> 01:13:04,280
+A starting point for our analysis of this example.
+
+504
+01:13:07,870 --> 01:13:16,060
+Shout out if you have any questions or concerns about what we are doing here.
+
+505
+01:13:19,040 --> 01:13:28,740
+And when you think about this, we can. Just to make sure that everything is clear in our starting point.
+
+506
+01:13:30,240 --> 01:13:38,270
+We can go through and recompute the energy levels and multiplicities that we have on these multiplicities.
+
+507
+01:13:38,280 --> 01:13:44,310
+We've been calling degeneracy since building up the grand canonical ensemble.
+
+508
+01:13:46,320 --> 01:13:51,930
+But you may recall for back in the last month that to so.
+
+509
+01:13:54,690 --> 01:14:01,890
+Back to the projector there. In the classical case the ground state energy was just zero when all of these canes were zero.
+
+510
+01:14:02,460 --> 01:14:06,090
+Now the smallest they can be is one each.
+
+511
+01:14:06,450 --> 01:14:22,260
+And that gives a cross energy not of just one plus one plus one is three factors of this h bar squared pi squared over two mass times l squared,
+
+512
+01:14:23,640 --> 01:14:36,180
+which we can just say are three units of this energy unit um h bar squared pi squared over two squared.
+
+513
+01:14:36,810 --> 01:14:40,500
+So that is the same notation that we had in the classical case.
+
+514
+01:14:41,130 --> 01:14:46,260
+This energy corresponds to the.
+
+515
+01:14:48,270 --> 01:14:51,990
+Integer vector with the smallest inner product 111.
+
+516
+01:14:52,620 --> 01:15:07,530
+And we have, due to the absence of zero KS in any of the three directions from a sparser set of excited states at low energy.
+
+517
+01:15:08,670 --> 01:15:17,610
+So if we add one unit of energy in any of the three directions, we will get k squared.
+
+518
+01:15:19,770 --> 01:15:24,630
+Getting four plus one plus one. So an overall six units of energy.
+
+519
+01:15:25,320 --> 01:15:28,410
+And those are 4k vectors.
+
+520
+01:15:28,410 --> 01:15:34,830
+Like to add in either of the three directions and one in the other directions.
+
+521
+01:15:35,670 --> 01:15:42,030
+If we add a second unit of ten that we get four plus four plus 1 or 9.
+
+522
+01:15:45,150 --> 01:15:48,450
+We can of course have two units in all three directions.
+
+523
+01:15:48,900 --> 01:15:55,080
+That gives us four, eight, 12 times that epsilon.
+
+524
+01:15:55,950 --> 01:16:04,349
+And it actually turns out that in the case of having three units gives a smaller energy.
+
+525
+01:16:04,350 --> 01:16:07,620
+Nine plus one plus one is 11.
+
+526
+01:16:08,220 --> 01:16:25,710
+And all of these three have these three times degeneracy from cyclic permutations of the directions in which the different K's are pointing.
+
+527
+01:16:25,890 --> 01:16:29,850
+We have the large k in the x, y, or z direction.
+
+528
+01:16:32,760 --> 01:16:42,210
+And just barely fitting on the screen. So it looks like there are no questions about this enumeration of our energy levels.
+
+529
+01:16:42,870 --> 01:16:53,400
+We can go ahead and plug them into our grand canonical potential and start hiring statistical mechanics analysis.
+
+530
+01:16:54,090 --> 01:16:57,330
+So we started off with a negative t.
+
+531
+01:16:57,990 --> 01:17:01,710
+The sum over energy levels becomes a sum over.
+
+532
+01:17:03,720 --> 01:17:15,900
+Integer vectors k. And for every integer vector k, we have a log of one plus the exponential of this.
+
+533
+01:17:19,920 --> 01:17:31,200
+Energy unit divided by temperature, and also bringing in the ratio of the chemical chemical potential to temperature,
+
+534
+01:17:31,770 --> 01:17:37,230
+that is, our E to the beta nu um written up here.
+
+535
+01:17:39,960 --> 01:17:46,050
+There is one other piece that we will add to make connection to experiments and observations.
+
+536
+01:17:47,490 --> 01:17:53,970
+The same thing that we did for the photons, though now for a different reason, we can put in an overall factor of two.
+
+537
+01:17:55,320 --> 01:17:59,580
+In the photonic case, we can look at a bit in the tutorial tomorrow.
+
+538
+01:17:59,590 --> 01:18:07,350
+Those were two polarisations of electromagnetic waves that we could have for typical fermions like electrons.
+
+539
+01:18:08,220 --> 01:18:12,810
+This two is coming from a quantum property known as spin.
+
+540
+01:18:14,280 --> 01:18:27,570
+So for every energy level with an integer vector k, there are two quantum states, one called spin up, the other called spin down.
+
+541
+01:18:28,140 --> 01:18:37,650
+And this really is worth taking as input because the spin here, um, does not involve these particles actually spinning around an axis.
+
+542
+01:18:38,970 --> 01:18:43,890
+That would, um, require speed much faster than the speed of light.
+
+543
+01:18:44,400 --> 01:18:49,380
+It's really a unit of angular momentum that they carry as an intrinsic quantum property.
+
+544
+01:18:49,770 --> 01:19:00,390
+So for our purposes, just something that we take as in ourselves in order to get hopefully this agreement with experimental observations.
+
+545
+01:19:06,150 --> 01:19:15,870
+So unless there are objections to this form of the grand canonical potential, let's go ahead and do the same thing that we did for the photons.
+
+546
+01:19:17,010 --> 01:19:30,270
+Um, taking the approximation that our volume is large enough that all of these energy levels are very closely spaced,
+
+547
+01:19:30,270 --> 01:19:34,410
+and this awkward sum can be replaced by an integral.
+
+548
+01:19:36,000 --> 01:19:39,300
+And that's.
+
+549
+01:19:42,820 --> 01:19:46,540
+So we integrate over continuous real cats.
+
+550
+01:19:47,500 --> 01:19:52,840
+Those are confined to the positive actions of the three dimensional domain.
+
+551
+01:19:53,410 --> 01:20:02,140
+And because the inner product k squared appears. We will again work with spherical coordinates.
+
+552
+01:20:03,400 --> 01:20:10,520
+This is what gave us photon integrals over the frequency q instead of the frequency.
+
+553
+01:20:10,540 --> 01:20:14,650
+We will just have this dimensionless real k.
+
+554
+01:20:15,580 --> 01:20:19,960
+So this is a mild approximation.
+
+555
+01:20:21,520 --> 01:20:33,010
+The negative sign comes along for the ride. That single octant of the 3D space gives a factor of pi over two solid angle, rather than the full for pi.
+
+556
+01:20:33,610 --> 01:20:40,810
+So the two cancels. The one over two of pi is left and we integrated over all the angular variables.
+
+557
+01:20:40,840 --> 01:20:54,010
+All that's left is the radial k has squared times this kind of messy vortex one plus exponential.
+
+558
+01:21:05,890 --> 01:21:10,980
+And the basic approach is the same as before.
+
+559
+01:21:10,990 --> 01:21:20,440
+We want to change variables to simplify all the mess that's showing up deep within these layers of those exponentials inside our integral.
+
+560
+01:21:21,730 --> 01:21:34,330
+Um, and. It's not hard to see what we should change the variables to, just going back to our starting point,
+
+561
+01:21:35,020 --> 01:21:39,190
+where we had a somewhat simpler expression for the grand canonical potential.
+
+562
+01:21:39,700 --> 01:21:48,540
+Exactly. In terms of. The energies of our energies double, so we have now plugged into this messy factor.
+
+563
+01:21:50,130 --> 01:21:54,120
+If we change variables from this, a k hat um,
+
+564
+01:21:54,420 --> 01:22:05,550
+from that k head back to the energy that is this relation here h bar squared pi squared k squared
+
+565
+01:22:06,060 --> 01:22:17,190
+over 2ML squared is solving that for k hat gives us essentially this factor with a square root.
+
+566
+01:22:17,250 --> 01:22:19,680
+So there will be lots of cancellations when we plug it in.
+
+567
+01:22:20,490 --> 01:22:32,790
+There is an L a square root of M and then one factor of pi, one factor h bar and a square root of two and a square root of the energy itself.
+
+568
+01:22:35,590 --> 01:22:45,270
+Um, we also need the differential factor DK hat, which will have all the same constants out front.
+
+569
+01:22:47,070 --> 01:22:58,410
+And then the derivative of the square root of e is well as e to the one half powers that half comes down, the power decreases to minus a half.
+
+570
+01:22:59,010 --> 01:23:09,870
+So we get, um, the square root of two divided by two e or one over the square root of two e,
+
+571
+01:23:10,770 --> 01:23:16,650
+and then the differential factor d in the numerator there is on the screen for you.
+
+572
+01:23:18,780 --> 01:23:30,480
+So plugging all of this in the L squared m and the two is going to cancel out as well as the pi and h bar in here.
+
+573
+01:23:32,730 --> 01:23:37,260
+So. The pre factors are not affected.
+
+574
+01:23:38,560 --> 01:23:44,940
+But we can pull out additional constants from this k hat squared.
+
+575
+01:23:45,540 --> 01:23:59,610
+In [INAUDIBLE] we have three factors of the constants length times the square root of mass divided by pi h bar.
+
+576
+01:24:00,750 --> 01:24:08,700
+That's all cubed. And then what remains is k squared depends on to e.
+
+577
+01:24:10,260 --> 01:24:20,220
+And inside the log we have one plus e to our usual minus beta energy minus chemical potential.
+
+578
+01:24:20,700 --> 01:24:27,180
+And then d k hat that gives us a d e divided by the square root of two in.
+
+579
+01:24:30,270 --> 01:24:37,920
+Some straightforward simplifications here. The three factors of length is a volume.
+
+580
+01:24:38,250 --> 01:24:44,600
+So we can have the same volume times temperature that we had for the photon gas.
+
+581
+01:24:44,610 --> 01:24:51,480
+Now, with the overall negative side from changing for both the fermions, that's left in this factor.
+
+582
+01:24:53,250 --> 01:25:00,000
+Uh, first of all, we have a root two from this, two e divided by the square root of two e.
+
+583
+01:25:02,100 --> 01:25:08,790
+We can also bring in these three powers of square root m the mass.
+
+584
+01:25:11,190 --> 01:25:21,210
+And there are similarly three powers of pi in the denominator, one of which cancels with the numerator to leave two three powers of Planck's constant.
+
+585
+01:25:21,210 --> 01:25:24,930
+Just come along for the ride. And.
+
+586
+01:25:31,170 --> 01:25:38,880
+Our integral over energies now has the energy appearing explicitly in the exponential in the log.
+
+587
+01:25:39,420 --> 01:25:46,920
+There's an overall square root of e coming along with the differential factor d in that integral.
+
+588
+01:25:50,280 --> 01:26:01,710
+So. This conversion from a complicated sum over three vectors of integers to a nice integral of circle
+
+589
+01:26:01,710 --> 01:26:08,190
+coordinates was one simplification that you can do in the cases of both photons and fermions.
+
+590
+01:26:09,180 --> 01:26:17,460
+What we cannot do in this case is make the assumption, or make the argument that the chemical potential vanishes.
+
+591
+01:26:18,360 --> 01:26:23,130
+That was in consequence of photons being easy to create and destroying it.
+
+592
+01:26:23,130 --> 01:26:33,450
+The grand canonical approach. Um. But now with fermions, we no longer have any knowledge about what the appropriate chemical potential is.
+
+593
+01:26:34,020 --> 01:26:37,169
+It could be large and positive.
+
+594
+01:26:37,170 --> 01:26:39,660
+It could be larger negative, it could be anywhere in between.
+
+595
+01:26:40,350 --> 01:26:51,030
+So if we want to get this integral into a form that we can actually work with on pen and paper, we need some other simplification.
+
+596
+01:26:51,300 --> 01:26:57,539
+And a useful one that will be interesting to look at is to really emphasise the regime
+
+597
+01:26:57,540 --> 01:27:04,230
+where we expect the quantum nature of these fermions to be important to do away from
+
+598
+01:27:04,740 --> 01:27:10,319
+the high temperature classical limit and go to a low temperature quantum regime and see
+
+599
+01:27:10,320 --> 01:27:16,620
+what sorts of physics we should look for in experiments at those low temperatures.
+
+600
+01:27:19,140 --> 01:27:23,520
+So are there any questions about our work so far before.
+
+601
+01:27:25,620 --> 01:27:29,490
+We specialise to. This.
+
+602
+01:27:32,460 --> 01:27:39,600
+Simplification. Of low temperatures.
+
+603
+01:27:43,290 --> 01:27:53,010
+Uh, let me try to get predictions out of statistical mechanics tool box and not seeing any.
+
+604
+01:27:53,370 --> 01:28:01,349
+Let's actually start with something straightforward to compute and connected to physics.
+
+605
+01:28:01,350 --> 01:28:10,380
+So like we did with the generic Fermi Dirac's assistance when we first introduced that, the first thing we looked at was the average particle number.
+
+606
+01:28:12,690 --> 01:28:16,320
+And it will be useful to.
+
+607
+01:28:18,360 --> 01:28:22,880
+Do something similar in this more specialised case.
+
+608
+01:28:23,880 --> 01:28:31,230
+Looking at. The particle density which is to say the number of particles.
+
+609
+01:28:32,070 --> 01:28:37,890
+So for fermions that's what that subscript f is uh per unit volume.
+
+610
+01:28:38,610 --> 01:28:49,650
+And this is just the derivative of our grand canonical potential with respect to chemical potential normalised by that constant factor of volume,
+
+611
+01:28:50,460 --> 01:28:54,509
+where the negative signs cancel, the volumes cancel.
+
+612
+01:28:54,510 --> 01:28:58,290
+We just start off with a t times.
+
+613
+01:29:00,870 --> 01:29:10,950
+The messy free factor. And then we can go ahead and compute the mutual evidence of this expression.
+
+614
+01:29:11,610 --> 01:29:19,830
+These aren't affected. Mu is hiding as a plus beta nu and the argument of an exponential in the argument to move on.
+
+615
+01:29:21,480 --> 01:29:26,880
+So we have, as before, one over the argument of that log.
+
+616
+01:29:30,740 --> 01:29:37,670
+And then up top, now with a plus sign the exponential factor.
+
+617
+01:29:39,920 --> 01:29:44,270
+And another positive beta comes from the second round of chain rule.
+
+618
+01:29:44,690 --> 01:29:46,880
+Getting into the arguments of that exponential.
+
+619
+01:29:47,990 --> 01:29:56,290
+All the square root itself comes along to the right temperature and inverse temperature cancel as before.
+
+620
+01:29:56,300 --> 01:30:04,310
+Divide through by the exponential with the positive argument e to the plus beta,
+
+621
+01:30:05,030 --> 01:30:14,120
+and we end up with two and cubed over chi squared times Planck's constant cubed,
+
+622
+01:30:15,260 --> 01:30:26,960
+and the integral over all energies from zero to infinity of one over eight a plus beta times the difference between energy and chemical potential.
+
+623
+01:30:27,530 --> 01:30:35,990
+Now plus one from symmetry axis is six rather than the Bose-Einstein minus one and then root eddy.
+
+624
+01:30:37,370 --> 01:30:42,760
+And this is difficult to write.
+
+625
+01:30:46,910 --> 01:30:50,480
+As if I can squeeze it in here.
+
+626
+01:30:52,400 --> 01:31:01,930
+So pi squared each half the integral of a function f of a times at root e at the end.
+
+627
+01:31:03,980 --> 01:31:09,140
+Where the f of e is just this one over exponential plus one.
+
+628
+01:31:12,980 --> 01:31:26,239
+That is very similar to what we computed for the average occupation number in Fermi-Dirac statistics.
+
+629
+01:31:26,240 --> 01:31:34,160
+The difference being. Here we have continuous energies that we are integrating over rather than looking at a particular energy level.
+
+630
+01:31:34,970 --> 01:31:46,700
+This f of A. Is known as the Fermi function, and plays a role similar to the Planck spectrum for photons.
+
+631
+01:31:47,120 --> 01:31:53,630
+In the context of fermions, we get just that corner of the page in there.
+
+632
+01:31:54,890 --> 01:32:01,129
+The difference between the Planck spectrum and the Fermi function is that, in part,
+
+633
+01:32:01,130 --> 01:32:12,050
+to emphasise this connection with the average occupation number, we have kept the leading dimension forecasting factors outside of the function.
+
+634
+01:32:12,590 --> 01:32:20,960
+So whereas the Planck spectrum, we could interpret as a energy density per unit frequency or per unit wavelength.
+
+635
+01:32:22,070 --> 01:32:28,970
+Here um, all the dimensional factors are outside of the Fermi function.
+
+636
+01:32:28,970 --> 01:32:41,450
+And it is really just counting the number of energy levels that we have given us, um, or as a function of energy.
+
+637
+01:32:46,830 --> 01:32:53,090
+So. I think there are just a few minutes left,
+
+638
+01:32:53,090 --> 01:33:01,970
+enough time to at least introduce the simplification that considering this low temperature limit is going to give us.
+
+639
+01:33:03,650 --> 01:33:10,880
+So if we start by making an assumption that we will come back to and justify next week.
+
+640
+01:33:13,310 --> 01:33:17,090
+We will assume that the chemical potential is positive.
+
+641
+01:33:17,120 --> 01:33:26,600
+So this is very far from the classical limit, but appropriate for low temperatures where we want to see quantum effects.
+
+642
+01:33:27,860 --> 01:33:34,099
+Then we can see that we are integrating over positive energies.
+
+643
+01:33:34,100 --> 01:33:38,630
+And there will be a positive energy equal to this positive chemical potential.
+
+644
+01:33:39,110 --> 01:33:42,860
+For the argument of the exponential cancels out to zero.
+
+645
+01:33:43,310 --> 01:33:52,880
+E to the zero is one, and the Fermi energy will become one half completely independently of the inverse temperature beta.
+
+646
+01:33:53,600 --> 01:33:56,750
+Um, so a sort of threshold.
+
+647
+01:33:59,390 --> 01:34:04,910
+At that particular value of positive energies equals positive chemical potentials.
+
+648
+01:34:05,330 --> 01:34:11,810
+The Fermi function is a half, and this is completely independent of the temperature.
+
+649
+01:34:13,430 --> 01:34:18,170
+And on either side of this threshold we get opposite behaviour.
+
+650
+01:34:18,680 --> 01:34:26,420
+So when the energy is greater than the chemical potential then the argument of the exponential is positive.
+
+651
+01:34:27,200 --> 01:34:36,880
+We are assuming a positive temperature in the grand canonical ensemble, so the denominator of the Fermi function becomes exponentially large large.
+
+652
+01:34:37,210 --> 01:34:41,200
+Um, depending on the inverse temperature beta.
+
+653
+01:34:41,210 --> 01:34:47,630
+So there is an exponential. Suppression of f.
+
+654
+01:34:49,820 --> 01:34:59,510
+Which heads to. Zero when that beta becomes sufficiently large, corresponds to low temperatures.
+
+655
+01:35:00,710 --> 01:35:05,420
+And on the other side of the threshold the argument to the exponential is negative.
+
+656
+01:35:05,720 --> 01:35:14,600
+So with a large beta, we get a large negative argument in our exponential, which is then negligible compared to the one and we exponentially approach.
+
+657
+01:35:17,210 --> 01:35:22,730
+One divided by one, which is known to its friends as one.
+
+658
+01:35:24,530 --> 01:35:33,560
+So our two limits here are the two limits of occupation numbers that we can have for fermions, either occupied or unoccupied.
+
+659
+01:35:34,700 --> 01:35:49,430
+And as the temperature gets lower and beta gets larger, both of these limits will be approached more quickly.
+
+660
+01:35:50,990 --> 01:36:03,980
+And we can see that in this plot, which is exactly showing the Fermi function as a function of the ratio of energy divided by chemical potential,
+
+661
+01:36:04,910 --> 01:36:08,030
+where our threshold corresponds to one.
+
+662
+01:36:08,210 --> 01:36:13,400
+That's where for all of the different temperatures, these curves all intersect at a half.
+
+663
+01:36:15,260 --> 01:36:21,290
+The curves themselves are expressing the temperature in terms of the chemical potential.
+
+664
+01:36:21,860 --> 01:36:32,810
+So we can organise that into a ratio of mu divided by t going from 1 to 2 to 10 to 100.
+
+665
+01:36:33,290 --> 01:36:42,860
+So lower temperatures as we go from red to green to the limit to black, which gives up either side of our threshold point.
+
+666
+01:36:43,490 --> 01:36:53,180
+Faster approach to those asymptotic limits, either zero at high energies or one at lower edges.
+
+667
+01:37:00,790 --> 01:37:18,140
+So. Maybe worth just mentioning in passing here that a useful way of getting to our family function is this one over E to the beta times E minus mu.
+
+668
+01:37:18,350 --> 01:37:22,820
+We can pull out this dependence on new over T and e over new.
+
+669
+01:37:23,420 --> 01:37:27,200
+Just by rewriting all of that as.
+
+670
+01:37:33,410 --> 01:37:42,170
+One over the exponential of the ratio of new over t times e over mu minus one.
+
+671
+01:37:43,220 --> 01:37:54,500
+There's a plus one at the end, and that itself is this exponential of e over mu minus one,
+
+672
+01:37:55,010 --> 01:38:03,290
+all raised to the power of mu over t, and that is in the denominator raised to the minus one power.
+
+673
+01:38:03,290 --> 01:38:08,750
+So the larger this ratio of chemical potential to temperature gets, the more effect.
+
+674
+01:38:09,290 --> 01:38:15,440
+This exponential dependence of the departure of e overview from one will have.
+
+675
+01:38:17,690 --> 01:38:23,810
+What we can see, especially from the solid black curve that corresponds to the lowest temperature.
+
+676
+01:38:23,810 --> 01:38:33,560
+Here your T of 100 is approximately a step function very close to one below the threshold, very close to zero above the threshold.
+
+677
+01:38:34,160 --> 01:38:37,400
+And that will be the low temperature simplification.
+
+678
+01:38:39,470 --> 01:38:44,780
+That we will pick up and apply on Monday.
+
+679
+01:38:47,960 --> 01:38:55,460
+We can't just approximate the Fermi function as a step function in.
+
+680
+01:38:57,740 --> 01:39:08,360
+This low temperature limit. And as a reminder a step function just varies between 0 and 1.
+
+681
+01:39:08,900 --> 01:39:19,850
+It is one for low energies starting from zero and going up to chemical potential, and it is zero otherwise.
+
+682
+01:39:20,570 --> 01:39:25,670
+In particular, because we don't have negative energies for all energies larger than that chemical potential.
+
+683
+01:39:26,180 --> 01:39:32,990
+And this will simplify our risk integrals with this inside.
+
+684
+01:39:34,700 --> 01:39:39,380
+So that's a good place to to wrap up. Sort of very sorry to go a little over.
+
+685
+01:39:39,710 --> 01:39:45,080
+Are there any questions about proton gases or Fermi gases.
+
+686
+01:39:45,950 --> 01:39:49,160
+Before we end. So victory for today.
+
+687
+01:39:51,740 --> 01:40:06,920
+We have. A tutorial tomorrow morning where you will see some analogues of both photon gases and for gases in the next set of tutorial lecture cycles.
+
+688
+01:40:08,300 --> 01:40:12,980
+Coming up over the final week before the spring break.
+
+689
+01:40:12,980 --> 01:40:20,150
+So not seeing questions. I will stuff the recording and see you guys tomorrow morning.
+
