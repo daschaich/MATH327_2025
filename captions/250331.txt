@@ -1,0 +1,1301 @@
+1
+00:00:00,630 --> 00:00:05,550
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Now there seems to be a response from the microphone, so hopefully there will be a functional recording.
+
+2
+00:00:08,640 --> 00:00:12,720
+From today, the last day of March, in the last week before the term break.
+
+3
+00:00:14,760 --> 00:00:19,150
+So. Let's do some fun stuff.
+
+4
+00:00:19,260 --> 00:00:25,230
+Wrapping up these example applications of grand ensemble to quantum gases.
+
+5
+00:00:26,210 --> 00:00:31,560
+We started that last year with a lot of time spent on the photon gas, this Planck spectrum.
+
+6
+00:00:31,920 --> 00:00:36,090
+Well, before getting to that, I'll just say some more logistical notes.
+
+7
+00:00:36,690 --> 00:00:40,559
+This is also the week that the final homework assignment is due.
+
+8
+00:00:40,560 --> 00:00:50,880
+After that, to be done with the session for this module until the final exam in May, and you should have received feedback on the first homework.
+
+9
+00:00:51,420 --> 00:01:02,249
+Uh, the end of last week. You may go through some general matters in Thursday's tutorial, and if you have any questions or concerns about that,
+
+10
+00:01:02,250 --> 00:01:08,100
+you can bring them up here or in the office hours that immediately follow this lecture.
+
+11
+00:01:09,540 --> 00:01:19,620
+Of course, this is also a good time to bring up any general questions about the materials from the module so far.
+
+12
+00:01:20,250 --> 00:01:20,880
+That's what I.
+
+13
+00:01:22,950 --> 00:01:37,980
+Had dived into the recap of last week when we started working through Quantum Gases, the grand canonical framework, looking first at ideal,
+
+14
+00:01:38,280 --> 00:01:46,499
+non-interacting gases of photons, spending some time investigating the Planck spectrum,
+
+15
+00:01:46,500 --> 00:01:51,540
+how the energy of these gases depends on frequency or wavelength.
+
+16
+00:01:52,080 --> 00:02:04,830
+Comparing that to measurements from real physical systems ranging from the sun of the stars to empty intergalactic space,
+
+17
+00:02:05,250 --> 00:02:17,160
+and then deriving the equation of state for these photon gases, um, which are characterised by a vanishing chemical potential.
+
+18
+00:02:19,580 --> 00:02:27,840
+Uh, because photons are very easy to create and absorb, there's essentially no change in energy from change the particle number with a fixed entropy.
+
+19
+00:02:28,710 --> 00:02:37,400
+And we spent just a bit of time on Wednesday trying to change as much of these characteristics as we could and look at a different limit.
+
+20
+00:02:37,410 --> 00:02:44,940
+So the gas of fermions in the non-relativistic limits, where the mass is much larger than the kinetic energy.
+
+21
+00:02:46,140 --> 00:02:52,020
+And because these are fermions, they obey the Pauli exclusion principle.
+
+22
+00:02:52,020 --> 00:02:55,530
+And that has an effect on their quantum statistics.
+
+23
+00:02:57,460 --> 00:03:08,410
+Um, they also have, in contrast to the photons, a actually positive chemical potential at low temperatures.
+
+24
+00:03:10,120 --> 00:03:14,529
+And it's this low temperature regime that we'll focus on, at least at first,
+
+25
+00:03:14,530 --> 00:03:19,570
+in order to simplify the calculations in the analysis for the rest of today.
+
+26
+00:03:20,440 --> 00:03:32,350
+The first result that we will pick up from today was looking at the particle densities of the average number of particles per unit volume,
+
+27
+00:03:32,980 --> 00:03:41,980
+which had a particular constant factor involving the mass of those particles and Planck's constant,
+
+28
+00:03:42,790 --> 00:03:46,360
+and then expressed as an integral over the energies.
+
+29
+00:03:48,400 --> 00:03:53,320
+So analogous to the Planck spectrum, but now.
+
+30
+00:03:55,480 --> 00:04:02,410
+Arranged in terms of a dimensionless Fermi function and an integral over energy rather than frequency.
+
+31
+00:04:02,980 --> 00:04:18,280
+And we argue that the Fermi function, which is a ratio of an exponential factor minus one rather than sorry, it's plus one minus one, was.
+
+32
+00:04:18,280 --> 00:04:26,950
+For the Bose-Einstein case, this at low temperatures simplifies to become approximately a step function.
+
+33
+00:04:27,490 --> 00:04:35,920
+It is zero whenever the energy is less than the chemical potential, or the energies are bounded by zero.
+
+34
+00:04:36,670 --> 00:04:39,940
+That's the lowest energy we could have.
+
+35
+00:04:41,020 --> 00:04:47,790
+And for all other values of the energy, that Fermi function is approximated by zero.
+
+36
+00:04:49,670 --> 00:05:01,090
+Um. There was an illustration of this that is useful to keep in mind, which is hiding somewhere.
+
+37
+00:05:06,130 --> 00:05:12,310
+I'm just showing how the step function is approached for low temperatures.
+
+38
+00:05:13,320 --> 00:05:22,240
+There's. Just plotting that Fermi function in terms of dimensionless ratios,
+
+39
+00:05:22,870 --> 00:05:30,370
+and looking at low temperatures where it becomes very close to the step function dropped from 1 to 0.
+
+40
+00:05:36,760 --> 00:05:43,270
+And just quickly, quickly for questions about what we've seen and where we are.
+
+41
+00:05:44,880 --> 00:05:48,080
+And. Let's.
+
+42
+00:05:50,110 --> 00:05:54,880
+See how we can continue going forward and actually evaluate this.
+
+43
+00:05:55,900 --> 00:06:08,830
+Um. Large scale property of the Fermi on gas, starting with the particle density and then looking at energy density pressure equation of state.
+
+44
+00:06:08,850 --> 00:06:18,130
+So the plan for today is to focus on, you know, the relativistic framing of gases in that zero temperature limit.
+
+45
+00:06:19,090 --> 00:06:27,610
+And we will meet some famous concepts including the Fermi energy the degeneracy pressure.
+
+46
+00:06:30,040 --> 00:06:35,860
+And depending on the time and how many questions come up along the way.
+
+47
+00:06:36,460 --> 00:06:42,760
+You can see some examples of these low temperature fermion gases at play.
+
+48
+00:06:44,650 --> 00:06:54,310
+So given the expression we derived for this particle number density in terms of and Fermi energy.
+
+49
+00:06:56,470 --> 00:07:06,250
+We can see the immediate simplification that we get from working at the low temperature limit, where the Fermi function becomes a step function.
+
+50
+00:07:07,090 --> 00:07:14,650
+This is just one up to an upper bound of means the chemical potential, and then it is zero afterwards.
+
+51
+00:07:15,610 --> 00:07:19,600
+So with this factor coming along.
+
+52
+00:07:21,970 --> 00:07:30,700
+The integral just becomes its argument to the square root of e to the e up to new, and then zero thereafter.
+
+53
+00:07:31,210 --> 00:07:34,330
+And that is a very easy integral to evaluate.
+
+54
+00:07:36,280 --> 00:07:48,340
+It is just two thirds times the energy to the three halves tower, with the energy being so the upper bound to nu, the lower bound, uh, down to zero.
+
+55
+00:07:49,740 --> 00:08:06,450
+So we have. To square root n cubed over pi squared h bar cubed times two thirds mu to the three halves power which we can combine.
+
+56
+00:08:06,450 --> 00:08:16,980
+And it's reorganised slightly to no we have to m and the chemical potential mu all raised to three halves power in the numerator.
+
+57
+00:08:18,540 --> 00:08:23,880
+And then this factor of the radius gets added. To the denominator.
+
+58
+00:08:24,690 --> 00:08:31,920
+So very simple expression for the average particle density.
+
+59
+00:08:34,410 --> 00:08:46,410
+And I will say in passing that while this result is only the exact in the limit of absolute zero temperature,
+
+60
+00:08:47,010 --> 00:08:52,049
+it is an approximation for not zero but still small temperatures.
+
+61
+00:08:52,050 --> 00:08:59,100
+And we will consider shortly what that small means small compared to what?
+
+62
+00:09:00,990 --> 00:09:12,410
+And more thermally, this turns out to be the leading order in a low temperature expansion of the sort that we've looked at before in this module.
+
+63
+00:09:12,410 --> 00:09:15,780
+What you worked through in the first homework assignment.
+
+64
+00:09:19,080 --> 00:09:23,040
+Um, this particular expansion has.
+
+65
+00:09:24,580 --> 00:09:32,770
+The name of the summer felt expansion after the physicist who developed it in the early 20th century.
+
+66
+00:09:32,980 --> 00:09:41,740
+And I think we will have time before the break to see some details of how this expansion works more generally.
+
+67
+00:09:42,430 --> 00:09:52,100
+But in essence, it is an expansion in powers of the dimensionless ratio of temperature to chemical potential and balance,
+
+68
+00:09:52,150 --> 00:10:02,850
+when that ratio is much less than what. There's also a physical picture that we can bring to bear on this situation.
+
+69
+00:10:03,570 --> 00:10:08,190
+When we take the temperature to absolute zero for a non-relativistic fermionic gas.
+
+70
+00:10:11,040 --> 00:10:19,440
+And this has to do with some qualitative considerations of the energy levels that we have,
+
+71
+00:10:20,640 --> 00:10:26,490
+which if we recall for fermions, they can be only unoccupied or singly occupied.
+
+72
+00:10:26,640 --> 00:10:34,500
+The Pauli exclusion principle forbids more than one identical fermion from occupying any given energy level.
+
+73
+00:10:36,570 --> 00:10:46,920
+And in this low temperature limit, we've seen, there's an exponentially severe penalty in the probability that higher energy levels will be occupied.
+
+74
+00:10:51,330 --> 00:10:59,280
+So as the temperature goes to zero, all of the fermions will try to go to as low an energy level as they can.
+
+75
+00:11:00,750 --> 00:11:09,059
+And we end up with a situation where all of the low energy energy levels all observe that have their energy
+
+76
+00:11:09,060 --> 00:11:20,070
+value less than that chemical potential are occupied with the maximum occupation number for fermions of one.
+
+77
+00:11:21,480 --> 00:11:27,990
+And we saw last Wednesday and I haven't rewritten it here.
+
+78
+00:11:29,430 --> 00:11:36,060
+We can recall that in this non-relativistic regime the energy P squared over two M,
+
+79
+00:11:37,050 --> 00:11:47,940
+but it is quantised and discretized just becomes proportional to the inner product of that integer three vector squared.
+
+80
+00:11:51,550 --> 00:12:05,770
+And. A way of picturing this is to just plot all of the allowed values of k in three dimensional space,
+
+81
+00:12:06,190 --> 00:12:10,240
+and try to map out what these energy levels actually correspond to.
+
+82
+00:12:10,270 --> 00:12:18,610
+We did a bit of that just going through low lying energy levels by hand last week,
+
+83
+00:12:19,420 --> 00:12:24,550
+counting the degeneracy of energies with different permutations of k.
+
+84
+00:12:25,180 --> 00:12:29,170
+This is a plot that I've taken from Day Schroeder's.
+
+85
+00:12:31,390 --> 00:12:41,500
+Introduction to Thermal Physics, where he uses and rather than k for these integers, we use alternate occupation number instead.
+
+86
+00:12:43,300 --> 00:12:48,730
+But the point of this plot is just to visualise what these energy levels correspond to.
+
+87
+00:12:49,900 --> 00:12:50,530
+We have.
+
+88
+00:12:50,950 --> 00:13:05,200
+Each point is a distinct energy level specified by a distinct three vector in these integers k, x, k, y, k, z, and up to a fairly good approximation.
+
+89
+00:13:06,580 --> 00:13:09,580
+We can. Um.
+
+90
+00:13:13,300 --> 00:13:23,380
+Switch from the cube field by energy levels with those particular values of k to the sphere
+
+91
+00:13:23,710 --> 00:13:31,060
+that contains a cube that has a radius of the maximum k set by the chemical potential U.
+
+92
+00:13:31,990 --> 00:13:45,820
+Um. Which in words is saying that the energy levels that we are counting to get the average number of particles in this low temperature gas,
+
+93
+00:13:47,770 --> 00:13:51,700
+to a very good approximation, tells the positive octaves.
+
+94
+00:13:55,660 --> 00:14:02,260
+Of the sphere whose radius k squared is mu.
+
+95
+00:14:02,380 --> 00:14:07,660
+So the radius that is just one unit of k is then the square root of mu,
+
+96
+00:14:09,010 --> 00:14:19,600
+and then the volume of the sphere that accounts for all of these particles in the system is proportional to r cubed.
+
+97
+00:14:20,170 --> 00:14:21,180
+R is review.
+
+98
+00:14:21,490 --> 00:14:34,840
+So we predict immediately that the average particle number, and therefore the particle density should be proportional to the three halves power of mu.
+
+99
+00:14:35,080 --> 00:14:39,340
+As we found through the more formal mathematical integration.
+
+100
+00:14:41,830 --> 00:14:45,970
+And in this zero temperature limit.
+
+101
+00:14:49,780 --> 00:14:53,410
+The maximum energy that we have here the chemical potential is.
+
+102
+00:14:56,920 --> 00:15:01,120
+Um identified as special and given a a fancy name.
+
+103
+00:15:03,880 --> 00:15:13,390
+To refer to it. So this is called the Fermi energy for the system.
+
+104
+00:15:14,410 --> 00:15:18,580
+It is just mu again when t equals zero.
+
+105
+00:15:19,870 --> 00:15:23,979
+So I call it a capital F. Yes, sir. Capital is a capital F.
+
+106
+00:15:23,980 --> 00:15:28,030
+The Fermi energy. And then this new.
+
+107
+00:15:30,490 --> 00:15:44,020
+We found um, we can find just by inverting this equation, which takes the two thirds power of three pi squared h bar cubed times the particle density,
+
+108
+00:15:45,610 --> 00:15:54,490
+Planck's constant h cubed to the two thirds power just leaves h squared to and have the same power as the chemical potential mu.
+
+109
+00:15:55,840 --> 00:16:05,350
+And then all the rest of that expression is raised to the two thirds power, and we can.
+
+110
+00:16:07,360 --> 00:16:15,670
+Briefly introduce a shorthand here that this particle number per unit volume is just the density.
+
+111
+00:16:16,810 --> 00:16:28,960
+So if we call that a lowercase rho um seven lowercase fs at the rho for the density the number of particles per unit volume,
+
+112
+00:16:29,650 --> 00:16:33,790
+then this expression for the Fermi energy at zero temperature.
+
+113
+00:16:37,010 --> 00:16:43,930
+Reveals dependence on the density to sorry, the two thirds power.
+
+114
+00:16:46,660 --> 00:16:50,800
+There's a two thirds power on that three pi squared factor as well.
+
+115
+00:16:55,630 --> 00:17:02,230
+The Fermi energy is something that gets talked about a lot in condensed matter results in physics.
+
+116
+00:17:03,070 --> 00:17:10,450
+It's kind of a starting point for analysing materials and how they behave and away from the zero temperature limit.
+
+117
+00:17:11,200 --> 00:17:17,709
+We will come back in a bit to do that sort of consideration.
+
+118
+00:17:17,710 --> 00:17:24,520
+But the very first course here to see whether there are questions or concerns about this analysis
+
+119
+00:17:24,520 --> 00:17:33,100
+of the particle density and its relation to the maximum allowed energy at zero temperatures.
+
+120
+00:17:36,620 --> 00:17:37,429
+And if there are not,
+
+121
+00:17:37,430 --> 00:17:48,290
+there are more macroscopic quantities to compute in this example that will tell us more about how these low temperature systems behave.
+
+122
+00:17:49,980 --> 00:18:00,980
+And maybe the obvious one that we will also look at for the photon gas is the internal energy, and specifically the internal energy density.
+
+123
+00:18:01,850 --> 00:18:12,920
+This is what produces the Planck spectrum for photons last week, and something I may not have emphasised enough when we looked at the Planck spectrum,
+
+124
+00:18:13,610 --> 00:18:19,430
+was the similarities between the energy density and the particle number density.
+
+125
+00:18:20,510 --> 00:18:23,809
+If you go back and look at your notes, the integrals where are these?
+
+126
+00:18:23,810 --> 00:18:36,410
+Either 4 or 3. Up here you'll see that the integrals are completely identical apart from extra factor of h bar omega in the energy, which makes sense.
+
+127
+00:18:37,100 --> 00:18:46,040
+Effectively, what we're doing is integrating over the density of particles with a good energy, what is sometimes called the density of states.
+
+128
+00:18:46,670 --> 00:18:53,330
+If we just integrate that density, we get the particle number. If we weighted by the energy that we get the internal energy density.
+
+129
+00:18:54,350 --> 00:18:57,530
+Same thing happens for low temperature fermions.
+
+130
+00:18:59,000 --> 00:19:07,970
+So compared to particle number density, the Fermi gas internal energy density is the same integral just with an extra factor of E.
+
+131
+00:19:11,240 --> 00:19:16,610
+So weighting by energy. As we integrate.
+
+132
+00:19:17,390 --> 00:19:28,310
+So. Explicitly in the form of equations we have a usual pre factor.
+
+133
+00:19:28,820 --> 00:19:34,940
+And then integrating over the energy an extra factor of E multiplied by the Fermi function.
+
+134
+00:19:35,600 --> 00:19:40,880
+And then the square root e t that we have from the measure.
+
+135
+00:19:43,370 --> 00:19:54,350
+So as we go to zero temperature this also simplifies by approximating the semi function as a step function,
+
+136
+00:19:55,070 --> 00:20:06,290
+only the low energy piece from zero to mu survives, and instead of the square root of E, we have the energy to the three half tower being integrated,
+
+137
+00:20:07,760 --> 00:20:14,989
+and the overall result just has an extra factor of museum U to the five halves,
+
+138
+00:20:14,990 --> 00:20:21,860
+rather than three halves, and a five instead of a three in the denominator,
+
+139
+00:20:22,790 --> 00:20:33,260
+which makes it easy to express the kind of relationship that we've seen before between energy density and particle number density.
+
+140
+00:20:34,500 --> 00:20:41,190
+I can recall that for classical canonical ideal gases such as three halves empty.
+
+141
+00:20:44,220 --> 00:20:52,680
+Um. For the photon gas, it was close to three and t was about 2.7.
+
+142
+00:20:54,210 --> 00:21:03,720
+The interesting thing for this low temperature fermionic gas is that there's no more t appearing in the expression.
+
+143
+00:21:04,620 --> 00:21:13,230
+We just have 3/5 times the maximum Fermi energy, the chemical potential multiplied by the particle number,
+
+144
+00:21:14,040 --> 00:21:24,630
+which is like the cases we've seen before, remains non-zero even in this limit of absolute zero temperature.
+
+145
+00:21:25,960 --> 00:21:32,640
+That is not the case for the ideal gas law. The energy three has 20 hours to zero.
+
+146
+00:21:32,640 --> 00:21:46,650
+A T goes to zero. Similarly for the photon gas here, even when there's absolute zero temperature, we still have a significant nonzero,
+
+147
+00:21:47,730 --> 00:21:55,110
+um expectation value for the energy in the system, which we could rearrange and look at the.
+
+148
+00:21:57,240 --> 00:22:01,830
+Average energy per particle in the zero temperature limit.
+
+149
+00:22:07,050 --> 00:22:12,780
+This just involves dividing that energy through by the particle number.
+
+150
+00:22:13,410 --> 00:22:23,010
+And all that is left is just 3/5 times the chemical potential, or equivalently, 3/5 times the Fermi energy.
+
+151
+00:22:23,430 --> 00:22:32,700
+When t goes to zero. And the reason for this more qualitatively or conceptually comes from that same physical picture.
+
+152
+00:22:34,290 --> 00:22:44,970
+How are fermions filling up every energy level sub zero at the lowest energy level up to that Fermi energy?
+
+153
+00:22:45,510 --> 00:22:52,680
+Um, exactly one particle occupying each of those energy levels due to the exclusion principle.
+
+154
+00:22:57,240 --> 00:23:03,240
+So this, as I said, is only really exact at the limit of zero temperature.
+
+155
+00:23:03,240 --> 00:23:08,580
+And it is an approximation for lower but nonzero temperatures.
+
+156
+00:23:09,360 --> 00:23:15,720
+And this connects to what we started talking about on Thursday, just the last couple of minutes of that tutorial.
+
+157
+00:23:16,500 --> 00:23:23,610
+The second task of that tutorial exercise you can now appreciate a bit more concretely.
+
+158
+00:23:25,800 --> 00:23:34,110
+That for you to work on over the next few days leading into Thursday is to integrate or evaluate
+
+159
+00:23:34,500 --> 00:23:40,530
+the internal energy density without approximating the Fermi function as a step function.
+
+160
+00:23:43,230 --> 00:23:46,710
+This instead needs integration by parts.
+
+161
+00:23:48,360 --> 00:23:51,360
+So the Fermi function.
+
+162
+00:23:53,610 --> 00:24:05,490
+Has to. Be given its full value in terms of the exponential of energy minus chemical potential all divided by temperature.
+
+163
+00:24:07,920 --> 00:24:11,940
+When you integrate by parts, you will end up with, as usual, a boundary term,
+
+164
+00:24:11,940 --> 00:24:21,990
+and then a different integral with powers shifted around between the energy factor E and the derivative of the free function.
+
+165
+00:24:23,370 --> 00:24:32,190
+You can argue that the boundary term vanishes in this case, so that only a half remaining integral is left,
+
+166
+00:24:33,990 --> 00:24:40,020
+and that remaining integral has some nice, simple properties.
+
+167
+00:24:40,200 --> 00:24:45,000
+Then the one that we had started off with before integrating by parts,
+
+168
+00:24:45,750 --> 00:24:53,370
+at least for low temperatures, even without going all the way to a step function approximation.
+
+169
+00:24:55,850 --> 00:25:06,440
+You can then argue that the integrand of that remaining integral is sharply peaked around the particular value of the energy.
+
+170
+00:25:09,980 --> 00:25:18,830
+Specifically, around the chemical potential that would become the Fermi energy in the zero temperature limit.
+
+171
+00:25:19,070 --> 00:25:26,899
+It is that relationship does not fall away from zero temperatures, but there will still be a sharp peak in the integrand around there.
+
+172
+00:25:26,900 --> 00:25:36,500
+So Taylor expanding around that peak then gives a series of simpler integrals that will allow
+
+173
+00:25:36,500 --> 00:25:43,640
+you to show the leading behaviour of the specific heat being proportional to the temperature,
+
+174
+00:25:44,210 --> 00:25:52,850
+in agreement with the experimental observations. So that's something that the review on Thursday just quickly going through,
+
+175
+00:25:52,850 --> 00:25:57,350
+isn't ignoring all the constant factors that the full summer felt expansion would.
+
+176
+00:25:58,540 --> 00:26:06,760
+But produce, I should say this is this expansion is what gives us over field expansion time itself.
+
+177
+00:26:11,430 --> 00:26:23,940
+So any questions about. What we're seeing with the energy so far, or with that tutorial exercise that you have to work out over the next few days.
+
+178
+00:26:33,850 --> 00:26:50,110
+Not seeing any of. Let's. Just step back briefly to an assumption that we introduced last week and said it would be justified at some point this week,
+
+179
+00:26:51,040 --> 00:26:57,009
+namely, that the chemical potential is greater than zero for a low temperature for me.
+
+180
+00:26:57,010 --> 00:26:59,920
+Okay, so this is very far away from the classical limit,
+
+181
+00:27:00,430 --> 00:27:07,300
+where we saw that the chemical potential has to go to negative infinity at the same time as the temperature that comes to the heart.
+
+182
+00:27:07,360 --> 00:27:16,060
+In order to reproduce classical statistics from the quantum Fermi Dirac statistics for fermions.
+
+183
+00:27:18,580 --> 00:27:30,520
+Um, and we are used to seeing negative chemical potentials in general from considering how the energy and entropy depend on the particle number.
+
+184
+00:27:32,590 --> 00:27:41,020
+Um, in general terms. So the fact that we have a positive chemical potential in this specific case.
+
+185
+00:27:43,900 --> 00:27:52,240
+Of low temperatures is worth justifying and confirming that it does follow from.
+
+186
+00:27:55,990 --> 00:28:06,100
+One of the relations between chemical potential energy and entropy that we were able to extract from the generalised identity,
+
+187
+00:28:07,070 --> 00:28:10,990
+uh, that we derived from the grand canonical ensemble a couple of weeks ago.
+
+188
+00:28:13,780 --> 00:28:25,300
+So there we saw that the chemical potential can be expressed as the response of the energy to a change in the number of particles,
+
+189
+00:28:25,720 --> 00:28:28,840
+when the volume and entropy are both fixed.
+
+190
+00:28:30,220 --> 00:28:38,140
+And to think about this in general terms will rely on that physical argument.
+
+191
+00:28:40,360 --> 00:28:50,500
+The fact that all of the energy levels are filled the from the lowest energy level up to the Fermi energy at the chemical potential.
+
+192
+00:28:52,630 --> 00:28:58,570
+That is just one of the possible microstates that the system could have.
+
+193
+00:28:59,200 --> 00:29:03,730
+These viruses are defined by the occupation numbers of all of the energy levels.
+
+194
+00:29:04,360 --> 00:29:11,020
+We have this one where that occupation number is one up to the feminine energy, zero above that.
+
+195
+00:29:13,270 --> 00:29:26,860
+And thanks to the high exclusion principle of all other microstates with higher microstate energies are forbidden as t goes to zero.
+
+196
+00:29:27,400 --> 00:29:35,290
+We just have that single one that we've described, and that means that the entropy,
+
+197
+00:29:36,580 --> 00:29:47,710
+which in general terms is the sum over all microstates of pi log p, this just becomes negative log of 1 or 0.
+
+198
+00:29:49,090 --> 00:29:59,319
+Um, and this symbol in particular does not change even if we add more particles to the system while keeping the energy.
+
+199
+00:29:59,320 --> 00:30:09,580
+So keeping the temperature at zero, all that happens is, um, more energy levels right around that Fermi energy field.
+
+200
+00:30:10,180 --> 00:30:18,100
+Particle density increases and the term energy then increases itself proportional to the two thirds power.
+
+201
+00:30:18,580 --> 00:30:23,290
+There it is the two thirds power, the density that gets increased.
+
+202
+00:30:24,280 --> 00:30:28,240
+But we still have just a single microstate.
+
+203
+00:30:28,810 --> 00:30:38,310
+Now here, recovery energy level filled up to the new shifted Fermi energy for the larger, uh, number of particles.
+
+204
+00:30:38,320 --> 00:30:49,620
+So. Conclusion from that argument is if we add some delta n number of particles to the system.
+
+205
+00:30:51,670 --> 00:30:55,140
+We will still have a single microstate. We will still have zero entropy.
+
+206
+00:30:59,160 --> 00:31:06,240
+In these particles that we add have to fill the next lowest energy levels that are available.
+
+207
+00:31:11,400 --> 00:31:23,490
+And these have a non-zero energy. Associated with them, all the energy levels up to Fermi energy are filled.
+
+208
+00:31:23,490 --> 00:31:30,960
+So these new particles have to go into the first open unoccupied energy levels that are those immediately above.
+
+209
+00:31:34,140 --> 00:31:39,780
+The Fermi energy that's equal to that chemical potential.
+
+210
+00:31:40,650 --> 00:31:46,710
+So therefore if we add these energies, we also get in addition to.
+
+211
+00:31:47,760 --> 00:31:57,329
+So if we add these particles, we get an additional contribution to the energy that will be approximately the Fermi
+
+212
+00:31:57,330 --> 00:32:02,670
+energy that each particle has being added to these first empty energy levels.
+
+213
+00:32:03,690 --> 00:32:10,380
+And we have roughly that factor for all of them. So this delta is reasonably small compared to.
+
+214
+00:32:12,810 --> 00:32:21,390
+The overall number of particles that we have. So when delta n is greater than zero delta E is greater than zero the entropy is fixed.
+
+215
+00:32:21,810 --> 00:32:26,370
+And that tells us that V was also positive.
+
+216
+00:32:26,970 --> 00:32:34,420
+So. In that way, the Pauli exclusion principle is kind of making this system seem unnatural,
+
+217
+00:32:34,930 --> 00:32:40,290
+having a positive chemical potential rather than a one, usually a negative one.
+
+218
+00:32:41,800 --> 00:32:45,280
+It's worth emphasising that this is only the case.
+
+219
+00:32:46,100 --> 00:32:53,590
+So something that only happens for sufficiently low temperatures close to absolute zero.
+
+220
+00:32:55,840 --> 00:33:07,210
+And if we have time on Wednesday or possibly Thursday, it is within reach to analyse higher temperatures and see.
+
+221
+00:33:09,460 --> 00:33:17,920
+Numerically. Um. Using that Sommerfeld expansion.
+
+222
+00:33:24,120 --> 00:33:27,930
+To see that chemical potential.
+
+223
+00:33:31,800 --> 00:33:36,390
+Uh, goes back to the usual, more natural regime.
+
+224
+00:33:36,600 --> 00:33:46,200
+You're less than zero. That allows the classical limit to be taken, sending you to negative infinity as the temperature goes to positive infinity.
+
+225
+00:33:50,380 --> 00:34:01,170
+That is a. More substantial calculation to do, however, so we won't do that immediately.
+
+226
+00:34:01,360 --> 00:34:11,160
+Let's see if we have time later this week. For now just see if there are any questions about.
+
+227
+00:34:13,680 --> 00:34:17,880
+Under this argument that the chemical potential is indeed positive,
+
+228
+00:34:18,570 --> 00:34:30,120
+as we started by assuming or other aspects of the relation between the energy density and particle number density of these gases.
+
+229
+00:34:40,010 --> 00:34:48,380
+Not seeing any. There's one last aspect of the the low temperature macroscopic system that you may be anticipating.
+
+230
+00:34:49,390 --> 00:34:54,140
+Um, and that is going all the way to the equation of state.
+
+231
+00:34:54,920 --> 00:35:02,510
+The analogue highlight of the ideal gas law for classical particles, or the photon gas equation of state that we computed last week.
+
+232
+00:35:03,320 --> 00:35:05,840
+Those all had the form of pressure times.
+
+233
+00:35:05,840 --> 00:35:16,129
+Volume is equal to some constant factor times the number of particles times the temperature for these fermion gases.
+
+234
+00:35:16,130 --> 00:35:24,080
+In this lower temperature limit, where we have this kind of funny situation of only a single accessible microstate,
+
+235
+00:35:24,860 --> 00:35:28,130
+things behave again a bit differently.
+
+236
+00:35:29,300 --> 00:35:35,420
+That is related to the non-zero energy that remains even in the zero temperature limit.
+
+237
+00:35:36,320 --> 00:35:46,280
+So let's compute the pressure. Which is the main missing piece for the equation of state as usual.
+
+238
+00:35:46,460 --> 00:35:55,550
+This is the negative derivative of that internal energy expectation value with
+
+239
+00:35:55,550 --> 00:36:02,960
+respect to a change in the volume and the quantity evaluated at fixed entropy,
+
+240
+00:36:04,130 --> 00:36:09,260
+which if we plug in the relation between internal energy and particle number.
+
+241
+00:36:12,650 --> 00:36:20,600
+We can. Bring out a factor of 3/5,
+
+242
+00:36:21,110 --> 00:36:31,760
+and then just have to worry about how the chemical potential and the internal uncertainty average particle number behave when the entropy is fixed.
+
+243
+00:36:33,530 --> 00:36:38,150
+Well, in this case, fixing the entropy does not have much effect.
+
+244
+00:36:40,040 --> 00:36:46,280
+For sufficiently low temperatures, we simply have zero entropy,
+
+245
+00:36:46,550 --> 00:36:56,570
+which is already constant from the fact that we have a single microstate in the zero temperature limit.
+
+246
+00:37:00,170 --> 00:37:11,420
+So the only question is how does either the chemical potential or particle number depend on the volume?
+
+247
+00:37:13,870 --> 00:37:20,350
+So. If we look back to.
+
+248
+00:37:23,050 --> 00:37:28,990
+The relation between particle number and chemical potential that we derived earlier,
+
+249
+00:37:28,990 --> 00:37:33,820
+we can see a factor of the volume to the two thirds power hiding in here.
+
+250
+00:37:35,620 --> 00:37:43,750
+And if we isolate that and pull out all of these other factors from the derivatives, then.
+
+251
+00:37:45,880 --> 00:37:51,670
+So what do we have. We have that negative three fifths.
+
+252
+00:37:54,250 --> 00:38:01,240
+H bar squared over two m we have three pi to the two thirds power.
+
+253
+00:38:01,630 --> 00:38:07,480
+And then there's one factor of the particle number coming from the energy.
+
+254
+00:38:08,020 --> 00:38:13,240
+And another factor coming from the Fermi energy or the chemical potential mu.
+
+255
+00:38:13,780 --> 00:38:17,380
+So five halves. So power of.
+
+256
+00:38:19,510 --> 00:38:24,730
+The number of particles. Sorry I said five hands but I meant 5/3.
+
+257
+00:38:26,590 --> 00:38:33,100
+And then just the derivative of the volume to the minus two thirds power.
+
+258
+00:38:34,370 --> 00:38:39,910
+When we take that derivative, we bring down minus two thirds negative signs cancel.
+
+259
+00:38:41,110 --> 00:38:52,060
+And all the rest of this we just got from inserting our earlier result for the low temperature internal average average internal energy.
+
+260
+00:38:53,230 --> 00:39:01,300
+So we end up with. Two thirds one lower power of the volume.
+
+261
+00:39:02,530 --> 00:39:07,120
+And just our starting point the internal energy itself.
+
+262
+00:39:08,830 --> 00:39:14,080
+So the pressure we have found just to be two thirds the internal energy density.
+
+263
+00:39:14,800 --> 00:39:28,300
+And we can equivalently express this in terms of the particle number that is related to the internal energy by a factor of 3/5.
+
+264
+00:39:28,630 --> 00:39:33,400
+The three is cancel, the five is left over. There's a factor of mu there.
+
+265
+00:39:36,730 --> 00:39:48,040
+We have the particle number density rho f that really have also appears to the two thirds power in the chemical potential itself.
+
+266
+00:39:48,640 --> 00:39:56,350
+So if we plug that back in we get a third expression for the pressure one in terms of the energy density,
+
+267
+00:39:57,250 --> 00:40:00,670
+one in terms of the Fermi energy times the particle number density.
+
+268
+00:40:01,330 --> 00:40:09,400
+And now a third that is purely up in terms of the density rho.
+
+269
+00:40:09,730 --> 00:40:14,410
+And I need to cancel out that to the two we have there.
+
+270
+00:40:14,410 --> 00:40:26,620
+It's a five and six around. So h bar squared over five and the £0.03 squared to the two thirds power.
+
+271
+00:40:28,240 --> 00:40:35,200
+And then the same density of the gas raised to the 5/3 power.
+
+272
+00:40:36,520 --> 00:40:42,970
+That has a new feature similar to what we saw for the energies.
+
+273
+00:40:44,760 --> 00:40:56,170
+And as we take the temperature to zero, we have a nonzero density in our system and therefore a nonzero pressure.
+
+274
+00:40:58,420 --> 00:41:08,560
+In the low temperature limit. So this actually any of these three expressions here we can take as our equation of state.
+
+275
+00:41:08,980 --> 00:41:12,600
+And unlike the ideal gas law there is no temperature left.
+
+276
+00:41:12,640 --> 00:41:19,190
+We have the pressure times volume equals the density to the 5/3 power.
+
+277
+00:41:19,230 --> 00:41:30,880
+And that's that. And this nonzero pressure that remains even at absolute zero is called the degeneracy pressure.
+
+278
+00:41:35,130 --> 00:41:40,740
+And I should note that this terminology is somewhat unfortunate,
+
+279
+00:41:40,740 --> 00:41:48,240
+because the degeneracy that is being referred to in this terminology is not actually related
+
+280
+00:41:48,240 --> 00:41:57,360
+to the degenerate energy levels that we introduced when learning about quantum statistics.
+
+281
+00:41:58,410 --> 00:42:09,420
+This is a different form of degeneracy, basically referring to the fact that all of the fermions want to fill a single energy level,
+
+282
+00:42:09,780 --> 00:42:18,390
+but they can't due to the poly exclusion that governs them from their underlying quantum feature.
+
+283
+00:42:20,220 --> 00:42:27,330
+So this degeneracy pressure is not actually coming from any force that the fermions are exerting on each other,
+
+284
+00:42:28,230 --> 00:42:36,870
+but is instead just a consequence of that property of quantum physics that
+
+285
+00:42:36,870 --> 00:42:43,440
+prevents all of the fermions from congregating in the lowest energy energy level.
+
+286
+00:42:44,610 --> 00:42:50,040
+But instead of having to fill up more and more energy levels up to the Cut-Off of the Fermi energy.
+
+287
+00:42:54,290 --> 00:43:01,830
+So. This is the.
+
+288
+00:43:03,900 --> 00:43:06,720
+Low temperature limit of the pressure of our gas.
+
+289
+00:43:07,500 --> 00:43:19,050
+But we have also argued that a consistent classical limit is possible at higher temperatures, where the chemical potential becomes negative.
+
+290
+00:43:19,680 --> 00:43:24,450
+We hopefully will be able to show later this week.
+
+291
+00:43:25,230 --> 00:43:34,080
+And in that high temperature classical limit we know already without doing any.
+
+292
+00:43:36,270 --> 00:43:40,470
+Further computations how the pressure will behave.
+
+293
+00:43:40,680 --> 00:43:43,920
+This is governed by the classical ideal gas law.
+
+294
+00:43:44,280 --> 00:43:54,540
+PV equals empty. Or if we rearrange to solve for the pressure, it is the number of particles over the volume times the temperature,
+
+295
+00:43:54,720 --> 00:43:58,380
+which is just the density times the temperature.
+
+296
+00:43:59,910 --> 00:44:04,950
+So we can sketch out more than just the zero temperature limit.
+
+297
+00:44:05,670 --> 00:44:16,320
+But by putting these two numbers together, a picture of how the Fermi on pressure behaves as a function of temperature.
+
+298
+00:44:16,420 --> 00:44:21,750
+So this is some of the power that we get from looking at high low temperature limits.
+
+299
+00:44:22,230 --> 00:44:30,840
+And then drawing a. Straight line between them, or at least a simple line connecting those two regimes.
+
+300
+00:44:31,230 --> 00:44:39,360
+So down at low temperatures we have. This so-called degenerate fermion gas.
+
+301
+00:44:42,090 --> 00:44:52,230
+Where the nonzero intercept, the zero temperature limit of the pressure, is that degeneracy pressure, um.
+
+302
+00:44:57,990 --> 00:45:08,310
+Which has that complicated expression h bar squared over five um factors of pi to the 4/3 power,
+
+303
+00:45:08,820 --> 00:45:15,780
+and then the density to the 5/3 power, and then up at high temperatures.
+
+304
+00:45:16,980 --> 00:45:27,210
+If you believe when I said that, the chemical potential becomes negative and connects us to the classical limit,
+
+305
+00:45:28,740 --> 00:45:36,000
+we have the classical ideal gas law PV equals empty and the slope of the line.
+
+306
+00:45:36,600 --> 00:45:42,660
+That high temperature regime is just the density of the gas.
+
+307
+00:45:44,220 --> 00:45:52,110
+The pressure equals rho times t. Um and then at intermediate temperatures there is some.
+
+308
+00:45:57,420 --> 00:46:05,250
+Evolution from that one limit to the quantum regime to the classical regime that we have already seen.
+
+309
+00:46:08,400 --> 00:46:18,150
+So looking at the time, I don't think we have much time left to go through examples today just to forecast are starting point for Wednesday.
+
+310
+00:46:19,860 --> 00:46:29,700
+We'll ask the question in um, various materials, both familiar everyday quantities as well as more exotic situations.
+
+311
+00:46:30,810 --> 00:46:37,080
+When does the. System under pressure behaves quantum mechanically.
+
+312
+00:46:37,080 --> 00:46:50,700
+And what does it look classically? Um, and the guiding principle that we will bring to bear is that this nonzero limit for the degeneracy pressure.
+
+313
+00:46:53,790 --> 00:47:04,080
+Matters when the temperature is small, at least compared to the Fermi energy that.
+
+314
+00:47:06,690 --> 00:47:13,090
+Sets the scale essentially for. Um,
+
+315
+00:47:13,100 --> 00:47:21,920
+when the quantum effects become important and when the system behaves more like the ordinary classical gas that we've already studied in some detail,
+
+316
+00:47:22,250 --> 00:47:22,700
+there are.
+
+317
+00:47:24,710 --> 00:47:37,220
+From looking at this, we can recall that this very energy increased when the pressure of our gas increased with a two thirds power attached.
+
+318
+00:47:38,820 --> 00:47:47,790
+So in order to see the effects of quantum mechanics and the exclusion principle in a gas of fermions,
+
+319
+00:47:48,300 --> 00:48:00,630
+we can look either at low temperatures or a high density rho that gives an increase to the Fermi energy.
+
+320
+00:48:01,200 --> 00:48:11,250
+Um, or of course, we could have both of those ingredients at the same time, both low temperature and high density.
+
+321
+00:48:11,670 --> 00:48:15,660
+And that is the regime where we can expect to see quantum effects.
+
+322
+00:48:16,410 --> 00:48:25,740
+And. On Wednesday we will start by looking at some examples, um, to.
+
+323
+00:48:27,150 --> 00:48:35,910
+Explore what kinds effects we do see. That is it for today, unless there are any final questions.
+
+324
+00:48:37,950 --> 00:48:41,670
+From you not seeing any, I will.
+
+325
+00:48:43,060 --> 00:48:49,510
+Shut down the recording and head back to my office for today's office hours.
+
