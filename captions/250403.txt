@@ -1,0 +1,1389 @@
+1
+00:00:00,030 --> 00:00:08,910
+[Auto-generated transcript. Edits may have been applied for clarity.]
+It will get underway. Despite the small crowd and the last class meeting before the break.
+
+2
+00:00:09,630 --> 00:00:19,770
+I'm sure there will be more folks checking this out through the recording and see we are now in the third day of April.
+
+3
+00:00:21,030 --> 00:00:27,150
+The magic number is 4404 55.
+
+4
+00:00:29,430 --> 00:00:33,000
+It may not be the last act. There's this.
+
+5
+00:00:34,110 --> 00:00:39,590
+There's some bad focus. Zoom out a bit so it's smaller.
+
+6
+00:00:40,590 --> 00:00:44,129
+More like the last class meeting.
+
+7
+00:00:44,130 --> 00:00:47,610
+That maybe not the last act for statistical mechanics before the break.
+
+8
+00:00:47,610 --> 00:00:50,740
+With the final homework assignment due tomorrow.
+
+9
+00:00:51,300 --> 00:00:54,570
+You can have a well-deserved break without that. Hey. You're real.
+
+10
+00:00:55,470 --> 00:01:00,060
+Um, couple submissions have come in already, as have a couple of questions,
+
+11
+00:01:00,600 --> 00:01:07,500
+mostly clarifications about just the phrasing in some of the so class examples.
+
+12
+00:01:08,370 --> 00:01:16,529
+For instance, in question one, there's the specification that the efficiency comes from computing the work in notes.
+
+13
+00:01:16,530 --> 00:01:18,390
+And there are other ways of doing things.
+
+14
+00:01:19,920 --> 00:01:28,920
+Um, so you don't need this is more in lines of a hint as to how to proceed to break up the question to more manageable chunks.
+
+15
+00:01:29,460 --> 00:01:38,910
+And in question two, similarly, you can avoid using factorial altogether.
+
+16
+00:01:38,910 --> 00:01:42,240
+In this case, that it's there becomes irrelevant.
+
+17
+00:01:44,040 --> 00:01:53,340
+But the feedback and marks from the first homework came out last week just after this tutorial,
+
+18
+00:01:54,360 --> 00:02:00,360
+and the more solutions were available well before that. The just in case there are.
+
+19
+00:02:02,520 --> 00:02:06,240
+General issues that might be worth revisiting or reviewing.
+
+20
+00:02:06,720 --> 00:02:14,670
+You can plan to spend a little time today, uh, looking over that there.
+
+21
+00:02:14,750 --> 00:02:23,410
+It's better. And then, rather than introducing a new set of tutorial exercises in view of the upcoming break here,
+
+22
+00:02:23,460 --> 00:02:28,810
+we'll just wrap up what we have been doing with quantum gases of phonons.
+
+23
+00:02:28,810 --> 00:02:40,410
+So the the by model of a solid and that predicts the heat capacity for these solids depends
+
+24
+00:02:40,740 --> 00:02:47,520
+to the leading order at small temperature on the temperature cubed and then the electron gas.
+
+25
+00:02:47,520 --> 00:02:56,370
+Depending on time available. We can do this more quickly just looking at the functional form that is linear in T and leading order,
+
+26
+00:02:57,030 --> 00:03:08,760
+or wrapping up the more formal Sommerfeld expansion that we started working through yesterday
+
+27
+00:03:09,150 --> 00:03:17,860
+as a way to go beyond just the zero temperature limit of these models listed Fermi,
+
+28
+00:03:18,000 --> 00:03:25,020
+um, gases. And of course, as a tutorial, you can always feel free to.
+
+29
+00:03:26,360 --> 00:03:29,480
+Ask questions in the room or on zoom.
+
+30
+00:03:30,230 --> 00:03:38,930
+And. Interrupting the direction of the tutorial in the way that would be most useful for you.
+
+31
+00:03:40,640 --> 00:03:43,610
+Now just talking through a bit the the first homework.
+
+32
+00:03:44,600 --> 00:03:53,670
+There were a couple of questions that seem to be a lot easier for most students than a couple of the others in this question.
+
+33
+00:03:53,690 --> 00:04:02,780
+One was, I think, the trickiest one in some ways surprisingly tricky.
+
+34
+00:04:02,780 --> 00:04:09,169
+Or at least I was surprised by just how many students did it have.
+
+35
+00:04:09,170 --> 00:04:17,720
+The right starting point, in particular, copying down the probability distribution from the central limit theorem.
+
+36
+00:04:18,780 --> 00:04:30,620
+Um, incorrectly. So that was we go to the modules is a good starting point for this given the drift velocity.
+
+37
+00:04:32,660 --> 00:04:47,210
+And diffusion constants do not know why and refuses to delete a two is just to copy down equation 17.
+
+38
+00:04:48,760 --> 00:04:57,810
+Which is the probability distribution in terms of that particular city in diffusion constant, and at least for 40,
+
+39
+00:04:57,820 --> 00:05:05,410
+since you're given the time, you can just plug in numbers and importantly integrate the distribution to get a probability.
+
+40
+00:05:05,830 --> 00:05:10,180
+And that gives the answer just in the line.
+
+41
+00:05:12,340 --> 00:05:16,780
+So running down the wrong distribution was a common issue.
+
+42
+00:05:16,780 --> 00:05:22,179
+I think a majority of students did not copy down that equation 17 correctly,
+
+43
+00:05:22,180 --> 00:05:29,020
+and then an even larger fraction forgot to integrate in order to relate the distribution in two.
+
+44
+00:05:30,940 --> 00:05:43,800
+In actual probability. Um. So that was the main challenge with this and a good thing to remember in case questions like this reoccur.
+
+45
+00:05:44,820 --> 00:05:49,950
+Um, in the future, distributions have to be integrated to get probabilities.
+
+46
+00:05:53,010 --> 00:05:57,300
+And it is. I was to some extent a hint about this in the problem.
+
+47
+00:05:57,870 --> 00:06:05,640
+The form of the error function as an integral over a Gaussian factor E to the minus u squared,
+
+48
+00:06:06,180 --> 00:06:11,640
+which pops out directly from that integral of the given distribution.
+
+49
+00:06:12,950 --> 00:06:18,150
+And then it's a matter of solving either visually or computationally.
+
+50
+00:06:18,330 --> 00:06:23,510
+The intersection of two of the curves that are consistent with each of these measurements.
+
+51
+00:06:23,520 --> 00:06:32,160
+So given a certain amount of radiation at a certain point of time, there are two ways that information can be accounted for.
+
+52
+00:06:32,550 --> 00:06:41,520
+You can dial up or down the amount of radiation that was released, while at the same time moving forward or back the time at which it was released.
+
+53
+00:06:43,410 --> 00:06:54,720
+So you need those two measurements to pick out the one point that is consistent with a certain fixed time and certain fixed amount of radiation.
+
+54
+00:06:55,700 --> 00:07:04,220
+Which turns out to be a significant underestimate of the total amount that was released by maybe a couple orders of magnitude.
+
+55
+00:07:05,060 --> 00:07:17,870
+And there are many reasons for that. One thing that also I found curious was the popularity and the solutions of saying that a major
+
+56
+00:07:17,870 --> 00:07:27,020
+simplification was treating the drift velocity as a constant factor within the probability distribution.
+
+57
+00:07:28,310 --> 00:07:33,970
+And in many cases, once you said that this was an important simplification,
+
+58
+00:07:33,980 --> 00:07:41,710
+it was not possible to say whether it would have caused an overestimate or an underestimate.
+
+59
+00:07:41,720 --> 00:07:42,470
+And in fact,
+
+60
+00:07:42,470 --> 00:07:53,570
+it causes neither the drift or All-City can just be identified with the average or wind speed along the direction from Chernobyl to Force Park.
+
+61
+00:07:54,980 --> 00:08:00,200
+Um, that's because taking that average is a linear operation.
+
+62
+00:08:00,230 --> 00:08:06,590
+It doesn't matter if the radiation gets halfway there very quickly the rest of the way, slowly, or the other way around.
+
+63
+00:08:07,070 --> 00:08:11,660
+It takes the same amount of time, and it has the same amount of time to drift and spread out.
+
+64
+00:08:13,280 --> 00:08:25,620
+So some of the other. Um, approximations that do cause the significant underestimates are ignoring radioactive fallout or radioactive decay,
+
+65
+00:08:26,250 --> 00:08:30,600
+which accounted for a considerable majority of the radiation in practice.
+
+66
+00:08:30,990 --> 00:08:38,400
+About three quarters of it fell on roofs all the way from Ukraine to Sweden back in 86,
+
+67
+00:08:39,630 --> 00:08:45,320
+and also the approximation of the world as one dimensional rather than three dimensions.
+
+68
+00:08:45,330 --> 00:08:51,900
+This is related to that third dimension of altitude that allows the radioactive particles to fall out,
+
+69
+00:08:52,590 --> 00:08:57,950
+and the second dimension of spreading out to the side of the source market will
+
+70
+00:08:57,960 --> 00:09:03,240
+mean that what is being observed that for smaller is only a portion of the total.
+
+71
+00:09:03,540 --> 00:09:13,480
+In other words, this. 10 to 16 becquerels of radiation is just a portion of the total.
+
+72
+00:09:17,450 --> 00:09:28,430
+There are some more complicated things that, um, are related to the amount of time over which the radiation was being released,
+
+73
+00:09:28,760 --> 00:09:35,960
+which continued for days or even weeks after the the accident.
+
+74
+00:09:37,820 --> 00:09:41,240
+Fires kept burning for most of the following month.
+
+75
+00:09:41,900 --> 00:09:47,630
+But, uh, any one of those is more than sufficient to go through that question.
+
+76
+00:09:48,680 --> 00:09:55,520
+The question about is to say, well, I'll call a two state system with the caveat that, um,
+
+77
+00:09:56,660 --> 00:10:05,120
+this is bringing in yet another use of the word state that differs from what we have in using lecture.
+
+78
+00:10:05,480 --> 00:10:14,420
+This is more straightforward. It is not that different from the daily tracking spins that we looked at to see lower temperatures in the first place.
+
+79
+00:10:15,140 --> 00:10:22,220
+There, there were two energy levels for each spin aligned with the magnetic field aligned against it.
+
+80
+00:10:22,760 --> 00:10:31,070
+Here the energy is either zero or dot zero, and given a fixed amount of energy,
+
+81
+00:10:32,240 --> 00:10:44,750
+when a majority of the particles have that non-zero energy, we end up with fewer microstates as the energy increases and.
+
+82
+00:10:47,330 --> 00:10:54,530
+The decrease in the number of microstates decreases the entropy and leads to a negative temperature in much the same way as the lecture.
+
+83
+00:10:54,620 --> 00:11:04,220
+So the only real challenge in the second problem was explaining, uh, how the heat flows.
+
+84
+00:11:05,930 --> 00:11:15,650
+Very nearly every student did correctly identify that energy flows from the negative temperature system to the positive temperature system.
+
+85
+00:11:16,490 --> 00:11:25,549
+But the explanation of this often is a bit circular and not really getting to the fundamental issue,
+
+86
+00:11:25,550 --> 00:11:32,570
+which is the need for the entropy to increase in line with the second law of thermodynamics.
+
+87
+00:11:32,990 --> 00:11:40,970
+So I think the most common argument was that the negative temperature system had more particles,
+
+88
+00:11:41,780 --> 00:11:49,370
+or I should say a larger fraction of its particles in or with this higher energy epsilon.
+
+89
+00:11:49,850 --> 00:11:55,910
+So the positive temperature system had a lower fraction of particles with the energy,
+
+90
+00:11:56,450 --> 00:11:59,989
+and therefore the energy would flow from the one with the higher fraction of the higher
+
+91
+00:11:59,990 --> 00:12:03,740
+energy particles to the one with the lower fraction of the higher energy particles.
+
+92
+00:12:04,370 --> 00:12:13,489
+That is what turns out to happen, but that is more of an explanation or observation of what's going on than the explanation,
+
+93
+00:12:13,490 --> 00:12:17,210
+which is that with the positive and negative temperatures,
+
+94
+00:12:18,710 --> 00:12:27,560
+the entropy increases when energy leaves a negative temperature system, and it increases when it flows to the positive side of your system.
+
+95
+00:12:28,220 --> 00:12:36,590
+And pointing out that connection to the increase in the entropy is sort of the key to part C,
+
+96
+00:12:36,590 --> 00:12:40,790
+which was just worth a small fraction of the works on here.
+
+97
+00:12:41,730 --> 00:12:47,330
+What one other issue with this part C was?
+
+98
+00:12:49,480 --> 00:12:54,100
+One mistake that was probably made from thinking too quickly or too loosely.
+
+99
+00:12:54,100 --> 00:13:02,889
+Just saying that as the energy flows from the negative temperature system, this will bring the tigers closer together.
+
+100
+00:13:02,890 --> 00:13:06,210
+Some negative temperature will rise to more positive values.
+
+101
+00:13:06,610 --> 00:13:13,839
+Positive temperature will fall toward negative values. The positive temperature does fall.
+
+102
+00:13:13,840 --> 00:13:26,830
+But if I hop to just an illustration of the expressions that are derived in the course of this problem.
+
+103
+00:13:27,430 --> 00:13:33,220
+So these n log ns minus the fraction that have zero energy or non-zero energy.
+
+104
+00:13:35,020 --> 00:13:47,080
+This is how the entropy behaves as a function of the number of particles, or the fraction of the total particles in that.
+
+105
+00:13:49,150 --> 00:13:54,220
+No, it is actually the number theory, the number of particles that have non-zero energy.
+
+106
+00:13:54,700 --> 00:13:58,180
+I just set the total number of particles to be a million.
+
+107
+00:13:58,460 --> 00:14:04,120
+So you get a plot to show. So the horizontal axis ranges from 1 to 1 million.
+
+108
+00:14:04,900 --> 00:14:13,150
+And once we pass the halfway point to 500,000, we see that the entropy starts to decrease and the temperature which until has.
+
+109
+00:14:15,640 --> 00:14:23,080
+This derivative that can't be combined goes from positive to negative in that half of the plot.
+
+110
+00:14:23,110 --> 00:14:28,579
+This is the inverse temperature specifically, which has a slightly simpler form to plot.
+
+111
+00:14:28,580 --> 00:14:34,250
+So we can. Just the inverse of that fairly easily.
+
+112
+00:14:34,790 --> 00:14:46,100
+And see, from this plot, not only is there a division by zero encountered exactly at the halfway point, but as the negative temperature system.
+
+113
+00:14:48,770 --> 00:14:59,390
+Loses energy to the positive temperature system. It moves to the left on the horizontal axis and actually becomes more negative.
+
+114
+00:15:00,350 --> 00:15:11,030
+So moves away from positive temperatures. And this heat flow, because one of the two systems is in an unnatural temperature regime,
+
+115
+00:15:11,990 --> 00:15:19,459
+they end up having a temperature farther and farther away from each other until they approach that singularity.
+
+116
+00:15:19,460 --> 00:15:26,150
+And depending on their own specified size, the number of particles and the amount of energy that each one has,
+
+117
+00:15:26,690 --> 00:15:32,810
+they could well both become positive or both become step in that process.
+
+118
+00:15:33,380 --> 00:15:42,080
+So this is one of the counterintuitive aspects of unnatural temperatures that when he flows between them,
+
+119
+00:15:42,110 --> 00:15:49,280
+the temperatures actually move further apart. Any questions so far?
+
+120
+00:15:49,310 --> 00:15:54,290
+Halfway through, I want to follow up on in more detail.
+
+121
+00:15:56,280 --> 00:16:05,370
+I'll actually skip through question three pretty quickly, because this is mostly a straightforward matter of taking derivatives and organising them.
+
+122
+00:16:06,210 --> 00:16:11,640
+I'll just say the main issue encountered here was trying to take those charges too quickly,
+
+123
+00:16:11,640 --> 00:16:19,800
+and also losing track of negative signs or some of the terms coming from, say, the product rule or the chain rule.
+
+124
+00:16:21,240 --> 00:16:28,979
+Um, and a way to address that in general is just to imagine the intermediate steps to be able
+
+125
+00:16:28,980 --> 00:16:35,100
+to follow one to the next and keep track of where all those negative signs are going.
+
+126
+00:16:37,480 --> 00:16:41,830
+And question four is also.
+
+127
+00:16:43,830 --> 00:16:48,810
+If more straightforward. Uh, calculation problem.
+
+128
+00:16:49,480 --> 00:16:55,080
+Um, the energy and entropy can be obtained in one line.
+
+129
+00:16:55,650 --> 00:16:58,830
+From the point we reached in the lecture notes equation 45.
+
+130
+00:17:00,780 --> 00:17:04,980
+And then the question is how do we expand these to.
+
+131
+00:17:06,290 --> 00:17:17,450
+Get a grip on the behaviour of these indistinguishable particles in the sexual spin, specifically in both the high and low temperature regimes.
+
+132
+00:17:19,040 --> 00:17:22,460
+Checking in particular these simplified limits for part B,
+
+133
+00:17:22,600 --> 00:17:28,580
+the asymptotic extremes for the temperature goes either all the way to absolute zero or off to infinity.
+
+134
+00:17:29,870 --> 00:17:37,879
+So this part B is not only a warm up to the formal expansion, but also provides a way to check those expansions.
+
+135
+00:17:37,880 --> 00:17:44,720
+Do they reduce to the correct answer given in part B, which in many cases they do not?
+
+136
+00:17:45,230 --> 00:17:54,180
+And the issues that were most typical were mostly mixing up high and low temperature expansions.
+
+137
+00:17:54,200 --> 00:18:01,249
+Which of these parameters is a small number that we can expand in and organise things in this bigger notation,
+
+138
+00:18:01,250 --> 00:18:06,260
+so that higher powers are less important than lower powers.
+
+139
+00:18:07,700 --> 00:18:19,790
+Now, I would say the only real technical subtlety came up in per diem when we had the strong one over one minus E to the minus x factor to expand.
+
+140
+00:18:20,900 --> 00:18:30,530
+And in years past, I have made students derive that from an expansion, which is to some extent I'm sure you can substitute for on the.
+
+141
+00:18:30,810 --> 00:18:34,160
+I have to look it up and just set their source, which is perfectly acceptable.
+
+142
+00:18:34,160 --> 00:18:40,730
+So skip it in the problem now. But the subtlety is because it has that leading one over X term.
+
+143
+00:18:41,090 --> 00:18:51,140
+So the expansion of the other exponential factor in the numerator has to go one order beyond the target that you want to reach.
+
+144
+00:18:51,590 --> 00:18:56,260
+So if you are neglecting terms in order x squared. People were x squared.
+
+145
+00:18:56,260 --> 00:19:05,260
+Terms have to be retained in the specific expansion, because some of them will be hit by the one over X and drop down two.
+
+146
+00:19:05,860 --> 00:19:14,140
+In this case it linear or even for students who did this expansion already to get the limit in part B,
+
+147
+00:19:14,590 --> 00:19:22,360
+which is an alternative to doing that because you will see results in the determinate forms of zero, over zero or infinity was definitive.
+
+148
+00:19:24,230 --> 00:19:33,620
+They would just expand on each of these factors up to the constant order and track
+
+149
+00:19:33,630 --> 00:19:40,670
+of terms that had effects from one expansion and the one over X to the other,
+
+150
+00:19:40,760 --> 00:19:47,540
+which is contributing to that. That is.
+
+151
+00:19:49,900 --> 00:19:56,050
+I'm saying the everything I would have to say about that first homework assignment.
+
+152
+00:19:56,800 --> 00:20:02,720
+Unless there are follow up questions or concerns, which you are also free to read.
+
+153
+00:20:02,800 --> 00:20:07,630
+The office hours starting in 40 minutes at this point.
+
+154
+00:20:13,690 --> 00:20:19,629
+You know, not seeing. Any immediate questions or concerns us?
+
+155
+00:20:19,630 --> 00:20:27,040
+Wrap up the tutorial exercises that we have in front of us for today, which is.
+
+156
+00:20:28,390 --> 00:20:37,300
+Uh, explaining at least the functional form of the heat capacity for solids in the low temperature region.
+
+157
+00:20:38,170 --> 00:20:44,080
+This class is zoomed in to temperatures up to about four Kelvin.
+
+158
+00:20:44,590 --> 00:20:57,069
+And seeing the linear plus cubic term in the heat capacity itself, which are coming from distinct physical sources and importantly,
+
+159
+00:20:57,070 --> 00:21:06,760
+disagree with what the Einstein solid that treats a solid as a collection of oscillators, uh, predicts.
+
+160
+00:21:07,240 --> 00:21:16,210
+So the is predicting an exponential approach to zero rather than this polynomial, specifically linear plus cubic.
+
+161
+00:21:17,590 --> 00:21:29,799
+So this time model, the last week improves upon the answer model by coupling the atoms together so that a wiggling one atom is felt by its neighbours,
+
+162
+00:21:29,800 --> 00:21:37,990
+and this leads to waves propagating through the solid with some range of frequencies and wavelengths.
+
+163
+00:21:38,950 --> 00:21:42,130
+These are known as follows.
+
+164
+00:21:43,210 --> 00:21:52,660
+They are quantised that you set low temperatures away from the classical limit, and they are something they might not have said last week,
+
+165
+00:21:52,660 --> 00:22:00,880
+is that these photons are one of the, uh, historically first examples of what are called quasi particles,
+
+166
+00:22:01,630 --> 00:22:08,860
+which are collections of the underlying degrees of freedom of a system which emerge from having a large
+
+167
+00:22:08,860 --> 00:22:17,230
+number of objects in line with the overall philosophy of statistical mechanics and emergent phenomena.
+
+168
+00:22:18,130 --> 00:22:23,530
+And importantly, for these photons to have an approximation, they can be treated as non-interacting particles,
+
+169
+00:22:23,980 --> 00:22:29,650
+even though they arise from the interactions between the underlying degrees of freedom.
+
+170
+00:22:30,520 --> 00:22:40,150
+So in that sense, they are kind of a spiritual predecessor to things like pions or photons,
+
+171
+00:22:40,540 --> 00:22:45,880
+which we now understand to arise from strongly coupled dynamics of quarks and gluons,
+
+172
+00:22:46,300 --> 00:22:53,920
+but behave as much or weakly interacting, uh, emergent degrees of freedom, in that case,
+
+173
+00:22:53,920 --> 00:23:00,550
+in the framework of quantum field theory, rather than sort of classical statistical mechanics we are seeing here.
+
+174
+00:23:01,960 --> 00:23:05,500
+But. Thanks to having.
+
+175
+00:23:07,810 --> 00:23:27,790
+The. Phonons as non-interacting quasi particles up there is, uh, not much new thinking that has to be done to analyse them.
+
+176
+00:23:28,720 --> 00:23:35,620
+So they behave very similar to photons, particles of light.
+
+177
+00:23:35,620 --> 00:23:40,630
+And we can reuse what we have derived for photons,
+
+178
+00:23:40,720 --> 00:23:51,700
+in particular working with rare particle ensemble and fashion chemical potential and deriving the Planck spectrum.
+
+179
+00:23:53,980 --> 00:24:04,690
+And if we drop house, it factors like the fact that the three of us travel at the speed of sound, rather than the speed of light, then.
+
+180
+00:24:06,940 --> 00:24:17,290
+There is only one relevant change in the year's average internal energy that we get from.
+
+181
+00:24:19,570 --> 00:24:25,030
+The grand canonical ensemble. So we integrate over frequencies.
+
+182
+00:24:25,660 --> 00:24:36,950
+As always, for the Planck spectrum, we have that same. Omega cubed over exponential of h bar omega divided by temperature minus one.
+
+183
+00:24:38,330 --> 00:24:39,860
+That functional form is all the same.
+
+184
+00:24:39,860 --> 00:24:52,610
+The only difference is that there is a finite Cut-Off on the maximum frequency that can be reached by these phonons,
+
+185
+00:24:52,610 --> 00:24:54,670
+that is set by the interest Helmick spacing,
+
+186
+00:24:55,430 --> 00:25:03,950
+and reflects the point at which the underlying degrees of freedom occurs in this quasi cortical start to make the presence felt,
+
+187
+00:25:04,700 --> 00:25:08,450
+um, and do not allow the higher energies to be reached.
+
+188
+00:25:09,410 --> 00:25:25,819
+So this. Um, maximum frequency is proportional to the cube root of the number of atoms, and we can absorb it if we make a change in variables.
+
+189
+00:25:25,820 --> 00:25:32,840
+As usual, to get the argument of the exponential to be what we integrate over.
+
+190
+00:25:34,700 --> 00:25:38,209
+This will give us four factors of t over h bar.
+
+191
+00:25:38,210 --> 00:25:51,830
+Converting from. Frequency to this integration variable x and we will integrate from zero to some x max.
+
+192
+00:25:53,060 --> 00:25:59,330
+Well the x max is just that h1 mega over t.
+
+193
+00:25:59,720 --> 00:26:06,709
+This omega max plugged in. We can absorb constant factors like h bar everything,
+
+194
+00:26:06,710 --> 00:26:18,950
+contributing to the maximum frequency omega into a quantity with the dimensions of temperature that is known as the de by temperature.
+
+195
+00:26:21,110 --> 00:26:33,260
+So this T so the that is bringing in that proportionality factor to the number of atoms to the one third power.
+
+196
+00:26:34,580 --> 00:26:40,040
+And building on this for to provide solid state physics,
+
+197
+00:26:40,340 --> 00:26:51,040
+the device temperature is an important characteristic of materials in solids that is now the focus of predicting and measuring,
+
+198
+00:26:51,050 --> 00:27:03,470
+but also helps to guide analyses term in terms of the various regimes in which those materials will have certain behaviour.
+
+199
+00:27:04,670 --> 00:27:08,120
+We can do something similar is simpler here.
+
+200
+00:27:08,600 --> 00:27:12,950
+And just look at the two limits of high and low temperature.
+
+201
+00:27:14,390 --> 00:27:24,290
+So for high temperature where. Temperature is much larger than the device temperature and the upper bound of integration is very small,
+
+202
+00:27:24,860 --> 00:27:34,700
+then that is equivalent to saying that the integral itself is only over this range where x,
+
+203
+00:27:35,120 --> 00:27:44,570
+which we are integrating over itself, is very small, so that e to the x minus one is just x to a good approximation,
+
+204
+00:27:45,050 --> 00:28:00,110
+and at high temperatures the energy is proportional to the t to the fourth, an integral over x cubed divided by x which is just x cubed,
+
+205
+00:28:00,900 --> 00:28:08,210
+and we have t to the fourth times that to be temperature divided by the true temperature to the third power,
+
+206
+00:28:09,020 --> 00:28:26,300
+which leads up to constant factors, just something linear in T, so that the specific heat, that is the temperature derivative of the energy.
+
+207
+00:28:28,760 --> 00:28:42,050
+Just becomes a constant. And if we were to keep the constant factors, we would actually find exactly the same constant as the Einstein solid.
+
+208
+00:28:43,250 --> 00:28:48,230
+Just confirming that the Einstein solid approach works in this high temperature regime.
+
+209
+00:28:48,650 --> 00:28:57,139
+Effectively, when there is so much energy that all of the photons are essentially within themselves,
+
+210
+00:28:57,140 --> 00:29:01,400
+apart into the underlying oscillators that's composed of.
+
+211
+00:29:05,030 --> 00:29:18,660
+Low temperatures. Um, is there any regime where the SSL predicted the exponential approach to zero emission capacity?
+
+212
+00:29:19,330 --> 00:29:24,840
+Um, as opposed to polynomial clusters is observed.
+
+213
+00:29:26,490 --> 00:29:34,890
+And here you can also make chromatic simplifications to just the functional form of the energy,
+
+214
+00:29:35,700 --> 00:29:47,820
+and in particular just approximate this integral as the special function that we found or we invoked in the lecture.
+
+215
+00:29:48,600 --> 00:29:54,570
+So approximating that to by temperature divided by temperature to be close to infinity,
+
+216
+00:29:55,020 --> 00:30:01,080
+this is going to be approximately that product of gamma four and zeta for.
+
+217
+00:30:03,090 --> 00:30:08,580
+The specific whole set matters less than the fact that it is constant preserving all the cancer factors,
+
+218
+00:30:09,660 --> 00:30:22,530
+and that in the internal energy leaves only that pre factor of t to the fourth, so that the heat capacity.
+
+219
+00:30:24,930 --> 00:30:34,500
+Goes. Like T accurate, which is exactly one of the two terms we were looking for.
+
+220
+00:30:36,480 --> 00:30:43,170
+So given the search engines as a starting point to show us is more or less immediate.
+
+221
+00:30:44,100 --> 00:30:50,220
+Any questions or concerns about that before we turn to the linear piece?
+
+222
+00:30:52,740 --> 00:31:03,570
+In the heat capacity. And looking at the clock.
+
+223
+00:31:03,990 --> 00:31:17,190
+I think there is enough time to go through the full Sommerfeld expansion that we started looking at yesterday morning.
+
+224
+00:31:18,150 --> 00:31:31,729
+Um. So we made the case that metals of this sort have very high energies of the order of tens
+
+225
+00:31:31,730 --> 00:31:37,430
+of thousands of Kelvin that are much higher than the energies we encounter every day,
+
+226
+00:31:37,430 --> 00:31:43,489
+and especially much higher than these sort of order Kelvin values that are 40 or
+
+227
+00:31:43,490 --> 00:31:49,460
+so we'd expect the degenerate Fermi out there has to be a good approximation,
+
+228
+00:31:51,200 --> 00:31:57,590
+and we can just quickly pick up with the.
+
+229
+00:32:03,350 --> 00:32:10,130
+Particle number that we very nearly computed yesterday.
+
+230
+00:32:10,730 --> 00:32:16,520
+So we got to the point of computing the particle number for this low temperature
+
+231
+00:32:16,520 --> 00:32:22,970
+Fermi gas divided by a collection of calcium factors from the equation of state.
+
+232
+00:32:25,460 --> 00:32:29,930
+And we had expanded this in the summer filled expansion in terms of.
+
+233
+00:32:33,200 --> 00:32:40,520
+A series of integrals i0, i1, i2, and so on,
+
+234
+00:32:41,210 --> 00:32:57,350
+where h I sub n is the integral from negative infinity to infinity of x to the power n times e to the power x over e to the x plus one squared.
+
+235
+00:32:58,160 --> 00:33:05,660
+So we were able to quickly go through from that. When n is zero, this integral just gives one.
+
+236
+00:33:06,710 --> 00:33:11,900
+When and is one, we have an odd function over an even domain that vanishes,
+
+237
+00:33:13,160 --> 00:33:25,130
+and in the case of the integral with x squared times x, we will have a correspondingly even integral that we can simplify by.
+
+238
+00:33:27,260 --> 00:33:31,010
+Just doubling the integration from zero to infinity.
+
+239
+00:33:32,120 --> 00:33:44,180
+So I to specifically is twice the integral from zero to infinity of x squared e to the x in the x plus one squared.
+
+240
+00:33:45,710 --> 00:33:52,640
+And this is. A case that we can solve by integrating by parts.
+
+241
+00:33:53,460 --> 00:33:59,360
+Again, just set the x the u factor to be that x squared.
+
+242
+00:34:00,650 --> 00:34:08,180
+DV is then everything else e to the x over the x plus one squared d x.
+
+243
+00:34:08,960 --> 00:34:15,380
+And that in turn. Can check pretty easily.
+
+244
+00:34:15,380 --> 00:34:20,120
+Going the other way is just the negative one over E to the x plus one.
+
+245
+00:34:20,900 --> 00:34:24,440
+Take the derivative of v we get the DV quite directly.
+
+246
+00:34:24,830 --> 00:34:33,380
+So the integral then has for the down return to there times u times v.
+
+247
+00:34:34,190 --> 00:34:40,790
+So x squared over e to the x plus one with a negative sign evaluated at zero to infinity,
+
+248
+00:34:41,510 --> 00:34:50,330
+and then the negative from v cancels to negative from integration by parts.
+
+249
+00:34:50,840 --> 00:35:00,320
+And we end up with d u, which is to the x over in the x plus one from v.
+
+250
+00:35:02,450 --> 00:35:10,880
+The boundary term when x goes to infinity, e to the x dwarfs any polynomial x squared.
+
+251
+00:35:11,390 --> 00:35:15,920
+So the upper limit is zero. The lower limit e to the x goes to one.
+
+252
+00:35:16,070 --> 00:35:20,090
+The two is cancel. We just have x squared which is also going to zero.
+
+253
+00:35:20,450 --> 00:35:23,090
+So the boundary term is vanishing.
+
+254
+00:35:23,540 --> 00:35:36,500
+And this term the other term here is one of the very Dirac integrals that we found in our work on the ultra relativistic neutrino gas.
+
+255
+00:35:38,310 --> 00:35:42,680
+Um the two times two gives a further and the integral itself.
+
+256
+00:35:42,680 --> 00:35:54,020
+We can just look up. It is one minus a half the first power times gamma two zero to zeta two is pi squared over six.
+
+257
+00:35:54,020 --> 00:35:58,580
+Gamma two is one factorial, which is one and four times a half is two,
+
+258
+00:35:59,480 --> 00:36:06,710
+leaving us with the pi squared over three that I promised yesterday without actually deriving this.
+
+259
+00:36:11,060 --> 00:36:18,680
+So the result that we have for the critical number.
+
+260
+00:36:20,410 --> 00:36:32,920
+Has added. Two terms at least to this order the term that would be linear in T and
+
+261
+00:36:33,220 --> 00:36:39,130
+multiplied by the chemical potential new to the one half power cancels out from.
+
+262
+00:36:41,850 --> 00:36:43,650
+The symmetries of the integrals.
+
+263
+00:36:44,370 --> 00:36:51,660
+So the first correction to a constant comes in that order of the temperature square divided by the square root of chemical potential.
+
+264
+00:36:52,200 --> 00:36:59,820
+Higher orders will come with higher powers of T divided by higher powers of mu.
+
+265
+00:37:00,360 --> 00:37:15,720
+And this can be simplified by relating our constancy, not to the Fermi energy that involves many of the same constants.
+
+266
+00:37:16,900 --> 00:37:24,840
+Uh h bar squared over two m times a three pi squared, and then the particle density to the two thirds power.
+
+267
+00:37:26,340 --> 00:37:35,250
+That density is just the number of particles per unit volume. And if we take the three halves power of both sides to isolate it,
+
+268
+00:37:35,910 --> 00:37:44,040
+then the three pi squared no longer has a two thirds power h bar squared to the three halves is h bar cubed.
+
+269
+00:37:45,300 --> 00:37:56,260
+We end up with two m. To the three halves, which I will actually write as twice.
+
+270
+00:37:57,100 --> 00:38:01,420
+The square root of two times m cubed. Plug in.
+
+271
+00:38:01,900 --> 00:38:03,820
+The particle density is an RV,
+
+272
+00:38:04,360 --> 00:38:19,899
+and the reason I split off the two m cubed underneath the square root is so that we can recognise all of that as one over g,
+
+273
+00:38:19,900 --> 00:38:28,060
+not an exclusive term in the density of states, which was to mkbhd under the square root divided by pi squared h bar cubed.
+
+274
+00:38:28,870 --> 00:38:43,179
+So this is nothing more than three halves and over v and and therefore is up to the
+
+275
+00:38:43,180 --> 00:38:51,370
+approximations that we have justified and higher powers in the temperature three halves times.
+
+276
+00:38:55,870 --> 00:39:01,930
+And over the Fermi energy to the three halves power.
+
+277
+00:39:02,770 --> 00:39:17,120
+Um. I got that wrong on that line, because Cheena also includes the factor of V in there.
+
+278
+00:39:18,680 --> 00:39:24,200
+So isolating G not we get three halves times and over Q to the three house power.
+
+279
+00:39:24,200 --> 00:39:31,730
+And this gets multiplied by two thirds u to the three halves plus chi squared.
+
+280
+00:39:35,030 --> 00:39:52,849
+Over root mu t squared. Um in other words, if we cancel out the factors of n, we have an expression for the ratio of mu over the Fermi energy.
+
+281
+00:39:52,850 --> 00:39:54,739
+So the three has a two thirds cancel.
+
+282
+00:39:54,740 --> 00:40:07,910
+We get mu over Fermi energy to the three hours power plus pi square t squared over um three over 12 is a quarter times two is eight.
+
+283
+00:40:09,530 --> 00:40:16,070
+Still with three halves powers of the Fermi energy, but now one half power of the chemical potential,
+
+284
+00:40:17,150 --> 00:40:24,920
+which we can solve for U over the Fermi energy itself.
+
+285
+00:40:26,180 --> 00:40:29,870
+And it's just one minus the quadratic term.
+
+286
+00:40:35,480 --> 00:40:37,850
+All raised to the two thirds power.
+
+287
+00:40:38,420 --> 00:40:46,760
+And because we are interested in low energies where that quadratic term is a small correction, we can do two things.
+
+288
+00:40:46,760 --> 00:40:55,250
+First, expand this two limit order and the power series and also identify the f is
+
+289
+00:40:55,400 --> 00:41:01,280
+approximately equal to mu at the level that is relevant for the small correction.
+
+290
+00:41:02,060 --> 00:41:11,690
+So we end up with one minus pi squared t squared over 12 times two factors of the Fermi energy.
+
+291
+00:41:12,890 --> 00:41:21,860
+So here we are seeing that as he goes to zero the Fermi energy and the chemical potential coincide.
+
+292
+00:41:21,860 --> 00:41:23,150
+The ratio is equal to one.
+
+293
+00:41:23,540 --> 00:41:34,490
+And as promised yesterday, at nonzero temperatures the Fermi energy is larger than U leading to a quantity that is less than one here.
+
+294
+00:41:38,540 --> 00:41:53,900
+So that is. During the particle number in some detail, and we will more quickly adapt this to the actual internal energy.
+
+295
+00:41:55,220 --> 00:42:07,580
+The only change compared to the particle number is the power of energy in the integral e to the three halves, rather than e to the one half.
+
+296
+00:42:08,660 --> 00:42:14,660
+We go through the same integration by parts that brings in.
+
+297
+00:42:16,700 --> 00:42:19,700
+A power of.
+
+298
+00:42:22,340 --> 00:42:33,020
+E to the five halves in the integral over x, with the overall coefficient of 2/5 and the Taylor expansion.
+
+299
+00:42:35,510 --> 00:42:48,290
+Of that E to the five house power. No, just change the power of the chemical potential as well as the constant factors.
+
+300
+00:42:48,500 --> 00:42:52,180
+So the 2/5 comes along from the first term.
+
+301
+00:42:53,000 --> 00:42:56,000
+The next term in the Taylor expansion has five halves.
+
+302
+00:42:56,000 --> 00:43:03,410
+Power times e to the three halves evaluated at e equals to mu.
+
+303
+00:43:04,070 --> 00:43:09,680
+So we have mu to the three, has the five halves and 2/5 cancel.
+
+304
+00:43:11,210 --> 00:43:18,890
+And I almost forgot to include the integrals that we looked the same integrals
+
+305
+00:43:18,890 --> 00:43:25,130
+we had before x to the n times e to the x over to the x plus one squared.
+
+306
+00:43:27,260 --> 00:43:35,740
+There's one power of x in the second term, and then we have a half and an additional factor of three halves.
+
+307
+00:43:35,760 --> 00:43:41,840
+From the second derivative of e, we end up with t squared and a square root of mu.
+
+308
+00:43:42,260 --> 00:43:48,680
+And then the. Same integral that we evaluated just a few minutes ago.
+
+309
+00:43:48,680 --> 00:43:53,600
+Pi squared over three with zero and one for the others.
+
+310
+00:43:54,110 --> 00:44:00,620
+So. The internal energy.
+
+311
+00:44:02,990 --> 00:44:10,200
+Comes in just the last few minutes. Is approximately equal to.
+
+312
+00:44:13,170 --> 00:44:17,700
+Converting. From.
+
+313
+00:44:20,370 --> 00:44:28,500
+Factors of um g not to the three halves and over.
+
+314
+00:44:29,190 --> 00:44:33,330
+Uh, every energy to the three has power.
+
+315
+00:44:35,310 --> 00:44:43,620
+We have 2/5 the five halves plus y squared over four.
+
+316
+00:44:45,060 --> 00:44:49,710
+And then chemical potential square root times t squared.
+
+317
+00:44:52,950 --> 00:45:00,270
+So. Given the time, I'll start to skip some of the steps that you can fill in.
+
+318
+00:45:00,840 --> 00:45:09,389
+But, uh, this move to the five halves is relatable to the story energy.
+
+319
+00:45:09,390 --> 00:45:15,960
+It's the five hands minus a quadratic term at this order of approximation.
+
+320
+00:45:18,090 --> 00:45:22,440
+And plugging in that expansion gives us in the end.
+
+321
+00:45:24,720 --> 00:45:33,060
+An expression for the average internal energy of our electron gas that has a
+
+322
+00:45:33,060 --> 00:45:37,440
+constant term that depends on the number of particles in the Fermi energy,
+
+323
+00:45:38,430 --> 00:45:45,540
+similar to what we found in the zero temperature limit. And then in turn, the next correction.
+
+324
+00:45:47,610 --> 00:45:51,330
+Comes in at order temperature squared over Fermi energy.
+
+325
+00:45:51,750 --> 00:46:00,510
+And there are higher order corrections at order T to the fourth over E very cubed.
+
+326
+00:46:01,080 --> 00:46:07,290
+The all terms are cancelling due to symmetries in those integrals are three as before.
+
+327
+00:46:08,220 --> 00:46:12,420
+And the results are then for the heat capacity.
+
+328
+00:46:12,840 --> 00:46:24,780
+That's a constant that drops out and we end up with chi squared over two times the average number of particles divided by the Fermi energy,
+
+329
+00:46:25,140 --> 00:46:29,730
+with the the linear term in temperature left over.
+
+330
+00:46:30,570 --> 00:46:35,760
+And if we relate that to the alpha times temperature that we have here,
+
+331
+00:46:37,200 --> 00:46:44,970
+then the alpha that we get is just this collection of constant factors chi squared.
+
+332
+00:46:45,960 --> 00:46:49,050
+That's particle number over the Fermi energy.
+
+333
+00:46:49,470 --> 00:47:05,070
+And this is a way that the Fermi energies of materials can be obtained experimentally, measure the heat capacity in this way and the.
+
+334
+00:47:06,660 --> 00:47:16,590
+Intercept of this plot because it has C over here on the vertical axis, is just inversely related to the Fermi energy.
+
+335
+00:47:17,280 --> 00:47:24,180
+With this known factor of pi squared over two and the number of particles that can be.
+
+336
+00:47:26,180 --> 00:47:29,450
+Either used as a normalisation factor or the Fermi energy.
+
+337
+00:47:30,210 --> 00:47:34,650
+Um, so we would get the Fermi energy per particles.
+
+338
+00:47:36,990 --> 00:47:45,240
+Out of that, which again, like the divine temperature is giving useful information about these solids for the solid, say physicists.
+
+339
+00:47:46,890 --> 00:47:57,540
+This is a bit more in the lecture notes about what we can do with, uh, without even expanding in the, uh,
+
+340
+00:47:57,540 --> 00:48:01,919
+solar cells expansion of small temperatures to confirm that the chemical potential
+
+341
+00:48:01,920 --> 00:48:07,680
+goes negative as the temperature of this large unit cell is the Fermi energy.
+
+342
+00:48:08,100 --> 00:48:11,460
+And that's our field expansion. We no longer converge.
+
+343
+00:48:11,680 --> 00:48:15,150
+Uh, we're out of time for this week.
+
+344
+00:48:16,350 --> 00:48:22,830
+And the first. 5/6 of the term.
+
+345
+00:48:23,340 --> 00:48:31,440
+So, with just one last call for questions before we reach office hours, declare victory with what?
+
+346
+00:48:31,440 --> 00:48:43,440
+We were able to reach the linear dependence of the heat capacity on the temperature from the degenerate electron gas.
+
+347
+00:48:44,100 --> 00:48:49,020
+And that should go off to the last couple of days before the break.
+
