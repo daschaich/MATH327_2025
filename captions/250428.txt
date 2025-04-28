@@ -1,0 +1,1313 @@
+1
+00:00:02,220 --> 00:00:12,030
+[Auto-generated transcript. Edits may have been applied for clarity.]
+All right. Good afternoon. Welcome back. After that extended break to just the final couple of weeks for statistical mechanics,
+
+2
+00:00:12,680 --> 00:00:23,700
+the 3 to 7 to the starting point for today, that's actually a Monday is the magic number of the empty space down here.
+
+3
+00:00:23,700 --> 00:00:28,200
+6298 is four weeks.
+
+4
+00:00:29,010 --> 00:00:34,140
+And over the past three weeks was or not, and we were not meeting.
+
+5
+00:00:34,680 --> 00:00:37,710
+There have been a few logistical developments.
+
+6
+00:00:38,610 --> 00:00:43,220
+Um, for one thing, that final homework has all been marked and solutions released.
+
+7
+00:00:43,230 --> 00:00:46,890
+We'll chat a bit about that in Thursday's tutorial.
+
+8
+00:00:47,670 --> 00:00:53,370
+Um, or here now if you have immediate questions about it or in office hours after this lecture.
+
+9
+00:00:54,840 --> 00:01:06,870
+More significantly, if you haven't seen it already, our exam has been scheduled for the first day in the exam period.
+
+10
+00:01:07,860 --> 00:01:13,680
+So, uh, two weeks from this Friday, just about three weeks from now.
+
+11
+00:01:14,580 --> 00:01:22,500
+So that's, uh, the afternoon of Friday, the 16th of May.
+
+12
+00:01:22,650 --> 00:01:29,370
+And that'll be in the Sherrington building, which is on the other side of the science and engineering library.
+
+13
+00:01:30,900 --> 00:01:38,219
+And just because next Monday is the first Monday of May, the bank holiday would have lectures.
+
+14
+00:01:38,220 --> 00:01:44,520
+So a replacement has been timetabled for earlier, uh, for, for the following week.
+
+15
+00:01:44,670 --> 00:01:48,930
+So on Monday, the 12th of May, um,
+
+16
+00:01:50,670 --> 00:02:01,620
+I plan to make that just a fairly informal exam review meeting rather than the actual lecture that it will show up as in your timetable,
+
+17
+00:02:02,580 --> 00:02:06,370
+and that will be at the usual time, 1 p.m. in the first place.
+
+18
+00:02:06,600 --> 00:02:20,700
+Uh, right here. And because we are coming back from this extended break, the plan for today is fairly modest.
+
+19
+00:02:20,700 --> 00:02:34,260
+We'll have. A quick review of the the big ideas for the module, what we have seen in the first ten weeks leading up to the break,
+
+20
+00:02:34,840 --> 00:02:39,629
+and then dive into the last major topic for the module,
+
+21
+00:02:39,630 --> 00:02:51,420
+which is where things get in some way more interesting by introducing interactions into our whole
+
+22
+00:02:51,510 --> 00:02:58,470
+statistical mechanics toolbox and seeing just how complicated things become as a consequence.
+
+23
+00:02:59,670 --> 00:03:02,129
+But before diving into any of that,
+
+24
+00:03:02,130 --> 00:03:10,080
+I'll just pause and see if there are questions about the logistics or any questions that have come up over the third week.
+
+25
+00:03:10,090 --> 00:03:28,440
+So we're not being. And if there are not, or at least not those that you are, uh, eager to raise here with, uh, everyone in the room.
+
+26
+00:03:28,990 --> 00:03:32,790
+There will be office hours after the lecture and email.
+
+27
+00:03:35,100 --> 00:03:38,610
+And the canvas discussion board are always open.
+
+28
+00:03:39,960 --> 00:03:52,110
+So stepping back to the big picture for statistical mechanics, we cannot keep in view the essential key idea.
+
+29
+00:03:52,590 --> 00:04:01,440
+That's the essence of what we are going after is seeing how large scale macroscopic behaviour emerges
+
+30
+00:04:01,770 --> 00:04:07,410
+from systems that are composed of a large number of underlying microscopic degrees of freedom.
+
+31
+00:04:09,060 --> 00:04:20,160
+And our starting point for formalising that whole process was to develop the notion of probability and probability spaces.
+
+32
+00:04:20,910 --> 00:04:26,790
+So not focusing so much on probability as a topic itself, but, um,
+
+33
+00:04:26,850 --> 00:04:33,630
+formalising the event space in which we measure the state of the universe after some experiment,
+
+34
+00:04:34,560 --> 00:04:41,580
+the outcome space where we search those events to have a possibly uncountable set of
+
+35
+00:04:41,580 --> 00:04:46,380
+outcomes that we are interested in and want to label and analyse mathematically.
+
+36
+00:04:46,950 --> 00:04:54,450
+And then the probability space that assigns a probability to every one of those outcomes selected from the event space.
+
+37
+00:04:55,320 --> 00:05:06,030
+And we pretty quickly focus on statistical ensembles as specific realisations of these probability spaces,
+
+38
+00:05:06,510 --> 00:05:13,580
+where the events and the outcomes are obtained by running the experiment,
+
+39
+00:05:13,590 --> 00:05:22,500
+which is taking a bunch of degrees of freedom, a bunch of particles, and letting them have all the time and just looking at them as time goes by.
+
+40
+00:05:22,830 --> 00:05:29,460
+At each point in time, they will be in some, uh, possible microstates.
+
+41
+00:05:29,910 --> 00:05:36,719
+So some possible state of the universe consisting of all of these degrees of freedom and the space of possibilities,
+
+42
+00:05:36,720 --> 00:05:44,490
+is constrained by the laws of physics and qualities that have to be kept conserved as time goes by.
+
+43
+00:05:44,640 --> 00:05:49,770
+For each of these ensembles, one of those quantities is energy.
+
+44
+00:05:49,980 --> 00:05:59,700
+So the conservation of energy is known as the first law of thermodynamics, because it was formulated before any murder introduced her first theorem,
+
+45
+00:06:00,270 --> 00:06:05,100
+relating conservation of energy to the time invariance of the laws of physics.
+
+46
+00:06:06,000 --> 00:06:16,470
+And if we directly impose conservation of energy, and we also demand that our number of degrees of freedom is unchanged,
+
+47
+00:06:16,920 --> 00:06:28,140
+as we take snapshots of the system from time to time, looking at its microstates, that gives us the probability space of the micro canonical ensemble,
+
+48
+00:06:28,650 --> 00:06:39,150
+and it has the implication that any system being analysed in the microscopic framework has to be completely isolated from the rest of the universe,
+
+49
+00:06:39,150 --> 00:06:45,600
+so that there's no way to exchange energy in any form, whether that's photons or X-rays or radio waves,
+
+50
+00:06:46,020 --> 00:06:52,920
+as well as no way for particles to move into the system, move out, be created, or be destroyed.
+
+51
+00:06:53,790 --> 00:06:57,540
+So that's a bit artificial, a bit awkward to work with.
+
+52
+00:06:58,440 --> 00:07:01,770
+Um, essentially, the main application we.
+
+53
+00:07:03,810 --> 00:07:12,150
+Explored with the microscopic ensemble was to define temperature as a derived quantity on the basis of conserved particle
+
+54
+00:07:12,150 --> 00:07:20,940
+number and conserved energy in check that heat exchange on the basis of that definition of temperature behaves sensibly.
+
+55
+00:07:21,660 --> 00:07:30,150
+And we pretty quickly moved on to the canonical ensemble, which is more useful and more, um,
+
+56
+00:07:30,810 --> 00:07:38,550
+well aligned to our scientific approach of being able to actually analyse these systems from the outside,
+
+57
+00:07:38,700 --> 00:07:46,080
+able to exchange energy with them, even though we continue to specify that the number of particles is fixed and unchanging.
+
+58
+00:07:46,740 --> 00:07:52,080
+So we in place of conserved energy in the calculus sample,
+
+59
+00:07:52,080 --> 00:07:57,899
+we demand that our system have a constant fixed temperature that is understood
+
+60
+00:07:57,900 --> 00:08:04,020
+as being fixed by this process of energy exchange with the system surroundings.
+
+61
+00:08:05,220 --> 00:08:13,560
+We can so we can, uh, treat the surroundings as a thermal reservoir that are much bigger than the system of interest.
+
+62
+00:08:13,920 --> 00:08:18,300
+So in this case, for instance, we might analyse the water.
+
+63
+00:08:19,270 --> 00:08:26,620
+In my hand here, which is kept at a fixed temperature by being in this whole big room, um,
+
+64
+00:08:26,770 --> 00:08:33,819
+of air surrounding it with the water molecules not allowed to enter or leave it here.
+
+65
+00:08:33,820 --> 00:08:41,350
+We did some more, uh, substantial applications over several weeks looking at the physics of information,
+
+66
+00:08:41,830 --> 00:08:49,299
+how just the pure information content of the particles in the system affect its behaviour,
+
+67
+00:08:49,300 --> 00:08:55,870
+affect things like the temperature dependence of the energy that corresponds to the specific heat,
+
+68
+00:08:57,250 --> 00:09:01,030
+as well as looking at ideal gases and the ideal gas.
+
+69
+00:09:01,030 --> 00:09:04,420
+Law as an example of an equation of state.
+
+70
+00:09:06,430 --> 00:09:12,190
+Um, and concepts of pressure and heat symbolising this exchange of energy,
+
+71
+00:09:12,640 --> 00:09:20,020
+and then putting those ideal gases to use by using them to drive thermodynamic cycles that,
+
+72
+00:09:20,740 --> 00:09:26,500
+depending on the particular cycle we have, can take heat,
+
+73
+00:09:27,130 --> 00:09:33,760
+take energy from one high temperature external reservoir to another, and to work in the process.
+
+74
+00:09:34,810 --> 00:09:40,750
+We can model things like internal combustion engines and diesel engines in that sort of way,
+
+75
+00:09:40,960 --> 00:09:49,810
+even though from there, the, uh, energy reservoir is not operating strictly by the diffusion of heat,
+
+76
+00:09:49,810 --> 00:10:00,700
+but actually getting energy out of burning fuel, either petrol or diesel fuel, or if we run the cycle the opposite direction that we are.
+
+77
+00:10:01,820 --> 00:10:06,600
+Inputting work in order to move feeds from one reservoir to another.
+
+78
+00:10:06,620 --> 00:10:15,199
+Which is exactly what refrigerators do. And then finally, in the few weeks before break, we looked at the grand canonical ensemble,
+
+79
+00:10:15,200 --> 00:10:22,069
+where both the energy and the particle number are allowed to change our thermal reservoir
+
+80
+00:10:22,070 --> 00:10:29,030
+as generalised to a chemical reservoir and in place of a fixed number of particles,
+
+81
+00:10:29,960 --> 00:10:31,430
+we still have the fixed temperature,
+
+82
+00:10:31,430 --> 00:10:43,889
+but now a fixed chemical potential that is derived from how the entropy of the system depends on the number of particles with a fixed energy.
+
+83
+00:10:43,890 --> 00:10:51,290
+And I should have mentioned that entropy was an important concept we introduced already in the micro canonical context.
+
+84
+00:10:52,670 --> 00:10:59,300
+Um, and here in the grand canonical context are seen fixed quantities are the chemical tension and temperature.
+
+85
+00:11:00,500 --> 00:11:08,600
+And we focus our applications here on quantum gases that are generally well
+
+86
+00:11:08,600 --> 00:11:14,330
+described by changing particle numbers as particles can be created or destroyed,
+
+87
+00:11:14,510 --> 00:11:21,049
+in many cases very easily, like for photons or neutrinos, and specifically for photons.
+
+88
+00:11:21,050 --> 00:11:28,670
+We derived the Planck spectrum and saw that it worked very well as a description of solar radiation,
+
+89
+00:11:29,090 --> 00:11:37,490
+as well as the cosmic microwave background in intergalactic space and looking at fermion gases as well as in divine model.
+
+90
+00:11:38,060 --> 00:11:46,430
+Um, we derived the heat capacity for certain solids and were able to.
+
+91
+00:11:48,440 --> 00:11:55,190
+Obtain the correct functional form from which things like the Fermi energy could be measured,
+
+92
+00:11:55,370 --> 00:12:01,070
+or could be determined based on measurements of the heat capacity, uh, going back many years.
+
+93
+00:12:03,260 --> 00:12:15,740
+So. What all of those three situations, those three ensembles and all the applications that we have, um,
+
+94
+00:12:16,130 --> 00:12:23,090
+use them for, have in common is that we assumed the systems were ideal, idealised or non-interacting.
+
+95
+00:12:23,690 --> 00:12:27,350
+And that is what will change now that we are back from the break.
+
+96
+00:12:28,610 --> 00:12:36,679
+So are there any questions about that? Um, well, everything that happened before the break, before we go on to, uh,
+
+97
+00:12:36,680 --> 00:12:45,620
+motivates and then explore some new ground by adding interactions to the statistical systems that we are analysing.
+
+98
+00:12:59,680 --> 00:13:04,530
+And. I'm.
+
+99
+00:13:09,470 --> 00:13:16,760
+Not seeing any. Just wrap up with this point that on the one hand,
+
+100
+00:13:17,240 --> 00:13:26,660
+this approximation of ideal systems that do not have any interactions between the microscopic degrees of freedom in the system.
+
+101
+00:13:28,760 --> 00:13:38,900
+This is sufficient to give us some truly fantastic predictions that describe real observable phenomena very accurately,
+
+102
+00:13:39,740 --> 00:13:47,300
+not only at the qualitative, but even at the quantitative level, with only small deviations that can be blamed on this approximation.
+
+103
+00:13:49,670 --> 00:13:59,299
+And examples that we've seen are things like confronting solar radiation with the Planck spectrum, using that to determine the temperature,
+
+104
+00:13:59,300 --> 00:14:10,550
+the surface temperature of our sun and other stars, or getting that specific heat out of derivations of electron gases,
+
+105
+00:14:10,550 --> 00:14:18,380
+or the divine model solids as fast fluctuating atoms in a lattice.
+
+106
+00:14:20,630 --> 00:14:26,270
+And although we do get some fantastic predictions out of these idealised systems,
+
+107
+00:14:26,690 --> 00:14:33,080
+there are other cases where the simplification clearly fast, short and.
+
+108
+00:14:35,600 --> 00:14:40,009
+That motivates moving on and leaving that approximation behind.
+
+109
+00:14:40,010 --> 00:14:46,730
+And in particular this approximation of ideal systems is insufficient to.
+
+110
+00:14:49,310 --> 00:14:53,780
+Describe the classes of phenomena of which.
+
+111
+00:14:56,420 --> 00:15:00,590
+We will focus on. A particular.
+
+112
+00:15:02,750 --> 00:15:08,720
+Set of. Occurrences known as phase transitions.
+
+113
+00:15:12,320 --> 00:15:16,430
+Which. I'm sure you have.
+
+114
+00:15:17,000 --> 00:15:21,920
+You're familiar with phases and phase transitions informally, just from everyday life.
+
+115
+00:15:22,370 --> 00:15:26,419
+And as we go through a more formal mathematical analysis,
+
+116
+00:15:26,420 --> 00:15:36,470
+we will get a sharp definition of what a phase transition really is and how interacting statistical systems can give rise to it.
+
+117
+00:15:37,400 --> 00:15:50,450
+So interactions are, with very few exceptions, are crucial in order to describe and analyse phase transitions and phenomena of that sort.
+
+118
+00:15:52,190 --> 00:16:06,860
+And the downside is. That once interactions are in the game, all of the analyses are much harder to carry out.
+
+119
+00:16:07,430 --> 00:16:14,390
+Which is, not surprisingly, why we have focussed on the simpler idealised cases first.
+
+120
+00:16:14,660 --> 00:16:18,680
+And are they now bringing interactions into the game?
+
+121
+00:16:19,520 --> 00:16:23,060
+So in general, if we have an interacting statistical system,
+
+122
+00:16:23,930 --> 00:16:31,940
+we cannot be able to expect to derive a closed form prediction for its partition function,
+
+123
+00:16:31,940 --> 00:16:40,489
+say in the canonical ensemble or any observable quantities derive from that partition function like Planck spectrum.
+
+124
+00:16:40,490 --> 00:16:49,340
+For specific heat that we've looked at in the past, and even worse in that we can not derive exact closed form predictions.
+
+125
+00:16:49,850 --> 00:16:58,970
+But any approximations that we try to bring to bear often are completely inaccurate and unreliable, even at the large scale qualitative level.
+
+126
+00:17:01,550 --> 00:17:06,830
+So before seeing some examples of this, let's just.
+
+127
+00:17:09,080 --> 00:17:18,890
+Briefly. Call what these phases that are transitioning are going to be.
+
+128
+00:17:19,280 --> 00:17:30,860
+And the way that I will describe them for the purposes of of this module is getting back to that question that we used to open today.
+
+129
+00:17:32,420 --> 00:17:39,020
+Um, if we have a fixed set of microscopic degrees of freedom,
+
+130
+00:17:39,620 --> 00:17:47,840
+it is possible for these to produce qualitatively different behaviour depending on the control.
+
+131
+00:17:47,950 --> 00:17:49,480
+Parameters that they are subject to.
+
+132
+00:17:50,290 --> 00:18:05,409
+And it is this different emergent behaviour that we will call different phases arising from the same underlying microscopic system.
+
+133
+00:18:05,410 --> 00:18:11,260
+Or put it more plainly, the same set of particles.
+
+134
+00:18:12,160 --> 00:18:19,240
+And okay, there's an everyday example that is very simple illustration of this.
+
+135
+00:18:19,750 --> 00:18:27,310
+If we take a bunch of H2O molecules as a microscopic particle degrees of freedom,
+
+136
+00:18:28,030 --> 00:18:35,290
+then different sorts of motion behaviour that we could have from those molecules are ice.
+
+137
+00:18:35,290 --> 00:18:44,020
+For instance, from the temperature is low, we can have liquid water as the temperature rises above zero centigrade.
+
+138
+00:18:44,560 --> 00:18:48,820
+And then as the temperature rises further above 100 centigrade, you will get.
+
+139
+00:18:51,100 --> 00:19:00,430
+Liquid steam, um, all coming from that same set of H2O molecules.
+
+140
+00:19:02,080 --> 00:19:08,170
+And this can also set the pressure of these molecules as well as their temperature as another control parameter.
+
+141
+00:19:08,770 --> 00:19:17,290
+And we can adjust to explore all of these different phases, including actually various distinct types of ice.
+
+142
+00:19:18,460 --> 00:19:21,640
+So that's one kind of trivial example that you all know very well.
+
+143
+00:19:22,360 --> 00:19:33,300
+But this phenomena of phase transitions is, um, ubiquitous throughout nature, including in more extreme situations and environments.
+
+144
+00:19:33,310 --> 00:19:41,350
+One example being the particles that we are made out of, at least governed by quantum mechanics and relativity.
+
+145
+00:19:43,000 --> 00:19:45,820
+We get down to things called quarks and gluons.
+
+146
+00:19:46,510 --> 00:19:57,790
+And if you have a high enough temperature, these quarks and gluons will exist in some charged interacting plasma.
+
+147
+00:19:57,970 --> 00:20:03,400
+And that is how the universe, um, initially existed for its first few microseconds,
+
+148
+00:20:04,090 --> 00:20:09,490
+the quark gluon plasma that as the universe expanded and its temperature cooled,
+
+149
+00:20:09,820 --> 00:20:20,920
+went through a phase transition to the protons, neutrons and nuclei composed of them that we are now made out of today.
+
+150
+00:20:22,660 --> 00:20:33,400
+And there are just, uh, a couple of physics experiments running in the US and outside of Geneva that have the,
+
+151
+00:20:34,420 --> 00:20:41,350
+uh, engineering capability to recreate this call for plasma in miniature form and study its properties,
+
+152
+00:20:41,350 --> 00:20:49,600
+as well as the phase transition of how these nucleons and nuclei and other particles emerge
+
+153
+00:20:49,810 --> 00:20:55,630
+from the phase transition as the plasma experience cools into its so-called hadronic phase.
+
+154
+00:21:00,500 --> 00:21:06,710
+I won't say so much about the quarks and plasma in the remainder of this module, unless you are keenly interested in it.
+
+155
+00:21:07,460 --> 00:21:21,470
+Um, but just to give one further example of phase transitions, there are a lot of interest in science and engineering and technology circles.
+
+156
+00:21:23,470 --> 00:21:35,000
+In the modern day. If we look at electrons in various materials, the behaviour of these electrons can exhibit various different properties.
+
+157
+00:21:38,060 --> 00:21:52,460
+So. One possibility is that these materials are insulators, where the electrons are essentially tied to individual atoms and are not free to move.
+
+158
+00:21:52,820 --> 00:21:56,720
+So there are not any electrical currents going in these materials.
+
+159
+00:21:57,470 --> 00:22:05,780
+And if we want to get materials that allow for, uh, electronic currents to flow,
+
+160
+00:22:06,320 --> 00:22:15,200
+we need to go through a phase transition from an insulating state to a conducting state where
+
+161
+00:22:15,620 --> 00:22:21,530
+at least some subset of the electrons are no longer tied directly to a particular atom,
+
+162
+00:22:21,920 --> 00:22:25,580
+but are free to float around the material effectively as a gas,
+
+163
+00:22:26,060 --> 00:22:31,640
+similar to the non-interacting electron gas that we looked at in the last tutorials before the break.
+
+164
+00:22:32,990 --> 00:22:44,870
+And if you look at certain materials at low temperatures, you can go beyond ordinary conductivity to what is called a superconducting phase,
+
+165
+00:22:46,130 --> 00:22:52,670
+where not only can the electrons move around, an electrical current can flow to power things like that projector,
+
+166
+00:22:52,670 --> 00:22:56,570
+the lights, the computers, and all the other gizmos of the modern day.
+
+167
+00:22:57,020 --> 00:23:04,190
+But as that electrical current flows, it does not emit any waste heat.
+
+168
+00:23:04,850 --> 00:23:08,540
+There's no energy loss from that conductivity.
+
+169
+00:23:08,900 --> 00:23:20,280
+And. If only if we did not have to cool things down to 200 degrees below zero centigrade in order to get the superconductivity,
+
+170
+00:23:20,760 --> 00:23:26,970
+we would have fantastically energy efficient power grids and electronic appliances.
+
+171
+00:23:28,680 --> 00:23:38,700
+So there is an enormous, multi-decade search for what materials can we design and manufacture that exhibit the superconductivity,
+
+172
+00:23:38,940 --> 00:23:48,990
+the superconducting phase at the highest temperatures of the lowest pressures that are easiest to manufacture and maintain in our everyday life.
+
+173
+00:23:49,740 --> 00:23:59,370
+So one recent example we can look at very briefly is a material called bilayer graphene,
+
+174
+00:23:59,970 --> 00:24:06,930
+where graphene is a single layer of carbon atoms arranged in a honeycomb lattice.
+
+175
+00:24:07,680 --> 00:24:19,800
+Um. This is really fantastic material that was first synthesised, uh, down the road in Manchester and awarded the 2010 Nobel Prize for that.
+
+176
+00:24:20,310 --> 00:24:25,320
+And ever since it was first produced 15 years ago,
+
+177
+00:24:25,950 --> 00:24:34,980
+people all around the world are looking for ways to use it as an alternative to, say, silicon in various electronic devices.
+
+178
+00:24:35,580 --> 00:24:41,910
+Bilayer graphene just means that we have two of these single atom thick layers stacked on top of each other.
+
+179
+00:24:42,360 --> 00:24:49,860
+It looks a bit like this. So if we zoom in very closely, you see that honeycomb lattice.
+
+180
+00:24:50,610 --> 00:24:57,060
+So hexagonal unit cells that are arranged in a regular pattern.
+
+181
+00:24:58,140 --> 00:25:04,560
+And these two sheets are slightly rotated relative to each other by this magic angle theta.
+
+182
+00:25:05,100 --> 00:25:10,080
+And if that theta is tuned to be about one degree.
+
+183
+00:25:12,130 --> 00:25:25,990
+Then this system of two slightly um, this adjusted layers of graphene undergoes a superconducting phase transition at a moderately high temperature,
+
+184
+00:25:25,990 --> 00:25:28,210
+though not quite as high as we would hope for.
+
+185
+00:25:29,710 --> 00:25:37,480
+This is a complicated, um, result of the interactions between these two layers in the statistical system.
+
+186
+00:25:38,050 --> 00:25:45,680
+It is related to the bigger pattern of hexagonal cells that you can see, um,
+
+187
+00:25:46,840 --> 00:25:54,640
+forming from the intersections or the overlaps of all of the smaller cells.
+
+188
+00:25:55,450 --> 00:26:03,280
+This is called a worry lattice. Essentially big hexagons, uh, built out of little hexagons.
+
+189
+00:26:04,630 --> 00:26:15,520
+And if that magic angle is tuned to its no magic value around one degree.
+
+190
+00:26:16,720 --> 00:26:21,580
+Then this bilayer graphene system exhibits superconductivity.
+
+191
+00:26:23,830 --> 00:26:27,400
+For temperatures up to about 1.7 Kelvin.
+
+192
+00:26:27,820 --> 00:26:36,010
+So they -285°C, which is fairly cold, is too cold to be useful in consumer electronics.
+
+193
+00:26:36,010 --> 00:26:39,790
+But, um, you know,
+
+194
+00:26:40,420 --> 00:26:49,000
+for such a simple system relative to these kinds of interacting materials that normally have to be engineered to get superconductivity,
+
+195
+00:26:49,510 --> 00:26:53,260
+that was a cause of great excitement just a few years back.
+
+196
+00:26:53,260 --> 00:27:06,700
+And there is on canvas a link to a brief article where you can read a bit more about that from about five years ago.
+
+197
+00:27:09,310 --> 00:27:19,630
+But anyway, those are all laws and motivations, and you want to now be a bit more mathematical, a bit more formal and precise.
+
+198
+00:27:20,560 --> 00:27:32,980
+And. Unless there are questions about anything so far, we can ask, uh, if I could spell.
+
+199
+00:27:35,380 --> 00:27:47,080
+The question what precisely tells us whether a given statistical system is an interacting system or not?
+
+200
+00:27:52,840 --> 00:28:00,970
+And to answer this question, let's go back to the earlier kind of standard, uh,
+
+201
+00:28:01,000 --> 00:28:14,380
+prototypical system that we have looked at throughout this module started off back around, uh, unit two, which is our usual two state spin system.
+
+202
+00:28:15,550 --> 00:28:20,260
+And I should say here we are stepping back as well to the canonical ensemble.
+
+203
+00:28:20,590 --> 00:28:30,130
+So we will fix the number of spins that we have to be n and we will fix the temperature.
+
+204
+00:28:32,740 --> 00:28:49,180
+In the canonical approach. And we will specify that these n spins are fixed in some lattice structure that lives in dimensions of one,
+
+205
+00:28:49,180 --> 00:28:55,389
+2 or 3 dimensional lattices are going to be the usual ones we can look at.
+
+206
+00:28:55,390 --> 00:29:02,950
+But the mathematics will hold for any D going up into higher dimensions as an abstract mathematical concept,
+
+207
+00:29:03,400 --> 00:29:09,370
+and interesting things will happen as we go to, uh, various numbers of dimensions later on.
+
+208
+00:29:10,270 --> 00:29:19,210
+Um. And our temperature is the same one over data that we derived in the canonical ensemble.
+
+209
+00:29:20,560 --> 00:29:27,730
+And because these spins are fixed at, uh, specific locations in their lattice structures,
+
+210
+00:29:28,660 --> 00:29:35,620
+this is covered by the case of distinguishable degrees of freedom that we've looked at in some detail.
+
+211
+00:29:36,100 --> 00:29:50,710
+And just as a reminder, we focus in on things like a line of spins in a row, which we can now generalise to be considered a one dimensional lattice.
+
+212
+00:29:52,150 --> 00:29:56,560
+Um, these are all in some external magnetic field.
+
+213
+00:29:57,980 --> 00:30:01,960
+A strength that is H is greater than zero.
+
+214
+00:30:03,220 --> 00:30:10,000
+And just to illustrate a generalisation from that one dimensional lattice to two dimensions, we could have.
+
+215
+00:30:10,730 --> 00:30:20,810
+Some setup like so where now instead of just having it's been so long, we have nine spins in a three by three grid,
+
+216
+00:30:21,110 --> 00:30:33,049
+still with an external magnetic field and some labelling that we can generalise just to simplify the expression.
+
+217
+00:30:33,050 --> 00:30:34,820
+So we will have to come up with.
+
+218
+00:30:35,300 --> 00:30:49,190
+So because the spins are distinguishable, all of the microstates in our canonical ensemble are just defined by the configuration of those spins.
+
+219
+00:30:51,500 --> 00:30:55,250
+So we can say that is the set of all and spins s.
+
+220
+00:30:55,250 --> 00:30:58,790
+So n running from one to capital N.
+
+221
+00:30:59,510 --> 00:31:03,620
+And for the CSA system we can label all of these spins.
+
+222
+00:31:03,620 --> 00:31:13,579
+Not necessarily. I had to draw a border down reporting errors, but by giving them the value plus or minus one as we've seen before.
+
+223
+00:31:13,580 --> 00:31:16,970
+So that here this is the eighth spin.
+
+224
+00:31:17,750 --> 00:31:22,430
+It is by virtue of pointing downwards opposite to the external magnetic field.
+
+225
+00:31:22,670 --> 00:31:30,500
+It has a value of minus one. And the first spin over here is plus 1 in 2 dimensions.
+
+226
+00:31:31,070 --> 00:31:37,250
+This spin can have a label both for its row and column that one is pointing up,
+
+227
+00:31:37,250 --> 00:31:44,000
+so it has a value of one and spin three three is pointing down the value of minus one.
+
+228
+00:31:44,870 --> 00:31:59,420
+And this allows um simple expressions to be written starting with the ideal non-interacting case that we have already looked at before.
+
+229
+00:32:00,080 --> 00:32:09,920
+So the energy for microstates omega I that is defined by this configuration of spins just has.
+
+230
+00:32:12,380 --> 00:32:23,270
+This one term, the sum over all and spins from one to n, the value of that spin multiplied by the external field with an overall negative sign,
+
+231
+00:32:24,560 --> 00:32:30,440
+so that the minimum energy corresponds to all of the spins aligning with that magnetic field.
+
+232
+00:32:31,130 --> 00:32:37,730
+And then um, minimum energy is minus n capital n times h.
+
+233
+00:32:40,010 --> 00:32:51,649
+One feature of the system that we can see quite clearly is that if we define the energy of each site to be some epsilon sub n,
+
+234
+00:32:51,650 --> 00:32:56,900
+that is just the value of the spin s sub n multiplied by minus h.
+
+235
+00:32:58,130 --> 00:33:07,700
+Then this energy breaks up just into a sum over all the single site energies, um, without any side knowing about any other.
+
+236
+00:33:08,240 --> 00:33:20,000
+And well, both the factorisation of this energy into a sum over a set of n energies per site, um,
+
+237
+00:33:20,720 --> 00:33:33,740
+has a lot or leads to a very simple form for the partition function that contains all the information about this idea of non-interacting system.
+
+238
+00:33:34,790 --> 00:33:45,410
+So the empirical canonical partition function for distinguishable spins and you've seen is just n powers of the single particle partition function.
+
+239
+00:33:46,280 --> 00:33:55,790
+And in full detail you just get twice the hyperbolic cosine of the inverse temperature times magnetic field out of that raised to the power.
+
+240
+00:33:56,570 --> 00:34:09,500
+Both of these are aspects of factorisation that I believe we mentioned, at least in passing back and seeing this before the break.
+
+241
+00:34:12,740 --> 00:34:15,920
+That things become more we can make things more interesting.
+
+242
+00:34:18,560 --> 00:34:29,480
+By. Adding a second term to the energy that we assign to any given microstate for our spin system.
+
+243
+00:34:30,560 --> 00:34:38,630
+So instead of just that spin feeling, the external magnetic field and that is the only energy for each site,
+
+244
+00:34:40,220 --> 00:34:47,840
+we can have a term that involves products of spins at two different sites.
+
+245
+00:34:49,100 --> 00:34:57,230
+And you will specify that the pairs of sites that we sum over, I will just call JK in parentheses.
+
+246
+00:34:57,980 --> 00:35:10,430
+And this notation with a label of the summation in parentheses, is a shorthand way of referring to all pairs of spins.
+
+247
+00:35:10,660 --> 00:35:18,130
+In our lattice structure that our nearest neighbours. In we look.
+
+248
+00:35:21,640 --> 00:35:29,740
+In a bit more detail about exactly what that means, uh, given particular data structure.
+
+249
+00:35:30,580 --> 00:35:43,630
+And of course, we still have the same energy contribution coming from that external magnetic field minus h times the sum over all the spins.
+
+250
+00:35:45,490 --> 00:35:52,990
+And we want some formal definition that will distinguish between these two cases, the idealised entourage,
+
+251
+00:35:52,990 --> 00:36:00,370
+in case that we have solved long ago and can write down in just one line versus this new,
+
+252
+00:36:01,540 --> 00:36:06,070
+uh, situations, new setups that I have claimed is more interesting.
+
+253
+00:36:09,880 --> 00:36:20,680
+So the formal definition that we'll distinguish between these two cases is to look at these energies and consider what happens to them.
+
+254
+00:36:20,680 --> 00:36:30,940
+If we make a change to one of these microscopic degrees of freedom that are contributing to the overall macroscopic energy of our system.
+
+255
+00:36:33,460 --> 00:36:45,460
+So let's call this change in energy delta e sub j and see that it arises from making some alteration.
+
+256
+00:36:46,900 --> 00:36:52,200
+To the chase particle in our system.
+
+257
+00:36:54,810 --> 00:37:07,650
+Then, if this change in energy is independent of all of the other particles K that are not J, we can conclude and we will define that to.
+
+258
+00:37:09,750 --> 00:37:15,870
+Be a non-interacting system where we can expect things like factorisation to hold.
+
+259
+00:37:17,040 --> 00:37:23,370
+Though I should also say that factorisation can be possible in some interacting systems.
+
+260
+00:37:26,280 --> 00:37:32,070
+So this is a shorter definition than just looking for Factorisation itself.
+
+261
+00:37:36,960 --> 00:37:50,040
+So if and only if this change energy is independent of particles k that are different from J, we can say that the system is non-interacting.
+
+262
+00:37:54,420 --> 00:38:01,860
+So in our example of these two state spins in some fixed position in a lattice,
+
+263
+00:38:02,430 --> 00:38:12,270
+there is only one possible change that we can make if we want to make some alteration to the jth particle.
+
+264
+00:38:13,740 --> 00:38:16,830
+In this case, the only possibility is to negate it.
+
+265
+00:38:17,010 --> 00:38:25,680
+Flip it from pointing up to down or from down to up, or more generally take it to a negative of its initial value.
+
+266
+00:38:27,720 --> 00:38:36,780
+And in the simple case that we have seen before that we want to identify as non-interacting on the basis of this.
+
+267
+00:38:37,200 --> 00:38:48,959
+Now from the definition. Then our energy starts off as minus h times the sum of all of these spins,
+
+268
+00:38:48,960 --> 00:38:56,370
+which we can write by pulling out spin j and summing over all the other spins.
+
+269
+00:38:56,940 --> 00:39:03,900
+And when we flip spin j, this energy just picks up a negative sign there.
+
+270
+00:39:04,740 --> 00:39:06,900
+Nothing else is changed.
+
+271
+00:39:07,650 --> 00:39:25,410
+And if we look at the resulting change in energy, we just get twice h times spin j itself, which is indeed independent of all the other spins.
+
+272
+00:39:25,410 --> 00:39:29,610
+A sub k whenever k is not equal to j.
+
+273
+00:39:30,420 --> 00:39:38,730
+So we can conclude that we do indeed have a non-interacting system as we hoped and expected.
+
+274
+00:39:39,660 --> 00:39:46,110
+So definition is working. All right. So this is not much harder to.
+
+275
+00:39:48,990 --> 00:39:54,840
+Do the same check for the more interesting case that I can't quite fit on the screen.
+
+276
+00:39:54,840 --> 00:39:57,510
+So just take a quick look at it while it's there.
+
+277
+00:39:57,510 --> 00:40:08,550
+It has this product of two spins in addition to the other term involving the external magnetic field.
+
+278
+00:40:09,930 --> 00:40:28,980
+And in this case. When we pull out this spin J we can start off with a sum over all of these spins k that are in that set of nearest neighbours j, k.
+
+279
+00:40:30,930 --> 00:40:36,540
+In addition to all of these terms here, one of the nearest neighbour pairs is J.
+
+280
+00:40:37,920 --> 00:40:47,670
+We have an additional contribution from, let's call them the nearest neighbour pairs m-k that do not include J.
+
+281
+00:40:48,210 --> 00:40:53,220
+So some times s, k and then these same.
+
+282
+00:40:56,590 --> 00:41:05,730
+Terms involving the. External magnetic field multiplied all the spins linearly.
+
+283
+00:41:06,420 --> 00:41:13,049
+When we flip spin j you know get two sign changes and the negative sign becomes
+
+284
+00:41:13,050 --> 00:41:20,100
+a plus on this term where the sum over the nearest neighbours of spin j.
+
+285
+00:41:21,240 --> 00:41:25,890
+This term is unaffected, as j is not in there at all.
+
+286
+00:41:28,170 --> 00:41:38,040
+And here as before, we have. Plus SJ goes to minus SJ and the other spins remain the same.
+
+287
+00:41:38,430 --> 00:41:45,890
+So if we look at the difference introduced by this alteration of the spin, then there will now be two.
+
+288
+00:41:45,960 --> 00:41:49,020
+Terms. Both of them.
+
+289
+00:41:51,120 --> 00:41:54,150
+Involve twice suspended. Coming out.
+
+290
+00:41:56,340 --> 00:42:12,720
+And. In addition to two h times SJ, we now have an additional contribution from all of these nearest neighbours of J, S, k.
+
+291
+00:42:14,400 --> 00:42:26,850
+So the delta j that we have in this case, unlike the non-interacting case, does depend on spins s k.
+
+292
+00:42:29,250 --> 00:42:33,300
+Where k is not equal to j.
+
+293
+00:42:35,640 --> 00:42:42,810
+So this system is not only interesting, but it is interacting with the screen there.
+
+294
+00:42:43,510 --> 00:42:55,740
+Um s so our definition at least is aligning with our expectations for uh, what is interacting and what is not.
+
+295
+00:42:58,660 --> 00:43:05,320
+So any questions about that definition or that example just before we wrap up over the last few minutes for today.
+
+296
+00:43:13,040 --> 00:43:16,520
+So mathematically, all very basic so far. Today things get more interesting.
+
+297
+00:43:17,310 --> 00:43:21,200
+Uh, for the remainder of of the module.
+
+298
+00:43:23,660 --> 00:43:32,150
+So what we have done effectively is introduced one of the more famous models in statistical mechanics in brilliant,
+
+299
+00:43:32,840 --> 00:43:37,280
+um, mathematical science itself where.
+
+300
+00:43:40,520 --> 00:43:54,030
+Given. An energy theory spin system that contains this sort of sum over nearest neighbour pairs SJ times escape.
+
+301
+00:43:57,080 --> 00:44:04,550
+If we define our lattice structure that determines what these nearest neighbour pairs actually are.
+
+302
+00:44:06,830 --> 00:44:15,740
+Um, so that depends on the type of lattice that we set up, whether it is square cubic, however many dimensions we have,
+
+303
+00:44:16,310 --> 00:44:22,160
+whether it's that honeycomb lattice for graphene that will dictate the nearest neighbour pairs.
+
+304
+00:44:24,410 --> 00:44:30,950
+So the lattice structure. Tells us what those nearest neighbour pairs are.
+
+305
+00:44:31,160 --> 00:44:40,040
+So given this information, this product of nearest neighbour spins and the lattice defining what those nearest neighbours are,
+
+306
+00:44:41,540 --> 00:44:45,320
+this system is known as the easing model.
+
+307
+00:44:49,790 --> 00:44:54,590
+It was, as its name suggests, invented by a fellow named Vilhelm Watts.
+
+308
+00:44:55,280 --> 00:45:06,860
+And let's assign it to his students heirs to using to work on as a PhD project and using uh solves a one dimensional case in 1924.
+
+309
+00:45:07,490 --> 00:45:17,809
+And, um, in the time since then, this has gone on to be one of the most widely studied models, uh, in all of science.
+
+310
+00:45:17,810 --> 00:45:20,390
+Really? I'm getting ahead of myself a bit.
+
+311
+00:45:20,870 --> 00:45:29,380
+Um, and we will come back to that history when we look at, um, the prospects for actually solving the using model,
+
+312
+00:45:29,390 --> 00:45:35,510
+what is indeed what others have done in the hundred and one years since his time.
+
+313
+00:45:36,390 --> 00:45:44,930
+Okay, for now, let's just take a quick look at the last couple of minutes about the lattices that we will look at over the next week,
+
+314
+00:45:44,930 --> 00:45:53,420
+and that will focus at least two lectures on three dimensional cubic lattices.
+
+315
+00:45:55,640 --> 00:46:04,640
+Where, um, the two dimensional cubic lattice is a small lattice in three dimensions it's known as a simple cubic lattice.
+
+316
+00:46:05,000 --> 00:46:12,590
+In higher dimensions we have hypercube lattices. Um, whether those are 4 or 5 dimensions, they can all be mathematically defined.
+
+317
+00:46:14,810 --> 00:46:19,970
+We will talk about our spins as living on the sides of this lattice.
+
+318
+00:46:20,720 --> 00:46:26,330
+So that is given by these points sort of like circles.
+
+319
+00:46:27,050 --> 00:46:31,640
+So each circle is identified with a spin pointing up or down.
+
+320
+00:46:32,930 --> 00:46:42,370
+Nearest neighbour. Uh sites. Nearest neighbour spins are connected by links that can go in any of the dimensions that we have.
+
+321
+00:46:42,380 --> 00:46:56,510
+So here is a three dimensional cubic lattice drawn, represented in two dimensional form, where we have x, y and z axes in there.
+
+322
+00:46:57,320 --> 00:46:59,230
+And there are similarly other.
+
+323
+00:47:02,450 --> 00:47:10,010
+Minimum units unit cells in two dimensions that are known as silicates, as well as three dimensions that are known as cubes,
+
+324
+00:47:10,400 --> 00:47:17,810
+and the overall lattice of how many sites can be built up from all of those briquettes, cubes, and higher dimensional hyper cubes.
+
+325
+00:47:20,480 --> 00:47:28,400
+So that will be the setting that we come back to on Wednesday for more in-depth of sophisticated analysis.
+
+326
+00:47:29,030 --> 00:47:35,389
+So I run out of time to charge forward with the easy model and data structures.
+
+327
+00:47:35,390 --> 00:47:42,080
+So I'll stop there and just give one last call for any questions to deal with today.
+
+328
+00:47:45,620 --> 00:47:54,740
+And if there are not I, I'll shut down the recording and let you continue on in the last couple of weeks of lectures for this semester.
+
