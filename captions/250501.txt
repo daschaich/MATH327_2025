@@ -1,0 +1,1373 @@
+1
+00:00:00,570 --> 00:00:04,010
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Okay, I should be recording underway.
+
+2
+00:00:04,020 --> 00:00:18,299
+So the second to last tutorial for the Physical Mechanics Insurance Amex meeting on the morning of Thursday,
+
+3
+00:00:18,300 --> 00:00:24,870
+the 1st of May holiday in many countries, and possibly for many students as well.
+
+4
+00:00:24,870 --> 00:00:30,480
+I know some are in these zoom remotely and others are probably catching up with this at double speed.
+
+5
+00:00:31,110 --> 00:00:39,959
+I, as we pass the exam, is the one logistical note I also mentioned yesterday is that the terrible
+
+6
+00:00:39,960 --> 00:00:44,970
+lecture is coming up later this afternoon over the central teaching hub with,
+
+7
+00:00:45,570 --> 00:00:55,260
+uh, free refreshments. If you show up. It is, uh, pure mathematics, but a aspect of that related to statistical mechanics.
+
+8
+00:00:55,770 --> 00:01:10,860
+So possibly of interest to those in this module who are seeing this soon enough to make it the magic number for today is 54, 97, 55.
+
+9
+00:01:10,860 --> 00:01:18,780
+And. Just as always, check to see if there are any questions about it.
+
+10
+00:01:19,030 --> 00:01:29,340
+We've seen it throughout this week or earlier in the module before the break, and otherwise, if there are not,
+
+11
+00:01:30,300 --> 00:01:38,850
+then the plan for today is to quickly review some generic feedback on the second homework that come out after the break,
+
+12
+00:01:39,450 --> 00:01:50,100
+and then look at the last set of tutorial exercises on various aspects of lattice systems,
+
+13
+00:01:50,640 --> 00:01:57,450
+including variants of the easing model defined on different underlying lattice structures,
+
+14
+00:01:58,140 --> 00:02:09,990
+as well as generalisations beyond the using model that get to ongoing research in some prominent.
+
+15
+00:02:12,720 --> 00:02:26,170
+Um. All the areas of physics that were recently recognised with things like 2024 Nobel Prize.
+
+16
+00:02:27,070 --> 00:02:42,490
+So I will not zoom in just yet and instead flip over to canvas where the assignment instructions and I will see if I can.
+
+17
+00:02:43,760 --> 00:02:53,940
+Expand this without. Causing the Dark cam to crash as it sometimes those shiny things full screen.
+
+18
+00:02:54,390 --> 00:03:05,070
+So in general, for the second homework, there were not as many difficulties as there were on some of the versions of the first homework.
+
+19
+00:03:05,070 --> 00:03:13,590
+It was pretty good performance consistently across all four of the questions that came around with.
+
+20
+00:03:15,720 --> 00:03:25,430
+Yeah. For the the first question looking at the diesel cycle and compare that to the auto cycle,
+
+21
+00:03:26,040 --> 00:03:34,880
+specifically the efficiencies of those two cycles that describe simplified or idealised petrol engines versus diesel engines.
+
+22
+00:03:35,720 --> 00:03:42,440
+The main issue here is that we will have destroyed the dock here, but you can see a bit more,
+
+23
+00:03:43,100 --> 00:03:50,060
+um, when going through to compute the efficiency in terms of the work in or out.
+
+24
+00:03:51,020 --> 00:03:58,219
+The most common issue was only accounting for the idiomatic stages as to the work,
+
+25
+00:03:58,220 --> 00:04:05,540
+and missing the fact that this injection stage for the diesel cycle, unlike the auto cycle, does work itself.
+
+26
+00:04:06,350 --> 00:04:14,960
+As we can see in this diagram, the fact that it has a non-zero area underneath it going down to the zero pressure axis.
+
+27
+00:04:15,260 --> 00:04:20,300
+That is the work that is done by the system on its surroundings in that stage.
+
+28
+00:04:20,920 --> 00:04:28,970
+And that's in contrast to the other cycle where condition happened at a constant volume, so that no work was able to be done.
+
+29
+00:04:31,690 --> 00:04:37,870
+Um, there were not as many issues with missing that contribution as there had been in the past,
+
+30
+00:04:37,870 --> 00:04:43,120
+because many students, um, took the approach of rewriting the efficiency,
+
+31
+00:04:43,120 --> 00:04:53,949
+not in terms of the network, but in terms of the relative amounts of heat that flowed into or out of the system, which is certainly legitimate.
+
+32
+00:04:53,950 --> 00:05:01,690
+And something that we did in lecture using the first half of an annexe to relate the network to the net heat,
+
+33
+00:05:02,290 --> 00:05:09,010
+and then cancelling out the input heat to just get one minus the ratio of input and output heat.
+
+34
+00:05:10,600 --> 00:05:20,679
+The trap that people fell into there was just writing down the amount of heat that came into the system through this injection in the ignition stage,
+
+35
+00:05:20,680 --> 00:05:24,160
+in terms of the heat capacity, a constant pressure,
+
+36
+00:05:24,460 --> 00:05:29,620
+um, without actually deriving what that heat capacity across constant pressure might be or, um,
+
+37
+00:05:30,130 --> 00:05:37,470
+recording where it had been locked up, which is that's something that we glossed over in the module study.
+
+38
+00:05:37,900 --> 00:05:42,880
+Lecture notes or any of the module materials needs some reference to get full marks.
+
+39
+00:05:43,480 --> 00:05:50,650
+So it wasn't too hard to get to the efficiency as this ratio of temperature differences.
+
+40
+00:05:51,130 --> 00:05:56,170
+And then it's just applications of the idiomatic relation,
+
+41
+00:05:56,170 --> 00:06:04,000
+the condition of constant entropy that is proportional to be times ten to the three horsepower for classical
+
+42
+00:06:04,720 --> 00:06:14,680
+non-relativistic particles that provides these temperature and volume ratios in terms of the two.
+
+43
+00:06:17,590 --> 00:06:25,870
+Ratios that we are interested in, the compression ratio and this so-called cut off ratio that is unique to the diesel cycle.
+
+44
+00:06:26,620 --> 00:06:37,810
+But one trap that people fell into with some regularity in part B here was, um, actually not showing the inequality that was targeted,
+
+45
+00:06:38,020 --> 00:06:46,120
+but instead proving that AC was greater than zero, which is a bit easier to show, doesn't run into the, um,
+
+46
+00:06:46,900 --> 00:07:01,570
+indeterminate forms that we run into when trying to determine the value of this function f of c at that limit to c going to one,
+
+47
+00:07:01,660 --> 00:07:10,690
+which is the limit effectively, where this diesel cycle collapses into just two bars that fall on top of each other,
+
+48
+00:07:12,330 --> 00:07:16,600
+and there is no longer a cut off ratio distinct from the compression ratio.
+
+49
+00:07:17,230 --> 00:07:23,230
+The fact that FFC is greater than one has mentioned in the assignment means that the
+
+50
+00:07:23,230 --> 00:07:29,260
+efficiency for the diesel cycle with a fixed compression ratio is always worse,
+
+51
+00:07:29,260 --> 00:07:36,070
+is less efficient than the petrol cycle. The difference is that because the diesel cycle,
+
+52
+00:07:36,460 --> 00:07:43,270
+as we talked about in the tutorial that carries out this compression just on air without any fuel mixed in with it,
+
+53
+00:07:43,900 --> 00:07:49,030
+so that air, just to get to a very high pressure to spontaneously combust.
+
+54
+00:07:49,660 --> 00:07:52,960
+In practice that doesn't happen outside of the thermonuclear explosion.
+
+55
+00:07:54,490 --> 00:08:02,230
+And this allows the compression ratio from V1 to V2 to be much larger than we can have for a petrol engine without knocking.
+
+56
+00:08:02,650 --> 00:08:08,590
+So that's how diesel engines can often roughly double the efficiency of a petrol engine.
+
+57
+00:08:09,310 --> 00:08:16,210
+Um, even though with a fixed cost ratio between these two volumes, they are actually less efficient.
+
+58
+00:08:19,610 --> 00:08:27,570
+Moving on to. Question two here, looking at mixed ideal gases in both the canonical and mathematical ensembles.
+
+59
+00:08:28,140 --> 00:08:32,280
+Things are fairly straightforward. Um.
+
+60
+00:08:33,900 --> 00:08:39,050
+It's the danger, with some people assuming the result to be shown in section.
+
+61
+00:08:39,310 --> 00:08:45,160
+In part C wanted to actually compute the pressure and show that the pressure of the two
+
+62
+00:08:45,160 --> 00:08:51,280
+gases is equal to the sum of the two pressures of the individual gases in isolation,
+
+63
+00:08:52,030 --> 00:08:59,730
+that is. Something that happens only for non-interacting um systems.
+
+64
+00:09:00,060 --> 00:09:06,590
+The ideal gases that don't account for any of the particles exerting forces on each other.
+
+65
+00:09:06,600 --> 00:09:11,370
+In which case, as we've discussed this week, things are much more complicated.
+
+66
+00:09:12,030 --> 00:09:23,339
+Um. And it turns out to be another situation where that approximation of a non-interacting ideal gas is a quite accurate one,
+
+67
+00:09:23,340 --> 00:09:32,950
+to the point that the so-called normal partial pressures was observed as an empirical approximation back more than 200 years ago,
+
+68
+00:09:32,950 --> 00:09:39,809
+and became known as Dalton's law of partial pressures added to the various other
+
+69
+00:09:39,810 --> 00:09:45,030
+laws that were being discovered around the time of the Industrial Revolution.
+
+70
+00:09:45,060 --> 00:09:51,090
+So Gardner's law Lofthouse, essentially. And there was always a bit before,
+
+71
+00:09:51,090 --> 00:10:00,900
+but all coming from the same applications of the ideal gas law and economic ensemble and moving to the correct canonical ensemble.
+
+72
+00:10:02,880 --> 00:10:06,150
+There is a simpler way of doing it than.
+
+73
+00:10:07,670 --> 00:10:15,620
+Um, explicitly applying the. Same level of approximation into that in the assignment,
+
+74
+00:10:16,670 --> 00:10:22,520
+which is just to keep the factorial and recognise the series expansion for the exponential function.
+
+75
+00:10:23,090 --> 00:10:29,750
+So whether students apply that factorial approximation, the service approximation or not.
+
+76
+00:10:30,480 --> 00:10:36,680
+I think most everyone got to this final expression for the grand canonical.
+
+77
+00:10:38,050 --> 00:10:46,420
+Partition function and potential. And then the main issue in this half of the problem is forgetting about the contributions
+
+78
+00:10:46,420 --> 00:10:51,760
+of the average particle number and chemical potential to the internal energy.
+
+79
+00:10:52,270 --> 00:11:02,560
+In part because most of the quantum gases we looked at, things like photons and neutrinos have this chemical potential set to zero.
+
+80
+00:11:03,580 --> 00:11:11,410
+As we discussed before the break in lecture, so that the energy was just given by that first term with a non-zero chemical potential.
+
+81
+00:11:12,280 --> 00:11:19,090
+We have to keep track of the contributions from each of the individual particle numbers,
+
+82
+00:11:19,660 --> 00:11:22,990
+which then they to cancel some of the terms that come from the chain rule,
+
+83
+00:11:24,130 --> 00:11:31,030
+leaving just what we might have tried to write down by inspection instead of the three halves.
+
+84
+00:11:31,030 --> 00:11:38,770
+And to the ensemble, we have three hours times the expectation value of n times t the granting of an ensemble.
+
+85
+00:11:40,830 --> 00:11:53,970
+Um, and this is sometimes miss, if this term is lost for the chain rule, and the derivative here is done incorrectly and there or.
+
+86
+00:11:55,190 --> 00:12:02,959
+Frequent issues with the chain rule in, I think, all the questions two, three and four in question three.
+
+87
+00:12:02,960 --> 00:12:10,130
+For instance, in part B, when we look at contract reassignment, um,
+
+88
+00:12:12,020 --> 00:12:20,210
+but I have kind of explicitly written here as this second derivative all wrapped up in parentheses,
+
+89
+00:12:21,290 --> 00:12:29,599
+that was partially to provide a hint and avoid a common issue when folks convert from
+
+90
+00:12:29,600 --> 00:12:37,190
+the log derivative to its equivalent expression c times the derivative d c if we have.
+
+91
+00:12:39,830 --> 00:12:53,840
+C acting on other words, this is and this is not equal to c squared t squared c squared.
+
+92
+00:12:54,440 --> 00:13:01,550
+Even though there is sometimes a temptation to just say that we have these two factors squared,
+
+93
+00:13:02,330 --> 00:13:10,430
+just take the second derivative and multiply it by c squared. That misses the term where the outer derivative axiom in C and the inner derivatives.
+
+94
+00:13:10,820 --> 00:13:21,620
+That was the most common cause of difficulties with that would be to derive the relation depending on that second derivative.
+
+95
+00:13:27,360 --> 00:13:30,540
+And then in part four. Or sorry. Question four.
+
+96
+00:13:31,230 --> 00:13:35,640
+This is largely fairly straightforward computations.
+
+97
+00:13:36,000 --> 00:13:44,490
+Taking derivatives and integrating them. A lot of people recognise the Bose-Einstein integrals that we saw in the lectures,
+
+98
+00:13:44,880 --> 00:13:51,390
+which can also be looked up in various websites like a continuous digital library of mathematical functions.
+
+99
+00:13:53,430 --> 00:13:56,819
+Or just Wolfram Alpha. Mathematica.
+
+100
+00:13:56,820 --> 00:14:06,600
+Matlab. Symbolic Python. Most should recognise the structure of integral if it's given the appropriate limits of integration.
+
+101
+00:14:06,600 --> 00:14:12,179
+To get the nice product of the gamma function times the Riemann zeta function.
+
+102
+00:14:12,180 --> 00:14:17,460
+And there are a few students who actually derived the results for those integrals, which is nice.
+
+103
+00:14:18,300 --> 00:14:24,660
+Um, think the first step there is to look at things in this form,
+
+104
+00:14:25,320 --> 00:14:31,010
+recognise that with the energy greater than zero and the inverse temperature also greater than zero,
+
+105
+00:14:31,020 --> 00:14:34,410
+this exponential factor is always going to be less than one.
+
+106
+00:14:34,950 --> 00:14:45,660
+So we have a geometric series from that one over one minus e to the minus theta times energy that geometric series runs from.
+
+107
+00:14:46,560 --> 00:14:56,430
+Well that's for sure. It goes from zero to infinity, just the self.
+
+108
+00:14:56,820 --> 00:15:02,970
+And then there is one additional factor out the exponential hanging out in the numerator.
+
+109
+00:15:03,270 --> 00:15:08,160
+That just adds one more factor over changing in there.
+
+110
+00:15:08,550 --> 00:15:17,070
+Once that's raised to the power, that additional factor changes the limits of summation from 0 to 1.
+
+111
+00:15:18,360 --> 00:15:22,800
+And this once the exponential factor is simplified,
+
+112
+00:15:22,950 --> 00:15:39,270
+we you recognise as the previous function sum into one to infinity x2 and to the arguments of the Riemann zeta function.
+
+113
+00:15:39,430 --> 00:15:53,249
+Yes. And that is how the scores outside integrals come out, to involve the relationship between the gamma function and zeta functions.
+
+114
+00:15:53,250 --> 00:16:00,600
+That was nice to see some students deriving that rather than relying on looking up the answer.
+
+115
+00:16:02,220 --> 00:16:05,010
+It's the one dangerous bit in this question.
+
+116
+00:16:05,490 --> 00:16:13,890
+In part B is needing to take some care when looking at the more complicated integral that involves the network,
+
+117
+00:16:13,920 --> 00:16:17,550
+rather than the geometric series from the start.
+
+118
+00:16:18,450 --> 00:16:25,440
+This can be put into the same form as the previous integration, just by integrating by parts.
+
+119
+00:16:26,680 --> 00:16:30,600
+Derivative of the law gives us the one over one minus e to the minus x,
+
+120
+00:16:31,830 --> 00:16:36,780
+but there is also the secondary term that becomes indeterminate at both of those limits.
+
+121
+00:16:37,230 --> 00:16:42,120
+So as x goes to infinity, x to the power three halves diverges.
+
+122
+00:16:43,590 --> 00:16:53,590
+Um. Whereas the exponential minus infinity goes to zero and the value of one goes to zero.
+
+123
+00:16:53,600 --> 00:17:01,940
+So we have infinity times zero. That then can be recast in the form of a ratio, infinity or infinity.
+
+124
+00:17:01,940 --> 00:17:05,300
+That can be a little bit hard to confirm that it is in fact zero.
+
+125
+00:17:06,680 --> 00:17:15,620
+Let's could also make the claim that polynomials diverge more rapidly than for the rhythms.
+
+126
+00:17:16,760 --> 00:17:20,150
+Um, this is just a way to show that.
+
+127
+00:17:20,870 --> 00:17:25,100
+Similarly, in the limit of x going to zero, we have a zero there.
+
+128
+00:17:25,640 --> 00:17:30,350
+But if all of one minus one is log of zero, that itself diverges.
+
+129
+00:17:30,800 --> 00:17:34,490
+If you're again the polynomial is the log.
+
+130
+00:17:34,880 --> 00:17:41,460
+And that can be shown fairly quickly with just a little reorganisation and not at all.
+
+131
+00:17:42,110 --> 00:17:56,450
+So. That I think is all the aspects of the homework worth mentioning, unless there are specific questions about any of these issues.
+
+132
+00:17:58,850 --> 00:18:13,340
+And. If there are not, I'll go back to the projector here and put up this picture that I had on just as we got started today,
+
+133
+00:18:13,790 --> 00:18:25,189
+to motivate some of the consideration of more general lattice systems beyond just the easy model of the simple square or cubic or hypercube class,
+
+134
+00:18:25,190 --> 00:18:31,850
+depending on the dimensionality, um, that we are focusing on in the lectures,
+
+135
+00:18:32,690 --> 00:18:37,759
+there are many more general lattice structures that an easy model and liberal,
+
+136
+00:18:37,760 --> 00:18:49,790
+as well as more general, uh, systems or models or theories beyond just having spins that can point upward or down that define these a model.
+
+137
+00:18:50,750 --> 00:19:06,500
+So this is, um, a motivational illustration of a style of lattice structure that was of big news, a big focus of research in the previous decade.
+
+138
+00:19:07,160 --> 00:19:08,900
+This is called a therapeutic tide.
+
+139
+00:19:10,490 --> 00:19:23,570
+And so the flow comes from iron here, which is one of these two sets of greenish atoms in this, um, solid structure.
+
+140
+00:19:25,130 --> 00:19:29,810
+And the black tide just, um, labelled by P,
+
+141
+00:19:29,810 --> 00:19:39,980
+and there is any one of a set of elements in the 15th column of the periodic table that starts with nitrogen and goes on down from there.
+
+142
+00:19:42,140 --> 00:19:54,260
+And what these therapeutic tides involve is alternating layers of three dimensional lattice structures with alternating atoms of iron,
+
+143
+00:19:54,560 --> 00:20:04,850
+and one of those nitrogen like particles with just a limited set of links between those
+
+144
+00:20:04,850 --> 00:20:14,810
+individual layers and layers that are formed of different sets of molecules lanthanide from um,
+
+145
+00:20:15,230 --> 00:20:23,270
+from the forest molecules in that column, in the periodic table, along with an oxygen or fluorine molecule.
+
+146
+00:20:23,390 --> 00:20:27,740
+So that's the red and orange dots here. So those are the details.
+
+147
+00:20:27,740 --> 00:20:37,100
+What is actually interesting about this is the temperature at which this undergoes a phase
+
+148
+00:20:37,100 --> 00:20:43,700
+transition from an insulating phase to the superconducting phase we talked about on Monday,
+
+149
+00:20:44,180 --> 00:20:52,730
+where electrical currents are able to flow without any resistance and without generating any waste heat that reduces their efficiency.
+
+150
+00:20:54,890 --> 00:21:01,100
+It turned out that materials following this sort of pattern with some elaborations,
+
+151
+00:21:01,880 --> 00:21:07,670
+like what are called doping, is where a certain fraction of these molecules were replaced by others,
+
+152
+00:21:08,360 --> 00:21:22,759
+gave, uh, critical temperatures for superconductivity that were the orders of magnitude higher than what was typically seen at ordinary sea level.
+
+153
+00:21:22,760 --> 00:21:28,100
+Atmospheric pressures, um, in other materials in research in decades leading up to this.
+
+154
+00:21:28,790 --> 00:21:37,700
+But that amounts to a practice, is that these materials only had to be cool to about 50 Kelvin in order to superconducting,
+
+155
+00:21:38,480 --> 00:21:46,010
+and that can be compared to the 1.7 Kelvin that's needed for the twisted bilayer graphene we looked at briefly on Monday.
+
+156
+00:21:47,260 --> 00:21:58,090
+Or the Millikelvin or micro Kelvin temperatures needed for superconductivity in some more ordinary materials investigated in previous decades.
+
+157
+00:21:58,900 --> 00:22:02,680
+So this is just some motivation for.
+
+158
+00:22:05,650 --> 00:22:16,390
+Looking at some of these different lattice structures. And we can not go all the way to the most complicated ones being used in ongoing research.
+
+159
+00:22:16,960 --> 00:22:22,330
+But split the difference to some extent. I um.
+
+160
+00:22:26,390 --> 00:22:33,020
+Generalising away from square or cubic lattice without getting too complicated.
+
+161
+00:22:34,460 --> 00:22:38,720
+So looking at here tutorial exercises that are on canvas.
+
+162
+00:22:41,110 --> 00:22:43,690
+They show a few of these simple examples,
+
+163
+00:22:44,110 --> 00:22:50,770
+contrasting in two dimensions the square lattice with the honeycomb lattice we have already already discussed.
+
+164
+00:22:51,430 --> 00:22:57,850
+This is the arrangement of atoms that show up in graphene.
+
+165
+00:22:58,630 --> 00:23:01,840
+That is a single material that is a single atomic clear thick.
+
+166
+00:23:02,440 --> 00:23:11,110
+It has some of those remarkable electronic properties that are related to this honeycomb lattice structure.
+
+167
+00:23:14,170 --> 00:23:20,580
+One thing we can see about the honeycomb lattice is just this.
+
+168
+00:23:20,620 --> 00:23:29,229
+For these three lattices shown here, they can be easily categorised by just the coordination number that we defined yesterday.
+
+169
+00:23:29,230 --> 00:23:36,010
+So the number of links that attach to a typical site for a square lattice that
+
+170
+00:23:36,010 --> 00:23:42,310
+is four and generalises to 2D in d dimensions for the honeycomb lattice.
+
+171
+00:23:42,970 --> 00:23:49,270
+Then look around here and see that every site is connected to three links in the mentions.
+
+172
+00:23:50,800 --> 00:23:56,110
+So it has a coordination number of three rather than the four of the square lattice.
+
+173
+00:23:56,740 --> 00:24:03,940
+And this can be generalised to higher dimensional lattice structures that are called hyper diamond lattices.
+
+174
+00:24:04,660 --> 00:24:12,490
+That will all have d plus one coordination number in D dimensions.
+
+175
+00:24:14,470 --> 00:24:25,000
+The other variant shown here is a triangular lattice where the unit cells are these triangles as opposed to these hexagons.
+
+176
+00:24:27,340 --> 00:24:37,180
+Really the honeycomb lattice here, and the triangular layers are much more closely related than might immediately be apparent by looking at them.
+
+177
+00:24:37,900 --> 00:24:50,110
+And in particular, if we fill in the central points of all of the hexagonal unit cells in the honeycomb lattice, we can start to see, well,
+
+178
+00:24:50,410 --> 00:24:55,690
+exactly the triangles of the triangular lattice work for the layer can trace out a
+
+179
+00:24:55,690 --> 00:25:02,559
+collection of six triangles that give the hexagonal structure in the honeycomb.
+
+180
+00:25:02,560 --> 00:25:09,370
+Less so. Both honeycomb and triangular lattices are through secretly based on these hexagons.
+
+181
+00:25:11,560 --> 00:25:23,230
+And. I suspect you were counting, as I was saying, that that each of these sites now has six links attached to it.
+
+182
+00:25:23,230 --> 00:25:32,080
+So just double the number of the honeycomb lattice, which also generalises to higher dimensional versions of the triangular lattice,
+
+183
+00:25:32,680 --> 00:25:42,820
+what are called eight star lattices that have two times d plus one links for sites in D dimensions.
+
+184
+00:25:44,890 --> 00:25:52,930
+One other simple lattice structure that is more native to two dimensions is the so-called Kagami lattice,
+
+185
+00:25:52,930 --> 00:26:00,399
+which is named after effectively a type of Japanese weaving leaves where the reeds
+
+186
+00:26:00,400 --> 00:26:06,520
+that are woven together take this pattern of alternating triangles and hexagons,
+
+187
+00:26:07,660 --> 00:26:15,340
+but unlike the honeycomb and triangular lattice, the coordination number is not 3 or 6.
+
+188
+00:26:15,730 --> 00:26:24,130
+It is in fact the same coordination number of four links per site that we had with a simple square lattice.
+
+189
+00:26:24,820 --> 00:26:35,030
+But now. A different lattice structure with the same coordination number involving triangles and hexagons sort of interwoven in this way.
+
+190
+00:26:36,230 --> 00:26:42,830
+So illustrating that it's just the coordination number is not necessarily.
+
+191
+00:26:45,410 --> 00:26:51,230
+Enough to define the lattice structure as a whole.
+
+192
+00:26:52,880 --> 00:26:57,740
+So those are different lattice structures that we can imagine and using model living on.
+
+193
+00:26:57,890 --> 00:27:01,760
+In every case we just have spins that take values of plus 1 or -1.
+
+194
+00:27:02,180 --> 00:27:11,450
+At every site we have, our nearest neighbour is given by all of these links and we can.
+
+195
+00:27:15,560 --> 00:27:30,530
+Also then reconsider these using models. Slightly generalised the expression for the energy that we focussed on in the lectures.
+
+196
+00:27:32,240 --> 00:27:44,570
+So rather than having just the site over the sorry, the sum over nearest neighbour sites as J and k.
+
+197
+00:27:47,510 --> 00:27:57,200
+Um, we can put in an arbitrary coupling constant j, where j equals one gets us back to what we looked at lectures.
+
+198
+00:27:57,830 --> 00:28:04,430
+And there are qualitative differences that can arise depending on the specific value of J.
+
+199
+00:28:04,880 --> 00:28:12,290
+So for each of these three lattice structures we can, you know, start by asking some simple questions.
+
+200
+00:28:13,580 --> 00:28:25,790
+For instance, what are the ground states or typical states in the high temperature disordered phase for those different generalised larger structures,
+
+201
+00:28:25,790 --> 00:28:37,490
+and this more generalised using model that could have, say, positive or negative coupling constant J.
+
+202
+00:28:38,470 --> 00:28:51,550
+So. There are also generalisations that we can make, which are probably just mentioned in passing for a bit of.
+
+203
+00:28:54,180 --> 00:28:57,270
+Entertainment. Um. Possible interests.
+
+204
+00:28:58,050 --> 00:29:06,960
+Various ways that we can go beyond just these two stage spins that either have a value of plus one pointing up or minus one pointing down.
+
+205
+00:29:08,370 --> 00:29:21,269
+Um, so one possibility that actually showed up in one of the sample exams that are on canvas is to go from those two states,
+
+206
+00:29:21,270 --> 00:29:26,010
+up or down to having more general possibilities.
+
+207
+00:29:27,810 --> 00:29:38,770
+So instead of an SGA or an s, k. So let's say psi I is an element of 1 or -1.
+
+208
+00:29:39,370 --> 00:29:47,620
+It can be generalised to a sigma I that can take any of q values.
+
+209
+00:29:49,060 --> 00:29:56,380
+This is known as the flux model. When q equals two we get back to something equivalent to the easing model.
+
+210
+00:29:59,830 --> 00:30:10,570
+We look at in the second specimen exam and will reveal how that actually happens.
+
+211
+00:30:11,800 --> 00:30:24,280
+So any change of variables here that relates the easy model product of spins to a Chronica delta for.
+
+212
+00:30:25,490 --> 00:30:33,140
+Each of these spin variables that can have 2 or 3 for any number of possible states.
+
+213
+00:30:34,760 --> 00:30:49,840
+We can also generalise these spin variables to still be pointed up or down, but have a continuous magnitude rather than just say unit like say,
+
+214
+00:30:49,940 --> 00:31:02,899
+pointing up versus pointing down the values of the degrees of freedom that can grow larger or smaller in both positive and negative direction.
+
+215
+00:31:02,900 --> 00:31:14,770
+So the continuous magnitude. Um, so the these S's then are traditionally called phi.
+
+216
+00:31:15,680 --> 00:31:19,760
+The energy schematically goes like.
+
+217
+00:31:22,190 --> 00:31:27,470
+A phi squared plus phi to the fourth term.
+
+218
+00:31:27,830 --> 00:31:37,969
+And this is the situation that describes with some caveats, the behaviour of the Higgs goes on the Standard Model of particle physics.
+
+219
+00:31:37,970 --> 00:31:46,250
+Just this simple generalisation from using model to um degrees of freedom with continuous magnitudes,
+
+220
+00:31:47,150 --> 00:32:01,160
+and then a third common generalisation, which I meaning to zoom out to see more of this on the screen is to fix the magnitude, but allow.
+
+221
+00:32:03,790 --> 00:32:09,460
+The spins to, uh, can rotate continuously.
+
+222
+00:32:13,270 --> 00:32:24,940
+Rather than just pointing up or down. So in the case where we have a spinner fixed like that is allowed to rotate in a plane.
+
+223
+00:32:25,030 --> 00:32:28,450
+So around the singularity theta going from 0 to 2 pi.
+
+224
+00:32:30,910 --> 00:32:37,630
+I call that a two dimensional plane rotation. And that system is known as the X-Y model.
+
+225
+00:32:38,080 --> 00:32:46,360
+And that is an example where the phase transitions have the infinite order behaviour that is mentioned in passing yesterday.
+
+226
+00:32:46,870 --> 00:32:54,520
+So there are no discontinuities in any derivatives of the order parameter.
+
+227
+00:32:54,910 --> 00:32:58,660
+But there is a sense in which there is a so called a logical phase transition.
+
+228
+00:32:59,410 --> 00:33:07,660
+Uh, a peak at Burzynski Castle is tell this phase transition that received the Nobel Prize in 2016.
+
+229
+00:33:08,140 --> 00:33:19,420
+I think so within the past ten years. Um, it can also generalise to three dimensional rotations characterised by two intensities spins a fixed line,
+
+230
+00:33:19,420 --> 00:33:24,910
+three able to rotate at each lattice site in any orientation in three dimensional space,
+
+231
+00:33:25,780 --> 00:33:40,900
+and that is known as the Heisenberg model, as opposed to the easy model X, y model, and has some applications in uh.
+
+232
+00:33:40,930 --> 00:33:44,650
+Holographic screen duality is connected to quantum gravity.
+
+233
+00:33:45,650 --> 00:33:53,690
+So those are all some fun things that we can do just on the basis of the work that we are going through.
+
+234
+00:33:53,690 --> 00:33:58,880
+In lectures on the using model as a simple example of these interacting systems.
+
+235
+00:34:00,200 --> 00:34:06,330
+This is some. Direct ways to generalise that work.
+
+236
+00:34:06,600 --> 00:34:10,290
+To quickly get to a very interesting physics.
+
+237
+00:34:11,340 --> 00:34:18,060
+And there are actually further generalisations that we do still have some time to talk about, one of which is the main.
+
+238
+00:34:20,130 --> 00:34:23,670
+Exercise in some of this week's tutorial sheets.
+
+239
+00:34:24,540 --> 00:34:32,099
+And this has to do with um. Generalising further,
+
+240
+00:34:32,100 --> 00:34:40,710
+these lattices that are spread out in two dimensional space to something that is a bit more abstract but still mathematically interesting,
+
+241
+00:34:42,120 --> 00:34:51,000
+and that is a lattice where every single spin is a nearest neighbour of every other spin.
+
+242
+00:34:52,020 --> 00:35:01,950
+So I tend to call this a fully connected lattice, in the sense that there are links between every single pair of spins.
+
+243
+00:35:02,700 --> 00:35:10,380
+In more mathematical contexts, it is more often referred to as a complete graph,
+
+244
+00:35:12,030 --> 00:35:17,280
+which gets us into the realm of graph theory rather than lattice field theory.
+
+245
+00:35:18,300 --> 00:35:22,560
+The idea is every site is the nearest neighbour of every other site.
+
+246
+00:35:23,250 --> 00:35:33,420
+Here are some illustrations of complete graphs for zero through 1 to 12 sites.
+
+247
+00:35:34,680 --> 00:35:45,540
+So the kingdom assigned to each of these illustrations is counting the number of links that there are for 1 to 3 sites.
+
+248
+00:35:45,900 --> 00:35:50,280
+So with three sites we have these three links.
+
+249
+00:35:50,820 --> 00:35:56,370
+With these four sites we can count one, two, three, four, five and six links.
+
+250
+00:35:57,090 --> 00:36:04,260
+And there is a fairly simple formula you can derive to determine how many links there are for
+
+251
+00:36:04,260 --> 00:36:12,300
+a given number of sites n but if we imagine formulating an easy model on this complete graph,
+
+252
+00:36:13,440 --> 00:36:16,710
+then the energy can be something like.
+
+253
+00:36:19,560 --> 00:36:23,070
+A sum over all pairs of spins.
+
+254
+00:36:23,070 --> 00:36:31,350
+So we label the spins and sum over the product of sj and s k for all unique pairs,
+
+255
+00:36:31,350 --> 00:36:38,370
+where the index j is less than the index k, and then subtract the usual.
+
+256
+00:36:40,830 --> 00:36:45,150
+Uh term. Talking to the external magnetic field skew.
+
+257
+00:36:46,050 --> 00:36:56,310
+The overall free factor is being scaled by a factor of n just to keep the energy per spin finite.
+
+258
+00:36:56,880 --> 00:37:00,930
+In that thermodynamic limit, n goes to infinity.
+
+259
+00:37:01,650 --> 00:37:08,430
+In that case, we can appreciate every spin will have infinitely many links attached to it.
+
+260
+00:37:09,150 --> 00:37:18,990
+So the coupling constant coming in from that attachment has to be scaling down by at least this factor of n um.
+
+261
+00:37:23,280 --> 00:37:30,780
+In order to keep just the energy person or the energy density finite.
+
+262
+00:37:31,380 --> 00:37:42,090
+We can also express this in a way that can be simpler to analyse something not over an ordered arrangement of J less than k,
+
+263
+00:37:42,090 --> 00:37:46,649
+but over all unequal pairs of gm k with just a factor of half.
+
+264
+00:37:46,650 --> 00:37:51,840
+Because these products commute and are being double counted whenever we have,
+
+265
+00:37:51,840 --> 00:38:02,310
+say, s1, s2 times s2, S1 is just a factor of two there that shows up and.
+
+266
+00:38:04,350 --> 00:38:15,870
+One question. A simple starting point for this connected graph is just counting how many links as a function of n um there are.
+
+267
+00:38:17,070 --> 00:38:30,030
+That will help to confirm that. This way of storing the coupling j actually suffices to keep the energy finite, and so on.
+
+268
+00:38:30,600 --> 00:38:46,890
+A model of using spins on this complete graph is in physics circles called a Curie vise model, and this is one of the few special cases.
+
+269
+00:38:48,960 --> 00:38:54,810
+Where the small is exactly solvable in the sense that a closed form expression for a clinical
+
+270
+00:38:54,810 --> 00:39:02,100
+partition function can be derived and written down from summing over all possible microstates.
+
+271
+00:39:03,360 --> 00:39:11,400
+That exact solution is tricky, but can be simplified if we.
+
+272
+00:39:14,910 --> 00:39:24,990
+Make some approximations. So this is the task that you can play with over the coming weeks, and that long bank holiday weekend.
+
+273
+00:39:26,010 --> 00:39:36,840
+The way that I find easiest to approximately solve the security advice model is to organise the sum over microstates.
+
+274
+00:39:39,630 --> 00:39:42,870
+As a sum over magnetisation s.
+
+275
+00:39:44,880 --> 00:39:51,630
+Going from minus one. Two plus one, as we talked about yesterday.
+
+276
+00:39:52,560 --> 00:40:04,890
+And then in the limit that there are a large number of sites in this fully connected lattice that some of.
+
+277
+00:40:05,730 --> 00:40:10,680
+However, the exponential doesn't factor in the partition function turns into.
+
+278
+00:40:10,680 --> 00:40:22,890
+When expressed in terms of measures, Asians can be approximated as integration from -1 to 1 over the magnetisation as a continuous function.
+
+279
+00:40:25,200 --> 00:40:34,890
+And so these same approximations that we made when looking at the azimuthal expansion can be brought to bear to actually compute that integral.
+
+280
+00:40:35,340 --> 00:40:42,270
+It's disconcertingly expanding around its sharp peak and then extending the limits of integration,
+
+281
+00:40:43,170 --> 00:40:51,030
+uh, to give a nice, simpler expression, then you can recognise from past work.
+
+282
+00:40:53,430 --> 00:41:01,169
+So that is hopefully something that will suffice to keep you entertained over the
+
+283
+00:41:01,170 --> 00:41:06,870
+coming week leading up to the very last tutorial that we will have next Thursday.
+
+284
+00:41:09,720 --> 00:41:13,580
+Um. I will just spend.
+
+285
+00:41:14,850 --> 00:41:25,020
+A few minutes, commenting informally on an even more general generalisation of the using model
+
+286
+00:41:25,560 --> 00:41:30,390
+that we can make by introducing a coupling that is not simply constants,
+
+287
+00:41:31,410 --> 00:41:34,680
+but is actually allowed to vary.
+
+288
+00:41:36,690 --> 00:41:53,520
+From one link to the next. So if we sum over all j not equal to k, we can make this j have indices j k and multiply it using stems sj and s k.
+
+289
+00:41:55,260 --> 00:41:59,550
+Um. This is simple enough that it can just give us the usual easing model.
+
+290
+00:42:00,000 --> 00:42:07,709
+If we set almost all of those J's to zero and have only the ones with nearest neighbour pairs for a non-zero constant value,
+
+291
+00:42:07,710 --> 00:42:09,360
+that gets us back to the easy model.
+
+292
+00:42:09,810 --> 00:42:19,140
+We can then add, say, smaller values of j for next to nearest neighbours, and that is uh called in any easing model.
+
+293
+00:42:19,710 --> 00:42:24,890
+So. For some technical reasons.
+
+294
+00:42:24,890 --> 00:42:32,719
+This. Next week, if the next two nearest neighbours.
+
+295
+00:42:32,720 --> 00:42:40,520
+Which of these three ends are given a negative coupling j rather than the positive one that is referred to as an
+
+296
+00:42:40,790 --> 00:42:47,869
+antiferromagnetic next to nearest neighbour interaction that cannot compete with a positive J for the nearest neighbours,
+
+297
+00:42:47,870 --> 00:42:55,129
+again increasing competition in phase transitions in their security vice model, of course,
+
+298
+00:42:55,130 --> 00:43:04,850
+just comes when all of the J's are nonzero and just a symmetric constant, so zero along the diagonal.
+
+299
+00:43:04,850 --> 00:43:14,750
+When j equals k otherwise constant. We get back to that CarAdvice model, and the subscript here that I put down,
+
+300
+00:43:15,530 --> 00:43:28,010
+SSG actually refers to the more general situation where these couplings j sub j k are simply symmetric with a zero diagonal.
+
+301
+00:43:28,880 --> 00:43:36,770
+Those are called spin classes and know there are many possibilities for what these j could be.
+
+302
+00:43:37,700 --> 00:43:46,010
+One option is to draw them randomly from a Gaussian distribution that is sometimes called the Sheraton Protectorate model,
+
+303
+00:43:46,790 --> 00:43:52,550
+and a fellow named Giorgio Parisi back in the 70s was able to exactly solve that
+
+304
+00:43:52,730 --> 00:44:01,700
+spin class with Gaussian checks that were all nonzero when J was not equal to k.
+
+305
+00:44:02,990 --> 00:44:07,160
+That was part of what got him the Nobel Prize in 2021.
+
+306
+00:44:07,790 --> 00:44:16,580
+On the role of complexity there, in part because these spin classes are in a different context, known as Hopfield networks.
+
+307
+00:44:17,960 --> 00:44:24,770
+So the fellow named Hopfield, John Hopfield, wrote the same sort of thing down in the context of information processing.
+
+308
+00:44:25,400 --> 00:44:33,650
+And these Hopfield networks were one of the first artificial neural networks that were efficient to train
+
+309
+00:44:33,980 --> 00:44:40,520
+and use to circulation and extract the information later on so that they could recognise patterns,
+
+310
+00:44:41,180 --> 00:44:53,050
+um, and identify. Input that was coded in the proper way in the form of these weights connecting the different using nodes in that network.
+
+311
+00:44:54,130 --> 00:45:06,280
+If we actually do a further generalisation in and restore that magnetic field term now itself allowed to vary from site to site.
+
+312
+00:45:07,720 --> 00:45:19,720
+This is called a Boltzmann machine, and is another, probably the most popular form of neural network that is used today for things like ChatGPT.
+
+313
+00:45:21,520 --> 00:45:26,829
+Um, especially in the form of what are called Restricted Boltzmann machines,
+
+314
+00:45:26,830 --> 00:45:34,180
+where instead of having close connections between all the different degrees of freedom in that system,
+
+315
+00:45:34,690 --> 00:45:43,080
+it is split up into a series of layers, and at the end, within the layers, the nodes are not connected.
+
+316
+00:45:43,120 --> 00:45:51,850
+There are complicated connections going from from one layer to the next that turns out to be more efficient and.
+
+317
+00:45:54,130 --> 00:45:58,210
+Within the past few years, it's been dubbed deep learning,
+
+318
+00:45:59,020 --> 00:46:08,829
+where the deep actually refers to just having a larger number of layers than was initially considered back in the 70s,
+
+319
+00:46:08,830 --> 00:46:14,290
+when these Hopfield networks in the best machines were being defined as.
+
+320
+00:46:14,710 --> 00:46:18,220
+These generalisations of these evolved.
+
+321
+00:46:19,860 --> 00:46:31,710
+The spin class itself that was part of the 2021 Nobel Prize has interesting physics that may be the worst, explains the name at the one minute level.
+
+322
+00:46:32,640 --> 00:46:36,690
+The idea is getting us into non-equilibrium territory.
+
+323
+00:46:37,350 --> 00:46:41,190
+Um, the spin refers to the easing spins that we have here.
+
+324
+00:46:41,490 --> 00:46:50,250
+And if we imagine starting off with the system in its ordered phase where the spins are mostly aligned, and then, say,
+
+325
+00:46:50,250 --> 00:46:58,260
+raising the temperature or turning off the order and feel that got the system into the ordered phase and moving into the disordered phase.
+
+326
+00:46:59,280 --> 00:47:08,160
+What happens is that in the non-equilibrium context, the order parameter that makes a section will go from being non-zero to being zero.
+
+327
+00:47:09,390 --> 00:47:19,380
+And in most systems, like the easy model on these simple lattices, that happens instantaneously, exponentially, quickly in time after the quench.
+
+328
+00:47:19,560 --> 00:47:31,770
+From order to disorder in a glassy system, it happens very slowly, similar to what is actually going on in these glasses that we are used to.
+
+329
+00:47:32,880 --> 00:47:40,380
+Technically, the a glass does not have any crystalline or lattice structure among its atoms.
+
+330
+00:47:40,770 --> 00:47:45,630
+They are in a disordered phase that mathematically would be called a liquid.
+
+331
+00:47:47,190 --> 00:47:56,520
+The distinction between a liquid and a class is that the remnants of the order that, um,
+
+332
+00:47:56,970 --> 00:48:06,600
+would correspond to a true solid phase given by its medical order matter is decaying only very slowly in the glassware as it vanishes,
+
+333
+00:48:06,810 --> 00:48:14,640
+and then almost instantly when the heavy liquid. So there is a remnant of the solidity that we expect from a solid,
+
+334
+00:48:15,060 --> 00:48:21,900
+even though formerly the atoms that compose this glass are disordered and behave like a liquid,
+
+335
+00:48:23,010 --> 00:48:31,920
+that liquid like behaviour sets in only very slowly and is only really visible if you take a piece of glass and let it sit for a few hundred years.
+
+336
+00:48:32,400 --> 00:48:40,890
+You will see that it starts to get fatter at the bottom, as the atoms gradually fall under the force of gravity.
+
+337
+00:48:41,550 --> 00:48:46,710
+Being free. Free to move, but able to move in a way that is not possible for itself.
+
+338
+00:48:47,400 --> 00:48:51,450
+I've rambled on a bit too long about spin classes and taken us over time.
+
+339
+00:48:51,750 --> 00:48:56,459
+I should check to see if there are any questions about any of these generalisations,
+
+340
+00:48:56,460 --> 00:49:03,330
+or the specific task of at least approximately solving security of Ice model and computing.
+
+341
+00:49:03,330 --> 00:49:09,230
+It's an article partition function. Shaking heads.
+
+342
+00:49:09,530 --> 00:49:15,140
+So I'll let you go and enjoy the 1st of May.
+
+343
+00:49:16,220 --> 00:49:19,160
+The warm, sunny weather will last.
+
