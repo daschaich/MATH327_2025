@@ -39,7 +39,6 @@
 
 % Shortcuts
 \newcommand{\be}{\ensuremath{\beta} }
-\renewcommand{\d}[1]{\ensuremath{\mathop{d#1}} }
 \newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
 % ------------------------------------------------------------------
 
@@ -47,21 +46,36 @@
 
 % ------------------------------------------------------------------
 \begin{document}
-\newcommand{\thisunit}{MATH327 Extra (2d bosons)}
-\newcommand{\moddate}{Last modified 27 Apr.~2025}
+\newcommand{\thisunit}{MATH327 Extra (Moving spins)}
+\newcommand{\moddate}{Last modified 12 May 2025}
 \begin{center}
   {\Large \textbf{MATH327: StatMech and Thermo, Spring 2025}} \\[12 pt]
-  {\Large \textbf{Extra practice \ --- \ 2d bosons}} \\[24 pt]
+  {\Large \textbf{Extra practice \ --- \ Moving spins}} \\[24 pt]
 \end{center}
 
-Consider a gas of bosons with mass $m$ confined to a two-dimensional surface of area $A$, with temperature $T = 1 / \be$ and chemical potential $\mu$.
-Its grand-canonical potential is % One less factor of k in polar coords means one less factor of sqrt(2mE)*L/(pi hbar).  Also factor of 1/2 vs. photons and spin-half fermions since only one polarization
+Consider $N$ distinguishable spins that can move in a two-dimensional plane at fixed temperature $T = 1 / \be$.
+There is an external magnetic field of strength $H > 0$ perpendicular to the plane.
+Each spin has mass $m$ and energy
 \begin{equation*}
-  \Phi(T, \mu) = \frac{mAT}{2\pi \hbar^2} \int_0^{\infty} \log\left[1 - e^{-\be (E - \mu) / T}\right] \d{E}.
+  E(\vec p, s) = \frac{1}{2m}p^2 - Hs
 \end{equation*}
-What is the average particle number $\vev{N}$ in the case of vanishing chemical potential, $\mu = 0$?
+where $p^2 = p_x^2 + p_y^2 \geq 0$ while $s$ can take the two values $s = 1$ (aligned with the external field) and $s = -1$ (anti-aligned against the external field).
+The single-particle partition function is
+\begin{equation*}
+  Z_1(\be) = \sum_s \int \exp\left[-\be E(\vec p, s)\right] \; d^2{p}
+\end{equation*}
 
-\textbf{Hint:} Expect something unexpected.  (You can find more information in \\ \href{https://doi.org/10.1016/0370-1573(77)90052-7}{doi:10.1016/0370-1573(77)90052-7}.)
+\begin{enumerate}[label={(\alph*)}]
+  \item Show that the Helmholtz free energy for this system is
+        \begin{equation*}
+          F = -\frac{N}{\be} \log\left[\frac{4\pi m}{\be} \cosh(\be H)\right].
+        \end{equation*}
 
+  \item Calculate the internal energy $\vev{E}$ and the entropy $S$.
+
+  \item Describe the lowest-energy state of the system.
+        What is the corresponding ground-state energy $E_0$?
+        Show that $\vev{E} \to E_0$ in the zero-temperature limit.
+\end{enumerate}
 \end{document}
 % ------------------------------------------------------------------

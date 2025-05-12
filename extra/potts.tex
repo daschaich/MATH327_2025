@@ -39,29 +39,47 @@
 
 % Shortcuts
 \newcommand{\be}{\ensuremath{\beta} }
-\renewcommand{\d}[1]{\ensuremath{\mathop{d#1}} }
-\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\de}{\ensuremath{\delta} }
+\newcommand{\si}{\ensuremath{\sigma} }
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
 \begin{document}
-\newcommand{\thisunit}{MATH327 Extra (2d bosons)}
-\newcommand{\moddate}{Last modified 27 Apr.~2025}
+\newcommand{\thisunit}{MATH327 Extra (Potts model)}
+\newcommand{\moddate}{Last modified 12 May 2025}
 \begin{center}
   {\Large \textbf{MATH327: StatMech and Thermo, Spring 2025}} \\[12 pt]
-  {\Large \textbf{Extra practice \ --- \ 2d bosons}} \\[24 pt]
+  {\Large \textbf{Extra practice \ --- \ Potts model}} \\[24 pt]
 \end{center}
 
-Consider a gas of bosons with mass $m$ confined to a two-dimensional surface of area $A$, with temperature $T = 1 / \be$ and chemical potential $\mu$.
-Its grand-canonical potential is % One less factor of k in polar coords means one less factor of sqrt(2mE)*L/(pi hbar).  Also factor of 1/2 vs. photons and spin-half fermions since only one polarization
+The Potts model is a simple generalization of the Ising model.
+It is defined by the energy
 \begin{equation*}
-  \Phi(T, \mu) = \frac{mAT}{2\pi \hbar^2} \int_0^{\infty} \log\left[1 - e^{-\be (E - \mu) / T}\right] \d{E}.
+  E(\si) = -\sum_{(ij)} \de_{\si_i, \si_j},
 \end{equation*}
-What is the average particle number $\vev{N}$ in the case of vanishing chemical potential, $\mu = 0$?
+where the spin variable $\si_n \in \left\{1, 2, \cdots, q\right\}$ at lattice site $n$ has $q \geq 2$ possible values.
+($q = 2$ corresponds to the Ising model.)
+Recall the Kronecker delta $\de_{\si_i, \si_j} = 1$ for $\si_i = \si_j$ and vanishes for $\si_i \ne \si_j$.
+As always, the canonical partition function at temperature $T = 1 / \be$ is
+\begin{equation*}
+  Z(\be, N) = \sum_{\left\{\si_n\right\}} \exp\left[-\be E(\si)\right].
+\end{equation*}
 
-\textbf{Hint:} Expect something unexpected.  (You can find more information in \\ \href{https://doi.org/10.1016/0370-1573(77)90052-7}{doi:10.1016/0370-1573(77)90052-7}.)
+Consider the Potts model on the fully connected lattice with $N$ sites, where each site is a nearest neighbour of every other site.
+Is the mean-field approximation reliable for the fully connected lattice with $N \gg 1$?  Explain why or why not with clear reasoning.
+
+Let $\left\{x_1, x_2, \cdots, x_q\right\}$ be the fraction of spins with value $\left\{1, 2, \cdots, q\right\}$.
+Then $x = \max\left\{x_1, x_2, \cdots, x_q\right\}$ is an order parameter for the Potts model, with $\frac{1}{q} \leq x \leq 1$.
+For $q \geq 3$, the mean-field approximation gives the self-consistency condition % Slightly simplifying the notation of doi:10.1088/0305-4470/7/9/003
+\begin{equation*}
+  x = \frac{e^{A\be x} - 1}{e^{A\be x} + q - 1}
+\end{equation*}
+for this order parameter, where $A$ is a real positive constant.
+Find the temperature $T_c$ at which $x_c = \frac{q - 2}{q - 1}$ satisfies this self-consistency condition.
+
+As a warm-up, you can carry out the calculation for some fixed $q \geq 3$.
 
 \end{document}
 % ------------------------------------------------------------------

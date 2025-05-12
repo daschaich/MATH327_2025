@@ -39,29 +39,37 @@
 
 % Shortcuts
 \newcommand{\be}{\ensuremath{\beta} }
-\renewcommand{\d}[1]{\ensuremath{\mathop{d#1}} }
+\newcommand{\eps}{\ensuremath{\varepsilon} }
 \newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
 \begin{document}
-\newcommand{\thisunit}{MATH327 Extra (2d bosons)}
-\newcommand{\moddate}{Last modified 27 Apr.~2025}
+\newcommand{\thisunit}{MATH327 Extra (Magnetization)}
+\newcommand{\moddate}{Last modified 12 May 2025}
 \begin{center}
   {\Large \textbf{MATH327: StatMech and Thermo, Spring 2025}} \\[12 pt]
-  {\Large \textbf{Extra practice \ --- \ 2d bosons}} \\[24 pt]
+  {\Large \textbf{Extra practice \ --- \ Magnetization}} \\[24 pt]
 \end{center}
 
-Consider a gas of bosons with mass $m$ confined to a two-dimensional surface of area $A$, with temperature $T = 1 / \be$ and chemical potential $\mu$.
-Its grand-canonical potential is % One less factor of k in polar coords means one less factor of sqrt(2mE)*L/(pi hbar).  Also factor of 1/2 vs. photons and spin-half fermions since only one polarization
-\begin{equation*}
-  \Phi(T, \mu) = \frac{mAT}{2\pi \hbar^2} \int_0^{\infty} \log\left[1 - e^{-\be (E - \mu) / T}\right] \d{E}.
-\end{equation*}
-What is the average particle number $\vev{N}$ in the case of vanishing chemical potential, $\mu = 0$?
+Consider a classical system of $N$ distinguishable, non-interacting `spins' in a lattice at temperature $T = 1 / \be$, where the value $s_n$ of each spin can vary \emph{continuously} in the range $-1 \leq s_n \leq 1$.
+In an external magnetic field of strength $H > 0$, the internal energy of the system is $\displaystyle E = -H \sum_{n = 1}^N s_n$.
 
-\textbf{Hint:} Expect something unexpected.  (You can find more information in \\ \href{https://doi.org/10.1016/0370-1573(77)90052-7}{doi:10.1016/0370-1573(77)90052-7}.)
+\begin{enumerate}[label={(\alph*)}]
+  \item By integrating over the continuous $s_n$, calculate the canonical partition function $Z$ and the Helmholtz free energy $F$ of the system, both as functions of $\be H$.
 
+  \item The derivative of the Helmholtz free energy with respect to the magnetic field defines the magnetization
+        \begin{equation*}
+          \vev{m} = -\frac{1}{N} \pderiv{F}{H}.
+        \end{equation*}
+        Assuming finite $H > 0$, calculate $\vev{m}$ for this system as a function of $\be H$, and determine its low- and high-temperature limits, $\displaystyle \lim_{T \to 0} \vev{m}$ and $\displaystyle \lim_{T \to \infty} \vev{m}$.
+
+  \item For low but non-zero temperatures, expand $\vev{m}$ in terms of $\eps \equiv e^{-\be H} \ll 1$ to find the largest temperature-dependent term in this expansion.
+
+  \item For high but finite temperatures, expand $\vev{m}$ in terms of $x \equiv \be H \ll 1$ to find the largest temperature-dependent term in this expansion.
+\end{enumerate}
 \end{document}
 % ------------------------------------------------------------------
