@@ -1,0 +1,1465 @@
+1
+00:00:00,960 --> 00:00:10,350
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Okay. I think we can get underway with what is the last formal class meeting for statistical mechanics and thermodynamics.
+
+2
+00:00:11,200 --> 00:00:19,770
+And this is something that the university has automatically rescheduled from what should have been last Monday's lecture,
+
+3
+00:00:20,130 --> 00:00:30,150
+where we had a bank holiday instead of a lecture. And I don't think it's wise or fair to introduce new material in the week that you have your exam.
+
+4
+00:00:30,540 --> 00:00:40,140
+So rather than doing what would have been done in the third hour of lecture last week, the plan is for this to be a less formal review of the module.
+
+5
+00:00:40,590 --> 00:00:50,010
+Some preparation for the exam. Just considering what it might look like, some standard suggestions for how to approach it and revise for it,
+
+6
+00:00:50,100 --> 00:00:56,310
+some of which may well be old news to all of you.
+
+7
+00:00:56,730 --> 00:01:04,350
+So I'm not going to be writing too much. Mainly just the magic number that you do get because this is a timetable.
+
+8
+00:01:04,380 --> 00:01:08,910
+Lecture 56 3962.
+
+9
+00:01:09,750 --> 00:01:18,540
+And what I'm going to do is first start with any questions from you to make this as relevant and.
+
+10
+00:01:20,940 --> 00:01:22,469
+Useful to you as possible.
+
+11
+00:01:22,470 --> 00:01:37,260
+And depending on how many questions you have coming in, we can then talk through some things together, like the learning outcomes for the module, the.
+
+12
+00:01:39,990 --> 00:01:47,730
+Overview of the various topics that we have covered over the past few months, and looking,
+
+13
+00:01:47,940 --> 00:02:00,420
+depending on how the time goes in some more detail at the specimen exams tab or um, canvas, which I will turn to now and.
+
+14
+00:02:01,940 --> 00:02:08,000
+I can start off with some questions that have come in by email over the past week,
+
+15
+00:02:08,870 --> 00:02:14,780
+one of which have to do with the materials that are organised on this margins page.
+
+16
+00:02:15,140 --> 00:02:20,390
+In canvas, there was a question are there going to be more extra practice problems coming up?
+
+17
+00:02:21,320 --> 00:02:26,210
+I've been hoping to get a few more set up in addition to these seven.
+
+18
+00:02:26,990 --> 00:02:35,270
+Um, time is running out though, so if I don't, they're not able to get to that today or tomorrow that there will be anything new appearing after that.
+
+19
+00:02:35,570 --> 00:02:39,590
+And all these, as they say, are just extra in there.
+
+20
+00:02:39,590 --> 00:02:45,979
+If you have the time and inclination to work through a few more, uh, exercises,
+
+21
+00:02:45,980 --> 00:02:51,530
+applications and in some cases, further examples if you do want more of those.
+
+22
+00:02:53,540 --> 00:03:02,660
+The reading list, which is also in the lecture notes and maybe easier to access there than authenticating through canvas,
+
+23
+00:03:03,230 --> 00:03:10,970
+does have a lot of ideas for ways that statistical mechanics and so it can be applied.
+
+24
+00:03:11,750 --> 00:03:17,330
+The downside of this is that some of these use different terminologies that have different focuses.
+
+25
+00:03:17,870 --> 00:03:24,589
+A lot of the more physics focussed books like say, write for example, etc., um,
+
+26
+00:03:24,590 --> 00:03:29,270
+they will be less concerned with things like the mathematical derivations we've been doing,
+
+27
+00:03:29,810 --> 00:03:37,100
+deriving the partition function and using it to, uh, compute things like the internal energy or particle number.
+
+28
+00:03:37,490 --> 00:03:45,379
+They will have specific units for Boltzmann factor and ask you to convert between energy and
+
+29
+00:03:45,380 --> 00:03:51,110
+temperature units and things that are maybe not so interesting from a medical perspective,
+
+30
+00:03:51,110 --> 00:03:58,640
+but are relevant if you want to use statistical mechanics. If you wanted to, say, design an engine or other device.
+
+31
+00:04:00,380 --> 00:04:12,920
+And I will say that reminds me, at least one of those extra practice problems does bring in the need to insert the physical units,
+
+32
+00:04:12,920 --> 00:04:16,550
+get things in terms of nanometres or Kelvin, um,
+
+33
+00:04:16,820 --> 00:04:21,649
+and looking for instance, of the Planck spectrum and deciding what the colour of the cells would be for
+
+34
+00:04:21,650 --> 00:04:27,860
+those four dimensions need to convert from temperature to energy to wavelength.
+
+35
+00:04:28,370 --> 00:04:32,989
+And similarly for the parametric equation, you want to get things in units of atmospheric pressure.
+
+36
+00:04:32,990 --> 00:04:39,200
+Given an altitude in metres, there's a need to insert dimensional constants there,
+
+37
+00:04:39,650 --> 00:04:44,000
+rather than working in sensible units where they all reduced to one.
+
+38
+00:04:45,260 --> 00:04:50,910
+So. We will see if I can get any more up there.
+
+39
+00:04:51,600 --> 00:04:57,720
+The other question that came in pointed out that there is a section in the
+
+40
+00:04:57,810 --> 00:05:01,990
+unit nine lecture notes that we were not able to cover in lectures last week.
+
+41
+00:05:02,010 --> 00:05:05,760
+We jumped straight from a summary of.
+
+42
+00:05:07,860 --> 00:05:15,380
+The. Using model transition temperature compared to mean field theory in various numbers of dimensions,
+
+43
+00:05:16,880 --> 00:05:25,010
+to the numerical computations that were used to find the results in dimensions greater than 2%, the analytic solution is known.
+
+44
+00:05:26,030 --> 00:05:32,780
+There is a section here on exact results, which was indeed skipped last week, which is for lack of time.
+
+45
+00:05:33,260 --> 00:05:41,120
+It can be fun to look at, and an aspect of this question was since it was not taught through in lectures, will it be on the exam?
+
+46
+00:05:41,990 --> 00:05:50,660
+And the answer is that in first of all, anything that shows up in the lecture notes is, uh, fair game to show on the exam, but in practice,
+
+47
+00:05:51,530 --> 00:06:00,770
+you can guess if it, uh, this is highlighted in the lecture, it would be very impolite of me to put a lot of weight on that in the exam.
+
+48
+00:06:01,280 --> 00:06:07,249
+So can use will try your conclusions from that statement.
+
+49
+00:06:07,250 --> 00:06:13,550
+And for what we have focussed on in the lectures, not just in the, the lecture notes.
+
+50
+00:06:15,020 --> 00:06:25,429
+Uh, so part of my purpose in going through those two questions in a bit of length was to give you
+
+51
+00:06:25,430 --> 00:06:30,470
+an idea or give you some time to think if you had any ideas for things you wanted to raise.
+
+52
+00:06:31,130 --> 00:06:36,290
+Before we go through the plan that I have here.
+
+53
+00:06:40,390 --> 00:06:47,500
+And if nothing has come to mind, then learning outcomes is the first thing we can look at.
+
+54
+00:06:48,190 --> 00:06:52,470
+And in general, this is learning outcomes.
+
+55
+00:06:52,480 --> 00:07:02,740
+You should see them for all of your modules, either on canvas or in the more formal module description that is linked in the student information.
+
+56
+00:07:02,740 --> 00:07:13,060
+Second canvas. And you may or may not know that these are good things to look at, especially in particular when preparing for the exams,
+
+57
+00:07:13,570 --> 00:07:21,250
+because the modules are designed so that the assessments, like exams, will test whether these learning outcomes have been attained.
+
+58
+00:07:22,090 --> 00:07:29,739
+So a lot of these you'll be able to recognise from the computer assignments and the more traditional
+
+59
+00:07:29,740 --> 00:07:35,860
+homework assignments that you go through and some others you may soon recognise in the exam.
+
+60
+00:07:37,120 --> 00:07:43,149
+So the learning outcomes are the starting point for any module design the exams.
+
+61
+00:07:43,150 --> 00:07:46,180
+The assessments are designed to test those learning outcomes.
+
+62
+00:07:46,750 --> 00:07:52,270
+And then the final last stage is designing lectures and tutorials to ensure that you have
+
+63
+00:07:52,270 --> 00:07:57,370
+all the tools you need to carry out the assessments and demonstrate the learning outcomes.
+
+64
+00:07:58,780 --> 00:08:02,740
+So the first of these addresses diffusion.
+
+65
+00:08:03,370 --> 00:08:09,460
+And going back well, we will do a overview of the module soon.
+
+66
+00:08:10,150 --> 00:08:18,220
+And things we have seen regarding how these large scale behaviours emerge from underlying microscopic dynamics.
+
+67
+00:08:19,090 --> 00:08:30,340
+So our first tutorial looked at the example of a roulette game, where each spin of the wheel had certain probabilities for winning or losing money,
+
+68
+00:08:30,790 --> 00:08:38,810
+and over many spins was added up to a nice smooth continuous distribution function that could be um,
+
+69
+00:08:39,430 --> 00:08:47,340
+analysed with the central limit theorem and exhibited diffusion, in that case a drift loss.
+
+70
+00:08:47,410 --> 00:08:55,930
+It was losing money after lots of spins. Uh, just how any legitimate gambling game is going to be set up.
+
+71
+00:08:56,680 --> 00:09:06,909
+And this can also to the computer assignment, which focussed on that same sort of connection between emergent macroscopic behaviour,
+
+72
+00:09:06,910 --> 00:09:11,350
+drift and diffusion emerging from underlying stochastic processes.
+
+73
+00:09:11,710 --> 00:09:17,200
+They're looking at random walks, both those for which the central limit theorem is applicable,
+
+74
+00:09:17,830 --> 00:09:28,209
+as well as the case of anomalous diffusion, where the underlying stochastic process did not have a finite mean and variance,
+
+75
+00:09:28,210 --> 00:09:31,390
+it did not satisfy the assumptions of the central limit theorem,
+
+76
+00:09:31,780 --> 00:09:39,460
+and could really only be analysed numerically in order to predict the large scale behaviour,
+
+77
+00:09:39,790 --> 00:09:47,290
+specifically the generalised diffusion time from the um random walk based on the cocaine distribution.
+
+78
+00:09:48,250 --> 00:09:54,280
+So moving on, we get to some more recognisably statistical mechanics, uh,
+
+79
+00:09:54,280 --> 00:10:06,339
+topics relating to the three main statistical ensembles that have been essentially the core factor that we built this module around the micro,
+
+80
+00:10:06,340 --> 00:10:09,130
+canonical, canonical, grand canonical ensembles,
+
+81
+00:10:09,580 --> 00:10:18,340
+all of which consider the behaviour of a large collection of degrees of freedom evolving in time, sarcastically sampling microstates,
+
+82
+00:10:18,340 --> 00:10:28,720
+giving some probability distribution, and each one conserving or fixing a different set of uh properties.
+
+83
+00:10:29,500 --> 00:10:30,850
+Energy or particle number,
+
+84
+00:10:30,850 --> 00:10:37,820
+in the case of micro canonical ensemble temperature and particle number in the case of the canonical ensemble and temperature.
+
+85
+00:10:37,850 --> 00:10:42,760
+Chemical potential, in the case, the grand canonical ensemble, and in all of those cases,
+
+86
+00:10:43,690 --> 00:10:52,929
+there were quantities that could be derived or predicted from the partition function, the grand canonical partition function,
+
+87
+00:10:52,930 --> 00:11:02,739
+or just the number of microstates, um, and the third learning outcome that we have is to essentially do that start from
+
+88
+00:11:02,740 --> 00:11:07,540
+the basis of the statistical ensembles and predict some of their properties.
+
+89
+00:11:10,900 --> 00:11:13,690
+The next two learning outcomes are.
+
+90
+00:11:14,880 --> 00:11:22,560
+And under that brought on, brought in a bit more specialised, a bit more focussed, the next looking specifically at thermodynamic processes.
+
+91
+00:11:22,950 --> 00:11:24,270
+And so what that image cycles.
+
+92
+00:11:26,700 --> 00:11:39,870
+And in particular the efficiency of thermodynamics cycles where some of the ingredients going into here are concepts of work and heat and other key
+
+93
+00:11:39,870 --> 00:11:49,650
+equations for some other naming cycles I believe are boxed off and highlighted in the lecture notes coming ultimately from the canonical ensemble.
+
+94
+00:11:51,270 --> 00:11:56,850
+Things like the cosmos entropy condition for various types of gases.
+
+95
+00:11:57,420 --> 00:12:06,090
+Although in the lectures that we work for, we focussed on classical ideal non-relativistic gases, um,
+
+96
+00:12:06,660 --> 00:12:16,950
+and then taking the ingredients and key equations that came ultimately from the canonical ensemble to put them to work.
+
+97
+00:12:17,490 --> 00:12:25,900
+In this more detailed analysis of the thermodynamic cycles built out of a sequence of forces
+
+98
+00:12:26,370 --> 00:12:33,330
+that all take the system back to its same initial macro state or thermodynamic state,
+
+99
+00:12:34,050 --> 00:12:37,170
+that that allows the cycle to be repeated over and over,
+
+100
+00:12:37,590 --> 00:12:44,370
+giving us things like engines that you heat between hot and cold reservoirs in order to do work,
+
+101
+00:12:45,120 --> 00:12:51,570
+or travel in refrigerators that do work in order to move heat from cold, hot reservoirs.
+
+102
+00:12:53,190 --> 00:12:57,590
+So similarly. In the second to last learning outcome.
+
+103
+00:12:58,100 --> 00:13:12,920
+Another specific application of the statistical ensembles that we looked at on several occasions was the analysis of ideal, non-interacting gases and.
+
+104
+00:13:15,140 --> 00:13:20,270
+The ending point for many of those analysis was deriving the equation of state.
+
+105
+00:13:20,660 --> 00:13:25,270
+That related the macroscopic properties of those various gases.
+
+106
+00:13:25,280 --> 00:13:36,290
+So they started with the ideal gas law that you're presumably has all seen before, um, as something being given to you here.
+
+107
+00:13:36,290 --> 00:13:41,179
+We have derived it starting from the canonical ensemble and the generalised that
+
+108
+00:13:41,180 --> 00:13:47,419
+for different underlying sets of particles obeying different statistical laws,
+
+109
+00:13:47,420 --> 00:13:53,690
+in particular, the quantum statistics that we introduced without requiring any separate additional
+
+110
+00:13:53,690 --> 00:13:59,179
+knowledge of quantum physics and what we have been doing since kindergarten.
+
+111
+00:13:59,180 --> 00:14:05,000
+The group just two weeks ago is addressing the final learning outcome in this list.
+
+112
+00:14:07,520 --> 00:14:15,830
+Seeing the role of interactions in these systems are moving beyond the approximation of ideal, non-interacting degrees of freedom.
+
+113
+00:14:16,280 --> 00:14:25,190
+That was everything we did before the break. Um, and it gives the idea that is the ideal for these ideal gases.
+
+114
+00:14:25,820 --> 00:14:34,670
+Interactions both allow for much, uh, broader and more interesting physical behaviour from these statistical systems.
+
+115
+00:14:35,690 --> 00:14:44,320
+And one that we have focussed on over the past couple of weeks is this idea of a phase transition going on every day,
+
+116
+00:14:44,330 --> 00:14:48,020
+tuition of boiling water or freezing water,
+
+117
+00:14:48,680 --> 00:14:54,649
+and seeing that these phase transitions mathematically are defined by divergences in
+
+118
+00:14:54,650 --> 00:15:01,040
+derivatives of the free energy that sort of the partition function in the canonical ensemble,
+
+119
+00:15:01,400 --> 00:15:06,360
+for example. So. Distinguishing phases,
+
+120
+00:15:06,930 --> 00:15:12,299
+and then analysing order parameters to tell whether those phases have a true
+
+121
+00:15:12,300 --> 00:15:17,640
+transition between them or smoothly connected by some crossover behaviour was,
+
+122
+00:15:18,960 --> 00:15:23,250
+uh, not the most recent stuff that we've talked about, so probably the freshest.
+
+123
+00:15:24,960 --> 00:15:37,540
+Aspect. Of all of the material that we can now step through and review sort of unit by unit in the outline that we have specific from learning
+
+124
+00:15:37,540 --> 00:15:49,630
+outcomes to learning materials that are developed to get you confident in demonstrating their ability to do all of these things.
+
+125
+00:15:52,140 --> 00:15:55,590
+Before moving on away from those learning outcomes.
+
+126
+00:15:55,590 --> 00:16:01,500
+Let me just for a moment to see if there are any questions that have been inspired by.
+
+127
+00:16:02,880 --> 00:16:18,020
+What I've had to say about those. So far, I'm happy with the learning outcomes.
+
+128
+00:16:18,800 --> 00:16:30,410
+There are a few places that the look for kind of impacts summaries of the materials more broadly that we've been covering,
+
+129
+00:16:30,910 --> 00:16:33,170
+uh, since the start of this term.
+
+130
+00:16:33,650 --> 00:16:46,570
+So the canvas page here in the lecture notes have this outline or table of contents just on the first page that can be used to get,
+
+131
+00:16:46,670 --> 00:16:55,670
+uh, get links to all of the units across the margins.
+
+132
+00:16:56,840 --> 00:17:07,670
+You go down to the lecture notes, I'll show you where all of these internal links should be functioning.
+
+133
+00:17:08,280 --> 00:17:16,400
+Uh, they don't seem to on this. If you download the PDF, they will take you through to the relevant bit later.
+
+134
+00:17:17,410 --> 00:17:27,969
+Uh, one point out is this the last couple of pages that go through the major you
+
+135
+00:17:27,970 --> 00:17:34,700
+unit of unit summarising what has been covered and telling you where to look.
+
+136
+00:17:34,700 --> 00:17:40,670
+If you want to review any of these particular topics in more detail.
+
+137
+00:17:42,180 --> 00:17:52,850
+So. Some of the key topics coming up in this units, starting with unit one,
+
+138
+00:17:52,970 --> 00:18:00,709
+is where we looked at the cognitive foundations underlying statistical mechanics and the use of stochastic methods
+
+139
+00:18:00,710 --> 00:18:09,170
+for analysing systems that can't easily be analysed exactly using the resources of the laws of quantum mechanics.
+
+140
+00:18:09,740 --> 00:18:16,549
+So these foundations are largely working underneath the surface of what came after this unit.
+
+141
+00:18:16,550 --> 00:18:26,240
+But they are useful. They get a lot of excellent concepts that have popped up things like expectation values, variances,
+
+142
+00:18:26,660 --> 00:18:37,820
+and the central limit theorem that show up in how all of the emergent behaviour emerges from the dynamics of 21 degrees of freedom.
+
+143
+00:18:39,380 --> 00:18:51,110
+And all of that is also connected to the analysis of probability spaces, which is the physical ensemble steps.
+
+144
+00:18:52,250 --> 00:19:01,970
+And then here the learning outcomes are particular examples of how likely that lot the structure to the following units,
+
+145
+00:19:03,140 --> 00:19:06,410
+which may be worth coming back to looking at again.
+
+146
+00:19:07,100 --> 00:19:11,000
+Even though, because we had a late spring break this term,
+
+147
+00:19:11,540 --> 00:19:18,950
+we did go through the recap of these three main statistical examples just a couple of weeks ago.
+
+148
+00:19:20,540 --> 00:19:31,340
+So unit two in this module introduced the concept of statistical ensembles in general as program spaces,
+
+149
+00:19:31,910 --> 00:19:36,080
+where we have some collection of degrees of freedom that are all the time.
+
+150
+00:19:36,740 --> 00:19:44,330
+They're subject to physical constraints, um, like the conservation of energy conservation protocols.
+
+151
+00:19:45,380 --> 00:19:52,280
+And depending on those constraints, they have different probability spaces.
+
+152
+00:19:52,760 --> 00:20:00,890
+So how the different states, the configurations of the degrees of freedom will be adopted as time passes.
+
+153
+00:20:01,400 --> 00:20:09,110
+And so trying to map how those degrees of freedom or evolving in time, we just imagine looking at snapshots of the system,
+
+154
+00:20:09,950 --> 00:20:17,239
+trusting that the configurations we see in those snapshots will follow the probability
+
+155
+00:20:17,240 --> 00:20:23,480
+distribution that emerges from the physical constraints that are the basis of these cells.
+
+156
+00:20:24,920 --> 00:20:36,590
+So in unit two, in addition to introducing statistical ensembles in general and directly, of course the first law of thermodynamics,
+
+157
+00:20:37,250 --> 00:20:50,000
+it requires the conservation of energy and use that to define the canonical ensemble for the energy and number of the system are fixed and unchanging.
+
+158
+00:20:51,570 --> 00:20:58,520
+We saw that the entropy as a defined quantity was just the logarithm of the number of possible
+
+159
+00:20:58,530 --> 00:21:05,120
+microstates that we could have for giving fixed volumes of energy a predictable number,
+
+160
+00:21:05,960 --> 00:21:12,560
+and we were able to use that to introduce a general definition.
+
+161
+00:21:12,700 --> 00:21:19,660
+Of thermodynamics equilibrium, which is the case here of the situation where entropy is maximised.
+
+162
+00:21:20,980 --> 00:21:25,480
+So the system is still. Probabilistically adopting different microstates,
+
+163
+00:21:26,380 --> 00:21:36,100
+but its large scale behaviour is so unstable and the entropy has reached a maximum and is no longer increasing,
+
+164
+00:21:36,100 --> 00:21:44,140
+as demanded by the second law of thermodynamics, the former, which we are able to derive by considering heat exchange.
+
+165
+00:21:44,860 --> 00:21:55,810
+The second law says that the entropy of the universe is oh, it must never decrease as time goes by, and in general it increases.
+
+166
+00:21:56,290 --> 00:21:59,950
+Approaching this in situation where it is maximised.
+
+167
+00:22:03,550 --> 00:22:12,610
+The temperature. As I know, the canonical system was another large quantity, like the entropy that we introduced in that unit two.
+
+168
+00:22:13,000 --> 00:22:18,520
+And it became a bit more important. And three and then moved several.
+
+169
+00:22:18,520 --> 00:22:21,880
+But it is not an ensemble to the global ensemble,
+
+170
+00:22:23,410 --> 00:22:29,110
+physically motivated by the inconvenience of having to suppose that the systems
+
+171
+00:22:29,110 --> 00:22:33,700
+we are thinking about analysing or isolated from the rest of the universe,
+
+172
+00:22:33,700 --> 00:22:38,860
+excluding others people like to observe them, measure and test their properties.
+
+173
+00:22:39,760 --> 00:22:45,280
+The canonical ensemble no longer requires that complete isolation to conserve energy,
+
+174
+00:22:45,280 --> 00:22:52,180
+but not less energy to be exchanged with the external environment of the system,
+
+175
+00:22:53,710 --> 00:23:01,750
+and in particular, this external environment provides a large thermal reservoir that fixes the temperature of the system.
+
+176
+00:23:02,290 --> 00:23:14,529
+That's now the customs quality in place of the energy that can saturate from microstate to local state and result in particular at the replica.
+
+177
+00:23:14,530 --> 00:23:19,750
+All results for that external thermal reservoir.
+
+178
+00:23:20,290 --> 00:23:33,460
+Showing that you look at sensible concepts, you were able to define a canonical system in isolation without any actual reference to us otherwise.
+
+179
+00:23:34,630 --> 00:23:38,920
+So in the canonical ensemble, all the details are of the reservoir.
+
+180
+00:23:38,920 --> 00:23:43,330
+Whatever is going on outside the system are completely unknown,
+
+181
+00:23:43,630 --> 00:23:49,990
+except for the fact that it has fixed the temperature of the system and also gives us give
+
+182
+00:23:49,990 --> 00:23:56,380
+us the derivation of the partition function to help us free energy as a small rhythm,
+
+183
+00:23:56,980 --> 00:23:59,410
+and in that partition function,
+
+184
+00:23:59,830 --> 00:24:08,710
+the Boltzmann distribution has a kind of a local solution that microstates of different energy adopt in the can all being solved.
+
+185
+00:24:10,030 --> 00:24:19,450
+So probability for local survives energy is proportional to the exponential factor,
+
+186
+00:24:20,950 --> 00:24:31,090
+which is the rise energy over that fixed temperature normalised by the partition function that ensures these probabilities add up to one.
+
+187
+00:24:33,610 --> 00:24:40,930
+And that j energy also captures all of these accessible microstates of the system.
+
+188
+00:24:46,600 --> 00:24:52,390
+One immediate application we looked at with the canonical ensemble already in Judea three,
+
+189
+00:24:52,930 --> 00:25:04,120
+was showing that the information contents of the microscopic degrees of freedom has observable consequences of the macroscopic behaviour.
+
+190
+00:25:04,690 --> 00:25:11,830
+So we looked at two very simple examples two state systems with spins that do not have each other,
+
+191
+00:25:12,280 --> 00:25:19,450
+but they coupled to an external magnetic field is aligned with zero or against it with a higher energy.
+
+192
+00:25:19,600 --> 00:25:24,639
+If they oppose the flow, lower energy with them along with it, and the same to each other.
+
+193
+00:25:24,640 --> 00:25:29,080
+So that system one in which the states were distinguishable, for instance,
+
+194
+00:25:29,080 --> 00:25:37,690
+by their fixed positions in some cell and another with indistinguishable forces by being just particles.
+
+195
+00:25:37,690 --> 00:25:42,070
+And again, this is similar through each other occupying the same space.
+
+196
+00:25:43,450 --> 00:25:51,880
+You know, predictions for the internal energy of those two systems were significantly different.
+
+197
+00:25:52,390 --> 00:25:59,170
+An observable difference that can be produced to get information from the source measurements
+
+198
+00:25:59,170 --> 00:26:06,550
+about the microscopic degrees of freedom and allowing that emergent behaviour that of course.
+
+199
+00:26:07,000 --> 00:26:12,460
+So that's about one third of the matter and the questions arising so far.
+
+200
+00:26:18,200 --> 00:26:27,780
+I will continue to talk about the two more applications of the canonical ensemble that we looked at in more detail in just four five.
+
+201
+00:26:28,300 --> 00:26:37,180
+So for those introducing ideal gases, where the first order of business, that is how to, uh,
+
+202
+00:26:37,350 --> 00:26:46,770
+regularise the continuing their continuously varying positions or momenta of gas particles so that
+
+203
+00:26:46,770 --> 00:26:53,820
+we could express the partition function in terms of a sum over the accessible natural states.
+
+204
+00:26:54,420 --> 00:27:00,000
+And then based on that regularisation is going to the limit for the turned into integrals.
+
+205
+00:27:00,390 --> 00:27:04,560
+And we end up just integrating over momentum or energy or position.
+
+206
+00:27:05,010 --> 00:27:10,890
+The other, the degrees of freedom that these, uh, particles possess.
+
+207
+00:27:11,940 --> 00:27:20,430
+And starting on the basis of that regularisation of systems with continuous variables.
+
+208
+00:27:21,510 --> 00:27:25,470
+We derived the entropy, the energy of the heat capacity.
+
+209
+00:27:25,980 --> 00:27:29,280
+So for these ideal gases, um.
+
+210
+00:27:31,290 --> 00:27:42,930
+We saw how the heat capacity is related to fluctuations in the internal energy through a fluctuation dissipation relation.
+
+211
+00:27:43,350 --> 00:27:51,899
+So one example of some very general connections between these two large quantities and expectation
+
+212
+00:27:51,900 --> 00:27:59,070
+values of other observables coming from the partition function in the canonical ensemble.
+
+213
+00:28:00,810 --> 00:28:08,010
+And we also looked at the idea of mixing entropy and the distinction between reversible possible processes,
+
+214
+00:28:09,630 --> 00:28:15,630
+which has to do again with the information content of the gases.
+
+215
+00:28:16,140 --> 00:28:25,770
+So seeing that these ideal gas particles are indistinguishable, if two sets of indistinguishable particles get mixed,
+
+216
+00:28:26,160 --> 00:28:32,310
+there's no new information, no new energy, the sort of entropy that is introduced to the universe.
+
+217
+00:28:32,700 --> 00:28:36,150
+And that process can then be undone, reversed.
+
+218
+00:28:37,200 --> 00:28:42,330
+And the opposite happens for distinguishable particles, which is also a homework assignment.
+
+219
+00:28:42,840 --> 00:28:49,590
+Once the um distribution of particles are mixed, there is additional information,
+
+220
+00:28:49,590 --> 00:29:00,809
+additional entropy in the resulting states of the combined mixed system that then cannot be undone without some
+
+221
+00:29:00,810 --> 00:29:08,340
+complicated process that we have to introduce more entropy to the universe that was lost to the separate systems.
+
+222
+00:29:10,470 --> 00:29:14,850
+Finally, this is where we introduce the equations of states ideal gas law.
+
+223
+00:29:15,600 --> 00:29:22,800
+Um, that's provided one of the key equations for the analysis of thermal cycles,
+
+224
+00:29:22,950 --> 00:29:33,510
+which is the next unifies the final application of the canonical ensemble to this non-interacting ideal gases specifically.
+
+225
+00:29:34,200 --> 00:29:37,860
+So here we have our system of an ideal gas.
+
+226
+00:29:38,250 --> 00:29:48,149
+And it's up to us in order to. Well, as we just said with the outcomes focussed on this topic we have,
+
+227
+00:29:48,150 --> 00:29:53,220
+this is enough heat for the high temperature reservoir to the temperature reservoir.
+
+228
+00:29:53,640 --> 00:30:06,480
+You know, there's a two way. And based on the amount of work that the system could do by using that heat, we defined the efficiency of a an engine.
+
+229
+00:30:07,110 --> 00:30:17,800
+And so based on the last three limits that this efficiency is maximised by the Carnot cycle that puts together 280 of that x.
+
+230
+00:30:17,820 --> 00:30:25,170
+So fast expansion and compression phases that actually quickly they don't allow heat to be transferred.
+
+231
+00:30:25,170 --> 00:30:30,390
+And they fix the entropy of the system throughout that process,
+
+232
+00:30:31,290 --> 00:30:40,110
+as well as to isothermal processes that are slow to allow for possible heat transfer with the reservoir to complete,
+
+233
+00:30:41,730 --> 00:30:45,930
+um, so that the temperature is fixed for the entropy changes.
+
+234
+00:30:46,620 --> 00:30:57,570
+And the isothermal metabolic processes gives us the carbon cycle, that is probably the most efficient possible, the engine that we could have,
+
+235
+00:30:58,050 --> 00:31:07,470
+just one that is not practical to use in everyday life due to those slow cycles that would take ages to operate.
+
+236
+00:31:07,950 --> 00:31:12,360
+So in tutorials and homeworks we looked at alternative systematic cycle.
+
+237
+00:31:12,410 --> 00:31:23,540
+Some other cycle diesel cycle that give approximate idealised descriptions of petrol and diesel engines that are actually used in practice.
+
+238
+00:31:25,520 --> 00:31:33,349
+And one important tool along the way of doing this analysis was the PV diagrams that
+
+239
+00:31:33,350 --> 00:31:38,150
+gave a visual representation of how all these processes were being carried out,
+
+240
+00:31:38,630 --> 00:31:47,870
+in terms of how the pressure and volume of a system was changing, which, due to the ideal gas relations we derived,
+
+241
+00:31:48,590 --> 00:31:58,520
+then gave us all information about the macroscopic thermodynamic state of the system from pressure and volume.
+
+242
+00:31:58,640 --> 00:32:05,990
+We can get the energy, we can get the temperature, you get the entropy and the full information about these systems.
+
+243
+00:32:07,100 --> 00:32:18,850
+And. That brought us to the third and final of the statistical ensembles.
+
+244
+00:32:19,420 --> 00:32:24,530
+That's our what was organised around the graphic novel ensemble.
+
+245
+00:32:24,580 --> 00:32:32,470
+That, in a way repeats the generalisation that we introduced, going from Michael Canonical to canonical,
+
+246
+00:32:32,770 --> 00:32:39,610
+allowing the energy to fluctuate by energy exchange with a large external reservoir that fixed the temperature.
+
+247
+00:32:39,820 --> 00:32:46,600
+Instead, we now allow the particle number to fluctuate by exchanges the large external particle reservoir.
+
+248
+00:32:46,720 --> 00:32:52,470
+Reservoir. That fixes the chemical potential view along with the temperature.
+
+249
+00:32:53,610 --> 00:33:03,930
+Um, in the same way that the energy exchange we still have fixes the temperature, but allows energy to fluctuate from microstate to microstates.
+
+250
+00:33:05,730 --> 00:33:09,180
+So the average particle number, like the average energy, is.
+
+251
+00:33:09,180 --> 00:33:15,480
+Now, what are the observables that we could analyse on the basis of the grand canonical partition function.
+
+252
+00:33:16,140 --> 00:33:26,580
+Um, and we saw generalised identities that relate all of the possible ways of moving, uh,
+
+253
+00:33:26,580 --> 00:33:34,710
+energy and particles into and out of the system, depending on its chemical potential and temperature.
+
+254
+00:33:37,560 --> 00:33:46,230
+So our main applications for the grand canonical ensemble that were two ideal gases that we that are being quantum statistics,
+
+255
+00:33:46,770 --> 00:33:56,120
+which we introduced in unit seven, just taking it as it comes out, something that you did not have to have seen before,
+
+256
+00:33:56,130 --> 00:34:00,540
+don't need to know anything beyond what we covered in the lectures and lecture notes.
+
+257
+00:34:02,130 --> 00:34:11,970
+The key concept of quantum statistics is that in contrast to the classical statistics, where we looked at all possible microstates,
+
+258
+00:34:11,970 --> 00:34:15,420
+that a single particle in a system could occupy,
+
+259
+00:34:15,750 --> 00:34:25,890
+and then generalise that to a large number n of multiple non-interacting particles in the quantum approach.
+
+260
+00:34:26,100 --> 00:34:31,919
+But we notice that its traditional classical approach breaks down when there is a
+
+261
+00:34:31,920 --> 00:34:39,750
+non-negligible probability for two distinct particles to have exactly the same properties.
+
+262
+00:34:40,860 --> 00:34:46,230
+So we summarise that as the concept of energy level, which does have an energy,
+
+263
+00:34:46,650 --> 00:34:51,270
+but also refers to all the properties of the particles, so position themselves.
+
+264
+00:34:51,360 --> 00:34:57,920
+Spin up. Anything that can carry information.
+
+265
+00:34:58,160 --> 00:35:01,820
+Getting back to that topic of the consequences of information.
+
+266
+00:35:02,900 --> 00:35:10,970
+If two particles have effectively the same information content, then the approach of treating them as us.
+
+267
+00:35:11,420 --> 00:35:18,980
+The approach of summing over all the microstates to each of those two particles by themselves could occupy double counts.
+
+268
+00:35:19,370 --> 00:35:28,670
+Those cases, and the simple the process of trying to remove those double counting factors,
+
+269
+00:35:29,180 --> 00:35:37,009
+while theoretically possible, rapidly becomes a combinatorial nightmare that can be avoided by working instead.
+
+270
+00:35:37,010 --> 00:35:43,930
+In terms of the occupation numbers for these discrete quantised energy levels,
+
+271
+00:35:43,940 --> 00:35:50,899
+similar to those that we introduced to regularise classical ideal gases we now keep.
+
+272
+00:35:50,900 --> 00:36:01,640
+So we don't go to continuous integrals. We have some countable set of energy levels, and for each energy level we have to count the occupation number,
+
+273
+00:36:02,420 --> 00:36:12,100
+the number of particles that can have all those properties where the two major classes of particles that we have,
+
+274
+00:36:12,140 --> 00:36:18,650
+or persons where any non-negative number of particles could occupy each and every microstate,
+
+275
+00:36:19,490 --> 00:36:25,610
+or fermions, where only a single particle could occupy the given energy level.
+
+276
+00:36:26,210 --> 00:36:30,920
+Due to the properties of quantum mechanics that we take as others.
+
+277
+00:36:33,500 --> 00:36:36,590
+So there's cosines and fermions.
+
+278
+00:36:36,590 --> 00:36:42,829
+We saw how the quantum statistics resulting from each of those separate ones
+
+279
+00:36:42,830 --> 00:36:51,550
+also reduce to the classical behaviour in limits where the system has that,
+
+280
+00:36:51,900 --> 00:36:56,390
+the probability for dual occupancy of energy levels.
+
+281
+00:36:57,140 --> 00:37:05,360
+Getting back to regimes where the classical approximation given by Maxwell Mr. is accurate and reliable,
+
+282
+00:37:05,420 --> 00:37:16,220
+indeed accurate, often to 20 uh significant figures or more only microscopically small effects,
+
+283
+00:37:17,480 --> 00:37:28,790
+hinting at the underlying quantum dynamics that only emerges in other context, like systems with very low temperature or very small value.
+
+284
+00:37:31,010 --> 00:37:39,500
+And then we looked at specific examples of ideal quantum gases based on both thresholds and fermions.
+
+285
+00:37:40,040 --> 00:37:46,939
+Also comparing the non-relativistic and ultra relativistic cases where well,
+
+286
+00:37:46,940 --> 00:37:53,930
+the Mr. case is the same as we solve for the classical ideal gases, the energy is p squared over two m.
+
+287
+00:37:54,740 --> 00:38:01,580
+The ultra relativistic case is where the particle's mass is negligible compared to energy.
+
+288
+00:38:01,580 --> 00:38:05,000
+It could even be exactly zero, as in the case of photons,
+
+289
+00:38:05,660 --> 00:38:12,410
+and in that case the energy is completely expressed in terms of the particles frequency or wavelength.
+
+290
+00:38:12,590 --> 00:38:18,830
+Equivalently, those are related by the speed of light as the unit conversion factor.
+
+291
+00:38:19,430 --> 00:38:24,979
+In our analysis of ultra relativistic bosons, specifically,
+
+292
+00:38:24,980 --> 00:38:29,810
+photons gave us the plug spectrum that resembles the ultraviolet catastrophe
+
+293
+00:38:30,230 --> 00:38:36,560
+of classical statistical mechanical analysis of electromagnetic radiation.
+
+294
+00:38:37,220 --> 00:38:44,810
+We saw how the Planck spectrum, despite making this idealised approximation of non-interacting particles,
+
+295
+00:38:45,260 --> 00:38:51,559
+describes the solar radiation from the sun and other stars extremely well, and even better,
+
+296
+00:38:51,560 --> 00:39:01,610
+the residual afterglow of the Big Bang from the cosmic microwave background that fills the void between galaxies and
+
+297
+00:39:01,610 --> 00:39:09,650
+can be measured significantly more precisely than the so noisy and fluctuating solar radiation emitted by our sun.
+
+298
+00:39:11,420 --> 00:39:20,210
+We also derive the equation of state for the photon gas finding that is, have the same functional form as for classical particles.
+
+299
+00:39:20,930 --> 00:39:25,910
+Pressure times volume is proportional to the average particle number times the temperature,
+
+300
+00:39:26,480 --> 00:39:31,370
+and there was just a different factor of proportionality in that relation.
+
+301
+00:39:31,820 --> 00:39:38,150
+And we actually found the same thing for non-relativistic fermions as well.
+
+302
+00:39:38,810 --> 00:39:51,110
+Um, where we simplify those calculations by looking at low temperatures where the Fermi function that appears in the grand canonical,
+
+303
+00:39:52,040 --> 00:39:58,830
+uh, prediction for the energy. These numbers of these fermions simplifies to just a step function.
+
+304
+00:39:59,940 --> 00:40:05,610
+All of the energy levels up to a particular Cut-Off are filled.
+
+305
+00:40:06,000 --> 00:40:10,020
+All those above that cross are empty and the limit of zero temperature.
+
+306
+00:40:10,500 --> 00:40:16,620
+The Cut-Off reduces to the chemical potential, and there are small corrections around that.
+
+307
+00:40:17,190 --> 00:40:29,220
+As we step away from zero temperatures organised by the solar cell expansion, we've had time to work through quickly just before the term break.
+
+308
+00:40:31,280 --> 00:40:34,550
+And that takes us to the last major topic that we've done over the past two weeks.
+
+309
+00:40:35,000 --> 00:40:39,980
+So probably should say less about the interacting systems we have dealt with.
+
+310
+00:40:40,580 --> 00:40:49,850
+We looked at the easing model as a particularly simple example of an interactive statistical system, and one which,
+
+311
+00:40:49,850 --> 00:40:58,670
+despite its simplicity, has been used in literally thousands of scientific studies over the past few decades.
+
+312
+00:41:01,040 --> 00:41:07,040
+Due to the wide range of behaviour that is interactions make possible.
+
+313
+00:41:09,650 --> 00:41:12,200
+Some of those are mentioned in the broader applications.
+
+314
+00:41:12,200 --> 00:41:19,100
+Briefly, things like neural networks and artificial intelligence, deep learning and machine learning.
+
+315
+00:41:20,210 --> 00:41:29,000
+In lectures we focussed first on analysing simplified high and low temperature limits where very distinct behaviour is clear,
+
+316
+00:41:29,510 --> 00:41:36,229
+and then introducing the magnetisation as the order parameter that tells us whether or
+
+317
+00:41:36,230 --> 00:41:42,500
+not there is an actual phase transition between those high and low temperature extremes.
+
+318
+00:41:42,860 --> 00:41:48,710
+So if there is a smooth crossover and the answer depends on the number of dimensions.
+
+319
+00:41:49,280 --> 00:41:50,510
+Once we get about one,
+
+320
+00:41:50,960 --> 00:41:59,120
+there is indeed a second order phase transition one where the transition self is continuous but its derivative has a discontinuity.
+
+321
+00:42:01,070 --> 00:42:04,710
+And that also matched predictions of the mean field approximation.
+
+322
+00:42:04,760 --> 00:42:08,600
+We saw how the mean field approximation which.
+
+323
+00:42:09,960 --> 00:42:21,330
+Text using model into a non-interacting system by supposing that it exhibits only small fluctuations around average values for the spin.
+
+324
+00:42:22,590 --> 00:42:30,510
+We can then recast things in terms of a modified magnetic field that depends on that mean value of the spin,
+
+325
+00:42:31,110 --> 00:42:39,059
+and this becomes more and more accurate as the number of nearest neighbours that are interacting with each other becomes larger and larger.
+
+326
+00:42:39,060 --> 00:42:39,490
+Essentially,
+
+327
+00:42:39,510 --> 00:42:48,570
+each degree of freedom in seeing a greater number of their experiments that can get better approximation to the mean that we are expanding around.
+
+328
+00:42:50,670 --> 00:42:57,060
+The finally get to ten. Focussed on some broader applications, including universality,
+
+329
+00:42:57,420 --> 00:43:06,960
+a almost magical fact that the different statistical systems can produce the same emergent large scale behaviour.
+
+330
+00:43:07,680 --> 00:43:15,150
+And this has a lot of implications for quantum field theory, since there are lots of different underlying.
+
+331
+00:43:17,030 --> 00:43:23,720
+Hypotheses for the fundamental nature of reality that all produce quality of theory.
+
+332
+00:43:24,170 --> 00:43:30,410
+When analysed on the scales that we can look at. So that's why it's so hard to prove or disprove string theory.
+
+333
+00:43:30,830 --> 00:43:37,190
+It is one of many possibilities that all give the same observable consequences due to universality.
+
+334
+00:43:38,270 --> 00:43:45,709
+And we also looked at important sampling Monte Carlo calculations as a very widespread, impressive,
+
+335
+00:43:45,710 --> 00:43:52,400
+applicable numerical method for analysing interactive statistical systems that
+
+336
+00:43:52,400 --> 00:43:58,010
+in general do not allow analytic solutions or even accurate approximations.
+
+337
+00:43:58,550 --> 00:44:07,640
+And these important sampling Monte Carlo calculations are a big area of research activity here in Liverpool.
+
+338
+00:44:09,410 --> 00:44:19,070
+Which some of you have worked on in your third year projects, or could consider for your fourth year projects so that.
+
+339
+00:44:21,010 --> 00:44:25,210
+Covers that have won him along.
+
+340
+00:44:27,900 --> 00:44:28,810
+So much detail.
+
+341
+00:44:28,860 --> 00:44:40,970
+We only have five minutes remaining in our time, at least for you to ask again if there are any questions you would like to raise at this point.
+
+342
+00:44:46,880 --> 00:44:53,090
+Otherwise, I see in my notes some exam advice that I can wrap up by just talking through,
+
+343
+00:44:53,810 --> 00:45:00,920
+um, again, things that may be second nature to you by this stage in your studies.
+
+344
+00:45:00,920 --> 00:45:07,700
+But first to confirm, our exam is this Friday, the first day that math exams are being held.
+
+345
+00:45:08,340 --> 00:45:11,090
+So the afternoon at 230 in the Big Lecture theatre,
+
+346
+00:45:11,090 --> 00:45:20,480
+two in the Sherrington building that is on the far side of the Science and Engineering Library, um, in the North campus,
+
+347
+00:45:21,260 --> 00:45:27,139
+calculators are allowed on the exam so they are not needed and the exam itself
+
+348
+00:45:27,140 --> 00:45:35,960
+will look very similar to the two specimens that are on the campus site.
+
+349
+00:45:37,670 --> 00:45:40,820
+There will be five questions.
+
+350
+00:45:41,030 --> 00:45:49,640
+They're roughly equally weighted. They will have some connection to the learning outcomes that we started today by talking about.
+
+351
+00:45:50,270 --> 00:45:55,790
+There will be a formula sheet so you don't have to memorise any equations.
+
+352
+00:45:56,420 --> 00:46:00,710
+You'll be able to extract from this anything that you need.
+
+353
+00:46:02,150 --> 00:46:17,970
+And. Just in terms of strategy here, it will be to your benefit to write down whatever you can think of for not only every question,
+
+354
+00:46:18,210 --> 00:46:29,610
+but even every part of a question. So we will in general, make some efforts to ensure that even if, say, a part of the question.
+
+355
+00:46:31,220 --> 00:46:38,020
+Gives you trouble. You would still be able to carry on and take up with later parts.
+
+356
+00:46:38,620 --> 00:46:43,060
+Um, so that is now riding on getting off to the correct start.
+
+357
+00:46:44,020 --> 00:46:53,250
+So writing down whatever you can think of not only gives you more opportunities to secure some harsher credits in the marketing,
+
+358
+00:46:53,620 --> 00:47:04,900
+but it can also help to jog your memory or provides inspiration about the, um, relevant aspects of the module that are coming into play,
+
+359
+00:47:05,380 --> 00:47:16,540
+as well as relevant aspects of the formula sheet that could then help you get from some initial thoughts to construct a fuller solution,
+
+360
+00:47:16,540 --> 00:47:26,320
+even as you don't immediately have a clear idea of, um, exactly how everything should go fully formed in your head.
+
+361
+00:47:27,340 --> 00:47:33,610
+So two hours for five questions should hopefully give you time to, uh,
+
+362
+00:47:34,300 --> 00:47:42,010
+wrestle with some of the trickier ones and sail through some of the ones that you recognise more quickly.
+
+363
+00:47:42,580 --> 00:47:47,140
+And I think that's all I will say today.
+
+364
+00:47:49,200 --> 00:47:58,510
+Last call for final questions. And if not, I will be by the final set of office hours for this lecture.
+
+365
+00:47:58,920 --> 00:48:07,540
+As always, no other formal office hours or scheduling this week, but I will be around and they can be booked as usual.
+
+366
+00:48:08,020 --> 00:48:09,700
+If you want to.
+
